@@ -14,8 +14,6 @@
 
 :keywords: software-architecture, documentation, template, arc42
 
-//:snippets: ./snippets/
-
 include::snippets/about.adoc[]
 
 
@@ -24,8 +22,48 @@ include::snippets/about.adoc[]
 
 include::snippets/kap01-mit-hilfe.adoc[]
 
+// 2. Randbedingungen
 include::snippets/kap02-mit-hilfe.adoc[]
 
+// 3. Kontextabgrenzung
 include::snippets/kap03-mit-hilfe.adoc[]
 
+// 4. Lösungsstrategie
 include::snippets/kap04-mit-hilfe.adoc[]
+
+// 5. Bausteinsicht
+include::snippets/kap05-mit-hilfe.adoc[]
+
+// 6. Laufzeitsicht
+include::snippets/kap06-mit-hilfe.adoc[]
+
+// 7. Verteilungssicht
+include::snippets/kap07-mit-hilfe.adoc[]
+
+// 8. Querschnittliche Konzepte
+include::snippets/kap08-mit-hilfe.adoc[]
+
+// 9. Entscheidungen
+include::snippets/kap09-mit-hilfe.adoc[]
+
+// 10. Qualität...
+include::snippets/kap10-mit-hilfe.adoc[]
+
+// 11. Risiken
+include::snippets/kap11-mit-hilfe.adoc[]
+
+// 12. Glossar
+include::snippets/kap12-mit-hilfe.adoc[]
+
+
+// appendices:
+// =====================================
+
+// Verweise + Literatur
+include::snippets/appendix-references.adoc[]
+
+// Beispiele
+include::snippets/appendix-examples.adoc[]
+
+// Contributing and Contributors
+include::snippets/appendix-contributing.adoc[]

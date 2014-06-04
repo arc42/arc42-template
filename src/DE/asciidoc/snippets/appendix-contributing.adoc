@@ -1,0 +1,12 @@
+:numbered!:
+:linkattrs:
+
+[appendix]
+== Mitwirken + Mitwirkende
+
+arc42 stammt ursprünglich von Dr. Peter Hruschka und Dr. Gernot Starke.
+
+
+* github -> asciidoc source
+* Beitragende
+* arc42 approved practitioner

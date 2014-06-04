@@ -1,0 +1,28 @@
+
+== Glossar
+
+[NOTE]
+====
+.Inhalt
+Die wichtigsten Begriffe der Software-Architektur in alphabetischer Reihenfolge
+
+.Motivation
+Die Notwendigkeit für ein Glossar sollte nicht erläutert werden müssen. Oder haben Sie es in Ihren Projekten noch nie vermisst?
+
+.Form
+einfache zweispaltige Tabelle mit <Begriff> und <Definition>
+====
+
+[cols="1,2" options="header"]
+.Glossar
+|===
+|Begriff
+|Definition
+
+|<Begriff$$_$$_1_>
+|Beschreibung$$_$$_1_
+
+
+|<Begriff$$_$$_2_>
+|Beschreibung$$_$$_2_
+|===
