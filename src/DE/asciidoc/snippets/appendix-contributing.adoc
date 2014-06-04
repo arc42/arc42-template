@@ -2,11 +2,28 @@
 :linkattrs:
 
 [appendix]
+
+[[contributions]]
 == Mitwirken + Mitwirkende
 
-arc42 stammt ursprünglich von Dr. Peter Hruschka und Dr. Gernot Starke.
+
+arc42 stammt ursprünglich von
+http://b-agile.de[Dr. Peter Hruschka] und
+http://gernotstarke.de[Dr. Gernot Starke].
 
 
-* github -> asciidoc source
-* Beitragende
+Quellen::
+Wir pflegen arc42 zur Zeit im _asciidoc_ Format, gehosted bei
+https://github.com/aim42/aim42[GitHub unter der arc42-Organisation].
+
+Issues::
+Wir pflegen eine Liste
+https://github.com/arc42/arc42-template/issues[offener Punkte und Fehler].
+
+Wir freuen uns, wenn Sie Fehler/Unklarheiten in einem Fork korrigieren
+und uns einen _pull request_ schicken!
+
+=== Mitwirkende
+
+
 * arc42 approved practitioner

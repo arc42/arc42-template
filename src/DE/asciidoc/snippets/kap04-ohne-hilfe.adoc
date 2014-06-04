@@ -12,26 +12,3 @@ Dieses Kapitel motiviert übergreifend die zentralen Gestaltungskriterien für I
 .Form
 Fassen Sie auf wenigen Seiten die Beweggründe für zentrale Entwurfsentscheidungen zusammen. Motivieren Sie ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben. Verweisen Sie – wo nötig – auf weitere Ausführungen in Folgekapiteln.
 ====
-
-
-
-=== Einstiegshilfe
-
-In diesem Kapitel beschreiben wir Stellen im Code anhand von Klassen oder Methode, an
-denen wichtige fachliche Funktionalität implementiert ist und/oder die im weiteren
-Lebenszyklus der Anwendung potenziell geändert werden.
-
-
-[cols="1,1,1,1" options="header"]
-.Einstiegshilfe
-|===
-|Fall
-|Konsequenz
-|Stelle
-|Hinweise
-
-|(Beispiel:) Neue Entität einführen
-|Ggf. neue UseCases implementieren
-|de.arc42.sample.ManagerCRUDImpl
-|ggf Factory Methoden erweitern
-|===

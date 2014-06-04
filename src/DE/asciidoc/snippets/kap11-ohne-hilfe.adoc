@@ -1,0 +1,19 @@
+
+== Risiken
+
+
+[options="header"]
+.Risiken
+|===
+|Risiko |Priorität |Konsequenz |Erläuterung
+
+|
+|
+|
+|
+
+|
+|
+|
+|
+|===

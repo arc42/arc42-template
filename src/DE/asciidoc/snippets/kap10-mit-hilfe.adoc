@@ -78,25 +78,3 @@ Es gibt inhaltliche Zusammenhänge zwischen Szenarien und Laufzeitsicht. Häufig
 Szenarien der Laufzeitsicht für die Bewertung wieder verwenden oder zugrunde legen. In die Bewertungsszenarien fließen
 (im Gegensatz zu den Laufzeitszenarien) noch Antwortmetriken ein, die bei  der reinen Ablaufbetrachtung der Laufzeitsichten häufig entfallen.
 ====
-
-
-== Einstiegshilfe
-
-In diesem Kapitel beschreiben wir Stellen im Code anhand von Klassen oder Methode, an
-denen wichtige fachliche Funktionalität implementiert ist und/oder die im weiteren
-Lebenszyklus der Anwendung potenziell geändert werden.
-
-
-[cols="1,1,1,1" options="header"]
-.Einstiegshilfe
-|===
-|Fall
-|Konsequenz
-|Stelle
-|Hinweise
-
-|Neue Entität einführen
-|Ggf. neue UseCases implementieren
-|Manager#CRUD...
-|ggf Factory Methoden erweitern
-|===

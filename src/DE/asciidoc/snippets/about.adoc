@@ -1,8 +1,10 @@
+== Über arc42
 
-arc42 Template
-zur Dokumentation von Software- und Systemarchitekturen
+[role="lead"]
+arc42, das Template zur Dokumentation von
+Software- und Systemarchitekturen.
 
-erstellt von Dr. Gernot Starke, Dr. Peter Hruschka und Contributors.
+Erstellt von Dr. Gernot Starke, Dr. Peter Hruschka und Mitwirkenden.
 
 
 Template Revision: 6.5 DE (asciidoc-basiert), Juni 2014

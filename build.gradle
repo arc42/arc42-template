@@ -30,13 +30,15 @@ apply plugin: 'asciidoctor'
 asciidoctor {
     outputDir = new File("$buildDir/docs")
     baseDir = project.file('src/DE/asciidoc')
+
+    // asciidoctor will convert ALL files contained in sourceDir!
     sourceDir = project.file('src/DE/asciidoc')
-    sourceDocumentName = project.file("$sourceDir/arc42-template-mit-hilfe.adoc")
+
     options = [
         attributes: [
             toc                 : 'left',
-            //doctype             : 'book',
-            icons               : 'font',
+            doctype             : 'book',
+            //icons               : 'font',
             sectlink            : true,
             sectanchors         : true,
             numbered            : true,

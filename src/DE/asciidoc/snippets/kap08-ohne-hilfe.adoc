@@ -1,0 +1,282 @@
+
+== Konzepte
+
+[NOTE]
+====
+.Inhalt
+Die folgenden Kapitel sind Beispiele für übergreifende Aspekte.
+
+Falls einige der Aspekte für Ihr Projekt nicht wichtig sind oder nicht zutreffen, so halten Sie diese Information ebenfalls fest, anstatt das Kapitel zu löschen.
+
+.Motivation
+Manche der Aspekte lassen sich nur schwer "zentral" als Baustein in der Architektur unterbringen (z.B. das Thema "Sicherheit". Hier ist der Platz im Template, wo Sie Konzepte zu derartigen Themen geschlossen behandeln können.
+
+Alle Aspekte, die in der Architektur an vielen Stellen Konsequenzen zeigen, beispielsweise ein Domänen-/Fachklassen- oder Business-Modell, haben ebenfalls hier einen guten Platz.
+
+Schließlich kommen manche Strukturen in der Architektur wiederholt vor, beispielsweise ein an mehreren Stellen eingesetztes Pattern. Auch solche Aspekte können Sie hier zentral erläutern.
+
+.Form
+Kann vielfältig sein. Teilweise Konzeptpapiere mit beliebiger Gliederung, teilweise auch übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen.
+====
+
+=== Fachliche Strukturen und Modelle
+
+[NOTE]
+====
+Fachliche Modelle, Domänenmodelle, Business-Modelle – sie alle beschreiben Strukturen der reinen Fachlichkeit, also ohne Bezug zur Implementierungs- oder Lösungstechnologie.
+
+Oftmals tauchen Teile solcher fachlichen Modelle an vielen Stellen in der Architektur, insbesondere der Bausteinsicht, wieder auf.
+====
+
+=== Typische Muster und Strukturen
+
+[NOTE]
+====
+Oftmals tauchen einige typische Lösungsstrukturen oder Grundmuster an mehren Stellen der Architektur auf. Beispiele dafür sind die Abhängigkeiten zwischen Persistenzschicht, Applikation sowie die Anbindung grafischer Oberflächen an die Fach- oder Domänenobjekte. Solche wiederkehrenden Strukturen beschreiben Sie möglichst nur ein einziges Mal, um Redundanzen zu vermeiden. Dieser Abschnitt erfüllt genau diesen Zweck.
+====
+
+=== Persistenz
+
+[NOTE]
+====
+Persistenz (Dauerhaftigkeit, Beständigkeit) bedeutet, Daten aus dem (flüchtigen) Hauptspeicher auf ein beständiges Medium (und wieder zurück) zu bringen.
+
+Einige der Daten, die ein Software-System bearbeitet, müssen dauerhaft auf einem Speichermedium gespeichert oder von solchen Medien gelesen werden:
+
+*  Flüchtige Speichermedien (Hauptspeicher oder Cache) sind technisch nicht für dauerhafte Speicherung ausgelegt. Daten gehen verloren, wenn die entsprechende Hardware ausgeschaltet oder heruntergefahren wird.
+*  Die Menge der von kommerziellen Software-Systemen bearbeiteten Daten übersteigt üblicherweise die Kapazität des Hauptspeichers.
+*  Auf Festplatten, optischen Speichermedien oder Bändern sind oftmals große Mengen von Unternehmensdaten vorhanden, die eine beträchtliche Investition darstellen.
+
+Persistenz ist ein technisch bedingtes Thema und trägt nichts zur eigentlichen Fachlichkeit eines Systems bei. Dennoch müssen Sie sich als Architekt mit dem Thema auseinander setzen, denn ein erheblicher Teil aller Software-Systeme benötigt einen effizienten Zugriff auf persistent gespeicherte Daten. Hierzu gehören praktisch sämtliche kommerziellen und viele technischen Systeme. Eingebettete Systeme (embedded systems ) gehorchen jedoch oft anderen Regeln hinsichtlich ihrer Datenverwaltung.
+====
+
+=== Benutzungsoberfläche
+
+[NOTE]
+====
+IT-Systeme, die von (menschlichen) Benutzern interaktiv genutzt werden, benötigen eine Benutzungsoberfläche.
+Das können sowohl grafische als auch textuelle Oberflächen sein.
+====
+
+=== Ergonomie
+
+[NOTE]
+====
+Ergonomie von IT-Systemen bedeutet die Verbesserung (Optimierung) deren Benutzbarkeit aufgrund objektiver und subjektiver Faktoren. Im Wesentlichen zählen zu ergonomischen Faktoren die Benutzungsoberfläche, die Reaktivität (gefühlte Performance) sowie die Verfügbarkeit und Robustheit eines Systems.
+====
+
+=== Ablaufsteuerung
+====
+Ablaufsteuerung von IT-Systemen bezieht sich sowohl auf die an der (grafischen) Oberfläche sichtbaren Abläufe als auch auf die Steuerung der Hintergrundaktivitäten. Zur Ablaufsteuerung gehört daher unter anderem die Steuerung der Benutzungsoberfläche als auch die Workflow-Steuerung.
+====
+
+=== Transaktionsbehandlung
+
+[NOTE]
+====
+Transaktionen sind Arbeitsschritte oder Abläufe, die entweder alle gemeinsam oder gar nicht durchgeführt werden. Der Begriff stammt aus den Datenbanken - wichtiges Stichwort hier sind ACID-Transaktionen (atomar, consistent, isolated, durable).
+====
+
+=== Sessionbehandlung
+
+[NOTE]
+====
+Eine Session, auch genannt Sitzung, bezeichnet eine stehende Verbindung eines Clients mit einem Server. Den Zustand dieser Sitzung gilt es zu erhalten, was insbesondere bei der Nutzung zustandsloser Protokolle (etwa HTTP) wichtige Bedeutung hat. Sessionbehandlung stellt für Intra-  und Internetsysteme eine kritische Herausforderung dar und beeinflusst häufig die Performance eines Systems.
+====
+
+=== Sicherheit
+
+[NOTE]
+====
+Die Sicherheit von IT-Systemen befasst sich mit Mechanismen zur Gewährleistung von Datensicherheit und Datenschutz sowie Verhinderung von Datenmissbrauch.
+
+Typische Fragestellungen sind:
+
+*  Wie können Daten auf dem Transport (beispielsweise über offene Netze wie das Internet) vor Missbrauch geschützt werden?
+*  Wie können Kommunikationspartner sich gegenseitig vertrauen?
+*  Wie können sich Kommunikationspartner eindeutig erkennen und vor falschen Kommunikationspartner schützen?
+*  Wie können Kommunikationspartner die Herkunft von Daten für sich beanspruchen (oder die Echtheit von Daten bestätigen)?
+
+Das Thema IT-Sicherheit hat häufig Berührung zu juristischen Aspekten, teilweise sogar zu internationalem Recht.
+====
+
+=== Kommunikation und Integration mit anderen IT-Systemen
+
+[NOTE]
+====
+Kommunikation: Übertragung von Daten zwischen System-Komponenten. Bezieht sich auf Kommunikation innerhalb eines Prozesses oder Adressraumes, zwischen unterschiedlichen Prozessen oder auch zwischen unterschiedlichen Rechnersystemen.
+
+Integration: Einbindung bestehender Systeme (in einen neuen Kontext). Auch bekannt als: (Legacy) Wrapper, Gateway, Enterprise Application Integration (EAI).
+====
+
+=== Verteilung
+
+[NOTE]
+====
+Verteilung: Entwurf von Software-Systemen, deren Bestandteile auf unterschiedlichen und eventuell physikalisch getrennten Rechnersystemen ablaufen.
+
+Zur Verteilung gehören Dinge wie der Aufruf entfernter Methoden (remote procedure call, RPC), die Übertragung von Daten oder Dokumenten an verteilte Kommunikationspartner, die Wahl passender Interaktionsstile oder Nachrichtenaustauschmuster (etwa: synchron / asynchron, publish- subsribe, peer-to-peer).
+====
+
+=== Plausibilisierung und Validierung
+
+[NOTE]
+====
+Wo und wie plausibilisieren und validieren Sie (Eingabe-)daten, etwa Benutzereingaben?
+====
+
+=== Ausnahme-/Fehlerbehandlung
+
+[NOTE]
+====
+Wie werden Programmfehler und Ausnahmen systematisch und konsistent behandelt?
+
+Wie kann das System nach einem Fehler wieder in einen konsistenten Zustand gelangen? Geschieht dies automatisch oder ist manueller Eingriff erforderlich?
+
+Dieser Aspekt hat mit Logging, Protokollierung und Tracing zu tun.
+
+Welche Art Ausnahmen und Fehler behandelt ihr System? Welche Art Ausnahmen werden an welche Außenschnittstelle weitergeleitet und welche Ausnahmen behandelt das System komplett intern?
+
+Wie nutzen Sie die Exception-Handling Mechanismen ihrer Programmiersprache? Verwenden Sie checked- oder unchecked-Exceptions?
+====
+
+=== Management des Systems & Administrierbarkeit
+
+[NOTE]
+====
+Größere IT-Systeme laufen häufig in kontrollierten Ablaufumgebungen (Rechenzentren) unter der Kontrolle von Operatoren oder Administratoren ab. Diese Stakeholder benötigen einerseits spezifische Informationen über den Zustand der Programme zur Laufzeit, andererseits auch spezielle Eingriffs- oder Konfigurationsmöglichkeiten.
+====
+
+=== Logging, Protokollierung, Tracing
+
+[NOTE]
+====
+Es gibt zwei Ausprägungen der Protokollierung, das Logging und das Tracing . Bei beiden werden Funktions- oder Methodenaufrufe in das Programm aufgenommen, die zur Laufzeit über den Status des Programms Auskunft geben.
+
+In der Praxis gibt es zwischen Logging und Tracing allerdings sehr wohl Unterschiede:
+
+*  Logging kann fachliche oder technische Protokollierung sein, oder eine beliebige Kombination von beidem.
+*  Fachliche Protokolle werden gewöhnlich anwenderspezifisch aufbereitet und übersetzt. Sie dienen Endbenutzern, Administratoren oder Betreibern von Softwaresystemen und liefern Informationen über die vom Programm abgewickelten Geschäftsprozesse.
+*  Technische Protokolle sind Informationen für Betreiber oder Entwickler. Sie dienen der Fehlersuche sowie der Systemoptimierung.
+*  Tracing soll Debugging -Information für Entwickler oder Supportmitarbeiter liefern. Es dient primär zur Fehlersuche und -analyse.
+====
+
+=== Geschäftsregeln
+
+[NOTE]
+====
+Wie behandeln Sie Geschäftslogik oder Geschäftsregeln? Implementieren die beteiligten Fachklassen ihre Logik selbst, oder liegt die Logik in der Verantwortung einer zentralen Komponente? Setzen Sie eine Regelmaschine (rule-engine) zur Interpretation von Geschäftsregeln ein (Produktionsregelsysteme, forward- oder backward-chaining)?
+====
+
+=== Konfigurierbarkeit
+
+[NOTE]
+====
+Die Flexibilität von IT-Systemen wird unter anderem durch ihre Konfigurierbarkeit beeinflusst, die Möglichkeit, manche Entscheidungen hinsichtlich der Systemnutzung erst spät zu treffen. Konfigurierbarkeit kann zu folgenden Zeitpunkten erfolgen:
+
+*  Während der Programmierung: Dabei werden beispielsweise Server-, Datei- oder Verzeichnisnamen direkt ("hart") in den Programmcode aufgenommen.
+*  Während des Deployments oder der Installation: Hier werden Konfigurationsinformationen für eine bestimmte Installation angegeben, etwa der Installationspfad.
+*  Beim Systemstart: Hier werden Informationen vor oder beim Programmstart dynamisch gelesen.
+*  Während des Programmablaufs: Konfigurationsinformation wird zur Programmlaufzeit erfragt oder gelesen.
+====
+
+=== Parallelisierung und Threading
+
+[NOTE]
+====
+Programme können in parallelen Prozessen oder Threads ablaufen - was die Notwendigkeit von Synchronisationspunkten mit sich bringt. Die Grundlagen dieses Aspekten legt die Parallelverarbeitung. Für die Architektur und Implementierung nebenläufiger Systeme sind viele technische Detailaspekte zu berücksichtigen (Adressräume, Arten von Synchronisationsmechanismen (Guards, Wächter, Semaphore), Prozesse und Threads, Parallelität im Betriebssystem, Parallelität in virtuellen Maschinen und andere).
+====
+
+=== Internationalisierung
+
+[NOTE]
+====
+Unterstützung für den Einsatz von Systemen in unterschiedlichen Ländern, Anpassung der Systeme an länderspezifische Merkmale. Bei der Internationalisierung (aufgrund der 18 Buchstaben zwischen I und n des englischen Internationalisation auch i18n genannt) geht es neben der Übersetzung von Aus- oder Eingabetexten auch um verwendete Zeichensätze, Orientierung von Schriften am Bildschirm und andere (äußerliche) Aspekte.
+====
+
+=== Migration
+
+[NOTE]
+====
+Für die meisten Systeme gibt es existierende Altsysteme, die durch die neuen Systeme abgelöst werden sollen. Denken Sie als Architekt nicht nur an Ihre neue, schöne Architektur, sondern rechtzeitig auch an alle organisatorischen und technischen Aspekte, die zur Einführung oder Migration der Architektur beachtet werden müssen.
+
+.Beispiele
+
+*  Konzept, Vorgehensweise oder Werkzeuge zur Datenübernahme und initialen Befüllung mit Daten
+*  Konzept zur Systemeinführung oder zeitweiliger Parallelbetrieb von Alt- und Neusystem
+
+Müssen Sie bestehende Daten migrieren? Wie führen Sie die benötigten syntaktischen oder semantischen Transformationen durch?
+====
+
+=== Testbarkeit
+
+[NOTE]
+====
+Unterstützung für einfache (und möglichst automatische) Tests. Diese Eigenschaft bildet die Grundlage für das wichtige Erfolgsmuster "Continous Integration". In Projekten sollte mindestens täglich der gesamte Stand der Entwicklung gebaut und (automatisch) getestet werden - daher spielt Testbarkeit eine wichtige Rolle. Wichtige Stichworte hierzu sind Unit- Tests und Mock-Objekte.
+====
+
+=== Skalierung, Clustering
+====
+Wie gestalten Sie Ihr System „wachstumsfähig“, so dass auch bei steigender Last oder steigenden Benutzerzahlen die Antwortzeiten und/oder Durchsatz erhalten bleiben?
+====
+
+=== Hochverfügbarkeit
+
+[NOTE]
+====
+Wie erreichen Sie hohe Verfügbarkeit des Systems? Legen Sie Teile redundant aus? Verteilen Sie das System auf unterschiedliche Rechner oder Rechenzentren? Betreiben Sie Standby-Systeme?
+====
+
+=== Codegenerierung
+
+[NOTE]
+====
+Wie und wo verwenden Sie Codegeneratoren, um Teile Ihres Systems aus Modellen oder domänenspezifischen Sprachen (DSL’s) zu generieren?
+====
+
+=== Buildmanagement
+
+[NOTE]
+====
+Wie wird das gesamte System aus Sourcecode Bausteinen gebaut? Welche Repositories
+(Versionsverwaltungssysteme) enthalten welchen Sourcecode, wo liegen Konfigurationsdateien,
+Testdaten und/oder Build-Skripte (make, ant, maven, gradle oder Ähnliche)?
+====
+
+=== Stapel-/Batchverarbeitung
+
+[NOTE]
+====
+Welche Geschäftsprozess-Schritte lassen sich in Stapelverarbeitung erledigen? Wie
+ werden dazu Datenflüsse und Verarbeitungsschritte organisiert? Welche Mechanismen
+ zur Fehlerverarbeitung werden eingesetzt? Sollen fehlgeschlagene Schritte wieder aufgesetzt werden können? Welche Bereinigungsschritte sind dazu notwendig? Welche Ablaufrahmen (Batch-Framework) wird dazu eingesetzt?
+====
+
+=== Drucken
+
+[NOTE]
+====
+Welche spezifischen Anforderungen zum Ausdrucken von Tabellen, Listen, Reports hat
+das System: z.B. Formate, Layouts, Druckmengen, Lieferzeiten, techn. Integration
+und Schnittstellen? Welche Eigenschaften haben die Druckgeräte? Können Spool-Verfahren eingesetzt werden?
+====
+
+=== Reporting
+
+[NOTE]
+====
+Welche Anforderungen gibt es zum Erstellen von Berichten / Reports inkl. Kennzahlen?
+Welche Repoorting-Werkzeuge werden eingesetzt? Welche Berechtigungen sind mit
+bestimmten Kennzahlen verbunden? Wie schützt man die Echtheit der Reports vor
+Manipulation? Müssen Reports sicher abgelegt werden können?
+====
+
+=== Archivierung
+
+[NOTE]
+====
+Ist für das System zu erwarten, dass bestimmte Daten aus technischer oder
+ fachlicher Sicht archiviert werden müssen, ggf. periodisch? Welche Konzept
+ existiert dazu? Wie lauten die Rahmenbedingen für die Archivierung (Dauer der
+ Aufbewahrung, Geschwindigkeit der Wiederherstellung, usw.)?
+====

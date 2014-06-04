@@ -1,6 +1,6 @@
-// header file for arc42-template
+// header file for arc42-template,
+// including all help texts
 //
-// Includes all the rest
 // ====================================
 
 

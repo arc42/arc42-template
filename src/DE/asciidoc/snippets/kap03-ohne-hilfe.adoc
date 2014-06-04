@@ -1,0 +1,13 @@
+
+== Kontextabgrenzung
+
+
+Die folgenden Unterkapitel zeigen die Einbettung unseres Systems in seine Umgebung.
+
+=== Fachlicher Kontext
+
+
+=== Technischer- oder Verteilungskontext
+
+
+=== Externe Schnittstellen

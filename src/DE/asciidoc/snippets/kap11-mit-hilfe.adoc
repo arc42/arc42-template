@@ -12,3 +12,23 @@ Eine nach Prioritäten geordnete Liste der erkannten technischen Risiken
 .Form
 Risikolisten mit Eintrittswahrscheinlichkeit, Schadenshöhe, Maßnahmen zur Risikovermeidung oder Risikominimierung, ...
 ====
+
+
+[cols="1,2" options="header"]
+.Risiken
+|===
+|Risiko
+|Priorität
+|Konsequenz
+|Erläuterung
+
+|
+|
+|
+|
+
+|
+|
+|
+|
+|===

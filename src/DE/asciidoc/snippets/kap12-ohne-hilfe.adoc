@@ -1,0 +1,15 @@
+
+== Glossar
+
+[cols="1,2" options="header"]
+.Glossar
+|===
+|Begriff
+|Definition
+
+|
+|
+
+|
+|
+|===
