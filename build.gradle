@@ -29,9 +29,9 @@ apply plugin: 'asciidoctor'
 
 asciidoctor {
     outputDir = new File("$buildDir/docs")
-    baseDir = project.file('src')
+    baseDir = project.file('src/DE/asciidoc')
     sourceDir = project.file('src/DE/asciidoc')
-    sourceDocumentName = project.file('src/DE/asciidoc/arc42_template.adoc')
+    sourceDocumentName = project.file("$sourceDir/arc42-template-mit-hilfe.adoc")
     options = [
         attributes: [
             toc                 : 'left',
@@ -54,7 +54,7 @@ task copyImages(
     description: 'copy images into build output folder so that references can be resolved '
 ) {
     from 'src/DE/images'
-    into './build/docs/images'
+    into './build/images'
 }
 
 

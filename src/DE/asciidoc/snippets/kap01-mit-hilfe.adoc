@@ -1,0 +1,139 @@
+==	Einführung und Ziele
+
+(engl.: Introduction and Goals)
+
+Als Einführung in das Architekturdokument gehören hierher die treibenden Kräfte, die Software-Architekten bei Ihren Entscheidungen berücksichtigen müssen:
+Einerseits die Erfüllung bestimmter fachlicher Aufgabenstellungen der Stakeholder, darüber hinaus aber die Erfüllung oder Einhaltung der vorgegebenen Randbedingungen (required constraints) unter Berücksichtigung der Architekturziele.
+
+
+=== Aufgabenstellung
+(engl.: Requirements Overview)
+
+[NOTE]
+====
+Kurzbeschreibung der fachlichen Aufgabenstellung, Extrakt (oder Abstract) der Anforderungsdokumente.
+Verweis auf ausführliche Anforderungsdokumente (mit Versionsbezeichnungen und Ablageorten).
+
+.Inhalt
+Eine kompakte Zusammenfassung des fachlichen Umfelds des Systems. Beantwortet (etwa) folgende Fragen:
+*  Was geschieht im Umfeld des Systems?
+*  Warum soll es das System geben? Was macht das System wertvoll oder wichtig? Welche Probleme löst das System?
+
+.Motivation
+Aus Sicht der späteren Nutzer ist die Unterstützung einer fachlichen Aufgaben der eigentliche Beweggrund, ein neues (oder modifiziertes) System zu schaffen.
+Obwohl die Qualität der Architektur oft eher an der Erfüllung von nicht-funktionalen Anforderungen hängt, darf diese wesentliche Architekturtreiber nicht vernachlässigt werden.
+
+.Form
+Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
+In jedem Fall sollte der fachliche Kontext Verweise auf die entsprechenden Anforderungsdokumente enthalten.
+
+.Beispiele
+Kurzbeschreibung der wichtigsten:
+*  Geschäftsprozessen,
+*  funktionalen Anforderungen,
+*  nichtfunktionalen Anforderungen und andere Randbedingungen (die wesentlichen müssen bereits als Architekturziele formuliert sein oder tauchen als Randbedingungen auf) oder
+*  Mengengerüste.
+*  Hintergründe
+
+Hier können Sie aus den Anforderungsdokumenten wiederverwenden - halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Redundanzfreiheit gegeneinander ab.
+====
+
+=== Qualitätsziele
+(engl.: Quality Goals)
+
+[NOTE]
+====
+.Inhalt
+Die Hitparade (Top-3 bis Top-5) der Qualitätsziele für die Architektur und/oder Randbedingungen, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind.
+Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
+
+Als Qualitätsziele findet man in der Praxis oft:
+*  Verfügbarkeit (availability)
+*  Änderbarkeit (modifiability)
+*  Performanz (performance)
+*  Sicherheit (security)
+*  Testbarkeit (testability)
+*  Bedienbarkeit (usability)
+
+.Motivation
+Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
+
+.Form
+Einfache tabellarische Darstellung, geordnet nach Prioritäten
+
+.Hintergrund
+Beginnen Sie NIEMALS mit einer Architekturentwicklung, wenn diese Ziele nicht schriftlich festgelegt und von den maßgeblichen Stakeholdern akzeptiert sind.
+Wir haben oft genug Projekte ohne definierte Qualitätsziele durchlitten. Wir leiden nicht gerne, daher sind wir inzwischen ziemlich überzeugt, dass sich diese paar Stunden lohnen. Sollte es in Ihrem Projekt Wochen oder Monate dauern, dann denken Sie besser rechtzeitig über berufliche Veränderungen nach :-)
+PH & GS.
+
+.Quellen
+Im DIN/ISO 9126 Standard finden Sie eine umfangreiche Sammlung möglicher Qualitätsziele.
+Für alle, die es nicht so genau wissen wollen: ein lesbarer Auszug davon ist im Buch
+[[[HruschkaRupp]]] "Agile Software- Entwicklung für Embedded Real-Time Systems mit der UML" (Hruschka, Rupp, Carl- Hanser-Verlag, 2002
+auf Seite 9 zu finden.
+====
+
+=== Stakeholder
+
+[NOTE]
+====
+.Inhalt
+Eine Liste oder Tabelle der wichtigsten Personen oder Organisationen, die von der Architektur betroffen sind oder zur Gestaltung beitragen können.
+
+.Motivation
+Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen.
+
+.Form
+Einfache Tabelle mit Rollennamen, Personennamen, deren Kenntnisse, die für die Architektur relevant sind, deren Verfügbarkeit, etc.
+
+.Beispiele
+Die folgende Tabelle führt Stakeholder auf, die in Projekten relevant sein könn(t)en. Große Teile davon hat Uwe Friedrichsen zusammengetragen
+====
+
+[cols="1,2" options="header"]
+.Übersicht Stakeholder
+|===
+|Stakeholder |Beschreibung
+|Management |Linien-Manager, die an dem Projekt beteiligt sind oder es beeinflussen
+|Projekt-Steuerungskreis |Oberstes Lenkungsgremium des Projektes, ultimative Instanz für Projektentscheidungen
+|Projektmanager |Verantwortet das Projekt-Budget, Scope und Zeitplan
+|Auftraggeber |Oft auch „Sponsor“ genannt
+|Produktmanager |Verantwortlich für das gesamte Produkt, das aus Hardware & Software sowie sonstigen Leistungen bestehen kann.
+|Fachbereich |In der Regel die Personengruppe, die die fachlichen Anforderungen formuliert
+|Unternehmens- oder Enterprise-Architekt |u.a. zuständig für strategische Ausrichtung des Anwendungsportfolios und projekt-übergreifende Richtlinien und Standards
+|Architektur-Abteilung |Gruppe, die Unternehmens-Frameworks und Entwicklungsstandards pflegt
+|Methoden und Verfahren |Verantworten Entwicklungsprozesse und häufig auch die eingesetzte Tool.
+Hinweis: I.d.R. hat man nicht gleichzeitig Unternehmensarchitekten, eine Architektur-Abteilung und Methoden und Verfahren, sondern max. 2 davon
+|IT-Strategie |Verantwortlich für die strategische Ausrichtung der IT. Siehe Enterprise-Architekt.
+|QA |Zentrale Test-Abteilung. Verantwortlich für die Qualitätssicherung
+|Software-Architekt |Oft auch Projekt-Architekt genannt. Verantwortlich für die (technische) Architektur innerhalb eines Projekts
+|Designer |Zuständig für das Anwendungs-Design. Häufig keine eigene Rolle mehr
+|Entwickler |Software-Entwickler im Projekt. Übernimmt häufig auch Design- und Testaufgaben
+|Tester |Tester im Projekt. Kann aus QA sein, häufig aber unabhängig davon.
+|Konfigurations-& Build-Manager |Zuständig für die Pflege von Repository, Konfigurations-Management und Build. Wird in kleineren Projekten häufig vom Entwickler übernommen.
+|Release-Manager |Verantwortlich für die Erstellung und Auslieferung von Release-Ständen. Koordiniert Releases häufig Projekt- und System-übergreifend
+|Wartungs-Team |Zuständig für die Pflege und Wartung des Systems nach Auflösung des Projekt-Teams
+|Externe Dienstleister |Zusätzliche externe Firmen, die Teile der Anwendung entwickeln.
+|Hardware-Designer |Zuständig für das Hardware-Design (im Embedded-Bereich)
+|Rollout-Manager |Zuständig für die Inbetriebnahme eines Systems oder eines Releases. Rolle wird manchmal vom Release-Manager übernommen
+|Infrastruktur-Planung |Zuständig für Planung und Beschaffung der Infrastruktur (Server, Netzwerk, Router, Switches, Arbeitsplatzrechner, OS, …)
+|Sicherheits-beauftragter |Verantwortlich für die IT-Sicherheit im Unternehmen
+|Anwender |Nutzer der Anwendung
+|Fach-Administrator |Zuständig für die fachliche Administration der Anwendung. Hat häufig keinen Zugang zu technischen Administrations-Zugängen
+|System-Administrator |Administriert die Anwendung auf technischer Ebene. Hat Zugang zu technischen Administrations-Zugängen
+|Operator |Überwacht den Anwendungsbetrieb, führt Routine-Pflegejobs durch (z.B. Datensicherung, Aufräumen von temporären Verzeichnissen), behebt einfache Fehler im Anwendungsbetrieb
+|Hotline |Häufig auch unter 1st oder 2nd Level Support bekannt. Nehmen Fehlermeldungen auf, helfen in Standardsituationen
+|Betriebsrat |Vertritt die Interessen der Arbeitnehmer
+|Standard-Software-Lieferant |Lieferant von im System eingesetzter Standard-Software. Unterstützen häufig auch bei Integration und Customizing
+|Verbundene Projekte |z.B. Nachbarprojekte mit gemeinsamen Schnittstellen, übergreifende Schnittstellenprojekte (z.B. EAI/ESB-Projekte)
+|Aufsichtsbehörden, Gesetzgeber, Normierungsgremien |Sind meistens nicht direkt mit dem Projekt verbunden, beeinflussen jedoch durch Ihre Vorgaben die Arbeit bzw. die Lösungsansätze.
+|Weitere externe Stakeholder|	z.B. Verbände, Vereine, Mitbewerber, konkurrierende Geschäftsbereiche, Presse. Sind häufig nicht direkt vom Projekt betroffen, beeinflussen Entscheidungen aber dennoch
+|===
+
+Die folgende Tabelle zeigt Ihre konkreten Stakeholder für das System sowie deren Interessen oder Beteiligung.
+
+[cols="1,2" options="header"]
+.Stakeholder des Systems
+|===
+|Rolle |Beschreibung |Ziel / Intention |Kontakt |Bemerkungen
+|===

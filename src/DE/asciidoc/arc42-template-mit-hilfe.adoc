@@ -1,0 +1,27 @@
+// header file for arc42-template
+//
+// Includes all the rest
+// ====================================
+
+
+= image:arc42-logo.png[] Template
+
+
+:toc2:
+
+:imagesdir: ./images
+:homepage: http://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+//:snippets: ./snippets/
+
+include::snippets/about.adoc[]
+
+
+// numbering from here on
+:numbered:
+
+include::snippets/kap01-mit-hilfe.adoc[]
+
+include::snippets/kap02-mit-hilfe.adoc[]
