@@ -25,3 +25,7 @@ include::snippets/about.adoc[]
 include::snippets/kap01-mit-hilfe.adoc[]
 
 include::snippets/kap02-mit-hilfe.adoc[]
+
+include::snippets/kap03-mit-hilfe.adoc[]
+
+include::snippets/kap04-mit-hilfe.adoc[]
