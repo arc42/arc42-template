@@ -24,6 +24,25 @@ Wir freuen uns, wenn Sie Fehler/Unklarheiten in einem Fork korrigieren
 und uns einen _pull request_ schicken!
 
 === Mitwirkende
+Zur Zeit aktiv:
+
+* Gernot Starke
+* Stefan Zörner
+* Markus Schärtel
+* Jürgen Krey
+* Ralph D. Müller
+* Peter Hruschka
+
+==== Frühere Mitwirkende
+* Manfred Ferken
+* Prof. Arne Koschel
+* Axel Scheithauer
+* Karl Eilebrecht
+* Phillip Ghadir
+* Carsten Klein
+* Matthias Bohlen
+* Anne Aloysius
 
 
+===
 * arc42 approved practitioner

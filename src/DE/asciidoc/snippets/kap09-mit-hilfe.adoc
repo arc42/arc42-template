@@ -53,6 +53,11 @@ Welche Annahmen können wie vorab überprüft werden?
 Mit welchen Risiken müssen Sie rechnen?
 ====
 
+==== Entscheidungskriterien
+Nach welchen Kriterien treffen Sie (oder die jeweiligen Entscheider) diese Entscheidung?
+Denken Sie an technische, organisatorische, juristische oder kommerzielle Kriterien,
+befragen Sie dazu die relevanten <<Stakeholder>>
+
 ==== Betrachtete Alternativen
 
 [NOTE]
