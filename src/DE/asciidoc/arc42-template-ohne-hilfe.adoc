@@ -7,20 +7,20 @@
 
 = image:arc42-logo.png[] Template
 
+// configure DE settings for asciidoc
+include::adoc.config[]
 
 :toc2:
 
 :imagesdir: ./images
-:homepage: http://arc42.org
 
-:keywords: software-architecture, documentation, template, arc42
-
-include::snippets/about.adoc[]
+include::snippets/about-arc42.adoc[]
 
 
 // numbering from here on
 :numbered:
 
+// 1. Anforderungen und Ziele
 include::snippets/kap01-ohne-hilfe.adoc[]
 
 // 2. Randbedingungen
@@ -62,3 +62,6 @@ include::snippets/kap12-ohne-hilfe.adoc[]
 
 // Contributing and Contributors
 include::snippets/appendix-contributing.adoc[]
+
+// Approved Practitioner for arc42
+include::snippets/appendix-practitioner.adoc[]

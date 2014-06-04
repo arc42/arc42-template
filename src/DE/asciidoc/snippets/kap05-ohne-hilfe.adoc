@@ -1,62 +1,8 @@
 
 == Bausteinsicht
 
-[NOTE]
-====
-.Inhalt
-Statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Teilsysteme, Klassen, Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen, Datenstrukturen...) sowie deren Beziehungen.
 
-.Motivation
-Dies ist die wichtigste Sicht, die in jeder Architekturdokumentation vorhanden sein muss. Wenn Sie es mit dem Hausbau vergleichen ist das der Grundrissplan.
-
-.Form
-Die Bausteinsicht ist eine hierarchische Sammlung von Black Box- und White Box- Beschreibungen (siehe Abbildung unten):
-
-image:images/bausteinSichten.png["Baustein Sichten"]
-
-*Ebene 1* ist die White Box-Beschreibung des Gesamtsystems (System under Development / SUD) mit den Black Box- Beschreibungen der Bausteine des Gesamtsystems
-
-*Ebene 2* zoomt dann in die Bausteine der Ebene 1 hinein und ist somit die Sammlung aller White Box- Beschreibungen der Bausteine der Ebene 1 zusammen mit den Black Box-Beschreibungen der Bausteine der Ebene 2.
-
-*Ebene 3* zoomt in die alle Bausteine der Ebene 2 hinein, usw.
-====
-
-_Hier kommt die Bausteinsicht..._
-
-[NOTE]
-====
-.White Box-Template
-Enthält mehrere Bausteine, zu denen Sie jeweils eine Black-Box Beschreibung erstellen.
-
-.Black Box-Template
-Für jeden Baustein aus dem White-Box-Template sollten Sie folgende Angaben machen: (Kopieren Sie diese Punkte in die folgenden Unterkapitel)
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation: Autor, Version, Datum, Änderungshistorie
-====
-
-=== Ebene 1
-
-====
-An dieser Stelle beschreiben Sie die White Box-Sicht der Ebene 1 gemäß dem
-White Box-Template. Die Struktur ist im Folgenden bereits vorgegeben.
-
-Das Überblicksbild zeigt das Innenleben des Gesamtsystems in Form der Bausteine 1 - n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-
-Sinnvoll sind hier auch Beschreibungen der wichtigsten Begründungen, die
-zu dieser Struktur führen, insbesondere die Beschreibung der Abhängigkeiten (Beziehungen) zwischen den Bausteinen dieser Ebene.
-
-Evtl. verweisen Sie auch auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde
-====
-
-Die folgende Abbildung zeigt die Hauptbausteine unseres Systems und deren Abhängigkeiten. +
-_<hier Überblicksdiagramm einfügen>_
-
-Erläuterung zu Struktur und Abhängigkeiten der Ebene 1:
+=== Whitebox (System) - Ebene 1
 
 ==== Bausteinname 1 (Black Box-Beschreibung)
 
@@ -90,27 +36,12 @@ _...was sonst noch zu den Bausteinen zu beschreiben ist._
 
 === Ebene 2
 
-====
-An dieser Stelle beschreiben Sie die White Box Sichten
-aller Bausteine der Ebene 1 als Folge von White-Box-Templates.
-Die Struktur ist im Folgenden bereits vorgegeben.
-Die Struktur ist im folgenden für 3 Bausteine vorgegeben.
-Bitte kopieren Sie diese Struktur so oft, wie benötigt.
-====
-
-==== Bausteinname 1 (White Box Beschreibung)
-
-====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 1 - n, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
-====
+==== Baustein 1 (White Box Beschreibung)
 
 _<Hier Überblicksdiagramm für Innenleben von Baustein 1 einfügen>_
 
 ==== Bausteinname 1.1 (Black Box Beschreibung)
 
-====
 Struktur gemäß Black Box Template
 
 *  Zweck / Verantwortlichkeit:
@@ -121,11 +52,9 @@ Struktur gemäß Black Box Template
 *  Ablageort / Datei:
 *  Sonstige Verwaltungsinformation:
 *  Offene Punkte:
-====
 
 ==== Bausteinname 1.2 (Black Box Beschreibung)
 
-====
 Struktur gemäß Black Box Template:
 
 *  Zweck / Verantwortlichkeit:
@@ -136,24 +65,6 @@ Struktur gemäß Black Box Template:
 *  Ablageort / Datei:
 *  Sonstige Verwaltungsinformation:
 *  Offene Punkte:
-====
-
-...
-
-==== Bausteinname 1._n_ (Black Box Beschreibung)
-
-====
-Struktur gemäß Black Box Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
 
 ==== Beschreibung der Beziehungen
 
@@ -161,17 +72,10 @@ Struktur gemäß Black Box Template:
 
 ==== Bausteinname 2 (White Box Beschreibung)
 
-====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 2.1 - 2._n_, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
-====
-
 _<Hier Überblicksdiagramm für Innenleben von Baustein 2 einfügen>_
 
 ==== Bausteinname 2.1 (Black Box Beschreibung)
 
-====
 Struktur gemäß Black Box Template
 
 *  Zweck / Verantwortlichkeit:
@@ -182,11 +86,9 @@ Struktur gemäß Black Box Template
 *  Ablageort / Datei:
 *  Sonstige Verwaltungsinformation:
 *  Offene Punkte:
-====
 
 ==== Bausteinname 2.2 (Black Box Beschreibung)
 
-====
 Struktur gemäß Black Box Template:
 
 *  Zweck / Verantwortlichkeit:
@@ -197,97 +99,9 @@ Struktur gemäß Black Box Template:
 *  Ablageort / Datei:
 *  Sonstige Verwaltungsinformation:
 *  Offene Punkte:
-====
-
-...
-
-==== Bausteinname 2._n_ (Black Box Beschreibung)
-
-====
-Struktur gemäß Black Box Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
 
 ==== Beschreibung der Beziehungen
 
 ==== Offene Punke
 
-==== Bausteinname 3 (Whitebox-Beschreibung)
-
-====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 3.1 - 3._n_, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
-====
-
-_<Hier Überblicksdiagramm für Innenleben von Baustein 3 einfügen>_
-
-==== Bausteinname 3.1 (Black Box Beschreibung)
-
-====
-Struktur gemäß Black Box Template
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
-
-==== Bausteinname 3.2 (Black Box Beschreibung)
-
-====
-Struktur gemäß Black Box Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
-
-...
-
-==== Bausteinname 3._n_ (Black Box Beschreibung)
-
-====
-Struktur gemäß Black Box Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
-
-==== Beschreibung der Beziehungen
-
-==== Offene Punke
-
-
-=== Ebene 3
-
-====
-An dieser Stelle beschreiben Sie die White Box Sichten aller Bausteine der Ebene 3
-als Folge von White Box Templates. Die Struktur ist identisch mit der Struktur auf Ebene 2.
-Kopieren Sie die entsprechenden Gliederungspunkte hierher.
-Bei tieferen Gliederungen der Architektur kopieren Sie
-bitte das ganze Kapitel für die nächsten Ebenen.
-====
+=== (Bei Bedarf) Ebene 3

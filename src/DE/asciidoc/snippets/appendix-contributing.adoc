@@ -4,7 +4,7 @@
 [appendix]
 
 [[contributions]]
-== Mitwirken + Mitwirkende
+== Danksagung + Mitwirkung
 
 
 arc42 stammt ursprünglich von
@@ -24,6 +24,8 @@ Wir freuen uns, wenn Sie Fehler/Unklarheiten in einem Fork korrigieren
 und uns einen _pull request_ schicken!
 
 === Mitwirkende
+Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
+für Ihre Hilfe. Den vielen anonym
 Zur Zeit aktiv:
 
 * Gernot Starke
@@ -42,7 +44,3 @@ Zur Zeit aktiv:
 * Carsten Klein
 * Matthias Bohlen
 * Anne Aloysius
-
-
-===
-* arc42 approved practitioner

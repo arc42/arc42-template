@@ -1,5 +1,4 @@
 :numbered!:
-:linkattrs:
 
 [appendix]
 == Beispiele

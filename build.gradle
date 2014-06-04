@@ -36,13 +36,13 @@ asciidoctor {
 
     options = [
         attributes: [
-            toc                 : 'left',
-            doctype             : 'book',
-            //icons               : 'font',
-            sectlink            : true,
-            sectanchors         : true,
-            numbered            : true,
-            imagesdir           : '../images',
+            toc         : 'left',
+            doctype     : 'book',
+            icons       : 'font',
+            sectlink    : true,
+            sectanchors : true,
+            numbered    : true,
+            imagesdir   : '../images',
         ]
     ]
 }
