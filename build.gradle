@@ -1,0 +1,73 @@
+// gradle build script for the arc42 template
+//
+// free software - without guarantee, use at your own risk
+// ========================================================
+
+
+buildscript {
+    // these are the BUILDSCRIPT deps - required to execute
+    // build targets and -operations
+    repositories {
+        maven {
+            name 'Bintray Asciidoctor repo'
+            url  'http://dl.bintray.com/content/aalmiray/asciidoctor'
+        }
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath( 'org.asciidoctor:asciidoctor-gradle-plugin:0.7.0' )
+
+    }
+}
+
+
+
+// =========== asciidoctor stuff ===============
+apply plugin: 'asciidoctor'
+
+asciidoctor {
+    outputDir = new File("$buildDir/docs")
+    baseDir = project.file('src')
+    sourceDir = project.file('src/DE/asciidoc')
+    sourceDocumentName = project.file('src/DE/asciidoc/arc42_template.adoc')
+    options = [
+        attributes: [
+            toc                 : 'left',
+            //doctype             : 'book',
+            icons               : 'font',
+            sectlink            : true,
+            sectanchors         : true,
+            numbered            : true,
+            imagesdir           : '../images',
+        ]
+    ]
+}
+
+
+
+defaultTasks 'arc42'
+
+task copyImages(
+    type: Copy,
+    description: 'copy images into build output folder so that references can be resolved '
+) {
+    from 'src/DE/images'
+    into './build/docs/images'
+}
+
+
+task copyResources(
+    type: Copy,
+    description: 'copy (downloadable) resources and artifacts to resource folder'
+) {
+    from 'src/resources'
+    into './build/docs/resources'
+}
+
+
+task arc42(
+    dependsOn: [copyResources, copyImages, asciidoctor],
+    description: 'collects all required tasks for creating arc42 documentation'
+) << { }
