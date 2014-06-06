@@ -1,11 +1,10 @@
 
 == Glossar
 
-[cols="1,2" options="header"]
+[options="header"]
 .Glossar
 |===
-|Begriff
-|Definition
+|Begriff | Definition
 
 |
 |

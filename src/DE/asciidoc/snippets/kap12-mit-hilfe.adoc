@@ -19,10 +19,10 @@ einfache zweispaltige Tabelle mit <Begriff> und <Definition>
 |Begriff
 |Definition
 
-|<Begriff$$_$$_1_>
-|Beschreibung$$_$$_1_
+|<Begriff-1
+|Beschreibung-2
 
 
-|<Begriff$$_$$_2_>
-|Beschreibung$$_$$_2_
+|<Begriff-2
+|Beschreibung-2
 |===
