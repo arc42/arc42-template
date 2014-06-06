@@ -2,97 +2,91 @@
 == Bausteinsicht
 
 
-=== Whitebox (System) - Ebene 1
+=== Whitebox Gesamtsystem - Ebene 1
 
 include:template-whitebox.adoc[]
 
-==== Bausteinname 1 (Black Box-Beschreibung)
+==== _Baustein 1_ (Blackbox)
 
 include:template-blackbox-short.adoc[]
 
 
-==== Bausteinname 2 (Black Box-Beschreibung)
+==== _Baustein 2_ (Blackbox)
 
-_<Black Box Template des Bausteins hier einfügen>_
+include::template-blackbox-short.adoc[]
 
-...
 
-==== Bausteinname n (Black Box-Beschreibung)
+==== _Baustein n_ (Blackbox)
 
-_<Black Box Template des Bausteins hier einfügen>_
+include::template-blackbox-short.adoc[]
 
-==== Offene Punkte
-
-_...was sonst noch zu den Bausteinen zu beschreiben ist._
 
 === Ebene 2
 
-==== Baustein 1 (White Box Beschreibung)
+==== _Baustein 1_ (Whitebox)
 
-_<Hier Überblicksdiagramm für Innenleben von Baustein 1 einfügen>_
+include::template-whitebox.adoc[]
 
-==== Bausteinname 1.1 (Black Box Beschreibung)
+===== _Baustein 1.1_ (Blackbox)
 
-Struktur gemäß Black Box Template
+include::template-blackbox-short.adoc[]
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
 
-==== Bausteinname 1.2 (Black Box Beschreibung)
+===== _Baustein 1.2_ (Blackbox)
 
-Struktur gemäß Black Box Template:
+include::template-blackbox-short.adoc[]
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
 
-==== Beschreibung der Beziehungen
+===== _Baustein 1._n_ (Blackbox)
 
-==== Offene Punkte
+include::template-blackbox-short.adoc[]
 
-==== Bausteinname 2 (White Box Beschreibung)
 
-_<Hier Überblicksdiagramm für Innenleben von Baustein 2 einfügen>_
+==== _Baustein 2_ (Whitebox)
 
-==== Bausteinname 2.1 (Black Box Beschreibung)
+include::template-whitebox.adoc[]
 
-Struktur gemäß Black Box Template
+===== _Baustein 2.1_ (Blackbox)
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
+include::template-blackbox-short.adoc[]
 
-==== Bausteinname 2.2 (Black Box Beschreibung)
+===== _Baustein 2.2_ (Blackbox)
 
-Struktur gemäß Black Box Template:
+include::template-blackbox-short.adoc[]
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
+===== _Baustein 2._n_ (Blackbox)
 
-==== Beschreibung der Beziehungen
+include::template-blackbox-short.adoc[]
 
-==== Offene Punkte
 
-=== (Bei Bedarf) Ebene 3
+==== _Bausteinname 3_ (Whitebox)
+
+_<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
+
+
+===== _Baustein 3.1_ (Blackbox)
+
+include::template-blackbox-short.adoc[]
+
+===== _Baustein 3.2_ (Blackbox)
+
+include::template-blackbox-short.adoc[]
+
+===== _Baustein 3.n_ (Blackbox)
+
+include::template-blackbox-short.adoc[]
+
+
+=== Ebene 3
+
+==== _Baustein 1.1_ (Whitebox)
+
+include::template-whitebox.adoc[]
+
+===== _Baustein 1.1.1_ (Blackbox)
+
+include::template-blackbox-short.adoc[]
+
+===== _Baustein 1.1.2_ (Blackbox)
+
+include::template-blackbox-short.adoc[]

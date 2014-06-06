@@ -81,13 +81,13 @@ include::template-blackbox-long.adoc[]
 
 (In den folgenden Abschnitten finden Sie nur noch die Kurzfassung des Blackbox-Template)
 
-==== Bausteinname 2 (Blackbox-Beschreibung)
+==== _Baustein 2_ (Blackbox)
 
 
 include::template-blackbox-short.adoc[]
 
 
-==== Bausteinname n (Blackbox-Beschreibung)
+==== _Baustein n_ (Blackbox)
 
 _<Blackbox Template des Bausteins hier einfügen>_
 
@@ -99,7 +99,7 @@ An dieser Stelle können Sie den inneren Aufbau
 (einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
 ====
 
-==== Bausteinname 1 (Whitebox Beschreibung)
+==== _Baustein 1_ (Whitebox)
 
 ====
 * ...zeigt das Innenleben von _Baustein 1_ in Diagrammform
@@ -110,28 +110,22 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 
 include::template-whitebox.adoc[]
 
-===== Bausteinname 1.1 (Blackbox Beschreibung)
-
-Struktur gemäß Blackbox Template
-
-include::template-blackbox-short.adoc[]
-
-===== Bausteinname 1.2 (Blackbox Beschreibung)
-
-Struktur gemäß Blackbox Template:
+===== _Baustein 1.1_ (Blackbox)
 
 include::template-blackbox-short.adoc[]
 
 
-===== Bausteinname 1._n_ (Blackbox Beschreibung)
-
-Struktur gemäß Blackbox Template:
+===== _Baustein 1.2_ (Blackbox)
 
 include::template-blackbox-short.adoc[]
 
 
+===== _Baustein 1._n_ (Blackbox)
 
-==== Bausteinname 2 (Whitebox Beschreibung)
+include::template-blackbox-short.adoc[]
+
+
+==== _Baustein 2_ (Whitebox)
 
 ====
 * ...zeigt das Innenleben von _Baustein 2_ in Diagrammform
@@ -144,27 +138,20 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 include::template-whitebox.adoc[]
 
 
-===== Bausteinname 2.1 (Blackbox Beschreibung)
+===== _Baustein 2.1_ (Blackbox)
+
+include::template-blackbox-short.adoc[]
+
+===== _Baustein 2.2_ (Blackbox)
 
 Struktur gemäß Blackbox Template
 
-include::template-blackbox-short.adoc[]
-
-===== Bausteinname 2.2 (Blackbox Beschreibung)
-
-Struktur gemäß Blackbox Template:
-
-include::template-blackbox-short.adoc[]
-
-
-===== Bausteinname 2._n_ (Blackbox Beschreibung)
+===== _Baustein 2._n_ (Blackbox)
 
 Struktur gemäß Blackbox Template
 
-include::template-blackbox-short.adoc[]
 
-
-==== Bausteinname 3 (Whitebox-Beschreibung)
+==== _Baustein 3_ (Whitebox)
 
 ====
 * ...zeigt das Innenleben von _Baustein 3_ in Diagrammform
@@ -175,19 +162,15 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 
 _<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
 
-include::template-whitebox.adoc[]
-
-===== Bausteinname 3.1 (Blackbox Beschreibung)
+===== _Baustein 3.1_ (Blackbox)
 
 Struktur gemäß Blackbox Template
 
-include::template-blackbox-short.adoc[]
-
-===== Bausteinname 3.2 (Blackbox Beschreibung)
+===== _Baustein 3.2_ (Blackbox)
 
 ...
 
-===== Bausteinname 3._n_ (Blackbox Beschreibung)
+===== _Baustein 3.n_ (Blackbox)
 
 ...
 
@@ -209,7 +192,7 @@ Sie weglassen.
 ====
 
 
-==== Bausteinname 1.1 (Whitebox Beschreibung)
+==== _Baustein 1.1_ (Whitebox)
 
 ====
 * ...zeigt das Innenleben von _Baustein 1.1_ in Diagrammform
@@ -220,14 +203,10 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 
 include::template-whitebox.adoc[]
 
-===== Bausteinname 1.1.1 (Blackbox Beschreibung)
+===== _Baustein 1.1.1_ (Blackbox)
 
 Struktur gemäß Blackbox Template
 
-include::template-blackbox-short.adoc[]
+===== _Baustein 1.1.2_ (Blackbox)
 
-===== Bausteinname 1.1.2 (Blackbox Beschreibung)
-
-Struktur gemäß Blackbox Template:
-
-include::template-blackbox-short.adoc[]
+Struktur gemäß Blackbox Template
