@@ -4,11 +4,11 @@
 
 === Whitebox Gesamtsystem - Ebene 1
 
-include:template-whitebox.adoc[]
+include::template-whitebox.adoc[]
 
 ==== _Baustein 1_ (Blackbox)
 
-include:template-blackbox-short.adoc[]
+include::template-blackbox-short.adoc[]
 
 
 ==== _Baustein 2_ (Blackbox)
