@@ -10,7 +10,7 @@ und deren Abhängigkeiten.
 _<hier Überblicksdiagramm einfügen>_
 
 Begründung::
-_Begründen oder eläutern Sie die Struktur_
+_Begründen oder erläutern Sie die Struktur_
 
 
 Enthaltene Bausteine::
