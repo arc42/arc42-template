@@ -68,7 +68,7 @@ Struktur gemäß Black Box Template:
 
 ==== Beschreibung der Beziehungen
 
-==== Offene Punke
+==== Offene Punkte
 
 ==== Bausteinname 2 (White Box Beschreibung)
 
@@ -102,6 +102,6 @@ Struktur gemäß Black Box Template:
 
 ==== Beschreibung der Beziehungen
 
-==== Offene Punke
+==== Offene Punkte
 
 === (Bei Bedarf) Ebene 3

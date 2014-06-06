@@ -164,7 +164,7 @@ Struktur gemäß Blackbox Template:
 
 ==== Beschreibung der Beziehungen
 
-==== Offene Punke
+==== Offene Punkte
 
 ==== Bausteinname 2 (Whitebox Beschreibung)
 
@@ -225,7 +225,7 @@ Struktur gemäß Blackbox Template:
 
 ==== Beschreibung der Beziehungen
 
-==== Offene Punke
+==== Offene Punkte
 
 ==== Bausteinname 3 (Whitebox-Beschreibung)
 
@@ -286,7 +286,7 @@ Struktur gemäß Blackbox Template:
 
 ==== Beschreibung der Beziehungen
 
-==== Offene Punke
+==== Offene Punkte
 
 
 === Ebene 3

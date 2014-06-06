@@ -23,10 +23,12 @@ und uns einen _pull request_ schicken!
 
 === Mitwirkende
 Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
-für Ihre Hilfe, sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und
-Anwendern.
+sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und
+Anwendern für Ihre Hilfe und Unterstützung.
 
 Zur Zeit arbeiten aktiv mit:
+
+==== Zur Zeit aktiv
 
 * Gernot Starke
 * Stefan Zörner
