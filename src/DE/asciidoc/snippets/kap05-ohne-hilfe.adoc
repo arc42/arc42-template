@@ -4,21 +4,12 @@
 
 === Whitebox (System) - Ebene 1
 
+include:template-whitebox.adoc[]
+
 ==== Bausteinname 1 (Black Box-Beschreibung)
 
-====
-*  Struktur gemäß Black-Box- Template:
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include:template-blackbox-short.adoc[]
 
-_<Black Box Template des Bausteins hier einfügen>_
 
 ==== Bausteinname 2 (Black Box-Beschreibung)
 

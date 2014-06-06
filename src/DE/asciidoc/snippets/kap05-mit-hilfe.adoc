@@ -44,33 +44,30 @@ machen: (Kopieren Sie diese Punkte in die folgenden Unterkapitel)
 
 include::template-blackbox-short.adoc[]
 
-.Blackbox-Template (Langfassung)
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation: Autor, Version, Datum, Änderungshistorie
+(eine ausführlichere Fassung des Blackbox-Templates finden Sie weiter unten.)
 ====
 
-=== Ebene 1
+
+=== Ebene 1 - Gesamtsystem
 
 ====
 An dieser Stelle beschreiben Sie die Whitebox-Sicht der Ebene 1 gemäß dem
 Whitebox-Template.
 
-Das Überblicksbild zeigt das Innenleben des Gesamtsystems in Form der Bausteine 1 - n,
+Das Überblicksbild zeigt das Innenleben des Gesamtsystems
+mit den darin enthaltenen Bausteinen 1 .. n,
 sowie deren Zusammenhänge und Abhängigkeiten.
 
-Begründen Sie die Struktur: Warum gibt es genau diese Bausteine mit genau
+Begründen Sie die Struktur: Warum gibt es diese Bausteine mit
 diesen Abhängigkeiten/Schnittstellen.
 
-Evtl. verweisen Sie auch auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde
+Erklären Sie ggfs. auch verworfene Alternativen,
+mitsamt Begründung, warum sie verworfen wurden.
+
 ====
 
-Die folgende Abbildung zeigt die Hauptbausteine unseres Systems und deren Abhängigkeiten. +
-_<hier Überblicksdiagramm einfügen>_
+include::template-whitebox.adoc[]
 
-Erläuterung zu Struktur und Abhängigkeiten der Ebene 1:
 
 ==== _Baustein 1_ (Blackbox)
 
@@ -82,7 +79,7 @@ include::template-blackbox-short.adoc[]
 
 include::template-blackbox-long.adoc[]
 
-(nachfolgend finden Sie nur noch die Kurzfassung des Blackbox-Template)
+(In den folgenden Abschnitten finden Sie nur noch die Kurzfassung des Blackbox-Template)
 
 ==== Bausteinname 2 (Blackbox-Beschreibung)
 
@@ -98,203 +95,139 @@ _<Blackbox Template des Bausteins hier einfügen>_
 === Ebene 2
 
 ====
-An dieser Stelle beschreiben Sie die Whitebox Sichten
-aller Bausteine der Ebene 1 als Folge von White-Box-Templates.
-Die Struktur ist im Folgenden bereits vorgegeben.
-Die Struktur ist im folgenden für 3 Bausteine vorgegeben.
-Bitte kopieren Sie diese Struktur so oft, wie benötigt.
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
 ====
 
 ==== Bausteinname 1 (Whitebox Beschreibung)
 
 ====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 1 - n, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
+* ...zeigt das Innenleben von _Baustein 1_ in Diagrammform
+mit den lokalen Bausteinen 1.1 - 1.n,
+sowie deren Zusammenhänge und Abhängigkeiten.
+* begründet diese Struktur
 ====
 
-_<Hier Überblicksdiagramm für Innenleben von Baustein 1 einfügen>_
+include::template-whitebox.adoc[]
 
-==== Bausteinname 1.1 (Blackbox Beschreibung)
+===== Bausteinname 1.1 (Blackbox Beschreibung)
 
-====
 Struktur gemäß Blackbox Template
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-==== Bausteinname 1.2 (Blackbox Beschreibung)
+===== Bausteinname 1.2 (Blackbox Beschreibung)
 
-====
 Struktur gemäß Blackbox Template:
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-...
 
-==== Bausteinname 1._n_ (Blackbox Beschreibung)
+===== Bausteinname 1._n_ (Blackbox Beschreibung)
 
-====
 Struktur gemäß Blackbox Template:
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-==== Beschreibung der Beziehungen
 
-==== Offene Punkte
 
 ==== Bausteinname 2 (Whitebox Beschreibung)
 
 ====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 2.1 - 2._n_, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
+* ...zeigt das Innenleben von _Baustein 2_ in Diagrammform
+mit den lokalen Bausteinen 2.1 - 2.n,
+sowie deren Zusammenhänge und Abhängigkeiten.
+* begründet diese Struktur
 ====
 
-_<Hier Überblicksdiagramm für Innenleben von Baustein 2 einfügen>_
 
-==== Bausteinname 2.1 (Blackbox Beschreibung)
+include::template-whitebox.adoc[]
 
-====
+
+===== Bausteinname 2.1 (Blackbox Beschreibung)
+
 Struktur gemäß Blackbox Template
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-==== Bausteinname 2.2 (Blackbox Beschreibung)
+===== Bausteinname 2.2 (Blackbox Beschreibung)
 
-====
 Struktur gemäß Blackbox Template:
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-...
 
-==== Bausteinname 2._n_ (Blackbox Beschreibung)
+===== Bausteinname 2._n_ (Blackbox Beschreibung)
 
-====
-Struktur gemäß Blackbox Template:
+Struktur gemäß Blackbox Template
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-==== Beschreibung der Beziehungen
-
-==== Offene Punkte
 
 ==== Bausteinname 3 (Whitebox-Beschreibung)
 
 ====
-* ...zeigt das Innenleben des Bausteines in Diagrammform mit den lokalen Bausteinen 3.1 - 3._n_, sowie deren Zusammenhänge und Abhängigkeiten.
-* beschreibt wichtige Begründungen, die zu dieser Struktur führen
-* verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurde.
+* ...zeigt das Innenleben von _Baustein 3_ in Diagrammform
+mit den lokalen Bausteinen 3.1 - 3.n,
+sowie deren Zusammenhänge und Abhängigkeiten.
+* begründet diese Struktur
 ====
 
-_<Hier Überblicksdiagramm für Innenleben von Baustein 3 einfügen>_
+_<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
 
-==== Bausteinname 3.1 (Blackbox Beschreibung)
+include::template-whitebox.adoc[]
 
-====
+===== Bausteinname 3.1 (Blackbox Beschreibung)
+
 Struktur gemäß Blackbox Template
 
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+include::template-blackbox-short.adoc[]
 
-==== Bausteinname 3.2 (Blackbox Beschreibung)
-
-====
-Struktur gemäß Blackbox Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
+===== Bausteinname 3.2 (Blackbox Beschreibung)
 
 ...
 
-==== Bausteinname 3._n_ (Blackbox Beschreibung)
+===== Bausteinname 3._n_ (Blackbox Beschreibung)
 
-====
-Struktur gemäß Blackbox Template:
-
-*  Zweck / Verantwortlichkeit:
-*  Schnittstelle(n):
-*  Erfüllte Anforderungen:
-*  Variabilität:
-*  Leistungsmerkmale:
-*  Ablageort / Datei:
-*  Sonstige Verwaltungsinformation:
-*  Offene Punkte:
-====
-
-==== Beschreibung der Beziehungen
-
-==== Offene Punkte
+...
 
 
 === Ebene 3
 
 ====
-An dieser Stelle beschreiben Sie die Whitebox Sichten aller Bausteine der Ebene 3
-als Folge von Whitebox Templates. Die Struktur ist identisch mit der Struktur auf Ebene 2.
-Kopieren Sie die entsprechenden Gliederungspunkte hierher.
-Bei tieferen Gliederungen der Architektur kopieren Sie
-bitte das ganze Kapitel für die nächsten Ebenen.
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
 ====
+
+[NOTE]
+====
+Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie
+selbst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
+Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders
+volatile Bausteine. Normale, einfache oder standardisierte Teile sollten
+Sie weglassen.
+====
+
+
+==== Bausteinname 1.1 (Whitebox Beschreibung)
+
+====
+* ...zeigt das Innenleben von _Baustein 1.1_ in Diagrammform
+mit den lokalen Bausteinen 1.1.1 - 1.1.n,
+sowie deren Zusammenhänge und Abhängigkeiten.
+* begründet diese Struktur
+====
+
+include::template-whitebox.adoc[]
+
+===== Bausteinname 1.1.1 (Blackbox Beschreibung)
+
+Struktur gemäß Blackbox Template
+
+include::template-blackbox-short.adoc[]
+
+===== Bausteinname 1.1.2 (Blackbox Beschreibung)
+
+Struktur gemäß Blackbox Template:
+
+include::template-blackbox-short.adoc[]
