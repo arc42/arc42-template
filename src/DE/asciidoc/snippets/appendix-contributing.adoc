@@ -26,7 +26,8 @@ und uns einen _pull request_ schicken!
 === Mitwirkende
 Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
 für Ihre Hilfe. Den vielen anonym
-Zur Zeit aktiv:
+
+==== Zur Zeit aktiv
 
 * Gernot Starke
 * Stefan Zörner
