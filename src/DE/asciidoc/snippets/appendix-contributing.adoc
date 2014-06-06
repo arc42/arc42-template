@@ -1,8 +1,6 @@
 :numbered!:
-:linkattrs:
 
 [appendix]
-
 [[contributions]]
 == Danksagung + Mitwirkung
 
