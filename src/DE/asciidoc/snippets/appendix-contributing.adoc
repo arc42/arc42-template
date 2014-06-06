@@ -23,8 +23,10 @@ und uns einen _pull request_ schicken!
 
 === Mitwirkende
 Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
-für Ihre Hilfe. Den vielen anonym
-Zur Zeit aktiv:
+für Ihre Hilfe, sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und
+Anwendern.
+
+Zur Zeit arbeiten aktiv mit:
 
 * Gernot Starke
 * Stefan Zörner
@@ -33,12 +35,15 @@ Zur Zeit aktiv:
 * Ralph D. Müller
 * Peter Hruschka
 
+
 ==== Frühere Mitwirkende
-* Manfred Ferken
-* Prof. Arne Koschel
-* Axel Scheithauer
+(in alfabetischer Reihenfolge)
+
+* Anne Aloysius
+* Matthias Bohlen
 * Karl Eilebrecht
+* Manfred Ferken
 * Phillip Ghadir
 * Carsten Klein
-* Matthias Bohlen
-* Anne Aloysius
+* Prof. Arne Koschel
+* Axel Scheithauer
