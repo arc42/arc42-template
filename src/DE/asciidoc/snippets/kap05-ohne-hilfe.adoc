@@ -2,7 +2,7 @@
 == Bausteinsicht
 
 
-=== Whitebox Gesamtsystem - Ebene 1
+=== Whitebox Gesamtsystem 
 
 include::template-whitebox.adoc[]
 
@@ -37,7 +37,7 @@ include::template-blackbox-short.adoc[]
 include::template-blackbox-short.adoc[]
 
 
-===== _Baustein 1._n_ (Blackbox)
+===== _Baustein 1.n_ (Blackbox)
 
 include::template-blackbox-short.adoc[]
 
@@ -54,12 +54,12 @@ include::template-blackbox-short.adoc[]
 
 include::template-blackbox-short.adoc[]
 
-===== _Baustein 2._n_ (Blackbox)
+===== _Baustein 2.n_ (Blackbox)
 
 include::template-blackbox-short.adoc[]
 
 
-==== _Bausteinname 3_ (Whitebox)
+==== _Baustein 3_ (Whitebox)
 
 _<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
 

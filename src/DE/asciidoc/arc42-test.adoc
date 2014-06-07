@@ -1,0 +1,105 @@
+
+= arc42 Template Test
+Gernot Starke <info@aim42.org>
+v1.0, 2014-02-05
+
+
+[.lead]
+Here we test several asciidoctor features - in the small...
+
+:toc2:
+
+:toc-title: Inhaltsverzeichnis
+
+
+
+== Heading 1
+
+text
+
+include::snippets/kap05-ohne-hilfe.adoc[]
+
+== Heading 2
+
+== Heading 3
+
+=== subheading 3.1
+text
+
+
+=== subheading 3.2
+text
+
+
+=== subheading 3.3
+text
+
+== Heading 4
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+== Heading 5
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+== Heading 6
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+== Heading 7
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+
+=== Sub x
+
+=== Sub y
+
+=== Sub z
+
+

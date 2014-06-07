@@ -31,6 +31,7 @@ asciidoctor {
     outputDir = new File("$buildDir/docs")
     baseDir = project.file('src/DE/asciidoc')
 
+    sourceDocumentName = project.file('src/DE/asciidoc/arc42-test.adoc')
     // asciidoctor will convert ALL files contained in sourceDir!
     sourceDir = project.file('src/DE/asciidoc')
 
