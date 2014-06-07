@@ -26,7 +26,6 @@ Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
 sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und
 Anwendern für Ihre Hilfe und Unterstützung.
 
-Zur Zeit arbeiten aktiv mit:
 
 ==== Zur Zeit aktiv
 
