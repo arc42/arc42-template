@@ -9,8 +9,7 @@
 // configure DE settings for asciidoc
 include::adoc.config[]
 
-// scrollable table-of-contents
-:toc2:
+
 
 include::snippets/about-arc42.adoc[]
 
