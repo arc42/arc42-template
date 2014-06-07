@@ -1,17 +1,16 @@
 
 = arc42 Template Test
-Gernot Starke <info@aim42.org>
-v1.0, 2014-02-05
 
 
-[.lead]
-Here we test several asciidoctor features - in the small...
+:toc: 
 
-:toc2:
-
+// toc-title has no effect...
 :toc-title: Inhaltsverzeichnis
 
 
+
+[.lead]
+A file for testing asciidoc stuff 
 
 == Heading 1
 
