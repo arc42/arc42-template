@@ -55,11 +55,5 @@ include::snippets/kap11-ohne-hilfe.adoc[]
 include::snippets/kap12-ohne-hilfe.adoc[]
 
 
-// appendices:
-// =====================================
+// no appendices in "ohne-hilfe" version!
 
-// Contributing and Contributors
-include::snippets/appendix-contributing.adoc[]
-
-// Approved Practitioner for arc42
-include::snippets/appendix-practitioner.adoc[]
