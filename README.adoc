@@ -1,3 +1,31 @@
 == arc42-template
 
 arc42 - the template for software architecture documentation and communication
+
+Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
+free and open source.
+
+
+
+== Requirements
+We collected the +arc42+ link:docs/arc42-requirements.adoc[requirements]
+in its own document.
+
+
+
+== Downloads
+Please be patient - downloads will be available from here once
+we establish the travis-based continous build system.
+
+
+=== German Version
+[options="header"]
+|===
+| Version/Format     | MS-Word (c), docx | Confluence | pdf | html
+| skeleton structure | skeleton-docx     | skel-confluence | skel-pdf | skel-html
+| ... plus explanation | help-docx       | help-confluence | help-pdf | help-html
+| ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
+|===
+
+
+=== English Version (coming soon)

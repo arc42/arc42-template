@@ -1,0 +1,102 @@
+= arc42 Template Requirements
+:author: Gernot Starke
+:email: gernot.starke@innoq.com
+:date: June 9th 2014
+:revision: Version 0.1
+
+:toc:
+
+
+== Kind of Requirements
+
+[NOTE]
+====
+Within the following text, the "arc42 template" shall be abbreviated with +arc42+
+====
+
+
+
+== +arc42+ Goals
+
++arc42+ shall:
+
+. Agnostic towards
+.. development process, +arc42+ can be used in iterative, strict,
+formal or informal processes
+.. applied technologies (programming languages, frameworks, operating systems)
+.. system domain
+.. kind of system (i.e. interactive, batch, server/backend, mobile, client/server etc.)
+.. system size, +arc42+ shall support small to medium systems without modification
+   (up to approx 1 million LOC).
+
+
+=== Non-Goals
+
++arc42+ does not address safety critical systems.
+
+
+== Required Formats
+
+=== Maintenance Format
+
+. Content and structure of +arc42+ shall be maintained in AsciiDoc.
+  ** All required output formats shall be generated from this.
+
+
+=== Output Formats
++arc42+ shall support the following output formats:
+
+. Microsoft (c) Word docx format, single file, including
+  ** table-of-contents
+  ** header and footer, containing (optional) logo
+
+. Confluence (c) format, providing the complete template as _space_
+  ** supporting Confluence versions from 3.x up to the latest versions.
+
+. AsciiDoc format, single file
+
+. html format, especially the versions including help text and samples
+
+. pdf format, restricted to version including help text and samples
+
+
+=== Optional Output Formats
+
+. Enterprise Architect(c) by Sparx Systems, optionally including
+  ** report generator
+
+
+
+== Required Versions
+
++arc42+ shall be supplied in the following versions:
+
+. Skeleton version, containing
+  ** all headers
+  ** appropriate title-page with formal section (name-of-system, authors etc.)
+  ** table-of-contents
+  ** plain structure without help text or samples
+  ** placeholders for substructures, like black- and whitebox templates
+  ** empty tables, e.g. for stakeholder, quality-goals, external interfaces etc.
+
+. With-Help version, containing the complete skeleton, plus
+  ** help texts for all chapters and sections
+  ** explanations
+
+. With-Samples version, containing the complete skeleton, help-texts, plus
+  ** example diagrams, tables and explanations for every chapter and section.
+
+. (multiple) Example-Only versions, containing
+
+== Open Source Requirements
+
++arc42+ is free and open-source. It is hosted and maintained
+on GitHub.
+
+
+
+== Technical Constraints
+
+*
+* Shall be integrated with the Gradle build tool
+* Liberal open-source license
