@@ -6,6 +6,7 @@
 
 :toc:
 
+:confluence-link: https://www.atlassian.com/software/confluence[Confluence (C)]
 
 == Kind of Requirements
 
@@ -18,7 +19,12 @@ Within the following text, the "arc42 template" shall be abbreviated with +arc42
 
 == +arc42+ Goals
 
-+arc42+ shall:
+====
++arc42+ is well-suited for software architecture documentation and communication.
+It is free, both for commercial or open-source projects or systems.
+====
+
++arc42+ shall be:
 
 . Agnostic towards
 .. development process, +arc42+ can be used in iterative, strict,
@@ -27,12 +33,30 @@ formal or informal processes
 .. system domain
 .. kind of system (i.e. interactive, batch, server/backend, mobile, client/server etc.)
 .. system size, +arc42+ shall support small to medium systems without modification
-   (up to approx 1 million LOC).
+   (up to approx 1 million LOC)
+.. system lifecycle phase: it can be used a-priori and a-posteriori
+for planning, designing or describing systems.
+
+. Easily usable. It shall
+.. contain clear and helpful documentation
+.. provide various examples
+.. be available in various
+   ** _formats_ (e.g. MS-Word (C), pdf, {confluence-link}, etc.)
+   ** _versions_ (e.g. without help, with help included, with examples included etc.)
+   ** _languages_, at least English and German
+
+. Flexible
+.. Users (software architects and developers) can adapt and modify +arc42+ towards
+their needs.
 
 
 === Non-Goals
 
-+arc42+ does not address safety critical systems.
++arc42+ does not
+
+* address safety critical systems
+* replace requirements documentation
+* replace formal technical documentation
 
 
 == Required Formats
@@ -97,6 +121,6 @@ on GitHub.
 
 == Technical Constraints
 
-*
-* Shall be integrated with the Gradle build tool
-* Liberal open-source license
+
+* Generation of formats shall be automated as much as possible
+* Build shall be done with the http://gradleware.org[Gradle] build tool
