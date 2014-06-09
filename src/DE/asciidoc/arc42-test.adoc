@@ -1,16 +1,12 @@
 
 = arc42 Template Test
-
-
-:toc: 
-
-// toc-title has no effect...
 :toc-title: Inhaltsverzeichnis
+:toc:
 
 
 
 [.lead]
-A file for testing asciidoc stuff 
+A file for testing asciidoc stuff
 
 == Heading 1
 
@@ -100,5 +96,3 @@ text
 === Sub y
 
 === Sub z
-
-

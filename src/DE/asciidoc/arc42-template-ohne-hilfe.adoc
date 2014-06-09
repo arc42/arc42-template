@@ -1,15 +1,9 @@
 // header file for arc42-template
-// (restricting to minimal structure,
-// excluding all help texts)
-//
+// (restricting to minimal structure, excluding all help texts)
 // ====================================
-
-
 = image:arc42-logo.png[] Template
-
 // configure DE settings for asciidoc
 include::adoc.config[]
-
 
 
 include::snippets/about-arc42.adoc[]
@@ -56,4 +50,3 @@ include::snippets/kap12-ohne-hilfe.adoc[]
 
 
 // no appendices in "ohne-hilfe" version!
-
