@@ -1,0 +1,49 @@
+// header file for arc42-template
+// (restricting to minimal structure, excluding all help texts)
+// ====================================
+= image:arc42-logo.png[] Template
+// configure DE settings for asciidoc
+include::../common/adoc.config[]
+
+
+include::../common/about-arc42.adoc[]
+
+
+// numbering from here on
+:numbered:
+
+// 1. Anforderungen und Ziele
+include::src/kap01-ohne-hilfe.adoc[]
+
+// 2. Randbedingungen
+include::src/kap02-ohne-hilfe.adoc[]
+
+// 3. Kontextabgrenzung
+include::src/kap03-ohne-hilfe.adoc[]
+
+// 4. Lösungsstrategie
+include::src/kap04-ohne-hilfe.adoc[]
+
+// 5. Bausteinsicht
+//include::src/kap05-ohne-hilfe.adoc[]
+
+// 6. Laufzeitsicht
+include::src/kap06-ohne-hilfe.adoc[]
+
+// 7. Verteilungssicht
+include::src/kap07-ohne-hilfe.adoc[]
+
+// 8. Querschnittliche Konzepte
+include::src/kap08-ohne-hilfe.adoc[]
+
+// 9. Entscheidungen
+include::src/kap09-ohne-hilfe.adoc[]
+
+// 10. Qualität...
+include::src/kap10-ohne-hilfe.adoc[]
+
+// 11. Risiken
+include::src/kap11-ohne-hilfe.adoc[]
+
+// 12. Glossar
+include::src/kap12-ohne-hilfe.adoc[]
