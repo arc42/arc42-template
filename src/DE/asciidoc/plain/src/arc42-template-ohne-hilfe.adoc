@@ -25,7 +25,7 @@ include::src/kap03-ohne-hilfe.adoc[]
 include::src/kap04-ohne-hilfe.adoc[]
 
 // 5. Bausteinsicht
-//include::src/kap05-ohne-hilfe.adoc[]
+include::src/kap05-ohne-hilfe.adoc[]
 
 // 6. Laufzeitsicht
 include::src/kap06-ohne-hilfe.adoc[]

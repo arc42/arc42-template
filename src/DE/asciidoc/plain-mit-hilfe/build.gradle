@@ -26,7 +26,7 @@ asciidoctor {
             sectlink    : true,
             sectanchors : true,
             numbered    : true,
-            imagesdir   : '../images',
+            imagesdir   : 'images',
         ]
     ]
 }
