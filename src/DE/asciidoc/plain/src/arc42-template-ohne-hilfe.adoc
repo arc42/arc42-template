@@ -5,8 +5,21 @@
 // configure DE settings for asciidoc
 include::../common/adoc.config[]
 
-
 include::../common/about-arc42.adoc[]
+
+
+// horizontal line
+***
+
+
+[NOTE]
+====
+Dies ist die _plain_ Version des Templates, ohne Erläuterungen
+und Hilfetexte. Sie eignet sich als Basis für eigene
+Dokumentation.
+====
+
+
 
 
 // numbering from here on
