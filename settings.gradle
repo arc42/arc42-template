@@ -1,3 +1,4 @@
 //
 include 'src/DE/asciidoc/plain',
-        'src/DE/asciidoc/plain-mit-hilfe'
+        'src/DE/asciidoc/plain-mit-hilfe',
+        'src/DE/asciidoc/golden-master'
