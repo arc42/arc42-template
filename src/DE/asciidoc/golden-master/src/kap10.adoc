@@ -1,0 +1,94 @@
+
+== Qualitätsszenarien
+
+[role="arc42help"]
+****
+Dieses Kapitel fasst alles zusammen, was Sie zur systematischen Bewertung Ihrer Architektur gegen vorgegebene Qualitätsziele benötigen.
+****
+
+
+=== Qualitätsbaum
+
+[role="arc42help"]
+****
+.Inhalt
+Der Qualitätsbaum ( a la ATAM) mit Qualitätsszenarien an den Blättern.
+
+.Motivation
+Insbesondere wenn Sie die Qualität Ihrer Architektur mit formalen Methoden wie ATAM überprüfen wollen, bedürfen die in Kapitel 1.2 genannten Qualitätsziele einer weiteren Präzisierung bis auf die Ebene von diskutierbaren und nachprüfbaren Szenarien. Dazu dient dieses Kapitel.
+
+.Form
+Eine mögliche Darstellung ist eine baumartige Verfeinerung des Begriffes „Qualität“
+****
+
+
+=== Bewertungsszenarien
+
+[role="arc42help"]
+****
+.Inhalt
+Szenarien beschreiben, was beim Eintreffen eines Stimulus auf ein System in bestimmten Situationen geschieht. Sie charakterisieren
+damit das Zusammenspiel von Stakeholdern mit dem System. Szenarien operationalisieren Qualitätsmerkmale und machen sie messbar.
+
+Wesentlich für die meisten Software-Architekten sind zwei Arten von Szenarien:
+
+*  Nutzungsszenarien (auch genannt Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen
+bestimmten Auslöser reagieren soll. Hierunter fallen auch Szenarien zur Beschreibung von Effizienz oder Performance.
+Beispiel: Das System beantwortet eine Benutzeranfrage innerhalb einer Sekunde.
+*  Änderungsszenarien beschreiben eine Modifikation des Systems oder seiner unmittelbarer Umgebung. Beispiel: Eine zusätzliche
+ Funktionalität wird implementiert oder die Anforderung an ein Qualitätsmerkmal ändert sich.
+
+Falls Sie sicherheitskritische Systeme entwerfen, ist eine dritte Art von Szenarien für Sie wichtig, die
+
+*  Grenz- oder Stress-Szenarien beschreiben, wie das System auf Extremsituationen reagiert. Beispiele: Wie reagiert das System auf
+einen vollständigen Stromausfall, einen gravierenden Hardwarefehler oder ähnliches.
+
+image:images/szenarien.png[szenarien, Schematische Darstellung von Szenarien (nach \[Bass+03\])]
+
+Abbildung: Schematische Darstellung von Szenarien (nach [Bass+03])
+
+Szenarien bestehen aus folgenden wesentlichen Teilen (hier zitiert aus [[[Starke05]]], die ursprüngliche Gliederung stammt aus [[[Bass+03]]] ):
+
+*  Auslöser (stimulus): beschreibt eine spezifische Zusammenarbeit des (auslösenden) Stakeholders
+mit dem System. Beispiele: Ein Benutzer ruft eine Funktion auf, ein Entwickler programmiert eine Erweiterung, ein Administrator
+ installiert oder konfiguriert das System.
+*  Quelle des Auslösers (source): beschreibt, woher der Auslöser kommt. Beispiele: intern oder
+extern, Benutzer, Betreiber, Angreifer, Manager.
+*  Umgebung (environment): beschreibt den Zustand des Systems zum Zeitpunkt des Auslösers.
+Befindet sich das System unter Normal- oder Höchstlast? Ist die Datenbank verfügbar oder nicht? Sind Benutzer online oder nicht?
+Hier sollten Sie alle Bedingungen beschreiben, die für das Verständnis des Szenarios wichtig sind.
+*  Systembestandteil (artifact): beschreibt, welcher Bestandteil des Systems vom Auslöser
+betroffen ist. Beispiele: Gesamtsystem, Datenbank, Webserver.
+*  Antwort (response): beschreibt wie das System durch seine Architektur auf den Auslöser
+reagiert. Wird die vom Benutzer aufgerufene Funktion ausgeführt? Wie lange benötigt der Entwickler zur Programmierung?
+Welche Systemteile sind von Installation/Konfiguration betroffen?
+*  Antwortmetrik (response measure): beschreibt, wie die Antwort gemessen oder bewertet werden
+kann. Beispiele: Ausfallzeit in Stunden, Korrektheit Ja/Nein, Änderungszeit in Personentagen, Reaktionszeit in Sekunden.
+
+.Motivation
+Szenarien benötigen Sie zur Prüfung und Bewertung von Architekturen. Sie dienen als "Maßstab" und
+ helfen Ihnen, die "Zielerreichung" der Architektur hinsichtlich der nichtfunktionalen Anforderungen und Qualitätsmerkmale zu messen.
+
+.Form
+Entweder tabellarisch oder als Freitext. Sie sollten die Bestandteile (Quelle, Umgebung,
+Systembestandteil, Antwort, Antwortmetrik) explizit kenntlich machen.
+
+.Hintergründe
+Es gibt inhaltliche Zusammenhänge zwischen Szenarien und Laufzeitsicht. Häufig können Sie die
+Szenarien der Laufzeitsicht für die Bewertung wieder verwenden oder zugrunde legen. In die Bewertungsszenarien fließen
+(im Gegensatz zu den Laufzeitszenarien) noch Antwortmetriken ein, die bei  der reinen Ablaufbetrachtung der Laufzeitsichten häufig entfallen.
+****
+
+[options="header"]
+.Bewertungsszenarien
+|===
+|Szenario |Auslöser |Metrik
+
+|
+|
+|
+
+|
+|
+|
+|===

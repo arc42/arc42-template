@@ -1,0 +1,60 @@
+
+== Laufzeitsicht
+
+[role="arc42help"]
+****
+.Inhalt
+Diese Sicht beschreibt, wie sich die Bausteine des Systems als Laufzeitelemente
+(Prozesse, Tasks, Activities, Threads, ...)  verhalten und wie sie zusammenarbeiten.
+
+Als alternative Bezeichnungen finden Sie dafür auch:
+
+*  Dynamische Sichten
+*  Prozesssichten
+*  Ablaufsichten
+
+Suchen Sie sich interessante Laufzeitszenarien heraus, z.B.:
+
+*  Wie werden die wichtigsten Use-Cases durch die Architekturbausteine bearbeitet?
+*  Welche Instanzen von Architekturbausteinen gibt es zur Laufzeit und wie werden diese gestartet, überwacht und beendet?
+*  Wie arbeiten Systemkomponenten mit externen und vorhandenen Komponenten zusammen?
+*  Wie startet das System (etwa: notwendige Startskripte, Abhängigkeiten von externen Subsystemen, Datenbanken, Kommunikationssystemen etc.)?
+
+Anmerkung: Kriterium für die Auswahl der möglichen Szenarien (d.h. Abläufe) des Systems ist deren Architekturrelevanz.
+Es geht nicht darum, möglichst viele Abläufe darzustellen, sondern eine angemessene Auswahl zu dokumentieren.
+Kandidaten sind:
+
+1.	Die wichtigsten 3-5 Anwendungsfälle
+2.	Systemstart
+3.	Das Verhalten an den wichtigsten externen Schnittstellen
+4.	Das Verhalten in den wichtigsten Fehlerfällen
+
+.Motivation
+Sie müssen (insbesondere bei objektorientierten Architekturen) nicht nur die Bausteine mit
+ihren Schnittstellen spezifizieren, sondern auch, wie Instanzen von Bausteinen zur Laufzeit miteinander kommunizieren.
+
+.Form
+Dokumentieren Sie die ausgesuchten Laufzeitszenarien mit UML-Sequenz-, Aktivitäts-, oder Kommunikationsdiagrammen.
+Mit Objektdiagrammen können Sie Schnappschüsse der existierenden Laufzeitobjekte darstellen und auch instanziierte
+Beziehungen. Die UML bietet dabei die Möglichkeit zwischen aktiven und passiven Objekten zu unterscheiden.
+****
+
+=== Laufzeitszenario 1
+
+[role="arc42help"]
+****
+*  Laufzeitdiagramm
+*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Diagramm
+****
+
+=== Laufzeitszenario 2
+
+[role="arc42help"]
+****
+*  Laufzeitdiagramm
+*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Diagramm
+****
+
+...
+
+=== Laufzeitszenario _n_
