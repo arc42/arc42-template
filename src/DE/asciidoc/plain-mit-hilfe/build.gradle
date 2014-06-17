@@ -5,7 +5,7 @@
 // ========================================================
 
 // set subproject build directory
-def localBuildDir = "${globalBuildDir}/DE/html/plain"
+def localBuildDir = "${globalBuildDir}/DE/html/plain-mit-hilfe"
 def localImageDir = localBuildDir + "/images"
 
 apply plugin: 'asciidoctor'
