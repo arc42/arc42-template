@@ -5,7 +5,7 @@
 // ========================================================
 
 // set subproject build directory
-def localBuildDir = "${globalBuildDir}/DE/html/plain-mit-hilfe"
+def localBuildDir = "${globalBuildDir}/DE/html/plain"
 def localImageDir = localBuildDir + "/images"
 
 apply plugin: 'asciidoctor'
@@ -13,7 +13,7 @@ apply plugin: 'asciidoctor'
 asciidoctor {
     outputDir = new File( localBuildDir )
 
-    sourceDocumentName = project.file('./src/arc42-template-mit-hilfe.adoc')
+    sourceDocumentName = project.file('./src/arc42-template.adoc')
 
     sourceDir = project.file('./src')
 
