@@ -35,7 +35,8 @@ task createTemplateWithoutHelp(
 	source.eachFileRecurse { file ->
 		def targetFile = new File(file.path.replaceAll("golden-master","plain-without-help"))
 		try {
-			targetFile.write(file.text.replaceAll(/(?ms)\[role="arc42help"\][ \r\n]+[*]{4}.*?[*]{4}/,''))
+			//remove all arc42* tags
+			targetFile.write(file.text.replaceAll(/(?ms)\[role="arc42[^"]*"\][ \r\n]+[*]{4}.*?[*]{4}/,''))
 			println targetFile.path
 		} catch (java.io.FileNotFoundException e) {
 			//is more like an access denied...
