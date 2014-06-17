@@ -1,0 +1,34 @@
+
+== Entwurfsentscheidungen
+
+
+
+=== Entwurfsentscheidung 1
+
+==== Fragestellung
+
+
+
+==== Rahmenbedingungen
+
+
+
+==== Annahmen
+
+
+
+==== Entscheidungskriterien
+
+
+
+==== Betrachtete Alternativen
+
+
+
+==== Entscheidung
+
+
+
+...
+
+=== Entwurfsentscheidung n
