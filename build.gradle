@@ -25,3 +25,23 @@ buildscript {
 
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
+
+task createTemplateWithoutHelp(
+    description: 'takes the golden master and removes all help sections'
+) {
+	def source = new File('./src/DE/asciidoc/golden-master/.')
+	def target = new File('./src/DE/asciidoc/plain-without-help/src/.')
+	target.mkdirs()
+	source.eachFileRecurse { file ->
+		def targetFile = new File(file.path.replaceAll("golden-master","plain-without-help"))
+		try {
+			//remove all arc42* tags
+			targetFile.write(file.text.replaceAll(/(?ms)\[role="arc42[^"]*"\][ \r\n]+[*]{4}.*?[*]{4}/,''))
+			println targetFile.path
+		} catch (java.io.FileNotFoundException e) {
+			//is more like an access denied...
+			println e
+		}
+	}
+}
+
