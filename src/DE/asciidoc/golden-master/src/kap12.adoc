@@ -7,7 +7,7 @@
 Die wichtigsten Begriffe der Software-Architektur in alphabetischer Reihenfolge
 
 .Motivation
-Die Notwendigkeit für ein Glossar sollte nicht erläutert werden müssen. Oder haben Sie es in Ihren Projekten noch nie vermisst?
+Sie sollten relevante Begriffe im Rahmen eines Systems oder eines Teams konsistent verstehen und verwenden. 
 
 .Form
 einfache zweispaltige Tabelle mit <Begriff> und <Definition>
