@@ -2,3 +2,6 @@ build
 .gradle
 *.iml
 src/DE/asciidoc/plain-without-help
+/.nb-gradle/
+gradle-app.setting
+.nb-gradle-properties
