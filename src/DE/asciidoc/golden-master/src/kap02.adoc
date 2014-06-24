@@ -135,6 +135,7 @@ vor.
 |Entwicklung als Produkt oder zur eigenen Nutzung?
 a|Bedingt andere Prozesse bei Anforderungsanalyse und Entscheidungen.
 Im Fall der Produktentwicklung:
+
 * Neues Produkt für neuen Markt?
 * Verbessertes Produkt für bestehenden Markt?
 * Vermarktung eines bestehenden (eigenen) Systems
@@ -225,4 +226,5 @@ Entweder die Konventionen als Kapitel hier direkt einhängen oder aber auf entsp
 *  Dokumentationsrichtlinien
 *  Richtlinien für Versions- und Konfigurationsmanagement
 *  Namenskonventionen
+
 ****

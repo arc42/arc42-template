@@ -17,6 +17,7 @@ Verweis auf ausführliche Anforderungsdokumente (mit Versionsbezeichnungen und A
 
 .Inhalt
 Eine kompakte Zusammenfassung des fachlichen Umfelds des Systems. Beantwortet (etwa) folgende Fragen:
+
 *  Was geschieht im Umfeld des Systems?
 *  Warum soll es das System geben? Was macht das System wertvoll oder wichtig? Welche Probleme löst das System?
 
@@ -30,6 +31,7 @@ In jedem Fall sollte der fachliche Kontext Verweise auf die entsprechenden Anfor
 
 .Beispiele
 Kurzbeschreibung der wichtigsten:
+
 *  Geschäftsprozessen,
 *  funktionalen Anforderungen,
 *  nichtfunktionalen Anforderungen und andere Randbedingungen (die wesentlichen müssen bereits als Architekturziele formuliert sein oder tauchen als Randbedingungen auf) oder
@@ -49,6 +51,7 @@ Die Hitparade (Top-3 bis Top-5) der Qualitätsziele für die Architektur und/ode
 Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
 
 Als Qualitätsziele findet man in der Praxis oft:
+
 *  Verfügbarkeit (availability)
 *  Änderbarkeit (modifiability)
 *  Performanz (performance)
