@@ -3,6 +3,19 @@
 //
 // ====================================
 
+//additional style for arc42 help callouts
+++++
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>
+++++
+
 = image:arc42-logo.png[] Template
 :toc-title: Inhaltsverzeichnis
 // toc-title definition MUST follow document title without blank line!
