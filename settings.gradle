@@ -1,4 +1,4 @@
 //
-include 'src/DE/asciidoc/plain',
-        'src/DE/asciidoc/plain-mit-hilfe',
-        'src/DE/asciidoc/golden-master'
+include 'src_gen/DE/asciidoc/plain',
+        'src_gen/DE/asciidoc/with-help',
+        'src_gen/DE/asciidoc/with-examples'
