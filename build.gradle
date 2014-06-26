@@ -26,9 +26,9 @@ buildscript {
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
 
-task createTemplateWithoutHelp(
+task createTemplatesFromGoldenMaster (
     description: 'takes the golden master and removes all help sections'
-) {
+) << {
     def sourcePath = './src/DE/asciidoc/'
     def targetPath = './src_gen/DE/asciidoc/'
 	def source = new File(sourcePath+'golden-master/src/.')
@@ -48,12 +48,24 @@ task createTemplateWithoutHelp(
             if (file.name.endsWith('.adoc')) {
                 def targetFile = new File(target.path+'/'+file.name)
                 println targetFile.path
-                def template = file.text
+                def template = file.getText('utf-8')
                 featuresToRemove.each { feature ->
                     template = template.replaceAll(/(?ms)\[role="arc42/+feature+/"\][ \r\n]+[*]{4}.*?[*]{4}/,'')
                 }
-                targetFile.write(template)
+                targetFile.write(template,'utf-8')
             }
+        }
+        //copy build file
+        //(yes, we could do this as gradle step, but since we are at the groovy level...
+        def buildFile = new File(sourcePath+'golden-master/build.gradle').text
+        new File(targetPath+templateName+'/build.gradle').write(buildFile)
+        //copy common files
+        new File(targetPath+'/common/').mkdirs()
+        def source2 = new File(sourcePath+'common/.')
+        source2.eachFile { file ->
+            target = new File(targetPath+'/common/'+file.name)
+            println target.path
+            target.write(file.getText('utf-8'),'utf-8')
         }
     }      
 }
