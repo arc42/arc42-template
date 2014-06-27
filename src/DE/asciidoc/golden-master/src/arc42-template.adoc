@@ -3,6 +3,10 @@
 //
 // ====================================
 
+= image:arc42-logo.png[] Template
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Inhaltsverzeichnis
+
 //additional style for arc42 help callouts
 ++++
 <style>
@@ -15,10 +19,6 @@
 }
 </style>
 ++++
-
-= image:arc42-logo.png[] Template
-:toc-title: Inhaltsverzeichnis
-// toc-title definition MUST follow document title without blank line!
 
 // configure DE settings for asciidoc
 include::../common/adoc.config[]
