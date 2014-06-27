@@ -53,10 +53,21 @@ task copyImages(
     into localImageDir
 }
 
-
+task convert2Docx (
+    dependsOn: [ generateDocbook ],
+    type: Exec
+) {
+    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-t','docx',
+            '-o',localBuildDir+'/arc42-template.docx',
+            localBuildDir+'/arc42-template.xml']
+    println args
+ }
 
 task arc42(
-    dependsOn: [copyImages, generateHTML, generateDocbook],
+    dependsOn: [copyImages, generateHTML, convert2Docx],
     description: 'collects all required tasks for creating arc42 documentation'
 ) << {
   println "globalBuildDir = ${globalBuildDir}"
