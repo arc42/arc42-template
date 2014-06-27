@@ -1,4 +1,6 @@
-// gradle build script for the arc42 template
+import org.asciidoctor.gradle.AsciidoctorTask
+
+// // gradle build script for the arc42 template
 // ("plain" subproject, creating the templage without help text)
 //
 // free software - without guarantee, use at your own risk
@@ -10,28 +12,36 @@ def localImageDir = localBuildDir + "/images"
 
 apply plugin: 'asciidoctor'
 
-asciidoctor {
+// common settings  
+tasks.withType(AsciidoctorTask) { docTask ->  
     outputDir = new File( localBuildDir )
-
     sourceDocumentName = project.file('./src/arc42-template.adoc')
-
     sourceDir = project.file('./src')
-
-    options = [
-        attributes: [
+    options = [  
+        logDocuments: true,  
+        attributes: [  
             toc         : 'left',
-            backend     : 'html5',
             doctype     : 'book',
             icons       : 'font',
             sectlink    : true,
             sectanchors : true,
             numbered    : true,
             imagesdir   : 'images',
-        ]
-    ]
+        ]  
+    ]  
 }
 
+task generateHTML (
+    type: AsciidoctorTask, 
+    description: 'use html5 as asciidoc backend') {  
+    backend = 'html5'  
+}
 
+task generateDocbook (
+    type: AsciidoctorTask, 
+    description: 'use docbook as asciidoc backend') {  
+    backend = 'docbook'  
+}
 
 defaultTasks 'arc42'
 
@@ -46,7 +56,7 @@ task copyImages(
 
 
 task arc42(
-    dependsOn: [copyImages, asciidoctor],
+    dependsOn: [copyImages, generateHTML, generateDocbook],
     description: 'collects all required tasks for creating arc42 documentation'
 ) << {
   println "globalBuildDir = ${globalBuildDir}"
