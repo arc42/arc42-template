@@ -52,8 +52,8 @@ task generateDocbook (
 task copyAsciidoc (
     type: Copy,
     description: 'asciidoc is the master, but we copy it to the build directory, too'
-) << {
-    from project.file('./src')
+) {
+    from project.file('./src/.')
     into localBuildDir.asciidoc
 }
 defaultTasks 'arc42'
@@ -67,7 +67,7 @@ task copyImages(
 }
 
 task convert2Docx (
-    dependsOn: [ generateDocbook ],
+    dependsOn: [copyImages, generateDocbook ],
     type: Exec
 ) {
     //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
@@ -78,7 +78,7 @@ task convert2Docx (
             localBuildDir.docbook+'/arc42-template.xml']
  }
 task convert2Epub (
-    dependsOn: [ generateDocbook ],
+    dependsOn: [copyImages, generateDocbook ],
     type: Exec
 ) {
     //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
@@ -89,7 +89,7 @@ task convert2Epub (
             localBuildDir.docbook+'/arc42-template.xml']
  }
 task convert2Markdown (
-    dependsOn: [ generateDocbook ],
+    dependsOn: [copyImages, generateDocbook ],
     type: Exec
 ) {
     //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
