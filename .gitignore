@@ -1,4 +1,5 @@
 build
+dist
 .gradle
 *.iml
 src/DE/asciidoc/plain-without-help

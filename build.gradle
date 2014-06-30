@@ -74,3 +74,27 @@ task createTemplatesFromGoldenMaster (
     }      
 }
 
+task createDistribution (
+    dependsOn: [],
+    description: 'bundles the converted templates into downloadable zip files'
+) {
+    println "="*80
+    subprojects.each { project ->
+        def shortName = project.name.replaceAll("^.*[/\\\\]","").replaceAll("[^a-zA-Z]","")
+        ['asciidoc','html','epub','markdown','docx','docbook'].each { format ->
+            def taskName = "createDistributionFor_${shortName}_$format"
+            tasks.create(name: taskName, type: Zip) {
+                baseName = "arc42-template-${shortName}-$format"
+                archiveName = baseName+'.zip'
+                destinationDir = file("./dist")
+                //archivePath = "$shortName/$format"
+                include "**/*"
+                from "./build/DE/$format/${project.name.replaceAll("^.*[/\\\\]","")}"
+            }
+            tasks[taskName].execute()
+            tasks.createDistribution.dependsOn << taskName
+        }
+    }
+    
+    
+}
