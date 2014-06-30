@@ -26,6 +26,9 @@ buildscript {
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
 
+// empty build task for netbeans
+task build () << {}
+
 task createTemplatesFromGoldenMaster (
     description: 'takes the golden master and removes all help sections'
 ) << {
@@ -38,7 +41,8 @@ task createTemplatesFromGoldenMaster (
     def templateStyles = [
                         'plain':[],
                         'with-help':['help'],
-                        'with-examples':['help','example'],
+// deaktivated for the moment - no content yet
+//                        'with-examples':['help','example'],
                     ]
     templateStyles.each { templateName, featuresWanted ->
         def featuresToRemove = allFeatures - featuresWanted
