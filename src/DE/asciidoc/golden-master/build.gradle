@@ -18,6 +18,9 @@ def localImageDir = localBuildDir.asciidoc + "/images"
 localBuildDir.each { new File(it.value).mkdirs() }
 apply plugin: 'asciidoctor'
 
+// empty build task for netbeans
+task build () << {}
+
 // common settings  
 tasks.withType(AsciidoctorTask) { docTask ->  
     sourceDocumentName = project.file('./src/arc42-template.adoc')
