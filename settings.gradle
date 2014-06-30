@@ -1,4 +1,3 @@
 //
 include 'src_gen/DE/asciidoc/plain',
-        'src_gen/DE/asciidoc/with-help',
-        'src_gen/DE/asciidoc/with-examples'
+        'src_gen/DE/asciidoc/with-help'
