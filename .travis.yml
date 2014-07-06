@@ -8,7 +8,7 @@ script:
 - gradle createDistribution
 after_script: "ls -ltra"
 install: ''
-
+ 
 jdk:
 - openjdk7
 env:
