@@ -1,6 +1,12 @@
 language: groovy
 before_script:
-- sudo apt-get install pandoc
+- export TERM=dump
+- sudo apt-get install cabal-install
+- cabal update
+- export PATH="$PATH:$HOME/.cabal/bin"
+- cabal install alex happy
+- cabal install pandoc
+- pandoc --version
 script:
 - export TERM=dumb
 - gradle createTemplatesFromGoldenMaster
