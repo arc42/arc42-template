@@ -1,0 +1,15 @@
+language: groovy
+before_script:
+- sudo apt-get install pandoc
+script:
+- export TERM=dumb
+- gradle createTemplatesFromGoldenMaster
+- gradle arc42
+- gradle createDistribution
+after_script: "ls -ltra"
+install: ''
+
+jdk:
+- openjdk7
+env:
+  global:
