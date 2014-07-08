@@ -26,11 +26,17 @@ buildscript {
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
 
+project.description = """
+${'='*80}
+This project builds a set of different arc42-templates from the golden master (asciidoc)
+${'='*80}
+"""
 // empty build task for netbeans
 task build () << {}
 
 task createTemplatesFromGoldenMaster (
-    description: 'takes the golden master and removes all help sections'
+    description: 'takes the golden master and removes all help sections',
+    group: 'arc42-template'
 ) << {
     def sourcePath = './src/DE/asciidoc/'
     def targetPath = './src_gen/DE/asciidoc/'
@@ -76,7 +82,8 @@ task createTemplatesFromGoldenMaster (
 
 task createDistribution (
     dependsOn: [],
-    description: 'bundles the converted templates into downloadable zip files'
+    description: 'bundles the converted templates into downloadable zip files',
+    group: 'arc42-template'
 ) {
     println "="*80
     subprojects.each { project ->
@@ -95,6 +102,12 @@ task createDistribution (
             tasks.createDistribution.dependsOn << taskName
         }
     }
-    
-    
+}
+
+task publishDistribution (
+        dependsOn: ["publish:pushGhPages"],
+        description: 'publishes generated templates to github',
+        group: 'arc42-template'
+) << {
+
 }

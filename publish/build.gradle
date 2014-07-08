@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.ajoberstar:gradle-git:0.6.4'
+    }
+}
+
+apply plugin: 'github-pages'
+
+project.description = """Subproject to publish build results to github"""
+
+githubPages {
+    repoUri = 'https://github.com/rdmueller/arc42-template.git'
+    targetBranch = 'gh-pages'
+    pages {
+        from('dist')
+    }
+    credentials {
+        username = System.getenv('GH_TOKEN')
+        password = ''
+    }
+}
