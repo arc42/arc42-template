@@ -18,7 +18,7 @@ githubPages {
     repoUri = 'https://github.com/rdmueller/arc42-template.git'
     targetBranch = 'gh-pages'
     pages {
-        from('dist')
+        from('build/dist')
     }
     credentials {
         username = System.getenv('GH_TOKEN')
