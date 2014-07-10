@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'org.ajoberstar:gradle-git:0.6.4'
+        classpath 'org.ajoberstar:gradle-git:0.9.0'
     }
 }
 
@@ -24,4 +24,8 @@ githubPages {
         username = System.getenv('GH_TOKEN')
         password = ''
     }
+    commitMessage = 'published through automatic build'
 }
+println "="*80
+println githubPages
+println "="*80

@@ -108,11 +108,11 @@ task createDistribution (
 }
 
 task publishDistribution (
-        dependsOn: [createDistribution, "publish:pushGhPages"],
+        dependsOn: [createDistribution, "publish:publishGhPages"],
         description: 'publishes generated templates to github',
         group: 'arc42-template'
 )  {
 }
 
 //the following line does not work :-(
-//findProject('publish').tasks.pushGhPages.mustRunAfter createDistribution
+//findProject('publish').tasks.publishGhPages.mustRunAfter createDistribution
