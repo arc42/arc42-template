@@ -26,6 +26,3 @@ githubPages {
     }
     commitMessage = 'published through automatic build'
 }
-println "="*80
-println githubPages
-println "="*80
