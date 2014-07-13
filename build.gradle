@@ -27,6 +27,8 @@ buildscript {
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
 
+logger.info "globalBuildDir = "+globalBuildDir
+
 project.description = """
 ${'='*80}
 This project builds a set of different arc42-templates from the golden master (asciidoc)
@@ -42,10 +44,12 @@ task createTemplatesFromGoldenMaster (
     description: 'takes the golden master and removes all help sections',
     group: 'arc42-template'
 )  {
+    inputs.dir  file(config.sourcePath)
     outputs.dir file(config.targetPath)
 
     doLast {
         def source = file(config.sourcePath + 'golden-master/src/.')
+        logger.info "copy golden master from ${source.path} ..."
         //the list of features/tags available in the golden master
         def allFeatures = config.goldenMaster.allFeatures
         //the template styles with their corresponding features
@@ -54,8 +58,10 @@ task createTemplatesFromGoldenMaster (
             def featuresToRemove = allFeatures - featuresWanted
             def target = file(config.targetPath + templateName + '/src/.')
             target.mkdirs()
+            logger.info "... to ${target.path}"
+            logger.lifecycle "create %buildDir%${target.path-buildDir}"
             source.eachFile { sourceFile ->
-                if (sourceFile.name.endsWith('.adoc')) {
+                if (sourceFile.name.endsWith('.adoc')||sourceFile.name.endsWith('.config')) {
                     def targetFile = file(target.path + '/' + sourceFile.name)
                     def template = sourceFile.getText('utf-8')
                     featuresToRemove.each { feature ->
@@ -65,19 +71,16 @@ task createTemplatesFromGoldenMaster (
                 }
             }
             //copy build file
+            logger.info "copy build.gradle to "+config.targetPath + templateName
             copy {
                 from config.sourcePath + 'golden-master' + '/build.gradle'
                 into config.targetPath + templateName
             }
-            //copy common files
-            copy {
-                from config.sourcePath + 'common/.'
-                into config.targetPath + 'common'
-            }
             //copy images
+            logger.info "copy images folder to "+config.targetPath + templateName+'/images'
             copy {
                 from config.sourcePath + '../images/.'
-                into config.targetPath + '../images'
+                into config.targetPath + templateName+'/images'
             }
         }
     }
@@ -89,8 +92,8 @@ task createDistribution (
     group: 'arc42-template'
 ) {
     outputs.dir file(config.distribution.targetPath)
-    subprojects.each { project ->
-        def shortName = project.name.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
+    config.goldenMaster.templateStyles.each { projectName, styles ->
+        def shortName = projectName.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
         config.distribution.formats.each { format ->
             def taskName = "createDistributionFor_${shortName}_$format"
             tasks.create(name: taskName, type: Zip) {
@@ -99,7 +102,7 @@ task createDistribution (
                 destinationDir = file(config.distribution.targetPath)
                 //archivePath = "$shortName/$format"
                 include "**/*"
-                from "./build/DE/$format/${project.name.replaceAll("^.*[/\\\\]", "")}"
+                from "./build/DE/$format/${projectName.replaceAll("^.*[/\\\\]", "")}"
             }
             tasks[taskName].execute()
             tasks.createDistribution.dependsOn << taskName

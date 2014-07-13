@@ -1,4 +1,10 @@
 //
-include 'src_gen/DE/asciidoc/plain',
-        'src_gen/DE/asciidoc/with-help',
-        'publish'
+
+def config = new ConfigSlurper().parse file('buildconfig.groovy').text
+
+config.goldenMaster.templateStyles.each { templateName, featuresWanted ->
+    logger.info "include subproject "+config.targetPath + templateName
+    include config.targetPath + templateName
+}
+
+include 'publish'

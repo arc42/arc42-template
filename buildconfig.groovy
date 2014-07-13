@@ -1,5 +1,5 @@
-sourcePath = './src/DE/asciidoc/'
-targetPath = './src_gen/DE/asciidoc/'
+sourcePath = 'src/DE/asciidoc/'
+targetPath = 'src_gen/DE/asciidoc/'
 
 goldenMaster {
     // a list of all features contained in the golden master
@@ -16,5 +16,6 @@ goldenMaster {
 
 distribution {
     targetPath = "build/dist/"
-    formats = ['asciidoc','html','epub','markdown','docx','docbook']
+    //formats = ['asciidoc','html','epub','markdown','docx','docbook']
+    formats = ['asciidoc','html']
 }
