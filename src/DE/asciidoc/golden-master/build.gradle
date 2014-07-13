@@ -8,14 +8,22 @@ import org.asciidoctor.gradle.AsciidoctorTask
 
 // set subproject build directory
 def localBuildDir = [:]
-localBuildDir['asciidoc'] = globalBuildDir.path+project.name-'src_gen'
-localBuildDir['docx'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','docx')
-localBuildDir['html'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','html')
-localBuildDir['epub'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','epub')
-localBuildDir['markdown'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','markdown')
-localBuildDir['docbook'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','docbook')
-def localImageDir = localBuildDir.asciidoc + "/images"
-localBuildDir.each { new File(it.value).mkdirs() }
+def projectName = project.name-'build/src_gen'
+logger.info "*"*80
+logger.info project.name
+logger.info globalBuildDir.path
+
+localBuildDir['asciidoc'] = globalBuildDir.path+'/'+projectName
+localBuildDir['docx'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','docx')
+localBuildDir['html'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','html')
+localBuildDir['epub'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','epub')
+localBuildDir['markdown'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','markdown')
+localBuildDir['docbook'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','docbook')
+def localImageDir = [:]
+localBuildDir.each {
+    new File(it.value).mkdirs()
+    localImageDir[it.key] = it.value+"/images"
+}
 apply plugin: 'asciidoctor'
 
 // empty build task for netbeans
@@ -62,12 +70,25 @@ task copyAsciidoc (
 defaultTasks 'arc42'
 
 task copyImages(
-    type: Copy,
     description: 'copy images into build output folder so that references can be resolved '
-) << {
-    from '../../images'
-    into localImageDir
+) {
+    logger.info " copyImages ".center(80, '=')
+    logger.info 'from ' + file('../../images')
+//    inputs.dir file('../../images')
+    localImageDir.each { key, dir ->
+        logger.info 'into ' + file(dir)
+//        outputs.dir file(dir)
+    }
+    doLast {
+        localImageDir.each { key, dir ->
+            copy {
+                from file('../../images')
+                into file(dir)
+            }
+        }
+    }
 }
+
 
 task convert2Docx (
     dependsOn: [copyImages, generateDocbook ],
@@ -107,6 +128,6 @@ task arc42(
     dependsOn: [copyImages, generateHTML, convert2Docx, convert2Epub, convert2Markdown, copyAsciidoc],
     description: 'collects all required tasks for creating arc42 documentation'
 ) << {
-  println "globalBuildDir = ${globalBuildDir}"
-  println "localBuildDir = ${localBuildDir}"
+  logger.info "globalBuildDir = ${globalBuildDir}"
+  logger.info "localBuildDir = ${localBuildDir}"
 }
