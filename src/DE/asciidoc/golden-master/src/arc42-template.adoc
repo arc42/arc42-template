@@ -23,10 +23,10 @@ ifdef::basebackend-html[]
 endif::basebackend-html[]
 
 // configure DE settings for asciidoc
-include::../common/adoc.config[]
+include::src/config.adoc[]
 
 
-include::../common/about-arc42.adoc[]
+include::src/about-arc42.adoc[]
 
 // horizontal line
 ***
@@ -84,13 +84,13 @@ include::src/kap12.adoc[]
 // =====================================
 
 // Verweise + Literatur
-include::../common/appendix-references.adoc[]
+include::src/appendix-references.adoc[]
 
 // Beispiele
 include::src/appendix-examples.adoc[]
 
 // Contributing and Contributors
-include::../common/appendix-contributing.adoc[]
+include::src/appendix-contributing.adoc[]
 
 // Approved Practitioner for arc42
 include::src/appendix-practitioner.adoc[]
