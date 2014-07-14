@@ -35,7 +35,7 @@ This project builds a set of different arc42-templates from the golden master (a
 ${'='*80}
 """
 
-def config = new ConfigSlurper().parse file('buildconfig.groovy').text
+project.ext.config = new ConfigSlurper().parse file('buildconfig.groovy').text
 
 // empty build task for netbeans
 task build () << {}
@@ -94,7 +94,7 @@ task createDistribution (
     outputs.dir file(config.distribution.targetPath)
     config.goldenMaster.templateStyles.each { projectName, styles ->
         def shortName = projectName.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
-        config.distribution.formats.each { format ->
+        config.formats.each { format, params ->
             def taskName = "createDistributionFor_${shortName}_$format"
             tasks.create(name: taskName, type: Zip) {
                 baseName = "arc42-template-${shortName}-$format"

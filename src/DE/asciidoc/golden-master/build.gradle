@@ -8,21 +8,16 @@ import org.asciidoctor.gradle.AsciidoctorTask
 
 // set subproject build directory
 def localBuildDir = [:]
-def projectName = project.name-'build/src_gen'
+def projectName = project.name.replaceAll('.*/','')
 logger.info "*"*80
 logger.info project.name
 logger.info globalBuildDir.path
 
-localBuildDir['asciidoc'] = globalBuildDir.path+'/'+projectName
-localBuildDir['docx'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','docx')
-localBuildDir['html'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','html')
-localBuildDir['epub'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','epub')
-localBuildDir['markdown'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','markdown')
-localBuildDir['docbook'] = (globalBuildDir.path+'/'+projectName).replaceAll('asciidoc','docbook')
-def localImageDir = [:]
-localBuildDir.each {
-    new File(it.value).mkdirs()
-    localImageDir[it.key] = it.value+"/images"
+def lang = 'DE'
+
+config.formats.each { format, params ->
+    localBuildDir[format] = globalBuildDir.path + '/'+lang+'/'+format+'/' + projectName
+    new File(localBuildDir[format]).mkdirs()
 }
 apply plugin: 'asciidoctor'
 
@@ -49,16 +44,28 @@ tasks.withType(AsciidoctorTask) { docTask ->
 
 task generateHTML (
     type: AsciidoctorTask, 
-    description: 'use html5 as asciidoc backend') {  
+    description: 'use html5 as asciidoc backend') {
     outputDir = new File( localBuildDir.html )
     backend = 'html5'  
 }
 
 task generateDocbook (
     type: AsciidoctorTask, 
-    description: 'use docbook as asciidoc backend') {  
-    outputDir = new File( localBuildDir.docbook )
-    backend = 'docbook'  
+    description: 'use docbook as asciidoc backend') {
+    if (localBuildDir.docbook) {
+        outputDir = new File(localBuildDir.docbook)
+        backend = 'docbook'
+    } else {
+        println """
+    Failed to generate DocBook
+    it seems that a format which needs DocBook as intermediate format is configured in buildconfig.groovy
+    please add
+        'docbook': [imageFolder: true]
+    to the list of formats
+"""
+        //end with exception :-)
+        new File(localBuildDir.docbook)
+    }
 }
 task copyAsciidoc (
     type: Copy,
@@ -73,17 +80,19 @@ task copyImages(
     description: 'copy images into build output folder so that references can be resolved '
 ) {
     logger.info " copyImages ".center(80, '=')
-    logger.info 'from ' + file('../../images')
+    logger.info 'from ' + file('images')
 //    inputs.dir file('../../images')
-    localImageDir.each { key, dir ->
-        logger.info 'into ' + file(dir)
+    localBuildDir.each { key, dir ->
+        logger.info 'into ' + file(dir+'/images')
 //        outputs.dir file(dir)
     }
     doLast {
-        localImageDir.each { key, dir ->
-            copy {
-                from file('../../images')
-                into file(dir)
+        localBuildDir.each { key, dir ->
+            if (config.formats[key].imageFolder) {
+                copy {
+                    from file('images')
+                    into file(dir + '/images')
+                }
             }
         }
     }
@@ -126,7 +135,8 @@ task convert2Markdown (
 
 task arc42(
     dependsOn: [copyImages, generateHTML, convert2Docx, convert2Epub, convert2Markdown, copyAsciidoc],
-    description: 'collects all required tasks for creating arc42 documentation'
+    description: 'collects all required tasks for creating arc42 documentation',
+    group: 'arc42-template'
 ) << {
   logger.info "globalBuildDir = ${globalBuildDir}"
   logger.info "localBuildDir = ${localBuildDir}"
