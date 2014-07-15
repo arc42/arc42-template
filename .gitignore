@@ -7,3 +7,4 @@ src/DE/asciidoc/plain-without-help
 gradle-app.setting
 .nb-gradle-properties
 src_gen
+.idea

@@ -3,6 +3,7 @@
 // free software - without guarantee, use at your own risk
 // ========================================================
 
+apply plugin: 'base'
 
 buildscript {
     // these are the BUILDSCRIPT deps - required to execute
@@ -26,75 +27,95 @@ buildscript {
 // set common output directory for all subprojects
 project.ext.globalBuildDir = project.buildDir
 
+logger.info "globalBuildDir = "+globalBuildDir
+
+project.description = """
+${'='*80}
+This project builds a set of different arc42-templates from the golden master (asciidoc)
+${'='*80}
+"""
+
+project.ext.config = new ConfigSlurper().parse file('buildconfig.groovy').text
+
 // empty build task for netbeans
 task build () << {}
 
 task createTemplatesFromGoldenMaster (
-    description: 'takes the golden master and removes all help sections'
-) << {
-    def sourcePath = './src/DE/asciidoc/'
-    def targetPath = './src_gen/DE/asciidoc/'
-	def source = new File(sourcePath+'golden-master/src/.')
-    //the list of features/tags available in the golden master
-    def allFeatures = ['help','example']
-    //the template styles with their corresponding features
-    def templateStyles = [
-                        'plain':[],
-                        'with-help':['help'],
-// deaktivated for the moment - no content yet
-//                        'with-examples':['help','example'],
-                    ]
-    templateStyles.each { templateName, featuresWanted ->
-        def featuresToRemove = allFeatures - featuresWanted
-        def target = new File(targetPath+templateName+'/src/.')
-        target.mkdirs()
-        source.eachFile { file ->
-            if (file.name.endsWith('.adoc')) {
-                def targetFile = new File(target.path+'/'+file.name)
-                println targetFile.path
-                def template = file.getText('utf-8')
-                featuresToRemove.each { feature ->
-                    template = template.replaceAll(/(?ms)\[role="arc42/+feature+/"\][ \r\n]+[*]{4}.*?[*]{4}/,'')
+    description: 'takes the golden master and removes all help sections',
+    group: 'arc42-template'
+)  {
+    inputs.dir  file(config.sourcePath)
+    outputs.dir file(config.targetPath)
+
+    doLast {
+        def source = file(config.sourcePath + 'golden-master/src/.')
+        logger.info "copy golden master from ${source.path} ..."
+        //the list of features/tags available in the golden master
+        def allFeatures = config.goldenMaster.allFeatures
+        //the template styles with their corresponding features
+        def templateStyles = config.goldenMaster.templateStyles
+        templateStyles.each { templateName, featuresWanted ->
+            def featuresToRemove = allFeatures - featuresWanted
+            def target = file(config.targetPath + templateName + '/src/.')
+            target.mkdirs()
+            logger.info "... to ${target.path}"
+            logger.lifecycle "create %buildDir%${target.path-buildDir}"
+            source.eachFile { sourceFile ->
+                if (sourceFile.name.endsWith('.adoc')||sourceFile.name.endsWith('.config')) {
+                    def targetFile = file(target.path + '/' + sourceFile.name)
+                    def template = sourceFile.getText('utf-8')
+                    featuresToRemove.each { feature ->
+                        template = template.replaceAll(/(?ms)\[role="arc42/ + feature + /"\][ \r\n]+[*]{4}.*?[*]{4}/, '')
+                    }
+                    targetFile.write(template, 'utf-8')
                 }
-                targetFile.write(template,'utf-8')
+            }
+            //copy build file
+            logger.info "copy build.gradle to "+config.targetPath + templateName
+            copy {
+                from config.sourcePath + 'golden-master' + '/build.gradle'
+                into config.targetPath + templateName
+            }
+            //copy images
+            logger.info "copy images folder to "+config.targetPath + templateName+'/images'
+            copy {
+                from config.sourcePath + '../images/.'
+                into config.targetPath + templateName+'/images'
             }
         }
-        //copy build file
-        //(yes, we could do this as gradle step, but since we are at the groovy level...
-        def buildFile = new File(sourcePath+'golden-master/build.gradle').text
-        new File(targetPath+templateName+'/build.gradle').write(buildFile)
-        //copy common files
-        new File(targetPath+'/common/').mkdirs()
-        def source2 = new File(sourcePath+'common/.')
-        source2.eachFile { file ->
-            target = new File(targetPath+'/common/'+file.name)
-            println target.path
-            target.write(file.getText('utf-8'),'utf-8')
-        }
-    }      
+    }
 }
 
 task createDistribution (
     dependsOn: [],
-    description: 'bundles the converted templates into downloadable zip files'
+    description: 'bundles the converted templates into downloadable zip files',
+    group: 'arc42-template'
 ) {
-    println "="*80
-    subprojects.each { project ->
-        def shortName = project.name.replaceAll("^.*[/\\\\]","").replaceAll("[^a-zA-Z]","")
-        ['asciidoc','html','epub','markdown','docx','docbook'].each { format ->
+    outputs.dir file(config.distribution.targetPath)
+    config.goldenMaster.templateStyles.each { projectName, styles ->
+        def shortName = projectName.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
+        config.formats.each { format, params ->
             def taskName = "createDistributionFor_${shortName}_$format"
             tasks.create(name: taskName, type: Zip) {
                 baseName = "arc42-template-${shortName}-$format"
-                archiveName = baseName+'.zip'
-                destinationDir = file("./dist")
+                archiveName = baseName + '.zip'
+                destinationDir = file(config.distribution.targetPath)
                 //archivePath = "$shortName/$format"
                 include "**/*"
-                from "./build/DE/$format/${project.name.replaceAll("^.*[/\\\\]","")}"
+                from "./build/DE/$format/${projectName.replaceAll("^.*[/\\\\]", "")}"
             }
             tasks[taskName].execute()
             tasks.createDistribution.dependsOn << taskName
         }
     }
-    
-    
 }
+
+task publishDistribution (
+        dependsOn: [createDistribution, "publish:publishGhPages"],
+        description: 'publishes generated templates to github',
+        group: 'arc42-template'
+)  {
+}
+
+//the following line does not work :-(
+//findProject('publish').tasks.publishGhPages.mustRunAfter createDistribution
