@@ -1,5 +1,5 @@
 sourcePath = 'src/DE/asciidoc/'
-targetPath = 'build/src_gen/DE/asciidoc/'
+targetPath = 'src_gen/DE/asciidoc/'
 
 goldenMaster {
     // a list of all features contained in the golden master
