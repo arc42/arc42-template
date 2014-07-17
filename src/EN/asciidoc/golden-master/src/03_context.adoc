@@ -1,0 +1,170 @@
+[[section-system-scope-and-context]]
+== System Scope and Context
+
+ 
+[role="arc42help"]
+****
+.Contents
+The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.
+Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.
+
+.Motivation
+The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.
+
+.Form
+
+* Various context diagram (see below)
+* Lists of neighboring systems and their interfaces.
+****
+
+
+=== Business Context
+
+[role="arc42help"]
+****
+.Contents
+Identify *all*[^all_neighboring_systems] neighboring systems and specify all logical business data that is exchanged with the system under development. Add data formats and communication protocols with neighboring systems and the general environment if these are not specified in detail with the relevant components.
+
+[^all_neighboring_systems]: We often tend to a pragmatic approach – but here we **insist** on a list of all (a-l-l) neighboring systems. Too many projects have failed because they were not aware of their neighbors. :-(
+
+.Motivation
+Understanding the information exchange with neighboring systems (i.e. all input flows and all output flows).
+
+.Form
+Logical context diagram.
+In UML this can be simulated e.g. by class diagrams, use case diagrams, communications diagrams – i.e. all diagrams that represent the system as a black box and explain its interfaces to neighboring systems (in varying degrees of detail).
+If there are many neighboring systems you can substitute the context diagram with a table, including all the neighboring systems, their inputs and their outputs.
+
+****
+
+=== Technical Context
+
+[role="arc42help"]
+****
+.Contents
+Specification of the communication channels linking your system to neighboring systems and the environment.
+
+.Motivation
+Understanding of the media used for information exchange with neighboring systems, and the environment.
+
+.Form
+E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table of logical input and output flows of the logical context diagram (3.1) to the channels.
+
+****
+
+=== External Interfaces
+
+[role="arc42help"]
+****
+For many building blocks you can describe its interfaces directly in the black box template of the building block. For complex interfaces – and external interfaces are normally very complex – it is worth while to describe them in separate sections. Use the following interface template to guide you towards many questions that might be relevant for the interface.
+
+==== Interface Template
+
+.Interface Template
+[options="header", cols="<.<1, <.<3"]
+|===
+2+<| Interface ID
+| Name| Name of the Interface
+| Version | 
+| Changes w.r.t. previous release |
+| Who changed it and why? |
+| Contact person(s) or organization |
+|===
+
+===== Business Context of the Interface
+
+===== Business Processes
+
+<Diagram or desciption of business processes relevant for this interface>
+
+===== Interface Data
+
+<Description of interface data>
+
+* Technical Context
+* Form of interaction
+
+=====  Requirements for the Interface
+
+* ...
+
+=====  Security Aspects
+
+* ...
+
+=====  Quantities
+
+* Runtime
+* Throughput/Volume
+* Availability
+* Logging
+* Archiving
+
+=====  Participating Resources
+
+* ...
+
+=====  Syntax: Data and Formats
+
+* Data Formats
+* Validity & Plausibility Rules
+* Encoding, Character Sets
+* Configuration data
+
+=====  Syntax: Methods/Functions
+
+* Check data
+
+=====  Interface Process
+
+* Logical and technical processes
+
+===== Semantics
+
+* Side effects, consequences
+
+===== Technical Infrastructure
+
+* Technical protocols
+
+===== Error and Exception Handling
+
+* ...
+
+===== Constraints and Assumptions
+
+* Access Rights
+* Temporal constraints
+* Parallel Access
+* Preconditions for using the interface
+
+===== Operating the Interface
+
+* ...
+
+===== Meta Information for the Interface
+
+* Person in charge
+* Costs of using the interface
+* Organizational Issues
+* Versioning
+
+===== Examples of Using the Interface
+
+* Sample data
+* Sample flows and interactions
+* Programming Examples
+
+==== External Interface 2
+<insert interface template>
+
+==== External Interface 3
+<insert interface template>
+
+==== ...
+
+==== External Interface n
+<insert interface template>
+
+****
+

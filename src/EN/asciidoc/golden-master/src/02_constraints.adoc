@@ -1,0 +1,160 @@
+[[section-architecture-constraints]]
+== Architecture Constraints
+
+
+[role="arc42help"]
+****
+.Contents
+Any requirement that constrains software architects in their freedom of design decisions or the development process.
+
+.Motivation
+Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
+Constraints must always be dealt with; they may be negotiable, though.
+
+.Form
+Informal lists, structured by the sub-sections of this section.
+
+.Examples
+see subsections
+
+.Background information
+In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.
+The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.
+****
+
+=== Technical Constraints
+
+[role="arc42help"]
+****
+.Contents
+List all technical constraints in this section. This category covers hard- and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, …).
+****
+
+
+.List of Technical Constraints
+[options="header",cols="<.<1,<.<4"]
+|===
+2+^e|  Technical Constraints
+2+^e|  Hardware Constraints
+| C1                                | insert description here  
+| C2                                | insert description here 
+| C3                                | insert description here
+2+^e| Software Constraints
+| C4                       | insert description here 
+| C5                       | insert description here 
+| C6                       | insert description here 
+2+^e| Operating System Constraints
+| C7                               | insert description here 
+| C8                               | insert description here
+| C9                               | insert description here
+2+^e| Programming Constraints
+| C10                         | insert description here 
+| C11                         | insert description here 
+| C12                         | insert description here 
+|===
+
+[role="arc42example"]
+****
+.Examples
+[options="header",cols="<.<1,<.<4"]
+|===
+| Constraint| Description
+|Hardware infrastructure| Processors, memory, networks, firewalls and other relevant elements
+|Software infrastructure| Operating systems, database systems, middleware, communications systems,transaction monitors, web servers, directory services
+|System operations | Batch- or online operations of the system or of required external systems?
+|Availability of the runtime environment | Data center with 7x24 uptime? Will there be service times that cause reduced availability of the system or important parts thereof?
+|Graphical user interface| Are there any restrictions related to GUI (style guide)?
+|Libraries, frameworks, components | Is there any COTS that must be used?
+|Programming languages | Object oriented, structured, declarative, or rule-based languages? Compiled or interpreted languages?
+|Reference architectures | Are there any comparable or reusable reference projects in the organization?
+|Analysis and design methodologies| Object oriented or structured methodologies?
+|Data structures| Requirements for certain data structures, interfaces to existing databases or files?
+|Software interfaces| Interfaces to existing applications
+|Programming requirements| Programming guidelines, fixed program structure
+|Technical communications | synchronous or asynchronous; protocols
+|===
+****
+
+=== Organizational Constraints
+
+[role="arc42help"]
+****
+.Contents
+Enter all organizational, structural, and resource-related constraints. This category also covers standards and legal constraints that you must comply with.
+****
+
+.List of Organizational Constraints
+[options="header",cols="<.<1,<.<4"]
+|===
+2+^e| Organizational Constraints
+2+^e| Organization and Structure
+|C1 |  insert description here
+|C2 |  insert description here
+2+^e| Resources (Budget, Time, Personnel)
+|C3| insert description here
+|C4| insert description here
+2+^e| Organizational Standards
+|C5| insert description here
+|C6| insert description here
+2+^e| Legal Factors
+|C7| insert description here
+|C8| insert description here
+|===
+
+[role="arc42example"]
+****
+.Examples
+[options="header",cols="<.<1,<.<4"]
+|===
+| Constraint | Description
+2+^e| Organization and Structure
+| Sponsor’s organizational structure | Potential changes of responsibilities? Changes of contact persons?
+| Project team’s organizational structure | with/without subcontractors; decision-making power of the project manager
+| Decision makers | Experience with similar projects
+| Existing partnerships or co-operations | Are there any co-operations between the organizations and certain software companies? Such partnerships often influence procurement decisions (independent of system requirements).
+| Internal development or outsourcing | Develop internally or outsource to external service companies? 
+| Development of a product or for internal use? | Implies different processes in requirements analysis and decision making. In the case of product development: New product for a new market? Improved product for an existing market? Productizing of an existing (internal) system? Development for internal use only?
+2+^e| Resources (Budget, Time, Personnel)
+| Fixed price or time/effort?| Is the project’s budget fixed or is it calculated by time or effort?
+| Schedule | Is the schedule flexible? Is there a fixed delivery date? Which stakeholders control the delivery date?
+| Schedule vs. functionality | What has higher priority: The delivery date or the functionality?
+| Release-schedule| At which dates should which functionality be available in which releases/versions?
+| Project’s budget| Fixed or flexible? What amount is available?
+| Budget for technical resources| Buy or rent development tools? (hardware and software)
+| Team| Number of team members, qualifications, motivation, availability.
+2+^e| Organizational Standards
+| Development process | Requirements concerning development process? This includes internal standards for modeling, documentation and implementation.
+| Quality standards| Is the organization required to adhere to quality standards (such as ISO-9000)?
+| Development tools| Requirements related to development tools (such as CASE-Tool, database, IDE, communications software, middleware, transaction monitor).
+| Configuration and version management| Requirements concerning processes and tools
+| Test tools and processes| Requirements concerning processes and tools
+| Acceptance- and release processes| Data modeling and database design, User interfaces, Business processes (workflow), Usage of external systems (e.g. write access to external databases)
+| Service Level Agreements| Requirements or standards related to availability or required service levels?
+2+^e| Legal Factors
+| Liability | Are there any legal aspects related to usage or operations of the system? Could the system cause loss of human life or hazard to human health? Could the system impact the operations of external systems or businesses?
+| Data privacy and security| Does the system store or process any data worthy of protection
+| Auditing| Are any aspects of the system under legal obligation to present evidence?
+| Aspects of international law| Will the system be used in an international context? Are there varying constraints on system usage in different countries (example: use of encryption technology)?
+|===
+****
+
+
+=== Conventions
+
+[role="arc42help"]
+****
+.Contents
+List all conventions that are relevant for the development of your software architecture.
+
+.Form
+Either insert the conventions directly in this document or refer to other documents.
+
+.Examples
+
+* Coding guidelines
+* Documentation guidelines
+* Guidelines for version and configuration management
+* Naming conventions
+
+****
+

@@ -1,0 +1,86 @@
+[[section-deployment-view]]
+== Deployment View
+
+
+[role="arc42help"]
+****
+.Contents
+This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.
+Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.
+
+.Motivation
+Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.
+
+.Form
+The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)
+Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.
+****
+
+=== Infrastructure Level 1
+
+==== Deployment Diagram Level 1
+
+[role="arc42help"]
+****
+* Shows the deployment of the overall system to 1 – n processors or sites as well as the physical connections among these elements.
+* Lists the most important reasons that led to this deployment structure, i.e. the specific selection of nodes and channels.
+* Should also mention rejected alternatives incl. reasons for their rejection.
+****
+
+==== Processor 1
+
+<insert node template here>
+
+[role="arc42help"]
+****
+**Node Template:**
+
+* Description
+* Deployed software building blocks
+* Quality attributes (performance, constraints, ...)
+* Other administrative information
+* Open issues
+****
+
+==== Processor 2
+
+<insert node template here>
+
+==== ...
+
+==== Processor n
+
+<insert node template here>
+
+==== Channel 1
+
+[role="arc42help"]
+****
+.Contents
+Specification of the channel’s attributes, as relevant for software architecture.
+
+.Motivation
+Specify at least those attributes of the communications channels that you need for proving fulfillment of non-functional requirements such as maximal throughput, probability for faults, etc.
+
+.Form
+Often you will refer to a standard (e.g. CAN-Bus, 10Mbit Ethernet, IEEE 1394, ...).
+
+If you need more information use a structure similar to the node template (especially to document quality aspects of channels like throughput, error rates, ...)
+****
+
+==== Channel 2
+
+==== ...
+
+==== Channel m
+
+=== Infrastructure Level 2
+
+[role="arc42help"]
+****
+.Contents
+Additional deployment diagrams with similar structure as above, refining each node of infrastructure level 1 that needs more details to map the software blocks.
+
+.Motivation
+To describe additional details of the infrastructure, as needed by software deployment.
+****

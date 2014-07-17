@@ -1,0 +1,36 @@
+
+// whitebox template
+
+_Bausteinname_ Whitebox
+
+Übersicht / Struktur::
+_Die folgende Abbildung zeigt die inneren Bestandteile von _Bausteinname_
+und deren Abhängigkeiten.
+
+_<hier Überblicksdiagramm einfügen>_
+
+Begründung::
+_Begründen oder erläutern Sie die Struktur_
+
+
+Enthaltene Bausteine::
+_hier beschreiben Sie (kurz) Name und Zweck der enhaltenen Bausteine_
+
+[cols="1,4, 1" options=""]
+|===
+| Baustein 1 | Beschreibung 1 | Verweis auf Blackbox-Beschreibung
+| Baustein 2 | Beschreibung 2 | Verweis auf Blackbox-Beschreibung
+| Baustein 3 | Beschreibung 3 | Verweis auf Blackbox-Beschreibung
+|===
+
+
+Schnittstellen::
+_hier beschreiben Sie (kurz) Name und Zweck der (internen+externen)
+Schnittstellen der Bausteine._
+
+[cols="1,4" options=""]
+|===
+| Schnittstelle 1 | Beschreibung 1
+| Schnittstelle 2 | Beschreibung 2
+| Schnittstelle 3 | Beschreibung 3
+|===

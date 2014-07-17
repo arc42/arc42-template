@@ -1,0 +1,271 @@
+[[section-concepts]]
+== Concepts
+
+
+[role="arc42help"]
+****
+.Contents
+The following chapters cover examples of frequent cross-cutting concerns (a.k.a. aspects in some programming languages)
+Fill in these chapters if there is **NO** building block that covers this aspect. If some of the concepts are not relevant for your project mention this fact instead of removing the section.
+
+.Motivation
+Some concept cannot be “factored” into a separate building block of the architecture (e.g. the topic “security”). This section of the template is the location where you can describe all decision for such a cross cutting topic in one central place. Nevertheless, you have to make sure that all your building blocks conform to such decisions.
+
+.Form
+The form can be varied. Some concepts are plain natural language text with a freely chosen structure, some others may include models/scenarios using notations that are also applied in architecture views.
+****
+
+=== Domain Models
+
+// SNIP
+.Contents
+Business (or logical) models, domain models - they all describe subject-specific, business aspects, without relation to technology.
+Often these structures or concepts are re-used at many places within an architecture, especially within chapter [Building Block View]…
+
+.Motivation
+Often parts of these models reappear in the building block view, but in order to „keep them clean from technnology“  they can be captured as a concept.
+
+.Form
+Usually either ER-Models (Entity-Relationship Models) or UML class diagrams (mainly containing entity classes) are used to document domain models.
+// /SNIP
+
+=== Recurring or Generic Structures and Patterns
+
+[role="arc42help"]
+****
+.Motivation
+Sometimes a hierarchical decomposition of building blocks is insufficient for giving an overview of detailed interdependencies between individual building blocks. The following sections are intended to describe generic or specific dependencies among any set of building blocks – possibly even across different levels.
+We call a dependency *generic* if it appears more than once in the architecture, and *specific*if it is unique.
+
+.Form
+Use building block models (class diagrams, package diagrams, component diagrams, etc.) and related descriptions in the same way as in the hierarchical decomposition.
+Often it is practical to support understandability by adding specific
+runtime views to explain these recurring structures.
+****
+
+==== ecurring or Generic Structure 1
+
+<insert diagram and descriptions here>
+
+==== Recurring or Generic Structure 2
+
+<insert diagram and descriptions here>
+
+=== Persistency
+
+[role="arc42help"]
+****
+Persistency means moving data from (volatile) memory to a durable storage medium (and back).
+
+Some of the data that a software system is processing must be written to and read from persistent storage media.
+
+* Volatile storage media (main memory or cache) are not designed for permanent storage. Data is lost if the hardware is switched off.
+* The amount of data processed by commercial software systems normally exceeds the capacity of main memory.
+* Hard disks, optical media and tapes often contain large amounts of existing business data that represent a significant investment.
+
+Persistency is a technical issue that normally does not appear as part of the actual business functionality. An architect must deal with this issue nevertheless because most software systems require efficient access to persistently stored data. This is relevant for essentially all commercial and most technical systems; embedded systems on the other hand often differ in their data management requirements.
+****
+
+=== User Interface
+
+[role="arc42help"]
+****
+Software systems that are used interactively by (human) users require a user interface. These can be graphical, textual, or voice user interfaces.
+****
+
+=== Ergonomics
+
+[role="arc42help"]
+****
+Ergonomics of software systems deals with the improvement (optimization) of their usability with respect to objective and subjective factors. Key ergonomic factors are user interface, reactivity (subjective performance) as well as availability and robustness of the system.
+****
+
+=== Flow of Control
+
+[role="arc42help"]
+****
+Flow of control for software systems is related to visible flows (on the - graphical - user interface) as well as the flow of background activities. Therefore this section should cover control of the user interface as well as control of workflows.
+****
+
+=== Transaction Procession
+
+[role="arc42help"]
+****
+A transaction is a sets of operations or activities that must be processed either in its entirety or not at all. The term is especially relevant in the database area with the important notion of ACID-transactions (atomic, consistent, isolated, durable).
+****
+
+=== Session Handling
+
+[role="arc42help"]
+****
+A session identifies an active connection between a client and a server. The session state must be preserved, which is esp. important if stateless protocols such as HTTP are used for communications. Session handling is a critical challenge esp. for intra- and internet-systems and can strongly influence the performance of a system.
+****
+
+=== Security
+
+[role="arc42help"]
+****
+The security of software systems deals with mechanisms that ensure data confidentiality, integrity, and availability.
+
+Typical issues are:
+
+* How can data be protected during transport (e.g. via open networks such as the internet)?
+* How can communicating entities ensure mutual trust?
+* How can communicating entities identify each other and be protected against faked identities?
+* How can communicating entities prove data provenience or certify validity of data?
+
+The topic of IT-security often touches upon legal aspects, sometimes even international law.
+****
+
+=== Safety
+
+[role="arc42help"]
+****
+The safety of software systems deals with mechanisms that ensure that human life or our environment is not endangered.
+Describe your concept here: identify those parts of the system that might endanger life and describe mechanism to ensure proper safety.
+****
+
+=== Communications and Integration
+
+
+[role="arc42help"]
+****
+*Communication*: Exchange of data between system components. Covers communications within one process or address space, between different processes (inter-process communication – IPC), and between different systems.
+
+*Integration*: Combination of existing systems in a new context. Also known as: (Legacy) Wrapper, Gateway, Enterprise Application Integration (EAI).
+****
+
+=== Distribution
+
+[role="arc42help"]
+****
+**Distribution**: Design of software systems whose parts are executed on different – physically separated – hardware systems.
+
+Distribution covers issues such as calling methods on remote systems (remote procedure call – RPC or remote method invocation – RMI), the transfer of data or documents among distributed parties, the choice of optimal modes of interaction or communications patterns (such as synchronous / asynchronous, publish-subscribe, peer-to-peer).
+****
+
+=== Plausibility and Validity Checks
+
+[role="arc42help"]
+****
+How and where do you check plausibility and validity of (input) data, esp. user inputs?
+****
+
+=== Exception/Error Handling
+
+[role="arc42help"]
+****
+How are exceptions and errors handled systematically and consistently?
+
+How can the system reach a consistent state after an error? Is this done automatically or is manual interaction required?
+
+This aspect is also related to logging and tracing,
+
+Which kind of exceptions and errors are handled by the system? Which kinds of errors are forwarded to which external interface and which are handled fully internally?
+
+How do you use the exception handling mechanisms of your programming language? Do you use checked or unchecked exceptions?
+****
+
+=== System Management and Administration
+
+[role="arc42help"]
+****
+Larger software systems are often executed in controlled environments (data centers) under oversight of operators or administrators. These stakeholders require specific information on the applications’ states during runtime as well as special means of control and configuration.
+****
+
+=== Logging, Tracing
+
+[role="arc42help"]
+****
+There are two ways of documenting an application’s status during runtime: *Logging* and *Tracing*. In both cases the application is extended with function or method calls that write state information, but there is a difference in their usage:
+
+* Logging can cover business or technical aspects or any combination of both.
+* Business logs are normally prepared for end users, administrators or operators. They contain information on the business processes that are executed by the application. This kind of logging may also be related to auditing.
+* Technical logs contain information for operators or developers. These are used for error detection and system optimization.
+* Tracing is intended to provide debugging information for developers or support personnel. It is primarily used for error detection and analysis.
+****
+
+=== Business Rules
+
+[role="arc42help"]
+****
+How do you deal with business logic and business rules? Is business logic implemented in the corresponding business classes or is it handled in a central component? Do you use a rule engine for the interpretation of business rules (production system, forward-/backward-chaining)?
+****
+
+=== Configurability
+
+[role="arc42help"]
+****
+The flexibility of a software system is influenced by its configurability, i.e. the possibility to make certain decisions about usage of the system at a late point in time.
+
+Configurability can occur at the following events:
+
+* During development: For example server, file, or directory names could be stored directly in the code (“hard-coded”).
+* During deployment or installation: Configuration information for a specific installation (such as the installation path) can be given.
+* At system startup: Information can be read dynamically before or during system startup.
+* During application execution: Configuration information is queried or read during runtime.
+****
+
+=== Parallelization and Threading
+
+[role="arc42help"]
+****
+Applications can be executed in parallel processes or threads. This creates a need for synchronization points. The theory of parallel processing serves as a foundation for this aspect. The architecture and implementation of parallel systems needs to consider many technical details such as address spaces, applied mechanisms for synchronization –
+guards, semaphores, etc. – processes and threads, parallelism in the operating system, parallelism in virtual machines. etc.
+****
+
+=== Internationalization
+
+[role="arc42help"]
+****
+This section covers support for usage of the system in different countries, i.e. adjusting the system to country specific attributes. Internationalization (often abbreviated as “i18n” where “18” refers to the eighteen characters between the I and the n) covers translation of text, usage of character encodings, display of fonts, writing of numbers and dates, and other (external) aspects.
+****
+
+=== Migration
+
+[role="arc42help"]
+****
+In many cases a new software system is intended to replace an existing legacy system. As an architect you should not only consider your shiny new architecture but also all organizational and technical aspects that must be considered for the introduction or migration of the architecture.
+
+.Examples:
+
+* Concept, process, or tools for data transfer and initial data creation.
+* Concept for system introduction or temporary parallel operations of legacy system and new system.
+
+Is it necessary to migrate existing data? How do you execute any needed syntactic or semantic transformations?
+****
+
+=== Testability
+
+[role="arc42help"]
+****
+Support for simple (and if possible automated) tests. This aspect is the basis for the important implementation pattern of “continuous integration”. Projects should support at least daily build-and-test cycles. Important keywords for this aspect are unit tests and mock objects.
+****
+
+=== Scaling, Clustering
+
+[role="arc42help"]
+****
+How can your system grow in a way that can cope with more load or a larger number of users and still keep up performance and throughput.
+****
+
+=== High Availability
+
+[role="arc42help"]
+****
+How can you achieve high availability of your system? Do you use redundancy of major parts? Or do you distribute your system to different processors or locations. Are you running standby- systems?
+****
+
+=== Code Generation
+
+[role="arc42help"]
+****
+How and where do you use code generators to create parts of the system from models or domain specific languages (DSL’s)?
+****
+
+=== Build-Management
+
+[role="arc42help"]
+****
+How is the overall system created from is (source code) building blocks? Which repositories contain source code, where are configuration files, test cases, test data and build scripts (make, ant, maven) stored?
+****

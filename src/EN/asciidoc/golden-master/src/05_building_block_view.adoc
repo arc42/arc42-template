@@ -1,0 +1,211 @@
+[[section-building-block-view]]
+== Building Block View
+
+
+[role="arc42help"]
+****
+.Contents
+Static decomposition of the system into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships thereof.
+
+.Motivation
+This is the most important view, that must be part of each architecture documentation. In building construction this would be the floor plan.
+
+.Form
+The building block view is a hierarchical collection of black box and white box descriptions as shown in the following diagram:
+
+.Building Blocks overview
+image::sections/images/05_building_blocks.png["Bulding blocks overview", align="center", scaledwidth="75%"]
+
+*Level 1* contains the white box description of the overall system (system
+under development/SUD) made up of black box descriptions of the
+system’s building blocks.
+
+*Level 2* zooms into the building blocks of Level 1 and is thus made up of
+the white box descriptions of all building blocks of Level 1 together
+with the black box descriptions of the building blocks of Level 2.
+
+*Level 3* zooms into the building blocks of Level 2, etc.
+
+The section is structured as follows:
+
+.White Box Template
+Contains multiple building blocks with corresponding black box descriptions.
+One or more black box templates:
+Each building block appearing in the white box template should be described as follows:
+
+* Purpose / Responsibility:
+* Interface(s):
+* Implemented requirements:
+* Variability:
+* Performance attributes:
+* Repository / Files:
+* Other administrative information: Author, Version, Date, Revision History
+* Open issues:
+
+****
+
+=== Level 1
+[role="arc42help"]
+****
+Here you describe the white box view of level 1 according to the white box template. The structure is given below.
+
+The overview diagram describes the inner structure of the overall system in terms of building blocks 1 – n, as well as their relationships and interdependencies.
+
+It is also useful to list the most important reasons that led to this structure, esp. as relevant to the interdependencies / relationships among the building blocks at this level.
+
+You should also mention rejected alternatives incl. reasons for their rejection.
+****
+
+The following diagram shows the main building blocks of the system and their interdependencies:
+
+<insert overview diagram here>
+
+Comments regarding structure and interdependencies at Level 1:
+
+==== Building Block Name 1 (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template:
+
+* Purpose / Responsibility:
+* Interface(s):
+* Implemented requirements:
+* Variability:
+* Performance attributes:
+* Repository / Files:
+* Other administrative information: Author, Version, Date, Revision History
+* Open issues:
+
+****
+
+<insert the building block’s black box template here>
+
+==== Building Block Name 2 (Black Box Description)
+
+<insert the building block’s black box template here>
+
+==== ...
+
+<insert the building block’s black box template here>
+
+==== Building Block Name n (Black Box Description)
+
+<insert the building block’s black box template here>
+
+==== Open Issues
+
+=== Level 2
+
+[role="arc42help"]
+****
+Describe all building blocks comprising level 1 as a series of white box templates. The structure is given below for three building blocks and should be duplicated as needed.
+****
+
+==== Building Block Name 1 (White Box Description)
+
+[role="arc42help"]
+****
+Shows the inner workings of the building block in form of a diagrams with local building blocks 1 – n, as well as their relationships and interdependencies.
+
+It is also useful to list the most important reasons that led to this structure, esp. as relevant to the interdependencies / relationships among the building blocks at this level.
+
+You should also mention rejected alternatives incl. reasons for their rejection.
+****
+<insert diagram of building block 1 here>
+
+===== Building Block Name 1.1 (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template:
+
+* Purpose / Responsibility:
+* Interface(s):
+* Implemented requirements:
+* Variability:
+* Performance attributes:
+* Repository / Files:
+* Other administrative information: Author, Version, Date, Revision History
+* Open issues:
+
+****
+
+===== Building Block Name 1.2 (Black Box Description)
+
+Structure according to black box template
+
+===== ...
+
+===== Building Block Name 1.n (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+
+****
+
+===== Description of Relationships
+
+===== Open Issues
+
+==== Building Block Name 2 (White Box Description)
+
+…
+
+<insert diagram of building block 2 here>
+
+===== Building Block Name 2.1 (Black Box Description)
+
+Structure according to black box template
+
+===== Building Block Name 2.2 (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+****
+
+===== ...
+
+===== Building Block Name 2.n (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+****
+
+===== Description of Relationships
+
+===== Open Issues
+
+==== Building Block Name 3 (White Box Description)
+
+...
+
+<insert diagram of building block 3 here>
+
+===== Building Block Name 3.1 (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+****
+
+===== Building Block Name 3.2 (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+****
+===== ...
+
+===== Building Block Name 3.n (Black Box Description)
+[role="arc42help"]
+****
+Structure according to black box template
+****
+
+===== Description of Relationships
+
+===== Open Issues
+
+=== Level 3
+[role="arc42help"]
+****
+Describe all building blocks comprising level 2 as a series of white box templates. The structure is identical to the structure of level 2. Duplicate the corresponding sub-sections as needed.
+Simply use this section structure for any additional levels you would like to describe.
+****

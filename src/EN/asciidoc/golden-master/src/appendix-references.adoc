@@ -1,0 +1,16 @@
+:numbered!:
+
+[[bibliography]]
+[appendix]
+== Literatur und Verweise
+
+
+Starke-2014:: Gernot Starke: Effektive Softwarearchitekturen - 
+Ein praktischer Leitfaden. Carl Hanser Verlag, 6, Auflage 2014.
+
+Starke-Hruschka-2011:: Gernot Starke und Peter Hruschka: Softwarearchitektur
+kompakt. Springer Akademischer Verlag, 2. Auflage 2011.
+
+Zörner-2013:: Softwarearchitekturen dokumentieren und kommunizieren, Carl Hanser Verlag, 2012
+
+

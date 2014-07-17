@@ -1,0 +1,121 @@
+import org.asciidoctor.gradle.AsciidoctorTask
+
+// // gradle build script for the arc42 template
+// ("plain" subproject, creating the templage without help text)
+//
+// free software - without guarantee, use at your own risk
+// ========================================================
+
+// set subproject build directory
+def localBuildDir = [:]
+localBuildDir['asciidoc'] = globalBuildDir.path+project.name-'src_gen'
+localBuildDir['docx'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','docx')
+localBuildDir['html'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','html')
+localBuildDir['epub'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','epub')
+localBuildDir['markdown'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','markdown')
+localBuildDir['docbook'] = (globalBuildDir.path+project.name-'src_gen').replaceAll('asciidoc','docbook')
+def localImageDir = localBuildDir.asciidoc + "/images"
+localBuildDir.each { new File(it.value).mkdirs() }
+apply plugin: 'asciidoctor'
+
+// empty build task for netbeans
+task build () << {}
+
+// common settings  
+tasks.withType(AsciidoctorTask) { docTask ->  
+    sourceDocumentName = project.file('./src/arc42-template.adoc')
+    sourceDir = project.file('./src')
+    options = [  
+        logDocuments: true,  
+        attributes: [  
+            toc         : 'left',
+            doctype     : 'book',
+            icons       : 'font',
+            sectlink    : true,
+            sectanchors : true,
+            numbered    : true,
+            imagesdir   : 'images',
+        ]  
+    ]  
+}
+
+task generateHTML (
+    type: AsciidoctorTask, 
+    description: 'use html5 as asciidoc backend') {  
+    outputDir = new File( localBuildDir.html )
+    backend = 'html5'  
+}
+
+task generateDocbook (
+    type: AsciidoctorTask, 
+    description: 'use docbook as asciidoc backend') {  
+    outputDir = new File( localBuildDir.docbook )
+    backend = 'docbook'  
+}
+task copyAsciidoc (
+    type: Copy,
+    description: 'asciidoc is the master, but we copy it to the build directory, too'
+) {
+    from project.file('./src/.')
+    into localBuildDir.asciidoc
+}
+defaultTasks 'arc42'
+
+task copyImages(
+    type: Copy,
+    description: 'copy images into build output folder so that references can be resolved '
+) {
+    from rootProject.file('./src/DE/images/.')
+    into localBuildDir.asciidoc + "/images"
+}
+
+task copyImagesDocbook(
+    type: Copy,
+    description: 'copy images into build output folder so that references can be resolved '
+)  {
+    from rootProject.file('./src/DE/images/.')
+    into rootProject.file('./build/DE/docbook/images/.')
+    
+}
+
+task convert2Docx (
+    dependsOn: [copyImages, copyImagesDocbook, generateDocbook ],
+    type: Exec
+) {
+    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-t','docx',
+            '-o',localBuildDir.docx+'/arc42-template.docx',
+        localBuildDir.docbook+'/arc42-template.xml']
+}
+task convert2Epub (
+    dependsOn: [copyImages, copyImagesDocbook, generateDocbook ],
+    type: Exec
+) {
+    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-t','epub',
+            '-o',localBuildDir.epub+'/arc42-template.epub',
+        localBuildDir.docbook+'/arc42-template.xml']
+}
+task convert2Markdown (
+    dependsOn: [copyImages, copyImagesDocbook, generateDocbook ],
+    type: Exec
+) {
+    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-t','markdown',
+            '-o',localBuildDir.markdown+'/arc42-template.md',
+        localBuildDir.docbook+'/arc42-template.xml']
+}
+
+task arc42(
+    dependsOn: [copyImages, generateHTML, convert2Docx, convert2Epub, convert2Markdown, copyAsciidoc],
+    description: 'collects all required tasks for creating arc42 documentation'
+) << {
+    println "globalBuildDir = ${globalBuildDir}"
+    println "localBuildDir = ${localBuildDir}"
+}

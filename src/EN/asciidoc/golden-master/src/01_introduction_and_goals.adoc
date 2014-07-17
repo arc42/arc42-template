@@ -1,0 +1,102 @@
+[[section-introduction-and-goals]]
+== Introduction and Goals·
+
+
+The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
+This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.
+
+=== Requirements Overview
+
+[role="arc42help"]
+****
+Short description of the functional requirements.
+Digest (or abstract) of the requirements documents.
+Reference to complete requirements documents (incl. version identification and location).
+
+.Contents
+A compact summary of the functional environment of the system. Answers the following questions (at least approximately):
+
+* What happens in the system’s environment?
+* Why should the system exist? 
+* Why is the system valuable or important? 
+* Which problems does the system solve?
+
+.Motivation
+From the point of view of the end users a system is created or modified to improve execution of a business activity.
+This essential architecture driver must not be neglected even though the quality of an architecture is mostly judged by its level of fulfillment of non-functional requirements.
+
+.Form
+Short textual description, probably in tabular use-case format.
+The business context should in any case refer to the corresponding requirements documents.
+
+.Examples
+Short descriptions of the most important:
+
+* business processes
+* functional requirements
+* non-functional requirements and other constraints (the most important ones must be covered as architecture goals or are listed in the “Constraints” section), and/or
+* quantity structures
+* background information
+
+Here you can reuse parts of the requirements documents – but keep these
+excerpts short and balance readability against avoidance of redundancy.
+****
+
+=== Quality Goals
+
+[role="arc42help"]
+****
+.Contents
+The top three (max five) goals for the architecture and/or constraints whose fulfillment is of highest importance to the major stakeholders. Goals that define the architecture’s quality could be:
+
+* availability
+* modifiability
+* performance
+* security
+* testability
+* usability
+
+.Motivation
+If you as an architect do not know how the quality of your work can be judged …
+
+.Form
+Simple tabular representation, ordered by priorities
+
+.Background Information
+*NEVER* start developing an architecture if these goals have not been put into writing and have not been signed by the major stakeholders.
+
+[WARNING]
+===========
+We have endured projects lacking defined quality goals much too often.
+We do not like to suffer, therefore we are by now highly convinced that
+the few hours spent on collecting quality goals are well invested.
+PH & GS.
+===========
+
+.Sources
+The DIN/ISO 92000 Standard contains an extensive set of possible quality goals.Or use chapters 10 – 17 of the http://www.volere.co.uk[VOLERE template] as a starting point .
+PH
+
+****
+
+=== Stakeholders
+
+[role="arc42help"]
+****
+.Contents
+A list of the most important persons or organizations that are affected by can contribute to the architecture.
+
+.Motivation
+If you do not know the persons participating in or concerned with the project you may get nasty surprises later in the development process. Should your project manager maintain this list, make sure that all the people influencing the architecture are part of it.
+
+.Form
+Simple table with role names, person names, their knowledge as pertaining to architecture, their availability, etc.
+.Stakeholders
+[options="header",cols="<.<1,<.<2, <.<2"]
+|===
+|Role/Name|Goal/Boundaries|Expected Participation and Contribution
+| The name or role of a stakeholder| Why will this stakeholder have an interest in the architecture? | what do you expect as a contribution
+|===
+****
+
+

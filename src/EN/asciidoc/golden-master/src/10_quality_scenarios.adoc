@@ -1,0 +1,67 @@
+[[section-quality-scenarios]]
+== Quality Scenarios
+
+
+[role="arc42help"]
+****
+This chapter summarizes all you (or other stakeholders) might need to systematically evaluate the architecture against the quality requirements.
+
+It contains:
+
+*  Quality Tree (sometimes called utility tree), an overview of the quality requirements
+*  Evaluation or quality scenarios - detailed descriptions of the quality requirements or goals.
+****
+
+=== Quality Tree
+
+[role="arc42help"]
+****
+.Content
+The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.
+
+.Motivation
+When you want to evaluate the quality (especially risks to certain quality attributes) with methods like ATAM, you need to systematically refine your quality goals (from chapter 1.2). The quality tree shows the top-down refinement of the stakeholder-specific notion of quality.
+
+.Form
+We personally prefer mind maps to a pure tree-like structure, as mind maps allow arbitrary cross-references between scenarios, attributes and intermediate nodes.
+Often it is difficult to assign scenarios to single quality attributes, as the scenario refers to several qualities at once. Simply draw references from such scenarios to all affected nodes!
+****
+
+=== Evaluation Scenarios
+
+[role="arc42help"]
+****
+.Contents
+Scenarios describe a system’s reaction to a stimulus in a certain situation. They thus characterize the interaction between stakeholders and the system. Scenarios operationalize quality criteria and turn them into measurable quantities.
+
+Two scenarios are relevant for most software architects:
+
+* Usage scenarios (also called application scenarios or use case scenarios) the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.
+* Change scenarios describe a modification of the system or of its immediate environment. Example: Additional  functionality is implemented or requirements for a quality attribute change.
+
+If you design safety critical systems a third type of scenarios is important for you:
+
+* Boundary or stress scenarios describe how the system reacts to exceptional conditions. Examples: How does the system react to a complete power outage, a serious hardware failure, etc.
+
+.Schematic depiction of scenarios (cf. [Bass+03])
+image::sections/images/10_stimulus.png["Schematic depiction of scenarios", align="center", width=500]
+
+Scenarios comprise the following major parts (according to [Starke05], original structure from [Bass+03]):
+
+* Stimulus: Describes a specific interaction between the (stimulating) stakeholder and the system. Example: A user calls a functions, a developer implements an extension, an administrator installs or configures the system.
+* Source of the stimulus: Describes where the stimulus comes from. Examples: internal or external, user, operator, attacker, manager.
+* Environment: Describes the system’s state at the time of arrival of the stimulus. This should list all preconditions that are necessary for comprehension of the scenario. Examples: Is the system under normal or maximal load? Is the data base available or down? Are any users online?
+* System artifact: Describes the part of the system is affected by the stimulus. Examples: The whole system, the data base, the web server.
+* System response: Describes the system’s reaction to the stimulus as determined by the architecture. Examples: Is the function called by the user executed. How long does the developer need for implementation? Which parts of the system are affected by the installation/configuration?
+* Response measure: Describes how the response can be measured or evaluated. Examples: Downtime in hours, correctness yes/no, time for code change in person days, reaction time in seconds.
+
+.Motivation
+You need scenarios for the evaluation and review of architectures. They take the role of a “benchmark” and aid in measuring the architecture’s achievement of its objectives regarding the non-functional requirements and quality attributes.
+
+.Form
+Tabular or free text. Explicitly highlight the scenario’s elements (source, environment, artifact, response, measure).
+Alternatively, use similar notations as those suggested in [Runtime View].
+
+.Background Information
+There are relations between scenarios and the runtime view. Often you can use scenarios of the runtime view fully or as a basis for evaluation. Evaluation scenarios additionally contain response measures that are often not considered in the pure execution focus of runtime scenarios.
+****

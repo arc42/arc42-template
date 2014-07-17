@@ -1,0 +1,21 @@
+:homepage: http://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+== Über arc42
+
+[role="lead"]
+arc42, das Template zur Dokumentation von
+Software- und Systemarchitekturen.
+
+Erstellt von Dr. Gernot Starke, Dr. Peter Hruschka und Mitwirkenden.
+
+
+Template Revision: 6.5 DE (asciidoc-basiert), Juni 2014
+
+(C)
+We acknowledge that this document uses material from the
+arc 42 architecture template, http://www.arc42.de.
+Created by Dr. Peter Hruschka & Dr. Gernot Starke.
+For additional contributors see http://arc42.de/about/contributors.html
