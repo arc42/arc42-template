@@ -37,7 +37,7 @@ zu denen Sie jeweils eine Blackbox Beschreibung erstellen können.
 Für jeden Baustein aus dem White-Box-Template können Sie folgende Angaben
 machen: (Kopieren Sie diese Punkte in die folgenden Unterkapitel)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 (eine ausführlichere Fassung des Blackbox-Templates finden Sie weiter unten.)
 ****
@@ -62,7 +62,7 @@ mitsamt Begründung, warum sie verworfen wurden.
 
 ****
 
-include::template-whitebox.adoc[]
+include::../../common/template-whitebox.adoc[]
 
 
 ==== _Baustein 1_ (Blackbox)
@@ -73,9 +73,9 @@ Beschreiben Sie diesen Baustein anhand des Blackbox-Templates.
 Nachfolgend finden Sie eine kompakte und eine ausführliche Fassung davon.
 ****
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
-include::template-blackbox-long.adoc[]
+include::../../common/template-blackbox-long.adoc[]
 
 [role="arc42help"]
 ****
@@ -85,12 +85,12 @@ include::template-blackbox-long.adoc[]
 ==== _Baustein 2_ (Blackbox)
 
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 ==== _Baustein n_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 === Ebene 2
@@ -111,21 +111,21 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 * begründet diese Struktur
 ****
 
-include::template-whitebox.adoc[]
+include::../../common/template-whitebox.adoc[]
 
 ===== _Baustein 1.1_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 ===== _Baustein 1.2_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 ===== _Baustein 1.n_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 ==== _Baustein 2_ (Whitebox)
@@ -139,20 +139,20 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 ****
 
 
-include::template-whitebox.adoc[]
+include::../../common/template-whitebox.adoc[]
 
 
 ===== _Baustein 2.1_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 ===== _Baustein 2.2_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 ===== _Baustein 2.n_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 ==== _Baustein 3_ (Whitebox)
@@ -169,15 +169,15 @@ _<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
 
 ===== _Baustein 3.1_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 ===== _Baustein 3.2_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 ===== _Baustein 3.n_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 
 === Ebene 3
@@ -208,12 +208,12 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 * begründet diese Struktur
 ****
 
-include::template-whitebox.adoc[]
+include::../../common/template-whitebox.adoc[]
 
 ===== _Baustein 1.1.1_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]
 
 ===== _Baustein 1.1.2_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
+include::../../common/template-blackbox-short.adoc[]

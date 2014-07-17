@@ -23,10 +23,10 @@ ifdef::basebackend-html[]
 endif::basebackend-html[]
 
 // configure DE settings for asciidoc
-include::src/config.adoc[]
+include::../common/adoc.config[]
 
 
-include::src/about-arc42.adoc[]
+include::../common/about-arc42.adoc[]
 
 // horizontal line
 ***
@@ -44,53 +44,53 @@ Für die Dokumentation eigener System verwenden Sie besser die _plain_ Version.
 :numbered:
 
 // 1. Anforderungen und Ziele
-include::src/kap01.adoc[]
+include::src/01_introduction_and_goals.ad[]
 
 // 2. Randbedingungen
-include::src/kap02.adoc[]
+include::src/02_architecture_constraints.ad[]
 
 // 3. Kontextabgrenzung
-include::src/kap03.adoc[]
+include::03_system_scope_and_context.ad[]
 
 // 4. Lösungsstrategie
-include::src/kap04.adoc[]
+include::src/04_solution_strategy.ad[]
 
 // 5. Bausteinsicht
-include::src/kap05.adoc[]
+include::src/05_building_block_view.ad[]
 
 // 6. Laufzeitsicht
-include::src/kap06.adoc[]
+include::src/06_runtime_view.ad[]
 
 // 7. Verteilungssicht
-include::src/kap07.adoc[]
+include::src/07_deployment_view.ad[]
 
 // 8. Querschnittliche Konzepte
-include::src/kap08.adoc[]
+include::src/08_concepts.ad[]
 
 // 9. Entscheidungen
-include::src/kap09.adoc[]
+include::src/09_design_decisions.ad[]
 
 // 10. Qualität...
-include::src/kap10.adoc[]
+include::src/10_quality_scenarios.ad[]
 
 // 11. Risiken
-include::src/kap11.adoc[]
+include::src/11_technical_risks.ad[]
 
 // 12. Glossar
-include::src/kap12.adoc[]
+include::src/12_glossary.ad[]
 
 
 // appendices:
 // =====================================
 
 // Verweise + Literatur
-include::src/appendix-references.adoc[]
+include::../common/appendix-references.adoc[]
 
 // Beispiele
 include::src/appendix-examples.adoc[]
 
 // Contributing and Contributors
-include::src/appendix-contributing.adoc[]
+include::../common/appendix-contributing.adoc[]
 
 // Approved Practitioner for arc42
 include::src/appendix-practitioner.adoc[]
