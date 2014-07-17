@@ -1,5 +1,6 @@
-
+[[section-solution-strategy]]
 == Lösungsstrategie
+
 
 [role="arc42help"]
 ****

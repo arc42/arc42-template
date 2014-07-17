@@ -23,10 +23,10 @@ ifdef::basebackend-html[]
 endif::basebackend-html[]
 
 // configure DE settings for asciidoc
-include::../common/adoc.config[]
+include::src/config.adoc[]
 
 
-include::../common/about-arc42.adoc[]
+include::src/about-arc42.adoc[]
 
 // horizontal line
 ***
@@ -43,54 +43,70 @@ Für die Dokumentation eigener System verwenden Sie besser die _plain_ Version.
 // numbering from here on
 :numbered:
 
+<<<<
 // 1. Anforderungen und Ziele
-include::src/01_introduction_and_goals.ad[]
+include::src/01_introduction_and_goals.adoc[]
 
+<<<<
 // 2. Randbedingungen
-include::src/02_architecture_constraints.ad[]
+include::src/02_architecture_constraints.adoc[]
 
+<<<<
 // 3. Kontextabgrenzung
-include::03_system_scope_and_context.ad[]
+include::src/03_system_scope_and_context.adoc[]
 
+<<<<
 // 4. Lösungsstrategie
-include::src/04_solution_strategy.ad[]
+include::src/04_solution_strategy.adoc[]
 
+<<<<
 // 5. Bausteinsicht
-include::src/05_building_block_view.ad[]
+include::src/05_building_block_view.adoc[]
 
+<<<<
 // 6. Laufzeitsicht
-include::src/06_runtime_view.ad[]
+include::src/06_runtime_view.adoc[]
 
+<<<<
 // 7. Verteilungssicht
-include::src/07_deployment_view.ad[]
+include::src/07_deployment_view.adoc[]
 
+<<<<
 // 8. Querschnittliche Konzepte
-include::src/08_concepts.ad[]
+include::src/08_concepts.adoc[]
 
+<<<<
 // 9. Entscheidungen
-include::src/09_design_decisions.ad[]
+include::src/09_design_decisions.adoc[]
 
+<<<<
 // 10. Qualität...
-include::src/10_quality_scenarios.ad[]
+include::src/10_quality_scenarios.adoc[]
 
+<<<<
 // 11. Risiken
-include::src/11_technical_risks.ad[]
+include::src/11_technical_risks.adoc[]
 
+<<<<
 // 12. Glossar
-include::src/12_glossary.ad[]
+include::src/12_glossary.adoc[]
 
 
 // appendices:
 // =====================================
 
+<<<<
 // Verweise + Literatur
-include::../common/appendix-references.adoc[]
+include::src/appendix-references.adoc[]
 
+<<<<
 // Beispiele
 include::src/appendix-examples.adoc[]
 
+<<<<
 // Contributing and Contributors
-include::../common/appendix-contributing.adoc[]
+include::src/appendix-contributing.adoc[]
 
+<<<<
 // Approved Practitioner for arc42
 include::src/appendix-practitioner.adoc[]

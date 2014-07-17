@@ -1,5 +1,6 @@
-
+[[section-glossary]]
 == Glossar
+
 
 [role="arc42help"]
 ****

@@ -1,7 +1,8 @@
-
+[[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
 (engl.: Introduction and Goals)
+
 
 Als Einführung in das Architekturdokument gehören hierher die treibenden Kräfte, die Software-Architekten bei ihren Entscheidungen berücksichtigen müssen:
 Einerseits die Erfüllung bestimmter fachlicher Aufgabenstellungen der Stakeholder, darüber hinaus aber die Erfüllung oder Einhaltung der vorgegebenen Randbedingungen (required constraints) unter Berücksichtigung der Architekturziele.
