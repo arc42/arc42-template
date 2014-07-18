@@ -36,7 +36,12 @@ ${'='*80}
 """
 
 project.ext.config = new ConfigSlurper().parse file('buildconfig.groovy').text
-
+project.ext.languages = []
+new File(config.goldenMaster.sourcePath).eachDir { dir ->
+    if (dir.name =~ /^[A-Z]{2}$/) {
+        languages << dir.name
+    }
+}
 // empty build task for netbeans
 task build () << {}
 
@@ -44,43 +49,51 @@ task createTemplatesFromGoldenMaster (
     description: 'takes the golden master and removes all help sections',
     group: 'arc42-template'
 )  {
-    inputs.dir  file(config.sourcePath)
-    outputs.dir file(config.targetPath)
+
+    inputs.dir  file(config.goldenMaster.sourcePath)
+    outputs.dir file(config.goldenMaster.targetPath+'/'+languages[0])
 
     doLast {
-        def source = file(config.sourcePath + 'golden-master/src/.')
-        logger.info "copy golden master from ${source.path} ..."
-        //the list of features/tags available in the golden master
-        def allFeatures = config.goldenMaster.allFeatures
-        //the template styles with their corresponding features
-        def templateStyles = config.goldenMaster.templateStyles
-        templateStyles.each { templateName, featuresWanted ->
-            def featuresToRemove = allFeatures - featuresWanted
-            def target = file(config.targetPath + templateName + '/src/.')
-            target.mkdirs()
-            logger.info "... to ${target.path}"
-            logger.lifecycle "create %buildDir%${target.path-buildDir}"
-            source.eachFile { sourceFile ->
-                if (sourceFile.name.endsWith('.adoc')||sourceFile.name.endsWith('.config')) {
-                    def targetFile = file(target.path + '/' + sourceFile.name)
-                    def template = sourceFile.getText('utf-8')
-                    featuresToRemove.each { feature ->
-                        template = template.replaceAll(/(?ms)\[role="arc42/ + feature + /"\][ \r\n]+[*]{4}.*?[*]{4}/, '')
+        //convention over configuration:
+        //let's fetch the available languages from the source dir
+        logger.lifecycle "found templates in the following languages: "+languages
+        languages.each { language ->
+            def pathToGoldenMaster = config.goldenMaster.sourcePath + '/' + language + '/asciidoc/' + 'golden-master'
+            def source = file(pathToGoldenMaster+'/src/.')
+            logger.info "copy golden master from ${source.path} ..."
+            //the list of features/tags available in the golden master
+            def allFeatures = config.goldenMaster.allFeatures
+            //the template styles with their corresponding features
+            def templateStyles = config.goldenMaster.templateStyles
+            templateStyles.each { templateName, featuresWanted ->
+                def featuresToRemove = allFeatures - featuresWanted
+                def pathToTarget = config.goldenMaster.targetPath +'/'+language+'/asciidoc/'+ templateName
+                def target = file(pathToTarget + '/src/.')
+                target.mkdirs()
+                logger.info "... to ${target.path}"
+                logger.lifecycle "create %buildDir%${target.path - buildDir}"
+                source.eachFile { sourceFile ->
+                    if (sourceFile.name.endsWith('.adoc') || sourceFile.name.endsWith('.config')) {
+                        def targetFile = file(target.path + '/' + sourceFile.name)
+                        def template = sourceFile.getText('utf-8')
+                        featuresToRemove.each { feature ->
+                            template = template.replaceAll(/(?ms)\[role="arc42/ + feature + /"\][ \r\n]+[*]{4}.*?[*]{4}/, '')
+                        }
+                        targetFile.write(template, 'utf-8')
                     }
-                    targetFile.write(template, 'utf-8')
                 }
-            }
-            //copy build file
-            logger.info "copy build.gradle to "+config.targetPath + templateName
-            copy {
-                from config.sourcePath + 'golden-master' + '/build.gradle'
-                into config.targetPath + templateName
-            }
-            //copy images
-            logger.info "copy images folder to "+config.targetPath + templateName+'/images'
-            copy {
-                from config.sourcePath + '../images/.'
-                into config.targetPath + templateName+'/images'
+                //copy build file
+                logger.info "copy build.gradle to " + config.goldenMaster.targetPath + templateName
+                copy {
+                    from pathToGoldenMaster + '/build.gradle'
+                    into pathToTarget
+                }
+                //copy images
+                logger.info "copy images folder to " + config.goldenMaster.targetPath + templateName + '/images'
+                copy {
+                    from pathToGoldenMaster + '/../images/.'
+                    into pathToTarget + '/images'
+                }
             }
         }
     }

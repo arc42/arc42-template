@@ -2,9 +2,18 @@
 
 def config = new ConfigSlurper().parse file('buildconfig.groovy').text
 
-config.goldenMaster.templateStyles.each { templateName, featuresWanted ->
-    logger.info "include subproject "+config.targetPath + templateName
-    include config.targetPath + templateName
-}
+//let's fetch all generated subprojects
+def target = file(config.goldenMaster.targetPath)
 
+logger.debug target.canonicalPath
+logger.debug target.exists().toString()
+
+if (target.exists()) {
+    target.eachFileRecurse { f ->
+        if (f.name.endsWith('.gradle')) {
+            logger.info "include subproject " + f.parentFile.path-rootProject.projectDir.path
+            include f.parentFile.path+'/'-rootProject.projectDir.path
+        }
+    }
+}
 include 'publish'
