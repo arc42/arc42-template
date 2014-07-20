@@ -82,12 +82,13 @@ task createTemplatesFromGoldenMaster (
                         targetFile.write(template, 'utf-8')
                     }
                 }
-                //copy build file
+                //copy build file from german golden master
                 logger.info "copy build.gradle to " + config.goldenMaster.targetPath + templateName
-                copy {
-                    from pathToGoldenMaster + '/build.gradle'
-                    into pathToTarget
-                }
+                def pathToDEGoldenMaster = config.goldenMaster.sourcePath + '/' + 'DE' + '/asciidoc/' + 'golden-master'
+                def buildfile = new File (pathToDEGoldenMaster + '/build.gradle').getText('utf-8')
+                buildfile = buildfile.replaceAll(/<INJECT_LANG>/,language)
+                buildfile = buildfile.replaceAll(/<INJECT_NAME>/,templateName)
+                new File(pathToTarget+'/build.gradle').write(buildfile,'utf-8')
                 //copy images
                 logger.info "copy images folder to " + config.goldenMaster.targetPath + templateName + '/images'
                 copy {

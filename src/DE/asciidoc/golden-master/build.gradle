@@ -8,12 +8,18 @@ import org.asciidoctor.gradle.AsciidoctorTask
 
 // set subproject build directory
 def localBuildDir = [:]
-def projectName = project.name.replaceAll('.*/','')
+
+def lang = '<INJECT_LANG>'
+def projectName = '<INJECT_NAME>'
+
 logger.info "*"*80
 logger.info project.name
 logger.info globalBuildDir.path
-
-def lang = 'DE'
+println "*"*80
+println projectName
+println project.name
+println globalBuildDir.path
+println "*"*80
 
 config.formats.each { format, params ->
     localBuildDir[format] = globalBuildDir.path + '/'+lang+'/'+format+'/' + projectName
@@ -134,7 +140,7 @@ task convert2Markdown (
 
 task arc42(
     dependsOn: [copyImages, generateHTML, convert2Docx, convert2Epub, convert2Markdown, copyAsciidoc],
-    description: 'collects all required tasks for creating arc42 documentation'
+    description: 'collects all required tasks for creating arc42 documentation',
     group: 'arc42-template'
 ) << {
     println "globalBuildDir = ${globalBuildDir}"
