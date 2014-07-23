@@ -9,20 +9,15 @@ import org.asciidoctor.gradle.AsciidoctorTask
 // set subproject build directory
 def localBuildDir = [:]
 
-def lang = '<INJECT_LANG>'
+def language = '<INJECT_LANG>'
 def projectName = '<INJECT_NAME>'
 
 logger.info "*"*80
 logger.info project.name
 logger.info globalBuildDir.path
-println "*"*80
-println projectName
-println project.name
-println globalBuildDir.path
-println "*"*80
 
 config.formats.each { format, params ->
-    localBuildDir[format] = globalBuildDir.path + '/'+lang+'/'+format+'/' + projectName
+    localBuildDir[format] = globalBuildDir.path + '/'+language+'/'+format+'/' + projectName
     new File(localBuildDir[format]).mkdirs()
 }
 apply plugin: 'asciidoctor'
@@ -85,21 +80,19 @@ defaultTasks 'arc42'
 task copyImages(
         description: 'copy images into build output folder so that references can be resolved '
 ) {
-    logger.info " copyImages ".center(80, '=')
-    logger.info 'from ' + file('images')
-//    inputs.dir file('../../images')
-    localBuildDir.each { key, dir ->
-        logger.info 'into ' + file(dir+'/images')
-//        outputs.dir file(dir)
-    }
-    doLast {
-        localBuildDir.each { key, dir ->
-            if (config.formats[key].imageFolder) {
-                copy {
-                    from file('images')
-                    into file(dir + '/images')
-                }
+    localBuildDir.each { format, dir ->
+        if (config.formats[format].imageFolder) {
+            def taskName = "copyImagesFor_" + projectName + "_" + language + "_" + format
+            tasks.create(name: taskName, type: Copy) {
+                logger.info ">>>> copyImages from " + file('images')
+                logger.info ">>>>              to " + file(dir+'images')
+                inputs.dir file('images')
+                outputs.dir file(dir + '/images')
+                from file('images')
+                into file(dir + '/images')
+                doLast {}
             }
+            tasks.copyImages.dependsOn << taskName
         }
     }
 }

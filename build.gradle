@@ -70,7 +70,7 @@ task createTemplatesFromGoldenMaster (
                 def pathToTarget = config.goldenMaster.targetPath +'/'+language+'/asciidoc/'+ templateName
                 def target = file(pathToTarget + '/src/.')
                 target.mkdirs()
-                logger.info "... to ${target.path}"
+                logger.info "                     to ${target.path}"
                 logger.lifecycle "create %buildDir%${target.path - buildDir}"
                 source.eachFile { sourceFile ->
                     if (sourceFile.name.endsWith('.adoc') || sourceFile.name.endsWith('.config')) {
@@ -83,16 +83,17 @@ task createTemplatesFromGoldenMaster (
                     }
                 }
                 //copy build file from german golden master
-                logger.info "copy build.gradle to " + config.goldenMaster.targetPath + templateName
+                logger.info "copy build.gradle to " + pathToGoldenMaster
                 def pathToDEGoldenMaster = config.goldenMaster.sourcePath + '/' + 'DE' + '/asciidoc/' + 'golden-master'
                 def buildfile = new File (pathToDEGoldenMaster + '/build.gradle').getText('utf-8')
                 buildfile = buildfile.replaceAll(/<INJECT_LANG>/,language)
                 buildfile = buildfile.replaceAll(/<INJECT_NAME>/,templateName)
                 new File(pathToTarget+'/build.gradle').write(buildfile,'utf-8')
                 //copy images
-                logger.info "copy images folder to " + config.goldenMaster.targetPath + templateName + '/images'
+                logger.info "copy images folder from " + pathToGoldenMaster + '/../../images'
+                logger.info "                     to " + pathToTarget + '/images'
                 copy {
-                    from pathToGoldenMaster + '/../images/.'
+                    from pathToGoldenMaster + '/../../images/.'
                     into pathToTarget + '/images'
                 }
             }
@@ -106,20 +107,23 @@ task createDistribution (
     group: 'arc42-template'
 ) {
     outputs.dir file(config.distribution.targetPath)
-    config.goldenMaster.templateStyles.each { projectName, styles ->
-        def shortName = projectName.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
-        config.formats.each { format, params ->
-            def taskName = "createDistributionFor_${shortName}_$format"
-            tasks.create(name: taskName, type: Zip) {
-                baseName = "arc42-template-${shortName}-$format"
-                archiveName = baseName + '.zip'
-                destinationDir = file(config.distribution.targetPath)
-                //archivePath = "$shortName/$format"
-                include "**/*"
-                from "./build/DE/$format/${projectName.replaceAll("^.*[/\\\\]", "")}"
+    languages.each { language ->
+        config.goldenMaster.templateStyles.each { projectName, styles ->
+            def shortName = projectName.replaceAll("^.*[/\\\\]", "").replaceAll("[^a-zA-Z]", "")
+            config.formats.each { format, params ->
+                def taskName = "createDistributionFor_${language}_${shortName}_$format"
+                tasks.create(name: taskName, type: Zip) {
+                    baseName = "arc42-template-${language}-${shortName}-$format"
+                    archiveName = baseName + '.zip'
+                    destinationDir = file(config.distribution.targetPath)
+                    //archivePath = "$shortName/$format"
+                    include "**/*"
+                    from "./build/$language/$format/$projectName"
+                    doLast {}
+                }
+                //tasks[taskName].execute()
+                tasks.createDistribution.dependsOn << taskName
             }
-            tasks[taskName].execute()
-            tasks.createDistribution.dependsOn << taskName
         }
     }
 }
