@@ -18,8 +18,8 @@ Einerseits die Erfüllung bestimmter fachlicher Aufgabenstellungen der Stakehold
 
 Die folgende Tabelle zeigt Ihre konkreten Stakeholder für das System sowie deren Interessen oder Beteiligung.
 
-[cols="1,2" options="header"]
+[cols=options="header"]
 .Stakeholder des Systems
 |===
-|Rolle |Beschreibung |Ziel / Intention |Kontakt |Bemerkungen
+|Rolle,Name |Beschreibung |Ziel, Intention | Erwartung / Kontakt |Bemerkungen
 |===
