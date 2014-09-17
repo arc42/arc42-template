@@ -1,5 +1,5 @@
 [[section-introduction-and-goals]]
-== Introduction and Goals·
+== Introduction and Goals
 
 
 The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
