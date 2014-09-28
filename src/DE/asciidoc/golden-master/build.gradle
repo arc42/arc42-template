@@ -11,7 +11,9 @@ def localBuildDir = [:]
 
 def language = '<INJECT_LANG>'
 def projectName = '<INJECT_NAME>'
-
+//if (!project?.ext?.config) {
+//    project.ext.config = new ConfigSlurper().parse file('buildconfig.groovy').text
+//}
 logger.info "*"*80
 logger.info project.name
 logger.info globalBuildDir.path
@@ -130,9 +132,24 @@ task convert2Markdown (
             '-o',localBuildDir.markdown+'/arc42-template.md',
         localBuildDir.docbook+'/arc42-template.xml']
 }
+task convert2Textile (
+        dependsOn: [copyImages, generateDocbook ],
+        type: Exec
+) {
+    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-t','textile',
+            '-o',localBuildDir.textile+'/arc42-template.textile',
+            localBuildDir.docbook+'/arc42-template.xml']
+}
+task export2Confluence (
+    dependsOn: [generateHTML]
+) {
 
+}
 task arc42(
-    dependsOn: [copyImages, generateHTML, convert2Docx, convert2Epub, convert2Markdown, copyAsciidoc],
+    dependsOn: [copyImages, generateHTML, export2Confluence, convert2Docx, convert2Epub, convert2Markdown, convert2Textile, copyAsciidoc],
     description: 'collects all required tasks for creating arc42 documentation',
     group: 'arc42-template'
 ) << {

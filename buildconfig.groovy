@@ -19,6 +19,7 @@ formats = [
     'html': [imageFolder: true],
     'epub': [imageFolder: false],
     'markdown': [imageFolder: true],
+    'textile': [imageFolder: true],
     'docx': [imageFolder: false],
     'docbook': [imageFolder: true]
 ]
