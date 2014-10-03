@@ -18,4 +18,4 @@ Template Revision: 6.5 DE (asciidoc-basiert), Juni 2014
 We acknowledge that this document uses material from the
 arc 42 architecture template, http://www.arc42.de.
 Created by Dr. Peter Hruschka & Dr. Gernot Starke.
-For additional contributors see http://arc42.de/about/contributors.html
+For additional contributors see http://arc42.de/sonstiges/contributors.html
