@@ -1,7 +1,7 @@
 :numbered!:
 
 [appendix]
-== Beispiele
+== Examples
 
 * DocChess
 * Gradle

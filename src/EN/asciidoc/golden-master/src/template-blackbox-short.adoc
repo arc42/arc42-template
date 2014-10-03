@@ -1,17 +1,17 @@
 // blackbox template short
 
-_Bausteinname_ Blackboxbeschreibung
+_BuildingBlockName_ Blackbox description
 
-Zweck:: _hier beschreiben Sie Zweck oder Verantwortung des Bausteins_
-Schnittstellen _Bausteinname_::
+Purpose:: _describe here Purpose and Responsibilities of this building block_
+Interfaces _BuildingBlockName_::
 [cols="1,2" options=""]
 |===
-| Schnittstelle 1 | Beschreibung 1
-| Schnittstelle 2 | Beschreibung 2
-| Schnittstelle 3 | Beschreibung 3
+| Interface 1 | Description 1
+| Interface 2 | Description 2
+| Interface 3 | Description 3
 |===
 
 
-Ablageort/Datei:: _Verweisen Sie auf den Einstieg in
-  den Sourcecode, den/die Paket-/Modulnamen oder
-  die wichtigsten Klassen_
+Related Locations/Files:: _Point to a relevant starting point in
+  source code, or name packages or modules
+  of the most relevant classes to this building block_
