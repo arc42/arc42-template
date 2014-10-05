@@ -5,7 +5,27 @@ arc42 - the template for software architecture documentation and communication
 Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
 free and open source.
 
+== How to use this Project
 
+This repository currently contains the "Golden Master" of the arc42 template in 
+link:src/EN/asciidoc/golden-master/src[english] and link:src/DE/asciidoc/golden-master/src[german] 
+and it contains gradle projects to convert the golden master into other formats. The repository includes
+the gradle-wrapper - a script which will automatically install gradle for you if it is not already installed.
+
+In order to create the other formats follow these steps:
+
+* +gradlew createTemplatesFromGoldenMaster+
+
+This will extract the "no help"-version from the golden master. You'll find those templates in +build\src_gen+.
+
+Btw: gradle allows you to "shorten" the command - as long as gradle is still able to guess the command, 
+anything goes :-). +gradlew createT+ is as valid as +gradlew cTFGM+.
+
+* +gradle2 arc42+
+
+This will create all other formats. They will be located directly in the +build+ directory. 
+This is still work in progress. Some of the build steps need extra tools like pandoc installed, 
+so it is likely that you encounter errors.
 
 == Requirements
 We collected the +arc42+ link:docs/arc42-requirements.adoc[requirements]
