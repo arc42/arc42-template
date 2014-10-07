@@ -2,32 +2,32 @@
 
 [appendix]
 [[contributions]]
-== Danksagung + Mitwirkung
+== Acknowledgements and collaborations
 
 
-arc42 stammt ursprünglich von
-http://b-agile.de[Dr. Peter Hruschka] und
+arc42 originally envisioned by
+http://b-agile.de[Dr. Peter Hruschka] and
 http://gernotstarke.de[Dr. Gernot Starke].
 
 
-Quellen::
-Wir pflegen arc42 zur Zeit im _asciidoc_ Format, gehosted bei
-https://github.com/aim42/aim42[GitHub unter der arc42-Organisation].
+Sources::
+We maintain arc42 in _asciidoc_ format at the moment, hosted in
+https://github.com/aim42/aim42[GitHub under the aim42-Organisation].
 
 Issues::
-Wir pflegen eine Liste
-https://github.com/arc42/arc42-template/issues[offener Punkte und Fehler].
+We maintain a list of
+https://github.com/arc42/arc42-template/issues[open topics and bugs].
 
-Wir freuen uns, wenn Sie Fehler/Unklarheiten in einem Fork korrigieren
-und uns einen _pull request_ schicken!
+We are looking forward to your corrections and clarifications! Please fork
+the repository mentioned over this lines and send us a _pull request_!
 
-=== Mitwirkende
-Wir danken ausdrücklich allen aktiven und früheren Mitwirkenden
-sowie den zahlreichen (anonymen) Ratgebern, Fehlerfindern und
-Anwendern für Ihre Hilfe und Unterstützung.
+=== Collaborators
+We are very thankful and acknowledge the support and help provided
+by all active and former collaborators, uncountable (anonymous) advisors,
+bug finders and users of this method.
 
 
-==== Zur Zeit aktiv
+==== Currently active
 
 * Gernot Starke
 * Stefan Zörner
@@ -37,8 +37,8 @@ Anwendern für Ihre Hilfe und Unterstützung.
 * Jürgen Krey
 
 
-==== Frühere Mitwirkende
-(in alfabetischer Reihenfolge)
+==== Former collaborators
+(in alphabetical order)
 
 * Anne Aloysius
 * Matthias Bohlen
