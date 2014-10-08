@@ -38,7 +38,7 @@ Please be patient - downloads will be available from here once
 we establish the travis-based continous build system.
 
 
-=== German Version
+=== Versions
 [options="header"]
 |===
 | Version/Format     | MS-Word (c), docx | Confluence | pdf | html
@@ -48,4 +48,3 @@ we establish the travis-based continous build system.
 |===
 
 
-=== English Version (coming soon)
