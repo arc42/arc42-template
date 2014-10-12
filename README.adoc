@@ -47,7 +47,7 @@ we establish the travis-based continous build system.
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-docx.zip[skel-docx]     
 | skel-confluence 
 | skel-pdf 
-| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-help.zip[skel-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-html.zip[skel-html]
 
 | ... plus explanation 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-docx.zip[help-docx]       
@@ -67,7 +67,7 @@ we establish the travis-based continous build system.
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-docx.zip[skel-docx]     
 | skel-confluence 
 | skel-pdf 
-| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-help.zip[skel-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-html.zip[skel-html]
 
 | ... plus explanation 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-docx.zip[help-docx]       
