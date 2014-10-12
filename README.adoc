@@ -41,19 +41,23 @@ we establish the travis-based continous build system.
 === German Versions
 [options="header"]
 |===
-| Version/Format     | MS-Word (c), docx | Confluence | pdf | html
+| Version/Format     | MS-Word (c), docx | Confluence | pdf | html | asciidoc | textile 
 
 | skeleton structure 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-docx.zip[skel-docx]     
 | skel-confluence 
 | skel-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-html.zip[skel-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-asciidoc.zip[skel-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-textile.zip[skel-textile]
 
 | ... plus explanation 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-docx.zip[help-docx]       
 | help-confluence 
 | help-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-html.zip[help-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-asciidoc.zip[skel-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-textile.zip[skel-textile]
 
 | ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
 |===
@@ -61,19 +65,23 @@ we establish the travis-based continous build system.
 === English Versions
 [options="header"]
 |===
-| Version/Format     | MS-Word (c), docx | Confluence | pdf | html
+| Version/Format     | MS-Word (c), docx | Confluence | pdf | html | asciidoc | textile
 
 | skeleton structure 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-docx.zip[skel-docx]     
 | skel-confluence 
 | skel-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-html.zip[skel-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-asciidoc.zip[skel-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-textile.zip[skel-textile]
 
 | ... plus explanation 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-docx.zip[help-docx]       
 | help-confluence 
 | help-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-html.zip[help-html]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-asciidoc.zip[skel-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-textile.zip[skel-textile]
 
 | ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
 |===
