@@ -38,13 +38,43 @@ Please be patient - downloads will be available from here once
 we establish the travis-based continous build system.
 
 
-=== Versions
+=== German Versions
 [options="header"]
 |===
 | Version/Format     | MS-Word (c), docx | Confluence | pdf | html
-| skeleton structure | skeleton-docx     | skel-confluence | skel-pdf | skel-html
-| ... plus explanation | help-docx       | help-confluence | help-pdf | help-html
+
+| skeleton structure 
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-docx.zip[skel-docx]     
+| skel-confluence 
+| skel-pdf 
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-plain-help.zip[skel-html]
+
+| ... plus explanation 
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-docx.zip[help-docx]       
+| help-confluence 
+| help-pdf 
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-html.zip[help-html]
+
 | ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
 |===
 
+=== English Versions
+[options="header"]
+|===
+| Version/Format     | MS-Word (c), docx | Confluence | pdf | html
+
+| skeleton structure 
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-docx.zip[skel-docx]     
+| skel-confluence 
+| skel-pdf 
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-plain-help.zip[skel-html]
+
+| ... plus explanation 
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-docx.zip[help-docx]       
+| help-confluence 
+| help-pdf 
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-html.zip[help-html]
+
+| ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
+|===
 
