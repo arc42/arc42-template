@@ -2,8 +2,9 @@
 
 _Bausteinname_ Blackboxbeschreibung
 
-Zweck:: _hier beschreiben Sie Zweck oder Verantwortung des Bausteins_
-Schnittstellen _Bausteinname_::
+*Zweck:* _hier beschreiben Sie Zweck oder Verantwortung des Bausteins_
+
+.Schnittstellen _Bausteinname_:
 [cols="1,2" options=""]
 |===
 | Schnittstelle 1 | Beschreibung 1
@@ -12,6 +13,6 @@ Schnittstellen _Bausteinname_::
 |===
 
 
-Ablageort/Datei:: _Verweisen Sie auf den Einstieg in
+*Ablageort/Datei:* _Verweisen Sie auf den Einstieg in
   den Sourcecode, den/die Paket-/Modulnamen oder
   die wichtigsten Klassen_
