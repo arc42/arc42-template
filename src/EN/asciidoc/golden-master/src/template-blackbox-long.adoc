@@ -3,8 +3,9 @@
 
 _BuildingBlockName_ Blackbox description
 
-Purpose:: _describe here Purpose and Responsibilities of this building block_
-Interfaces _BuildingBlockName_::
+*Purpose:* _describe here Purpose and Responsibilities of this building block_
+
+.Interfaces _BuildingBlockName_
 [cols="1,2" options=""]
 |===
 | Interface 1 | Description 1
@@ -13,12 +14,12 @@ Interfaces _BuildingBlockName_::
 |===
 
 
-Related Locations/Files:: _Point to a relevant starting point in
+*Related Locations/Files:* _Point to a relevant starting point in
   source code, or name packages or modules
   of the most relevant classes to this building block_
 
 
-Requirements fulfilled::
+.Requirements fulfilled
 [cols="1,2" options=""]
 |===
 | Requirement 1 | Remark 1
@@ -27,10 +28,10 @@ Requirements fulfilled::
 |===
 
 
-Variability:: _describe hier how is this building block variable,
-flexible or configurable.
+*Variability:* _describe hier how is this building block variable,
+flexible or configurable._
 
-Open discussion topics::
+.Open discussion topics
 [cols="1,2" options=""]
 |===
 | Topic 1 | Remark 1
@@ -38,7 +39,7 @@ Open discussion topics::
 | Topic 3 | Remark 3
 |===
 
-Organisational::
+.Organisational
 [cols="1,2" options=""]
 |===
 | Version | Remark 1
