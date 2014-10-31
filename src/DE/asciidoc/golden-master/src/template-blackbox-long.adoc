@@ -3,8 +3,9 @@
 
 _Bausteinname_ Blackboxbeschreibung
 
-Zweck:: _hier beschreiben Sie Zweck oder Verantwortung des Bausteins_
-Schnittstellen _Bausteinname_::
+*Zweck:* _hier beschreiben Sie Zweck oder Verantwortung des Bausteins_
+
+.Schnittstellen _Bausteinname_
 [cols="1,2" options=""]
 |===
 | Schnittstelle 1 | Beschreibung 1
@@ -13,12 +14,12 @@ Schnittstellen _Bausteinname_::
 |===
 
 
-Ablageort/Datei:: _Verweisen Sie auf den Einstieg in
+*Ablageort/Datei:* _Verweisen Sie auf den Einstieg in
   den Sourcecode, den/die Paket-/Modulnamen oder
   die wichtigsten Klassen_
 
 
-Erfüllte Anforderungen::
+.Erfüllte Anforderungen
 [cols="1,2" options=""]
 |===
 | Anforderung 1 | Bemerkung 1
@@ -27,10 +28,10 @@ Erfüllte Anforderungen::
 |===
 
 
-Variabilität:: _hier beschreiben Sie, in welchen Aspekten der Baustein variabel,
-flexibel oder konfigurierbar ist.
+*Variabilität:* _hier beschreiben Sie, in welchen Aspekten der Baustein variabel,
+flexibel oder konfigurierbar ist._
 
-Offene Punkte::
+.Offene Punkte
 [cols="1,2" options=""]
 |===
 | OP 1 | Bemerkung 1
@@ -38,7 +39,7 @@ Offene Punkte::
 | OP 3 | Bemerkung 3
 |===
 
-Organisatorisches::
+.Organisatorisches
 [cols="1,2" options=""]
 |===
 | Version | Bemerkung 1
