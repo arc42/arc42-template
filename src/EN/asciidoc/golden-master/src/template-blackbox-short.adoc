@@ -2,8 +2,9 @@
 
 _BuildingBlockName_ Blackbox description
 
-Purpose:: _describe here Purpose and Responsibilities of this building block_
-Interfaces _BuildingBlockName_::
+*Purpose:* _describe here Purpose and Responsibilities of this building block_
+
+.Interfaces _BuildingBlockName_
 [cols="1,2" options=""]
 |===
 | Interface 1 | Description 1
@@ -12,6 +13,6 @@ Interfaces _BuildingBlockName_::
 |===
 
 
-Related Locations/Files:: _Point to a relevant starting point in
+*Related Locations/Files:* _Point to a relevant starting point in
   source code, or name packages or modules
   of the most relevant classes to this building block_
