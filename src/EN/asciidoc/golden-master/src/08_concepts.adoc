@@ -17,7 +17,8 @@ The form can be varied. Some concepts are plain natural language text with a fre
 
 === Domain Models
 
-// SNIP
+[role="arc42help"]
+****
 .Contents
 Business (or logical) models, domain models - they all describe subject-specific, business aspects, without relation to technology.
 Often these structures or concepts are re-used at many places within an architecture, especially within chapter [Building Block View]…
@@ -27,7 +28,7 @@ Often parts of these models reappear in the building block view, but in order to
 
 .Form
 Usually either ER-Models (Entity-Relationship Models) or UML class diagrams (mainly containing entity classes) are used to document domain models.
-// /SNIP
+****
 
 === Recurring or Generic Structures and Patterns
 
