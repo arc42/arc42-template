@@ -1,5 +1,7 @@
 == export2confluence
 
+NOTE: for more information about confluence, see http://www.atlassian.com/confluence
+
 This module is an example on how AsciiDoc documentation can be exported to a wiki.
 
 When you write your documentation in AsciiDoc, the main use case for exporting it to a wiki is probably to expose 
@@ -8,7 +10,7 @@ This means that it is important to set the resulting pages to read-only in order
 documentation. Maybe a later version of the script could sync changes back from wiki to AsciiDoc, but currently 
 it is not likely that this will be soon.
 
-==== Why do we use www.atlassian.com/confluence[confluence] for this example?
+==== Why do we use confluence for this example?
 
 - the team has some experience with confluence
 - confluence comes with a nice, easy to use REST API
