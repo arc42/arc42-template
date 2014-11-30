@@ -44,7 +44,7 @@ Falls Sie sicherheitskritische Systeme entwerfen, ist eine dritte Art von Szenar
 *  Grenz- oder Stress-Szenarien beschreiben, wie das System auf Extremsituationen reagiert. Beispiele: Wie reagiert das System auf
 einen vollständigen Stromausfall, einen gravierenden Hardwarefehler oder ähnliches.
 
-image:images/szenarien.png[szenarien, Schematische Darstellung von Szenarien (nach \[Bass+03\])]
+image:images/szenarien.png["Szenarien",title="Schematische Darstellung von Szenarien (nach \[Bass+03\])", align="center", width=500]
 
 Abbildung: Schematische Darstellung von Szenarien (nach [Bass+03])
 
