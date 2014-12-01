@@ -19,7 +19,8 @@ Alternativ auch ausführlicher in Form von einzelnen Unterkapiteln je Entscheidu
 wichtige Entscheidungen zu treffen und festzuhalten. Die Hauptäste stellen dabei die wesentlichen Schritte dar.
 Sie können auch als Überschriften innerhalb eines Unterkapitels dienen (siehe Beispiel unten).
 
-image:images/entwurfsentscheidungen.png[entwurfsentscheidungen,Entwurfsentscheidungen]
+image:images/entwurfsentscheidungen.png["Entwurfsentscheidungen",title="Entwurfsentscheidungen", align="center", width=500]
+
 
 Die Fragen sind nicht sklavisch der Reihe nach zu beantworten. Sie sollen Sie lediglich leiten. In der Vorlage löschen Sie diese heraus, und lassen nur die Inhalte/Antworten stehen.
 ****
