@@ -56,8 +56,8 @@ we establish the travis-based continous build system.
 | help-confluence 
 | help-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-html.zip[help-html]
-| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-asciidoc.zip[skel-asciidoc]
-| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-textile.zip[skel-textile]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-asciidoc.zip[help-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-DE-withhelp-textile.zip[help-textile]
 
 | ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
 |===
@@ -80,8 +80,8 @@ we establish the travis-based continous build system.
 | help-confluence 
 | help-pdf 
 | http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-html.zip[help-html]
-| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-asciidoc.zip[skel-asciidoc]
-| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-textile.zip[skel-textile]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-asciidoc.zip[help-asciidoc]
+| http://arc42.github.io/arc42-template/dist/arc42-template-EN-withhelp-textile.zip[help-textile]
 
 | ... plus samples | sample-docx         | sample-confluence | sample-pdf | sample-html
 |===
