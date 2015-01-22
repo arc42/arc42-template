@@ -46,7 +46,7 @@ new File(config.goldenMaster.sourcePath).eachDir { dir ->
 task build () << {}
 
 task createTemplatesFromGoldenMaster (
-    description: 'takes the golden master and removes all help sections',
+    description: 'takes the golden master and creates a version with help and without help for each available language',
     group: 'arc42-template'
 )  {
 
