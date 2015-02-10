@@ -44,7 +44,7 @@ Often it is practical to support understandability by adding specific
 runtime views to explain these recurring structures.
 ****
 
-==== ecurring or Generic Structure 1
+==== Recurring or Generic Structure 1
 
 <insert diagram and descriptions here>
 
