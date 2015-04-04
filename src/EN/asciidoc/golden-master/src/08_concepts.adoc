@@ -88,7 +88,7 @@ Ergonomics of software systems deals with the improvement (optimization) of thei
 Flow of control for software systems is related to visible flows (on the - graphical - user interface) as well as the flow of background activities. Therefore this section should cover control of the user interface as well as control of workflows.
 ****
 
-=== Transaction Procession
+=== Transaction Processing
 
 [role="arc42help"]
 ****
