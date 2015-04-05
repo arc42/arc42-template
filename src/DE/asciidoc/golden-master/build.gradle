@@ -161,16 +161,14 @@ task convert2MarkdownMP (
         sourceFolder.eachFile { myFile ->
             if (myFile.name.endsWith('.xml')) {
                 def taskName = 'convert2Markdown_file' + i++
-                new File(localBuildDir.markdown + 'MP/').mkdirs()
+                new File(localBuildDir.markdownMP + '/').mkdirs()
                 tasks.create(name: taskName, type: Exec, dependsOn: [copyImages, generateDocbookMP]) {
                     //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
                     executable = "pandoc"
                     args = ['-r', 'docbook',
                             '-t', 'markdown',
-                            '-o', localBuildDir.markdown + 'MP/' + myFile.name-'xml'+'md',
+                            '-o', localBuildDir.markdownMP + '/' + myFile.name-'xml'+'md',
                             myFile.canonicalPath]
-                    System.out.println args
-                    System.out.println myFile.name
                 }
                 tasks."$taskName".execute()
             }
@@ -194,8 +192,6 @@ task convert2Textile (
                             '-t', 'textile',
                             '-o', localBuildDir.textile + '/'+myFile.name-'xml'+'textile',
                             myFile.canonicalPath]
-                    System.out.println args
-                    System.out.println myFile.name
                 }
                 tasks."$taskName".execute()
             }
