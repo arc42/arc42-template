@@ -90,10 +90,10 @@ task createTemplatesFromGoldenMaster (
                 buildfile = buildfile.replaceAll(/<INJECT_NAME>/,templateName)
                 new File(pathToTarget+'/build.gradle').write(buildfile,'utf-8')
                 //copy images
-                logger.info "copy images folder from " + pathToGoldenMaster + '/../../images'
+                logger.info "copy images folder from " + pathToDEGoldenMaster + '/../../images'
                 logger.info "                     to " + pathToTarget + '/images'
                 copy {
-                    from pathToGoldenMaster + '/../../images/.'
+                    from pathToDEGoldenMaster + '/../../images/.'
                     into pathToTarget + '/images'
                 }
             }
