@@ -92,9 +92,18 @@ task createTemplatesFromGoldenMaster (
                 //copy images
                 logger.info "copy images folder from " + pathToDEGoldenMaster + '/../../images'
                 logger.info "                     to " + pathToTarget + '/images'
-                copy {
-                    from pathToDEGoldenMaster + '/../../images/.'
-                    into pathToTarget + '/images'
+                if (templateName=='plain') {
+                    //only copy the logo
+                    copy {
+                        from pathToDEGoldenMaster + '/../../images/arc42-logo.png'
+                        into pathToTarget + '/images'
+                    }
+                } else {
+                    //copy logo plus example images
+                    copy {
+                        from pathToDEGoldenMaster + '/../../images/.'
+                        into pathToTarget + '/images'
+                    }
                 }
             }
         }

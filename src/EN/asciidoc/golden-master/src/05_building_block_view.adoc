@@ -14,7 +14,7 @@ This is the most important view, that must be part of each architecture document
 The building block view is a hierarchical collection of black box and white box descriptions as shown in the following diagram:
 
 .Building Blocks overview
-image::sections/images/05_building_blocks.png["Bulding blocks overview", align="center", scaledwidth="75%"]
+image::05_building_blocks.png["Bulding blocks overview", align="center", scaledwidth="75%"]
 
 *Level 1* contains the white box description of the overall system (system
 under development/SUD) made up of black box descriptions of the

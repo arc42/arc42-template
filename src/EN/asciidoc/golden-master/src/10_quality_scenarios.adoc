@@ -44,7 +44,7 @@ If you design safety critical systems a third type of scenarios is important for
 * Boundary or stress scenarios describe how the system reacts to exceptional conditions. Examples: How does the system react to a complete power outage, a serious hardware failure, etc.
 
 .Schematic depiction of scenarios (cf. [Bass+03])
-image::sections/images/10_stimulus.png["Schematic depiction of scenarios", align="center", width=500]
+image::10_stimulus.png["Schematic depiction of scenarios", align="center", width=500]
 
 Scenarios comprise the following major parts (according to [Starke05], original structure from [Bass+03]):
 

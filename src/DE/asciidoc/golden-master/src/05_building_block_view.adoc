@@ -20,7 +20,7 @@ den _Grundrissplan_.
 .Form
 Die Bausteinsicht ist eine hierarchische Sammlung von Blackbox- und Whitebox- Beschreibungen (siehe Abbildung unten):
 
-image:images/bausteinSichten.png["Baustein Sichten"]
+image:05_building_blocks.png["Baustein Sichten"]
 
 *Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems (System under Development / SUD) mit den Blackbox- Beschreibungen der Bausteine des Gesamtsystems
 
