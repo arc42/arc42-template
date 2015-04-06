@@ -23,6 +23,8 @@ anything goes :-). +gradlew createT+ is as valid as +gradlew cTFGM+.
 
 * +gradle2 arc42+
 
+NOTE:  for this step to work, you need pandoc installed with version 1.12.4.2 or higher.
+
 This will create all other formats. They will be located directly in the +build+ directory. 
 This is still work in progress. Some of the build steps need extra tools like pandoc installed, 
 so it is likely that you encounter errors.
