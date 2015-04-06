@@ -44,55 +44,9 @@ tasks.withType(AsciidoctorTask) { docTask ->
     ]  
 }
 
-task generateHTML (
-    type: AsciidoctorTask, 
-    description: 'use html5 as asciidoc backend') {
-    sourceDocumentName = project.file('./src/arc42-template.adoc')
-    outputDir = new File( localBuildDir.html )
-    backend = 'html5'  
-}
-
-task generateDocbook (
-        type: AsciidoctorTask,
-        description: 'use docbook as asciidoc backend') {
-    sourceDocumentName = project.file('./src/arc42-template.adoc')
-    if (localBuildDir.docbook) {
-        outputDir = new File(localBuildDir.docbook)
-        backend = 'docbook'
-    } else {
-        println """
-    Failed to generate DocBook
-    it seems that a format which needs DocBook as intermediate format is configured in buildconfig.groovy
-    please add
-        'docbook': [imageFolder: true]
-    to the list of formats
-"""
-        //end with exception :-)
-        new File(localBuildDir.docbook)
-    }
-}
-//Multipage-Version
-task generateDocbookMP (
-        type: AsciidoctorTask,
-        description: 'use docbook as asciidoc backend') {
-    if (localBuildDir.docbook) {
-        outputDir = new File(localBuildDir.docbook+'MP')
-        backend = 'docbook'
-    } else {
-        println """
-    Failed to generate DocBook
-    it seems that a format which needs DocBook as intermediate format is configured in buildconfig.groovy
-    please add
-        'docbook': [imageFolder: true]
-    to the list of formats
-"""
-        //end with exception :-)
-        new File(localBuildDir.docbook)
-    }
-}
 task copyAsciidoc (
-    type: Copy,
-    description: 'asciidoc is the master, but we copy it to the build directory, too'
+        type: Copy,
+        description: 'asciidoc is the master, but we copy it to the build directory, too'
 ) {
     from project.file('./src/.')
     into localBuildDir.asciidoc
@@ -119,11 +73,60 @@ task copyImages(
     }
 }
 
+task generateHTML (
+    type: AsciidoctorTask,
+    dependsOn: [copyImages, copyAsciidoc],
+    description: 'use html5 as asciidoc backend') {
+    sourceDocumentName = project.file('./src/arc42-template.adoc')
+    outputDir = new File( localBuildDir.html )
+    backend = 'html5'  
+}
+
+task generateDocbook (
+        type: AsciidoctorTask,
+        dependsOn: [copyImages, copyAsciidoc],
+        description: 'use docbook as asciidoc backend') {
+    sourceDocumentName = project.file('./src/arc42-template.adoc')
+    if (localBuildDir.docbook) {
+        outputDir = new File(localBuildDir.docbook)
+        backend = 'docbook'
+    } else {
+        println """
+    Failed to generate DocBook
+    it seems that a format which needs DocBook as intermediate format is configured in buildconfig.groovy
+    please add
+        'docbook': [imageFolder: true]
+    to the list of formats
+"""
+        //end with exception :-)
+        new File(localBuildDir.docbook)
+    }
+}
+//Multipage-Version
+task generateDocbookMP (
+        type: AsciidoctorTask,
+        dependsOn: [copyImages, copyAsciidoc],
+        description: 'use docbook as asciidoc backend') {
+    if (localBuildDir.docbook) {
+        outputDir = new File(localBuildDir.docbook+'MP')
+        backend = 'docbook'
+    } else {
+        println """
+    Failed to generate DocBook
+    it seems that a format which needs DocBook as intermediate format is configured in buildconfig.groovy
+    please add
+        'docbook': [imageFolder: true]
+    to the list of formats
+"""
+        //end with exception :-)
+        new File(localBuildDir.docbook)
+    }
+}
+
 task convert2Docx (
         dependsOn: [copyImages, generateDocbook ],
         type: Exec
 ) {
-    //commandLine "pandoc -r arc42-template.xml -o arc42-template.docx "
     executable = "pandoc"
     args = ['-r','docbook',
             '-t','docx',
