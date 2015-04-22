@@ -1,7 +1,0 @@
-
-== Konzepte
-
-=== Fachliche Strukturen und Modelle
-
-=== Technische Konzepte
-(Typische Muster und Strukturen)

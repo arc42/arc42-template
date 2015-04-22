@@ -1,7 +1,0 @@
-
-== Laufzeitsicht
-
-=== Laufzeitszenario 1
-
-
-=== Laufzeitszenario 2
