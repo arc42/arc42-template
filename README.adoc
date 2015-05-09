@@ -16,10 +16,13 @@ In order to create the other formats follow these steps:
 
 * +gradlew createTemplatesFromGoldenMaster+
 
-This will extract the "no help"-version from the golden master. You'll find those templates in +build\src_gen+.
+This will extract the "plain" and "with-help"-version from the golden master. You'll find the
+templates in different languages in +build\src_gen+ in AsciiDoc format.
 
 Btw: gradle allows you to "shorten" the command - as long as gradle is still able to guess the command, 
 anything goes :-). +gradlew createT+ is as valid as +gradlew cTFGM+.
+
+After you have executed the task to create the templates, a new task will become available in gradle:
 
 * +gradle2 arc42+
 
