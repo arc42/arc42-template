@@ -16,7 +16,7 @@ _Begründen oder erläutern Sie die Struktur_
 Enthaltene Bausteine::
 _hier beschreiben Sie (kurz) Name und Zweck der enhaltenen Bausteine_
 
-[cols="1,4, 1" options=""]
+[cols="1,4,1" options=""]
 |===
 | Baustein 1 | Beschreibung 1 | Verweis auf Blackbox-Beschreibung
 | Baustein 2 | Beschreibung 2 | Verweis auf Blackbox-Beschreibung
