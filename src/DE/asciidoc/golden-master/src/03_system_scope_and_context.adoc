@@ -69,10 +69,10 @@ z.B.: UML Deployment-Diagramm mit den Kanälen zu Nachbarsystemen, begleitet von
 Spezifikation der Kommunikationskanäle, die ihr System mit den Nachbar-Systemen und der Umwelt verbinden.
 
 
-=== _Externe Schnittstelle 1_
+._Externe Schnittstelle 1_
 
 .Identifikation der Schnittstelle
-[cols="1,1", options="header]
+[cols="1,1", options="header"]
 |===
 |Name / Bezeichnung der Schnittstelle
 |_<Name der Schnittstelle>_
