@@ -12,7 +12,6 @@ Make sure that the interfaces are specified with all their relevant aspects (wha
 The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.
 
 .Form
-
 * Various context diagram (see below)
 * Lists of neighboring systems and their interfaces.
 ****
@@ -59,9 +58,10 @@ E.g. UML deployment diagram describing channels to neighboring systems, together
 For many building blocks you can describe its interfaces directly in the black box template of the building block. For complex interfaces – and external interfaces are normally very complex – it is worth while to describe them in separate sections. Use the following interface template to guide you towards many questions that might be relevant for the interface.
 
 .Interface Template
+.
 
 .Interface Template
-[options="header", cols="<.<1, <.<3"]
+[options="header", cols="<.<1,<.<3"]
 |===
 2+<| Interface ID
 | Name| Name of the Interface
@@ -72,28 +72,24 @@ For many building blocks you can describe its interfaces directly in the black b
 |===
 
 .Business Context of the Interface
+.
 
 .Business Processes
-
 <Diagram or desciption of business processes relevant for this interface>
 
 .Interface Data
-
 <Description of interface data>
 
 * Technical Context
 * Form of interaction
 
 .Requirements for the Interface
-
 * ...
 
 .Security Aspects
-
 * ...
 
 .Quantities
-
 * Runtime
 * Throughput/Volume
 * Availability
@@ -101,56 +97,45 @@ For many building blocks you can describe its interfaces directly in the black b
 * Archiving
 
 .Participating Resources
-
 * ...
 
 .Syntax: Data and Formats
-
 * Data Formats
 * Validity & Plausibility Rules
 * Encoding, Character Sets
 * Configuration data
 
 .Syntax: Methods/Functions
-
 * Check data
 
 .Interface Process
-
 * Logical and technical processes
 
 .Semantics
-
 * Side effects, consequences
 
 .Technical Infrastructure
-
 * Technical protocols
 
 .Error and Exception Handling
-
 * ...
 
 .Constraints and Assumptions
-
 * Access Rights
 * Temporal constraints
 * Parallel Access
 * Preconditions for using the interface
 
 .Operating the Interface
-
 * ...
 
 .Meta Information for the Interface
-
 * Person in charge
 * Costs of using the interface
 * Organizational Issues
 * Versioning
 
 .Examples of Using the Interface
-
 * Sample data
 * Sample flows and interactions
 * Programming Examples
