@@ -24,7 +24,7 @@ anything goes :-). +gradlew createT+ is as valid as +gradlew cTFGM+.
 
 After you have executed the task to create the templates, a new task will become available in gradle:
 
-* +gradle2 arc42+
+* +gradlew arc42+
 
 NOTE:  for this step to work, you need pandoc installed with version 1.12.4.2 or higher.
 
