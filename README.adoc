@@ -7,12 +7,13 @@ free and open source.
 
 == How to use this Project
 
+If you want to use an arc42 template, you don't need to use this project - just use one of the templates you find on http://arc42.de/ , http://arc42.org/ or https://arc42.github.io/
+
 This repository currently contains the "Golden Master" of the arc42 template in 
 link:src/EN/asciidoc/golden-master/src[english] and link:src/DE/asciidoc/golden-master/src[german] 
-and it contains gradle projects to convert the golden master into other formats. The repository includes
-the gradle-wrapper - a script which will automatically install gradle for you if it is not already installed.
+and it contains gradle projects to convert the golden master into other formats. In order to make it really easy to use this gradle project, the repository includes the gradle-wrapper - a script which will automatically install gradle for you if it is not already installed.
 
-In order to create the other formats follow these steps:
+In order to create the other formats from the "Golden Master", follow these steps:
 
 * +gradlew createTemplatesFromGoldenMaster+
 
