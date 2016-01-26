@@ -6,5 +6,5 @@
 * http://aim42.github.io/htmlSanityCheck/hsc_arc42.html[HTML Sanity Checker] (englisch)
 * http://www.dokchess.de/dokchess/arc42/[DocChess] 
 * http://www.embarc.de/arc42-starschnitt-gradle/[Gradle] 
-* http://arc42.org:8090/display/arc42beispielmamacrm[MaMa CRM] 
+* http://confluence.arc42.org/display/arc42beispielmamacrm[MaMa CRM] 
 * http://confluence.arc42.org/display/migrationEg/Financial+Data+Migration[Financial Data Migration] 
