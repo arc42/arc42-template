@@ -22,7 +22,8 @@ formats = [
     'markdownMP': [imageFolder: true],
     'textile': [imageFolder: true],
     'docx': [imageFolder: false],
-    'docbook': [imageFolder: true]
+    'docbook': [imageFolder: true],
+    'latex': [imageFolder: true],
 ]
 
 distribution {

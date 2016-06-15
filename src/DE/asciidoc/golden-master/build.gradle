@@ -123,6 +123,17 @@ task generateDocbookMP (
     }
 }
 
+task convert2Latex (
+        dependsOn: [copyImages, generateDocbook ],
+        type: Exec
+) {
+    executable = "pandoc"
+    args = ['-r','docbook',
+            '-s',
+            '-t','latex',
+            '-o',localBuildDir.latex+'/arc42-template.tex',
+            localBuildDir.docbook+'/arc42-template.xml']
+}
 task convert2Docx (
         dependsOn: [copyImages, generateDocbook ],
         type: Exec
@@ -207,7 +218,7 @@ task export2Confluence (
 
 }
 task arc42(
-    dependsOn: [copyImages, generateHTML, export2Confluence, convert2Docx, convert2Epub, convert2Markdown, convert2MarkdownMP, convert2Textile, copyAsciidoc],
+    dependsOn: [copyImages, generateHTML, export2Confluence, convert2Latex, convert2Docx, convert2Epub, convert2Markdown, convert2MarkdownMP, convert2Textile, copyAsciidoc],
     description: 'collects all required tasks for creating arc42 documentation',
     group: 'arc42-template'
 ) << {
