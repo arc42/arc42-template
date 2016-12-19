@@ -1,25 +1,17 @@
 [[section-architecture-constraints]]
 == Randbedingungen
-(engl.: Architecture Constraints)
 
 [role="arc42help"]
 ****
 .Inhalt
-Fesseln, die Software-Architekten in ihren Freiheiten bezüglich des Entwurfs oder des Entwicklungsprozesses einschränken.
+Fesseln und Vorgaben, die ihre Freiheiten bezüglich Entwurf, Implementierung oder Ihres Entwicklungsprozesses einschränken. Diese Randbedingungen gelten manchmal organisations- oder firmenweit über die Grenzen einzelner Systeme hinweg.
 
 .Motivation
-Architekten sollten klar wissen, wo Ihre Freiheitsgrade bezüglich Entwurfsentscheidungen liegen und wo sie Randbedingungen beachten müssen.
-Randbedingungen können vielleicht noch verhandelt werden, zunächst sind sie aber da.
+Als Architekt sollten Sie explizit wissen, wo Ihre Freiheitsgrade bezüglich Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
+Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
 
 .Form
-Informelle Listen, gegliedert nach den Unterpunkten dieses Kapitels.
+Einfache Tabellen der Randbedingungen mit Erläuterungen. Bei Bedarf unterscheiden Sie technische, organisatorische und politische Randbedingungen oder übergreifende Konventionen (beispielsweise Programmier- oder Versionierungsrichtlinien, Dokumentation- oder Namenskonvention)
 
-.Beispiele
-siehe Unterkapitel
-
-.Hintergründe
-Im Idealfall sind Randbedingungen durch die Anforderungen vorgegeben, spätestens die Architekten müssen sich dieser Randbedingungen bewusst sein.
-
-Den Einfluss von Randbedingungen auf Software- und Systemarchitekturen beschreibt  [Hofmeister+1999] (Software-Architecture, A Practical Guide, Addison-Wesley 1999) unter dem Stichwort „Global Analysis“.
 ****
 
