@@ -1,5 +1,5 @@
 [[section-technical-risks]]
-== Risiken
+== Risiken und technische Schulden
 
 
 [role="arc42help"]

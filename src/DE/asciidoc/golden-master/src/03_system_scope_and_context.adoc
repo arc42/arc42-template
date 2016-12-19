@@ -46,7 +46,7 @@ Alternativ oder ergänzend können Sie einfach eine Tabelle verwenden. Der Titel
 ****
 
 
-=== Technischer- oder Verteilungskontext
+=== Technischer Kontext/Verteilungskontext
 
 [role="arc42help"]
 ****
@@ -61,98 +61,3 @@ Verstehen, über welche Medien Informationen mit Nachbarsystemen bzw. der Umwelt
 z.B.: UML Deployment-Diagramm mit den Kanälen zu Nachbarsystemen, begleitet von einer Mapping-Tabelle Kanal x Input/Output.
 ****
 
-=== Externe Schnittstellen
-
-[role="arc42help"]
-****
-.Inhalt
-Spezifikation der Kommunikationskanäle, die ihr System mit den Nachbar-Systemen und der Umwelt verbinden.
-
-
-._Externe Schnittstelle 1_
-
-.Identifikation der Schnittstelle
-[cols="1,1", options="header"]
-|===
-|Name / Bezeichnung der Schnittstelle
-|_<Name der Schnittstelle>_
-
-|Version
-|
-
-|Änderungen gegenüber Vorversion
-|
-
-|Wer hat geändert und warum?
-|
-
-|Verantwortlicher Ansprechpartner / Rolle
-|
-|===
-
-.Fachlicher Kontext der Schnittstelle
-
-.Fachliche Abläufe
-_<Diagramm oder Beschreibung der fachlichen Abläufe>_
-
-.Fachliche Bedeutung der Daten
-* _<Beschreibung der fachlichen Bedeutung>_
-* Technischer Kontext
-* Form der Interaktion
-
-.Anforderungen an die Schnittstelle
-
-.Sicherheitsanforderungen
-
-.Mengengerüste
-* Laufzeit
-* Durchsatz / Datenvolumen
-* Verfügbarkeit
-* Protokollierung
-* Archivierung
-
-.Beteiligte Resourcen
-
-.Syntax: Daten und Formate
-*   Datenformate
-*   Gültigkeits- und Plausibilitätsregeln
-*   Codierung, Zeichensätze
-*   Konfigurationsdaten
-
-.Syntax: Methoden/Funktionen
-* Prüfdaten
-
-.Ablauf der Schnittstelle
-* fachliche oder technischer Ablauf
-
-.Semantik
-* Nebenwirkungen, Konsequenzen
-
-.Technische Infrastruktur
-* Technische Protokolle
-
-.Fehler- und Ausnahmebehandlung
-* Welche Fehler werden erkannt?
-* Wie werden sie intern behandelt?
-* Welche Fehler werden nach aussen gegeben?
-
-.Einschränkungen und Voraussetzungen
-* Berechtigungen
-* Zeitliche Einschränkungen
-* Parallele Benutzung
-* Voraussetzungen zur Nutzung
-
-.Betrieb der Schnittstelle
-
-.Metainformationen der Schnittstelle
-* Verantwortliche
-* Kosten der Nutzung
-* Organisatorisches
-* Versionierung
-
-.Beispiele für Nutzung und Daten
-* Beispieldaten
-* Beispielabläufe / -interaktionen
-* Programmierbeispiele
-
-****

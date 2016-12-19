@@ -40,7 +40,7 @@ Mit Objektdiagrammen können Sie Schnappschüsse der existierenden Laufzeitobjek
 Beziehungen. Die UML bietet dabei die Möglichkeit zwischen aktiven und passiven Objekten zu unterscheiden.
 ****
 
-=== Laufzeitszenario 1
+=== <Laufzeitszenario 1>
 
 [role="arc42help"]
 ****
@@ -48,7 +48,7 @@ Beziehungen. Die UML bietet dabei die Möglichkeit zwischen aktiven und passiven
 *  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Diagramm
 ****
 
-=== Laufzeitszenario 2
+=== <Laufzeitszenario 2>
 
 [role="arc42help"]
 ****
@@ -58,4 +58,4 @@ Beziehungen. Die UML bietet dabei die Möglichkeit zwischen aktiven und passiven
 
 ...
 
-=== Laufzeitszenario _n_
+=== <Laufzeitszenario _n_>

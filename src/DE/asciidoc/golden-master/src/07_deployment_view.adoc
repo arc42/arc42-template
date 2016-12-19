@@ -24,7 +24,7 @@ Abstrahieren Sie aber auf die Aspekte, die für die Software-Verteilung relevant
 ****
 
 === Infrastruktur Ebene 1
-==== Verteilungsdiagramm Ebene 1
+
 
 [role="arc42help"]
 ****
@@ -33,68 +33,7 @@ Abstrahieren Sie aber auf die Aspekte, die für die Software-Verteilung relevant
 *  verweist evtl. auf verworfene Alternativen (mit der Begründung, warum es verworfen wurden
 ****
 
-==== Prozessor 1
 
-[role="arc42help"]
-****
-Struktur gemäß Knoten-Template (node-template):
-
-*  Beschreibung
-*  Leistungsmerkmale
-*  Zugeordnete Software- Bausteine
-*  Sonstige Verwaltungsinformationen
-*  Offene Punkte
-****
-
-==== Prozessor 2
-
-[role="arc42help"]
-****
-Struktur gemäß Knoten-Template:
-
-*  Beschreibung
-*  Leistungsmerkmale
-*  Zugeordnete Software- Bausteine
-*  Sonstige Verwaltungsinformationen
-*  Offene Punkte
-****
-...
-
-==== Prozessor _n_
-
-[role="arc42help"]
-****
-Struktur gemäß Knoten-Template:
-
-*  Beschreibung
-*  Leistungsmerkmale
-*  Zugeordnete Software- Bausteine
-*  Sonstige Verwaltungsinformationen
-*  Offene Punkte
-****
-
-==== Kanal 1
-
-[role="arc42help"]
-****
-.Inhalt
-Spezifikation der Eigenschaften des Kanals, soweit für die Software- Architektur interessant ist.
-
-.Motivation
-Spezifizieren Sie mindestens die Eigenschaften der Übertragungskanäle, die Sie brauchen, um nicht-funktionale Anforderungen nachzuweisen, wie maximaler Durchsatz, Störungswahrscheinlichkeiten oder ähnliche.
-
-.Form
-Verwenden Sie ein ähnliches Muster wie für die Prozessorspezifikationen.
-Oftmals verweisen Sie auf einen Standard (z.B: CAN-Bus, 10Mbit Ethernet, Druckerkabel, ...).
-****
-
-==== Kanal 2
-
-...
-
-==== Kanal _m_
-
-==== Offene Punkte
 
 === Infrastruktur Ebene 2
 

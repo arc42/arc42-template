@@ -12,7 +12,7 @@ Software- und Systemarchitekturen.
 Erstellt von Dr. Gernot Starke, Dr. Peter Hruschka und Mitwirkenden.
 
 
-Template Revision: 6.5 DE (asciidoc-basiert), Juni 2014
+Template Revision: 7.0 DE (asciidoc-basiert), Januar 2017
 
 (C)
 We acknowledge that this document uses material from the

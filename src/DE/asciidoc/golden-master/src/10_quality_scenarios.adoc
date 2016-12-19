@@ -1,10 +1,10 @@
 [[section-quality-scenarios]]
-== Qualitätsszenarien
+== Qualitätsanforderungen
 
 
 [role="arc42help"]
 ****
-Dieses Kapitel fasst alles zusammen, was Sie zur systematischen Bewertung Ihrer Architektur gegen vorgegebene Qualitätsziele benötigen.
+Dieses Kapitel fasst alles zusammen, was Sie zur systematischen Bewertung Ihrer Architektur gegen vorgegebene Qualitätsanforderungen benötigen.
 ****
 
 
@@ -23,7 +23,7 @@ Eine mögliche Darstellung ist eine baumartige Verfeinerung des Begriffes „Qua
 ****
 
 
-=== Bewertungsszenarien
+=== Qualitätsszenarien
 
 [role="arc42help"]
 ****

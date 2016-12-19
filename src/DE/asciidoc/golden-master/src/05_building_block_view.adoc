@@ -95,7 +95,7 @@ include::template-blackbox-short.adoc[]
 include::template-blackbox-short.adoc[]
 
 
-=== Ebene 2
+=== Whiteboxen Ebene 2
 
 [role="arc42help"]
 ****
@@ -103,7 +103,7 @@ An dieser Stelle können Sie den inneren Aufbau
 (einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
 ****
 
-==== _Baustein 1_ (Whitebox)
+==== Whitebox <_Baustein 1_>
 
 [role="arc42help"]
 ****
@@ -113,24 +113,8 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 * begründet diese Struktur
 ****
 
-include::template-whitebox.adoc[]
 
-===== _Baustein 1.1_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-
-===== _Baustein 1.2_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-
-===== _Baustein 1.n_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-
-==== _Baustein 2_ (Whitebox)
+==== Whitebox <_Baustein 2_>
 
 [role="arc42help"]
 ****
@@ -141,48 +125,12 @@ sowie deren Zusammenhänge und Abhängigkeiten.
 ****
 
 
-include::template-whitebox.adoc[]
+
+==== Whitebox _Baustein 3_ 
 
 
-===== _Baustein 2.1_ (Blackbox)
 
-include::template-blackbox-short.adoc[]
-
-===== _Baustein 2.2_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-===== _Baustein 2.n_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-
-==== _Baustein 3_ (Whitebox)
-
-[role="arc42help"]
-****
-* ...zeigt das Innenleben von _Baustein 3_ in Diagrammform
-mit den lokalen Bausteinen 3.1 - 3.n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-* begründet diese Struktur
-****
-
-_<Hier Whitebox-Erläuterung für Baustein 3 einfügen>_
-
-===== _Baustein 3.1_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-===== _Baustein 3.2_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-===== _Baustein 3.n_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
-
-=== Ebene 3
+=== Whiteboxen Ebene 3
 
 [role="arc42help"]
 ****
@@ -200,22 +148,29 @@ Sie weglassen.
 ****
 
 
-==== _Baustein 1.1_ (Whitebox)
+==== Whitebox <_Baustein x.1_>
 
 [role="arc42help"]
 ****
-* ...zeigt das Innenleben von _Baustein 1.1_ in Diagrammform
+* ...zeigt das Innenleben von _Baustein x.1_ in Diagrammform
 mit den lokalen Bausteinen 1.1.1 - 1.1.n,
 sowie deren Zusammenhänge und Abhängigkeiten.
 * begründet diese Struktur
 ****
 
-include::template-whitebox.adoc[]
 
-===== _Baustein 1.1.1_ (Blackbox)
+==== Whitebox <_Baustein x.2_>
 
-include::template-blackbox-short.adoc[]
+[role="arc42help"]
+****
+* ...zeigt das Innenleben von _Baustein x.1_ in Diagrammform
+mit seinen lokalen Bausteinen.
+****
 
-===== _Baustein 1.1.2_ (Blackbox)
+==== Whitebox <_Baustein y.1_>
 
-include::template-blackbox-short.adoc[]
+[role="arc42help"]
+****
+* ...zeigt das Innenleben von _Baustein y.1_ in Diagrammform
+mit seinen lokalen Bausteinen.
+****
