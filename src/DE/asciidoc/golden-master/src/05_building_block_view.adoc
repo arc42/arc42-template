@@ -12,40 +12,88 @@ Interfaces, Pakete, Bibliotheken, Frameworks, Schichten,
 Partitionen, Tiers, Funktionen, Makros, Operationen,
 Datenstrukturen...) sowie deren Beziehungen.
 
+Diese Sicht sollte in jeder Architekturdokumentation
+vorhanden sein . In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
+
 .Motivation
-Dies ist die wichtigste Sicht, die in jeder Architekturdokumentation
-vorhanden sein muss. In der Analogie zum Hausbau bildet die Bausteinsicht
-den _Grundrissplan_.
+Behalten Sie den Überblick über den Quellcode, indem Sie die statische Struktur des Systems durch Abstraktion verständlich machen.
+
+Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne viele Implementierungsdetails offenlegen zu müssen.
 
 .Form
-Die Bausteinsicht ist eine hierarchische Sammlung von Blackbox- und Whitebox- Beschreibungen (siehe Abbildung unten):
+Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
 
 image:05_building_blocks.png["Baustein Sichten"]
 
-*Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems (System under Development / SUD) mit den Blackbox- Beschreibungen der Bausteine des Gesamtsystems
+*Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems, zusammen mit den Blackbox-Beschreibungen der Bausteine aus Ebene 1.
 
-*Ebene 2* zoomt dann in einige Bausteine der Ebene 1 hinein.
-Sie enthält somit alle vorhandenen Whitebox-Beschreibungen von Bausteinen
-der Ebene 1, zusammen mit den Blackbox-Beschreibungen der Bausteine von Ebene 2.
+*Ebene 2* zoomt in einige Bausteine der Ebene 1 hinein.
+Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine
+der Ebene 1, zusammen mit den Blackbox-Beschreibungen der Bausteine aus Ebene 2.
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
+****
 
-.Whitebox-Template
-Enthält mehrere Bausteine (== Blackboxes),
-zu denen Sie jeweils eine Blackbox Beschreibung erstellen können.
+=== Whitebox Gesamtsystem
 
-.Blackbox-Template (Kurzfassung)
-Für jeden Baustein aus dem White-Box-Template können Sie folgende Angaben
-machen: (Kopieren Sie diese Punkte in die folgenden Unterkapitel)
+[role="arc42help"]
+****
+hier Hilfetext für Whitebox-Beschreibung
+
+Übersicht::
+
+_<Diagramm>_
+
+Begründung::
+_Begründen oder erläutern Sie die Struktur_
+
+
+Enthaltene Bausteine::
+_Beschreiben Sie die enhaltenen Bausteine_ (Blackboxen).
+
+Das haben Sie verschiedene Optionen:
+
+* in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
+* als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten). Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
+
+
+Wichtige Schnittstellen::
+_Beschreiben Sie die wichtigsten (internen und/oder externen) Schnittstellen der Bausteine, die nicht bereits bei einem der Bausteine erläutert wurden._
+
+
+****
+
+XXX TODO XXX
+
+==== Übersicht
+
+==== Begründung
+
+==== <Name Blackbox 1>
+
+[role="arc42help"]
+****
+Hier Hilfetext zu Blackbox-Template
+****
+
+==== <Name Blackbox 2>
+
+...
+
+==== <Name Blackbox n>
+
+==== <Name Schnittstelle 1>
+
+...
+
+==== <Name Schnittstelle n>
+
 
 include::template-blackbox-short.adoc[]
 
-(eine ausführlichere Fassung des Blackbox-Templates finden Sie weiter unten.)
-****
 
 
-=== Whitebox Gesamtsystem
 
 [role="arc42help"]
 ****
@@ -74,26 +122,6 @@ include::template-whitebox.adoc[]
 Beschreiben Sie diesen Baustein anhand des Blackbox-Templates.
 Nachfolgend finden Sie eine kompakte und eine ausführliche Fassung davon.
 ****
-
-include::template-blackbox-short.adoc[]
-
-include::template-blackbox-long.adoc[]
-
-[role="arc42help"]
-****
-(In den folgenden Abschnitten finden Sie nur noch die Kurzfassung des Blackbox-Template)
-****
-
-==== _Baustein 2_ (Blackbox)
-
-
-include::template-blackbox-short.adoc[]
-
-
-==== _Baustein n_ (Blackbox)
-
-include::template-blackbox-short.adoc[]
-
 
 === Whiteboxen Ebene 2
 
