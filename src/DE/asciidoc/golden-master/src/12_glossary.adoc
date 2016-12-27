@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Definieren Sie hier die wesentlichen fachlichen und technischen Begriffe,
+Die wesentlichen fachlichen und technischen Begriffe,
 die Stakeholder im Zusammenhang mit dem System verwenden.
 
 Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz,

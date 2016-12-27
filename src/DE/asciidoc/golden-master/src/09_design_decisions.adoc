@@ -6,8 +6,9 @@
 [role="arc42help"]
 ****
 .Inhalt
-Beschreiben Sie hier wichtige, teure, große oder riskante
-Architektur- oder Entwurfsentscheidungen inklusive der jeweiligen Begründungen.
+Wichtige, teure, große oder riskante
+Architektur- oder Entwurfsentscheidungen inklusive der jeweiligen
+Begründungen.
 Mit "Entscheidungen" meinen wir hier die Auswahl einer von mehreren
 Alternativen unter vorgegebenen Kriterien.
 

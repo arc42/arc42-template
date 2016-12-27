@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Dokumentieren Sie hier eine nach Prioritäten geordnete Liste der
+Eine nach Prioritäten geordnete Liste der
 erkannten Architekturrisiken und/oder technischen Schulden.
 
 .Motivation

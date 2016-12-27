@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Beschreiben Sie hier möglichst alle Qualitätsanforderungen als Qualitätsbaum mit Szenarien.
+Dieser Abschnitt enthält möglichst alle Qualitätsanforderungen als Qualitätsbaum mit Szenarien.
 Die wichtigsten davon haben Sie bereits in Abschnitt 1.2 (Qualitätsziele)
 hervorgehoben.
 
@@ -49,7 +49,7 @@ Abschnittes aufnehmen.
 [role="arc42help"]
 ****
 .Inhalt
-Konkretisieren Sie hier (die in der Praxis oftmals vagen oder impliziten)
+Konkretisierung der (in der Praxis oftmals vagen oder impliziten)
 Qualitätsanforderungen durch (Qualitäts-)Szenarien.
 
 

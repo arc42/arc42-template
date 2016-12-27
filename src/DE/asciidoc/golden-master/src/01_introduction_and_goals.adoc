@@ -4,7 +4,9 @@
 
 [role="arc42help"]
 ****
-Fassen Sie hier die wesentliche Anforderungen und treibenden Kräfte zusammen, die Softwarearchitekten und Entwicklungsteams berücksichtigen müssen. Dazu gehören die
+Beschreibt die wesentliche Anforderungen und
+treibenden Kräfte, die Softwarearchitekten und Entwicklungsteams
+berücksichtigen müssen. Dazu gehören die
 
 * zugrunde liegenden Geschäftsziele, wesentliche Aufgabenstellung und essenzielle fachliche Anforderungen an das System
 * Qualitätsziele für die Architektur 
@@ -57,7 +59,8 @@ Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien
 ****
 .Inhalt
 Expliziter Überblick über die Stakeholder des Systems, d.h. über alle Personen, Rollen oder Organisationen, die 
-* die Architektur kennen sollten oder 
+
+* die Architektur kennen sollten oder
 * von der Architektur überzeugt werden müssen,
 * mit Architektur oder Code arbeiten (z.B. Schnittstellen nutzen),
 * Dokumentation der Architektur für ihre eigene Arbeit benötigen,
@@ -67,13 +70,14 @@ Expliziter Überblick über die Stakeholder des Systems, d.h. über alle Persone
 Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen. Diese Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der von Ihnen zu leistenden Arbeit und Ergebnisse.
 
 .Form
-Einfache Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung bezüglich der Architektur und deren Dokumentation.
+Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung bezüglich der Architektur und deren Dokumentation.
 ****
 
 
+
 [cols="1,1,2" options="header"]
-.Stakeholder des Systems
 |===
 |Rolle |Kontakt |Erwartungshaltung |
-| | | 
+|  |  |  |
 |===
+

@@ -6,7 +6,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Beschreiben Sie in diesem Abschnitt:
+Die Verteilungssicht beschreibt:
 
  1. die technische Infrastruktur, auf der Ihr System
 ausgeführt wird, mit Infrastrukturelementen wie
