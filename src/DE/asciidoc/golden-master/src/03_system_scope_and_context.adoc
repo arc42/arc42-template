@@ -40,13 +40,19 @@ darstellen und die fachlichen Schnittstellen zu den Nachbarn (mehr oder weniger 
 Alternativ oder ergänzend können Sie eine Tabelle verwenden. Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationspartner, Eingabe, Ausgabe.
 ****
 
+**<Diagramm oder Tabelle>**
+
+**<optional: Erläuterung der externen fachlichen Schnittstellen>**
+
 
 === Technischer Kontext
 
 [role="arc42help"]
 ****
 .Inhalt
-Technische Schnittstellen (Kanäle, Übertragungsmedien) zwischen dem System und seiner Umwelt. Zusätzlich eine Abbildung, welche fachlichen Ein- und Ausgaben über welche technische Kanäle fließen.
+Technische Schnittstellen (Kanäle, Übertragungsmedien)
+zwischen dem System und seiner Umwelt. Zusätzlich eine Abbildung,
+welche fachlichen Ein- und Ausgaben über welche technischen Kanäle fließen.
 
 
 .Motivation
@@ -58,3 +64,8 @@ Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen, beg
 
 ****
 
+**<Diagramm oder Tabelle>**
+
+**<optional: Erläuterung der externen technischen Schnittstellen>**
+
+**<Mapping fachliche auf technische Schnittstellen>**

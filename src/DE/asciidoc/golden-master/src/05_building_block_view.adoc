@@ -6,30 +6,31 @@
 [role="arc42help"]
 ****
 .Inhalt
-Statische Zerlegung des Systems in Bausteine
-(Module, Komponenten, Subsysteme, Teilsysteme, Klassen,
-Interfaces, Pakete, Bibliotheken, Frameworks, Schichten,
-Partitionen, Tiers, Funktionen, Makros, Operationen,
+Statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Teilsysteme, Klassen,
+Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen,
 Datenstrukturen...) sowie deren Beziehungen.
 
 Diese Sicht sollte in jeder Architekturdokumentation
-vorhanden sein . In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
+vorhanden sein . In der Analogie zum Hausbau bildet die Bausteinsicht
+den _Grundrissplan_.
 
 .Motivation
-Behalten Sie den Überblick über den Quellcode, indem Sie die statische Struktur des Systems durch Abstraktion verständlich machen.
+Behalten Sie den Überblick über den Quellcode,
+indem Sie die statische Struktur des Systems durch Abstraktion verständlich machen.
 
-Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne viele Implementierungsdetails offenlegen zu müssen.
+Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Implementierungsdetails offenlegen zu müssen.
 
 .Form
 Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
 
-image:05_building_blocks.png["Baustein Sichten"]
+image:05_building-block-hierarchy.png["Baustein Sichten"]
 
-*Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems, zusammen mit den Blackbox-Beschreibungen der Bausteine aus Ebene 1.
+*Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems,
+zusammen mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
 *Ebene 2* zoomt in einige Bausteine der Ebene 1 hinein.
 Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine
-der Ebene 1, zusammen mit den Blackbox-Beschreibungen der Bausteine aus Ebene 2.
+der Ebene 1, jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener Bausteine.
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
@@ -39,135 +40,122 @@ der Ebene 1, zusammen mit den Blackbox-Beschreibungen der Bausteine aus Ebene 2.
 
 [role="arc42help"]
 ****
-hier Hilfetext für Whitebox-Beschreibung
+An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand
+des nachfolgenden Whitebox-Templates. Dieses enthält:
 
-Übersicht::
+ * Ein Übersichtsdiagramm
+ * die Begründung dieser Zerlegung
+ * Blackbox-Beschreibungen der hier enthaltenen Bausteine. Dafür haben Sie
+verschiedene Optionen:
 
-_<Diagramm>_
+   ** in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
+   ** als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten). Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
+
+
+ * (optional:) wichtige Schnittstellen, die nicht bereits im
+ Blackbox-Templates eines der Bausteine erläutert werden, aber für das Verständnis
+ der Whitebox von zentraler Bedeutung sind. Aufgrund der vielfältigen Möglichkeiten
+ oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
+ Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten,
+ Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten
+  und vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit
+  Beispielen oder einfachen Signaturen zurecht.
+
+****
+
+_**<Übersichtsdiagramm>**_
 
 Begründung::
-_Begründen oder erläutern Sie die Struktur_
+
+_<Erläuternder Text>_
 
 
 Enthaltene Bausteine::
-_Beschreiben Sie die enhaltenen Bausteine_ (Blackboxen).
-
-Das haben Sie verschiedene Optionen:
-
-* in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
-* als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten). Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
-
+_<Beschreibung der enhaltenen Bausteine (Blackboxen)>_
 
 Wichtige Schnittstellen::
-_Beschreiben Sie die wichtigsten (internen und/oder externen) Schnittstellen der Bausteine, die nicht bereits bei einem der Bausteine erläutert wurden._
+_<Beschreibung wichtiger Schnittstellen>_
+
+[role="arc42help"]
+****
+Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
+
+Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin
+nur mit Name und Verantwortung nach folgendem Muster beschrieben:
+
+[cols="1,2" options=""]
+|===
+| **Name** | **Verantwortung**
+| _<Blackbox 1>_ | _<Text>_
+| _<Blackbox 2>_ | _<Text>_
+|===
+
+
+
+Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen,
+beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-Template.
+Dessen Überschrift ist jeweils der Namen dieser Blackbox.
 
 
 ****
 
-XXX TODO XXX
-
-==== Übersicht
-
-==== Begründung
 
 ==== <Name Blackbox 1>
 
 [role="arc42help"]
 ****
-Hier Hilfetext zu Blackbox-Template
+An dieser Stelle beschreiben Sie die <Blackbox 1>
+anhand des folgenden Blackbox-Templates:
+
+* Zweck/Verantwortung
+* Schnittstelle(n), sofern sie nicht als eigenständige Beschreibungen herausgezogen sind.
+Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
+* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten...
+* (Optional) Ablageort/Datei(en)
+* (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
+* (Optional) Offene Punkte/Probleme/Risiken
+
 ****
+
+_<Zweck/Verantwortung>_
+
+_<Schnittstelle(n)>_
+
+_<(Optional) Qualitäts-/Leistungsmerkmale>_
+
+_<(Optional) Ablageort/Datei(en)>_
+
+_<(Optional) Erfüllte Anforderungen>_
+
+_<(optional) Offene Punkte/Probleme/Risiken>_
+
+
+
 
 ==== <Name Blackbox 2>
 
-...
+_<Blackbox-Template>_
 
 ==== <Name Blackbox n>
+
+_<Blackbox-Template>_
+
 
 ==== <Name Schnittstelle 1>
 
 ...
 
-==== <Name Schnittstelle n>
-
-
-include::template-blackbox-short.adoc[]
+==== <Name Schnittstelle m>
 
 
 
-
-[role="arc42help"]
-****
-An dieser Stelle beschreiben Sie die Whitebox-Sicht der Ebene 1 gemäß dem
-Whitebox-Template.
-
-Das Überblicksbild zeigt das Innenleben des Gesamtsystems
-mit den darin enthaltenen Bausteinen 1 .. n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-
-Begründen Sie die Struktur: Warum gibt es diese Bausteine mit
-diesen Abhängigkeiten/Schnittstellen.
-
-Erklären Sie ggfs. auch verworfene Alternativen,
-mitsamt Begründung, warum sie verworfen wurden.
-
-****
-
-include::template-whitebox.adoc[]
-
-
-==== _Baustein 1_ (Blackbox)
-
-[role="arc42help"]
-****
-Beschreiben Sie diesen Baustein anhand des Blackbox-Templates.
-Nachfolgend finden Sie eine kompakte und eine ausführliche Fassung davon.
-****
-
-=== Whiteboxen Ebene 2
+=== Ebene 2
 
 [role="arc42help"]
 ****
 An dieser Stelle können Sie den inneren Aufbau
 (einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
-****
 
-==== Whitebox <_Baustein 1_>
-
-[role="arc42help"]
-****
-* ...zeigt das Innenleben von _Baustein 1_ in Diagrammform
-mit den lokalen Bausteinen 1.1 - 1.n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-* begründet diese Struktur
-****
-
-
-==== Whitebox <_Baustein 2_>
-
-[role="arc42help"]
-****
-* ...zeigt das Innenleben von _Baustein 2_ in Diagrammform
-mit den lokalen Bausteinen 2.1 - 2.n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-* begründet diese Struktur
-****
-
-
-
-==== Whitebox _Baustein 3_ 
-
-
-
-=== Whiteboxen Ebene 3
-
-[role="arc42help"]
-****
-An dieser Stelle können Sie den inneren Aufbau
-(einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
-****
-
-[role="arc42help"]
-****
 Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie
 selbst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
 Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders
@@ -175,30 +163,61 @@ volatile Bausteine. Normale, einfache oder standardisierte Teile sollten
 Sie weglassen.
 ****
 
+==== Whitebox _<Baustein 1>_
+
+[role="arc42help"]
+****
+...zeigt das Innenleben von _Baustein 1_.
+****
+
+_<Whitebox-Template>_
+
+==== Whitebox _<Baustein 2>_
+
+
+_<Whitebox-Template>_
+
+...
+
+==== Whitebox _<Baustein m>_
+
+
+_<Whitebox-Template>_
+
+
+
+=== Ebene 3
+
+[role="arc42help"]
+****
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
+
+Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil
+von arc42 für die weiteren Ebenen.
+
+****
+
 
 ==== Whitebox <_Baustein x.1_>
 
 [role="arc42help"]
 ****
-* ...zeigt das Innenleben von _Baustein x.1_ in Diagrammform
-mit den lokalen Bausteinen 1.1.1 - 1.1.n,
-sowie deren Zusammenhänge und Abhängigkeiten.
-* begründet diese Struktur
+...zeigt das Innenleben von _Baustein x.1_.
 ****
+
+
+_<Whitebox-Template>_
 
 
 ==== Whitebox <_Baustein x.2_>
 
-[role="arc42help"]
-****
-* ...zeigt das Innenleben von _Baustein x.1_ in Diagrammform
-mit seinen lokalen Bausteinen.
-****
+_<Whitebox-Template>_
+
+
 
 ==== Whitebox <_Baustein y.1_>
 
-[role="arc42help"]
-****
-* ...zeigt das Innenleben von _Baustein y.1_ in Diagrammform
-mit seinen lokalen Bausteinen.
-****
+_<Whitebox-Template>_
+
+
