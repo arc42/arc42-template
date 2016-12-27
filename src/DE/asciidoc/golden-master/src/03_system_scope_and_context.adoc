@@ -6,7 +6,12 @@
 [role="arc42help"]
 ****
 .Inhalt
-Die Kontextabgrenzung grenzt das System von allen Kommunikationspartner (Nachbarsysteme und Benutzerrollen) ab. Sie legt damit die externen Schnittstellen fest. Differenzieren Sie fachlichen Kontext (fachliche Ein- und Ausgaben) und technischen Kontext (Kanäle, Protokolle, Hardware), falls nötig.
+Grenzen Sie hier das System von allen Kommunikationspartnern
+(Nachbarsystemen und Benutzerrollen) ab. Die Kontextabgrenzung legt damit die
+externen Schnittstellen fest.
+
+Differenzieren Sie fachlichen Kontext (fachliche Ein- und Ausgaben) und
+technischen Kontext (Kanäle, Protokolle, Hardware), falls nötig.
 
 
 .Motivation
