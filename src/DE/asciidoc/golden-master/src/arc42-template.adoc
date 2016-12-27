@@ -101,12 +101,9 @@ include::src/appendix-references.adoc[]
 
 <<<<
 // Beispiele
-include::src/appendix-examples.adoc[]
+//include::src/appendix-examples.adoc[]
 
 <<<<
 // Contributing and Contributors
 include::src/appendix-contributing.adoc[]
 
-<<<<
-// Approved Practitioner for arc42
-include::src/appendix-practitioner.adoc[]

@@ -30,11 +30,8 @@ Anwendern für Ihre Hilfe und Unterstützung.
 ==== Zur Zeit aktiv
 
 * Gernot Starke
-* Stefan Zörner
-* Markus Schärtel
 * Ralf D. Müller
 * Peter Hruschka
-* Jürgen Krey
 
 
 ==== Frühere Mitwirkende
@@ -47,4 +44,7 @@ Anwendern für Ihre Hilfe und Unterstützung.
 * Phillip Ghadir
 * Carsten Klein
 * Prof. Arne Koschel
+* Jürgen Krey
+* Markus Schärtel
 * Axel Scheithauer
+* Stefan Zörner
