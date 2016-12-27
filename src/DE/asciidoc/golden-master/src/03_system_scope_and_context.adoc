@@ -16,7 +16,7 @@ technischen Kontext (Kanäle, Protokolle, Hardware), falls nötig.
 
 .Motivation
 Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören zu den kritischsten Aspekten eines Systems.
-Stellen Sie rechtzeitig sicher, dass Sie diese komplett verstanden
+Stellen Sie sicher, dass Sie diese komplett verstanden
 haben.
 
 .Form
@@ -30,9 +30,9 @@ haben.
 [role="arc42help"]
 ****
 .Inhalt
-Festlegung aller Kommunikationspartner (Menschen, IT-Systeme, ...) mit Erklärung der
+Festlegung *aller* Kommunikationspartner (Nutzer, IT-Systeme, ...) mit Erklärung der
 fachlichen Ein- und Ausgabedaten oder Schnittstellen. Zusätzlich bei Bedarf fachliche Datenformate
-oder Protokolle der Kommunikation mit den Nachbarsystemen, sofern diese Informationen nicht bei den spezifischen Bausteinen erläutert werden.
+oder Protokolle der Kommunikation mit den Nachbarsystemen.
 
 .Motivation
 Alle Beteiligten müssen verstehen, welche fachlichen Informationen mit der Umwelt ausgetauscht werden.
@@ -40,12 +40,12 @@ Alle Beteiligten müssen verstehen, welche fachlichen Informationen mit der Umwe
 
 .Form
 Alle Diagrammarten, die das System als Black Box
-darstellen und die fachlichen Schnittstellen zu den Nachbarn (mehr oder weniger ausführlich) beschreiben.
+darstellen und die fachlichen Schnittstellen zu den Nachbarn beschreiben.
 
 Alternativ oder ergänzend können Sie eine Tabelle verwenden. Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationspartner, Eingabe, Ausgabe.
 ****
 
-**<Diagramm oder Tabelle>**
+**<Diagramm und/oder Tabelle>**
 
 **<optional: Erläuterung der externen fachlichen Schnittstellen>**
 
