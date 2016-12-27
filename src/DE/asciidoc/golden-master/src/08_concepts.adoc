@@ -5,24 +5,70 @@
 [role="arc42help"]
 ****
 .Inhalt
-Die folgenden Kapitel sind Beispiele für übergreifende Aspekte.
+Dieser Abschnitt beschreibt übergreifende, prinzipielle
+Regelungen und Lösungsansätze, die an mehreren Stellen
+(=_querschittlich_) relevant sind.
 
-Falls einige der Aspekte für Ihr Projekt nicht wichtig sind oder nicht zutreffen, so halten Sie diese Information ebenfalls fest, anstatt das Kapitel zu löschen.
+Solche Konzepte betreffen oft mehrere Bausteine. Dazu können
+vielerlei Themen gehören, beispielsweise:
+
+* fachliche Modelle,
+* eingesetzte Architektur- oder Entwurfsmuster,
+* Regeln für den konkreten Einsatz von Technologien,
+* prinzipielle, meist technische, Festlegungen übergreifender Art,
+* Implementierungsregeln
+
 
 .Motivation
-Manche der Aspekte lassen sich nur schwer "zentral" als Baustein in der Architektur unterbringen (z.B. das Thema "Sicherheit". Hier ist der Platz im Template, wo Sie Konzepte zu derartigen Themen geschlossen behandeln können.
 
-Alle Aspekte, die in der Architektur an vielen Stellen Konsequenzen zeigen, beispielsweise ein Domänen-/Fachklassen- oder Business-Modell, haben ebenfalls hier einen guten Platz.
+Konzepte bilden die Grundlage für _konzeptionelle Integrität_
+(Konsistenz, Homogenität) der Architektur und damit
+eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
 
-Schließlich kommen manche Strukturen in der Architektur wiederholt vor, beispielsweise ein an mehreren Stellen eingesetztes Pattern. Auch solche Aspekte können Sie hier zentral erläutern.
+Manche dieser Themen lassen sich nur schwer als Baustein in der
+Architektur unterbringen (z.B. das Thema "Sicherheit"). Hier ist der
+Platz im Template, wo Sie derartige Themen geschlossen behandeln können.
 
 .Form
-Kann vielfältig sein. Teilweise Konzeptpapiere mit beliebiger Gliederung, teilweise auch übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen.
+Kann vielfältig sein.
+
+* Konzeptpapiere mit beliebiger Gliederung,
+* übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
+* beispielhafte Implementierung für insbesondere technische Konzepte,
+* Verweise auf "übliche" Nutzung von Standardframeworks (beispielsweise
+die Nutzung von Hibernate als Object/Relational Mapper.
+
+
+Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes
+könnte wie folgt aussehen (wobei die Zuordnung von Themen zu den Gruppen
+nicht immer eindeutig ist):
+
+* Fachliche Konzepte
+* User Experience (UX)
+* Sicherheitskonzepte (Safety und Security)
+* Architektur- und Entwurfsmuster
+* Unter-der-Haube
+* Entwicklungskonzepte
+* Betriebskonzepte
+
+
+TODO: Bild einfügen XXX:
+
 ****
 
-[role="arc42help"]
-****
-Fachliche Modelle, Domänenmodelle, Business-Modelle – sie alle beschreiben Strukturen der reinen Fachlichkeit, also ohne Bezug zur Implementierungs- oder Lösungstechnologie.
 
-Oftmals tauchen Teile solcher fachlichen Modelle an vielen Stellen in der Architektur, insbesondere der Bausteinsicht, wieder auf.
-****
+==== _<Konzept 1>_
+
+_<Erklärung>_
+
+
+
+==== _<Konzept 2>_
+
+_<Erklärung>_
+
+...
+
+==== _<Konzept n>_
+
+_<Erklärung>_
