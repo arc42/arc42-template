@@ -26,9 +26,9 @@ nachvollziehen können.
 
 
 * Liste oder Tabelle, nach Wichtigkeit und Tragweite der
-Entscheidungen geordnet.
+Entscheidungen geordnet oder
 
-* Ausführlicher in Form einzelner Unterkapitel je Entscheidung.
+* ausführlicher in Form einzelner Unterkapitel je Entscheidung.
 
 ****
 

@@ -5,31 +5,22 @@
 [role="arc42help"]
 ****
 .Inhalt
-Eine nach Prioritäten geordnete Liste der erkannten technischen Risiken
+Dokumentieren Sie hier eine nach Prioritäten geordnete Liste der
+erkannten Architekturrisiken und/oder technischen Schulden.
 
 .Motivation
-"Risikomanagement ist Projektmanagement für Erwachsene" (Tim Lister, Atlantic Systems Guild.) Unter diesem Motto sollten Sie technische Risiken in der Architektur gezielt ermitteln, bewerten und dem Projektmanagement als Teil der gesamten Risikoanalyse zur Verfügung stellen.
+"Risikomanagement ist Projektmanagement für Erwachsene"
+(Tim Lister, Atlantic Systems Guild.)
+
+Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Schulden
+gezielt ermitteln, bewerten und Ihren Management-Stakeholdern
+(z.B. Projektleitung, Product-Owner)
+transparent machen.
 
 .Form
-Risikolisten mit Eintrittswahrscheinlichkeit, Schadenshöhe, Maßnahmen zur Risikovermeidung oder Risikominimierung, ...
+Liste oder Tabelle von Risiko und/oder technischen Schulden,
+eventuell mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung
+oder dem Abbau der technischen Schulden.
+
 ****
 
-
-[cols="1,2" options="header"]
-.Risiken
-|===
-|Risiko
-|Priorität
-|Konsequenz
-|Erläuterung
-
-|
-|
-|
-|
-
-|
-|
-|
-|
-|===

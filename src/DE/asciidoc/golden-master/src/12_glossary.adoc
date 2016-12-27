@@ -5,25 +5,34 @@
 [role="arc42help"]
 ****
 .Inhalt
-Die wichtigsten Begriffe der Software-Architektur in alphabetischer Reihenfolge
+Definieren Sie hier die wesentlichen fachlichen und technischen Begriffe,
+die Stakeholder im Zusammenhang mit dem System verwenden.
+
+Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz,
+falls Sie in mehrsprachigen Teams arbeiten.
 
 .Motivation
-Sie sollten relevante Begriffe im Rahmen eines Systems oder eines Teams konsistent verstehen und verwenden. 
+Sie sollten relevante Begriffe klar definieren,
+so dass alle Beteiligten
+
+1. diese Begriffe identisch verstehen, und
+2. vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
+
 
 .Form
-einfache zweispaltige Tabelle mit <Begriff> und <Definition>
+* Zweispaltige Tabelle mit <Begriff> und <Definition>
+* Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
 ****
 
 [cols="1,2" options="header"]
-.Glossar
 |===
 |Begriff
 |Definition
 
-|<Begriff-1
-|Beschreibung-2
+|_<Begriff-1>_
+|_<Definition-1>_
 
 
-|<Begriff-2
-|Beschreibung-2
+|_<Begriff-2_
+|_<Definition-2>_
 |===

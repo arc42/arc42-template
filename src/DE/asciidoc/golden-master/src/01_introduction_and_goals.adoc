@@ -41,10 +41,15 @@ Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen d
 
 
 .Motivation
-Sie müssen die für Ihre Stakeholder relevanten Qualitätsanforderungen an das System kennen, möglichst konkret und operationalisierbar. Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
+Weil Qualitätsziele grundlegende Architekturentscheidungen
+oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder
+relevanten Qualitätsziele kennen, möglichst konkret und
+operationalisierbar.
+
+Wenn Sie als Architekt nicht wissen, woran Ihre Arbeit gemessen wird, ....
 
 .Form
-Einfache tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien, geordnet nach Prioritäten.
+Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien, geordnet nach Prioritäten.
 ****
 
 === Stakeholder
