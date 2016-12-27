@@ -5,57 +5,55 @@
 [role="arc42help"]
 ****
 .Inhalt
-Diese Sicht beschreibt, wie sich die Bausteine des Systems als Laufzeitelemente
-(Prozesse, Tasks, Activities, Threads, ...)  verhalten und wie sie zusammenarbeiten.
+Diese Sicht erklärt konkrete Abläufe und Beziehungen zwischen Bausteinen
+in Form von Szenarien aus folgenden Bereichen:
 
-Als alternative Bezeichnungen finden Sie dafür auch:
-
-*  Dynamische Sichten
-*  Prozesssichten
-*  Ablaufsichten
-
-Suchen Sie sich interessante Laufzeitszenarien heraus, z.B.:
-
-*  Wie werden die wichtigsten Use-Cases durch die Architekturbausteine bearbeitet?
-*  Welche Instanzen von Architekturbausteinen gibt es zur Laufzeit und wie werden diese gestartet, überwacht und beendet?
-*  Wie arbeiten Systemkomponenten mit externen und vorhandenen Komponenten zusammen?
-*  Wie startet das System (etwa: notwendige Startskripte, Abhängigkeiten von externen Subsystemen, Datenbanken, Kommunikationssystemen etc.)?
+*  Wichtige Abläufe oder _Features_:
+Wie führen die Bausteine der Architektur die wichtigsten Abläufe durch?
+*  Interaktionen an kritischen externen Schnittstellen:
+Wie arbeiten Bausteine mit Nutzern und Nachbarsystemen zusammen?
+* Betrieb und Administration: Inbetriebnahme, Start, Stop.
+* Fehler- und Ausnahmeszenarien
 
 Anmerkung: Kriterium für die Auswahl der möglichen Szenarien (d.h. Abläufe) des Systems ist deren Architekturrelevanz.
 Es geht nicht darum, möglichst viele Abläufe darzustellen, sondern eine angemessene Auswahl zu dokumentieren.
-Kandidaten sind:
 
-1.	Die wichtigsten 3-5 Anwendungsfälle
-2.	Systemstart
-3.	Das Verhalten an den wichtigsten externen Schnittstellen
-4.	Das Verhalten in den wichtigsten Fehlerfällen
 
 .Motivation
-Sie müssen (insbesondere bei objektorientierten Architekturen) nicht nur die Bausteine mit
-ihren Schnittstellen spezifizieren, sondern auch, wie Instanzen von Bausteinen zur Laufzeit miteinander kommunizieren.
+Sie sollten verstehen wie (Instanzen von) Bausteine(n) Ihres Systems ihre
+jeweiligen Aufgaben erfüllen
+und zur Laufzeit miteinander kommunizieren.
+
+Nutzen Sie solche Szenarien in der Dokumentation hauptsächlich zur besseren
+Kommunikation mit Stakeholdern, die statische Modelle
+(z.B. Bausteinsicht, Verteilungssicht) weniger verständlich finden.
+
 
 .Form
-Dokumentieren Sie die ausgesuchten Laufzeitszenarien mit UML-Sequenz-, Aktivitäts-, oder Kommunikationsdiagrammen.
-Mit Objektdiagrammen können Sie Schnappschüsse der existierenden Laufzeitobjekte darstellen und auch instanziierte
-Beziehungen. Die UML bietet dabei die Möglichkeit zwischen aktiven und passiven Objekten zu unterscheiden.
+Für die Beschreibung von Szenarien gibt es zahlreiche Ausdrucksmöglichkeiten.
+Nutzen Sie beispielsweise:
+
+* Nummerierte Schrittfolgen oder Aufzählungen in Umgangssprache
+* Aktivitäts- oder Flussdiagramme
+* Sequenzdiagramme
+* BPMN oder EPKs (Ereignis-Prozessketten)
+* Zustandsautomaten
+* ...
+
 ****
 
-=== <Laufzeitszenario 1>
+=== _<Bezeichnung Laufzeitszenario 1>_
 
 [role="arc42help"]
 ****
-*  Laufzeitdiagramm
-*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Diagramm
+*  Laufzeitdiagramm oder Ablaufbeschreibung
+*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Szenario
 ****
 
-=== <Laufzeitszenario 2>
-
-[role="arc42help"]
-****
-*  Laufzeitdiagramm
-*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Diagramm
-****
+=== _<Bezeichnung Laufzeitszenario 2>_
 
 ...
 
-=== <Laufzeitszenario _n_>
+=== _<Bezeichnung Laufzeitszenario n>_
+
+...
