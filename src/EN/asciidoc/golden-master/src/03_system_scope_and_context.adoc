@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Contents
-The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.
+Here you define the boundaries between your system and all its communication partners (adjacent systems and users). It thereby identifies the system’s relevant external interfaces.
 Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.
 
 .Motivation
