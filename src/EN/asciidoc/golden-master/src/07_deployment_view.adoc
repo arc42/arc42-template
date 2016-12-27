@@ -1,86 +1,110 @@
 [[section-deployment-view]]
+
+
 == Deployment View
 
-
 [role="arc42help"]
 ****
-.Contents
-This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.
-Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.
+.Content
+Diese Sicht beschreibt:
+
+ 1. die technische Infrastruktur, auf der Ihr System
+ausgeführt wird, mit Infrastrukturelementen wie
+Standorte, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztoplogien
+sowie sonstigen Bestandteilen und
+
+2. die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
+
+
+Häufig laufen Systeme in unterschiedlichen Umgebungen ab, beispielsweise
+Entwicklung-/Test- oder Produktionsumgebungen. In solchen Fällen sollten Sie
+alle relevanten Umgebungen aufzeigen.
+
+Nutzen Sie die Verteilungssicht insbesondere, wenn Ihre Software
+auf mehr als einem Rechner, Prozessor, Server oder Container abläuft
+oder Sie Ihre Hardware sogar selbst konstruieren.
+
+Aus Softwaresicht genügt es auf die Aspekte zu achten, die für die
+Softwareverteilung relevant sind. Hardwarearchitekten können bei Bedarf
+die Infrastruktur mit beliebigen Details beschreiben.
 
 .Motivation
-Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.
+Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende Infrastruktur
+ beeinflusst Ihr System und/oder querschnittliche Lösungskonzepte, daher
+ müssen Sie diese Infrastruktur kennen.
 
 .Form
-The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)
-Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.
+
+* Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine
+Diagrammart zur Verfügung, um diese
+Sicht auszudrücken. Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre
+Verteilungsstruktur es verlangt.
++
+Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext
+enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
+Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
+hinein.
+
+* Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
+die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
+
 ****
 
-=== Infrastructure Level 1
+=== Infrastruktur Ebene 1
 
-==== Deployment Diagram Level 1
 
 [role="arc42help"]
 ****
-* Shows the deployment of the overall system to 1 – n processors or sites as well as the physical connections among these elements.
-* Lists the most important reasons that led to this deployment structure, i.e. the specific selection of nodes and channels.
-* Should also mention rejected alternatives incl. reasons for their rejection.
+An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit
+Tabellen oder Texten):
+
+*  die Verteilung des Gesamtsystems auf
+mehrere Standorte, Umgebungen, Rechner, Prozessoren oä.
+sowie die physischen Verbindungskanäle zwischen diesen,
+*  wichtige Begründungen für dieser Verteilungsstruktur,
+* Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
+*  Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
+
+Für mehrere Umgebungen oder alternatives Deployment
+kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen.
+
 ****
 
-==== Processor 1
+_**<Übersichtsdiagramm>**_
 
-<insert node template here>
+Begründung::
+
+_<Erläuternder Text>_
+
+Qualitäts- und/oder Leistungsmerkmale::
+
+_<Erläuternder Text>_
+
+Zuordnung von Bausteinen zu Infrastruktur::
+_<Beschreibung der Zuordnung>_
+
+
+=== Infrastruktur Ebene 2
 
 [role="arc42help"]
 ****
-**Node Template:**
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Infrastrukturelemente aus Ebene 1 beschreiben.
 
-* Description
-* Deployed software building blocks
-* Quality attributes (performance, constraints, ...)
-* Other administrative information
-* Open issues
+Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
+
 ****
 
-==== Processor 2
+==== _<Infrastrukturelement 1>_
 
-<insert node template here>
+_<Diagramm + Erläuterungen>_
 
-==== ...
+==== _<Infrastrukturelement 2>_
 
-==== Processor n
+_<Diagramm + Erläuterungen>_
 
-<insert node template here>
+...
 
-==== Channel 1
+==== _<Infrastrukturelement n>_
 
-[role="arc42help"]
-****
-.Contents
-Specification of the channel’s attributes, as relevant for software architecture.
-
-.Motivation
-Specify at least those attributes of the communications channels that you need for proving fulfillment of non-functional requirements such as maximal throughput, probability for faults, etc.
-
-.Form
-Often you will refer to a standard (e.g. CAN-Bus, 10Mbit Ethernet, IEEE 1394, ...).
-
-If you need more information use a structure similar to the node template (especially to document quality aspects of channels like throughput, error rates, ...)
-****
-
-==== Channel 2
-
-==== ...
-
-==== Channel m
-
-=== Infrastructure Level 2
-
-[role="arc42help"]
-****
-.Contents
-Additional deployment diagrams with similar structure as above, refining each node of infrastructure level 1 that needs more details to map the software blocks.
-
-.Motivation
-To describe additional details of the infrastructure, as needed by software deployment.
-****
+_<Diagramm + Erläuterungen>_
