@@ -1,211 +1,223 @@
 [[section-building-block-view]]
+
+
 == Building Block View
 
-
 [role="arc42help"]
 ****
-.Contents
-Static decomposition of the system into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships thereof.
+.Content
+Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Teilsysteme, Klassen,
+Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen,
+Datenstrukturen...) sowie deren Beziehungen.
+
+Diese Sicht sollte in jeder Architekturdokumentation
+vorhanden sein . In der Analogie zum Hausbau bildet die Bausteinsicht
+den _Grundrissplan_.
 
 .Motivation
-This is the most important view, that must be part of each architecture documentation. In building construction this would be the floor plan.
+Behalten Sie den Überblick über den Quellcode,
+indem Sie die statische Struktur des Systems durch Abstraktion verständlich machen.
+
+Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Implementierungsdetails offenlegen zu müssen.
 
 .Form
-The building block view is a hierarchical collection of black box and white box descriptions as shown in the following diagram:
+Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
 
-.Building Blocks overview
-image::05_building_blocks.png["Bulding blocks overview", align="center", scaledwidth="75%"]
+image:05_building-block-hierarchy.png["Baustein Sichten"]
 
-*Level 1* contains the white box description of the overall system (system
-under development/SUD) made up of black box descriptions of the
-system’s building blocks.
+*Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems,
+zusammen mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
-*Level 2* zooms into the building blocks of Level 1 and is thus made up of
-the white box descriptions of all building blocks of Level 1 together
-with the black box descriptions of the building blocks of Level 2.
+*Ebene 2* zoomt in einige Bausteine der Ebene 1 hinein.
+Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine
+der Ebene 1, jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener Bausteine.
 
-*Level 3* zooms into the building blocks of Level 2, etc.
-
-The section is structured as follows:
-
-.White Box Template
-Contains multiple building blocks with corresponding black box descriptions.
-One or more black box templates:
-Each building block appearing in the white box template should be described as follows:
-
-* Purpose / Responsibility:
-* Interface(s):
-* Implemented requirements:
-* Variability:
-* Performance attributes:
-* Repository / Files:
-* Other administrative information: Author, Version, Date, Revision History
-* Open issues:
+*Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
 ****
 
-=== Level 1
-[role="arc42help"]
-****
-Here you describe the white box view of level 1 according to the white box template. The structure is given below.
-
-The overview diagram describes the inner structure of the overall system in terms of building blocks 1 – n, as well as their relationships and interdependencies.
-
-It is also useful to list the most important reasons that led to this structure, esp. as relevant to the interdependencies / relationships among the building blocks at this level.
-
-You should also mention rejected alternatives incl. reasons for their rejection.
-****
-
-The following diagram shows the main building blocks of the system and their interdependencies:
-
-<insert overview diagram here>
-
-Comments regarding structure and interdependencies at Level 1:
-
-==== Building Block Name 1 (Black Box Description)
-[role="arc42help"]
-****
-Structure according to black box template:
-
-* Purpose / Responsibility:
-* Interface(s):
-* Implemented requirements:
-* Variability:
-* Performance attributes:
-* Repository / Files:
-* Other administrative information: Author, Version, Date, Revision History
-* Open issues:
-
-****
-
-<insert the building block’s black box template here>
-
-==== Building Block Name 2 (Black Box Description)
-
-<insert the building block’s black box template here>
-
-==== ...
-
-<insert the building block’s black box template here>
-
-==== Building Block Name n (Black Box Description)
-
-<insert the building block’s black box template here>
-
-==== Open Issues
-
-=== Level 2
+=== Whitebox Gesamtsystem
 
 [role="arc42help"]
 ****
-Describe all building blocks comprising level 1 as a series of white box templates. The structure is given below for three building blocks and should be duplicated as needed.
+An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand
+des nachfolgenden Whitebox-Templates. Dieses enthält:
+
+ * Ein Übersichtsdiagramm
+ * die Begründung dieser Zerlegung
+ * Blackbox-Beschreibungen der hier enthaltenen Bausteine. Dafür haben Sie
+verschiedene Optionen:
+
+   ** in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
+   ** als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten). Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
+
+
+ * (optional:) wichtige Schnittstellen, die nicht bereits im
+ Blackbox-Templates eines der Bausteine erläutert werden, aber für das Verständnis
+ der Whitebox von zentraler Bedeutung sind. Aufgrund der vielfältigen Möglichkeiten
+ oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
+ Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten,
+ Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten
+  und vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit
+  Beispielen oder einfachen Signaturen zurecht.
+
 ****
 
-==== Building Block Name 1 (White Box Description)
+_**<Übersichtsdiagramm>**_
+
+Begründung::
+
+_<Erläuternder Text>_
+
+
+Enthaltene Bausteine::
+_<Beschreibung der enhaltenen Bausteine (Blackboxen)>_
+
+Wichtige Schnittstellen::
+_<Beschreibung wichtiger Schnittstellen>_
 
 [role="arc42help"]
 ****
-Shows the inner workings of the building block in form of a diagrams with local building blocks 1 – n, as well as their relationships and interdependencies.
+Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
 
-It is also useful to list the most important reasons that led to this structure, esp. as relevant to the interdependencies / relationships among the building blocks at this level.
+Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin
+nur mit Name und Verantwortung nach folgendem Muster beschrieben:
 
-You should also mention rejected alternatives incl. reasons for their rejection.
+[cols="1,2" options=""]
+|===
+| **Name** | **Verantwortung**
+| _<Blackbox 1>_ | _<Text>_
+| _<Blackbox 2>_ | _<Text>_
+|===
+
+
+
+Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen,
+beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-Template.
+Dessen Überschrift ist jeweils der Namen dieser Blackbox.
+
+
 ****
-<insert diagram of building block 1 here>
 
-===== Building Block Name 1.1 (Black Box Description)
+
+==== <Name Blackbox 1>
+
 [role="arc42help"]
 ****
-Structure according to black box template:
+An dieser Stelle beschreiben Sie die <Blackbox 1>
+anhand des folgenden Blackbox-Templates:
 
-* Purpose / Responsibility:
-* Interface(s):
-* Implemented requirements:
-* Variability:
-* Performance attributes:
-* Repository / Files:
-* Other administrative information: Author, Version, Date, Revision History
-* Open issues:
-
-****
-
-===== Building Block Name 1.2 (Black Box Description)
-
-Structure according to black box template
-
-===== ...
-
-===== Building Block Name 1.n (Black Box Description)
-[role="arc42help"]
-****
-Structure according to black box template
+* Zweck/Verantwortung
+* Schnittstelle(n), sofern sie nicht als eigenständige Beschreibungen herausgezogen sind.
+Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
+* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten...
+* (Optional) Ablageort/Datei(en)
+* (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
+* (Optional) Offene Punkte/Probleme/Risiken
 
 ****
 
-===== Description of Relationships
+_<Zweck/Verantwortung>_
 
-===== Open Issues
+_<Schnittstelle(n)>_
 
-==== Building Block Name 2 (White Box Description)
+_<(Optional) Qualitäts-/Leistungsmerkmale>_
 
-…
+_<(Optional) Ablageort/Datei(en)>_
 
-<insert diagram of building block 2 here>
+_<(Optional) Erfüllte Anforderungen>_
 
-===== Building Block Name 2.1 (Black Box Description)
+_<(optional) Offene Punkte/Probleme/Risiken>_
 
-Structure according to black box template
 
-===== Building Block Name 2.2 (Black Box Description)
-[role="arc42help"]
-****
-Structure according to black box template
-****
 
-===== ...
 
-===== Building Block Name 2.n (Black Box Description)
-[role="arc42help"]
-****
-Structure according to black box template
-****
+==== <Name Blackbox 2>
 
-===== Description of Relationships
+_<Blackbox-Template>_
 
-===== Open Issues
+==== <Name Blackbox n>
 
-==== Building Block Name 3 (White Box Description)
+_<Blackbox-Template>_
+
+
+==== <Name Schnittstelle 1>
 
 ...
 
-<insert diagram of building block 3 here>
+==== <Name Schnittstelle m>
 
-===== Building Block Name 3.1 (Black Box Description)
+
+
+=== Ebene 2
+
 [role="arc42help"]
 ****
-Structure according to black box template
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
+
+Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie
+selbst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
+Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders
+volatile Bausteine. Normale, einfache oder standardisierte Teile sollten
+Sie weglassen.
 ****
 
-===== Building Block Name 3.2 (Black Box Description)
+==== Whitebox _<Baustein 1>_
+
 [role="arc42help"]
 ****
-Structure according to black box template
+...zeigt das Innenleben von _Baustein 1_.
 ****
-===== ...
 
-===== Building Block Name 3.n (Black Box Description)
+_<Whitebox-Template>_
+
+==== Whitebox _<Baustein 2>_
+
+
+_<Whitebox-Template>_
+
+...
+
+==== Whitebox _<Baustein m>_
+
+
+_<Whitebox-Template>_
+
+
+
+=== Ebene 3
+
 [role="arc42help"]
 ****
-Structure according to black box template
+An dieser Stelle können Sie den inneren Aufbau
+(einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
+
+Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil
+von arc42 für die weiteren Ebenen.
+
 ****
 
-===== Description of Relationships
 
-===== Open Issues
+==== Whitebox <_Baustein x.1_>
 
-=== Level 3
 [role="arc42help"]
 ****
-Describe all building blocks comprising level 2 as a series of white box templates. The structure is identical to the structure of level 2. Duplicate the corresponding sub-sections as needed.
-Simply use this section structure for any additional levels you would like to describe.
+...zeigt das Innenleben von _Baustein x.1_.
 ****
+
+
+_<Whitebox-Template>_
+
+
+==== Whitebox <_Baustein x.2_>
+
+_<Whitebox-Template>_
+
+
+
+==== Whitebox <_Baustein y.1_>
+
+_<Whitebox-Template>_
+
+
