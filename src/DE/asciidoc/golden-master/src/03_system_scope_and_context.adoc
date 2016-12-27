@@ -10,7 +10,9 @@ Die Kontextabgrenzung grenzt das System von allen Kommunikationspartner (Nachbar
 
 
 .Motivation
-Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören zu den kritischsten Aspekten eines Systems. Stellen Sie rechtzeitig sicher, dass Sie diese komplett verstanden haben.
+Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören zu den kritischsten Aspekten eines Systems.
+Stellen Sie rechtzeitig sicher, dass Sie diese komplett verstanden
+haben.
 
 .Form
 *  Diverse Kontextdiagramme
@@ -23,10 +25,8 @@ Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören
 [role="arc42help"]
 ****
 .Inhalt
-Festlegung aller footnote:[alle,Zwar sind wir an vielen Stellen zu Pragmatismus bereit – hier
-jedoch bestehen wir auf der vollständigen Auflistung aller *(a-l-l-e-r)* Kommunikationspartner.
-Zu viele Projekte sind daran gescheitert, dass sie ihre Nachbarn nicht kannten :-(]
-Kommunikationspartner (Menschen, IT-Systeme, ...) mit Erklärung der fachlichen Ein- und Ausgabedaten oder Schnittstellen. Zusätzlich bei Bedarf fachliche Datenformate
+Festlegung aller Kommunikationspartner (Menschen, IT-Systeme, ...) mit Erklärung der
+fachlichen Ein- und Ausgabedaten oder Schnittstellen. Zusätzlich bei Bedarf fachliche Datenformate
 oder Protokolle der Kommunikation mit den Nachbarsystemen, sofern diese Informationen nicht bei den spezifischen Bausteinen erläutert werden.
 
 .Motivation

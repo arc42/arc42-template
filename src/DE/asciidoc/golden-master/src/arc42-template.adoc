@@ -92,18 +92,3 @@ include::src/11_technical_risks.adoc[]
 include::src/12_glossary.adoc[]
 
 
-// appendices:
-// =====================================
-
-<<<<
-// Verweise + Literatur
-include::src/appendix-references.adoc[]
-
-<<<<
-// Beispiele
-//include::src/appendix-examples.adoc[]
-
-<<<<
-// Contributing and Contributors
-include::src/appendix-contributing.adoc[]
-

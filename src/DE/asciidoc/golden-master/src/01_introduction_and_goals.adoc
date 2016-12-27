@@ -4,7 +4,6 @@
 
 [role="arc42help"]
 ****
-.Inhalt
 Fassen Sie hier die wesentliche Anforderungen und treibenden Kräfte zusammen, die Softwarearchitekten und Entwicklungsteams berücksichtigen müssen. Dazu gehören die
 
 * zugrunde liegenden Geschäftsziele, wesentliche Aufgabenstellung und essenzielle fachliche Anforderungen an das System
