@@ -92,21 +92,3 @@ include::src/11_technical_risks.adoc[]
 include::src/12_glossary.adoc[]
 
 
-// appendices:
-// =====================================
-
-<<<<
-// Appendix References
-include::src/appendix-references.adoc[]
-
-<<<<
-// Appendix Examples
-include::src/appendix-examples.adoc[]
-
-<<<<
-// Contributing and Contributors
-include::src/appendix-contributing.adoc[]
-
-<<<<
-// Approved Practitioner for arc42
-include::src/appendix-practitioner.adoc[]
