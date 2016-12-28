@@ -37,6 +37,8 @@ A potential (but not mandatory) structure for the different concepts of this sec
 * development concepts
 * operational concepts
 
+Note, that some individual concepts could be assigned to different sections of this list.
+
 TODO: insert figure xxxxx
 ****
 
