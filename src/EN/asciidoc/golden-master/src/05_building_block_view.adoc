@@ -170,34 +170,31 @@ _<white box template>_
 
 [role="arc42help"]
 ****
-An dieser Stelle können Sie den inneren Aufbau
-(einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
+Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.
 
-Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil
-von arc42 für die weiteren Ebenen.
-
+When you need more detailed levels of your architecture please copy this part of arc42 for additional levels. 
 ****
 
 
-==== Whitebox <_Baustein x.1_>
+==== White Box <_building block x.1_>
 
 [role="arc42help"]
 ****
-...zeigt das Innenleben von _Baustein x.1_.
+... specifies the internal structure of _building block x.1_.
 ****
 
 
-_<Whitebox-Template>_
+_<white box template>_
 
 
-==== Whitebox <_Baustein x.2_>
+==== White Box <_building block x.2_>
 
-_<Whitebox-Template>_
+_<white box template>_
 
 
 
-==== Whitebox <_Baustein y.1_>
+==== White Box <_building block y.1_>
 
-_<Whitebox-Template>_
+_<white box template>_
 
 
