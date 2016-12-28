@@ -8,7 +8,7 @@
 .Content
 This view describes:
 
- 1. the technical infrastructure used to execute your system, with infrastructure elements like geographical location, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
+ 1. the technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
 
 2. the mapping of (software) building blocks to that infrastructure 
 
