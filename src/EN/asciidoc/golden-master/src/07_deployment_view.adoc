@@ -23,7 +23,7 @@ Software does not run without hardware. This underlying infrastructure can and w
 
 .Form
 
-* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more comnplex.
+* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more complex.
 +
 Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black-box. In this section you will zoom into this black box using additional deployment diagrams. 
 
