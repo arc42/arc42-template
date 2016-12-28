@@ -26,7 +26,7 @@ The tree structure with priorities provides an overview for a sometimes large nu
 
 .Form
 
-* treelike refinement of the term "quality". Use "quality" or "usefulness" as a root
+* tree-like refinement of the term "quality". Use "quality" or "usefulness" as a root
 * a mind map with quality categories as main branches
 
 In any case the tree should include links to the scenarios of the following section. 
