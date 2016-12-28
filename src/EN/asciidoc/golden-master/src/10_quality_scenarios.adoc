@@ -4,12 +4,14 @@
 
 [role="arc42help"]
 ****
-This chapter summarizes all you (or other stakeholders) might need to systematically evaluate the architecture against the quality requirements.
 
-It contains:
+.Content
+This section contains all quality requirements as quality tree with scenarios. The most important ones have already been described in section 1.2. (quality goals) 
 
-*  Quality Tree (sometimes called utility tree), an overview of the quality requirements
-*  Evaluation or quality scenarios - detailed descriptions of the quality requirements or goals.
+Here you can also capture quality requirements with lesser priority, which will not create high risks when they are not fully achieved.a
+
+.Motivation
+Since quality requirements will have a lot of influence on architectural decisions you should know for every stakeholder what is really important to them. Make is very concrete and measurable.
 ****
 
 === Quality Tree
