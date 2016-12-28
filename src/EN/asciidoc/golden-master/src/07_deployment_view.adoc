@@ -31,7 +31,7 @@ The highest level deployment diagram maybe is already contained in section 3.2. 
 
 ****
 
-=== Infrastruktur Ebene 1
+=== Infrastructure Level 1
 
 [role="arc42help"]
 ****
@@ -75,10 +75,10 @@ _<diagram + explanation>_
 
 ==== _<Infrastructure Element 2>_
 
-_<Diagram + explanation>_
+_<diagram + explanation>_
 
 ...
 
 ==== _<Infrastructure Element n>_
 
-_<Diagramm + explanation>_
+_<diagramm + explanation>_
