@@ -18,6 +18,7 @@ You should clearly define your terms, so that all stakeholders
 
 .Form
 A simple table with columns <Term> and <Definition>
+potentially more columns for translations
 
 ****
 
