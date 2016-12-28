@@ -1,7 +1,7 @@
 [[section-system-scope-and-context]]
 == System Scope and Context
 
- 
+
 [role="arc42help"]
 ****
 .Contents
@@ -23,7 +23,8 @@ The domain interfaces and technical interfaces to communication partners are amo
 [role="arc42help"]
 ****
 .Contents
-Specification of *all* communication partners (users, IT-systems, ...) with explanations of domain specific inputs and outputs or interfaces. Optinoally you can add domain specific formats or communication protocols.
+Specification of *all* communication partners (users, IT-systems, ...) with explanations of domain specific inputs and outputs or interfaces.
+Optinoally you can add domain specific formats or communication protocols.
 
 .Motivation
 All stakeholders shoud understand which data are exchanged with the environment of the system.
@@ -35,6 +36,10 @@ Alternatively (or additionally) you can use a table. The title of the table is t
 
 ****
 
+**<Diagram or Table>**
+
+**<optionally: Explanation of external domain interfaces>**
+
 === Technical Context
 
 [role="arc42help"]
@@ -43,7 +48,7 @@ Alternatively (or additionally) you can use a table. The title of the table is t
 Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation with I/O uses which channel.
 
 .Motivation
-Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces. 
+Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
 
 .Form
 E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table showing the relationships between channels and input/output.
