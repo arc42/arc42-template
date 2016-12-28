@@ -6,44 +6,26 @@
 [role="arc42help"]
 ****
 .Content
-Diese Sicht beschreibt:
+This view describes:
 
- 1. die technische Infrastruktur, auf der Ihr System
-ausgeführt wird, mit Infrastrukturelementen wie
-Standorte, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztoplogien
-sowie sonstigen Bestandteilen und
+ 1. the technical infrastructure used to execute your system, with infrastructure elements like geographical location, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
 
-2. die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
+2. the mapping of (software) building blocks to that infrastructure 
 
+Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environment.
 
-Häufig laufen Systeme in unterschiedlichen Umgebungen ab, beispielsweise
-Entwicklung-/Test- oder Produktionsumgebungen. In solchen Fällen sollten Sie
-alle relevanten Umgebungen aufzeigen.
+Especially docuemnt the deployment view when your software is executed as distributed system with more then one computer, processor, server or container or when you design and construct your own hardware processors and chips.
 
-Nutzen Sie die Verteilungssicht insbesondere, wenn Ihre Software
-auf mehr als einem Rechner, Prozessor, Server oder Container abläuft
-oder Sie Ihre Hardware sogar selbst konstruieren.
-
-Aus Softwaresicht genügt es auf die Aspekte zu achten, die für die
-Softwareverteilung relevant sind. Hardwarearchitekten können bei Bedarf
-die Infrastruktur mit beliebigen Details beschreiben.
+From a software perspective it is sufficient to cover those aspects of the infrastructure that are relevant for the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture. 
 
 .Motivation
-Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende Infrastruktur
- beeinflusst Ihr System und/oder querschnittliche Lösungskonzepte, daher
- müssen Sie diese Infrastruktur kennen.
+Software does not run without infrastructure. The underlying infrastructure can and will influence your system and/or cross-cutting concepts. Therefore, you need to know the infrastructure. 
 
 .Form
 
-* Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine
-Diagrammart zur Verfügung, um diese
-Sicht auszudrücken. Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre
-Verteilungsstruktur es verlangt.
+* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more comnplex.
 +
-Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext
-enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
-Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
-hinein.
+The highest level deployment diagram maybe is already contained in section 3.2. as technical context with your own infrastructure as ONE black-box. In this section you will zoom into this black box using additional deployment diagrams. 
 
 * Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
 die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
