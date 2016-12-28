@@ -159,7 +159,7 @@ _<white box template>_
 
 ...
 
-==== Whitebox _<building block m>_
+==== White Box _<building block m>_
 
 
 _<white box template>_
