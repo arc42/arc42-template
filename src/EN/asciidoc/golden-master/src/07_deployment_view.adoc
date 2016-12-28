@@ -28,7 +28,6 @@ Software does not run without hardware. This underlying infrastructure can and w
 Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box. In this section you will zoom into this black box using additional deployment diagrams. 
 
 * When your (hardware) stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
-
 ****
 
 === Infrastructure Level 1
@@ -66,7 +65,6 @@ _<description of the mapping>_
 Here you can include the internal structure of (some) infrastructure elements from level 1. 
 
 Please copy the structure from level 1 for each selected element.
-
 ****
 
 ==== _<Infrastructure Element 1>_
