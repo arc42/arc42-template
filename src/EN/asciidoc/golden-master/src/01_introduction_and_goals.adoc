@@ -14,37 +14,15 @@ Describes the relevant requirements and the driving forces that software archite
 
 [role="arc42help"]
 ****
-Short description of the functional requirements.
-Digest (or abstract) of the requirements documents.
-Reference to complete requirements documents (incl. version identification and location).
-
 .Contents
-A compact summary of the functional environment of the system. Answers the following questions (at least approximately):
-
-* What happens in the system’s environment?
-* Why should the system exist? 
-* Why is the system valuable or important? 
-* Which problems does the system solve?
+Short description of the functional requirements, driving forces, extract (or abstract) of requiremnents. Link to (hopefully existing) requirements documents (with version number and information where to find it).
 
 .Motivation
-From the point of view of the end users a system is created or modified to improve execution of a business activity.
-This essential architecture driver must not be neglected even though the quality of an architecture is mostly judged by its level of fulfillment of non-functional requirements.
+From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality.
 
 .Form
 Short textual description, probably in tabular use-case format.
-The business context should in any case refer to the corresponding requirements documents.
-
-.Examples
-Short descriptions of the most important:
-
-* business processes
-* functional requirements
-* non-functional requirements and other constraints (the most important ones must be covered as architecture goals or are listed in the “Constraints” section), and/or
-* quantity structures
-* background information
-
-Here you can reuse parts of the requirements documents – but keep these
-excerpts short and balance readability against avoidance of redundancy.
+If requirements documents exist this overview should refer to these documents.
 ****
 
 === Quality Goals
