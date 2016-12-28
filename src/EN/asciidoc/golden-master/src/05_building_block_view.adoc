@@ -53,130 +53,120 @@ In the best case you will get away with examples or simpel signatures.
 
 ****
 
-_**<Übersichtsdiagramm>**_
+_**<Overview Diagram>**_
 
-Begründung::
+Motivation::
 
-_<Erläuternder Text>_
+_<text explanation>_
 
 
-Enthaltene Bausteine::
-_<Beschreibung der enhaltenen Bausteine (Blackboxen)>_
+Contained Building Blocks::
+_<Description of contained building block (black boxes)>_
 
-Wichtige Schnittstellen::
-_<Beschreibung wichtiger Schnittstellen>_
+Important Interfaces::
+_<Description of important interfaces>_
 
 [role="arc42help"]
 ****
-Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
+Insert your explanations about black boxes of level 1:
 
-Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin
-nur mit Name und Verantwortung nach folgendem Muster beschrieben:
+If you use tabular form you will only describe your black boxes with name and responsibility according to the following schema:
 
 [cols="1,2" options=""]
 |===
-| **Name** | **Verantwortung**
-| _<Blackbox 1>_ | _<Text>_
-| _<Blackbox 2>_ | _<Text>_
+| **Name** | **Responsibility**
+| _<black box 1>_ | _<Text>_
+| _<black box 2>_ | _<Text>_
 |===
 
 
 
-Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen,
-beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-Template.
-Dessen Überschrift ist jeweils der Namen dieser Blackbox.
-
-
+If you use a list of black box decriptions then you fill in a separate black box template for every important building block .
+Its headline is the name of the black box. 
 ****
 
 
-==== <Name Blackbox 1>
+==== <Name black box 1>
 
 [role="arc42help"]
 ****
-An dieser Stelle beschreiben Sie die <Blackbox 1>
-anhand des folgenden Blackbox-Templates:
+Here you describe <black box 1>
+according the the following black box template:
 
-* Zweck/Verantwortung
-* Schnittstelle(n), sofern sie nicht als eigenständige Beschreibungen herausgezogen sind.
-Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
-* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten...
-* (Optional) Ablageort/Datei(en)
-* (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
-* (Optional) Offene Punkte/Probleme/Risiken
+* Purpose/Responsiblity
+* Interface(s), when they are not extracted as separate paragraphs. This interfaces may inlude qualities and performance characteristics.
+* (Optional) Quality-/Performance Characteristics of the black box, e.g.availability, run time behavior, .... 
+* (Optional) directory/file location
+* (Optional) Fulfilled Requirements (if you need traceability to requirements).
+* (Optional) Open Issues/Problems/Risks
 
 ****
 
-_<Zweck/Verantwortung>_
+_<Purpose/Responsibility>_
 
-_<Schnittstelle(n)>_
+_<Interface(s)>_
 
-_<(Optional) Qualitäts-/Leistungsmerkmale>_
+_<(Optional) Quality/Performance Characteristics>_
 
-_<(Optional) Ablageort/Datei(en)>_
+_<(Optional) Directory/File Location>_
 
-_<(Optional) Erfüllte Anforderungen>_
+_<(Optional) Fulfilled Requirements>_
 
-_<(optional) Offene Punkte/Probleme/Risiken>_
-
-
+_<(optional) Open Issues/Problems/Risks>_
 
 
-==== <Name Blackbox 2>
-
-_<Blackbox-Template>_
-
-==== <Name Blackbox n>
-
-_<Blackbox-Template>_
 
 
-==== <Name Schnittstelle 1>
+==== <Name black box 2>
+
+_<black box template>_
+
+==== <Name black box n>
+
+_<black box template>_
+
+
+==== <Name interface 1>
 
 ...
 
-==== <Name Schnittstelle m>
+==== <Name interface m>
 
 
 
-=== Ebene 2
-
-[role="arc42help"]
-****
-An dieser Stelle können Sie den inneren Aufbau
-(einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
-
-Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie
-selbst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
-Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders
-volatile Bausteine. Normale, einfache oder standardisierte Teile sollten
-Sie weglassen.
-****
-
-==== Whitebox _<Baustein 1>_
+=== Level 2
 
 [role="arc42help"]
 ****
-...zeigt das Innenleben von _Baustein 1_.
+Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.
+
+You have to decide which building blocks of your system are important enough to justify such a detailed description. Please prefer relevance over completeness. Specify important, surprising, risky, compelx or volatile building blocks. Leave out normal, simple, boring or standardized parts of your system
 ****
 
-_<Whitebox-Template>_
+==== White Box _<building block 1>_
 
-==== Whitebox _<Baustein 2>_
+[role="arc42help"]
+****
+...describes the internal structure of _building block 1_.
+****
+
+_<white box template>_
+
+==== White Box _<building block 2>_
 
 
-_<Whitebox-Template>_
+_<white box template>_
 
 ...
 
-==== Whitebox _<Baustein m>_
+==== Whitebox _<building block m>_
 
 
-_<Whitebox-Template>_
+_<white box template>_
 
 
 
-=== Ebene 3
+=== Level 3
 
 [role="arc42help"]
 ****
