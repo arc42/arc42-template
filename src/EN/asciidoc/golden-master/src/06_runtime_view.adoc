@@ -20,6 +20,7 @@ You will mainly capture scenarios in your documentation to communicate your arch
 
 .Form
 There are many notations for describing scenarios, e.g.
+
 * numbered list of steps (in natural language)
 * activity diagrams or flow charts
 * sequence diagrams
