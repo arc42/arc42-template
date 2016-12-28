@@ -180,7 +180,7 @@ When you need more detailed levels of your architecture please copy this part of
 
 [role="arc42help"]
 ****
-... specifies the internal structure of _building block x.1_.
+Specifies the internal structure of _building block x.1_.
 ****
 
 
