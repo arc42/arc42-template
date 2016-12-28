@@ -20,7 +20,6 @@ vielerlei Themen gehören, beispielsweise:
 
 
 .Motivation
-
 Konzepte bilden die Grundlage für _konzeptionelle Integrität_
 (Konsistenz, Homogenität) der Architektur und damit
 eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
