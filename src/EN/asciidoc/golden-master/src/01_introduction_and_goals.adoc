@@ -23,6 +23,8 @@ From the point of view of the end users a system is created or modified to impro
 .Form
 Short textual description, probably in tabular use-case format.
 If requirements documents exist this overview should refer to these documents.
+
+Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 ****
 
 === Quality Goals
@@ -30,36 +32,14 @@ If requirements documents exist this overview should refer to these documents.
 [role="arc42help"]
 ****
 .Contents
-The top three (max five) goals for the architecture and/or constraints whose fulfillment is of highest importance to the major stakeholders. Goals that define the architecture’s quality could be:
-
-* availability
-* modifiability
-* performance
-* security
-* testability
-* usability
+The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. We really mean quality goals for the architecture. Don't confuse them with project goals. They are not necessarily identical.
 
 .Motivation
-If you as an architect do not know how the quality of your work can be judged …
+You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. Make sure to be very concrete about these qualities, avoid buzzwords.
+If you as an architect do not know how the quality of your work will be judged …
 
 .Form
-Simple tabular representation, ordered by priorities
-
-.Background Information
-*NEVER* start developing an architecture if these goals have not been put into writing and have not been signed by the major stakeholders.
-
-[WARNING]
-===========
-We have endured projects lacking defined quality goals much too often.
-We do not like to suffer, therefore we are by now highly convinced that
-the few hours spent on collecting quality goals are well invested.
-PH & GS.
-===========
-
-.Sources
-The DIN/ISO 92000 Standard contains an extensive set of possible quality goals.Or use chapters 10 – 17 of the http://www.volere.co.uk[VOLERE template] as a starting point .
-PH
-
+A table with quality goals and concrete scenarios, ordered by priorities
 ****
 
 === Stakeholders
