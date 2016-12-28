@@ -47,13 +47,18 @@ A table with quality goals and concrete scenarios, ordered by priorities
 [role="arc42help"]
 ****
 .Contents
-A list of the most important persons or organizations that are affected by or can contribute to the architecture.
+Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
+* should know the architecture
+* have to be convinced of the architecture 
+* have to work with the architecture or with code
+* need the documentation of the architecture for their work
+* have to come up with decisions about the system or its development
 
 .Motivation
-If you do not know the persons participating in or concerned with the project you may get nasty surprises later in the development process. Should your project manager maintain this list, make sure that all the people influencing the architecture are part of it.
+You should know all parties involved in development of the system or affected by the system. Otherwise, you may get nasty surprises later in the development process. These stakeholders determine the extent and the level of detail of your work and its results.
 
 .Form
-Simple table with role names, person names, their knowledge as pertaining to architecture, their availability, etc.
+Table with role names, person names, and their expectations with respect to the architecture and its documentation.
 .Stakeholders
 [options="header",cols="<.<1,<.<2, <.<2"]
 |===
