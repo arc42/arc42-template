@@ -25,7 +25,7 @@ The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) 
 The tree structure with priorities provides an overview for a sometimes large number of quality requirements.
 
 .Form
-   
+
 * treelike refinement of the term "quality". Use "quality" or "usefulness" as a root
 * a mind map with quality categories as main branches
 
