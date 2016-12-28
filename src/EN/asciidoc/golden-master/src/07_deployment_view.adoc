@@ -35,7 +35,7 @@ Maybe the highest level deployment diagram is already contained in section 3.2. 
 
 [role="arc42help"]
 ****
-Here you describe (as usual in a combination of diagrams, tables and text):
+Here you describe (as usual in a combination of diagrams, tables, and text):
 
 *  the distribution of your system to multiple locations, environments, computers, processors, .. as well as the physical connections between them
 *  important justification or motivation for this deployment structure
