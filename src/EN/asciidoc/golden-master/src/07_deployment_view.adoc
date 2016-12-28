@@ -14,9 +14,9 @@ This view describes:
 
 Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environment.
 
-Especially docuemnt the deployment view when your software is executed as distributed system with more then one computer, processor, server or container or when you design and construct your own hardware processors and chips.
+Especially document the deployment view when your software is executed as distributed system with more then one computer, processor, server or container or when you design and construct your own hardware processors and chips.
 
-From a software perspective it is sufficient to cover those aspects of the infrastructure that are relevant for the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture. 
+From a software perspective it is sufficient to capture those elements of the infrastructure that are needed to show the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture. 
 
 .Motivation
 Software does not run without hardware. This underlying infrastructure can and will influence your system and/or some cross-cutting concepts. Therefore, you need to know the infrastructure. 
@@ -25,9 +25,9 @@ Software does not run without hardware. This underlying infrastructure can and w
 
 * UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more comnplex.
 +
-The highest level deployment diagram maybe is already contained in section 3.2. as technical context with your own infrastructure as ONE black-box. In this section you will zoom into this black box using additional deployment diagrams. 
+Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black-box. In this section you will zoom into this black box using additional deployment diagrams. 
 
-* When your stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+* When your (hardware) stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 
 ****
 
@@ -56,14 +56,14 @@ Quality and/or Performance Features::
 _<explanation in text form>_
 
 Mapping of Building Blocks to Infrastructure::
-_<descriptin of the mapping>_
+_<description of the mapping>_
 
 
 === Infrastructure Level 2
 
 [role="arc42help"]
 ****
-Here can can include the internal structure of (some) infrastructure elements from level 1. 
+Here you can include the internal structure of (some) infrastructure elements from level 1. 
 
 Please copy the structure from level 1 for each selected element.
 
