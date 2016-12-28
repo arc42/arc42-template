@@ -18,7 +18,7 @@ Describes the relevant requirements and the driving forces that software archite
 Short description of the functional requirements, driving forces, extract (or abstract) of requiremnents. Link to (hopefully existing) requirements documents (with version number and information where to find it).
 
 .Motivation
-From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality.
+From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality. 
 
 .Form
 Short textual description, probably in tabular use-case format.
