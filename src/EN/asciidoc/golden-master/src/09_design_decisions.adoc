@@ -13,7 +13,6 @@ Please use your judgement to decide whether an architectural decision should be 
 Stakeholders of your system should be able to comprehend and retrace your decisions.
 
 .Form
-
 * list or table, ordered by importance and consequences or
 * more detailed in form of separate sections per decision
 ****
