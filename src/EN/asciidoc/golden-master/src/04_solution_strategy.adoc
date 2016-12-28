@@ -5,12 +5,16 @@
 [role="arc42help"]
 ****
 .Contents
-A short summary and explanation of the fundamental solution ideas and strategies.
+A short summary and explanation of the fundamental decisions and solution strategies, that shape the system's architecture. These include
+* technology decisions
+* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
+* decisions on how to achieve key quality goals
+* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
 
 .Motivation
-An architecture is often based upon some key solution ideas or strategies. These ideas should be familiar to everyone involved into the architecture.
+These decisions form the cornerstones for your architecture. They are the basis for many other detailed decisions or implementation rules.
 
 .Form
-Diagrams and / or text, as appropriate. Keep it short, i.e. 1 or 2 pages at most!
+Keep these key decisions short. Motivate - based on your problem statement, the quality goals and key constraints - what you have decided and why you decided that way. Refer to details in the following sections. 
 
 ****
