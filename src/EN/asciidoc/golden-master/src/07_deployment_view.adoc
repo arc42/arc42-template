@@ -19,7 +19,7 @@ Especially docuemnt the deployment view when your software is executed as distri
 From a software perspective it is sufficient to cover those aspects of the infrastructure that are relevant for the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture. 
 
 .Motivation
-Software does not run without infrastructure. The underlying infrastructure can and will influence your system and/or cross-cutting concepts. Therefore, you need to know the infrastructure. 
+Software does not run without hardware. This underlying infrastructure can and will influence your system and/or some cross-cutting concepts. Therefore, you need to know the infrastructure. 
 
 .Form
 
