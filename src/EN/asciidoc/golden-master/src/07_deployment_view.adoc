@@ -37,7 +37,7 @@ The highest level deployment diagram maybe is already contained in section 3.2. 
 ****
 Here you describe (as usual in a combination of diagrams, tables and text):
 
-*  the distribution of your system to multiple locations, environments, computers, processors, .. as will as the physical connections between them
+*  the distribution of your system to multiple locations, environments, computers, processors, .. as well as the physical connections between them
 *  important justification or motivation for this deployment structure
 * Quality and/or performance features of the infrastructure
 *  the mapping of software artifacts to elements of the infrastructure
