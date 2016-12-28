@@ -6,7 +6,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Teilsysteme, Klassen,
+Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Klassen,
 Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen,
 Datenstrukturen...) sowie deren Beziehungen.
 
