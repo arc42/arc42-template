@@ -62,8 +62,8 @@ Table with role names, person names, and their expectations with respect to the 
 .Stakeholders
 [options="header",cols="<.<1,<.<2, <.<2"]
 |===
-|Role/Name|Goal/Boundaries|Expected Participation and Contribution
-| The name or role of a stakeholder| Why will this stakeholder have an interest in the architecture? | what do you expect as a contribution
+|Role/Name|Contact|Expectations
+| |  | 
 |===
 ****
 
