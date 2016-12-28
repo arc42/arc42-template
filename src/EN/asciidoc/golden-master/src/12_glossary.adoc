@@ -23,7 +23,7 @@ A simple table with columns <Term> and <Definition>
 
 [options="header"]
 |===
-| Glossary                    |||
-| Term                        | Synonym                 | Description |
-| Term                        | Synonym                 | Description |
+| Glossary                    ||
+| <Term-1>                                        | <definition-1> |
+| <Term-2>                                        | <definition-2> |
 |===
