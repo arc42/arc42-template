@@ -41,6 +41,5 @@ There are many notations for describing scenarios, e.g.
 === <Runtime Scenario 2>
 
 === ...
-some more
 
 === <Runtime Scenario n>
