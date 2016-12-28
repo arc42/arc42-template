@@ -42,6 +42,7 @@ Concretion of (sometimes vague or implicit) quality requirmements using (quality
 These scenarios describe what should happen when a stimulus arrives at the system.
 
 For architects, two kinds of scenarios are important: 
+* treelike refinemen
 * Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.
 * Change scenarios describe a modification of the system or of its immediate environment. Example: Additional functionality is implemented or requirements for a quality attribute change.
 
