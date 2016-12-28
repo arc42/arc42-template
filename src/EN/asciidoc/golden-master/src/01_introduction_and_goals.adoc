@@ -2,8 +2,10 @@
 == Introduction and Goals
 
 
-The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
-This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.
+Describes the relevant requirements and the driving forces that software architects and development team must consider. These include
+* underlying business goals, essential features and functional requirements for the system
+* quality goals for the architecture
+* relevant stakeholders and their expectations
 
 === Requirements Overview
 
