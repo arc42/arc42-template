@@ -25,34 +25,22 @@ There are many notations for describing scenarios, e.g.
 * activity diagrams or flow charts
 * sequence diagrams
 * BPMN or EPCs (event process chains)
+* state machines
 * ...
 
-Using object diagrams you can depict snapshots of existing runtime objects as well as instantiated relationships. The UML allows to distinguish between active and passive objects.
 ****
 
-=== Runtime Scenario 1
-
-[role="arc42help"]
-****
-* Runtime diagram (or other adequate description of scenario!)
-* Description of the notable aspects of the interactions between the building block instances depicted in this diagram.
-****
-
-=== Runtime Scenario 2
+=== <Runtime Scenario 1>
 
 [role="arc42help"]
 ****
-* Runtime diagram (or other adequate description of scenario!)
+* Runtime diagram or textual description of the scenario
 * Description of the notable aspects of the interactions between the building block instances depicted in this diagram.
 ****
+
+=== <Runtime Scenario 2>
 
 === ...
 some more
 
-=== Runtime Scenario n
-
-[role="arc42help"]
-****
-* Runtime diagram (or other adequate description of scenario!)
-* Description of the notable aspects of the interactions between the building block instances depicted in this diagram.
-****
+=== <Runtime Scenario n>
