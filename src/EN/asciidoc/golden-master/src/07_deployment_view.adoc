@@ -27,66 +27,58 @@ Software does not run without infrastructure. The underlying infrastructure can 
 +
 The highest level deployment diagram maybe is already contained in section 3.2. as technical context with your own infrastructure as ONE black-box. In this section you will zoom into this black box using additional deployment diagrams. 
 
-* Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
-die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
+* When your stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 
 ****
 
 === Infrastruktur Ebene 1
 
+[role="arc42help"]
+****
+Here you describe (as usual in a combination of diagrams, tables and text):
+
+*  the distribution of your system to multiple locations, environments, computers, processors, .. as will as the physical connections between them
+*  important justification or motivation for this deployment structure
+* Quality and/or performance features of the infrastructure
+*  the mapping of software artifacts to elements of the infrastructure
+
+For multiple environments or alternative deployments please copy that section of arc42 for all relevant environments.
+****
+
+_**<Overview Diagram>**_
+
+Motivation::
+
+_<explanation in text form>_
+
+Quality and/or Performance Features::
+
+_<explanation in text form>_
+
+Mapping of Building Blocks to Infrastructure::
+_<descriptin of the mapping>_
+
+
+=== Infrastructure Level 2
 
 [role="arc42help"]
 ****
-An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit
-Tabellen oder Texten):
+Here can can include the internal structure of (some) infrastructure elements from level 1. 
 
-*  die Verteilung des Gesamtsystems auf
-mehrere Standorte, Umgebungen, Rechner, Prozessoren oä.
-sowie die physischen Verbindungskanäle zwischen diesen,
-*  wichtige Begründungen für dieser Verteilungsstruktur,
-* Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
-*  Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
-
-Für mehrere Umgebungen oder alternatives Deployment
-kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen.
+Please copy the structure from level 1 for each selected element.
 
 ****
 
-_**<Übersichtsdiagramm>**_
+==== _<Infrastructure Element 1>_
 
-Begründung::
+_<diagram + explanation>_
 
-_<Erläuternder Text>_
+==== _<Infrastructure Element 2>_
 
-Qualitäts- und/oder Leistungsmerkmale::
-
-_<Erläuternder Text>_
-
-Zuordnung von Bausteinen zu Infrastruktur::
-_<Beschreibung der Zuordnung>_
-
-
-=== Infrastruktur Ebene 2
-
-[role="arc42help"]
-****
-An dieser Stelle können Sie den inneren Aufbau
-(einiger) Infrastrukturelemente aus Ebene 1 beschreiben.
-
-Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
-
-****
-
-==== _<Infrastrukturelement 1>_
-
-_<Diagramm + Erläuterungen>_
-
-==== _<Infrastrukturelement 2>_
-
-_<Diagramm + Erläuterungen>_
+_<Diagram + explanation>_
 
 ...
 
-==== _<Infrastrukturelement n>_
+==== _<Infrastructure Element n>_
 
-_<Diagramm + Erläuterungen>_
+_<Diagramm + explanation>_
