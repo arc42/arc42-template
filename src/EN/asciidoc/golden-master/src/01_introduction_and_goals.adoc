@@ -59,12 +59,13 @@ You should know all parties involved in development of the system or affected by
 
 .Form
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
-.Stakeholders
+****
+
 [options="header",cols="<.<1,<.<2, <.<2"]
 |===
 |Role/Name|Contact|Expectations
 | |  | 
 |===
-****
+
 
 
