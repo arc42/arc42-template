@@ -24,8 +24,6 @@ nachvollziehen können.
 
 
 .Form
-
-
 * Liste oder Tabelle, nach Wichtigkeit und Tragweite der
 Entscheidungen geordnet oder
 
