@@ -17,7 +17,7 @@ deren Nichteinhaltung oder -erreichung geringe Risiken birgt.
 Weil Qualitätsanforderungen die Architekturentscheidungen
 oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder
 relevanten Qualitätsanforderungen kennen, möglichst konkret und
-operationalisierbar.
+operationalisiert.
 
 ****
 
@@ -79,4 +79,3 @@ bis auf die Ebene von diskutierbaren und nachprüfbaren Szenarien.
 Entweder tabellarisch oder als Freitext.
 
 ****
-
