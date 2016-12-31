@@ -37,7 +37,7 @@ Kann vielfältig sein.
 * Verweise auf "übliche" Nutzung von Standardframeworks (beispielsweise
 die Nutzung von Hibernate als Object/Relational Mapper.
 
-
+.Struktur
 Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes
 könnte wie folgt aussehen (wobei die Zuordnung von Themen zu den Gruppen
 nicht immer eindeutig ist):
