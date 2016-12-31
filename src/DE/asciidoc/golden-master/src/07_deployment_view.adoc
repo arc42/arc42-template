@@ -35,15 +35,15 @@ Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende Infrastruktur
 
 .Form
 
+Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext
+enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
+Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
+hinein:
+
 * Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine
 Diagrammart zur Verfügung, um diese
 Sicht auszudrücken. Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre
 Verteilungsstruktur es verlangt.
-+
-Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext
-enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
-Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
-hinein.
 
 * Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
 die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
