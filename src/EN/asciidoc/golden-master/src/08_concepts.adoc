@@ -5,8 +5,10 @@
 [role="arc42help"]
 ****
 .Content
-This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (-> cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They include many different topics, such as
+This section describes overall, principal regulations and solution ideas that are
+relevant in multiple parts (&rarr; cross-cutting) of your system.
+Such concepts are often related to multiple building blocks.
+They include many different topics, such as
 
 * domain models
 * architectur patterns or design patterns
@@ -28,9 +30,9 @@ The form can be varied:
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 
 .Structure
-A potential (but not mandatory) structure for the different concepts of this section could be:
+A potential (but not mandatory) structure for this section could be:
 
-* domain concepts
+* Domain concepts
 * User Experience concepts (UX)
 * Safety and security concepts
 * Architecture and design patterns

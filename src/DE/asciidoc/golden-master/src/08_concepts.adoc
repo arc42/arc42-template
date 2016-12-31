@@ -29,7 +29,7 @@ Architektur unterbringen (z.B. das Thema "Sicherheit"). Hier ist der
 Platz im Template, wo Sie derartige Themen geschlossen behandeln können.
 
 .Form
-Kann vielfältig sein.
+Kann vielfältig sein:
 
 * Konzeptpapiere mit beliebiger Gliederung,
 * übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
