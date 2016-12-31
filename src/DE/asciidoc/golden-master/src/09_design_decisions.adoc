@@ -15,7 +15,7 @@ Alternativen unter vorgegebenen Kriterien.
 Wägen Sie ab, inwiefern Sie Entscheidungen hier zentral
 beschreiben, oder wo eine lokale Beschreibung
 (z.B. in der Whitebox-Sicht von Bausteinen) sinnvoller ist.
-Vermeiden Sie redundante Texte. Verweisen Sie evtl. auf Abschnitt 4, wo schon
+Vermeiden Sie Redundanz. Verweisen Sie evtl. auf Abschnitt 4, wo schon
 grundlegende strategische Entscheidungen beschrieben wurden.
 
 .Motivation
@@ -28,6 +28,6 @@ nachvollziehen können.
 Entscheidungen geordnet oder
 
 * ausführlicher in Form einzelner Unterkapitel je Entscheidung.
+* ADR (http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record]) für jede wichtige Entscheidung.
 
 ****
-
