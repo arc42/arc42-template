@@ -15,13 +15,15 @@ technischen Kontext (Kanäle, Protokolle, Hardware), falls nötig.
 
 
 .Motivation
-Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören zu den kritischsten Aspekten eines Systems.
-Stellen Sie sicher, dass Sie diese komplett verstanden
-haben.
+Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören
+zu den kritischsten Aspekten eines Systems.
+Stellen Sie sicher, dass Sie diese komplett verstanden haben.
 
 .Form
-*  Diverse Kontextdiagramme
-*  Listen von Kommunikationspartnern mit deren Schnittstellen.
+
+* Diverse Kontextdiagramme
+* Listen von Kommunikationspartnern mit deren Schnittstellen
+
 ****
 
 

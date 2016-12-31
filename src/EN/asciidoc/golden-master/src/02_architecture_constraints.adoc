@@ -12,4 +12,7 @@ Architects should know exactly where they are free in their design decisions and
 Constraints must always be dealt with; they may be negotiable, though.
 
 .Form
-Simple tables of constraints with explanations. If needed you can subdivide them into technical constraints, organizational and political constraints and conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+Simple tables of constraints with explanations.
+If needed you can subdivide them into
+technical constraints, organizational and political constraints and
+conventions (e.g. programming or versioning guidelines, documentation or naming conventions)

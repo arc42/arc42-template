@@ -15,8 +15,8 @@ This view describes concrete behavior and interactions of the system’s buildin
 Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevancy*. It is *not* important to describe a large number of scenarios. You should rather document a representative selection.
 
 .Motivation
-You should understand how (instances of) building blocks of your system perform their job and communicate at runtime. 
-You will mainly capture scenarios in your documentation to communicate your architecture to stakholders that are less willing or able to read and understand the static models (building block view, deployment view). 
+You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
+You will mainly capture scenarios in your documentation to communicate your architecture to stakholders that are less willing or able to read and understand the static models (building block view, deployment view).
 
 .Form
 There are many notations for describing scenarios, e.g.
@@ -34,8 +34,9 @@ There are many notations for describing scenarios, e.g.
 
 [role="arc42help"]
 ****
-* Runtime diagram or textual description of the scenario
-* Description of the notable aspects of the interactions between the building block instances depicted in this diagram.
+* insert runtime diagram or textual description of the scenario
+* insert description of the notable aspects of the interactions between the
+building block instances depicted in this diagram.
 ****
 
 === <Runtime Scenario 2>
