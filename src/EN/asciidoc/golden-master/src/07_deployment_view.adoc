@@ -16,16 +16,18 @@ Often systems are executed in different environments, e.g. development environme
 
 Especially document the deployment view when your software is executed as distributed system with more then one computer, processor, server or container or when you design and construct your own hardware processors and chips.
 
-From a software perspective it is sufficient to capture those elements of the infrastructure that are needed to show the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture. 
+From a software perspective it is sufficient to capture those elements of the infrastructure that are needed to show the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture.
 
 .Motivation
-Software does not run without hardware. This underlying infrastructure can and will influence your system and/or some cross-cutting concepts. Therefore, you need to know the infrastructure. 
+Software does not run without hardware.
+This underlying infrastructure can and will influence your system and/or some
+cross-cutting concepts. Therefore, you need to know the infrastructure.
 
 .Form
 
 * UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more complex.
 +
-Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box. In this section you will zoom into this black box using additional deployment diagrams. 
+Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box. In this section you will zoom into this black box using additional deployment diagrams.
 
 * When your (hardware) stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 ****
@@ -34,7 +36,7 @@ Maybe the highest level deployment diagram is already contained in section 3.2. 
 
 [role="arc42help"]
 ****
-Here you describe (as usual in a combination of diagrams, tables, and text):
+Describe (usually in a combination of diagrams, tables, and text):
 
 *  the distribution of your system to multiple locations, environments, computers, processors, .. as well as the physical connections between them
 *  important justification or motivation for this deployment structure
@@ -62,7 +64,7 @@ _<description of the mapping>_
 
 [role="arc42help"]
 ****
-Here you can include the internal structure of (some) infrastructure elements from level 1. 
+Here you can include the internal structure of (some) infrastructure elements from level 1.
 
 Please copy the structure from level 1 for each selected element.
 ****
