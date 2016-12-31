@@ -19,7 +19,9 @@ They include many different topics, such as
 .Motivation
 Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
 
-Some of these concepts cannot be assigned to individual building blocks (e.g. security or safety). This is the place in the template that we provided for a cohesive specification of such concepts.
+Some of these concepts cannot be assigned to individual building blocks
+(e.g. security or safety). This is the place in the template that we provided for a
+cohesive specification of such concepts.
 
 .Form
 The form can be varied:
@@ -40,7 +42,8 @@ A potential (but not mandatory) structure for this section could be:
 * development concepts
 * operational concepts
 
-Note, that some individual concepts could be assigned to different sections of this list.
+Note: it might be difficult to assign individual concepts to one specific topic
+on this list.
 
 TODO: insert figure xxxxx
 ****
