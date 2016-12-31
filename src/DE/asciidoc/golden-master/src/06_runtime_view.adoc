@@ -44,9 +44,8 @@ Nutzen Sie beispielsweise:
 
 === _<Bezeichnung Laufzeitszenario 1>_
 
-
-*  Laufzeitdiagramm oder Ablaufbeschreibung
-*  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Szenario
+*  <hier Laufzeitdiagramm oder Ablaufbeschreibung einfügen>
+*  <hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem Szenario erläutern>
 
 === _<Bezeichnung Laufzeitszenario 2>_
 

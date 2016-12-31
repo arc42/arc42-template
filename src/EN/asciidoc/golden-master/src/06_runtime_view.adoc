@@ -32,12 +32,10 @@ There are many notations for describing scenarios, e.g.
 
 === <Runtime Scenario 1>
 
-[role="arc42help"]
-****
-* insert runtime diagram or textual description of the scenario
-* insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.
-****
+
+* _<insert runtime diagram or textual description of the scenario>_
+* _<insert description of the notable aspects of the interactions between the
+building block instances depicted in this diagram.>_
 
 === <Runtime Scenario 2>
 
