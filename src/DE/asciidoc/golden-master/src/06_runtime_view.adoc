@@ -44,11 +44,9 @@ Nutzen Sie beispielsweise:
 
 === _<Bezeichnung Laufzeitszenario 1>_
 
-[role="arc42help"]
-****
+
 *  Laufzeitdiagramm oder Ablaufbeschreibung
 *  Erläuterung der Besonderheiten bei dem Zusammenspiel der Bausteininstanzen in diesem Szenario
-****
 
 === _<Bezeichnung Laufzeitszenario 2>_
 
