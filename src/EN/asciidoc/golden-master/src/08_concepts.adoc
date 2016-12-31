@@ -4,7 +4,7 @@
 
 [role="arc42help"]
 ****
-.Contents
+.Content
 This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (-> cross-cutting) of your system.
 Such concepts are often related to multiple building blocks. They include many different topics, such as
 
@@ -15,18 +15,19 @@ Such concepts are often related to multiple building blocks. They include many d
 * inmplementation rules
 
 .Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. Thus, they are an important contribution to achieve inner qualities of your system. 
+Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
 
-Some of these concepts cannot be assigned to individual building blocks (e.g. security or safety). This is the place in the template that we provided for a cohesive specification of such concepts. 
+Some of these concepts cannot be assigned to individual building blocks (e.g. security or safety). This is the place in the template that we provided for a cohesive specification of such concepts.
 
 .Form
-The form can be varied. 
+The form can be varied:
 
 * concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views 
+* cross-cutting model excerpts or scenarios using notations of the architecture views
 * sample implementations,especially for technical concepts
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 
+.Structure
 A potential (but not mandatory) structure for the different concepts of this section could be:
 
 * domain concepts

@@ -6,7 +6,7 @@
 [role="arc42help"]
 ****
 .Content
-This view describes:
+The deployment view describes:
 
  1. the technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
 
@@ -25,11 +25,13 @@ cross-cutting concepts. Therefore, you need to know the infrastructure.
 
 .Form
 
-* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams, when your infrastructure is more complex.
-+
-Maybe the highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box. In this section you will zoom into this black box using additional deployment diagrams.
+Maybe the highest level deployment diagram is already contained in section 3.2. as
+technical context with your own infrastructure as ONE black box. In this section you will
+zoom into this black box using additional deployment diagrams:
 
-* When your (hardware) stakeholders prefer other kinds of diagram than the UML deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
+when your infrastructure is more complex.
+* When your (hardware) stakeholders prefer other kinds of diagrams rather than the deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 ****
 
 === Infrastructure Level 1
