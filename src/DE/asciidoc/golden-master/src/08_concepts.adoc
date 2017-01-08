@@ -51,7 +51,7 @@ nicht immer eindeutig ist):
 * Betriebskonzepte
 
 
-TODO: Bild einfügen XXX:
+image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
 
 ****
 
