@@ -23,7 +23,7 @@ Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Imple
 .Form
 Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
 
-image:05_building-block-hierarchy.png["Baustein Sichten"]
+image:05_building_blocks-DE.png["Baustein Sichten"]
 
 *Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems,
 zusammen mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
@@ -219,5 +219,3 @@ _<Whitebox-Template>_
 ==== Whitebox <_Baustein y.1_>
 
 _<Whitebox-Template>_
-
-
