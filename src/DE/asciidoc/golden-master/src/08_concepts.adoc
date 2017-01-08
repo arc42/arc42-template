@@ -56,18 +56,18 @@ image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscuttin
 ****
 
 
-==== _<Konzept 1>_
+=== _<Konzept 1>_
 
 _<Erklärung>_
 
 
 
-==== _<Konzept 2>_
+=== _<Konzept 2>_
 
 _<Erklärung>_
 
 ...
 
-==== _<Konzept n>_
+=== _<Konzept n>_
 
 _<Erklärung>_

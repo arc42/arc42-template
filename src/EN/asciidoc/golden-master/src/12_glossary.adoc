@@ -17,6 +17,7 @@ You should clearly define your terms, so that all stakeholders
 * do not use synonyms and homonyms
 
 .Form
+
 * A simple table with columns <Term> and <Definition>
 * Potentially more columns for translations
 ****

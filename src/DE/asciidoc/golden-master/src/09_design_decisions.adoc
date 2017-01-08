@@ -24,10 +24,11 @@ nachvollziehen können.
 
 
 .Form
-* Liste oder Tabelle, nach Wichtigkeit und Tragweite der
-Entscheidungen geordnet oder
+Verschiedene Möglichkeiten:
 
-* ausführlicher in Form einzelner Unterkapitel je Entscheidung.
-* ADR (http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record]) für jede wichtige Entscheidung.
+* Liste oder Tabelle, nach Wichtigkeit und Tragweite der Entscheidungen geordnet
+* ausführlicher in Form einzelner Unterkapitel je Entscheidung
+* ADR (http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])
+für jede wichtige Entscheidung
 
 ****
