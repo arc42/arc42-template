@@ -17,14 +17,15 @@ You should clearly define your terms, so that all stakeholders
 * do not use synonyms and homonyms
 
 .Form
+A table with columns <Term> and <Definition>.
 
-* A simple table with columns <Term> and <Definition>
-* Potentially more columns for translations
+Potentially more columns in case you need translations.
+
 ****
 
 [options="header"]
 |===
-| Term                   | Definition|
-| <Term-1>               | <definition-1> |
-| <Term-2>               | <definition-2> |
+| Term         | Definition
+| <Term-1>     | <definition-1>
+| <Term-2>     | <definition-2>
 |===

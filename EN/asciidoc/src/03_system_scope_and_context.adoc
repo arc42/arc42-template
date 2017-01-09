@@ -13,7 +13,9 @@ If necessary, differentiate the business context (domain specific inputs and out
 The domain interfaces and technical interfaces to communication partners are among your system's most critical aspects. Make sure that you completely understand them.
 
 .Form
-* Various context diagrams
+Various options:
+
+* Context diagrams
 * Lists of communication partners and their interfaces.
 ****
 
