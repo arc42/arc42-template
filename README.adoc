@@ -8,8 +8,16 @@ free and open source.
 **This repository contains the (AsciiDoc) source of the arc42 template.**
 
 
-It is used by the arc42-generator project to generate the official download
+It is used to:
+
+*  generate (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download
 formats (i.e. docx, markdown, docbook and others).
+* maintain structure, content and help for the template
+* keep non-asciidoc formats (like EAP).
+
+In case you find issues within the template or its explanations,
+this is the repo to fix and issue pull requests :-)
+
 
 
 == Downloads
