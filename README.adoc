@@ -1,4 +1,5 @@
-= image:./arc42-logo-small.png[arc42] Template ("Golden Master")
+= image:./small-arc42-logo.png[arc42] Template ("Golden Master")
+:version 7.0:
 
 arc42 - the template for software architecture documentation and communication.
 Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
