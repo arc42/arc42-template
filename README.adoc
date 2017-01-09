@@ -1,12 +1,16 @@
 = image:./small-arc42-logo.png[arc42] Template ("Golden Master")
 :version 7.0:
+:downloads https://github.com/arc42/arc42-template/raw/master/dist/:
 
-arc42 - the template for software architecture documentation and communication.
+arc42 - the template for effective, practical and pragmatic software architecture
+documentation and communication.
+
 Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
 free and open source.
 
 
-**This repository contains the (AsciiDoc) source of the arc42 template.**
+This repository contains all downloadable versions plus the (AsciiDoc)
+source of the arc42 template.
 
 
 It is used to:
@@ -20,8 +24,9 @@ In case you find issues within the template or its explanations,
 this is the repo to fix and issue pull requests :-)
 
 
-
 == Downloads
 
-For downloadable versions (docx, markdown and others)
-of the template page http://arc42.org/download.
+Please refer to the http://arc42.org/download[official download page] for
+all downloads.
+
+ 
