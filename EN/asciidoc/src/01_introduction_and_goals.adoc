@@ -51,6 +51,7 @@ A table with quality goals and concrete scenarios, ordered by priorities
 ****
 .Contents
 Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
+
 * should know the architecture
 * have to be convinced of the architecture
 * have to work with the architecture or with code
