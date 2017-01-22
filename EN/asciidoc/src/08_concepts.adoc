@@ -14,7 +14,7 @@ They can include many different topics, such as
 * architectur patterns or design patterns
 * rules for using specific technology
 * principal, often technical decisions of overall decisions
-* inmplementation rules
+* implementation rules
 
 .Motivation
 Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
