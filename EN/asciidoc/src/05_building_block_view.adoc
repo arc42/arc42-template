@@ -86,7 +86,7 @@ responsibility according to the following schema:
 
 
 
-If you use a list of black box decriptions then you fill in a separate black box template for every important building block .
+If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
 Its headline is the name of the black box.
 ****
 

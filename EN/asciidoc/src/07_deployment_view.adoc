@@ -83,4 +83,4 @@ _<diagram + explanation>_
 
 ==== _<Infrastructure Element n>_
 
-_<diagramm + explanation>_
+_<diagram + explanation>_
