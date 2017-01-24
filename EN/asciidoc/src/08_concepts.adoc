@@ -11,7 +11,7 @@ Such concepts are often related to multiple building blocks.
 They can include many different topics, such as
 
 * domain models
-* architectur patterns or design patterns
+* architecture patterns or design patterns
 * rules for using specific technology
 * principal, often technical decisions of overall decisions
 * implementation rules
@@ -29,7 +29,7 @@ The form can be varied:
 
 * concept papers with any kind of structure
 * cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations,especially for technical concepts
+* sample implementations, especially for technical concepts
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 
 .Structure
