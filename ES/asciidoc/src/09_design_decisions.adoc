@@ -1,0 +1,27 @@
+[[section-design-decisions]]
+== Decisiones de Diseño
+
+
+[role="arc42help"]
+****
+.Contenido
+Decisiones arquitectónicas importantes, costosas, a larga escala o riesgosas incluyendo sus razonamientos.
+Con "Decisiones" nos referimos a la elección de una alternativa basada en cierto criterio.
+
+Se debe usar el juicio para decidir si una decisión arquitectónica debe ser documentada en esta sección
+central o si sería preferible documentarla localmente (Por ejemplo, dentro de una plantilla de caja blanca
+de un bloque de construcción).
+
+Evite la redundancia. Tomar de referencia la sección 4, donde ya se capturaron las decisiones más importantes 
+para la arquitectura.
+
+.Motivación
+Las partes relacionadas del sistema deben comprender y trazar las decisiones.
+
+.Forma
+Varias opciones:
+
+* Lista o tabla, ordenada por importancia y consecuencias o:
+* Mayor detalle en secciones separadas por cada sección.
+* Registro de Decisiones de Arquitectura (ADR por sus siglas en inglés) para cada decisión importante.
+****

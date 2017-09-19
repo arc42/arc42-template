@@ -1,0 +1,29 @@
+[[section-glossary]]
+== Glosario
+
+[role="arc42help"]
+****
+.Contenido
+Los términos técnicos y de dominio más importantes que serán utilizados por las partes relacionadas al 
+discutir el sistema. 
+
+También se puede usar el glosario como fuente para traducciones si se trabaja en equipos multi-lenguaje.
+
+.Motivación
+Deberían definirse claramente los términos, para que todas las partes relacionadas:
+
+* Tengan un entendimiento idéntico de dichos términos
+* No usen sinónimos y homónimos
+
+.Forma
+Crear una tabla con las columnas <Término> y <Definición>.
+
+Se pueden agregar más columnas en caso de que se requieran traducciones.
+****
+
+[options="header"]
+|===
+| Término         | Definición
+| <Término-1>     | <definicion-1>
+| <Término-2>     | <definicion-2>
+|===

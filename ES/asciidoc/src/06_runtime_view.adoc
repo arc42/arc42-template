@@ -1,0 +1,47 @@
+[[section-runtime-view]]
+== Vista de Ejecución
+
+
+[role="arc42help"]
+****
+.Contenido
+La vista de ejecución describe el comportamiento concreto y la interacción de los bloques de construcción del sistema
+en forma de escenarios en las siguientes áreas:
+
+* Casos de uso o características importantes: ¿Cómo los ejecutan los bloques de construcción?
+* Interacciones en interfases externas críticas: ¿Cómo cooperan los bloques de construcción con los usuarios y sistemas
+vecinos?
+* Administración y operación: Carga, inicialización, detención.
+* Escenarios de error y excepción.
+
+Observación: El criterio principal para la elección de los escenarios posibles (flujos de trabajo, secuencias) es su 
+*relevancia arquitectónica*. *No* es importante describir un gran número de escenarios. Se debe documentar una selección
+representativa.
+
+.Motivación
+Debe entenderse como las instancias de los bloques de construcción del sistema realizan su trabajo y se comunican en
+tiempo de ejecución.
+Deben capturarse principalmente los escenarios que comuniquen a las partes relacionadas que tengan problemas
+para comprender los modelos estáticos en la documentación (Vista de Bloques de Construcción, Vista de Despliegue).
+
+.Forma
+Hay muchas notaciones para describir los escenarios, por ejemplo:
+* Lista numerada de pasos (en lenguaje natural).
+* Diagramas de flujo o de actividades
+* Diagramas de secuencia
+* BPMN o EPCs (Cadenas de procesos de eventos)
+* Máquinas de estado
+* ....
+****
+
+=== <Escenario de ejecución 1>
+
+
+* _<Inserte un diagrama de ejecución o la descripción del escenario>_
+* _<Inserte la descripción de aspectos notables de las interacciones entre los bloques de construcción mostrados en este diagrama.>_
+
+=== <Escenario de ejecución 2>
+
+=== ...
+
+=== <Escenario de ejecución n>

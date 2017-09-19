@@ -1,0 +1,66 @@
+[[section-quality-scenarios]]
+== Requerimientos de Calidad
+
+
+[role="arc42help"]
+****
+
+.Contenido
+Esta sección describe todos los requerimientos de calidad como un árbol de calidad con escenarios. Los más importantes
+ya han sido descritos en la sección 1.2 (Metas de Calidad).
+
+Aquí se capturan los requerimientos de calidad con menor prioridad, que no crearán altos riesgos en caso de que
+no sean cubiertos con totalidad.
+
+.Motivación
+Dado que los requerimientos de calidad tendrán mucha influencia en las decisiones arquitectónicas deben tomarse
+en cuenta los elementos importantes para las partes relacionadas que sean concretas y medibles.
+****
+
+=== Árbol de Calidad
+
+[role="arc42help"]
+****
+.Contenido
+El árbol de calidad (Definido en ATAM - Método de análisis de compensación de arquitectura por sus silas en inglés) con 
+escenarios de calidad/evaluación como hojas. 
+
+.Motivación
+La estructura de árbol con prioridades provee un vistazo general para un gran número de requerimientos de calidad.
+
+.Forma
+El árbol de calidad es un vistazo a alto nivel de las metas de calidad y requerimientos:
+
+* Un refinamiento del término de "calidad" a manera de árbol. Utilice "calidad" o "utilidad" como raíz.
+* Un mapa mental con categorías de calidad como ramas principales
+
+En cualquier caso incluya ligas a los escenarios de las siguientes secciones.
+****
+
+=== Escenarios de calidad
+
+[role="arc42help"]
+****
+.Contenido
+Concretización de requerimientos de calidad (que pueden ser vagos o implícitos) utilizando escenarios de calidad.
+
+Estos escenarios describen lo que debería pasar cuando un estímulo llega al sistema.
+
+Para los arquitectos, son importantes dos tipos de escenarios: 
+
+* Escenarios de uso (también llamados escenarios de aplicación o escenarios de caso de uso), que describen la reacción
+en tiempo de ejecución de un sistema a un determinado estímulo. Esto incluye también escenarios que describen la eficiencia
+o el rendimiento del sistema. Por ejemplo: El sistema reacciona a la petición de un usuario en un segundo.
+* Escenarios de cambios, describen la modificación del sistema a su ambiente inmediato. Por ejemplo: Cuando se implementa
+funcionalidad adicional o requerimietnos para el cambio de un atributo de calidad.
+
+.Motivación
+Los escenarios crean requerimientos de calidad concretos y permiten medirlos de manera mas sencilla o decidir si han sido
+cumplidos.
+
+Cuando se requiere evaluar la arquitectura utilizando métodos como ATAM se necesitan describir las metas de calidad
+(de la sección 1.2) de manera más precisa hasta un nivel de escenarios que pueden ser discutidos y evaluados.
+
+.Forma
+Texto en forma libre o tabular.
+****

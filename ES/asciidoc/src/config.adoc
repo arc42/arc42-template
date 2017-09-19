@@ -1,0 +1,16 @@
+// asciidoc settings for ES (Español)
+// ==================================
+:toc-title: Contenido
+
+// enable table-of-contents
+:toc:
+
+// where are images located?
+:imagesdir: ./images
+
+// Las imágenes en línea (inline)
+// generan un html de salida de un solo archivo
+// pero esto no funciona con publish2confluence
+// y htmlSanityChecker
+//:data-uri:
+//:icons: font

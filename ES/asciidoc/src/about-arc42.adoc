@@ -1,0 +1,19 @@
+:homepage: http://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**Acerca de arc42**
+
+[role="lead"]
+arc42, La plantilla de documentación para arquitectura de sistemas y de software.
+
+Por Dr. Gernot Starke, Dr. Peter Hruschka y otros contribuyentes.
+
+
+Revisión de la plantilla: 7.0 ES (basada en asciidoc), Enero 2017
+
+(C)
+Reconocemos que este documento utiliza material de la
+plantilla de arquitectura arc 42, http://www.arc42.de.
+Creada por Dr. Peter Hruschka y Dr. Gernot Starke.
