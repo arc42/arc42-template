@@ -1,0 +1,20 @@
+[[section-technical-risks]]
+== Riesgos y deuda técnica
+
+
+[role="arc42help"]
+****
+.Contenido
+Una lista de los riesgos técnicos o deuda técnica identificada, ordenada por prioridad.
+
+.Motivación
+"El manejo de riesgos es administración de proyectos para gente adulta" (Tim Lister, Atlantic Systems Guild.)
+
+Esto debiera ser el lema para la detección sistemática y la evaluación de riesgos y deuda técnica en la arquitectura,
+que será requerida por las partes relacionadas administrativas (por ejemplo, administradores de proyectoes, propietarios
+de producto) como parte de la planeación y medición de riesgos en general.
+
+.Forma
+Lista de riesgos y/o deuda técnica, que podría incluir una medidas sugeridas para minimizar, mitigar o evitar riesgos
+o reducir la deuda técnica.
+****

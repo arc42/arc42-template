@@ -1,0 +1,27 @@
+[[section-solution-strategy]]
+== Estrategia de solución
+
+
+[role="arc42help"]
+****
+.Contenido
+Un resumen corto y explicación de las estrategias y decisiones fundamentales para la solución que le dan forma a la
+arquitectura del sistema.
+Estas incluyen:
+
+* Decisiones tecnológicas
+* Decisiones acerca de la descomposición a alto nivel de un sistema, por ejemplo, el uso de algún patrón de diseño
+o de arquitectura.
+* Decisiones en como alcanzar metas de calidad claves
+* Decisiones organizacionales relevantes, como el seleccionar un proceso de desarrollo o delegar ciertas tareas a terceros.
+
+.Motivación
+Estas decisiones son las piedras angulares de la arquitectura. Son la base de muchas otras decisiones detalladas o reglas de implementación.
+
+.Forma
+Realice la explicación de las deciciones clave de manera breve. 
+
+Justifique las decisiones y porque se realizaron de esa manera, basado en el planteamiento del problema,
+las metas de calidad y restricciones clave.
+Refierase a los detalles en las secciones posteriores.
+****

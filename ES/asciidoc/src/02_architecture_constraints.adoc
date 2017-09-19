@@ -1,0 +1,20 @@
+[[section-architecture-constraints]]
+== Restricciones de la Arquitectura
+
+
+[role="arc42help"]
+****
+.Contenido
+Cualquier requerimiento que restrinja a los arquitectos de software en la libertad de diseño y la toma de decisiones
+sobre la implementación o el proceso de desarrollo. Estas restricciones a veces van más allá de sistemas individuales
+y son validos para organizaciones y compañías enteras.
+
+.Motivación
+Los arquitectos deben saber exactamente sus libertades respecto a las decisiones de diseño y en donde deben apegarse
+a restricciones. Las restricciones siempre deben ser acatadas, aunque en algunos casos pueden ser negociables.
+
+.Forma
+Tablas de restricciones con sus explicaciones.
+Si se requiere, se pueden subdividir en restricciones técnicas, organizacionales y/o políticas y convenciones
+(por ejemplo, guías de versionado o programación, convenciones de documentación o nombrado)
+****
