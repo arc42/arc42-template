@@ -30,7 +30,7 @@ operationalisiert.
 Der Qualitätsbaum ( a la ATAM) mit Qualitätsszenarien an den Blättern.
 
 .Motivation
-Die mit Prioritäten versehene Baustruktur gibt Überblick über eine
+Die mit Prioritäten versehene Baumstruktur gibt Überblick über die
 oftmals zahlreichen Qualitätsanforderungen.
 
 .Form

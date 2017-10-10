@@ -1,0 +1,83 @@
+[[section-introduction-and-goals]]
+== Introducción y Metas
+
+[role="arc42help"]
+****
+Describe los requerimientos relevantes y las directrices que los arquitectos de software y el equipo de desarrollo
+deben considerar. Entre estas se incluyen:
+
+* Objetivos empresariales subyacentes, características esenciales y requerimientos funcionales para el sistema
+* Metas de calidad para la arquitectura
+* Las partes interesadas pertinentes y sus expectativas
+****
+
+=== Vista de Requerimientos
+
+[role="arc42help"]
+****
+.Contenido
+Descripción corta de los requerimientos funcionales, motivaciones, extracto (o resumen) de los 
+requerimientos. Ligar a los documentos de requerimientos determinados (Con número de versión e
+información de donde encontrarla). 
+
+.Motivación
+Desde el punto de vista de los usuarios finales un sistema es creado o modificado para
+mejorar el soporte a una actividad de negocio o incrementar su calidad
+
+.Forma
+Descripción corta textual, probablemente en un formato de caso de uso tabular.
+Si existen documentos de requerimientos esta vista debe referir a dichos requerimientos
+
+Mantenga estos extractos tan cortos como sea posible. Encuentre el balance entre la legibilidad y 
+la redundancia de este documento respecto a los documentos de requerimientos que se encuentren 
+relacionados.
+****
+
+=== Metas de Calidad
+
+[role="arc42help"]
+****
+.Contenido
+Las tres metas de calidad principales (o hasta cinco) cuyo cumplimiento sea de la mayor importancia para las
+principales partes interesadas. Nos referimos a las metas de calidad para la arquitectura. No confundir
+con las metas del proyecto. No necesariamente son idénticas.
+
+.Motivación
+Debe conocer las metas de calidad de las partes interesadas más importantes, ya que ellos influenciarán
+las decisiones arquitectónicas principales. Asegúrese de ser muy concreto con las descripciones, evitando buzzwords.
+Si como arquitecto no conoce la calidad de su trabajo, será juzgado...
+
+.Forma
+Una tabla con metas de calidad y escenarios concretos, ordenados por prioridades
+****
+
+=== Partes interesadas (Stakeholders)
+
+[role="arc42help"]
+****
+.Contenido
+Vista detallada de las partes intersadas del sistema, es decir, toda persona, rol u organización que:
+
+* Debe conocer la arquitectura
+* Debe estar convencida de la arquitectura
+* Tiene que trabajar con la arquitectura o con el código
+* Necesitan la documentación de la arquitectura para su trabajo
+* Intervienen en las decisiones acerca del sistema o su desarrollo 
+
+.Motivación
+Debe conocer a todas las partes involucradas en el desarrollo del sistema o que son afectadas
+por el sistema. De otro modo, se topará con sorpresas desagradables durante el proceso de desarrollo.
+Estas partes relacionadas o stakeholders determinarán la extensión y el nivel de detalle del trabajo
+y sus resultados
+
+.Forma
+Tabla con nombres de los roles, personas, y sus expectativas con respecto a la arquitectura y su 
+documentación
+****
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Nombre|Contacto|Expectativas
+| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
+| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|===

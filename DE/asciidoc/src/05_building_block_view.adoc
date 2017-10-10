@@ -83,7 +83,7 @@ Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
 Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin
 nur mit Name und Verantwortung nach folgendem Muster beschrieben:
 
-[cols="1,2" options=""]
+[cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
 | _<Blackbox 1>_ | _<Text>_

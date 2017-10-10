@@ -6,15 +6,15 @@
 ****
 .Content
 This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (&rarr; cross-cutting) of your system.
+relevant in multiple parts (= cross-cutting) of your system.
 Such concepts are often related to multiple building blocks.
 They can include many different topics, such as
 
 * domain models
-* architectur patterns or design patterns
+* architecture patterns or design patterns
 * rules for using specific technology
 * principal, often technical decisions of overall decisions
-* inmplementation rules
+* implementation rules
 
 .Motivation
 Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
@@ -29,7 +29,7 @@ The form can be varied:
 
 * concept papers with any kind of structure
 * cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations,especially for technical concepts
+* sample implementations, especially for technical concepts
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 
 .Structure

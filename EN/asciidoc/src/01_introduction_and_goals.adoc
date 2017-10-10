@@ -16,7 +16,7 @@ Describes the relevant requirements and the driving forces that software archite
 ****
 .Contents
 Short description of the functional requirements, driving forces, extract (or abstract)
-of requiremnents. Link to (hopefully existing) requirements documents
+of requirements. Link to (hopefully existing) requirements documents
 (with version number and information where to find it).
 
 .Motivation
@@ -51,6 +51,7 @@ A table with quality goals and concrete scenarios, ordered by priorities
 ****
 .Contents
 Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
+
 * should know the architecture
 * have to be convinced of the architecture
 * have to work with the architecture or with code
@@ -68,6 +69,7 @@ Table with role names, person names, and their expectations with respect to the 
 
 [options="header",cols="1,2,2"]
 |===
-|Role/Name|Contact|Expectations |
-| |  | |
+|Role/Name|Contact|Expectations
+| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
+| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
 |===

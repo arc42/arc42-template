@@ -9,7 +9,7 @@ treibenden Kräfte, die Softwarearchitekten und Entwicklungsteams
 berücksichtigen müssen. Dazu gehören die
 
 * zugrunde liegenden Geschäftsziele, wesentliche Aufgabenstellung und essenzielle fachliche Anforderungen an das System
-* Qualitätsziele für die Architektur 
+* Qualitätsziele für die Architektur
 * relevante Stakeholder und deren Erwartungshaltung
 ****
 
@@ -58,13 +58,13 @@ Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien
 [role="arc42help"]
 ****
 .Inhalt
-Expliziter Überblick über die Stakeholder des Systems, d.h. über alle Personen, Rollen oder Organisationen, die 
+Expliziter Überblick über die Stakeholder des Systems, d.h. über alle Personen, Rollen oder Organisationen, die
 
 * die Architektur kennen sollten oder
 * von der Architektur überzeugt werden müssen,
 * mit Architektur oder Code arbeiten (z.B. Schnittstellen nutzen),
 * Dokumentation der Architektur für ihre eigene Arbeit benötigen,
-* Entscheidungen über das System und dessen Entwicklung treffen. 
+* Entscheidungen über das System und dessen Entwicklung treffen.
 
 .Motivation
 Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen. Diese Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der von Ihnen zu leistenden Arbeit und Ergebnisse.
@@ -77,7 +77,7 @@ Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung bezüglich
 
 [cols="1,1,2" options="header"]
 |===
-|Rolle |Kontakt |Erwartungshaltung |
-|  |  |  |
+|Rolle |Kontakt |Erwartungshaltung
+| _<Rolle-1>_ | _<Kontakt-1>_ | _<Erwartung-1>_
+| _<Rolle-2>_ | _<Kontakt-2>_ | _<Erwartung-2>_ 
 |===
-

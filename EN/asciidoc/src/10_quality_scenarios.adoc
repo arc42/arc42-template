@@ -41,7 +41,7 @@ In any case the tree should include links to the scenarios of the following sect
 [role="arc42help"]
 ****
 .Contents
-Concretizaion of (sometimes vague or implicit) quality requirements using (quality) scenarios.
+Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.
 
 These scenarios describe what should happen when a stimulus arrives at the system.
 

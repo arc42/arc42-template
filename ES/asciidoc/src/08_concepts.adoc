@@ -1,0 +1,73 @@
+[[section-concepts]]
+== Conceptos Transversales (Cross-cutting)
+
+
+[role="arc42help"]
+****
+.Contenido
+Esta sección describe de manera general, las principales ideas de solución y regulación que 
+son relevantes en multiples partes (-> cross-cutting/transversales) del sistema.
+Dichos conceptos están relacionados usualmente a múltiples bloques de construcción.
+Pueden incluir diversos temas, tales como:
+
+* Modelos de dominio
+* Patrones de arquitectura o patrones de diseño
+* Reglas de uso para alguna tecnología específica.
+* Decisiones técnicas principales o generales
+* Reglas de implementación
+
+.Motivación
+Conceptos que forman la base para la _integridad conceptual_ (consistencia, homogeneidad) de la
+arquitectura. Entonces, son una contribución importante para alcanzar la calidad interna del sistema.
+
+Algunos de estos conceptos no pueden ser asignados a bloques de construcción individuales (por ejemplo
+seguridad). Este es el lugar en la plantilla provisto para una especificación cohesiva de dichos conceptos.
+
+.Forma
+La forma puede ser variada:
+
+* Papeles conceptuales con cualquier tipo de estructura
+* Modelo transversal (cross-cutting) de fragmentos o escenarios usando notación de las vistas arquitectónicas
+* Implementaciones de muestra, especialmente para conceptos técnicos.
+* Referencias a uso típico en frameworks estándar (por ejemplo, el uso de Hibernate para mapeo Objeto/Relacional)
+The form can be varied:
+
+.Estructura
+La estructura potencial (pero no obligatoria) para esta sección podría ser:
+
+* Conceptos de dominio
+* Conceptos de experiencia de usuario (UX)
+* Conceptos de seguridad
+* Patrones de diseño y arquitectura
+* 
+A potential (but not mandatory) structure for this section could be:
+
+* Domain concepts
+* User Experience concepts (UX)
+* Safety and security concepts
+* Architecture and design patterns
+* "Bajo el capó"
+* Conceptos de desarrollo
+* Conceptos de operación
+
+Nota: Puede ser difícil asignar conceptos individuales a un tema específico de la lista
+
+image:08-Crosscutting-Concepts-Structure-EN.png["Posibles temas para conceptos transversales"]
+****
+
+
+=== _<Concepto 1>_
+
+_<explicación>_
+
+
+
+=== _<Concepto 2>_
+
+_<explicación>_
+
+...
+
+=== _<Concepto n>_
+
+_<explicación>_
