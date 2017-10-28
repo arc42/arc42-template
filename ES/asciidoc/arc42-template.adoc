@@ -33,7 +33,7 @@ include::src/about-arc42.adoc[]
 
 [role="arc42help"]
 ****
-[NOTA]
+[NOTE]
 ====
 La versión de esta plantilla contiene textos de ayuda y explicación
 Se utiliza para familiarizarse con arc42 y comprender sus conceptos.
