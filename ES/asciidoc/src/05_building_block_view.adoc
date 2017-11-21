@@ -22,7 +22,7 @@ Esto permite comunicar a las partes interesades en un nivel abstracto sin entrar
 La vista de bloques comprende una colección jerárquica de cajas negras y cajas blancas (ver figura de abajo)
 y sus descripciones.
 
-image:05_building_blocks-EN.png["Jerarquía de bloques de construcción"]
+image:05_building_blocks-ES.png["Jerarquía de bloques de construcción"]
 
 *Nivel 1* comprende la descripción de Caja Blanca del sistema en general junto con las descripciones de Caja Negra de
 todos los bloques contenidos.
