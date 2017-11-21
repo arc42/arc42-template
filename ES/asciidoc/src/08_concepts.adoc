@@ -52,7 +52,7 @@ A potential (but not mandatory) structure for this section could be:
 
 Nota: Puede ser difícil asignar conceptos individuales a un tema específico de la lista
 
-image:08-Crosscutting-Concepts-Structure-EN.png["Posibles temas para conceptos transversales"]
+image:08-Crosscutting-Concepts-Structure-ES.png["Posibles temas para conceptos transversales"]
 ****
 
 
