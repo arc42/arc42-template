@@ -71,7 +71,7 @@ _<Erläuternder Text>_
 
 
 Enthaltene Bausteine::
-_<Beschreibung der enhaltenen Bausteine (Blackboxen)>_
+_<Beschreibung der enthaltenen Bausteine (Blackboxen)>_
 
 Wichtige Schnittstellen::
 _<Beschreibung wichtiger Schnittstellen>_
