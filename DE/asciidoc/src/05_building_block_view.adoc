@@ -11,7 +11,7 @@ Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Fun
 Datenstrukturen...) sowie deren Beziehungen.
 
 Diese Sicht sollte in jeder Architekturdokumentation
-vorhanden sein . In der Analogie zum Hausbau bildet die Bausteinsicht
+vorhanden sein. In der Analogie zum Hausbau bildet die Bausteinsicht
 den _Grundrissplan_.
 
 .Motivation
