@@ -10,7 +10,7 @@ Die Verteilungssicht beschreibt:
 
  1. die technische Infrastruktur, auf der Ihr System
 ausgeführt wird, mit Infrastrukturelementen wie
-Standorte, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztoplogien
+Standorte, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztopologien
 sowie sonstigen Bestandteilen und
 
 2. die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
