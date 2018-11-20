@@ -1,24 +1,22 @@
 [[section-solution-strategy]]
-== Solution Strategy
+== Стратегия решения
 
 
 [role="arc42help"]
 ****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape the system's architecture. These include
+.Содержание
+Краткий обзор и объяснение фундаментальных решений и стратегий, которые формируют архитектуру системы. Включает в себя
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* технологические решения
+* решения о высокоуровневой декомпозиции системы, например, использование архитектурных или дизайн паттернов
+* решения, позволяющие достичь целевых качественных характеристик
+* соответствующие организационные решения, например, выбор методологии процесса разработки или делегирование части работы сторонним командам/компаниям
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the basis for many other detailed decisions or implementation rules.
+.Мотивация
+Эти решения являются краеугольными камнями вашей архитектуры. Они -- основа для многих других более детальных решений или правил реализации решения.
 
-.Form
-Keep the explanation of these key decisions short.
-
-Motivate what you have decided and why you decided that way,
-based upon your problem statement, the quality goals and key constraints.
-Refer to details in the following sections.
+.Форма
+Вы должны кратко объяснить, какие решения вы приняли и почему, основываясь на постановке задачи, качественных целях и ключевых ограничениях.
+Детальные описания будут приведены в дальнейших разделах документа.
 ****
+

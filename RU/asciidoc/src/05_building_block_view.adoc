@@ -1,206 +1,185 @@
 [[section-building-block-view]]
 
 
-== Building Block View
+== Компонентное представление
 
 [role="arc42help"]
 ****
-.Content
-The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes,
-interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations,
-datas structures, ...) as well as their dependencies (relationships, associations, ...)
+.Содержание
+Компонентное представление показывает статическую декомпозицию системы на составляющие её элементы (модули, компоненты, подсистемы,
+классы, интерфейсы, пакеты, библиотеки, фреймворки, слои, партиции, звенья, функции, макросы, операции, структуры данных, ...) и зависимости
+этих элементов между собой (связи, ассоциации, ...)
 
-This view is mandatory for every architecture documentation.
-In analogy to a house this is the _floor plan_.
+Это представление обязательно для любого формата архитектурной документации.
+Если проводить аналогию со строительством, то это поэтажный план дома.
 
-.Motivation
-Maintain an overview of your source code by making its structure understandable through
-abstraction.
+.Мотивация
+Такие абстракции делают структуру исходного кода системы более обозримой и понятной, что ведёт к упрощению его дальнейшей поддержки и развития.
 
-This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.
+Также подобное представление позволит вам общаться со всеми стейкхолдерами, оперируя достаточно абстрактными понятиями, не углубляясь 
+в детали реализации.
 
-.Form
-The building block view is a hierarchical collection of black boxes and white boxes
-(see figure below) and their descriptions.
+.Форма
+Компонентное представление это иерархический набор "черных" (закрытых компонентов) и "белых" (детализируемых компонентов) ящиков и их описаний (как показано на рисунке ниже)
 
-image:05_building_blocks-EN.png["Hierarchy of building blocks"]
+image:05_building_blocks-EN.png["Иерархия компонентов"]
 
-*Level 1* is the white box description of the overall system together with black
-box descriptions of all contained building blocks.
+*Уровень 1* отображет всю разрабатываемую систему в виде одного "белого" ящика в окружении "черных" ящиков, 
+представляющих из себя все соседние системы и пользователей.
 
-*Level 2* zooms into some building blocks of level 1.
-Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.
+*Уровень 2* рассматривает уже более детальное представление системы в виде очередного набора "белых" ящиков. Таким образом он содержит
+описание верхнеуровневых компонент системы, но скрывает их нижележащую реализацию.
 
-*Level 3* zooms into selected building blocks of level 2, and so on.
+*Уровень 3* раскрывает детали реалзиации каждого из блоков уровня два, и так далее.
 ****
 
-=== Whitebox Overall System
+=== Верхнеуровневая компонентная схема системы
+****
+В этом разделе вы описывается верхнеуровневую декомпозицию системы на компоненты. Описание включает в себя
+
+ * обзорную диаграмму
+ * мотивацию декомпозиции
+ * краткое описание компонентов, содержащихся на диаграмме. Варианты реализации:
+  
+  ** использовать _одну_ таблицу, в которой кратко и прагматично описать все компоненты в виде черных ящиков и их интерфейсы 
+  ** изложить описание компонентов в виде списка, соответствующего шаблону описания компонентов (см. ниже). 
+     В зависимости от выбранного инструментария, этот список может быть подглавами (для текстовых файлов), отдельными вложенными страницами (Wiki) или просто вложенными элементами (в терминах инструмента моделирования).
+
+ * (опционально): описание основных интерфейсов, которые не указаны в шаблоне описания компонента, но крайне важны для понимания общей компонентной схемы.
+ Так как существует огромное количество возможных способов описания интерфейсов, мы не приводим для них какого-то определённого шаблона.
+ В худшем случае вам придётся описать синтаксис, семантику, протоколы, обработку ошибок, ограничения, версии, атрибуты качества, требования совместимости и многое многое другое.
+ В лучшем же случае можно ограничиться примерами или простыми описаниями сигнатур. 
+
+****
+
+_**<Обзорная диаграмма>**_
+
+Мотивация декомпозиции:
+_<Текстовое описание>_
+
+Компоненты::
+_<Описание содержащихся на схеме "черных ящиков">_
+
+Основные интерфейсы::
+_<писание основных интерфейсов>_
 
 [role="arc42help"]
 ****
-Here you describe the decomposition of the overall system using the following white box template. It contains
+Добавьте описание черных ящиков с первого уровня представления:
 
- * an overview diagram
- * a motivation for the decomposition
- * black box descriptions of the contained building blocks. For these we offer you alternatives:
-
-   ** use _one_ table for a short and pragmatic overview of all contained building blocks and their interfaces
-   ** use a list of black box descriptions of the building blocks according to the black box template (see below).
-   Depending on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a modeling tool).
-
-
- * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
-Since there are so many ways to specify interfaces why do not provide a specific template for them.
- In the worst case you have to specify and describe syntax, semantics, protocols, error handling,
- restrictions, versions, qualities, necessary compatibilities and many things more.
-In the best case you will get away with examples or simple signatures.
-
-****
-
-_**<Overview Diagram>**_
-
-Motivation::
-
-_<text explanation>_
-
-
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
-
-Important Interfaces::
-_<Description of important interfaces>_
-
-[role="arc42help"]
-****
-Insert your explanations of black boxes from level 1:
-
-If you use tabular form you will only describe your black boxes with name and
-responsibility according to the following schema:
+Если вы используете табличное представление, то достаточно для каждого элемента указать в строке его название и область
+ответственности, по следующей схеме:
 
 [cols="1,2" options="header"]
 |===
-| **Name** | **Responsibility**
-| _<black box 1>_ | _<Text>_
-| _<black box 2>_ | _<Text>_
+| **Название** | **Ответственность**
+| _<Черный ящик 1>_ | _<Текст>_
+| _<Черный ящик 2>_ | _<Текст>_
 |===
 
 
-
-If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
-Its headline is the name of the black box.
+Если вы предпочитаете описывать компоненты в виде списка, то необходимо заполнить следующий шаблон для каждого 
+черного ящика. 
 ****
 
-
-==== <Name black box 1>
-
+==== <Черный ящик 1>
 [role="arc42help"]
 ****
-Here you describe <black box 1>
-according the the following black box template:
+Опишите <Черный ящик 1>
+в соответствии со следующим шаблоном описания:
 
-* Purpose/Responsibility
-* Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance characteristics.
-* (Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ....
-* (Optional) directory/file location
-* (Optional) Fulfilled requirements (if you need traceability to requirements).
-* (Optional) Open issues/problems/risks
+* Назначение/область ответственности
+* Интерфейс(ы), если они не описаны в отдельных подразделах. В описание интерфейсов можно также включить характеристи производительности или иные качественные свойства
+* (Опционально) Характеристики качества/проихводительности, например доступность, отзывчивость, поведение во время исполнения, ....
+* (Опционально) Каталог/пакет/репозиторий/местоположение файла компонента.
+* (Опционально) Требования, закрываемые компонентом (если необходимо).
+* (Опционально) Открытые вопросы/проблемы/риски
 
 ****
 
-_<Purpose/Responsibility>_
+_<Назначение/область ответственности>_
 
-_<Interface(s)>_
+_<Интерфейс(ы)>_
 
-_<(Optional) Quality/Performance Characteristics>_
+_<(Опционально) Характеристики качества/производительности>_
 
-_<(Optional) Directory/File Location>_
+_<(Опционально) Каталог/пакет/репозиторий/местоположение файла компонента>_
 
-_<(Optional) Fulfilled Requirements>_
+_<(Опционально) Закрытые требования>_
 
-_<(optional) Open Issues/Problems/Risks>_
-
-
+_<(Опционально) Открытые вопросы/проблемы/риски>_
 
 
-==== <Name black box 2>
+==== <Черный ящик 2>
 
-_<black box template>_
-
-==== <Name black box n>
-
-_<black box template>_
+_<Шаблон описания черного ящика>_
 
 
-==== <Name interface 1>
+==== <Черный ящик n>
+
+_<Шаблон описания черного ящика>_
+
+
+==== <Название интерфейса 1>
 
 ...
 
-==== <Name interface m>
+==== <Название интерфейса m>
 
 
-
-=== Level 2
-
+=== Уровень 2
 [role="arc42help"]
 ****
-Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.
+На этом уровне необходимо описать внутреннюю структуру (некоторых) компонентов уровня 1 в виде белых ящиков ("открытых" компонентов).
 
-You have to decide which building blocks of your system are important enough to justify such a detailed description.
-Please prefer relevance over completeness. Specify important, surprising, risky, complex or volatile building blocks.
-Leave out normal, simple, boring or standardized parts of your system
+Вам нужно принять решение, какие из компонент вашей системы достаточно важны для такого детального описания.
+Старайтесь придерживаться актуальности/интересности, а не стопроцентного покрытия. Опишите важные, неочевидные, рискованные или изменчивые компоненты.
+Не стоит детально специфицировать обычные, простые, скучные и стандартизированные части вашей системы.
 ****
 
-==== White Box _<building block 1>_
-
+==== Детализация компонента 1 
 [role="arc42help"]
 ****
-...describes the internal structure of _building block 1_.
+...детализированное описание внутренней структуры _компонента 1_
 ****
 
-_<white box template>_
-
-==== White Box _<building block 2>_
-
-
-_<white box template>_
+==== Детализация компонента 2
+****
+...детализированное описание внутренней структуры _компонента 2_
+****
 
 ...
 
-==== White Box _<building block m>_
+==== Детализация компонента m
+****
+...детализированное описание внутренней структуры _компонента m_
+****
 
-
-_<white box template>_
-
-
-
-=== Level 3
-
+=== Уровень 3
 [role="arc42help"]
 ****
-Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.
+На этом уровне вы можете спуститься глубже и описать внутреннюю структуру (некоторых) компонентов, представленных на уровне 2
+в качестве черных ящиков.
 
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
+И когда вам потребуется всё более глубокая детализация уровней вашей архитектуры, просто распространите
+эту часть arc42 шаблона на следующие уровни.
 ****
 
-
-==== White Box <_building block x.1_>
-
+==== Детализация элемента <_компонент x.1_>
 [role="arc42help"]
 ****
-Specifies the internal structure of _building block x.1_.
+Опишите внутреннюю структуру элемента <_компонент x.1_>
 ****
 
-
-_<white box template>_
-
-
-==== White Box <_building block x.2_>
-
-_<white box template>_
+_<Шаблон описания компонента>_
 
 
+==== Детализация элемента <_компонент x.2_>
 
-==== White Box <_building block y.1_>
+_<Шаблон описания компонента>_
 
-_<white box template>_
+
+
+==== Детализация элемента <_компонент x.2_>
+
+_<Шаблон описания компонента>_
