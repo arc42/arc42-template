@@ -1,23 +1,32 @@
 [[section-deployment-view]]
 
 
-== Deployment View
+== Схема развёртывания
+[role="arc42help"]
+****
+.Содержание
+Схема развёртывания описывает:
+
+1. Техническую инфраструктуру, используемую для работы системы с такими инфраструктурными компонентами, как географические зоны, среды, компьютеры, процессоры, каналы и сетевые топологии наряду с другими инфраструктурными элементами;
+
+2. Отображение структурных компонентов системы на эти инфраструктурные элементы.
+
+Часто системы работают в различных средах, например, среда разработки, среда тестирования, промышленная среда. В этом случае необходимо описать все важные среды.
+
+В особенности, документирование схемы развёртывания необходимо, когда ваша система является распределённой и функционирует более чем на одном сервере или в одном контейнере, или же когда вы разрабатываете и конструируете свои собственные хардварные решения.
+
+С точки зрения программного обеспечения достаточно отразить те элементы инфраструктуры, которые вам необходимы, чтобы описать развёртывание основных компонент вашего приложение. Архитекторы аппаратного обеспечения же могут пойти дальше и описывать инфраструктуру на любом уровне детализации, который они посчитают нужым.
+
+.Мотивация
+Программное обеспечение не может работать без соответствующих аппаратных ресурсов.
+Эта инфраструктура может и будет влиять на вашу систему и/или какие-либо сопутствующие концепции. Следовательно, вы обязаны знать свою инфраструктуру.
+
+
+
+****
 
 [role="arc42help"]
 ****
-.Content
-The deployment view describes:
-
- 1. the technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
-
-2. the mapping of (software) building blocks to that infrastructure elements.
-
-Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environments.
-
-Especially document the deployment view when your software is executed as distributed system with more then one computer, processor, server or container or when you design and construct your own hardware processors and chips.
-
-From a software perspective it is sufficient to capture those elements of the infrastructure that are needed to show the deployment of your building blocks. Hardware architects can go beyond that and describe the infrastructure to any level of detail they need to capture.
-
 .Motivation
 Software does not run without hardware.
 This underlying infrastructure can and will influence your system and/or some
