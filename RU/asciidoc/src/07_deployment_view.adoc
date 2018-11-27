@@ -21,26 +21,22 @@
 Программное обеспечение не может работать без соответствующих аппаратных ресурсов.
 Эта инфраструктура может и будет влиять на вашу систему и/или какие-либо сопутствующие концепции. Следовательно, вы обязаны знать свою инфраструктуру.
 
+.Форма
+Возможно, самый верхнеуровневый вариант схемы развёртывания уже приведен в разделе 3.2 в качестве технического контекста системы,
+и изображает все инфраструктурные компоненты системы в виде одного черного ящика. В этой секции документа вы должны 
+детально рассмотреть этот черный ящик с помощью дополнительных схем и диаграмм:
 
+* UML предлагает собственные представления диаграмм развёртывания. Используйте этот формат, возможно, с использованием вложенных
+диаграмм для более детального описания сложных инфраструктурных компонентов.
+* Если (технические) стейкхолдеры проекта предпочитают другие виды/нотации диаграмм, используйте их.
 
 ****
+
+=== Инфраструктурный уровень 1
 
 [role="arc42help"]
 ****
-.Motivation
-Software does not run without hardware.
-This underlying infrastructure can and will influence your system and/or some
-cross-cutting concepts. Therefore, you need to know the infrastructure.
 
-.Form
-
-Maybe the highest level deployment diagram is already contained in section 3.2. as
-technical context with your own infrastructure as ONE black box. In this section you will
-zoom into this black box using additional deployment diagrams:
-
-* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
-when your infrastructure is more complex.
-* When your (hardware) stakeholders prefer other kinds of diagrams rather than the deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 ****
 
 === Infrastructure Level 1
