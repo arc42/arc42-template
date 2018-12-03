@@ -3,7 +3,7 @@
 //
 // ====================================
 
-= image:arc42-logo.png[arc42] Template
+= image:arc42-logo.png[arc42] Шаблон
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Table of Contents
 
@@ -35,9 +35,9 @@ include::src/about-arc42.adoc[]
 ****
 [NOTE]
 ====
-This version of the template contains some help and explanations.
-It is used for familiarization with arc42 and the understanding of the concepts.
-For documentation of your own system you use better the _plain_ version.
+Данная версия шаблона содержит немного вспомогательной информации и разъяснений.
+Она используется для ознакомления с arc42 и понимания его концепций.
+Для документирования вашей системы лучше использовать _плоскую_ версию.
 ====
 ****
 

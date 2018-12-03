@@ -36,56 +36,48 @@
 
 [role="arc42help"]
 ****
+Опишите, используя различные вариации диаграмм, таблиц и простого текста:
 
+* распределение системы по географическим зонам, средам исполнения, серверам, процессорам... И также опишите физические каналы взаимодействия между ними
+* обоснование и мотивацию такой схемы развёртывания
+* характеристики качества и/или производительности, которые обеспечивает инфраструктура
+* отображение компонентов системы на элементы инфраструктуры
+
+В случае наличия нескольких сильно различающихся сред или альтернативных вариантов развёртывания, скопируйте и заполните для них эту 
+секцию шаблона
 ****
 
-=== Infrastructure Level 1
+_**<Обзорная диаграмма>**_
 
+Мотивация::
+
+_<Разъяснения в текстовой форме>_
+
+Характеристики качества и/или производительности::
+
+_<Разъяснения в текстовой форме>_
+
+Отображение компонентов системы на инфраструктуру::
+
+_<Описание отображения>_
+
+=== Инфраструктурный уровень 2
 [role="arc42help"]
 ****
-Describe (usually in a combination of diagrams, tables, and text):
-
-*  the distribution of your system to multiple locations, environments, computers, processors, .. as well as the physical connections between them
-*  important justification or motivation for this deployment structure
-* Quality and/or performance features of the infrastructure
-*  the mapping of software artifacts to elements of the infrastructure
-
-For multiple environments or alternative deployments please copy that section of arc42 for all relevant environments.
+Включите в этот раздел описание внутренней структуры (некоторых) инфраструктурных элементов уровня 1, если это необходимо
 ****
 
-_**<Overview Diagram>**_
 
-Motivation::
+==== _<Инфраструктурный элемент 1>_
 
-_<explanation in text form>_
+_<Диаграмма и описание>_
 
-Quality and/or Performance Features::
+==== _<Инфраструктурный элемент 2>_
 
-_<explanation in text form>_
-
-Mapping of Building Blocks to Infrastructure::
-_<description of the mapping>_
-
-
-=== Infrastructure Level 2
-
-[role="arc42help"]
-****
-Here you can include the internal structure of (some) infrastructure elements from level 1.
-
-Please copy the structure from level 1 for each selected element.
-****
-
-==== _<Infrastructure Element 1>_
-
-_<diagram + explanation>_
-
-==== _<Infrastructure Element 2>_
-
-_<diagram + explanation>_
+_<Диаграмма и описание>_
 
 ...
 
-==== _<Infrastructure Element n>_
+==== _<Инфраструктурный элемент n>_
 
-_<diagram + explanation>_
+_<Диаграмма и описание>_

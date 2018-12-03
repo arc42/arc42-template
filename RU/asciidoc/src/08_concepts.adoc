@@ -1,67 +1,61 @@
 [[section-concepts]]
-== Cross-cutting Concepts
-
-
+== Перекрёстные концепции
 [role="arc42help"]
 ****
-.Content
-This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as
+.Содержание
+Данный раздел описывает общие (перекрёстные) важные положения и идеи решений, которые относятся и применяются к различным частям системы.
+Эти концепции чаще всего связаны с множеством компонентов системы. Они могут описывать различные тематики, такие как:
 
-* domain models
-* architecture patterns or design patterns
-* rules for using specific technology
-* principal, often technical decisions of overall decisions
-* implementation rules
+* доменные модели
+* архитектурные и дизайн шаблоны
+* правила использования некоторых технологий
+* принципиальные технические решения, применимые ко всей системе
+* правила реализации
 
-.Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
-of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
+.Мотивация
+Эти концепции формируют базис _концепцтуальной целостности_ архитектуры. Поэтому сами по себе они являются важным вкладом 
+для достижения внутренних характеристик качества системы.
 
-Some of these concepts cannot be assigned to individual building blocks
-(e.g. security or safety). This is the place in the template that we provided for a
-cohesive specification of such concepts.
+Некоторые из этих концепций не могут быть индивидуально привязаны к конкретным компоненто (например, обеспечение безопасности).
+И этот раздел документа предназначен для детального и полного описания этих концепций.
 
-.Form
-The form can be varied:
+.Форма
+Вариантов изложения концепций много:
 
-* concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations, especially for technical concepts
-* reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
+* любым образом структурированные текстовые описания
+* сквозные модели или сценарии с обозначением архитектурных представлений (???)
+* примеры реализаций, особенно хорошо подходят для технических решений
+* отсылки к типовым сценариям использования стандартных фреймворков (например, использование Hibernate для объекто-реляционного маппинга)
 
-.Structure
-A potential (but not mandatory) structure for this section could be:
+.Структура
+Возможная (но не строго обязатешльная) структура раздела может выглядеть следующим образом:
 
-* Domain concepts
-* User Experience concepts (UX)
-* Safety and security concepts
-* Architecture and design patterns
-* "Under-the-hood"
-* development concepts
-* operational concepts
+* Концепции домена (модели, правила взаимодействий, инварианты)
+* Идеи, связанные с пользовательским опытом (UX)
+* Реализация требований безопасности и сохранности данных
+* Архитектурные и дизайн шаблоны
+* Описание некоторых происходящих "под капотом" процессов, если они важны
+* Концепции, связанные с разработкой
+* Концепции, связанные с сопровождением/администрированием
 
-Note: it might be difficult to assign individual concepts to one specific topic
-on this list.
+Замечание: Да, иногда бывает очень сложно привязать какой либо аспект к конкретной теме из данного списка.
 
 image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
 ****
 
 
-=== _<Concept 1>_
+=== _<Концепция 1>_
 
-_<explanation>_
+_<Пояснения>_
 
 
 
-=== _<Concept 2>_
+=== _<Концепция 2>_
 
-_<explanation>_
+_<Пояснения>_
 
 ...
 
-=== _<Concept n>_
+=== _<Концепция n>_
 
-_<explanation>_
+_<Пояснения>_
