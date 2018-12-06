@@ -40,7 +40,7 @@
 
 Замечание: Да, иногда бывает очень сложно привязать какой либо аспект к конкретной теме из данного списка.
 
-image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+image:08-Crosscutting-Concepts-Structure-RU.png["Possible topics for crosscutting concepts"]
 ****
 
 
