@@ -1,0 +1,96 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+= image:arc42-logo.png[arc42] Шаблон
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Table of Contents
+
+//additional style for arc42 help callouts
+ifdef::basebackend-html[]
+++++
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>
+++++
+endif::basebackend-html[]
+
+// configure EN settings for asciidoc
+include::src/config.adoc[]
+
+
+include::src/about-arc42.adoc[]
+
+// horizontal line
+***
+
+[role="arc42help"]
+****
+[NOTE]
+====
+Данная версия шаблона содержит немного вспомогательной информации и разъяснений.
+Она используется для ознакомления с arc42 и понимания его концепций.
+Для документирования вашей системы лучше использовать _простую версию без комментариев_.
+====
+****
+
+
+// Нумерация начинается отсюда
+:numbered:
+
+<<<<
+// 1. Введение и цели
+include::src/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Архитектурные ограничения
+include::src/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Объём и контекст системы
+include::src/03_system_scope_and_context.adoc[]
+
+<<<<
+// 4. Стратегия решения
+include::src/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Обзор компонентов
+include::src/05_building_block_view.adoc[]
+
+<<<<
+// 6. Динамическое представление
+include::src/06_runtime_view.adoc[]
+
+<<<<
+// 7. Схема развёртывания
+include::src/07_deployment_view.adoc[]
+
+<<<<
+// 8. Основные концепции
+include::src/08_concepts.adoc[]
+
+<<<<
+// 9. Архитектурные решения
+include::src/09_design_decisions.adoc[]
+
+<<<<
+// 10. Сценарии проверки атрибутов качества
+include::src/10_quality_scenarios.adoc[]
+
+<<<<
+// 11. Технические риски
+include::src/11_technical_risks.adoc[]
+
+<<<<
+// 12. Словарь
+include::src/12_glossary.adoc[]
+
+

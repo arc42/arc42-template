@@ -1,0 +1,20 @@
+:homepage: http://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**Об arc42**
+
+[role="lead"]
+arc2, Шаблон для документирования системной 
+архитектуры и архитектуры решений.
+
+Создатели: Dr. Gernot Starke, Dr. Peter Hruschka и контрибьюторы
+
+
+Версия Шаблона: 7.0 RU (основан на asciidoc), Декабрь 2018
+
+(C)
+Мы признаём, что в данном документе используются материалы
+архитектурного шаблона arc42, http://www.arc42.de.
+Создатели: Dr. Peter Hruschka & Dr. Gernot Starke
