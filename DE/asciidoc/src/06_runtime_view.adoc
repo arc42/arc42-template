@@ -20,9 +20,8 @@ Es geht nicht darum, möglichst viele Abläufe darzustellen, sondern eine angeme
 
 
 .Motivation
-Sie sollten verstehen wie (Instanzen von) Bausteine(n) Ihres Systems ihre
-jeweiligen Aufgaben erfüllen
-und zur Laufzeit miteinander kommunizieren.
+Sie sollten verstehen, wie (Instanzen von) Bausteine(n) Ihres Systems ihre
+jeweiligen Aufgaben erfüllen und zur Laufzeit miteinander kommunizieren.
 
 Nutzen Sie solche Szenarien in der Dokumentation hauptsächlich zur besseren
 Kommunikation mit Stakeholdern, die statische Modelle
@@ -36,7 +35,7 @@ Nutzen Sie beispielsweise:
 * Nummerierte Schrittfolgen oder Aufzählungen in Umgangssprache
 * Aktivitäts- oder Flussdiagramme
 * Sequenzdiagramme
-* BPMN oder EPKs (Ereignis-Prozessketten)
+* BPMN (Geschäftsprozessmodell und -notation) oder EPKs (Ereignis-Prozessketten)
 * Zustandsautomaten
 * ...
 

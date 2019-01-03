@@ -53,13 +53,13 @@ verschiedene Optionen:
 
 
  * (optional:) wichtige Schnittstellen, die nicht bereits im
- Blackbox-Templates eines der Bausteine erläutert werden, aber für das Verständnis
+ Blackbox-Template eines der Bausteine erläutert werden, aber für das Verständnis
  der Whitebox von zentraler Bedeutung sind. Aufgrund der vielfältigen Möglichkeiten
  oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
  Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten,
  Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten
-  und vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit
-  Beispielen oder einfachen Signaturen zurecht.
+ und vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit
+ Beispielen oder einfachen Signaturen zurecht.
 
 ****
 

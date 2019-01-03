@@ -27,18 +27,18 @@ operationalisiert.
 [role="arc42help"]
 ****
 .Inhalt
-Der Qualitätsbaum ( a la ATAM) mit Qualitätsszenarien an den Blättern.
+Der Qualitätsbaum (à la ATAM) mit Qualitätsszenarien an den Blättern.
 
 .Motivation
 Die mit Prioritäten versehene Baumstruktur gibt Überblick über die
-oftmals zahlreichen Qualitätsanforderungen.
+-- oftmals zahlreichen -- Qualitätsanforderungen.
 
 .Form
-* Baumartige Verfeinerung des Begriffes „Qualität“, mit "Qualität" oder
-Nützlichkeit als Wurzel.
-* Mindmap mit Q-Oberbegriffen als Hauptzweige
+* Baumartige Verfeinerung des Begriffes „Qualität“, mit „Qualität“ oder
+„Nützlichkeit“ als Wurzel.
+* Mindmap mit Qualitätsoberbegriffen als Hauptzweige
 
-In jedem Fall sollten Sie hier Verweise auf die Szenarien des folgenden
+In jedem Fall sollten Sie hier Verweise auf die Qualitätsszenarien des folgenden
 Abschnittes aufnehmen.
 ****
 
@@ -58,11 +58,11 @@ System in bestimmten Situationen geschieht.
 
 Wesentlich für die meisten Softwarearchitekten sind zwei Arten von Szenarien:
 
-*  Nutzungsszenarien (auch genannt Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen
+* Nutzungsszenarien (auch bekannt als Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen
 bestimmten Auslöser reagieren soll. Hierunter fallen auch Szenarien zur Beschreibung von Effizienz oder Performance.
 Beispiel: Das System beantwortet eine Benutzeranfrage innerhalb einer Sekunde.
-*  Änderungsszenarien beschreiben eine Modifikation des Systems oder seiner unmittelbarer Umgebung. Beispiel: Eine zusätzliche
- Funktionalität wird implementiert oder die Anforderung an ein Qualitätsmerkmal ändert sich.
+* Änderungsszenarien beschreiben eine Modifikation des Systems oder seiner unmittelbaren Umgebung.
+Beispiel: Eine zusätzliche Funktionalität wird implementiert oder die Anforderung an ein Qualitätsmerkmal ändert sich.
 
 
 .Motivation
