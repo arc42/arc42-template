@@ -33,9 +33,9 @@ Kann vielfältig sein:
 
 * Konzeptpapiere mit beliebiger Gliederung,
 * übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
-* beispielhafte Implementierung für insbesondere technische Konzepte,
-* Verweise auf "übliche" Nutzung von Standardframeworks (beispielsweise
-die Nutzung von Hibernate als Object/Relational Mapper.
+* beispielhafte Implementierung speziell für technische Konzepte,
+* Verweise auf "übliche" Nutzung von Standard-Frameworks (beispielsweise
+die Nutzung von Hibernate als Object/Relational Mapper).
 
 .Struktur
 Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes

@@ -10,8 +10,8 @@ Die Verteilungssicht beschreibt:
 
  1. die technische Infrastruktur, auf der Ihr System
 ausgeführt wird, mit Infrastrukturelementen wie
-Standorte, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztopologien
-sowie sonstigen Bestandteilen und
+Standorten, Umgebungen, Rechnern, Prozessoren, Kanälen und Netztopologien
+sowie sonstigen Bestandteilen, und
 
 2. die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
 
@@ -20,21 +20,20 @@ Häufig laufen Systeme in unterschiedlichen Umgebungen ab, beispielsweise
 Entwicklung-/Test- oder Produktionsumgebungen. In solchen Fällen sollten Sie
 alle relevanten Umgebungen aufzeigen.
 
-Nutzen Sie die Verteilungssicht insbesondere, wenn Ihre Software
+Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software
 auf mehr als einem Rechner, Prozessor, Server oder Container abläuft
 oder Sie Ihre Hardware sogar selbst konstruieren.
 
-Aus Softwaresicht genügt es auf die Aspekte zu achten, die für die
+Aus Softwaresicht genügt es, auf die Aspekte zu achten, die für die
 Softwareverteilung relevant sind. Hardwarearchitekten können bei Bedarf
 die Infrastruktur mit beliebigen Details beschreiben.
 
 .Motivation
 Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende Infrastruktur
- beeinflusst Ihr System und/oder querschnittliche Lösungskonzepte, daher
- müssen Sie diese Infrastruktur kennen.
+beeinflusst Ihr System und/oder querschnittliche Lösungskonzepte, daher
+müssen Sie diese Infrastruktur kennen.
 
 .Form
-
 Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext
 enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
 Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
@@ -46,7 +45,7 @@ Sicht auszudrücken. Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre
 Verteilungsstruktur es verlangt.
 
 * Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
-die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
+die Prozessoren und Kanäle zeigen, sind diese hier ebenfalls einsetzbar.
 
 ****
 
@@ -58,14 +57,14 @@ die Prozessoren und Kanäle zeigen, sind die hier ebenfalls einsetzbar.
 An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit
 Tabellen oder Texten):
 
-*  die Verteilung des Gesamtsystems auf
-mehrere Standorte, Umgebungen, Rechner, Prozessoren oä.
+* die Verteilung des Gesamtsystems auf
+mehrere Standorte, Umgebungen, Rechner, Prozessoren o. Ä.,
 sowie die physischen Verbindungskanäle zwischen diesen,
-*  wichtige Begründungen für dieser Verteilungsstruktur,
+* wichtige Begründungen für diese Verteilungsstruktur,
 * Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
-*  Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
+* Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
 
-Für mehrere Umgebungen oder alternatives Deployment
+Für mehrere Umgebungen oder alternative Deployments
 kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen.
 
 ****

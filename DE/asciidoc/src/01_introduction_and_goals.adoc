@@ -4,13 +4,13 @@
 
 [role="arc42help"]
 ****
-Beschreibt die wesentliche Anforderungen und
+Beschreibt die wesentlichen Anforderungen und
 treibenden Kräfte, die Softwarearchitekten und Entwicklungsteams
 berücksichtigen müssen. Dazu gehören die
 
 * zugrunde liegenden Geschäftsziele, wesentliche Aufgabenstellung und essenzielle fachliche Anforderungen an das System
 * Qualitätsziele für die Architektur
-* relevante Stakeholder und deren Erwartungshaltung
+* relevanten Stakeholder und deren Erwartungshaltung
 ****
 
 === Aufgabenstellung
@@ -27,7 +27,7 @@ Aus Sicht der späteren Nutzer ist die Unterstützung einer fachlichen Aufgabe o
 
 .Form
 Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
-Sofern vorhanden sollte die Aufgabenstellung Verweise auf die entsprechenden Anforderungsdokumente enthalten.
+Sofern vorhanden, sollte die Aufgabenstellung Verweise auf die entsprechenden Anforderungsdokumente enthalten.
 
 Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Redundanzfreiheit gegeneinander ab.
 ****
@@ -37,9 +37,10 @@ Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Re
 [role="arc42help"]
 ****
 .Inhalt
-Die Top-3 bis Top-5 der Qualitätsziele für die Architektur, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind.
-Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
-
+Die Top-3 bis Top-5 der Qualitätsziele für die Architektur, deren Erfüllung
+oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind.
+Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen
+des Projekts übereinstimmen. Beachten Sie den Unterschied.
 
 .Motivation
 Weil Qualitätsziele grundlegende Architekturentscheidungen
@@ -58,12 +59,12 @@ Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien
 [role="arc42help"]
 ****
 .Inhalt
-Expliziter Überblick über die Stakeholder des Systems, d.h. über alle Personen, Rollen oder Organisationen, die
+Expliziter Überblick über die Stakeholder des Systems -- über alle Personen, Rollen oder Organisationen --, die
 
 * die Architektur kennen sollten oder
 * von der Architektur überzeugt werden müssen,
-* mit Architektur oder Code arbeiten (z.B. Schnittstellen nutzen),
-* Dokumentation der Architektur für ihre eigene Arbeit benötigen,
+* mit der Architektur oder dem Code arbeiten (z.B. Schnittstellen nutzen),
+* die Dokumentation der Architektur für ihre eigene Arbeit benötigen,
 * Entscheidungen über das System und dessen Entwicklung treffen.
 
 .Motivation
