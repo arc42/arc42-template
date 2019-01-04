@@ -1,81 +1,62 @@
 [[section-system-scope-and-context]]
-
 == Kontextabgrenzung
-
 
 [role="arc42help"]
 ****
 .Inhalt
-Die Kontextabgrenzung grenzt das System von allen Kommunikationspartnern
-(Nachbarsystemen und Benutzerrollen) ab. Sie legt damit die
-externen Schnittstellen fest.
+Die Kontextabgrenzung grenzt das System von allen Kommunikationsbeziehungen (Nachbarsystemen und Benutzerrollen) ab.
+Sie legt damit die externen Schnittstellen fest.
 
-Differenzieren Sie fachlichen Kontext (fachliche Ein- und Ausgaben) und
-technischen Kontext (Kanäle, Protokolle, Hardware), falls nötig.
-
+Differenzieren Sie fachliche (fachliche Ein- und Ausgaben) und technische Kontexte (Kanäle, Protokolle, Hardware), falls nötig.
 
 .Motivation
-Die fachlichen und technischen Schnittstellen zu Kommunikationspartnern gehören
-zu den kritischsten Aspekten eines Systems.
+Die fachlichen und technischen Schnittstellen zur Kommunikation gehören zu den kritischsten Aspekten eines Systems.
 Stellen Sie sicher, dass Sie diese komplett verstanden haben.
 
 .Form
 Verschiedene Optionen:
 
 * Diverse Kontextdiagramme
-* Listen von Kommunikationspartnern mit deren Schnittstellen
-
+* Listen von Kommunikationsbeziehungen mit deren Schnittstellen
 ****
-
 
 === Fachlicher Kontext
 
 [role="arc42help"]
 ****
 .Inhalt
-Festlegung *aller* Kommunikationspartner (Nutzer, IT-Systeme, ...) mit Erklärung der
-fachlichen Ein- und Ausgabedaten oder Schnittstellen. Zusätzlich bei Bedarf fachliche Datenformate
-oder Protokolle der Kommunikation mit den Nachbarsystemen.
+Festlegung *aller* Kommunikationsbeziehungen (Nutzer, IT-Systeme, ...) mit Erklärung der fachlichen Ein- und Ausgabedaten oder Schnittstellen.
+Zusätzlich (bei Bedarf) fachliche Datenformate oder Protokolle der Kommunikation mit den Nachbarsystemen.
 
 .Motivation
-Alle Beteiligten müssen verstehen, welche fachlichen Informationen mit der Umwelt
-ausgetauscht werden.
-
+Alle Beteiligten müssen verstehen, welche fachlichen Informationen mit der Umwelt ausgetauscht werden.
 
 .Form
-Alle Diagrammarten, die das System als Black Box
-darstellen und die fachlichen Schnittstellen zu den Nachbarn beschreiben.
+Alle Diagrammarten, die das System als Blackbox darstellen und die fachlichen Schnittstellen zu den Nachbarsystemen beschreiben.
 
 Alternativ oder ergänzend können Sie eine Tabelle verwenden.
-Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationspartner, Eingabe, Ausgabe.
+Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationsbeziehung, Eingabe, Ausgabe.
 ****
 
 **<Diagramm und/oder Tabelle>**
 
 **<optional: Erläuterung der externen fachlichen Schnittstellen>**
 
-
 === Technischer Kontext
 
 [role="arc42help"]
 ****
 .Inhalt
-Technische Schnittstellen (Kanäle, Übertragungsmedien)
-zwischen dem System und seiner Umwelt. Zusätzlich eine Erklärung (_mapping_),
-welche fachlichen Ein- und Ausgaben über welche technischen Kanäle fließen.
-
+Technische Schnittstellen (Kanäle, Übertragungsmedien) zwischen dem System und seiner Umwelt.
+Zusätzlich eine Erklärung (_mapping_), welche fachlichen Ein- und Ausgaben über welche technischen Kanäle fließen.
 
 .Motivation
-Viele Stakeholder treffen Architekturentscheidungen auf Basis
-der technischen Schnittstellen des Systems zu seinem Kontext.
+Viele Stakeholder treffen Architekturentscheidungen auf Basis der technischen Schnittstellen des Systems zu seinem Kontext.
 
-Insbesondere Infrastruktur- oder Hardwareentwickler entscheiden auch über
-diese technischen Schnittstellen.
+Insbesondere bei der Entwicklung von Infrastruktur oder Hardware sind diese technischen Schnittstellen durchaus entscheidend.
 
 .Form
-Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen,
-begleitet von einer Tabelle, die Kanäle auf Ein-/Ausgaben abbildet.
-
+Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen, begleitet von einer Tabelle, die Kanäle auf Ein-/Ausgaben abbildet.
 ****
 
 **<Diagramm oder Tabelle>**

@@ -1,26 +1,18 @@
 [[section-technical-risks]]
 == Risiken und technische Schulden
 
-
 [role="arc42help"]
 ****
 .Inhalt
-Eine nach Prioritäten geordnete Liste der
-erkannten Architekturrisiken und/oder technischen Schulden.
+Eine nach Prioritäten geordnete Liste der erkannten Architekturrisiken und/oder technischen Schulden.
 
 .Motivation
-"Risikomanagement ist Projektmanagement für Erwachsene"
-(Tim Lister, Atlantic Systems Guild.)
+"Risikomanagement ist Projektmanagement für Erwachsene."
+-- Tim Lister, Atlantic Systems Guild
 
-Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Schulden
-gezielt ermitteln, bewerten und Ihren Management-Stakeholdern
-(z.B. Projektleitung, Product-Owner)
-transparent machen.
+Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Schulden gezielt ermitteln, bewerten und Ihren Management-Stakeholdern (z.B. Projektleitung, Product-Owner) transparent machen.
 
 .Form
-Liste oder Tabelle von Risiko und/oder technischen Schulden,
-eventuell mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung
-oder dem Abbau der technischen Schulden.
-
+Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung oder dem Abbau der technischen Schulden.
 ****
 
