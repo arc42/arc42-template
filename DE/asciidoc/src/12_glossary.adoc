@@ -1,19 +1,15 @@
 [[section-glossary]]
 == Glossar
 
-
 [role="arc42help"]
 ****
 .Inhalt
-Die wesentlichen fachlichen und technischen Begriffe,
-die Stakeholder im Zusammenhang mit dem System verwenden.
+Die wesentlichen fachlichen und technischen Begriffe, die Stakeholder im Zusammenhang mit dem System verwenden.
 
-Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz,
-falls Sie in mehrsprachigen Teams arbeiten.
+Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in mehrsprachigen Teams arbeiten.
 
 .Motivation
-Sie sollten relevante Begriffe klar definieren,
-so dass alle Beteiligten
+Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
 
 1. diese Begriffe identisch verstehen, und
 2. vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
