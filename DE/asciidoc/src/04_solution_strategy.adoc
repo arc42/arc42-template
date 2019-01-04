@@ -1,11 +1,11 @@
 [[section-solution-strategy]]
 == Lösungsstrategie
 
-
 [role="arc42help"]
 ****
 .Inhalt
-Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen. Hierzu gehören:
+Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
+Hierzu gehören:
 
 * Technologieentscheidungen
 * Entscheidungen über die Top-Level-Zerlegung des Systems, beispielsweise die Verwendung gesamthaft prägender Entwurfs- oder Architekturmuster
@@ -18,7 +18,6 @@ Von ihnen hängen viele weitere Entscheidungen oder Implementierungsregeln ab.
 
 .Form
 Fassen Sie die zentralen Entwurfsentscheidungen *kurz* zusammen.
-Motivieren Sie ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen,
-was Sie entschieden haben und warum Sie so entschieden haben.
+Motivieren Sie ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben.
 Verweisen Sie eher auf weitere Ausführungen in Folgeabschnitten.
 ****
