@@ -8,7 +8,7 @@ Randbedingungen und Vorgaben, die ihre Freiheiten bezüglich Entwurf, Implementi
 Diese Randbedingungen gelten manchmal organisations- oder firmenweit über die Grenzen einzelner Systeme hinweg.
 
 .Motivation
-Als Architekt sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
+Für eine tragfähige Architektur sollten Sie explizit wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
 Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
 
 .Form
