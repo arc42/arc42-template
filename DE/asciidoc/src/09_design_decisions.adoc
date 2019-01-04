@@ -1,34 +1,23 @@
 [[section-design-decisions]]
-
 == Entwurfsentscheidungen
-
 
 [role="arc42help"]
 ****
 .Inhalt
-Wichtige, teure, große oder riskante
-Architektur- oder Entwurfsentscheidungen inklusive der jeweiligen
-Begründungen.
-Mit "Entscheidungen" meinen wir hier die Auswahl einer von mehreren
-Alternativen unter vorgegebenen Kriterien.
+Wichtige, teure, große oder riskante Architektur- oder Entwurfsentscheidungen inklusive der jeweiligen Begründungen.
+Mit "Entscheidungen" meinen wir hier die Auswahl einer von mehreren Alternativen unter vorgegebenen Kriterien.
 
-Wägen Sie ab, inwiefern Sie Entscheidungen hier zentral
-beschreiben, oder wo eine lokale Beschreibung
-(z.B. in der Whitebox-Sicht von Bausteinen) sinnvoller ist.
-Vermeiden Sie Redundanz. Verweisen Sie evtl. auf Abschnitt 4, wo schon
-grundlegende strategische Entscheidungen beschrieben wurden.
+Wägen Sie ab, inwiefern Sie Entscheidungen hier zentral beschreiben, oder wo eine lokale Beschreibung (z.B. in der Whitebox-Sicht von Bausteinen) sinnvoller ist.
+Vermeiden Sie Redundanz.
+Verweisen Sie evtl. auf Abschnitt 4, wo schon grundlegende strategische Entscheidungen beschrieben wurden.
 
 .Motivation
-Stakeholder des Systems sollten wichtige Entscheidungen verstehen und
-nachvollziehen können.
-
+Stakeholder des Systems sollten wichtige Entscheidungen verstehen und nachvollziehen können.
 
 .Form
 Verschiedene Möglichkeiten:
 
 * Liste oder Tabelle, nach Wichtigkeit und Tragweite der Entscheidungen geordnet
 * ausführlicher in Form einzelner Unterkapitel je Entscheidung
-* ADR (http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])
-für jede wichtige Entscheidung
-
+* ADR (http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record]) für jede wichtige Entscheidung
 ****
