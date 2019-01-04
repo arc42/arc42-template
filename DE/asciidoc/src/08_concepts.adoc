@@ -1,16 +1,13 @@
 [[section-concepts]]
 == Querschnittliche Konzepte
 
-
 [role="arc42help"]
 ****
 .Inhalt
-Dieser Abschnitt beschreibt übergreifende, prinzipielle
-Regelungen und Lösungsansätze, die an mehreren Stellen
-(=_querschittlich_) relevant sind.
+Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungsansätze, die an mehreren Stellen (=_querschittlich_) relevant sind.
 
-Solche Konzepte betreffen oft mehrere Bausteine. Dazu können
-vielerlei Themen gehören, beispielsweise:
+Solche Konzepte betreffen oft mehrere Bausteine.
+Dazu können vielerlei Themen gehören, beispielsweise:
 
 * fachliche Modelle,
 * eingesetzte Architektur- oder Entwurfsmuster,
@@ -18,15 +15,11 @@ vielerlei Themen gehören, beispielsweise:
 * prinzipielle, meist technische, Festlegungen übergreifender Art,
 * Implementierungsregeln
 
-
 .Motivation
-Konzepte bilden die Grundlage für _konzeptionelle Integrität_
-(Konsistenz, Homogenität) der Architektur und damit
-eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
+Konzepte bilden die Grundlage für _konzeptionelle Integrität_ (Konsistenz, Homogenität) der Architektur und damit eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
 
-Manche dieser Themen lassen sich nur schwer als Baustein in der
-Architektur unterbringen (z.B. das Thema "Sicherheit"). Hier ist der
-Platz im Template, wo Sie derartige Themen geschlossen behandeln können.
+Manche dieser Themen lassen sich nur schwer als Baustein in der Architektur unterbringen (z.B. das Thema "Sicherheit").
+Hier ist der Platz im Template, wo Sie derartige Themen geschlossen behandeln können.
 
 .Form
 Kann vielfältig sein:
@@ -34,13 +27,10 @@ Kann vielfältig sein:
 * Konzeptpapiere mit beliebiger Gliederung,
 * übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
 * beispielhafte Implementierung speziell für technische Konzepte,
-* Verweise auf "übliche" Nutzung von Standard-Frameworks (beispielsweise
-die Nutzung von Hibernate als Object/Relational Mapper).
+* Verweise auf "übliche" Nutzung von Standard-Frameworks (beispielsweise die Nutzung von Hibernate als Object/Relational Mapper).
 
 .Struktur
-Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes
-könnte wie folgt aussehen (wobei die Zuordnung von Themen zu den Gruppen
-nicht immer eindeutig ist):
+Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könnte wie folgt aussehen (wobei die Zuordnung von Themen zu den Gruppen nicht immer eindeutig ist):
 
 * Fachliche Konzepte
 * User Experience (UX)
@@ -50,17 +40,12 @@ nicht immer eindeutig ist):
 * Entwicklungskonzepte
 * Betriebskonzepte
 
-
 image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
-
 ****
-
 
 === _<Konzept 1>_
 
 _<Erklärung>_
-
-
 
 === _<Konzept 2>_
 
