@@ -17,7 +17,7 @@ In solchen Fällen sollten Sie alle relevanten Umgebungen aufzeigen.
 Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software auf mehr als einem Rechner, Prozessor, Server oder Container abläuft oder Sie Ihre Hardware sogar selbst konstruieren.
 
 Aus Softwaresicht genügt es, auf die Aspekte zu achten, die für die Softwareverteilung relevant sind.
-Hardwarearchitekten können bei Bedarf die Infrastruktur mit beliebigen Details beschreiben.
+Insbesondere bei der Hardwareentwicklung kann es notwendig sein, die Infrastruktur mit beliebigen Details zu beschreiben.
 
 .Motivation
 Software läuft nicht ohne Infrastruktur.
