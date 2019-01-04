@@ -39,7 +39,7 @@ Konkretisierung der (in der Praxis oftmals vagen oder impliziten) Qualitätsanfo
 
 Diese Szenarien beschreiben, was beim Eintreffen eines Stimulus auf ein System in bestimmten Situationen geschieht.
 
-Wesentlich für die meisten Softwarearchitekten sind zwei Arten von Szenarien:
+Wesentlich sind zwei Arten von Szenarien:
 
 * Nutzungsszenarien (auch bekannt als Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen bestimmten Auslöser reagieren soll.
 Hierunter fallen auch Szenarien zur Beschreibung von Effizienz oder Performance.
