@@ -4,7 +4,25 @@
 [role="arc42help"]
 ****
 .Inhalt
-Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Klassen, Interfaces, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen, Datenstrukturen...) sowie deren Beziehungen.
+Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine sowie deren Beziehungen.
+Beispiele für Bausteine sind unter anderem:
+
+* Module
+* Komponenten
+* Subsysteme
+* Klassen
+* Interfaces
+* Pakete
+* Bibliotheken
+* Frameworks
+* Schichten
+* Partitionen
+* Tiers
+* Funktionen
+* Makros
+* Operationen
+* Datenstrukturen
+* ...
 
 Diese Sicht sollte in jeder Architekturdokumentation vorhanden sein.
 In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
@@ -39,13 +57,14 @@ Dieses enthält:
 * Blackbox-Beschreibungen der hier enthaltenen Bausteine.
 Dafür haben Sie verschiedene Optionen:
 
-  ** in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
-  ** als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten).
-  Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
+** in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
+** als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten).
+Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
 
 * (optional:) wichtige Schnittstellen, die nicht bereits im Blackbox-Template eines der Bausteine erläutert werden, aber für das Verständnis der Whitebox von zentraler Bedeutung sind.
-Aufgrund der vielfältigen Möglichkeiten  oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
-Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten und vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
+Aufgrund der vielfältigen Möglichkeiten oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
+Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten und vieles mehr spezifizieren oder beschreiben.
+Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 ****
 
 _**<Übersichtsdiagramm>**_
@@ -77,12 +96,12 @@ Dessen Überschrift ist jeweils der Namen dieser Blackbox.
 
 [role="arc42help"]
 ****
-An dieser Stelle beschreiben Sie die <Blackbox 1> anhand des folgenden Blackbox-Templates:
+Beschreiben Sie die <Blackbox 1> anhand des folgenden Blackbox-Templates:
 
 * Zweck/Verantwortung
-* Schnittstelle(n), sofern sie nicht als eigenständige Beschreibungen herausgezogen sind.
+* Schnittstelle(n), sofern diese nicht als eigenständige Beschreibungen herausgezogen sind.
 Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
-* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten...
+* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten o. Ä.
 * (Optional) Ablageort/Datei(en)
 * (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
 * (Optional) Offene Punkte/Probleme/Risiken
@@ -119,10 +138,12 @@ _<Blackbox-Template>_
 
 [role="arc42help"]
 ****
-An dieser Stelle können Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als Whitebox beschreiben.
+Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als Whitebox.
 
-Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie selbst entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
-Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders volatile Bausteine. Normale, einfache oder standardisierte Teile sollten Sie weglassen.
+Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie selbst entscheiden.
+Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
+Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders volatile Bausteine.
+Normale, einfache oder standardisierte Teile sollten Sie weglassen.
 ****
 
 ==== Whitebox _<Baustein 1>_
@@ -148,7 +169,7 @@ _<Whitebox-Template>_
 
 [role="arc42help"]
 ****
-An dieser Stelle können Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als Whitebox beschreiben.
+Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als Whitebox.
 
 Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von arc42 für die weiteren Ebenen.
 ****
