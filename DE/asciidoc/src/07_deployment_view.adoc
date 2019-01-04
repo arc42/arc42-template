@@ -11,7 +11,7 @@ Die Verteilungssicht beschreibt:
 2. die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
 
 
-Häufig laufen Systeme in unterschiedlichen Umgebungen ab, beispielsweise Entwicklung-/Test- oder Produktionsumgebungen.
+Häufig laufen Systeme in unterschiedlichen Umgebungen, beispielsweise Entwicklung-/Test- oder Produktionsumgebungen.
 In solchen Fällen sollten Sie alle relevanten Umgebungen aufzeigen.
 
 Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software auf mehr als einem Rechner, Prozessor, Server oder Container abläuft oder Sie Ihre Hardware sogar selbst konstruieren.
@@ -24,12 +24,12 @@ Software läuft nicht ohne Infrastruktur.
 Diese zugrundeliegende Infrastruktur beeinflusst Ihr System und/oder querschnittliche Lösungskonzepte, daher müssen Sie diese Infrastruktur kennen.
 
 .Form
-Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext enthalten sein, mit Ihrer Infrastruktur als EINE Black-Box.
+Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen Kontext enthalten sein, mit Ihrer Infrastruktur als EINE Blackbox.
 Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen hinein:
 
 * Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine Diagrammart zur Verfügung, um diese Sicht auszudrücken.
 Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es verlangt.
-* Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen, die Prozessoren und Kanäle zeigen, sind diese hier ebenfalls einsetzbar.
+* Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen, die beispielsweise Prozessoren und Kanäle zeigen, sind diese hier ebenfalls einsetzbar.
 ****
 
 === Infrastruktur Ebene 1
@@ -43,7 +43,7 @@ An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit Tabellen od
 * Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
 * Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
 
-Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen.
+Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen/Varianten.
 ****
 
 _**<Übersichtsdiagramm>**_
