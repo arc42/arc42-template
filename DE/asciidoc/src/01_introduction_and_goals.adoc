@@ -52,7 +52,7 @@ Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien
 [role="arc42help"]
 ****
 .Inhalt
-Expliziter Überblick über die Stakeholder des Systems -- über alle Personen, Rollen oder Organisationen -- , die
+Expliziter Überblick über die Stakeholder des Systems – über alle Personen, Rollen oder Organisationen –, die
 
 * die Architektur kennen sollten oder
 * von der Architektur überzeugt werden müssen,
