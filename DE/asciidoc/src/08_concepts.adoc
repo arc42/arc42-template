@@ -4,7 +4,7 @@
 [role="arc42help"]
 ****
 .Inhalt
-Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungsansätze, die an mehreren Stellen (=_querschittlich_) relevant sind.
+Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungsansätze, die an mehreren Stellen (=_querschnittlich_) relevant sind.
 
 Solche Konzepte betreffen oft mehrere Bausteine.
 Dazu können vielerlei Themen gehören, beispielsweise:
