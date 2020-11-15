@@ -11,9 +11,8 @@ Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in mehrspr
 .Motivation
 Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
 
-1. diese Begriffe identisch verstehen, und
-2. vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
-
+* diese Begriffe identisch verstehen, und
+* vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
 
 .Form
 * Zweispaltige Tabelle mit <Begriff> und <Definition>
