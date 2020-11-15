@@ -20,15 +20,15 @@ Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
 * Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
 ****
 
-[cols="1,2" options="header"]
+[cols="e,2e" options="header"]
 |===
 |Begriff
 |Definition
 
-|_<Begriff-1>_
-|_<Definition-1>_
+|<Begriff-1>
+|<Definition-1>
 
 
-|_<Begriff-2_
-|_<Definition-2>_
+|<Begriff-2
+|<Definition-2>
 |===
