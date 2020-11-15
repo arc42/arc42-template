@@ -23,7 +23,11 @@ Se pueden agregar más columnas en caso de que se requieran traducciones.
 
 [cols="e,2e" options="header"]
 |===
-| Término         | Definición
-| <Término-1>     | <definicion-1>
-| <Término-2>     | <definicion-2>
+|Término |Definición
+
+|<Término-1>
+|<definicion-1>
+
+|<Término-2>
+|<definicion-2>
 |===
