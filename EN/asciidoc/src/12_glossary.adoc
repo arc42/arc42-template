@@ -23,7 +23,7 @@ Potentially more columns in case you need translations.
 
 ****
 
-[options="header"]
+[cols="e,2e" options="header"]
 |===
 | Term         | Definition
 | <Term-1>     | <definition-1>
