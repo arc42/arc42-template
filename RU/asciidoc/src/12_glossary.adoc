@@ -1,8 +1,6 @@
 [[section-glossary]]
 == Словарь
 
-
-
 [role="arc42help"]
 ****
 .Содержание

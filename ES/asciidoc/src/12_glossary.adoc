@@ -4,8 +4,7 @@
 [role="arc42help"]
 ****
 .Contenido
-Los términos técnicos y de dominio más importantes que serán utilizados por las partes relacionadas al 
-discutir el sistema. 
+Los términos técnicos y de dominio más importantes que serán utilizados por las partes relacionadas al discutir el sistema.
 
 También se puede usar el glosario como fuente para traducciones si se trabaja en equipos multi-lenguaje.
 
