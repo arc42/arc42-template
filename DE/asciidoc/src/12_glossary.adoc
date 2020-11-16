@@ -11,24 +11,21 @@ Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in mehrspr
 .Motivation
 Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
 
-1. diese Begriffe identisch verstehen, und
-2. vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
-
+* diese Begriffe identisch verstehen, und
+* vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
 
 .Form
 * Zweispaltige Tabelle mit <Begriff> und <Definition>
 * Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
 ****
 
-[cols="1,2" options="header"]
+[cols="e,2e" options="header"]
 |===
-|Begriff
-|Definition
+|Begriff |Definition
 
-|_<Begriff-1>_
-|_<Definition-1>_
+|<Begriff-1>
+|<Definition-1>
 
-
-|_<Begriff-2_
-|_<Definition-2>_
+|<Begriff-2
+|<Definition-2>
 |===
