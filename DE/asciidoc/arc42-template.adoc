@@ -8,7 +8,7 @@
 :toc-title: Inhaltsverzeichnis
 
 //additional style for arc42 help callouts
-ifdef::basebackend-html[]
+ifdef::backend-html5[]
 ++++
 <style>
 .arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
@@ -20,7 +20,7 @@ ifdef::basebackend-html[]
 }
 </style>
 ++++
-endif::basebackend-html[]
+endif::backend-html5[]
 
 // configure DE settings for asciidoc
 include::src/config.adoc[]
