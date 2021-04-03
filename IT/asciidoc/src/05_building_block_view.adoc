@@ -1,0 +1,203 @@
+[[section-building-block-view]]
+
+
+== Building Block View
+
+[role="arc42help"]
+****
+.Contenuti
+La visualizzazione building block mostra la scomposizione statica del sistema in building block (moduli, componenti, sottosistemi, classi,
+interfacce, pacchetti, librerie, framework, livelli, partizioni, livelli, funzioni, macro, operazioni,
+strutture dei dati, ...) così come le loro dipendenze (relazioni, associazioni, ...)
+
+Questa vista dovrebbe essere obbligatoria per ogni documentazione sull'architettura.
+In analogia con una casa, questa è la _pianta dei piani_.
+
+.Motivazione
+Mantieni una panoramica del tuo codice sorgente rendendone comprensibile la struttura tramite
+astrazioni di essa.
+
+Ciò consente di comunicare con gli stakeholder a livello astratto senza rivelare i dettagli di implementazione.
+
+.Forma
+è una raccolta gerarchica di black box e white box
+(vedi figura sotto) e le loro descrizioni.
+
+image:05_building_blocks-IT.png["Gerarchia dei building blocks"]
+
+*Livello 1* è la descrizione della white box del sistema complessivo insieme alle
+descrizioni delle black box di tutti i building block contenuti.
+
+*Livello 2* entra nel dettaglio dei building block di livello 1.
+Quindi contiene la descrizione della white box dei building block selezionati del livello 1, insieme alle descrizioni della black box dei building block interni.
+
+*Livello 3* entra nel dettaglio dei building block di livello 2, e cosi via..
+****
+
+=== Whitebox Overall System
+
+[role="arc42help"]
+****
+Qui descrivi la scomposizione dell'intero sistema utilizzando il seguente template white box. Contiene
+
+* un diagramma generico
+* una motivazione per la decomposizione
+* descrizioni in black box dei building blocks contenuti. Per questi ti offriamo alternative:
+
+    ** usa la tabella _one_ per una panoramica breve e pragmatica di tutti gli elementi costitutivi contenuti e delle loro interfacce
+    ** utilizzare un elenco di descrizioni delle black box dei building box secondo il template black box (vedi sotto).
+    A seconda dello strumento scelto, questo elenco potrebbe essere sottocapitoli (in file di testo), sottopagine (in un Wiki) o elementi nidificati (in uno strumento di modellazione).
+
+
+* (opzionale) interfacce importanti, che non sono spiegate nelle black box di un building block, ma sono molto importanti per comprendere la white box.
+Poiché ci sono così tanti modi per specificare le interfacce, non forniamo un template specifico per loro.
+Nel peggiore dei casi devi specificare e descrivere sintassi, semantica, protocolli, gestione degli errori,
+restrizioni, versioni, qualità, compatibilità necessarie e molte altre cose.
+Nel migliore dei casi te la caverai con esempi o semplici firme.
+****
+
+_**<Overview Diagram>**_
+
+Motivazione::
+
+_<spiegazione testuale>_
+
+
+Contenuto dei Building Blocks::
+_<Descrizione del contenuto del building block (black boxes)>_
+
+Important Interfaces::
+_<Descrizione delle interfacce importanti>_
+
+[role="arc42help"]
+****
+Inserisci le spiegazioni delle black box dal livello 1:
+
+Se usi la forma tabulare descriveresti solo le black box con nome e
+responsabilità secondo il seguente schema:
+
+[cols="1,2" options="header"]
+|===
+| **Nome** | **Responsibilità**
+| _<black box 1>_ | _<Text>_
+| _<black box 2>_ | _<Text>_
+|===
+
+
+
+Se si utilizza un elenco di descrizioni delle black box, si compila un template di black box separato per ogni building block importante.
+Il titolo è il nome della black box.
+****
+
+
+==== <Nome black box 1>
+
+[role="arc42help"]
+****
+Qui descrivi la <black box 1> secondo il seguente template di scatola nera:
+
+* Scopo/responsabilità
+* Interfacce, quando non vengono estratte come paragrafi separati. Queste interfacce possono includere caratteristiche di qualità e prestazionali.
+* (Facoltativo) Caratteristiche di qualità/prestazionali della black box, ad esempio disponibilità, comportamento in fase di esecuzione, ....
+* (Facoltativo) percorso file/directory
+* (Facoltativo) Requisiti soddisfatti (se è necessaria la tracciabilità dei requisiti).
+* (Facoltativo) Bug noti/Rischi/problemi
+
+****
+
+_<Scopo/responsabilità>_
+
+_<Interfacce>_
+
+_<(Facoltativo) Caratteristiche di qualità/prestazionali>_
+
+_<(Facoltativo) percorso file/directory>_
+
+_<(Facoltativo) Requisiti soddisfatti>_
+
+_<(Facoltativo) Bug noti/Rischi/problemi>_
+
+
+
+
+==== <Nome black box 2>
+
+_<black box template>_
+
+==== <Nome black box n>
+
+_<black box template>_
+
+
+==== <Nome interface 1>
+
+...
+
+==== <Nome interface m>
+
+
+
+=== Livello 2
+
+[role="arc42help"]
+****
+Qui puoi specificare la struttura interna di (alcuni) building block dal livello 1 come white box.
+
+Devi decidere quali building block del tuo sistema sono abbastanza importanti da giustificare una descrizione così dettagliata.
+Si prega di preferire la pertinenza alla completezza. Specifica i building blocks importanti, sorprendenti, rischiosi, complessi o volatili.
+Tralascia le parti normali, semplici, noiose o standardizzate del tuo sistema
+****
+
+==== White Box _<building block 1>_
+
+[role="arc42help"]
+****
+...descrive la struttura interna del _building block 1_.
+****
+
+_<white box template>_
+
+==== White Box _<building block 2>_
+
+
+_<white box template>_
+
+...
+
+==== White Box _<building block m>_
+
+
+_<white box template>_
+
+
+
+=== Livello 3
+
+[role="arc42help"]
+****
+Qui puoi specificare la struttura interna di (alcuni) building block dal livello 2 come white box.
+
+Quando hai bisogno di livelli più dettagliati della tua architettura, copia questa parte di arc42 per livelli aggiuntivi.
+****
+
+
+==== White Box <_building block x.1_>
+
+[role="arc42help"]
+****
+Specifica la struttura interna del _building block x.1_.
+****
+
+
+_<white box template>_
+
+
+==== White Box <_building block x.2_>
+
+_<white box template>_
+
+
+
+==== White Box <_building block y.1_>
+
+_<white box template>_

@@ -1,0 +1,46 @@
+[[section-runtime-view]]
+== Runtime View
+
+
+[role="arc42help"]
+****
+.Contenuti
+La runtime view descrive il comportamento concreto e le interazioni dei building block del sistema sotto forma di scenari dalle seguenti aree:
+
+* importanti casi d'uso o funzionalità: come vengono eseguiti dai building block?
+* interazioni alle interfacce esterne critiche: in che modo i building block cooperano con gli utenti e i sistemi vicini?
+* funzionamento e amministrazione: lancio, avvio, arresto
+* errori e scenari di eccezione
+
+Nota: il criterio principale per la scelta dei possibili scenari (sequenze, flussi di lavoro) è la loro *rilevanza architettonica*.
+*Non* è importante descrivere un gran numero di scenari. Dovresti piuttosto documentare una selezione rappresentativa.
+
+.Motivazione
+È necessario comprendere in che modo (istanze di) building block del sistema eseguono il proprio lavoro e comunicano in fase di esecuzione.
+Acquisirai principalmente scenari nella tua documentazione per comunicare la tua architettura
+alle parti interessate che sono meno disposte o in grado di leggere e comprendere i modelli statici (building block view, deployment view).
+
+.Forma
+Ci sono molte notazioni per descrivere gli scenari, ad es.
+
+* elenco numerato di passaggi (in linguaggio naturale)
+* activity diagram o diagrammi di flusso
+* sequence diagram
+* BPMN o EPC (catene di processi di eventi)
+* state diagram
+* ...
+
+****
+
+=== <Runtime Scenario 1>
+
+
+* _<inserire un runtime diagram o una descrizione testuale dello scenario>_
+* _<inserire la descrizione degli aspetti degni di nota delle interazioni tra i
+istanze di building block illustrate in questo diagramma.>_
+
+=== <Runtime Scenario 2>
+
+=== ...
+
+=== <Runtime Scenario n>
