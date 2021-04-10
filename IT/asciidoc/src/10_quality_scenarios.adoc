@@ -1,0 +1,66 @@
+[[section-quality-scenarios]]
+== Requisiti di Qualità
+
+
+[role="arc42help"]
+****
+
+.Contenuto
+Questa sezione contiene tutti i requisiti di qualità come albero di qualità con scenari. I più importanti sono già stati descritti nella sezione 1.2. (obiettivi di qualità)
+
+Qui puoi anche acquisire i requisiti di qualità con una priorità minore,
+il che non creerà rischi elevati quando non sono pienamente raggiunti.
+
+.Motivazione
+Poiché i requisiti di qualità avranno molta influenza sulle decisioni architetturali,
+dovresti sapere per ogni stakeholder cosa è veramente importante per loro, concreto e misurabile.
+****
+
+=== Albero di qualità
+
+[role="arc42help"]
+****
+.Contenuto
+L'albero della qualità (come definito in ATAM – Architecture Tradeoff Analysis Method) con scenari di qualità/valutazione come foglie.
+
+.Motivazione
+La struttura ad albero con le priorità fornisce una panoramica per un numero talvolta elevato di requisiti di qualità.
+
+.Forma
+L'albero della qualità è una panoramica di alto livello degli obiettivi e dei requisiti di qualità:
+
+* espande il termine "qualità" con la forma di un'albero. Usa "qualità" o "utilità" come radice
+* una mappa mentale con categorie di qualità come rami principali
+
+In ogni caso l'albero dovrebbe includere collegamenti agli scenari della sezione successiva.
+****
+
+=== Scenari di qualità
+
+[role="arc42help"]
+****
+.Contenuti
+Concretizzazione dei requisiti di qualità (a volte vaghi o impliciti) utilizzando scenari (di qualità).
+
+Questi scenari descrivono cosa dovrebbe accadere quando uno stimolo arriva al sistema.
+
+Per gli architetti, due tipi di scenari sono importanti:
+
+* Gli scenari di utilizzo (chiamati anche scenari di applicazione o scenari di casi d'uso) descrivono
+la reazione di runtime del sistema a un determinato stimolo. Ciò include anche scenari che descrivono l'efficienza
+o le prestazioni del sistema.
+Esempio: il sistema risponde alla richiesta di un utente entro un secondo.
+* Gli scenari di cambiamento descrivono una modifica del sistema o dell'ambiente circostante.
+Esempio: sono implementate funzionalità aggiuntive o requisiti per una modifica dell'attributo di qualità.
+
+.Motivazione
+Gli scenari rendono concreti i requisiti di qualità
+e consentono di misurare o decidere più facilmente se sono soddisfatti.
+
+Soprattutto quando vuoi valutare la tua architettura
+usando metodi come ATAM devi descrivere i tuoi obiettivi di qualità (dalla sezione 1.2)
+più precisamente fino a un livello di scenari che possono essere discussi e valutati.
+
+.Forma
+Testo tabulare o testo in formato libero.
+****

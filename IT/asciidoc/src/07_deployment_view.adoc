@@ -1,0 +1,88 @@
+[[section-deployment-view]]
+
+
+== Deployment View
+
+[role="arc42help"]
+****
+.Contenuti
+La Deployment View descrive:
+
+1. l'infrastruttura tecnica utilizzata per eseguire il sistema, con elementi dell'infrastruttura come posizioni geografiche, ambienti, computer, processori, canali e topologie di rete, nonché altri elementi dell'infrastruttura e
+
+2. la mappatura dei building block (software) di tali elementi dell'infrastruttura.
+
+Spesso i sistemi vengono eseguiti in ambienti diversi, ad es. ambiente di sviluppo, ambiente di test, ambiente di produzione.
+In questi casi è necessario documentare tutti gli ambienti rilevanti.
+
+Documentare in particolare la Deployment View
+quando il software viene eseguito come sistema distribuito con più di un computer, processore, server o container o quando si progettano e si costruiscono processori e chip hardware personalizzati.
+
+Dal punto di vista del software è sufficiente acquisire quegli elementi dell'infrastruttura necessari per mostrare la distribuzione dei building block.
+Gli architetti hardware possono andare oltre e descrivere l'infrastruttura con qualsiasi livello di dettaglio di cui hanno bisogno per acquisire.
+
+.Motivazione
+Il software non funziona senza hardware.
+Questa infrastruttura sottostante può e influenzerà il tuo sistema e/o alcuni
+concetti trasversali. Pertanto, è necessario conoscere l'infrastruttura.
+
+.Forma
+Può essere che il Deployment View di livello più alto sia già contenuto nella sezione 3.2. come
+contesto tecnico con la propria infrastruttura come UNA scatola nera. In questa sezione lo farai
+ingrandire questa scatola nera utilizzando Deployment View aggiuntivi:
+
+* UML offre diagrammi di distribuzione per esprimere quella vista. Usalo, probabilmente con diagrammi annidati,
+quando la tua infrastruttura è più complessa.
+* Quando i tuoi stakeholder (hardware) preferiscono altri tipi di diagrammi piuttosto che il Deployment View, lascia che utilizzino qualsiasi tipo che sia in grado di mostrare nodi e canali dell'infrastruttura.
+****
+
+=== Livello infrastruttura 1
+
+[role="arc42help"]
+****
+Descrivi (di solito in una combinazione di diagrammi, tabelle e testo):
+
+*  la distribuzione del sistema in più posizioni, ambienti, computer, processori, .. così come le connessioni fisiche tra di loro
+*  una giustificazione o motivazione importante per questa struttura di distribuzione
+*  Caratteristiche di qualità e/o prestazioni dell'infrastruttura
+*  la mappatura degli artefatti software agli elementi dell'infrastruttura
+
+Per più ambienti o distribuzioni alternative, copia quella sezione di arc42 per tutti gli ambienti pertinenti.
+****
+
+_**<Overview Diagram>**_
+
+Motivatione::
+
+_<spiegazione in forma di testo>_
+
+Requsiti di qualità e/o di prestazioni::
+
+_<spiegazione in forma di testo>_
+
+Mappatura dei Building Blocks nella Architettura::
+_<descrizione della mappatura>_
+
+
+=== Livello infrastruttura 2
+
+[role="arc42help"]
+****
+Qui puoi includere la struttura interna di (alcuni) elementi dell'infrastruttura dal livello 1.
+
+Si prega di copiare la struttura dal livello 1 per ogni elemento selezionato.
+****
+
+==== _<Elemento infrastruttura 1>_
+
+_<diagramma + spiegazione>_
+
+==== _<Elemento infrastruttura 2>_
+
+_<diagramma + spiegazione>_
+
+...
+
+==== _<Elemento infrastruttura n>_
+
+_<diagramma + spiegazione>_

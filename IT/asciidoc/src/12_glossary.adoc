@@ -1,0 +1,31 @@
+[[section-glossary]]
+== Glossario
+
+[role="arc42help"]
+****
+.Contenuti
+Il dominio più importante e i termini tecnici utilizzati dagli stakeholder quando discutono del sistema.
+
+Puoi anche vedere il glossario come fonte per le traduzioni se lavori in team multilingue.
+
+.Motivazione
+Dovresti definire chiaramente i tuoi termini, in modo che tutte le parti interessate
+
+* abbiano una comprensione identica di questi termini
+* non utilizzino sinonimi e omonimi
+
+.Forma
+* Una tabella con colonne <Termine> e <Definizione>.
+* Potenzialmente più colonne nel caso tu abbia bisogno di traduzioni.
+****
+
+[cols="e,2e" options="header"]
+|===
+|Termine |Definizione
+
+|<Termine-1>
+|<definizione-1>
+
+|<Termine-2>
+|<definizione-2>
+|===

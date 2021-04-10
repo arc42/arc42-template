@@ -1,0 +1,21 @@
+[[section-architecture-constraints]]
+== Vincoli di architettura
+
+
+[role="arc42help"]
+****
+.Contenuti
+Qualsiasi requisito che limiti gli architetti del software nella loro libertà di decisioni di progettazione
+e implementazione o decisione sul processo di sviluppo.
+Questi vincoli a volte vanno oltre i singoli sistemi e sono validi per intere organizzazioni e aziende.
+
+.Motivazione
+Gli architetti dovrebbero sapere esattamente dove sono liberi nelle loro decisioni di progettazione e dove devono aderire ai vincoli.
+I vincoli devono essere sempre affrontati; possono essere negoziabili però.
+
+.Forma
+Semplici tabelle di vincoli con spiegazioni.
+Se necessario puoi suddividerli in file
+vincoli tecnici, vincoli organizzativi e politici e
+convenzioni (ad es. linee guida di programmazione o di controllo delle versioni, documentazione o convenzioni di denominazione)
+****

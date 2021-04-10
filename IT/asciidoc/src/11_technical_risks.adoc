@@ -1,0 +1,17 @@
+[[section-technical-risks]]
+== Rischi e debiti tecnici
+
+
+[role="arc42help"]
+****
+.Contenuti
+Un elenco di rischi tecnici o debiti tecnici identificati, ordinati per priorità
+
+.Motivazione
+“La gestione del rischio è la gestione del progetto per adulti” (Tim Lister, Atlantic Systems Guild.)
+
+Questo dovrebbe essere il tuo motto per il rilevamento e la valutazione sistematica dei rischi e dei debiti tecnici nell'architettura, che saranno necessari agli stakeholder del management (ad esempio i project manager, i proprietari dei prodotti) come parte dell'analisi complessiva dei rischi e della pianificazione delle misurazioni.
+
+.Forma
+Elenco dei rischi e/o dei debiti tecnici, possibilmente comprendendo le misure suggerite per minimizzare, mitigare o evitare i rischi o ridurre i debiti tecnici.
+****

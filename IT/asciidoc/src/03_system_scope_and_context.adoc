@@ -1,0 +1,68 @@
+[[section-system-scope-and-context]]
+== Ambito e contesto del sistema
+
+
+[role="arc42help"]
+****
+.Contenuti
+L'ambito e il contesto del sistema, come suggerisce il nome, delimitano il sistema (ovvero l'ambito) da tutti i suoi partner di comunicazione
+(sistemi e utenti vicini, ovvero il contesto del tuo sistema). In tal modo specifica le interfacce esterne.
+
+Se necessario, differenziare il contesto di business (input e output specifici del dominio) dal contesto tecnico (canali, protocolli, hardware).
+
+.Motivazione
+Le interfacce di dominio e le interfacce tecniche per i partner di comunicazione sono tra gli aspetti più critici del sistema. Assicurati di capirli completamente.
+
+.Forma
+Diverse opzioni:
+
+* Diagrammi di contesto
+* Elenchi di partner di comunicazione e loro interfacce.
+****
+
+
+=== Contesto di Business
+
+[role="arc42help"]
+****
+.Contenuti
+Specifica di *tutti* i partner di comunicazione (utenti, sistemi IT, ...) con spiegazioni di input e output specifici del dominio o interfacce.
+Facoltativamente è possibile aggiungere formati specifici del dominio o protocolli di comunicazione.
+
+.Motivazione
+Tutti gli stakeholder dovrebbero capire quali dati vengono scambiati con l'ambiente del sistema.
+
+.Forma
+Tutti i tipi di diagrammi che mostrano il sistema come una scatola nera e specificano le interfacce di dominio per i partner di comunicazione.
+
+
+In alternativa (o in aggiunta) puoi usare una tabella.
+Il titolo della tabella è il nome del sistema, le tre colonne contengono il nome del partner di comunicazione, gli ingressi e le uscite.
+****
+
+**<Diagramma o Tabella>**
+
+**<opzionale: spiegazione delle interfacce del dominio esterno>**
+
+=== Contesto Tecnico
+
+[role="arc42help"]
+****
+.Contenuti
+Interfacce tecniche (canali e mezzi di trasmissione) che collegano il sistema al suo ambiente.
+Oltre alla mappatura dell'input/output specifico del dominio sui canali di comunicazione, ad es. una spiegazione con I/O  dell'utilizza del canale di comunicazione.
+
+.Motivazione
+Spesso, gli stakeholders prendono decisioni architetturali in base alle interfacce tecniche tra il sistema e il suo contesto. Sono, principalmente i progettisti di infrastrutture o hardware che decidono queste interfacce tecniche.
+
+.Forma
+Esempio: un deployment diagram UML che descrive i canali di comunicazione dei sistemi vicini,
+insieme a una tabella di mappatura che mostra le relazioni tra canali e input/output.
+
+****
+
+**<Diagramma o Tabella>**
+
+**<opzionale: Spiegazione delle interfacce tecniche>**
+
+**<Mappatura Input/Output sui canali di comunicazione>**

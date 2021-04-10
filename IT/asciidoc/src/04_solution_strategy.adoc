@@ -1,0 +1,24 @@
+[[section-solution-strategy]]
+== Strategia della soluzione
+
+
+[role="arc42help"]
+****
+.Contenuti
+Un breve riassunto e spiegazione delle decisioni fondamentali e delle strategie di soluzione che modellano l'architettura del sistema. Questi includono
+
+* decisioni tecnologiche
+* decisioni sulla scomposizione di primo livello del sistema, ad es. utilizzo di un modello architetturale o di un modello di progettazione
+* decisioni su come raggiungere gli obiettivi chiave di qualità
+* decisioni organizzative rilevanti, ad es. selezionare un processo di sviluppo o delegare determinati compiti a terzi.
+
+.Motivazione
+Queste decisioni costituiscono le pietre angolari della tua architettura. Sono la base per molte altre decisioni dettagliate o regole di attuazione.
+
+.Forma
+Mantieni breve la spiegazione di queste decisioni chiave.
+
+Motiva ciò che hai deciso e perché lo hai deciso in questo modo,
+in base alla dichiarazione del problema, agli obiettivi di qualità e ai vincoli chiave.
+Fare riferimento ai dettagli nelle sezioni seguenti.
+****

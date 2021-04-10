@@ -1,0 +1,66 @@
+[[section-concepts]]
+== Concetti trasversali
+
+
+[role="arc42help"]
+****
+.Contenuto
+Questa sezione descrive le normative generali e principali e le idee di soluzione che sono
+rilevante in più parti (= trasversali) del sistema.
+Tali concetti sono spesso correlati a più building blocks.
+Possono includere molti argomenti diversi, come
+
+* modello di domonio
+* modelli di architettura o modelli di design
+* regole per l'utilizzo di una tecnologia specifica
+* decisioni principali, spesso tecniche, di decisioni generali
+* regole di implementazione
+
+.Motivazione
+I concetti costituiscono la base per l '_ integrità concettuale_ (coerenza, omogeneità)
+dell'architettura. Pertanto, sono un contributo importante per raggiungere le qualità interne del tuo sistema.
+
+Alcuni di questi concetti non possono essere assegnati a singoli building blocks
+(ad es. sicurezza o protezione). Questo è il posto nel template che abbiamo fornito per una specifica coerente di tali concetti.
+
+.Forma
+Le forme possono eessere varie:
+
+* documenti concettuali con qualsiasi tipo di struttura
+* estratti di modelli trasversali o scenari che utilizzano le notazioni delle viste dell'architettura
+* implementazioni di esempio, soprattutto per concetti tecnici
+* riferimento all'uso tipico di framework standard (es. utilizzo di Hibernate per object/relational mapping)
+
+.Struttura
+Una struttura potenziale (ma non obbligatoria) per questa sezione potrebbe essere:
+
+* Concetti di dominio
+* Concetti sull'esperienza utente (UX)
+* Concetti di sicurezza e protezione
+* Architettura e modelli di design
+* "Sotto il cappuccio"
+* concetti di sviluppo
+* concetti operativi
+
+Nota: potrebbe essere difficile assegnare concetti individuali a un argomento specifico
+in questo elenco.
+
+image:08-Crosscutting-Concepts-Structure-IT.png["Possibili argomenti per concetti trasversali"]
+****
+
+
+=== _<Concetto 1>_
+
+_<spiegazione>_
+
+
+
+=== _<Concetto 2>_
+
+_<spiegazione>_
+
+...
+
+=== _<Concetto n>_
+
+_<spiegazione>_

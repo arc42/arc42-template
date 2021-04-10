@@ -1,0 +1,82 @@
+[[section-introduction-and-goals]]
+== Introduzione e obiettivi
+
+[role="arc42help"]
+****
+Descrive i requisiti rilevanti e le forze trainanti che gli architetti del software e il team di sviluppo devono considerare. Questi includono
+
+* obiettivi di business sottostanti, caratteristiche essenziali e requisiti funzionali per il sistema
+* obiettivi di qualità per l'architettura
+* stakeholder rilevanti e le loro aspettative
+****
+
+=== Panoramica dei requisiti
+
+[role="arc42help"]
+****
+.Contenuti
+Breve descrizione dei requisiti funzionali, forze trainanti, estratto (o abstract) dei requisiti.
+Collegamento ai documenti dei requisiti (si spera esistenti)
+(con il numero di versione e le informazioni su dove trovarlo).
+
+.Motivazione
+Dal punto di vista degli utenti finali un sistema viene creato o modificato per
+migliorare il supporto di un'attività di business e/o migliorare la qualità.
+
+.Forma
+Breve descrizione testuale, casi d'uso in forma tabellare.
+Se esistono documenti sui requisiti, questa panoramica dovrebbe fare riferimento a questi documenti.
+
+Mantieni questi estratti il ​​più brevi possibile.
+Bilancia la leggibilità di questo documento con la potenziale ridondanza rispetto ai documenti dei requisiti.
+****
+
+=== Obiettivi di qualità
+
+[role="arc42help"]
+****
+.Contenuti
+I principali tre (massimo cinque) obiettivi di qualità per l'architettura
+la cui realizzazione è della massima importanza per i principali stakeholder,
+Intendiamo davvero obiettivi di qualità per l'architettura.
+Non confonderli con gli obiettivi del progetto. Non sono necessariamente identici.
+
+.Motivazione
+Dovresti conoscere gli obiettivi di qualità dei tuoi stakeholder più importanti,
+poiché influenzeranno le decisioni architettoniche fondamentali.
+Assicurati di essere molto concreto su queste qualità, evita le parole d'ordine.
+Se tu come architetto non sai come verrà giudicata la qualità del tuo lavoro
+
+.Forma
+Una tabella con obiettivi di qualità e scenari concreti, ordinati per priorità
+****
+
+=== Stakeholders
+
+[role="arc42help"]
+****
+.Contenuti
+
+Panoramica esplicita degli stakeholder del sistema, ovvero tutte le persone, i ruoli o le organizzazioni che
+
+* dovrebbero conoscere l'architettura
+* devono essere convinti dell'architettura
+* devono lavorare con l'architettura o con il codice
+* necessitano della documentazione dell'architettura per il loro lavoro
+* devono prendere decisioni sul sistema o sul suo sviluppo
+
+.Motivazione
+È necessario conoscere tutte le parti coinvolte nello sviluppo del sistema o interessate dal sistema.
+Altrimenti, potresti ricevere brutte sorprese più avanti nel processo di sviluppo.
+Questi stakeholder determinano la portata e il livello di dettaglio del tuo lavoro e dei suoi risultati.
+
+.Forma
+Tabella con i nomi dei ruoli, i nomi delle persone e le loro aspettative rispetto all'architettura e alla sua documentazione
+****
+
+[options="header",cols="1,2,2"]
+|===
+|Rouolo/Nome|Contatto|Aspettative
+| _<Ruolo-1>_ | _<Contatto-1>_ | _<Aspettatiive-1>_
+| _<Ruolo-2>_ | _<Contatto-2>_ | _<Aspettatiive-2>_
+|===
