@@ -1,4 +1,4 @@
-:homepage: http://arc42.org
+:homepage: https://arc42.org
 
 :keywords: software-architecture, documentation, template, arc42
 
@@ -14,6 +14,5 @@ Por Dr. Gernot Starke, Dr. Peter Hruschka y otros contribuyentes.
 Revisión de la plantilla: 7.0 ES (basada en asciidoc), Enero 2017
 
 (C)
-Reconocemos que este documento utiliza material de la
-plantilla de arquitectura arc 42, http://www.arc42.de.
+Reconocemos que este documento utiliza material de la plantilla de arquitectura arc42, https://www.arc42.org.
 Creada por Dr. Peter Hruschka y Dr. Gernot Starke.
