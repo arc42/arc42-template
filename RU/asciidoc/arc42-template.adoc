@@ -83,7 +83,7 @@ include::src/09_architecture_decisions.adoc[]
 
 <<<<
 // 10. Сценарии проверки атрибутов качества
-include::src/10_quality_scenarios.adoc[]
+include::src/10_quality_requirements.adoc[]
 
 <<<<
 // 11. Технические риски

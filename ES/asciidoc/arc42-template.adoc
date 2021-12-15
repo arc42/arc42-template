@@ -97,7 +97,7 @@ include::src/09_architecture_decisions.adoc[]
 
 <<<<
 // 10. Requerimientos de Calidad
-include::src/10_quality_scenarios.adoc[]
+include::src/10_quality_requirements.adoc[]
 
 <<<<
 // 11. Riesgos y deuda técnica

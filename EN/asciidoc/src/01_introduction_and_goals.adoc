@@ -44,11 +44,18 @@ See (https://docs.arc42.org/section-1/)[Introduction and Goals] in the arc42 doc
 [role="arc42help"]
 ****
 .Contents
-The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. We really mean quality goals for the architecture. Don't confuse them with project goals. They are not necessarily identical.
+The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. 
+We really mean quality goals for the architecture. Don't confuse them with project goals.
+They are not necessarily identical.
+
+Consider this overview of potential topics (taken from the ISO 25010 standard):
+
+image:1-2-iso-25010-topics-en.png["Categories of Quality Requirements"]
 
 .Motivation
-You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. Make sure to be very concrete about these qualities, avoid buzzwords.
-If you as an architect do not know how the quality of your work will be judged …
+You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 
+Make sure to be very concrete about these qualities, avoid buzzwords.
+If you as an architect do not know how the quality of your work will be judged...
 
 .Form
 A table with quality goals and concrete scenarios, ordered by priorities

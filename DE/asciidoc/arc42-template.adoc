@@ -82,8 +82,8 @@ include::src/08_concepts.adoc[]
 include::src/09_architecture_decisions.adoc[]
 
 <<<<
-// 10. Qualität...
-include::src/10_quality_scenarios.adoc[]
+// 10. Qualitätsanforderungen
+include::src/10_quality_requirements.adoc[]
 
 <<<<
 // 11. Risiken
