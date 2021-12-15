@@ -8,8 +8,8 @@ Beschreibt die wesentlichen Anforderungen und treibenden Kräfte, die bei der Um
 Dazu gehören:
 
 * zugrunde liegende Geschäftsziele,
-* wesentliche Aufgabenstellungen und
-* essenzielle fachliche Anforderungen an das System sowie
+* wesentliche Aufgabenstellungen,
+* wesentliche funktionale Anforderungen,
 * Qualitätsziele für die Architektur und
 * relevante Stakeholder und deren Erwartungshaltung.
 ****
