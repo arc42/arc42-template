@@ -79,7 +79,7 @@ include::src/08_concepts.adoc[]
 
 <<<<
 // 9. Design Decisions
-include::src/09_design_decisions.adoc[]
+include::src/09_architecture_decisions.adoc[]
 
 <<<<
 // 10. Quality Scenarios
