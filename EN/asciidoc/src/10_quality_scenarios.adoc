@@ -15,6 +15,12 @@ which will not create high risks when they are not fully achieved.
 Since quality requirements will have a lot of influence on architectural
 decisions you should know for every stakeholder what is really important to them,
 concrete and measurable.
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-10/)[Quality Requirements] in the arc42 documentation.
+
 ****
 
 === Quality Tree
@@ -34,6 +40,8 @@ The quality tree is a high-level overview of the quality goals and requirements:
 * a mind map with quality categories as main branches
 
 In any case the tree should include links to the scenarios of the following section.
+
+
 ****
 
 === Quality Scenarios

@@ -47,6 +47,11 @@ Note: it might be difficult to assign individual concepts to one specific topic
 on this list.
 
 image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-8/)[Concepts] in the arc42 documentation.
 ****
 
 

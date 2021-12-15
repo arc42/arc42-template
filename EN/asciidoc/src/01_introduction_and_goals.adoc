@@ -31,6 +31,12 @@ Short textual description, probably in tabular use-case format.
 If requirements documents exist this overview should refer to these documents.
 
 Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-1/)[Introduction and Goals] in the arc42 documentation.
+
 ****
 
 === Quality Goals

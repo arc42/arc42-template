@@ -17,6 +17,12 @@ You should clearly define your terms, so that all stakeholders
 .Form
 * A table with columns <Term> and <Definition>.
 * Potentially more columns in case you need translations.
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-12/)[Glossary] in the arc42 documentation.
+
 ****
 
 [cols="e,2e" options="header"]

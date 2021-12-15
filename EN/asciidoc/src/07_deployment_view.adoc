@@ -32,6 +32,12 @@ zoom into this black box using additional deployment diagrams:
 * UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
 when your infrastructure is more complex.
 * When your (hardware) stakeholders prefer other kinds of diagrams rather than the deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-7/)[Deployment View] in the arc42 documentation.
+
 ****
 
 === Infrastructure Level 1

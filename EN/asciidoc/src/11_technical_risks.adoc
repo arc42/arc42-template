@@ -14,4 +14,10 @@ This should be your motto for systematic detection and evaluation of risks and t
 
 .Form
 List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
+
+
+.Further Information
+
+See (https://docs.arc42.org/section-11/)[Risks and Technical Debt] in the arc42 documentation.
+
 ****
