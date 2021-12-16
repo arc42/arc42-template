@@ -1,0 +1,40 @@
+// this is a local build file, used for debugging purposes only!
+// YOU CANNOT CREATE DISTRIBUTIONS WITH IT
+//
+
+plugins {
+    id 'org.asciidoctor.jvm.convert' version '3.3.0'
+}
+
+apply plugin: 'java'
+
+version = '8.0.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+// not found: /Users/gernotstarke/projects/arc42/arc42-template/src/config.adoc
+
+asciidoctor {
+    baseDir file('./')
+    baseDirFollowsSourceDir()
+
+    sourceDir file('EN/asciidoc')
+    sources{ include 'arc42-template.adoc' }
+   
+    options = [
+        includedir: './EN/asciidoc/',
+        imagesdir: '../images'
+    ]    
+    
+    outputDir = file( 'build' )
+
+    resources {
+        from('./') {
+            include 'images/**'
+        }
+    }
+}
+
