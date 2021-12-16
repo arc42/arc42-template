@@ -6,3 +6,5 @@ gradle-app.setting
 .idea
 Arc42.code-workspace
 .DS_Store
+EN/build
+build
