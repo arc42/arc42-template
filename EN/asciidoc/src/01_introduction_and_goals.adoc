@@ -48,7 +48,7 @@ The top three (max five) quality goals for the architecture whose fulfillment is
 We really mean quality goals for the architecture. Don't confuse them with project goals.
 They are not necessarily identical.
 
-Consider this overview of potential topics (taken from the ISO 25010 standard):
+Consider this overview of potential topics (based upon the ISO 25010 standard):
 
 image:1-2-iso-25010-topics-en.png["Categories of Quality Requirements"]
 

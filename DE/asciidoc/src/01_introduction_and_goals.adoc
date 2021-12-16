@@ -44,7 +44,7 @@ Die Top-3 bis Top-5 der Qualitätsanforderungen für die Architektur, deren Erf�
 Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. 
 Beachten Sie den Unterschied.
 
-Hier ein Überblick möglicher Themen (aus dem ISO 25010 Standard):
+Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010 Standard):
 
 image:1-2-iso-25010-topics-de.png["Kategorien von Qualitätsanforderungen"]
 
