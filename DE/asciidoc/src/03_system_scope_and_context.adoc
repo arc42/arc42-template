@@ -18,6 +18,12 @@ Verschiedene Optionen:
 
 * Diverse Kontextdiagramme
 * Listen von Kommunikationsbeziehungen mit deren Schnittstellen
+
+
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-3/)[Kontextabgrenzung] in der online-Dokumentation (auf Englisch!).
+
 ****
 
 === Fachlicher Kontext

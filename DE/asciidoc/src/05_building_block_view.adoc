@@ -43,6 +43,11 @@ image:05_building_blocks-DE.png["Baustein Sichten"]
 Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene 1, jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener Bausteine.
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
+
+
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-5/)[Bausteinsicht] in der online-Dokumentation (auf Englisch!).
 ****
 
 === Whitebox Gesamtsystem

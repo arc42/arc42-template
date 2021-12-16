@@ -42,6 +42,12 @@ Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könn
 image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
 ****
 
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-8/)[Querschnittliche Konzepte] in der online-Dokumentation (auf Englisch).
+
+****
+
 === _<Konzept 1>_
 
 _<Erklärung>_

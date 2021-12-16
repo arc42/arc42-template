@@ -13,6 +13,10 @@ Nehmen Sie hier auch Qualitätsanforderungen geringerer Priorität auf, deren Ni
 Weil Qualitätsanforderungen die Architekturentscheidungen oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten Qualitätsanforderungen kennen, möglichst konkret und operationalisiert.
 ****
 
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-10/)[Qualitätsanforderungen] in der online-Dokumentation (auf Englisch!).
+
 === Qualitätsbaum
 
 [role="arc42help"]

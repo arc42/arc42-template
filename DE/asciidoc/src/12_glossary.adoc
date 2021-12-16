@@ -17,6 +17,11 @@ Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
 .Form
 * Zweispaltige Tabelle mit <Begriff> und <Definition>
 * Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
+
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-12/)[Glossar] in der online-Dokumentation (auf Englisch!).
+
 ****
 
 [cols="e,2e" options="header"]

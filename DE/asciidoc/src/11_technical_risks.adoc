@@ -14,5 +14,10 @@ Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Schulden g
 
 .Form
 Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung oder dem Abbau der technischen Schulden.
+
+
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-11/)[Risiken und technische Schulden] in der online-Dokumentation (auf Englisch!).
 ****
 

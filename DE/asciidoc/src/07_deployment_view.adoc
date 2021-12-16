@@ -30,6 +30,11 @@ Jetzt zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen hinei
 * Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine Diagrammart zur Verfügung, um diese Sicht auszudrücken.
 Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es verlangt.
 * Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen, die beispielsweise Prozessoren und Kanäle zeigen, sind diese hier ebenfalls einsetzbar.
+
+.Weiterführende Informationen
+
+Siehe (https://docs.arc42.org/section-7/)[Verteilungssicht] in der online-Dokumentation (auf Englisch!).
+
 ****
 
 === Infrastruktur Ebene 1
