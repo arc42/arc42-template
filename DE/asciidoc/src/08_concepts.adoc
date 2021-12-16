@@ -9,17 +9,16 @@ Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungs
 Solche Konzepte betreffen oft mehrere Bausteine.
 Dazu können vielerlei Themen gehören, beispielsweise:
 
-* fachliche Modelle,
-* eingesetzte Architektur- oder Entwurfsmuster,
-* Regeln für den konkreten Einsatz von Technologien,
-* prinzipielle -- meist technische -- Festlegungen übergreifender Art,
+* Modelle, insbesondere fachliche Modelle
+* Architektur- oder Entwurfsmuster
+* Regeln für den konkreten Einsatz von Technologien
+* prinzipielle -- meist technische -- Festlegungen übergreifender Art
 * Implementierungsregeln
 
 .Motivation
 Konzepte bilden die Grundlage für _konzeptionelle Integrität_ (Konsistenz, Homogenität) der Architektur und damit eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
 
 Manche dieser Themen lassen sich nur schwer als Baustein in der Architektur unterbringen (z.B. das Thema „Sicherheit“).
-Hier ist der Platz im Template, wo Sie derartige Themen geschlossen behandeln können.
 
 .Form
 Kann vielfältig sein:

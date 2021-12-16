@@ -5,24 +5,23 @@
 [role="arc42help"]
 ****
 .Content
-This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (= cross-cutting) of your system.
+This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (= cross-cutting) of your system.
 Such concepts are often related to multiple building blocks.
 They can include many different topics, such as
 
-* domain models
-* architecture patterns or design patterns
+* models, especially domain models
+* architecture or design patterns
 * rules for using specific technology
-* principal, often technical decisions of overall decisions
+* principal, often technical decisions of an overarching (= cross-cutting) nature
 * implementation rules
 
-.Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
-of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
 
-Some of these concepts cannot be assigned to individual building blocks
-(e.g. security or safety). This is the place in the template that we provided for a
-cohesive specification of such concepts.
+.Motivation
+Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. 
+Thus, they are an important contribution to achieve inner qualities of your system.
+
+Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety. 
+
 
 .Form
 The form can be varied:
