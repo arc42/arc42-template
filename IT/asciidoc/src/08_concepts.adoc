@@ -45,7 +45,7 @@ Una struttura potenziale (ma non obbligatoria) per questa sezione potrebbe esser
 Nota: potrebbe essere difficile assegnare concetti individuali a un argomento specifico
 in questo elenco.
 
-image:08-Crosscutting-Concepts-Structure-IT.png["Possibili argomenti per concetti trasversali"]
+image::08-Crosscutting-Concepts-Structure-IT.png["Possibili argomenti per concetti trasversali"]
 ****
 
 

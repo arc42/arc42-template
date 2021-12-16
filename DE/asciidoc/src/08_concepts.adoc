@@ -39,7 +39,7 @@ Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könn
 * Entwicklungskonzepte
 * Betriebskonzepte
 
-image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
+image::08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
 ****
 
 .Weiterführende Informationen

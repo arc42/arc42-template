@@ -23,7 +23,7 @@ Ciò consente di comunicare con gli stakeholder a livello astratto senza rivelar
 è una raccolta gerarchica di black box e white box
 (vedi figura sotto) e le loro descrizioni.
 
-image:05_building_blocks-IT.png["Gerarchia dei building blocks"]
+image::05_building_blocks-IT.png["Gerarchia dei building blocks"]
 
 *Livello 1* è la descrizione della white box del sistema complessivo insieme alle
 descrizioni delle black box di tutti i building block contenuti.

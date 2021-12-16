@@ -45,7 +45,7 @@ A potential (but not mandatory) structure for this section could be:
 Note: it might be difficult to assign individual concepts to one specific topic
 on this list.
 
-image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
 
 
 .Further Information
