@@ -8,8 +8,11 @@ plugins {
 
 apply plugin: 'java'
 
-version = '8.0.0-SNAPSHOT'
+// what language are we building
+def LANGUAGE = 'EN'
 
+// what version of the template are we building here
+version = '8.0.0-$LANGUAGE-LOCAL-BUILD'
 
 repositories {
     mavenCentral()
@@ -37,4 +40,3 @@ asciidoctor {
         }
     }
 }
-
