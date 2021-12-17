@@ -9,10 +9,12 @@ plugins {
 apply plugin: 'java'
 
 // what language are we building
+// current choices: EN, DE, IT, ES, RU
+// for RU, you might need to set different encoding options
 def LANGUAGE = 'EN'
 
 // what version of the template are we building here
-version = '8.0.0-$LANGUAGE-LOCAL-BUILD'
+version = "8.0.0-${LANGUAGE}-LOCAL-BUILD"
 
 repositories {
     mavenCentral()
@@ -24,15 +26,15 @@ asciidoctor {
     baseDir file('./')
     baseDirFollowsSourceDir()
 
-    sourceDir file('EN/asciidoc')
+    sourceDir file("${LANGUAGE}/asciidoc")
     sources{ include 'arc42-template.adoc' }
    
     options = [
-        includedir: './EN/asciidoc/',
+        includedir: "./${LANGUAGE}/asciidoc/",
         imagesdir: '../images'
     ]    
     
-    outputDir = file( 'build' )
+    outputDir = file( "build/${LANGUAGE}" )
 
     resources {
         from('./') {

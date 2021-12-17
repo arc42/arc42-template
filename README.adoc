@@ -17,7 +17,7 @@ It is used to:
 
 *  generate (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others).
 * maintain structure, content and help for the template
-* keep non-asciidoc formats (like Sparx(r) Enterprise-Architect(c) EAP).
+* keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
 
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
@@ -26,6 +26,11 @@ In case you find issues within the template or its explanations, this is the rep
 
 Please refer to the https://arc42.org/download[official download page] for
 all downloads.
+
+== Languages
+
+The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
+Translations to additional languages (IT, ES, RU) have been provided by volunteers, but won't be automatically updated.
 
 == Build the HTML version 
 
@@ -36,5 +41,14 @@ $> gradle asciidoctor
 ----
 
 on the command line.
-Within the 'build.gradle' script, you might replace the default language (EN) with your choice.
+Within the `build.gradle` script, you might replace the default language (EN) with your choice.
 
+== Questions on using arc42?
+
+* see the extensive https://docs.arc42.org[documentation website]
+* see the https://arc42.org[overview] 
+
+
+== Suggestions welcome
+
+Open an issue here!
