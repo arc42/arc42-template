@@ -20,6 +20,6 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 
 .Further Information
 
-See (https://docs.arc42.org/section-2/)[Architecture Constraints] in the arc42 documentation.
+See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
 
 ****
