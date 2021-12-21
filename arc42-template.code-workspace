@@ -22,7 +22,26 @@
 			"titleBar.inactiveForeground": "#15202b99",
 			"sash.hoverBorder": "#93e6fc",
 			"statusBarItem.remoteBackground": "#61dafb",
-			"statusBarItem.remoteForeground": "#15202b"
+			"statusBarItem.remoteForeground": "#15202b",
+			"terminal.background": "#023e83",
+			"terminal.foreground": "#ace4ee",
+			"terminalCursor.background": "#e9b292",
+			"terminalCursor.foreground": "#f8b38b",
+			"terminal.ansiBlue": "#708a8f",
+			"terminal.ansiBrightBlack": "#BDAE93",
+			"terminal.ansiBrightBlue": "#d7ecec",
+			"terminal.ansiBrightCyan": "#427B58",
+			"terminal.ansiBrightGreen": "#79740E",
+			"terminal.ansiBrightMagenta": "#8F3F71",
+			"terminal.ansiBrightRed": "#9D0006",
+			"terminal.ansiBrightWhite": "#282828",
+			"terminal.ansiBrightYellow": "#B57614",
+			"terminal.ansiCyan": "#427B58",
+			"terminal.ansiGreen": "#79740E",
+			"terminal.ansiMagenta": "#8F3F71",
+			"terminal.ansiRed": "#9D0006",
+			"terminal.ansiWhite": "#f85e04",
+			"terminal.ansiYellow": "#B57614"
 		},
 		"peacock.color": "#61dafb"
 	}
