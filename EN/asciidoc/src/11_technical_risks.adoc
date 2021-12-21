@@ -18,6 +18,6 @@ List of risks and/or technical debts, probably including suggested measures to m
 
 .Further Information
 
-See (https://docs.arc42.org/section-11/)[Risks and Technical Debt] in the arc42 documentation.
+See https://docs.arc42.org/section-11/[Risks and Technical Debt] in the arc42 documentation.
 
 ****

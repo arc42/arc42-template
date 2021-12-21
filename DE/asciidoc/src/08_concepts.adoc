@@ -44,7 +44,7 @@ image::08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutti
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-8/)[Querschnittliche Konzepte] in der online-Dokumentation (auf Englisch).
+Siehe https://docs.arc42.org/section-8/[Querschnittliche Konzepte] in der online-Dokumentation (auf Englisch).
 
 ****
 

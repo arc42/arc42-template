@@ -34,7 +34,7 @@ Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Re
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-1/)[Anforderungen und Ziele] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-1/[Anforderungen und Ziele] in der online-Dokumentation (auf Englisch!).
 
 ****
 

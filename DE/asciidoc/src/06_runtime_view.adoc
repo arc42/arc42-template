@@ -35,7 +35,7 @@ Nutzen Sie beispielsweise:
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-6/)[Laufzeitsicht] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-6/[Laufzeitsicht] in der online-Dokumentation (auf Englisch!).
 
 ****
 

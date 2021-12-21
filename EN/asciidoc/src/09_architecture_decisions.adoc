@@ -27,7 +27,7 @@ Various options:
 
 .Further Information
 
-See (https://docs.arc42.org/section-9/)[Architecture Decisions] in the arc42 documentation.
+See https://docs.arc42.org/section-9/[Architecture Decisions] in the arc42 documentation.
 There you will find links and examples about ADR.
 
 ****

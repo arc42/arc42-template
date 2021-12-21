@@ -36,7 +36,7 @@ Thus it contains the white box description of selected building blocks of level 
 
 .Further Information
 
-See (https://docs.arc42.org/section-5/)[Building Block View] in the arc42 documentation.
+See https://docs.arc42.org/section-5/[Building Block View] in the arc42 documentation.
 
 ****
 

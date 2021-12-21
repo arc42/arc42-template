@@ -15,7 +15,7 @@ Weil Qualitätsanforderungen die Architekturentscheidungen oft maßgeblich beein
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-10/)[Qualitätsanforderungen] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-10/[Qualitätsanforderungen] in der online-Dokumentation (auf Englisch!).
 
 === Qualitätsbaum
 

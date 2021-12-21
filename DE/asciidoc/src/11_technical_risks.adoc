@@ -18,6 +18,6 @@ Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell mit vorg
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-11/)[Risiken und technische Schulden] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-11/[Risiken und technische Schulden] in der online-Dokumentation (auf Englisch!).
 ****
 

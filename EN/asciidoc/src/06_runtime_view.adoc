@@ -31,7 +31,7 @@ There are many notations for describing scenarios, e.g.
 
 .Further Information
 
-See (https://docs.arc42.org/section-6/)[Runtime View] in the arc42 documentation.
+See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
 
 ****
 

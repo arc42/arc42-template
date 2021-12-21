@@ -25,6 +25,6 @@ Refer to details in the following sections.
 
 .Further Information
 
-See (https://docs.arc42.org/section-4/)[Solution Strategy] in the arc42 documentation.
+See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
 
 ****

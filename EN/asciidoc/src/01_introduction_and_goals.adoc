@@ -35,7 +35,7 @@ Keep these excerpts as short as possible. Balance readability of this document w
 
 .Further Information
 
-See (https://docs.arc42.org/section-1/)[Introduction and Goals] in the arc42 documentation.
+See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 documentation.
 
 ****
 
