@@ -16,7 +16,7 @@ A short summary and explanation of the fundamental decisions and solution strate
 These decisions form the cornerstones for your architecture. They are the base for many other detailed decisions or implementation rules.
 
 .Form
-Keep the explanation of these key decisions short.
+Keep the explanations of key decisions short.
 
 Motivate what you have decided and why you decided that way,
 based upon your problem statement, the quality goals and key constraints.
