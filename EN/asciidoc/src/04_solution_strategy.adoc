@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape the system's architecture. These include
+A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. These include
 
 * technology decisions
 * decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
