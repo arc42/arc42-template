@@ -13,7 +13,7 @@ A short summary and explanation of the fundamental decisions and solution strate
 * relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
 
 .Motivation
-These decisions form the cornerstones for your architecture. They are the base for many other detailed decisions or implementation rules.
+These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
 
 .Form
 Keep the explanations of these key decisions short.
