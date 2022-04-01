@@ -2,6 +2,8 @@
 :version 8.0:
 :downloads https://arc42.org/downloads/:
 
+image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
+
 arc42 - the template for effective, practical and pragmatic software architecture
 documentation and communication.
 
