@@ -23,7 +23,7 @@ Verschiedene Möglichkeiten:
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-9/)[Architekturentscheidungen] in der arc42 Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-9/[Architekturentscheidungen] in der arc42 Dokumentation (auf Englisch!).
 Dort finden Sie Links und Beispiele zum Thema ADR.
 
 ****

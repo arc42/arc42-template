@@ -21,7 +21,7 @@ You should clearly define your terms, so that all stakeholders
 
 .Further Information
 
-See (https://docs.arc42.org/section-12/)[Glossary] in the arc42 documentation.
+See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
 
 ****
 

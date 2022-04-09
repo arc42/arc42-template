@@ -1,6 +1,8 @@
 = image:./small-arc42-logo.png[arc42] Template ("Golden Master")
-:version 7.0:
-:downloads https://github.com/arc42/arc42-template/raw/master/dist/:
+:version 8.0:
+:downloads https://arc42.org/downloads/:
+
+image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
 
 arc42 - the template for effective, practical and pragmatic software architecture
 documentation and communication.
@@ -15,13 +17,11 @@ source of the arc42 template.
 
 It is used to:
 
-*  generate (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download
-formats (i.e. docx, markdown, docbook and others).
+*  generate (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others).
 * maintain structure, content and help for the template
-* keep non-asciidoc formats (like EAP).
+* keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
 
-In case you find issues within the template or its explanations,
-this is the repo to fix and issue pull requests :-)
+In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 
 == Downloads
@@ -29,4 +29,28 @@ this is the repo to fix and issue pull requests :-)
 Please refer to the https://arc42.org/download[official download page] for
 all downloads.
 
- 
+== Languages
+
+The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
+Translations to additional languages (IT, ES, RU) have been provided by volunteers, but won't be automatically updated.
+
+== Build the HTML version 
+
+In case you want to build the HTML version of the template, just checkout this repo and call
+
+----
+$> gradle asciidoctor
+----
+
+on the command line.
+Within the `build.gradle` script, you might replace the default language (EN) with your choice.
+
+== Questions on using arc42?
+
+* see the extensive https://docs.arc42.org[documentation website]
+* see the https://arc42.org[overview] 
+
+
+== Suggestions welcome
+
+Open an issue here!

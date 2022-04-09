@@ -19,7 +19,7 @@ concrete and measurable.
 
 .Further Information
 
-See (https://docs.arc42.org/section-10/)[Quality Requirements] in the arc42 documentation.
+See https://docs.arc42.org/section-10/[Quality Requirements] in the arc42 documentation.
 
 ****
 

@@ -22,7 +22,7 @@ Various options:
 
 .Further Information
 
-See (https://docs.arc42.org/section-3/)[Context and Scope] in the arc42 documentation.
+See https://docs.arc42.org/section-3/[Context and Scope] in the arc42 documentation.
 
 ****
 

@@ -47,7 +47,7 @@ Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-5/)[Bausteinsicht] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-5/[Bausteinsicht] in der online-Dokumentation (auf Englisch!).
 ****
 
 === Whitebox Gesamtsystem

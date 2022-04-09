@@ -33,7 +33,7 @@ Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es verl
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-7/)[Verteilungssicht] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-7/[Verteilungssicht] in der online-Dokumentation (auf Englisch!).
 
 ****
 

@@ -22,7 +22,7 @@ Verschiedene Optionen:
 
 .Weiterführende Informationen
 
-Siehe (https://docs.arc42.org/section-3/)[Kontextabgrenzung] in der online-Dokumentation (auf Englisch!).
+Siehe https://docs.arc42.org/section-3/[Kontextabgrenzung] in der online-Dokumentation (auf Englisch!).
 
 ****
 
