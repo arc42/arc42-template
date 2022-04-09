@@ -32,7 +32,7 @@ all downloads.
 == Languages
 
 The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
-Translations to additional languages (IT, ES, RU) have been provided by volunteers, but won't be automatically updated.
+Translations to additional languages (IT, ES) have been provided by volunteers, but won't be automatically updated.
 
 == Build the HTML version 
 

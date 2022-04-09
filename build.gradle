@@ -9,8 +9,7 @@ plugins {
 apply plugin: 'java'
 
 // what language are we building
-// current choices: EN, DE, IT, ES, RU
-// for RU, you might need to set different encoding options
+// current choices: EN, DE, IT, ES
 def LANGUAGE = 'EN'
 
 // what version of the template are we building here
