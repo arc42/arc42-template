@@ -1,0 +1,140 @@
+[[section-deployment-view]]
+
+
+// == Deployment View
+== Deployment View
+
+[role="arc42help"]
+****
+// .Content
+.Inhoud
+// The deployment view describes:
+De deployment view beschrijft:
+
+//  1. technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
+1. de benodigede technische infrastructuur om het systeem uit te kunnen voeren, met infrastructurele elementen zoals geografische locatie, omgeving, computers, processors, kanalen en netwerk topologie als ook andere infrastructurele elementen; 
+// 2. mapping of (software) building blocks to that infrastructure elements.
+2. mapping van (software) bouwstenen naar infrastructuur elementen.
+
+// Often systems are executed in different environments, e.g. development environment, test environment, production environment.
+Vaak worden systeem in verschillende omgevingen gedraaid, e.g. ontwikkel omgeving, test omgeving, productie omgeving.
+// In such cases you should document all relevant environments.
+In zulke gevallen moeten alle relevevante omgevingen worden gedocumenteerd.
+
+// Especially document a deployment view if your software is executed as distributed system with more than one computer, processor, server or container or when you design and construct your own hardware processors and chips.
+In het bijzonder als de software wordt uitgevoerd op een gedistribueerd systeem, met meer dan een computer, processor, server of container _of_ als er gebruik wordt gemaakt van zelf ontworpen hardware en/of chips, is het van belang om de deployment view vast te leggen.
+
+// From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks.
+Vanuit een software perspectief is het voldoende om alleen die elementen van de infrastrucuur vast te leggen die nodig zijn om de deployment view van de bouwstenen te tonen.
+// Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.
+Hardware architecten kunnen verder gaan en de infrastruur beschrijven tot het detail niveau dat voor hun passend is.
+
+// .Motivation
+.Motivatie
+// Software does not run without hardware.
+Software draait niet zonder hardware.
+// This underlying infrastructure can and will influence a system and/or some cross-cutting concepts.
+Deze onderliggende infrastructuur heeft invloed om het systeem en/of sommige cross-cutting concepten.
+// Therefore, there is a need to know the infrastructure.
+Daarom is het van belang kennis te hebben van de infrastructuur.
+
+// .Form
+.Vorm
+
+// Maybe a highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box. 
+Mogelijk is er op het hoogste niveau al een deployment diagram opgenomen in paragraaf 3.2. als technische context met de eigen infrastructuur als 1 "black box".
+
+// In this section one can zoom into this black box using additional deployment diagrams:
+In deze paragraaf kan worden ingezoomd op deze "black box" met aanvullende deployment diagrammen:
+
+// * UML offers deployment diagrams to express that view.
+* UML bied deployment diagrammen om die view weer te geven.
+// Use it, probably with nested diagrams, when your infrastructure is more complex.
+Gebruik deze, eventueel met geneste diagrammen, als de infrastructuur ingewikkelder is.
+// * When your (hardware) stakeholders prefer other kinds of diagrams rather than a deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+* Als de (hardware) belanghebbenden er de voorkeur aan geven kunnen ander type diagrammen gebruikt worden.
+Gebruik passende diagrammen om de nodes en kanalen van de infrastructuur weer te geven.
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-7/[Deployment View] in the arc42 documentation.
+Zie https://docs.arc42.org/section-7/[Deployment View] in de arc42 documentatie.
+
+****
+
+// === Infrastructure Level 1
+=== Infrastructuur Niveau 1
+
+[role="arc42help"]
+****
+// Describe (usually in a combination of diagrams, tables, and text):
+Beschrijf (normaliter in een combinatie van diagrammen, tabellen en text):
+
+// * distribution of a system to multiple locations, environments, computers, processors, .., as well as physical connections between them
+* distributie van het systeem over meerdere locaties, omgevingen, computers, processors, .., als ook de fysieke verbindingen ertussen
+// * important justifications or motivations for this deployment structure
+* verantwoording of motivatie voor deze deployment strucuur
+// * quality and/or performance features of this infrastructure
+* kwaliteit en/of performance attributen van deze infrastructuur
+// * mapping of software artifacts to elements of this infrastructure
+*  mapping van software artifacten naar elementen van deze infrastructuur
+
+// For multiple environments or alternative deployments please copy and adapt this section of arc42 for all relevant environments.
+Als er sprake is van meerdere omgevingen of alternatieve deployments kopieer en pas deze paragraaf van arc42 aan voor alle relevente omgevingen. 
+
+****
+
+// _**<Overview Diagram>**_
+_**<Overzichts Diagram>**_
+
+// Motivation::
+Motivatie::
+
+// _<explanation in text form>_
+_<uitleg in tekstuele vorm>_
+
+// Quality and/or Performance Features::
+Kwaliteit en/of Performance Eigenschappen::
+
+// _<explanation in text form>_
+_<uitleg in tekstuele vorm>_
+
+// Mapping of Building Blocks to Infrastructure::
+Mapping van Bouwblokken naar Infrastructuur::
+// _<description of the mapping>_
+_<beschrijving van de mapping>_
+
+
+// === Infrastructure Level 2
+=== Infrastructuur Niveau 2
+
+[role="arc42help"]
+****
+// Here you can include the internal structure of (some) infrastructure elements from level 1.
+Hier kunnen de interne structuren van (sommige) infrastructuur elementen uit niveau 1 worden toegevoegd.
+
+// Please copy the structure from level 1 for each selected element.
+Kopieer de structuur van niveau 1 voor ieder geselecteerd element.
+****
+
+// ==== _<Infrastructure Element 1>_
+==== _<Infrastructuur Element 1>_
+
+// _<diagram + explanation>_
+_<diagram + uitleg>_
+
+// ==== _<Infrastructure Element 2>_
+==== _<Infrastructuur Element 2>_
+
+// _<diagram + explanation>_
+_<diagram + uitleg>_
+
+...
+
+// ==== _<Infrastructure Element n>_
+==== _<Infrastructuur Element n>_
+
+// _<diagram + explanation>_
+_<diagram + uitleg>_

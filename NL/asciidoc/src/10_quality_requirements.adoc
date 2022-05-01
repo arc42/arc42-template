@@ -1,0 +1,105 @@
+[[section-quality-scenarios]]
+// == Quality Requirements
+== Kwaliteits Requirements
+
+
+[role="arc42help"]
+****
+
+// .Content
+.Inhoud
+// This section contains all quality requirements as quality tree with scenarios.
+Dit hoofdstuk bevat alle kwaliteits requirements als een kwaliteits boom met scenarios.
+// The most important ones have already been described in section 1.2. (quality goals)
+De belangrijkste zijn al beschreven in paragraaf 1.2 (kwaliteits doelen.)
+
+// Here you can also capture quality requirements with lesser priority, which will not create high risks when they are not fully achieved.
+Op deze plaats kunnen ook lagere prioriteit kwaliteits requirements worden vastgelegd die, als ze niet (volledig) worden gerealiseerd, geen hoog risico vormen.
+
+// .Motivation
+.Motivatie
+// Since quality requirements will have a lot of influence on architectural decisions you should know for every stakeholder what is really important to them, concrete and measurable.
+Omdat kwaliteits requirements grote invloed invloed hebben op architectuur beslissingen is het van belang om voor iedere belanghebbende, in concrete en meetbare termen, te begrijpen wat echt van belang is. 
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-10/[Quality Requirements] in the arc42 documentation.
+Zie https://docs.arc42.org/section-10/[Quality Requirements] in de arc42 documentatie.
+
+****
+
+// === Quality Tree
+=== Kwaliteits Boom
+
+[role="arc42help"]
+****
+// .Content
+.Inhoud
+// The quality tree (as defined in ATAM - Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.
+De kwaliteits boom (zoals gedefinieerd in ATAM - Architecture Analysis Method) met kwaliteit/evaluatie scenarios als bladeren.
+
+// .Motivation
+.Motivatie
+// The tree structure with priorities provides an overview for a sometimes large number of quality requirements.
+De geprioriteerde boomstructuur bied overzicht over, een mogelijk groot aantal, kwaliteits requirements.
+
+// .Form
+.Vorm
+// The quality tree is a high-level overview of the quality goals and requirements:
+De kwaliteitsboom is een hoog niveau overzicht van de kwaliteits doelen en requirements:
+
+// * tree-like refinement of the term "quality".
+* verdieping van de term "kwaliteit" in de vorm van een boom structuur
+// Use "quality" or "usefulness" as a root
+Gebruik daarbij "kwaliteit" als de root van de boom.
+// * a mind map with quality categories as main branches
+* een mind map met kwaliteit categorieen als eerste takken
+
+// In any case the tree should include links to the scenarios of the following section.
+De boom moet in elk geval verwijzingen/links bevatten naar de scenarios in de volgende paragraaf.
+
+
+****
+
+// === Quality Scenarios
+=== Kwaliteits Scenarios
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.
+Het concreet maken van (soms vage of impliciete) kwaliteits requirements gebruik makend van (kwaliteits) scenarios.
+
+// These scenarios describe what should happen when a stimulus arrives at the system.
+Deze scenarios beschrijven wat er moet gebeuren als het systeem wordt geconfronteerd met een stimulus.
+
+// For architects, two kinds of scenarios are important:
+Voor architecten zijn er twee soorten scenarios van belang:
+
+// * Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus.
+* Gebruik scenarios (ook wel applicatie scenarios of use case scenarios genoemd) beschrijven het runtime gedrag van het systeem naar aanleiding van een bepaalde stimulus.
+// This also includes scenarios that describe the system’s efficiency or performance.
+Dit is inclusief scenarios die de efficientie of performance van het systeem beschrijven.
+// Example: The system reacts to a user’s request within one second.
+Bijvoorbeeld: Het systeem reageert binnen een seconde op een request.
+// * Change scenarios describe a modification of the system or of its immediate environment.
+* Verander scenarios beschrijven modificaties aan het systeem, of aan haar onmiddelijke omgeving
+// Example: Additional functionality is implemented or requirements for a quality attribute change.
+Bijvoorbeeld: Er moet aanvullende functionaliteit geimplementeerd worden of de eis voor een kwaliteitskenmerk verandert.
+
+// .Motivation
+.Motivatie
+// Scenarios make quality requirements concrete and allow to more easily measure or decide whether they are fulfilled.
+Scenarios maken kwaliteits requirements concreet en maken het daarmee eenvoudiger om te meten of te bepalen of ze vervuld worden.
+
+// Especially when you want to assess your architecture using methods like ATAM you need to describe your quality goals (from section 1.2) more precisely down to a level of scenarios that can be discussed and evaluated.
+Vooral als er methodes als ATAM worden gebruikt is het van belang om de kwaliteits doelen (uit paragraaf 1.2) tot op het niveau van scenarios die besproken en bediscussieerd kunnen worden, te beschrijven.
+
+// .Form
+.Vorm
+// Tabular or free form text.
+Lijst of vrije tekst vorm.
+****

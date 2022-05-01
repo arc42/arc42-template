@@ -1,0 +1,287 @@
+[[section-building-block-view]]
+
+
+// == Building Block View
+== Bouwstenen View
+
+[role="arc42help"]
+****
+// .Content
+.Inhoud
+// The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, datas structures, ...) as well as their dependencies (relationships, associations, ...)
+De bouwstenen view toont de statische decompositie van het systeem in bouwstenen (modules, componenten, subsystemen, classes, interfaces, packages, libraries, frameworks, lagen, partitions, lagen, functies, macros, operaties, data structuren, ...) en hun onderlinge afhankelijkheden (relaties, associaties, ...).
+
+// This view is mandatory for every architecture documentation.
+Deze view is verplicht voor iedere architectuur documentatie.
+// In analogy to a house this is the _floor plan_.
+In termen van een huis is dit het _grond plan_.
+
+// .Motivation
+.Motivatie
+// Maintain an overview of your source code by making its structure understandable through abstraction.
+Hou een overzicht van de source code bij door de structuur begrijpelijk te maken door middel van abstracties.
+
+// This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.
+Dit zorgt ervoor dat het mogelijk is om op een abstract niveau te communiceren met de belanghebbenden zonder daarbij op implementatie details in te hoeven gaan.
+
+// .Form
+.Vorm
+// The building block view is a hierarchical collection of black boxes and white boxes (see figure below) and their descriptions.
+De bouwstenen view is een hiërarchische verzameling van 'black boxes' en 'white boxes' (zie het onderstaande plaatje) met de bijbehorende beschrijvingen.
+
+// image::05_building_blocks-EN.png["Hierarchy of building blocks"]
+image::05_building_blocks-NL.png["Hiërarchie van bouwstenen"]
+
+// *Level 1* is the white box description of the overall system together with black box descriptions of all contained building blocks.
+*Niveau 1* is een 'white box' beschijving van het gehele systeem gecombineerd met 'black box' beschrijvingen van alle ingesloten bouwstenen.
+
+// *Level 2* zooms into some building blocks of level 1.
+*Niveau 2* zoomt in op sommige bouwstenen uit niveau 1.
+// Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.
+Zodoende bevat het de 'white box' beschrijving van specifieke bouwstenen uit niveau 1, gecombineerd met 'black box' beschrijvingen van hun interne bouwstenen.
+
+// *Level 3* zooms into selected building blocks of level 2, and so on.
+*Niveau 3* zoomt in op geslecteerde bouwstenen uit niveau 2, en zo verder.
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-5/[Building Block View] in the arc42 documentation.
+Zie https://docs.arc42.org/section-5/[Building Block View] in de arc42 documentatie.
+
+****
+
+// === Whitebox Overall System
+=== Gehele whitebox Systeem
+
+[role="arc42help"]
+****
+// Here you describe the decomposition of the overall system using the following white box template.
+Hier wordt de decompositie van het gheele systeem beschreven aan de hand van het volgende 'white box' template.
+// It contains
+Hij bestaat uit
+
+//  * an overview diagram
+* een overzichts diagram
+//  * a motivation for the decomposition
+* een motivatie voor de decompositie
+//  * black box descriptions of the contained building blocks.
+* 'black box' beschrijvingen van ingesloten bouwstenen.
+// For these we offer you alternatives:
+Hiervoor zijn er verschillende alternatieven:
+//  ** use _one_ table for a short and pragmatic overview of all contained building blocks and their interfaces
+** gebruik _één_ tabel for een korte en pragmatisch overzicht van alle ingesloten bouwstenen en hun interfaces.
+//  ** use a list of black box descriptions of the building blocks according to the black box template (see below).
+** gebruik een lijst met 'black box' beschrijvingen van de bouwstenen aan de hand van het 'black box' template (zie hieronder).
+//  Depending on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a modeling tool).
+Afhankelijk van de gebruikte tool kan deze lijst in de vorm van een sub-hoofdstuk (in tekst bestanden), sub-pagina's (in een Wiki) of geneste elementen (in een modelleer tool) zijn.
+
+//  * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
+* (optioneel:) belangrijke interfaces die niet in de 'black box' templates van de bouwstenen worden uitgelegd maar desondanks van belang zijn om de 'white box' goed te kunnen begrijpen.
+// Since there are so many ways to specify interfaces why do not provide a specific template for them.
+Omdat er zo veel verschillende manieren zijn om interfaces te specificeren wordt er geen specifiek template aangeboden.
+//  In the worst case you have to specify and describe syntax, semantics, protocols, error handling, restrictions, versions, qualities, necessary compatibilities and many things more.
+In het ergste geval moeten syntax, semantiek, protocollen, error afhandeling, beperkingen, versies, kwaliteits attributen, benodigde compatibiliteit en vele andere zaken gespecificeerd en beschreven worden.
+// In the best case you will get away with examples or simple signatures.
+In het beste geval zijn voorbeelden of simpele beschrijvingen voldoende.
+
+****
+
+// _**<Overview Diagram>**_
+_**<Overzichts Diagram>**_
+
+// Motivation::
+Motivatie::
+
+// _<text explanation>_
+_<tekstuele uitleg>_
+
+
+// Contained Building Blocks::
+Ingesloten bouwstenen::
+// _<Description of contained building block (black boxes)>_
+_<Beschrijving van ingesloten bouwstenen ('black boxes')>_
+
+// Important Interfaces::
+Belangrijke Interfaces::
+// _<Description of important interfaces>_
+_<Beschrijving van belangrijke interfaces>_
+
+[role="arc42help"]
+****
+// Insert your explanations of black boxes from level 1:
+Voeg hier de uitleg van de 'black boxes' van niveau 1 toe:
+
+// If you use tabular form you will only describe your black boxes with name and responsibility according to the following schema:
+In tabel vorm moeten hier enkel de 'black boxes' met hun naam een verantwoordelijkheden worden beschreven:
+
+[cols="1,2" options="header"]
+|===
+// | **Name** | **Responsibility**
+| **Naam** | **Verantwoordelijkeid**
+// | _<black box 1>_ | _<Text>_
+| _<black box 1>_ | _<Tekst>_
+// | _<black box 2>_ | _<Text>_
+| _<black box 2>_ | _<Tekst>_
+|===
+
+
+
+// If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
+In het geval er een lijst met 'black box' beschrijvingen wordt gebruikt, vul dan een aparte 'black box' template in voor iedere belangrijke bouwsteen.
+// Its headline is the name of the black box.
+De kop bij die sectie is dan de naam van de specifieke 'black box'.
+****
+
+
+// ==== <Name black box 1>
+==== <Naam black box 1>
+
+[role="arc42help"]
+****
+// Here you describe <black box 1>
+Beschrijf hier <'black box' 1>
+// according the the following black box template:
+Aan de hand van de onderstaande 'black box' template:
+
+// * Purpose/Responsibility
+* Doel/Verantwoordelijkheid
+// * Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance characteristics.
+* Interface(s), als ze niet als aparte paragraven worden geadresseerd.
+Deze interface beschrijvingen kunnen kwaliteit en prestatie karakteristieken bevatten.
+// * (Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ....
+* (Optioneel) Kwaliteits-/Prestatie karakteristieken van de 'black box', bijvoorbeeld beschikbaarheid, run time gedrag, ....
+// * (Optional) directory/file location
+* (Optioneel) directories/bestand locaties
+// * (Optional) Fulfilled requirements (if you need traceability to requirements).
+* (Optioneel) Vervulde requirements (als er traceerbaarheid van de requirements is vereist)
+// * (Optional) Open issues/problems/risks
+* (Optioneel) Open issues/problemen/risico's
+****
+
+// _<Purpose/Responsibility>_
+_<Doel/Verantwoordelijkheid>_
+
+// _<Interface(s)>_
+_<Interface(s)>_
+
+// _<(Optional) Quality/Performance Characteristics>_
+_<((Optioneel) Kwaliteits-/Prestatie karakteristieken>_
+
+// _<(Optional) Directory/File Location>_
+_<(Optioneel) directories/bestand locaties>_
+
+// _<(Optional) Fulfilled Requirements>_
+_<(Optioneel) Vervulde requirements>_
+
+// _<(optional) Open Issues/Problems/Risks>_
+_<(Optioneel) Open issues/problemen/risico's>_
+
+
+// ==== <Name black box 2>
+=== <Naam black box 2>
+
+// _<black box template>_
+_<black box template>_
+
+// ==== <Name black box n>
+==== <Naam black box n>
+
+// _<black box template>_
+_<black box template>_
+
+
+// ==== <Name interface 1>
+==== <Naam interface 1>
+
+...
+
+// ==== <Name interface m>
+==== <Naam interface m>
+
+
+
+// === Level 2
+=== Niveau 2
+
+[role="arc42help"]
+****
+// Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.
+Hier kunnen de innerlijke structuren van (sommige) bouwstenen uit niveau 1 als 'white boxes' worden gespecificeerd.
+
+// You have to decide which building blocks of your system are important enough to justify such a detailed description.
+Er moet een keuze gemaakt worden voor welke bouwstenen het gerechtvaardigd is om zo'n gedetailleerde beschrijving te maken.
+// Please prefer relevance over completeness.
+Geeft de voorkeur aan relevantie boven compleetheid.
+// Specify important, surprising, risky, complex or volatile building blocks.
+Beschrijf belangrijke, verassende, risicovolle, complexe of vluchtige bouwstenen.
+// Leave out normal, simple, boring or standardized parts of your system
+Laat normale, simpele, saaie of gestandardiseerde delen van het systeem buiten beschouwing.
+****
+
+// ==== White Box _<building block 1>_
+==== White Box _<bouwsteen 1>_
+
+[role="arc42help"]
+****
+// ...describes the internal structure of _building block 1_.
+...beschrijft de interne structuur van _bouwsteen 1_.
+****
+
+_<white box template>_
+
+// ==== White Box _<building block 2>_
+==== White Box _<bouwsteen 2>_
+
+
+_<white box template>_
+
+...
+
+// ==== White Box _<building block m>_
+==== White Box _<bouwsteen m>_
+
+
+_<white box template>_
+
+
+
+// === Level 3
+=== Niveau 3
+
+[role="arc42help"]
+****
+// Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.
+Hier kan de interne structuur van (sommige) niveau 2 bouwstenen als 'white boxes' worden beschreven.
+
+// When you need more detailed levels of your architecture please copy this part of arc42 for additional levels.
+Als er meer gedetailleerde niveaus van de architectuur nodig zijn, kopieer dan dit deel van arc42 voor aanvullende niveaus.
+****
+
+
+// ==== White Box <_building block x.1_>
+==== White Box _<bouwsteen x.1>_
+
+[role="arc42help"]
+****
+// Specifies the internal structure of _building block x.1_.
+Specificeer de interne structuur van _bouwsteen x.1_.
+
+****
+
+
+_<white box template>_
+
+
+// ==== White Box <_building block x.2_>
+==== White Box _<bouwsteen x.2>_
+
+_<white box template>_
+
+
+
+// ==== White Box <_building block y.1_>
+==== White Box _<bouwsteen y.1>_
+
+_<white box template>_

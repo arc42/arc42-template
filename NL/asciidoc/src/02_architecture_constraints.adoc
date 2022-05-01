@@ -1,0 +1,35 @@
+[[section-architecture-constraints]]
+// == Architecture Constraints
+== Architectuur Beperkingen
+
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// Any requirement that constraints software architects in their freedom of design and implementation decisions or decision about the development process. 
+Iedere requirement die de sofware architecten in hun vrijheid met betrekking tot ontwerp, implementatie of het ontwikkel proces beperken.  
+// These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
+Het kan zijn dat deze beperkingen verder gaan dan de individuele systemen en van toepassing zijn op hele organisaties of bedrijven.
+
+// .Motivation
+.Motivatie
+// Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
+Architecten moeten weten waar ze vrij zijn in de ontwerp keuzes en waar ze zich aan beperkingen moeten houden.
+// Constraints must always be dealt with; they may be negotiable, though.
+Beperkingen moeten altijd onder ogen worden gezien; echter, het kan zijn dat er over te onderhandelen valt.
+
+// .Form
+.Vorm
+// Simple tables of constraints with explanations.
+Simpele tabellen met beperkingen en bijbehorende uitleg.
+// If needed you can subdivide them into technical constraints, organizational and political constraints and conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+Zo nodig opgedeeld in technische, organisatorische en politieke beperkingen en conventies (bijv. programmeer of versionering guidelines, documentatie of naamgevings conventies).
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
+Zie https://docs.arc42.org/section-2/[Architectuur Beperkingen] in de arc42 documentatie.
+
+****

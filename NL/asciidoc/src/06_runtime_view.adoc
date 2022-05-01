@@ -1,0 +1,75 @@
+[[section-runtime-view]]
+== Runtime View
+
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:
+De runtime view beschrijft concreet gedrag en de interacties tussen de bouwstenen van het systeem vanuit de volgende gebieden:
+
+// * important use cases or features: how do building blocks execute them?
+* belangrijke use cases of eigenschappen: op welke manier voeren de bouwstenen deze uit?
+// * interactions at critical external interfaces: how do building blocks cooperate with users and neighboring systems?
+* interactie bij kritieke externe interfaces: hoe werken bouwstenen samen met gebruikers en aanpalende systemen?
+// * operation and administration: launch, start-up, stop
+* operations en administrie: uitvoeren, starten, stoppen
+// * error and exception scenarios
+* error en uitzonderlijke (exception) scenarios
+
+// Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*.
+NOTE: Het primaire criterium bij de keuze van mogelijke scenarios (sequences, workflows) is de relevantie met betrekking tot de architectuur.
+// It is *not* important to describe a large number of scenarios.
+Het is uitdrukkelijk *niet* van belang om een groot aantal scenarios te beschrijven.
+// You should rather document a representative selection.
+Beschrijf liever een representatieve doorsnede.
+
+
+// .Motivation
+.Motivatie
+// You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
+Beschrijft hoe (instanties van) bouwstenen van het systeem hun taken uitvoeren en hoe ze 'at runtime' communiceren.
+
+// You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).
+De scenarios zullen hoofdzakelijk beschreven worden om de architectuur aan belanghebbenden te communiceren die minder behoefte of kunde hebben om statische modellen (bouwstenen view, deploy view) te lezen en te doorgronden.
+
+// .Form
+.Vorm
+// There are many notations for describing scenarios, e.g.
+Er zijn meerdere manieren om de schenarios vast te leggen, bijvoorbeeld
+
+// * numbered list of steps (in natural language)
+* (uitgeschreven) opsomming van de stappen
+// * activity diagrams or flow charts
+* activiteiten of flow diagrammen
+// * sequence diagrams
+* sequence diagrammen
+// * BPMN or EPCs (event process chains)
+* BPMN of EPCs (event process chains)
+// * state machines
+* state machines
+* ...
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
+Zie https://docs.arc42.org/section-6/[Runtime View] in de arc42 documentatie.
+
+****
+
+=== <Runtime Scenario 1>
+
+
+// * _<insert runtime diagram or textual description of the scenario>_
+* _<voeg een runtime diagram of een tekstuele beschrijving van het scenario toe>_
+// * _<insert description of the notable aspects of the interactions between the building block instances depicted in this diagram.>_
+* _<voeg een beschrijving toe van bijzondere aspecten van de interactie tussen de instanties van de bouwstenen die in dit diagram worden weergegeven>_
+
+=== <Runtime Scenario 2>
+
+=== ...
+
+=== <Runtime Scenario n>

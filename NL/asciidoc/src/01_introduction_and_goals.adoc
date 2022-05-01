@@ -1,0 +1,137 @@
+[[section-introduction-and-goals]]
+== Introductie en Doelen
+
+[role="arc42help"]
+****
+Beschrijft de relevante requirements en het krachtenveld waar software architecten en het development team rekening mee moeten houden.
+Die bestaan onder ander uit
+
+// * underlying business goals,
+* het begrijpen van de achterliggende doelen van de business, 
+// * essential features, 
+* essentiele features,
+// * essential functional requirements, 
+* essentiele functionele requirements, 
+// * quality goals for the architecture and
+* kwaliteits doelen voor de architectuur en
+//* relevant stakeholders and their expectations
+* relevante belanghebbenden en hun verwachtingen
+****
+
+// === Requirements Overview
+=== Requirements Overzicht
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// Short description of the functional requirements, driving forces, extract (or abstract) of requirements.
+Korte beschrijven van de functionele requirements, drijvende krachten, uittreksel (of samenvatting) van de requirements.
+// Link to (hopefully existing) requirements documents (with version number and information where to find it).
+Verwijzing naar de (hopelijk bestaande) requirements documentatie (met versie nummer en informatie waar deze te vinden is).
+
+
+// .Motivation
+.Motivatie
+// From the point of view of the end users a system is created or modified to
+// improve support of a business activity and/or improve the quality.
+Vanuit het perspectief van de eind gebruikers is een systeem ontwikkeld of aangepast om een business activiteit beter te ondersteunen en/of om de kwaliteit van die activiteit te verbeteren.
+
+// .Form
+.Vorm
+// Short textual description, probably in tabular use-case format.
+Korte textuele beschrijving, mogelijk in use-case tabel formaat.
+// If requirements documents exist this overview should refer to these documents.
+Dit overzichts document moet naar het requirements document verwijzen (als dat bestaat).
+
+// Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
+Houd deze uittreksels zo kort mogelijk. 
+Zoek een evenwicht tussen leesbaarheid van dit document en mogelijke dubbelingen met betrekking tot het requirements document.
+
+//.Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 documentation.
+Zie https://docs.arc42.org/section-1/[Introductie en Doelen] in de arc42 documentatie.
+
+****
+
+// === Quality Goals
+=== Kwaliteits Doelen
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. 
+De top drie (max vijf) kwaliteits doelen aan de architectuur waarvan het behalen van het grootste belang is voor de primaire belanghebbenden.
+
+// We really mean quality goals for the architecture. Don't confuse them with project goals.
+// They are not necessarily identical.
+We bedoelen hier echt kwaliteits doelen voor de architectuur.
+Niet te verwarren met project doelen.
+
+// Consider this overview of potential topics (based upon the ISO 25010 standard):
+Overweeg dit overzicht met mogelijke onderwerpen (gebaseerd op de ISO 25010 standaard):
+
+// image::01_2_iso-25010-topics-EN.png["Categories of Quality Requirements"]
+image::01_2_iso-25010-topics-EN.png["Categorieen van mogelijke Kwaliteits Requirements"]
+
+// .Motivation
+.Motivatie
+// You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 
+Het is belangrijk de kwaliteits doelen van je belangrijkste belanghebbenden te kennen omdat deze invloed hebben op fundamentele architectuur keuzes.
+// Make sure to be very concrete about these qualities, avoid buzzwords.
+Denk eraan heel concreet te zijn over deze kwaliteiten, vermijd modewoorden.
+// If you as an architect do not know how the quality of your work will be judged...
+Alsof je als architect niet weet hoe de kwaliteit van je werk beoordeeld zal worden...
+
+// .Form
+.Vorm
+// A table with quality goals and concrete scenarios, ordered by priorities
+Een tabel met kwaliteits doelen en concrete scenarios, gesorteerd op prioriteit.
+****
+
+// === Stakeholders
+=== Belanghebbenden
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
+Expliciet overzicht van belanghebbenden van het systeem, dat wil zeggen alle personen, rollen of oranisaties die
+
+// * should know the architecture
+* de architectuur moeten kennen
+// * have to be convinced of the architecture
+* van de architectuur overtuigd moeten worden
+// * have to work with the architecture or with code
+* met de architectuur of code moeten werken
+// * need the documentation of the architecture for their work
+* de documentatie van de architectuur nodig hebben voor hun werk
+// * have to come up with decisions about the system or its development
+* beslissingen moeten maken over het systeem of de ontwikkeling daarvan
+
+// .Motivation
+.Motivatie
+// You should know all parties involved in development of the system or affected by the system.
+Alle partijen die betrokken zijn bij de ontwikkeling of anderzinds geraakt worden door het systeem moeten bekend zijn.
+// Otherwise, you may get nasty surprises later in the development process.
+Anders kan dat later in het ontwikkelings proces tot nare verassingen zorgen.
+// These stakeholders determine the extent and the level of detail of your work and its results.
+Deze belanghebbenden bepalen in een grote mate de omvang en het detail niveau van de werkzaameheden en de resultaten.
+
+// .Form
+.Vorm
+// Table with role names, person names, and their expectations with respect to the architecture and its documentation.
+Tabel met de rollen, personen en hun verwachting met betrekking tot de architectuur en haar documentatie.
+****
+
+[options="header",cols="1,2,2"]
+|===
+// |Role/Name|Contact|Expectations
+|Rol/Naam|Contact persoon|Verwachtingen
+| _<Rol-1>_ | _<Contact-1>_ | _<Verwachting-1>_
+| _<Rol-2>_ | _<Contact-2>_ | _<Verwachting-2>_
+|===

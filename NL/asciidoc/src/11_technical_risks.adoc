@@ -1,0 +1,33 @@
+[[section-technical-risks]]
+// == Risks and Technical Debts
+== Risico's en Technical Debt
+
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// A list of identified technical risks or technical debts, ordered by priority
+Een op prioriteit gesorteerde lijst, met bekende technische risico's en technical dept.
+
+// .Motivation
+.Motivatie
+// “Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.)
+“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.)
+
+// This should be your motto for systematic detection and evaluation of risks and technical debts in the architecture, which will be needed by management stakeholders (e.g. project managers, product owners) as part of the overall risk analysis and measurement planning.
+Dit zou het motto moeten zijn bij het systematisch bepalen en evalueren van risico's en technical dept in de architectuur.
+Management stakeholder (bijvoorbeeld project managers of project owners) hebben dit inzicht nodig om keuzes te kunnen maken met betrekking tot risico en planning.
+
+// .Form
+.Vorm
+// List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
+Lijst van risico's en/of technical dept eventueel aangevuld met maatregelen om deze te minimaliseren, verzachten of te vermijden.
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-11/[Risks and Technical Debt] in the arc42 documentation.
+Zie https://docs.arc42.org/section-11/[Risks and Technical Debt] in de arc42 documentatie.
+
+****

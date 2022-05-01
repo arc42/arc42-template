@@ -1,0 +1,55 @@
+[[section-glossary]]
+// == Glossary
+== Woordenlijst
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// The most important domain and technical terms that your stakeholders use when discussing the system.
+De belangrijkste domein en technische termen die belanghebbenden gebruiken tijdens het bespreken van het systeem.
+
+// You can also see the glossary as source for translations if you work in multi-language teams.
+De woordenlijst kan ook als bron voor vertaalde termen worden gebruikt bij meertalige teams.
+
+// .Motivation
+.Motivatie
+// You should clearly define your terms, so that all stakeholders
+Termen moeten helder worden gedefinieerd zodat alle belanghebbenden
+
+// * have an identical understanding of these terms
+* een gemeenschappelijk en eenduidig begrip hebben van deze termen
+// * do not use synonyms and homonyms
+* geen gebruik maken van synoniemen of homoniemen
+
+// .Form
+.Vorm
+// * A table with columns <Term> and <Definition>.
+* Een tabel met kolommen <Term> en <Definitie>.
+// * Potentially more columns in case you need translations.
+* Eventueel meerdere kolommen als er vertalingen nodig zijn.
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
+See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
+
+****
+
+[cols="e,2e" options="header"]
+|===
+// |Term |Definition
+| Term | Definitie
+
+// |<Term-1>
+// |<definition-1>
+| <Term-1>
+| <definitie-1>
+
+// |<Term-2>
+// |<definition-2>
+| <Term-2>
+| <definitie-2>
+|===

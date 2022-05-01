@@ -1,0 +1,48 @@
+[[section-design-decisions]]
+// == Architecture Decisions
+== Architectuur Beslissingen
+
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// Important, expensive, large scale or risky architecture decisions including rationals.
+Belangrijke, kostbare, ver reikende of risicovolle beslissingen die betrekking hebben op de architectuur met bijbehorende motivering.
+// With "decisions" we mean selecting one alternative based on given criteria.
+Met "beslissingen" wordt bedoeld dat, op basis van gegeven criteria, een alternatief wordt gekozen.
+
+// Please use your judgement to decide whether an architectural decision should be documented here in this central section or whether you better document it locally (e.g. within the white box template of one building block).
+Beoordeel zelf of de architectuur keuze op deze centrale plek moet worden vastgelegd of in de gespecialiseerde context (bijvoorbeeld binnen een "white box" template van een bouwsteen).
+
+// Avoid redundancy.
+Vermeid doublures.
+// Refer to section 4, where you already captured the most important decisions of your architecture.
+Verwijs naar hoodstuk 4 als daar al belangrijke architectuur beslissingen zijn vastgelegd.
+
+// .Motivation
+.Motivatie
+// Stakeholders of your system should be able to comprehend and retrace your decisions.
+Belanghebbende van het systeem moeten in staat zijn om de gemaakte keuzes te begrijpen en te herleiden.
+
+// .Form
+.Vorm
+// Various options:
+Er zijn verschillende opties:
+
+// * ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) for every important decision
+* ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) voor iedere belangrijke beslissing;
+// * List or table, ordered by importance and consequences or:
+* Lijst of tabel, gesorteerd op belang en consequenties of;
+// * more detailed in form of separate sections per decision
+* meer gedetaileerd in de vorm van een paragraaf per gemaakte beslissing
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-9/[Architecture Decisions] in the arc42 documentation.
+Zie https://docs.arc42.org/section-9/[Architecture Decisions] in de arc42 documentatie.
+// There you will find links and examples about ADR.
+Daar zijn ook links en voorbeelden van een ADR te vinden.
+
+****

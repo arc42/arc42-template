@@ -1,0 +1,109 @@
+[[section-concepts]]
+// == Cross-cutting Concepts
+== Cross-cutting Concepten
+
+
+[role="arc42help"]
+****
+// .Content
+.Inhoud
+// This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (= cross-cutting) of your system.
+Dit deel beschrijft uitgangspunten en concepten die relevant zijn voor meerdere delen (=cross-cutting) van het systeem.
+// Such concepts are often related to multiple building blocks.
+Dergelijke concepten zijn vaak van toepassing op meerdere bouwstenen.
+// They can include many different topics, such as
+Ze kunnen meerdere onderwerpen beslaan, zoals
+
+// * models, especially domain models
+* modellen, in het bijzonder domein modellen
+// * architecture or design patterns
+* architectuur of design patterns
+// * rules for using specific technology
+* regels om specifiek technologie te gebruiken
+// * principal, often technical decisions of an overarching (= cross-cutting) nature
+* uitgangspunten, vaak technische afspraken van overkoepelende aard (= cross-cutting) aard
+// * implementation rules
+* implementatie regels
+
+
+// .Motivation
+.Motivatie
+// Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. 
+Concepten vormen de basis van _conceptuele integriteit_ (consistentie en homogeniteit) van de architectuur.
+// Thus, they are an important contribution to achieve inner qualities of your system.
+Zodoende vormen ze een belangrijk hulpmiddel om de innerlijke kenmerken van de architectuur vast te leggen.
+
+// Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety. 
+Sommige van deze concepten kunnen niet toegekend worden aan individuele bouwstenen, e.g. security of veiligheid.
+
+// .Form
+.Vorm
+// The form can be varied:
+De vorm kan varieeren:
+
+// * concept papers with any kind of structure
+* concept papers die een structuur beschrijven 
+// * cross-cutting model excerpts or scenarios using notations of the architecture views
+* cross-cutting model uittreksels of scenarios waarbij gebruik wordt gemaakt van architectuur views
+// * sample implementations, especially for technical concepts
+* voorbeeld implementaties, specifiek voor technische concepten
+// * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
+* referenties naar typerend gebruik van standaard frameworks (e.g. Hibernate gebruiken voor object/relational mapping)
+
+// .Structure
+.Structuur
+// A potential (but not mandatory) structure for this section could be:
+Een mogelijke (maar niet verplicht) structuur van deze paragraaf zou kunnen bestaan uit:
+
+// * Domain concepts
+* Domein concepten
+// * User Experience concepts (UX)
+* User Experience concepten (UX)
+// * Safety and security concepts
+* Veiligheid en security concepten
+// * Architecture and design patterns
+* Architectuur en design patterns
+// * "Under-the-hood"
+* "Under-de-motorkap"
+// * development concepts
+* ontwikkel concepten
+// * operational concepts
+* operationele concepten
+
+// Note: it might be difficult to assign individual concepts to one specific topic on this list.
+NOTE: het kan moeilijk zijn om individuele concepten toe te kennen aan een specifiek onderwerp van deze lijst
+
+// image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+image::08-Crosscutting-Concepts-Structure-EN.png["Mogelijke onderwerpen voor cross-cutting concepten"]
+
+
+
+// .Further Information
+.Verdere informatie
+
+// See https://docs.arc42.org/section-8/[Concepts] in the arc42 documentation.
+Zie https://docs.arc42.org/section-8/[Concepts] in de arc42 documentatie.
+****
+
+
+// === _<Concept 1>_
+=== _<Concept 1>_
+
+// _<explanation>_
+_<uitleg>_
+
+
+
+// === _<Concept 2>_
+=== _<Concept 2>_
+
+// _<explanation>_
+_<uitleg>_
+
+...
+
+// === _<Concept n>_
+=== _<Concept n>_
+
+// _<explanation>_
+_<uitleg>_

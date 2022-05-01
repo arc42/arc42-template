@@ -1,0 +1,48 @@
+[[section-solution-strategy]]
+// == Solution Strategy
+== Oplossing Strategie
+
+
+[role="arc42help"]
+****
+// .Contents
+.Inhoud
+// A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. 
+Een korte samenvatting en uitleg van de fundamentele beslissingen en oplossings strategieen die de systeem architectuur vormen.
+// It includes
+Die bestaan uit onder andere
+
+// * technology decisions
+* beslissingen met betrekking tot technologie
+// * decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
+* beslissingen over de top-level decompositie van het systeem, bijvoorbeeld het gebruik van een architectuur pattern of een design pattern
+// * decisions on how to achieve key quality goals
+* beslissingen over hoe de meest belangrijke kwaliteits doelen behaald zullen worden
+// * relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* relevante organisatorische beslissingen, bijvoorbeeld de keuze van een onwikkel proces of het delegeren van bepaalde taken aan derden.
+
+// .Motivation
+.Motivatie
+// These decisions form the cornerstones for your architecture.
+Deze beslissingen vormen het fundament van de architectuur.
+// They are the foundation for many other detailed decisions or implementation rules.
+Ze vormen de basis waarop vele andere gedetailleerde beslissingen of implemenatie regels worden gebaseerd.
+
+// .Form
+.Vorm
+// Keep the explanations of such key decisions short.
+Hou de uitleg van deze fundamentele beslissingen kort.
+
+// Motivate what was decided and why it was decided that way, based upon problem statement, quality goals and key constraints.
+Leg de motivatie en reden waarom van de beslissingen zo zijn genomen vast, gebaseerd op een probleem beschrijving, kwaliteitsdoelen en de belangrijkste kaders.
+// Refer to details in the following sections.
+Verwijs naar details in de volgende secties.
+
+
+// .Further Information
+.Verdere Informatie
+
+// See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
+Zie https://docs.arc42.org/section-4/[Solution Strategy] in de arc42 documentatie.
+
+****
