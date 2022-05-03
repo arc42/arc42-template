@@ -1,0 +1,91 @@
+[[section-introduction-and-goals]]
+== Introductie en Doelen
+
+[role="arc42help"]
+****
+Beschrijft de relevante requirements en het krachtenveld waar software architecten en het development team rekening mee moeten houden.
+Die bestaan onder ander uit
+
+* het begrijpen van de achterliggende doelen van de business, 
+* essentiele features,
+* essentiele functionele requirements, 
+* kwaliteits doelen voor de architectuur en
+* relevante belanghebbenden en hun verwachtingen
+****
+
+=== Requirements Overzicht
+
+[role="arc42help"]
+****
+.Inhoud
+Korte beschrijven van de functionele requirements, drijvende krachten, uittreksel (of samenvatting) van de requirements.
+Verwijzing naar de (hopelijk bestaande) requirements documentatie (met versie nummer en informatie waar deze te vinden is).
+
+
+.Motivatie
+Vanuit het perspectief van de eind gebruikers is een systeem ontwikkeld of aangepast om een business activiteit beter te ondersteunen en/of om de kwaliteit van die activiteit te verbeteren.
+
+.Vorm
+Korte textuele beschrijving, mogelijk in use-case tabel formaat.
+Dit overzichts document moet naar het requirements document verwijzen (als dat bestaat).
+
+Houd deze uittreksels zo kort mogelijk. 
+Zoek een evenwicht tussen leesbaarheid van dit document en mogelijke dubbelingen met betrekking tot het requirements document.
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-1/[Introductie en Doelen] in de arc42 documentatie.
+
+****
+
+=== Kwaliteits Doelen
+
+[role="arc42help"]
+****
+.Inhoud
+De top drie (max vijf) kwaliteits doelen aan de architectuur waarvan het behalen van het grootste belang is voor de primaire belanghebbenden.
+
+We bedoelen hier echt kwaliteits doelen voor de architectuur.
+Niet te verwarren met project doelen.
+
+Overweeg dit overzicht met mogelijke onderwerpen (gebaseerd op de ISO 25010 standaard):
+
+image::01_2_iso-25010-topics-EN.png["Categorieen van mogelijke Kwaliteits Requirements"]
+
+.Motivatie
+Het is belangrijk de kwaliteits doelen van je belangrijkste belanghebbenden te kennen omdat deze invloed hebben op fundamentele architectuur keuzes.
+Denk eraan heel concreet te zijn over deze kwaliteiten, vermijd modewoorden.
+Alsof je als architect niet weet hoe de kwaliteit van je werk beoordeeld zal worden...
+
+.Vorm
+Een tabel met kwaliteits doelen en concrete scenarios, gesorteerd op prioriteit.
+****
+
+=== Belanghebbenden
+
+[role="arc42help"]
+****
+.Inhoud
+Expliciet overzicht van belanghebbenden van het systeem, dat wil zeggen alle personen, rollen of oranisaties die
+
+* de architectuur moeten kennen
+* van de architectuur overtuigd moeten worden
+* met de architectuur of code moeten werken
+* de documentatie van de architectuur nodig hebben voor hun werk
+* beslissingen moeten maken over het systeem of de ontwikkeling daarvan
+
+.Motivatie
+Alle partijen die betrokken zijn bij de ontwikkeling of anderzinds geraakt worden door het systeem moeten bekend zijn.
+Anders kan dat later in het ontwikkelings proces tot nare verassingen zorgen.
+Deze belanghebbenden bepalen in een grote mate de omvang en het detail niveau van de werkzaameheden en de resultaten.
+
+.Vorm
+Tabel met de rollen, personen en hun verwachting met betrekking tot de architectuur en haar documentatie.
+****
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Naam|Contact persoon|Verwachtingen
+| _<Rol-1>_ | _<Contact-1>_ | _<Verwachting-1>_
+| _<Rol-2>_ | _<Contact-2>_ | _<Verwachting-2>_
+|===

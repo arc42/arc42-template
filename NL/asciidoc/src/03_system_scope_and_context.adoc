@@ -1,0 +1,76 @@
+[[section-system-scope-and-context]]
+== Systeem Scope en Context
+
+
+[role="arc42help"]
+****
+.Inhoud
+De systeem scope en context maakt - zoals de naam suggereert - een onderscheid tussen het eigen systeem (d.w.z. de scope van het systeem dat wordt beschreven) en alle partners waarmee wordt gecommuniceerd (buur systemen en gebruikers, met andere woorden, de context van het systeem).
+Hiermee worden externe interfaces gedefineerd.
+
+Maak, als het nodig is, onderscheid tussen business context (domein specifieke inputs en outputs) en technische context (kanalen, protocollen, hardware).
+
+.Motivatie
+De domein en technische interfaces met communicatie partners horen bij meest kritieke aspecten van het systeem.
+Wees er zeker van dat deze volledig te doorgronden.
+
+.Vorm
+Verschillend opties:
+
+* Context diagrammen
+* Lijst van communicatie partners en bijbehorende interfaces.
+
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-3/[Context en Scope] in de arc42 documentatie.
+
+****
+
+
+=== Business Context
+
+[role="arc42help"]
+****
+.Inhoud
+Specificatie van *alle* communicatie partners (gebruikers, IT-systemen, ...) met uitleg van domein specifieke inputs en outputs of interfaces.
+Het is eventueel mogelijk om domein specifieke formaten of communicatie protocollen toe te voegen.
+
+.Motivatie
+Alle belanghebbenden moeten begrijpen welke data er uitgewisseld wordt met de omgeving van het systeem.
+
+.Vorm
+Alle soorten diagrammen die het systeem als een black box weergeven en die de domein interfaces naar communicatie partners laten zien. 
+
+Een tabel vorm zou als alternatief (of toevoeging) gebruikt kunnen worden.
+De naam van het systeem is de titel van de tabel.
+De drie kolommen bevatten de naam van de communicatie partner, de inputs en de outputs.
+
+****
+
+**<Diagram of Tabel>**
+
+**<optioneel: Uitleg van de externe domein interfaces>**
+
+=== Technische Context
+
+[role="arc42help"]
+****
+.Inhoud
+Technische interfaces (kanalen en mechanismen) die het systeem met haar omgeving verbind.
+Naast een mapping van domein specifieke input/output naar kanalen, dat wil zeggen, een uitleg welke I/O welke kanalen gebruikt.
+
+.Motivatie
+Veel belanghebbenden maken beslisisingen met betrekkeing tot de architectuur gebaseerd op de technische interfaces tussen het systeem en haar context.
+Met name infrastructuur of hardware ontwerpers beslissen aan de hand van deze technische interfaces.
+
+.Vorm
+Bijvoorbeeld UML deployment diagrammen die de kanalen naar naburige systemen beschrijven, gecombineerd met mapping tabellen die de relatie tussen de kanalen en de input/output tonen.
+
+****
+
+**<Diagram of Tabel>**
+
+**<optioneel: Uitleg van technische interfaces>**
+
+**<Mapping Input/Output naar kanalen>**

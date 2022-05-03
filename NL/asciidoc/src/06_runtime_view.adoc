@@ -1,0 +1,52 @@
+[[section-runtime-view]]
+== Runtime View
+
+
+[role="arc42help"]
+****
+.Inhoud
+De runtime view beschrijft concreet gedrag en de interacties tussen de bouwstenen van het systeem vanuit de volgende gebieden:
+
+* belangrijke use cases of eigenschappen: op welke manier voeren de bouwstenen deze uit?
+* interactie bij kritieke externe interfaces: hoe werken bouwstenen samen met gebruikers en aanpalende systemen?
+* operations en administrie: uitvoeren, starten, stoppen
+* error en uitzonderlijke (exception) scenarios
+
+NOTE: Het primaire criterium bij de keuze van mogelijke scenarios (sequences, workflows) is de relevantie met betrekking tot de architectuur.
+Het is uitdrukkelijk *niet* van belang om een groot aantal scenarios te beschrijven.
+Beschrijf liever een representatieve doorsnede.
+
+
+.Motivatie
+Beschrijft hoe (instanties van) bouwstenen van het systeem hun taken uitvoeren en hoe ze 'at runtime' communiceren.
+
+De scenarios zullen hoofdzakelijk beschreven worden om de architectuur aan belanghebbenden te communiceren die minder behoefte of kunde hebben om statische modellen (bouwstenen view, deploy view) te lezen en te doorgronden.
+
+.Vorm
+Er zijn meerdere manieren om de schenarios vast te leggen, bijvoorbeeld
+
+* (uitgeschreven) opsomming van de stappen
+* activiteiten of flow diagrammen
+* sequence diagrammen
+* BPMN of EPCs (event process chains)
+* state machines
+* ...
+
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-6/[Runtime View] in de arc42 documentatie.
+
+****
+
+=== <Runtime Scenario 1>
+
+
+* _<voeg een runtime diagram of een tekstuele beschrijving van het scenario toe>_
+* _<voeg een beschrijving toe van bijzondere aspecten van de interactie tussen de instanties van de bouwstenen die in dit diagram worden weergegeven>_
+
+=== <Runtime Scenario 2>
+
+=== ...
+
+=== <Runtime Scenario n>

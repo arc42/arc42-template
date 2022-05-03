@@ -1,0 +1,18 @@
+
+.Vertalingen
+
+|===
+| EN term | NL term
+
+| Abstract | Beschrijving
+| Building block | Bouwsteen
+| Constraints | Beperkingen
+| Channel | Kanaal
+| Excerpt(s) | Uittreksel(s)
+| Extract | Samenvatting
+| Feature | Eigenschap
+| Key quality goals | Meest balangrijke kwaliteits doelen
+| Level | Niveau
+| Stakeholder(s) | Belanghebbende(n)
+
+|===

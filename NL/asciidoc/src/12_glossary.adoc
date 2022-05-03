@@ -1,0 +1,37 @@
+[[section-glossary]]
+== Woordenlijst
+
+[role="arc42help"]
+****
+.Inhoud
+De belangrijkste domein en technische termen die belanghebbenden gebruiken tijdens het bespreken van het systeem.
+
+De woordenlijst kan ook als bron voor vertaalde termen worden gebruikt bij meertalige teams.
+
+.Motivatie
+Termen moeten helder worden gedefinieerd zodat alle belanghebbenden
+
+* een gemeenschappelijk en eenduidig begrip hebben van deze termen
+* geen gebruik maken van synoniemen of homoniemen
+
+.Vorm
+* Een tabel met kolommen <Term> en <Definitie>.
+* Eventueel meerdere kolommen als er vertalingen nodig zijn.
+
+
+.Verdere Informatie
+
+See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
+
+****
+
+[cols="e,2e" options="header"]
+|===
+| Term | Definitie
+
+| <Term-1>
+| <definitie-1>
+
+| <Term-2>
+| <definitie-2>
+|===

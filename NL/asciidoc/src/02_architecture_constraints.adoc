@@ -1,0 +1,23 @@
+[[section-architecture-constraints]]
+== Architectuur Beperkingen
+
+
+[role="arc42help"]
+****
+.Inhoud
+Iedere requirement die de sofware architecten in hun vrijheid met betrekking tot ontwerp, implementatie of het ontwikkel proces beperken.  
+Het kan zijn dat deze beperkingen verder gaan dan de individuele systemen en van toepassing zijn op hele organisaties of bedrijven.
+
+.Motivatie
+Architecten moeten weten waar ze vrij zijn in de ontwerp keuzes en waar ze zich aan beperkingen moeten houden.
+Beperkingen moeten altijd onder ogen worden gezien; echter, het kan zijn dat er over te onderhandelen valt.
+
+.Vorm
+Simpele tabellen met beperkingen en bijbehorende uitleg.
+Zo nodig opgedeeld in technische, organisatorische en politieke beperkingen en conventies (bijv. programmeer of versionering guidelines, documentatie of naamgevings conventies).
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-2/[Architectuur Beperkingen] in de arc42 documentatie.
+
+****

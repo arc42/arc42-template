@@ -1,0 +1,31 @@
+[[section-solution-strategy]]
+== Oplossing Strategie
+
+
+[role="arc42help"]
+****
+.Inhoud
+Een korte samenvatting en uitleg van de fundamentele beslissingen en oplossings strategieen die de systeem architectuur vormen.
+Die bestaan uit onder andere
+
+* beslissingen met betrekking tot technologie
+* beslissingen over de top-level decompositie van het systeem, bijvoorbeeld het gebruik van een architectuur pattern of een design pattern
+* beslissingen over hoe de meest belangrijke kwaliteits doelen behaald zullen worden
+* relevante organisatorische beslissingen, bijvoorbeeld de keuze van een onwikkel proces of het delegeren van bepaalde taken aan derden.
+
+.Motivatie
+Deze beslissingen vormen het fundament van de architectuur.
+Ze vormen de basis waarop vele andere gedetailleerde beslissingen of implemenatie regels worden gebaseerd.
+
+.Vorm
+Hou de uitleg van deze fundamentele beslissingen kort.
+
+Leg de motivatie en reden waarom van de beslissingen zo zijn genomen vast, gebaseerd op een probleem beschrijving, kwaliteitsdoelen en de belangrijkste kaders.
+Verwijs naar details in de volgende secties.
+
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-4/[Solution Strategy] in de arc42 documentatie.
+
+****

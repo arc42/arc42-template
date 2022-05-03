@@ -1,0 +1,31 @@
+[[section-design-decisions]]
+== Architectuur Beslissingen
+
+
+[role="arc42help"]
+****
+.Inhoud
+Belangrijke, kostbare, ver reikende of risicovolle beslissingen die betrekking hebben op de architectuur met bijbehorende motivering.
+Met "beslissingen" wordt bedoeld dat, op basis van gegeven criteria, een alternatief wordt gekozen.
+
+Beoordeel zelf of de architectuur keuze op deze centrale plek moet worden vastgelegd of in de gespecialiseerde context (bijvoorbeeld binnen een "white box" template van een bouwsteen).
+
+Vermijd doublures.
+Verwijs naar hoodstuk 4 als daar al belangrijke architectuur beslissingen zijn vastgelegd.
+
+.Motivatie
+Belanghebbende van het systeem moeten in staat zijn om de gemaakte keuzes te begrijpen en te herleiden.
+
+.Vorm
+Er zijn verschillende opties:
+
+* ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) voor iedere belangrijke beslissing;
+* Lijst of tabel, gesorteerd op belang en consequenties of;
+* meer gedetaileerd in de vorm van een paragraaf per gemaakte beslissing
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-9/[Architecture Decisions] in de arc42 documentatie.
+Daar zijn ook links en voorbeelden van een ADR te vinden.
+
+****

@@ -1,0 +1,70 @@
+[[section-quality-scenarios]]
+== Kwaliteits Requirements
+
+
+[role="arc42help"]
+****
+
+.Inhoud
+Dit hoofdstuk bevat alle kwaliteits requirements als een kwaliteits boom met scenarios.
+De belangrijkste zijn al beschreven in paragraaf 1.2 (kwaliteits doelen.)
+
+Op deze plaats kunnen ook lagere prioriteit kwaliteits requirements worden vastgelegd die, als ze niet (volledig) worden gerealiseerd, geen hoog risico vormen.
+
+.Motivatie
+Omdat kwaliteits requirements grote invloed invloed hebben op architectuur beslissingen is het van belang om voor iedere belanghebbende, in concrete en meetbare termen, te begrijpen wat echt van belang is. 
+
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-10/[Quality Requirements] in de arc42 documentatie.
+
+****
+
+=== Kwaliteits Boom
+
+[role="arc42help"]
+****
+.Inhoud
+De kwaliteits boom (zoals gedefinieerd in ATAM - Architecture Analysis Method) met kwaliteit/evaluatie scenarios als bladeren.
+
+.Motivatie
+De geprioriteerde boomstructuur bied overzicht over, een mogelijk groot aantal, kwaliteits requirements.
+
+.Vorm
+De kwaliteitsboom is een hoog niveau overzicht van de kwaliteits doelen en requirements:
+
+* verdieping van de term "kwaliteit" in de vorm van een boom structuur
+Gebruik daarbij "kwaliteit" als de root van de boom.
+* een mind map met kwaliteit categorieen als eerste takken
+
+De boom moet in elk geval verwijzingen/links bevatten naar de scenarios in de volgende paragraaf.
+
+
+****
+
+=== Kwaliteits Scenarios
+
+[role="arc42help"]
+****
+.Inhoud
+Het concreet maken van (soms vage of impliciete) kwaliteits requirements gebruik makend van (kwaliteits) scenarios.
+
+Deze scenarios beschrijven wat er moet gebeuren als het systeem wordt geconfronteerd met een stimulus.
+
+Voor architecten zijn er twee soorten scenarios van belang:
+
+* Gebruik scenarios (ook wel applicatie scenarios of use case scenarios genoemd) beschrijven het runtime gedrag van het systeem naar aanleiding van een bepaalde stimulus.
+Dit is inclusief scenarios die de efficientie of performance van het systeem beschrijven.
+Bijvoorbeeld: Het systeem reageert binnen een seconde op een request.
+* Verander scenarios beschrijven modificaties aan het systeem, of aan haar onmiddelijke omgeving
+Bijvoorbeeld: Er moet aanvullende functionaliteit geimplementeerd worden of de eis voor een kwaliteitskenmerk verandert.
+
+.Motivatie
+Scenarios maken kwaliteits requirements concreet en maken het daarmee eenvoudiger om te meten of te bepalen of ze vervuld worden.
+
+Vooral als er methodes als ATAM worden gebruikt is het van belang om de kwaliteits doelen (uit paragraaf 1.2) tot op het niveau van scenarios die besproken en bediscussieerd kunnen worden, te beschrijven.
+
+.Vorm
+Lijst of vrije tekst vorm.
+****

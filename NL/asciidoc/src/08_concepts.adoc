@@ -1,0 +1,70 @@
+[[section-concepts]]
+== Cross-cutting Concepten
+
+
+[role="arc42help"]
+****
+.Inhoud
+Dit deel beschrijft uitgangspunten en concepten die relevant zijn voor meerdere delen (=cross-cutting) van het systeem.
+Dergelijke concepten zijn vaak van toepassing op meerdere bouwstenen.
+Ze kunnen meerdere onderwerpen beslaan, zoals
+
+* modellen, in het bijzonder domein modellen
+* architectuur of design patterns
+* regels om specifiek technologie te gebruiken
+* uitgangspunten, vaak technische afspraken van overkoepelende aard (= cross-cutting) aard
+* implementatie regels
+
+
+.Motivatie
+Concepten vormen de basis van _conceptuele integriteit_ (consistentie en homogeniteit) van de architectuur.
+Zodoende vormen ze een belangrijk hulpmiddel om de innerlijke kenmerken van de architectuur vast te leggen.
+
+Sommige van deze concepten kunnen niet toegekend worden aan individuele bouwstenen, e.g. security of veiligheid.
+
+.Vorm
+De vorm kan varieeren:
+
+* concept papers die een structuur beschrijven 
+* cross-cutting model uittreksels of scenarios waarbij gebruik wordt gemaakt van architectuur views
+* voorbeeld implementaties, specifiek voor technische concepten
+* referenties naar typerend gebruik van standaard frameworks (e.g. Hibernate gebruiken voor object/relational mapping)
+
+.Structuur
+Een mogelijke (maar niet verplicht) structuur van deze paragraaf zou kunnen bestaan uit:
+
+* Domein concepten
+* User Experience concepten (UX)
+* Veiligheid en security concepten
+* Architectuur en design patterns
+* "Under-de-motorkap"
+* ontwikkel concepten
+* operationele concepten
+
+NOTE: het kan moeilijk zijn om individuele concepten toe te kennen aan een specifiek onderwerp van deze lijst
+
+image::08-Crosscutting-Concepts-Structure-EN.png["Mogelijke onderwerpen voor cross-cutting concepten"]
+
+
+
+.Verdere informatie
+
+Zie https://docs.arc42.org/section-8/[Concepts] in de arc42 documentatie.
+****
+
+
+=== _<Concept 1>_
+
+_<uitleg>_
+
+
+
+=== _<Concept 2>_
+
+_<uitleg>_
+
+...
+
+=== _<Concept n>_
+
+_<uitleg>_

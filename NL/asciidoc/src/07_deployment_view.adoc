@@ -1,0 +1,95 @@
+[[section-deployment-view]]
+
+
+== Deployment View
+
+[role="arc42help"]
+****
+.Inhoud
+De deployment view beschrijft:
+
+1. de benodigede technische infrastructuur om het systeem uit te kunnen voeren, met infrastructurele elementen zoals geografische locatie, omgeving, computers, processors, kanalen en netwerk topologie als ook andere infrastructurele elementen; 
+2. mapping van (software) bouwstenen naar infrastructuur elementen.
+
+Vaak worden systeem in verschillende omgevingen gedraaid, e.g. ontwikkel omgeving, test omgeving, productie omgeving.
+In zulke gevallen moeten alle relevevante omgevingen worden gedocumenteerd.
+
+In het bijzonder als de software wordt uitgevoerd op een gedistribueerd systeem, met meer dan een computer, processor, server of container _of_ als er gebruik wordt gemaakt van zelf ontworpen hardware en/of chips, is het van belang om de deployment view vast te leggen.
+
+Vanuit een software perspectief is het voldoende om alleen die elementen van de infrastrucuur vast te leggen die nodig zijn om de deployment view van de bouwstenen te tonen.
+Hardware architecten kunnen verder gaan en de infrastruur beschrijven tot het detail niveau dat voor hun passend is.
+
+.Motivatie
+Software draait niet zonder hardware.
+Deze onderliggende infrastructuur heeft invloed om het systeem en/of sommige cross-cutting concepten.
+Daarom is het van belang kennis te hebben van de infrastructuur.
+
+.Vorm
+
+Mogelijk is er op het hoogste niveau al een deployment diagram opgenomen in paragraaf 3.2. als technische context met de eigen infrastructuur als 1 "black box".
+
+In deze paragraaf kan worden ingezoomd op deze "black box" met aanvullende deployment diagrammen:
+
+* UML bied deployment diagrammen om die view weer te geven.
+Gebruik deze, eventueel met geneste diagrammen, als de infrastructuur ingewikkelder is.
+* Als de (hardware) belanghebbenden er de voorkeur aan geven kunnen ander type diagrammen gebruikt worden.
+Gebruik passende diagrammen om de nodes en kanalen van de infrastructuur weer te geven.
+
+
+.Verdere Informatie
+
+Zie https://docs.arc42.org/section-7/[Deployment View] in de arc42 documentatie.
+
+****
+
+=== Infrastructuur Niveau 1
+
+[role="arc42help"]
+****
+Beschrijf (normaliter in een combinatie van diagrammen, tabellen en text):
+
+* distributie van het systeem over meerdere locaties, omgevingen, computers, processors, .., als ook de fysieke verbindingen ertussen
+* verantwoording of motivatie voor deze deployment strucuur
+* kwaliteit en/of performance attributen van deze infrastructuur
+*  mapping van software artifacten naar elementen van deze infrastructuur
+
+Als er sprake is van meerdere omgevingen of alternatieve deployments kopieer en pas deze paragraaf van arc42 aan voor alle relevente omgevingen. 
+
+****
+
+_**<Overzichts Diagram>**_
+
+Motivatie::
+
+_<uitleg in tekstuele vorm>_
+
+Kwaliteit en/of Performance Eigenschappen::
+
+_<uitleg in tekstuele vorm>_
+
+Mapping van Bouwstenen naar Infrastructuur::
+_<beschrijving van de mapping>_
+
+
+=== Infrastructuur Niveau 2
+
+[role="arc42help"]
+****
+Hier kunnen de interne structuren van (sommige) infrastructuur elementen uit niveau 1 worden toegevoegd.
+
+Kopieer de structuur van niveau 1 voor ieder geselecteerd element.
+****
+
+==== _<Infrastructuur Element 1>_
+
+_<diagram + uitleg>_
+
+==== _<Infrastructuur Element 2>_
+
+_<diagram + uitleg>_
+
+...
+
+==== _<Infrastructuur Element n>_
+
+_<diagram + uitleg>_
