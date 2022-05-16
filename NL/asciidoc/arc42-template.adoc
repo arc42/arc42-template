@@ -4,6 +4,10 @@
 // ====================================
 
 = image:arc42-logo.png[arc42] Template
+:author: Dr. Peter Hruschka, Dr. Gernot Starke en bijdragers
+:revnumber: 8
+:revdate: februari 2022
+:revremark: De NL versie is gebaseerd op EN template versie {revnumber}
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhoudsopgave
 
