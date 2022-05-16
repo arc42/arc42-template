@@ -4,25 +4,8 @@
 [role="arc42help"]
 ****
 .Inhalt
-Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine sowie deren Beziehungen.
-Beispiele für Bausteine sind unter anderem:
+Die Bausteinsicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen, Datenstrukturen, ...) sowie deren Abhängigkeiten (Beziehungen, Assoziationen, ...)
 
-* Module
-* Komponenten
-* Subsysteme
-* Klassen
-* Interfaces
-* Pakete
-* Bibliotheken
-* Frameworks
-* Schichten
-* Partitionen
-* Tiers
-* Funktionen
-* Makros
-* Operationen
-* Datenstrukturen
-* ...
 
 Diese Sicht sollte in jeder Architekturdokumentation vorhanden sein.
 In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
