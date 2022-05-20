@@ -1,5 +1,5 @@
 = image:./small-arc42-logo.png[arc42] Template ("Golden Master")
-:version 8.0:
+:version 8.1:
 :downloads https://arc42.org/downloads/:
 
 image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
@@ -15,13 +15,22 @@ This repository contains all downloadable versions plus the (AsciiDoc)
 source of the arc42 template.
 
 
-It is used to:
+It is used...
 
-*  generate (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others).
-* maintain structure, content and help for the template
-* keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
+*  as the basis for generating (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others). To generate, THIS repo is included as submodule from the generator project. Use the gradle build contained here just for preview! 
+* to maintain structure, content and help for the template
+* to keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
 
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
+
+== Diagrams
+We intend to provide all diagrams in platform-neutral formats, mainly `drawio`. 
+
+The source of these diagrams is embedded in a `.png` file. To make this explicit, we use the combined extension `.drawio.png` for our diagrams.
+The drawio tools will recognize this and open such files in the editor instead of an image viewer.
+
+Therefore we will gradually remove all files under `./graphics-originals`
+
 
 
 == Downloads
@@ -32,7 +41,7 @@ all downloads.
 == Languages
 
 The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
-Translations to additional languages (IT, ES) have been provided by volunteers, but won't be automatically updated.
+Translations to additional languages (IT, ES, NL) have been provided by volunteers, but won't be automatically updated.
 
 == Build the HTML version 
 
