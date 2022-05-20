@@ -13,7 +13,7 @@ apply plugin: 'java'
 def LANGUAGE = 'EN'
 
 // what version of the template are we building here
-version = "8.0.0-${LANGUAGE}-LOCAL-BUILD"
+version = "8.1.0-${LANGUAGE}-LOCAL-BUILD"
 
 repositories {
     mavenCentral()
