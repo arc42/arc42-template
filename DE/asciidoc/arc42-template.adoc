@@ -3,6 +3,10 @@
 //
 // ====================================
 
+
+// configure DE settings for asciidoc
+include::src/config.adoc[]
+
 = image:arc42-logo.png[arc42] Template
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhaltsverzeichnis
@@ -21,9 +25,6 @@ ifdef::backend-html5[]
 </style>
 ++++
 endif::backend-html5[]
-
-// configure DE settings for asciidoc
-include::src/config.adoc[]
 
 
 include::src/about-arc42.adoc[]

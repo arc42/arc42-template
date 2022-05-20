@@ -3,6 +3,8 @@
 //
 // ====================================
 
+// Opciones de configuración en español (ES) para asciidoc
+include::src/config.adoc[]
 = Plantilla image:arc42-logo.png[arc42]
 // toc-title La definición debe situarse abajo del título del documento sin líneas en blanco!
 :toc-title: Contenido
@@ -22,8 +24,6 @@ ifdef::backend-html5[]
 ++++
 endif::backend-html5[]
 
-// Opciones de configuración en español (ES) para asciidoc
-include::src/config.adoc[]
 
 
 include::src/about-arc42.adoc[]

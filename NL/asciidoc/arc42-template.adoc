@@ -3,6 +3,8 @@
 //
 // ====================================
 
+// configure EN settings for asciidoc
+include::src/config.adoc[]
 = image:arc42-logo.png[arc42] Template
 :author: Dr. Peter Hruschka, Dr. Gernot Starke en bijdragers
 :revnumber: 8
@@ -26,8 +28,6 @@ ifdef::backend-html5[]
 ++++
 endif::backend-html5[]
 
-// configure EN settings for asciidoc
-include::src/config.adoc[]
 
 
 include::src/about-arc42.adoc[]
