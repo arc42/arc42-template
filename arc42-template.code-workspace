@@ -43,6 +43,7 @@
 			"terminal.ansiWhite": "#f85e04",
 			"terminal.ansiYellow": "#B57614"
 		},
-		"peacock.color": "#61dafb"
+		"peacock.color": "#61dafb",
+		"java.configuration.updateBuildConfiguration": "disabled"
 	}
 }
