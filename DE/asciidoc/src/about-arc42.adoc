@@ -9,10 +9,8 @@
 [role="lead"]
 arc42, das Template zur Dokumentation von Software- und Systemarchitekturen.
 
-Erstellt von Dr. Gernot Starke, Dr. Peter Hruschka und Mitwirkenden.
+Template Version {revnumber}. {revremark}, {revdate}
 
-Template Revision: 8.1 DE (asciidoc-based), Mai 2022
-
-(C)
-We acknowledge that this document uses material from the arc42 architecture template, https://arc42.org.
+Created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
+Siehe https://arc42.org.
 

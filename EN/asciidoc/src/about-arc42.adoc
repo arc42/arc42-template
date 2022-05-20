@@ -6,11 +6,10 @@
 **About arc42**
 
 [role="lead"]
-arc42, the Template for documentation of software and system architecture.
+arc42, the template for documentation of software and system architecture.
 
-Created and maintained by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
+Template Version {revnumber}. {revremark}, {revdate}
 
-Template Revision: 8.1 EN (based on asciidoc), May 2022
+Created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
+See https://arc42.org.
 
-(C)
-We acknowledge that this document uses material from the arc42 architecture template, https://arc42.org.
