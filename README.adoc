@@ -54,6 +54,9 @@ $> gradle asciidoctor
 on the command line.
 Within the `build.gradle` script, you might replace the default language (EN) with your choice.
 
+>Currently (May 2022) you need to use **Java 8** to build!
+
+
 == Questions on using arc42?
 
 * see the extensive https://docs.arc42.org[documentation website]
