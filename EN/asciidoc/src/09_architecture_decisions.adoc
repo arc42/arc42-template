@@ -21,7 +21,7 @@ Stakeholders of your system should be able to comprehend and retrace your decisi
 .Form
 Various options:
 
-* ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) for every important decision
+* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]) for every important decision
 * List or table, ordered by importance and consequences or:
 * more detailed in form of separate sections per decision
 

@@ -19,7 +19,7 @@ Belanghebbende van het systeem moeten in staat zijn om de gemaakte keuzes te beg
 .Vorm
 Er zijn verschillende opties:
 
-* ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) voor iedere belangrijke beslissing;
+* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]) voor iedere belangrijke beslissing;
 * Lijst of tabel, gesorteerd op belang en consequenties of;
 * meer gedetaileerd in de vorm van een paragraaf per gemaakte beslissing
 

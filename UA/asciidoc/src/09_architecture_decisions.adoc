@@ -21,7 +21,7 @@
 .Форма
 Різні варіанти:
 
-* ADR ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Запис архітектурних рішень])) для кожного важливого рішення
+* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]) для кожного важливого рішення
 * Список або таблиця, упорядкована за важливістю та наслідками або:
 * детальніше у вигляді окремого розділу на кожне рішення
 
