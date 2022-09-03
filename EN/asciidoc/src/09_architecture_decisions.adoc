@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 .Contents
-Important, expensive, large scale or risky architecture decisions including rationals.
+Important, expensive, large scale or risky architecture decisions including rationales.
 With "decisions" we mean selecting one alternative based on given criteria.
 
 Please use your judgement to decide whether an architectural decision should be documented
