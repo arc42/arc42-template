@@ -1,0 +1,33 @@
+[[section-design-decisions]]
+== Rozhodnutí o architektuře
+
+
+[role="arc42help"]
+****
+.Obsah
+Důležitá, drahá, rozsáhlá nebo riskantní rozhodnutí o architektuře včetně příslušných zdůvodnění.
+„Rozhodnutím“ rozumíme výběr jedné nebo více alternativ na základě daných kritérií.
+
+Uvažte, zda má být architektonické rozhodnutí zdokumentována zde v této centrální sekci, nebo zda je lepší je zdokumentovat lokálně
+(např. v šabloně white-box konkrétního stavebního bloku).
+
+
+Vyvarujte se opakovaní.
+Odkažte na 4. kapitolu, kde jste již zachytili nejdůležitější architektonická rozhodnutí.
+
+.Motivace
+Strany zainteresované na systému by měly být schopny přijatým rozhodnutím porozumět a pochopit důvody k ním vedoucí.
+
+.Forma
+Různé možnosti:
+
+* *ADR* ((https://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Architecture Decision Record])) pro každé důležité rozhodnutí
+* seznam nebo tabulka, seřazené podle důležitosti a důsledků
+* podrobněji ve formě samostatných podkapitol pro jednotlivá rozhodnutí
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-9/[Architecture Decisions].
+Zde najdete odkazy a příklady k tématu *ADR*.
+
+****

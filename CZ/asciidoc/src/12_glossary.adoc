@@ -1,0 +1,37 @@
+[[section-glossary]]
+== Slovník pojmů
+
+[role="arc42help"]
+****
+.Obsah
+Nejdůležitější doménové a technické termíny, které zainteresované strany používají při diskuzi o systému.
+
+Pokud pracujete ve vícejazyčných týmech, můžete glosář používat jako zdroj překladů.
+
+.Motivace
+Měli byste jasně definovat důležité pojmy, aby všechny zainteresované strany
+
+* chápaly tyto pojmy stejně
+* a aby neexistovalo pro jednu a stejnou věc více variant
+
+.Forma
+* Tabulka se sloupci <Termín> a <Definice>.
+* Potenciálně více sloupců v případě, že potřebujete překlady.
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-12/[Glossary].
+
+****
+
+[cols="e,2e" options="header"]
+|===
+|Termín |Definice
+
+|<termín-1>
+|<definice-1>
+
+|<termín-2>
+|<definice-2>
+|===

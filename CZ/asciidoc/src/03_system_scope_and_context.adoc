@@ -1,0 +1,74 @@
+[[section-system-scope-and-context]]
+== Vymezení a rozsah systému
+
+
+[role="arc42help"]
+****
+.Obsah
+Rozsah a kontext systému vymezují – jak název napovídá – systém od všech jeho komunikačních partnerů (sousední systémy a uživatelé).
+Tím se specifikují externí rozhraní (interface) systému a určí zodpovědnost: Které funkce patří do našeho systému a které do systémů sousedních.
+
+V případě potřeby odlište firemní kontext (doménově specifické vstupy a výstupy) od technického kontextu (kanály, protokoly, hardware).
+
+.Motivace
+Doménová a technická komunikační rozhraní patří mezi nejdůležitější aspekty systému. 
+Ujistěte se, že jim zcela rozumíte.
+
+.Forma
+Různé možnosti:
+
+* Kontextové diagramy
+* Seznam komunikačních partnerů a příslušné rozhraní
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-3/[Context and Scope].
+
+
+****
+
+=== Firemní kontext 
+
+[role="arc42help"]
+****
+.Obsah
+Specifikace *všech* komunikačních partnerů systému (uživatelů, IT systémů, …) s vysvětlením doménově specifických vstupů a výstupů nebo rozhraní. 
+Podle potřeby můžete přidat doménově specifické datové formáty nebo komunikační protokoly.
+
+.Motivace
+Všechny zainteresované strany by měly rozumět tomu, jaké doménové informace si systém vyměňuje s okolím.
+
+.Forma
+Různé druhy diagramů, které ukazují systém jako černou skříňku (black box) a popisují doménová rozhraní pro komunikaci s partnery.
+
+Alternativně (nebo jako doplnění) můžete použít tabulku.
+Titulek tabulky je název systému, tři sloupce obsahují: jméno komunikačního partnera, vstupy a výstupy.
+
+****
+
+**<vložte diagram nebo tabulku>**
+
+**<(volitelně:) vložte vysvětlení externích doménových rozhraní>**
+
+=== Technický kontext 
+
+[role="arc42help"]
+****
+.Obsah
+Technická rozhraní (kanály a přenosová média) propojující váš systém s jeho okolím. Navíc mapování doménově specifického vstupu/výstupu na tyto kanály, tj. vysvětlení, která doménová data používají který kanál.
+
+.Motivace
+Mnoho zainteresovaných stran činí architektonická rozhodnutí na základě technických rozhraní mezi systémem a jeho okolím. 
+Zejména při výběru infrastruktury nebo hardwaru jsou tato technická rozhraní rozhodující.
+
+.Forma
+Např. UML Diagram popisující technické napojení sousedních systémů spolu s tabulkou ukazující vztahy mezi technickými kanály a doménovým vstupem/výstupem.
+
+****
+
+**<vložte diagram nebo tabulku>**
+
+**<(volitelně:) vložte vysvětlení externích technických rozhraní>**
+
+**<mapování doménových vstupu/výstupu na technické kanály>**

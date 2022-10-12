@@ -1,0 +1,49 @@
+[[section-runtime-view]]
+== Perspektiva chování za běhu (runtime)
+
+
+[role="arc42help"]
+****
+.Obsah
+Perspektiva runtime popisuje konkrétní chování a interakce stavebních bloků systému ve formě scénářů v následujících oblastech:
+
+
+* důležité procesy nebo funkce: jak je stavební bloky systému provádějí? 
+* interakce na kritických externích rozhraních: jak spolupracují stavební bloky s uživateli a sousedními systémy?
+* provoz a administrace: prvotní konfigurace, spuštění, zastavení
+* scénáře pro chyby a výjimky
+
+Poznámka: Hlavním kritériem pro výběr dokumentovaných scénářů (sekvencí, pracovních postupů) je jejich *význam pro architekturu*. Není cílem popisovat velké množství scénářů, ale raději *reprezentativní* výběr.
+
+.Motivace
+Měli byste rozumět tomu, jak stavební bloky systému (nebo jejich instance) vykonávají svoji práci a jak spolu komunikují za běhu.
+Ve této části dokumentace popište především scénáře, kterými architekturu vysvětlíte těm stranám zainteresovaným na systému, které jsou méně ochotné nebo schopné číst a chápat statické modely (perspektivu stavebních bloků, perspektivu nasazení softwaru).
+
+.Forma
+Existuje mnoho notací pro popis scénářů, např.
+
+* očíslovaný seznam jednotlivých kroků (jako text)
+* diagramy aktivit nebo vývojové diagramy (flow chart)
+* sekvenční diagramy
+* Business Process Model and Notation (BPMN) nebo Event-driven Process Chain (EPC) 
+* konečné automaty nebo přechodové systémy
+* ...
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-6/[Runtime View].
+****
+
+=== <Scénář runtime 1>
+
+
+* _<vložte runtime diagram nebo textový popis scénáře>_
+* _<vložte popis důležitých interakcí mezi
+instancemi stavebních bloků zobrazených v tomto diagramu>_
+
+=== <Scénář runtime 2>
+
+=== ...
+
+=== <Scénář runtime n>

@@ -1,0 +1,192 @@
+[[section-building-block-view]]
+
+
+== Perspektiva stavebních bloků
+
+[role="arc42help"]
+****
+.Obsah
+Perspektiva stavebních bloků ukazuje statický rozklad systému na stavební bloky (moduly, komponenty, subsystémy, třídy, rozhraní, balíčky, knihovny, framework, oddíly, vrstvy, funkce, makra, operace, datové struktury, …) stejně jako jejich vzájemné závislosti (vztahy, asociace, …).
+
+Toto perspektiva je povinná pro každou dokumentaci architektury, stejně jako je to u domu jeho _půdorys_.
+
+.Motivace
+Udržujte si přehled o zdrojovém kódu tím, že jeho strukturu učiníte srozumitelnou prostřednictvím abstrakce.
+
+To vám umožní komunikovat se zainteresovanými stranami na abstraktní úrovni, aniž byste prozradili podrobnosti o implementaci.
+
+.Forma
+Perspektiva stavebních bloků je hierarchický přehled "černých" a "bílých" skříněk (black-box, white-box, viz obrázek níže) a jejich popisů.
+
+image::05_building_blocks-EN.png["Hierarchie stavebních bloků"]
+
+*Úroveň 1* je popis celého systému jako white-box spolu s popisem všech obsažených stavebních bloků ve formátu black-box.
+
+*Úroveň 2* přibližuje některé stavební bloky úrovně 1. 
+Obsahuje tedy popis vybraných stavebních bloků úrovně 1 jako white-box spolu s popisy jejich vnitřních stavebních bloků jako black-box.
+
+*Úroveň 3* přiblíží vybrané stavební bloky úrovně 2 a tak dále.
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-5/[Building Block View].
+
+****
+
+=== Celý systém jako white-box
+
+[role="arc42help"]
+****
+Zde popisujete rozklad celého systému pomocí následující white-box šablony. Obsahuje
+
+* přehledový diagram
+* motivaci k rozkladu
+* popis jednotlivých stavebních bloků jako black-box. K tomu jsou k dispozici různé alternativy:
+
+** použijte _jednu_ tabulku pro krátký a pragmatický přehled všech obsažených stavebních bloků a jejich rozhraní.
+** použijte seznam stavebních bloků popsaných podle black-box šablony (viz níže). 
+V závislosti na výběru konkrétního nástroje může tento seznam obsahovat podkapitoly (v textových souborech), podstránky (ve Wiki) nebo vnořené prvky (v modelovacím nástroji).
+
+* (Volitelně:) důležitá rozhraní, která nejsou vysvětlena v black-box šablonách stavebního bloku, ale jsou velmi důležitá pro pochopení popisovaného white-boxu.
+Protože existuje mnoho způsobů, jak specifikovat rozhraní, neposkytujeme žádnou konkrétní šablonu.
+V nejhorším případě musíte specifikovat a popsat syntax, sémantiku, protokoly, zpracování chyb, různá omezení, verze, nároky na kvalitu, potřebnou kompatibilitu a mnoho dalších věcí.
+V lepším případě vám stačí příklady nebo jednoduché podpisy.
+
+
+****
+
+_**<vložte přehledový diagram celého systému>**_
+
+Motivace:: _<popište motivaci>_
+
+
+Obsažené stavební bloky :: _<popište obsažené stavební bloky (jako black-box)>_
+
+Důležitá rozhraní:: _<popište důležitá rozhraní>_
+
+[role="arc42help"]
+****
+Vložte vysvětlení black-boxů z úrovně 1:
+
+Pokud použijete tabulkovou formu, popište black-boxy pouze jménem a odpovědností podle následujícího schématu:
+
+[cols="1,2" options="header"]
+|===
+| **Jméno** | **Odpovědnost**
+| _<black-box 1>_ | _<Text>_
+| _<black-box 2>_ | _<Text>_
+|===
+
+Pokud použijete seznam popisů jednotlivých black-boxů, vyplňte samostatnou black-box šablonu pro každý důležitý stavební blok. 
+Její titulek je název black-boxu.
+****
+
+
+==== <Jméno black-boxu 1>
+
+[role="arc42help"]
+****
+Popište <black-box 1> podle následující black-box šablony:
+
+* Účel/Odpovědnost
+* Rozhraní, pokud nejsou vyjmuta jako samostatné odstavce. Případně sem patří nároky na kvalitu a výkonnostní rozhraní.
+* (Volitelně) Popis požadavků na kvalitu/výkon black-boxu, např. dostupnost, runtime vlastnosti, ….
+* (Volitelně) Umístění/složky a soubory
+* (Volitelně) Splněné požadavky (pokud potřebujete dohledat vztah k požadavkům).
+* (Volitelně) Nevyřešené body/problémy/rizika
+
+****
+
+_<Účel/Odpovědnost>_
+
+_<Rozhraní>_
+
+_<(Volitelně) Požadavky na kvalitu/výkon>_
+
+_<(Volitelně) Umístění/složky a soubory>_
+
+_<(Volitelně) Splněné požadavky>_
+
+_<(Volitelně) Nevyřešené body/problémy/rizika>_
+
+
+==== <Jméno black-boxu 2>
+
+_<šablona black-box>_
+
+==== <Jméno black-boxu n>
+
+_<šablona black-box>_
+
+
+==== <Jméno rozhraní 1>
+
+...
+
+==== <Jméno rozhraní m>
+
+
+
+=== Úroveň 2
+
+[role="arc42help"]
+****
+Zde popište vnitřní strukturu (některých) stavebních bloků z úrovně 1 jako white-box.
+
+Musíte rozhodnout, které stavební bloky systému jsou natolik důležité, aby ospravedlnily tak podrobný popis. Upřednostněte relevanci před úplností. Uveďte důležité, překvapivé, riskantní, komplexní nebo volatilní stavební bloky. Vynechejte normální, jednoduché nebo standardizované části systému.
+
+****
+
+==== white-box _<stavební blok 1>_
+
+[role="arc42help"]
+****
+...popisuje vnitřní strukturu _stavebního bloku 1_.
+****
+
+_<šablona white-box>_
+
+==== white-box _<stavební blok 2>_
+
+
+_<šablona white-box>_
+
+...
+
+==== white-box _<stavební blok m>_
+
+
+_<šablona white-box>_
+
+
+
+=== Úroveň 3
+
+[role="arc42help"]
+****
+Zde můžete popsat vnitřní strukturu (některých) stavebních bloků z úrovně 2 jako white-box.
+
+Pokud potřebujete podrobnější úrovně architektury, zkopírujte si pro ně tuto část arc42.
+****
+
+
+==== white-box <_stavební blok x.1_>
+
+[role="arc42help"]
+****
+...popisuje vnitřní strukturu _stavebního bloku x.1_.
+****
+
+
+_<šablona white-box>_
+
+
+==== white-box <_stavební blok x.2_>
+
+_<šablona white-box>_
+
+
+
+==== white-box <_stavební blok y.1_>
+
+_<šablona white-box>_

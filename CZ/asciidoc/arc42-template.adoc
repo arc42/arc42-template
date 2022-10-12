@@ -1,0 +1,98 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+// configure EN settings for asciidoc
+include::src/config.adoc[]
+
+= image:arc42-logo.png[arc42] Template
+:revnumber: 8.1 CZ
+:revdate: říjen 2022
+:revremark: (na základě AsciiDoc verze)
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Obsah
+
+//additional style for arc42 help callouts
+ifdef::backend-html5[]
+++++
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:none;}
+}
+</style>
+++++
+endif::backend-html5[]
+
+
+include::src/about-arc42.adoc[]
+
+// horizontal line
+***
+
+[role="arc42help"]
+****
+[POZNÁMKA]
+====
+Tato verze arc42 šablony obsahuje nápovědu a vysvětlivky a slouží proto k seznámení s arc42 a pochopení pojmů.
+Pro dokumentaci vašeho vlastního systému použijte raději _plain_ verzi.
+====
+****
+
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Úvod a cíle
+include::src/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Omezení na realizaci systému
+include::src/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Vymezení a rozsah systému
+include::src/03_system_scope_and_context.adoc[]
+
+<<<<
+// 4. Strategie řešení
+include::src/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Perspektiva stavebních bloků
+include::src/05_building_block_view.adoc[]
+
+<<<<
+// 6. Perspektiva chování za běhu (runtime)
+include::src/06_runtime_view.adoc[]
+
+<<<<
+// 7. Perspektiva nasazení softwaru (deployment)
+include::src/07_deployment_view.adoc[]
+
+<<<<
+// 8. Průřezové (cross-cutting) koncepty
+include::src/08_concepts.adoc[]
+
+<<<<
+// 9. Rozhodnutí o architektuře
+include::src/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Požadavky na kvalitu
+include::src/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Rizika a technické dluhy
+include::src/11_technical_risks.adoc[]
+
+<<<<
+// 12. Slovník pojmů
+include::src/12_glossary.adoc[]
+
+

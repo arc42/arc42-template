@@ -1,0 +1,66 @@
+[[section-quality-scenarios]]
+== Požadavky na kvalitu
+
+
+[role="arc42help"]
+****
+
+.Obsah
+Tato část obsahuje všechny požadavky na kvalitu jako strom kvality se scénáři. Ty nejdůležitější již byly popsány v části 1.2. (kvalitativní cíle pro architekturu)
+
+Zde můžete také zachytit požadavky na kvalitu s nižší prioritou, jejichž neúplné dosažení nevytvoří pro systém vysoká rizika.
+
+.Motivace
+Protože požadavky na kvalitu mají na architekturu velký vliv, je důležité vědět, co je pro strany zainteresované na systému skutečně důležité, a to v konkrétní a měřitelné podobě.
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-10/[Quality Requirements].
+
+****
+
+=== Strom kvality
+
+[role="arc42help"]
+****
+.Obsah
+Strom kvality (jak je definován v ATAM – Architecture Tradeoff Analysis Method) se scénáři kvality/hodnocení jako jednotlivými listy.
+(Dle Carnegie Mellon University: https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=513908[ATAM]).
+
+
+.Motivace
+Stromová struktura s prioritami poskytuje přehled o někdy velkém množství požadavků na kvalitu.
+
+.Forma
+* stromovité rozvinutí pojmu "kvalita". Jako kořen (základ) použijte "kvalitu" nebo "užitečnost".
+* "mind map" s kategoriemi kvality jako hlavními větvemi
+
+V každém případě by strom měl obsahovat odkazy na scénáře popsané v následující části dokumentace.
+
+****
+
+=== Scénáře kvality
+
+[role="arc42help"]
+****
+.Obsah
+Konkretizace (někdy vágních nebo implicitních) požadavků na kvalitu pomocí scénářů kvality.
+
+Tyto scénáře popisují, co by se mělo stát, když do systému dorazí vnější podnět.
+
+Pro architekty jsou důležité zejména dva druhy scénářů:
+
+* Scénáře použití (také nazývané aplikační scénáře) popisují reakci systému na určitý podnět. Patří sem také scénáře, které popisují efektivitu nebo výkon systému. 
+Příklad: Systém zareaguje na požadavek uživatele do jedné sekundy.
+* Scénáře změn popisují úpravy systému nebo jeho bezprostředního okolí. Příklad: Je implementována další funkce nebo se mění požadavky na kvalitu.
+
+.Motivace
+Scénáře konkretizují požadavky na kvalitu a umožňují je snadněji měřit nebo rozhodovat, zda jsou splněny.
+
+Zejména pokud je potřeba architekturu posoudit pomocí metod jako je ATAM, je nutné popsat kvalitativní cíle (z kapitoly 1.2)
+přesněji až na úroveň jednotlivých scénářů, které lze diskutovat a vyhodnocovat.
+
+.Forma
+Tabulka nebo text.
+****
