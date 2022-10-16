@@ -1,0 +1,70 @@
+[[section-concepts]]
+== Průřezové (cross-cutting) koncepty
+
+
+[role="arc42help"]
+****
+.Obsah
+Tato část dokumentace popisuje přesahující principy, předpisy a řešení, které jsou relevantní pro více částí systému (= průřezové).
+Takové koncepty se často týkají více stavebních bloků.
+
+Může zahrnovat mnoho různých témat, jako např.
+
+* modely, zejména doménové modely
+* architekturu nebo designové vzory
+* pravidla pro použití konkrétních technologií
+* zásadní, často technická rozhodnutí zastřešujícího (= průřezového) charakteru
+* pravidla implementace
+
+.Motivace
+Koncepty tvoří základ _konceptuální integrity_ (konzistence, homogenity) softwarové architektury.
+Jsou tedy důležitým příspěvkem k dosažení vnitřní kvality vyvíjeného systému.
+
+Některé z těchto konceptů nelze přiřadit k jednotlivým stavebním blokům, např. zabezpečení.
+
+.Forma
+Forma může být různá:
+
+* koncepční dokumenty s jakoukoliv strukturou
+* průřezové modely nebo scénáře, které jsou již využity v jednotlivých perspektivách architektury
+* vzorové implementace, zejména pro technické koncepty
+* odkaz na "typické" používání standardních frameworků (např. používání Hibernate pro objektové/relační mapování)
+
+.Struktura
+Potenciální (nikoli však povinná) struktura pro tento oddíl dokumentace může být:
+
+* Koncepty domén
+* Koncepty uživatelské zkušenosti (UX)
+* Koncepty bezpečnosti a zabezpečení
+* Architektura a designové vzory
+* "pod kapotou"
+* Vývojové koncepty
+* Provozní koncepty
+
+Poznámka: Může být obtížné přiřadit jednotlivé koncepty k jednomu konkrétnímu tématu
+z tohoto seznamu.
+
+image::08-Crosscutting-Concepts-Structure-EN.png["Témata pro průřezové koncepty"]
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-8/[Concepts].
+****
+
+
+=== _<Koncept 1>_
+
+_<vysvětlení>_
+
+
+
+=== _<Koncept 2>_
+
+_<vysvětlení>_
+
+...
+
+=== _<Koncept n>_
+
+_<vysvětlení>_

@@ -1,0 +1,24 @@
+[[section-architecture-constraints]]
+== Omezení na realizaci systému
+
+
+[role="arc42help"]
+****
+.Obsah
+Jakýkoli požadavek, který softwarové architekty omezuje v jejich svobodě rozhodování o návrhu a implementaci nebo v rozhodování o procesu vývoje.
+Tato omezení někdy přesahují jednotlivé systémy a platí pro celé organizace a společnosti.
+
+.Motivace
+Softwarový Architekt by měl přesně vědět, které části systému může určovat a kde musí dodržovat vnější omezení. 
+S omezeními je třeba se vždy vypořádat; mohou být ale předmětem vyjednávaní.
+
+.Forma
+Tabulka se (všemi) omezeními, včetně jejich vysvětlení.
+V případě potřeby rozdělená na technická, organizační nebo politická omezení či konvence
+(např. co se týče programovaní, verzí systému, dokumentace nebo pojmenování)
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-2/[Architecture Constraints].
+
+****

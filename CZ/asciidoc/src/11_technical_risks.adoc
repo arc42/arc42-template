@@ -1,0 +1,24 @@
+[[section-technical-risks]]
+== Rizika a technické dluhy
+
+
+[role="arc42help"]
+****
+.Obsah
+Seznam známých technických rizik nebo technických dluhů seřazený podle jejich priority.
+
+.Motivace
+„Řízení rizik je řízení projektu pro dospělé.“
+-- Tim Lister, Atlantic Systems Guild
+
+Tak by mělo znít motto pro systematické zjišťování a hodnocení rizik a technických dluhů v architektuře, které potřebují znát zainteresované strany z oblasti managementu (např. projektoví manažeři, vlastníci produktu - (Product Owner)) jako součást celkové analýzy rizik.
+
+.Forma
+Seznam rizik a/nebo technických dluhů, pravděpodobně včetně navrhovaných opatření k jejich minimalizaci, zmírnění nebo vyloučení. 
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-11/[Risks and Technical Debt].
+
+****

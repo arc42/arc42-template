@@ -1,0 +1,31 @@
+[[section-solution-strategy]]
+== Strategie řešení
+
+
+[role="arc42help"]
+****
+.Obsah
+Krátké shrnutí a vysvětlení zásadních rozhodnutí a strategií řešení, které utvářejí architekturu systému. Tyto zahrnují
+
+* technologická rozhodnutí
+* rozhodnutí o dekompozici systému na nejvyšší úrovni (top-level), např. o použití vzoru (pattern) pro architekturu nebo návrh
+* rozhodnutí o tom, jak dosáhnout klíčových kvalitativních cílů
+* příslušná organizační rozhodnutí, např. výběr procesu vývoje nebo delegování určitých úkolů na třetí strany.
+
+
+
+.Motivace
+Tato rozhodnutí tvoří pilíře softwarové architektury. Jsou základem pro mnoho dalších detailních rozhodnutí nebo pravidel implementace.
+
+.Forma
+Vysvětlení těchto klíčových rozhodnutí ponechte *krátké*.
+
+Popište, jak jste se rozhodli a proč jste se tak rozhodli, s ohledem na řešení problému, cíle kvality a klíčová omezení. 
+Pro podrobnosti odkažte na následující části.
+
+
+.Další informace
+
+Anglická dokumentace arc42: https://docs.arc42.org/section-4/[Solution Strategy].
+
+****
