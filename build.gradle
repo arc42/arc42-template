@@ -13,7 +13,10 @@ apply plugin: 'java'
 def LANGUAGE = 'EN'
 
 // what version of the template are we building here
-version = "8.1.0-${LANGUAGE}-LOCAL-BUILD"
+// 8.1 -> add UA and CZ version
+// 8.1.1 -> bugfix in EN version
+// these comments should go into a decent history.adoc file...
+version = "8.1.1-${LANGUAGE}-LOCAL-BUILD"
 
 repositories {
     mavenCentral()
