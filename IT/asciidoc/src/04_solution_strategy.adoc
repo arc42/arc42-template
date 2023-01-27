@@ -1,3 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
 [[section-solution-strategy]]
 == Strategia della soluzione
 

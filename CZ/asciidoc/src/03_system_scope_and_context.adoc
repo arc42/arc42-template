@@ -1,3 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
 [[section-system-scope-and-context]]
 == Vymezení a rozsah systému
 
