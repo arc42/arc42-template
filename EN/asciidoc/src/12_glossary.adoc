@@ -14,9 +14,12 @@ You should clearly define your terms, so that all stakeholders
 * have an identical understanding of these terms
 * do not use synonyms and homonyms
 
+
 .Form
-* A table with columns <Term> and <Definition>.
-* Potentially more columns in case you need translations.
+
+A table with columns <Term> and <Definition>.
+
+Potentially more columns in case you need translations.
 
 
 .Further Information
