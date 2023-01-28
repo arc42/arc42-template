@@ -7,8 +7,8 @@
 include::src/config.adoc[]
 
 = image:arc42-logo.png[arc42] Шаблон
-:revnumber: 8.1 UA
-:revdate: May 2022
+:revnumber: 8.2 UA
+:revdate: Січень 2023
 :revremark: (based upon AsciiDoc version)
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Зміст

@@ -6,6 +6,9 @@
 // Opciones de configuración en español (ES) para asciidoc
 include::src/config.adoc[]
 = Plantilla image:arc42-logo.png[arc42]
+:revnumber: 8.2 ES
+:revdate: January 2023
+:revremark: (based upon AsciiDoc version)
 // toc-title La definición debe situarse abajo del título del documento sin líneas en blanco!
 :toc-title: Contenido
 

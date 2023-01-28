@@ -1,5 +1,5 @@
 = image:./small-arc42-logo.png[arc42] Template ("Golden Master")
-:version 8.1:
+:version 8.2:
 :downloads https://arc42.org/downloads/:
 
 image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
@@ -22,6 +22,9 @@ It is used...
 * to keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
 
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
+
+== Revisions
+* 8.2: Jan 28th 2023: Thx to A. Bentele, added imagedir def to all files, for easier editing asciidoc. See #178
 
 == Diagrams
 We intend to provide all diagrams in platform-neutral formats, mainly `drawio`. 

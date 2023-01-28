@@ -8,8 +8,8 @@
 include::src/config.adoc[]
 
 = image:arc42-logo.png[arc42] Template
-:revnumber: 8.1 DE
-:revdate: Mai 2022
+:revnumber: 8.2 DE
+:revdate: Januar 2023
 :revremark: (basiert auf AsciiDoc Version)
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhaltsverzeichnis
