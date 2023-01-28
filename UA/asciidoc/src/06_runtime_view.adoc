@@ -1,3 +1,5 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
 [[section-runtime-view]]
 == Рантайм представлення
 
