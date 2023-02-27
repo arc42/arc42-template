@@ -9,3 +9,4 @@ Arc42.code-workspace
 EN/build
 build
 *.bkp
+.vscode/settings.json
