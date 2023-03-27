@@ -8,9 +8,6 @@ plugins {
 
 apply plugin: 'java'
 
-// what language are we building
-// current choices: EN, DE, IT, ES
-def LANGUAGE = 'EN'
 
 // what version of the template are we building here
 // 8.1 -> add UA and CZ version

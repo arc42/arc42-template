@@ -44,7 +44,7 @@ all downloads.
 == Languages
 
 The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
-Translations to additional languages (IT, ES, NL) have been provided by volunteers, but won't be automatically updated.
+Translations to additional languages (see below) have been provided by volunteers, but won't be automatically updated.
 
 == Build the HTML version 
 
@@ -55,9 +55,14 @@ $> gradle asciidoctor
 ----
 
 on the command line.
-Within the `build.gradle` script, you might replace the default language (EN) with your choice.
+To select another language set the Gradle build property `LANGUAGE` to one of the provided languages, cf.
 
->Currently (May 2022) you need to use **Java 8** to build!
+[source, java]
+----
+include::gradle.properties[]
+----
+
+Currently (March 2022) you need to use **Java 8** to build!
 
 
 == Questions on using arc42?
