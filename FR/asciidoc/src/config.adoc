@@ -7,3 +7,4 @@
 
 // où se trouvent les images ?
 :imagesdir: ./images
+:arc42help:

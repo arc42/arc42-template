@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-runtime-view]]
 == Laufzeitsicht
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -40,6 +41,7 @@ Nutzen Sie beispielsweise:
 Siehe https://docs.arc42.org/section-6/[Laufzeitsicht] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]
 
 === _<Bezeichnung Laufzeitszenario 1>_
 

@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-quality-scenarios]]
 == Qualitätsanforderungen
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -14,6 +15,7 @@ Nehmen Sie hier auch Qualitätsanforderungen geringerer Priorität auf, deren Ni
 .Motivation
 Weil Qualitätsanforderungen die Architekturentscheidungen oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten Qualitätsanforderungen kennen, möglichst konkret und operationalisiert.
 ****
+endif::arc42help[]
 
 .Weiterführende Informationen
 
@@ -21,6 +23,7 @@ Siehe https://docs.arc42.org/section-10/[Qualitätsanforderungen] in der online-
 
 === Qualitätsbaum
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -35,9 +38,11 @@ Die mit Prioritäten versehene Baumstruktur gibt Überblick über die -- oftmals
 
 In jedem Fall sollten Sie hier Verweise auf die Qualitätsszenarien des folgenden Abschnittes aufnehmen.
 ****
+endif::arc42help[]
 
 === Qualitätsszenarien
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -62,3 +67,4 @@ Insbesondere wenn Sie die Qualität Ihrer Architektur mit Methoden wie ATAM übe
 .Form
 Entweder tabellarisch oder als Freitext.
 ****
+endif::arc42help[]

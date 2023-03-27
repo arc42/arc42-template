@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Вимоги до якості
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -24,9 +25,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 Див. https://docs.arc42.org/section-10/[Вимоги до якості] в документації arc42.
 
 ****
+endif::arc42help[]
 
 === Дерево якості
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -45,9 +48,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 
 ****
+endif::arc42help[]
 
 === Сценарії якості
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст

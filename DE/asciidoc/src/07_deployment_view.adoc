@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-deployment-view]]
 == Verteilungssicht
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -38,9 +39,11 @@ Nutzen Sie diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es verl
 Siehe https://docs.arc42.org/section-7/[Verteilungssicht] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]
 
 === Infrastruktur Ebene 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit Tabellen oder Texten):
@@ -52,6 +55,7 @@ An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit Tabellen od
 
 Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen Teil von arc42 für alle wichtigen Umgebungen/Varianten.
 ****
+endif::arc42help[]
 
 _**<Übersichtsdiagramm>**_
 
@@ -63,12 +67,14 @@ Zuordnung von Bausteinen zu Infrastruktur:: _<Beschreibung der Zuordnung>_
 
 === Infrastruktur Ebene 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 An dieser Stelle können Sie den inneren Aufbau (einiger) Infrastrukturelemente aus Ebene 1 beschreiben.
 
 Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
 ****
+endif::arc42help[]
 
 ==== _<Infrastrukturelement 1>_
 

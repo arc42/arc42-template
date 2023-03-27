@@ -4,9 +4,9 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Požadavky na kvalitu
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
-
 .Obsah
 Tato část obsahuje všechny požadavky na kvalitu jako strom kvality se scénáři. Ty nejdůležitější již byly popsány v části 1.2. (kvalitativní cíle pro architekturu)
 
@@ -21,9 +21,11 @@ Protože požadavky na kvalitu mají na architekturu velký vliv, je důležité
 Anglická dokumentace arc42: https://docs.arc42.org/section-10/[Quality Requirements].
 
 ****
+endif::arc42help[]
 
 === Strom kvality
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -41,9 +43,11 @@ Stromová struktura s prioritami poskytuje přehled o někdy velkém množství 
 V každém případě by strom měl obsahovat odkazy na scénáře popsané v následující části dokumentace.
 
 ****
+endif::arc42help[]
 
 === Scénáře kvality
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -66,3 +70,4 @@ přesněji až na úroveň jednotlivých scénářů, které lze diskutovat a vy
 .Forma
 Tabulka nebo text.
 ****
+endif::arc42help[]

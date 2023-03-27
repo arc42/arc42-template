@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Архітектурні обмеження
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -21,3 +22,4 @@ ifndef::imagesdir[:imagesdir: ../images]
 Див. https://docs.arc42.org/section-2/[Архітектурні обмеження] в документації arc42.
 
 ****
+endif::arc42help[]

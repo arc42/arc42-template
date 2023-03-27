@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Conceptos Transversales (Cross-cutting)
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -56,7 +57,7 @@ Nota: Puede ser difícil asignar conceptos individuales a un tema específico de
 
 image:08-Crosscutting-Concepts-Structure-ES.png["Posibles temas para conceptos transversales"]
 ****
-
+endif::arc42help[]
 
 === _<Concepto 1>_
 

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Vymezení a rozsah systému
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -29,9 +30,11 @@ Anglická dokumentace arc42: https://docs.arc42.org/section-3/[Context and Scope
 
 
 ****
+endif::arc42help[]
 
 === Firemní kontext 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -48,6 +51,7 @@ Alternativně (nebo jako doplnění) můžete použít tabulku.
 Titulek tabulky je název systému, tři sloupce obsahují: jméno komunikačního partnera, vstupy a výstupy.
 
 ****
+endif::arc42help[]
 
 **<vložte diagram nebo tabulku>**
 
@@ -55,6 +59,7 @@ Titulek tabulky je název systému, tři sloupce obsahují: jméno komunikační
 
 === Technický kontext 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -68,6 +73,7 @@ Zejména při výběru infrastruktury nebo hardwaru jsou tato technická rozhran
 Např. UML Diagram popisující technické napojení sousedních systémů spolu s tabulkou ukazující vztahy mezi technickými kanály a doménovým vstupem/výstupem.
 
 ****
+endif::arc42help[]
 
 **<vložte diagram nebo tabulku>**
 

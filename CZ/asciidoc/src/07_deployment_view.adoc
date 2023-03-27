@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Perspektiva nasazení softwaru (deployment)
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -42,9 +43,11 @@ když je infrastruktura složitější.
 Anglická dokumentace arc42: https://docs.arc42.org/section-7/[Deployment View].
 
 ****
+endif::arc42help[]
 
 === Úroveň infrastruktury 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Popište (obvykle kombinací diagramů, tabulek a textu):
@@ -56,6 +59,7 @@ Popište (obvykle kombinací diagramů, tabulek a textu):
 
 Pro více prostředí nebo alternativní nasazení zkopírujte a upravte tuto část arc42 pro všechna relevantní prostředí.
 ****
+endif::arc42help[]
 
 _**<Přehledový diagram>**_
 
@@ -73,12 +77,14 @@ _<popis mapování>_
 
 === Úroveň infrastruktury 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Zde můžete zahrnout vnitřní strukturu (některých) prvků infrastruktury z úrovně 1.
 
 Zkopírujte prosím strukturu z úrovně 1 pro každý vybraný prvek.
 ****
+endif::arc42help[]
 
 ==== _<prvek infrastruktury 1>_
 

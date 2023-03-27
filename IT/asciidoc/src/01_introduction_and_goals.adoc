@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introduzione e obiettivi
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Descrive i requisiti rilevanti e le forze trainanti che gli architetti del software e il team di sviluppo devono considerare. Questi includono
@@ -11,9 +12,11 @@ Descrive i requisiti rilevanti e le forze trainanti che gli architetti del softw
 * obiettivi di qualità per l'architettura
 * stakeholder rilevanti e le loro aspettative
 ****
+endif::arc42help[]
 
 === Panoramica dei requisiti
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -32,9 +35,11 @@ Se esistono documenti sui requisiti, questa panoramica dovrebbe fare riferimento
 Mantieni questi estratti il ​​più brevi possibile.
 Bilancia la leggibilità di questo documento con la potenziale ridondanza rispetto ai documenti dei requisiti.
 ****
+endif::arc42help[]
 
 === Obiettivi di qualità
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -52,9 +57,11 @@ Se tu come architetto non sai come verrà giudicata la qualità del tuo lavoro
 .Forma
 Una tabella con obiettivi di qualità e scenari concreti, ordinati per priorità
 ****
+endif::arc42help[]
 
 === Stakeholders
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -75,6 +82,7 @@ Questi stakeholder determinano la portata e il livello di dettaglio del tuo lavo
 .Forma
 Tabella con i nomi dei ruoli, i nomi delle persone e le loro aspettative rispetto all'architettura e alla sua documentazione
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

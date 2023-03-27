@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Rischi e debiti tecnici
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -17,3 +18,4 @@ Questo dovrebbe essere il tuo motto per il rilevamento e la valutazione sistemat
 .Forma
 Elenco dei rischi e/o dei debiti tecnici, possibilmente comprendendo le misure suggerite per minimizzare, mitigare o evitare i rischi o ridurre i debiti tecnici.
 ****
+endif::arc42help[]

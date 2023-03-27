@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Рантайм представлення
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -36,6 +37,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 Див. https://docs.arc42.org/section-6/[Представлення часу виконання] в документації arc42.
 
 ****
+endif::arc42help[]
 
 === <Сценарій часу виконання 1>
 

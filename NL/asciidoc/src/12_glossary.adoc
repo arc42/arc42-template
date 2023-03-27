@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-glossary]]
 == Woordenlijst
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -26,6 +27,7 @@ Termen moeten helder worden gedefinieerd zodat alle belanghebbenden
 See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
 
 ****
+endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===

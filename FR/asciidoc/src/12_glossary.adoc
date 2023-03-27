@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-glossary]]
 == Glossaire
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -35,6 +36,7 @@ Potentiellement plus de colonnes au cas où vous auriez besoin de traductions.
 Voir https://docs.arc42.org/section-12/[Glossary] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Vue Exécution
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -36,6 +37,7 @@ Il existe de nombreuses notations pour décrire les scénarios, par exemple
 Voir https://docs.arc42.org/section-6/[Runtime View] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 === <Scénario d'exécution 1>
 

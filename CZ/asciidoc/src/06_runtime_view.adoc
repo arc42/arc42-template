@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Perspektiva chování za běhu (runtime)
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -36,6 +37,7 @@ Existuje mnoho notací pro popis scénářů, např.
 
 Anglická dokumentace arc42: https://docs.arc42.org/section-6/[Runtime View].
 ****
+endif::arc42help[]
 
 === <Scénář runtime 1>
 

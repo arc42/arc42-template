@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Deployment View
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Content
@@ -41,9 +42,11 @@ when your infrastructure is more complex.
 See https://docs.arc42.org/section-7/[Deployment View] in the arc42 documentation.
 
 ****
+endif::arc42help[]
 
 === Infrastructure Level 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Describe (usually in a combination of diagrams, tables, and text):
@@ -55,6 +58,7 @@ Describe (usually in a combination of diagrams, tables, and text):
 
 For multiple environments or alternative deployments please copy and adapt this section of arc42 for all relevant environments.
 ****
+endif::arc42help[]
 
 _**<Overview Diagram>**_
 
@@ -72,12 +76,14 @@ _<description of the mapping>_
 
 === Infrastructure Level 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Here you can include the internal structure of (some) infrastructure elements from level 1.
 
 Please copy the structure from level 1 for each selected element.
 ****
+endif::arc42help[]
 
 ==== _<Infrastructure Element 1>_
 

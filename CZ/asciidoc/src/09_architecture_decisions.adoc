@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Rozhodnutí o architektuře
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -33,3 +34,4 @@ Anglická dokumentace arc42: https://docs.arc42.org/section-9/[Architecture Deci
 Zde najdete odkazy a příklady k tématu *ADR*.
 
 ****
+endif::arc42help[]

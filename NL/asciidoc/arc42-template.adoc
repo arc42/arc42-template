@@ -35,6 +35,7 @@ include::src/about-arc42.adoc[]
 // horizontal line
 ***
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 [NOTE]
@@ -44,7 +45,7 @@ Het is bedoel om bekend te raken met arc42 en om de concepten te begrijpen.
 Om uw eigen sytemen te documenteren adviseren we om de _kale_ versie te gebruiken.
 ====
 ****
-
+endif::arc42help[]
 
 // numbering from here on
 :numbered:

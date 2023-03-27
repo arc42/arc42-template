@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Runtime View
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -33,6 +34,7 @@ Ci sono molte notazioni per descrivere gli scenari, ad es.
 * ...
 
 ****
+endif::arc42help[]
 
 === <Runtime Scenario 1>
 

@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introductie en Doelen
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschrijft de relevante requirements en het krachtenveld waar software architecten en het development team rekening mee moeten houden.
@@ -14,9 +15,11 @@ Die bestaan onder ander uit
 * kwaliteits doelen voor de architectuur en
 * relevante belanghebbenden en hun verwachtingen
 ****
+endif::arc42help[]
 
 === Requirements Overzicht
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -39,9 +42,11 @@ Zoek een evenwicht tussen leesbaarheid van dit document en mogelijke dubbelingen
 Zie https://docs.arc42.org/section-1/[Introductie en Doelen] in de arc42 documentatie.
 
 ****
+endif::arc42help[]
 
 === Kwaliteits Doelen
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -62,9 +67,11 @@ Alsof je als architect niet weet hoe de kwaliteit van je werk beoordeeld zal wor
 .Vorm
 Een tabel met kwaliteits doelen en concrete scenarios, gesorteerd op prioriteit.
 ****
+endif::arc42help[]
 
 === Belanghebbenden
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -84,6 +91,7 @@ Deze belanghebbenden bepalen in een grote mate de omvang en het detail niveau va
 .Vorm
 Tabel met de rollen, personen en hun verwachting met betrekking tot de architectuur en haar documentatie.
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

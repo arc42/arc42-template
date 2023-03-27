@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Lösungsstrategie
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -28,3 +29,4 @@ Vermeiden Sie redundante Beschreibungen und verweisen Sie eher auf weitere Ausf�
 Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]

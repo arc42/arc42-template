@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Vincoli di architettura
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -21,3 +22,4 @@ Se necessario puoi suddividerli in file
 vincoli tecnici, vincoli organizzativi e politici e
 convenzioni (ad es. linee guida di programmazione o di controllo delle versioni, documentazione o convenzioni di denominazione)
 ****
+endif::arc42help[]

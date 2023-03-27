@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Cross-cutting Concepten
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -53,7 +54,7 @@ image::08-Crosscutting-Concepts-Structure-EN.png["Mogelijke onderwerpen voor cro
 
 Zie https://docs.arc42.org/section-8/[Concepts] in de arc42 documentatie.
 ****
-
+endif::arc42help[]
 
 === _<Concept 1>_
 

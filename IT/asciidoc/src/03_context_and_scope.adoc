@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Ambito e contesto del sistema
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -21,10 +22,11 @@ Diverse opzioni:
 * Diagrammi di contesto
 * Elenchi di partner di comunicazione e loro interfacce.
 ****
-
+endif::arc42help[]
 
 === Contesto di Business
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -41,6 +43,7 @@ Tutti i tipi di diagrammi che mostrano il sistema come una scatola nera e specif
 In alternativa (o in aggiunta) puoi usare una tabella.
 Il titolo della tabella è il nome del sistema, le tre colonne contengono il nome del partner di comunicazione, gli ingressi e le uscite.
 ****
+endif::arc42help[]
 
 **<Diagramma o Tabella>**
 
@@ -48,6 +51,7 @@ Il titolo della tabella è il nome del sistema, le tre colonne contengono il nom
 
 === Contesto Tecnico
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -62,6 +66,7 @@ Esempio: un deployment diagram UML che descrive i canali di comunicazione dei si
 insieme a una tabella di mappatura che mostra le relazioni tra canali e input/output.
 
 ****
+endif::arc42help[]
 
 **<Diagramma o Tabella>**
 

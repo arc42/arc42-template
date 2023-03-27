@@ -34,6 +34,7 @@ include::src/about-arc42.adoc[]
 // horizontal line
 ***
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 [POZNÁMKA]
@@ -42,8 +43,7 @@ Tato verze arc42 šablony obsahuje nápovědu a vysvětlivky a slouží proto k 
 Pro dokumentaci vašeho vlastního systému použijte raději _plain_ verzi.
 ====
 ****
-
-
+endif::arc42help[]
 // numbering from here on
 :numbered:
 

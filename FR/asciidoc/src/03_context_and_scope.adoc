@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Contexte et périmètre
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -26,10 +27,12 @@ Diverses options :
 Voir https://docs.arc42.org/section-3/[Context and Scope] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 
 === Contexte métier
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -46,6 +49,7 @@ Vous pouvez également (ou en plus) utiliser un tableau.
 Le titre du tableau est le nom de votre système, les trois colonnes contiennent le nom du partenaire de communication, les entrées et les sorties.
 
 ****
+endif::arc42help[]
 
 **<Schéma ou tableau>**
 
@@ -53,6 +57,7 @@ Le titre du tableau est le nom de votre système, les trois colonnes contiennent
 
 === Contexte Technique
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -66,6 +71,7 @@ Par exemple, un diagramme de déploiement UML décrivant les canaux vers les sys
 ainsi qu'un tableau de correspondance montrant les relations entre les canaux et les entrées/sorties.
 
 ****
+endif::arc42help[]
 
 **<Schéma ou tableau>**
 

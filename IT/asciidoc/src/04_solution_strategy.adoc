@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Strategia della soluzione
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -24,3 +25,4 @@ Motiva ciò che hai deciso e perché lo hai deciso in questo modo,
 in base alla dichiarazione del problema, agli obiettivi di qualità e ai vincoli chiave.
 Fare riferimento ai dettagli nelle sezioni seguenti.
 ****
+endif::arc42help[]

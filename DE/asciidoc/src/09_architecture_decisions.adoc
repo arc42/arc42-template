@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-design-decisions]]
 == Architekturentscheidungen
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -29,3 +30,4 @@ Siehe https://docs.arc42.org/section-9/[Architekturentscheidungen] in der arc42 
 Dort finden Sie Links und Beispiele zum Thema ADR.
 
 ****
+endif::arc42help[]

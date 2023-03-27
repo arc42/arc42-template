@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Kwaliteits Requirements
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -22,9 +23,11 @@ Omdat kwaliteits requirements grote invloed invloed hebben op architectuur besli
 Zie https://docs.arc42.org/section-10/[Quality Requirements] in de arc42 documentatie.
 
 ****
+endif::arc42help[]
 
 === Kwaliteits Boom
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -44,9 +47,11 @@ De boom moet in elk geval verwijzingen/links bevatten naar de scenarios in de vo
 
 
 ****
+endif::arc42help[]
 
 === Kwaliteits Scenarios
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -70,3 +75,4 @@ Vooral als er methodes als ATAM worden gebruikt is het van belang om de kwalitei
 .Vorm
 Lijst of vrije tekst vorm.
 ****
+endif::arc42help[]

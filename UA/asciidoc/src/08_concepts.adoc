@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Наскрізні концепції
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -54,7 +55,7 @@ image::08-Crosscutting-Concepts-Structure-EN.png["Можливі теми для
 
 Див. https://docs.arc42.org/section-8/[Концепції] в документації arc42.
 ****
-
+endif::arc42help[]
 
 === _<Концепція 1>_
 

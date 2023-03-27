@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Vista de Despliegue
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -37,9 +38,11 @@ utilizando diagramas de despliegue adicionales:
 * Cuando las partes relacionadas de Hardware prefieran otro tipo de diagramas además de los diagramas de despliegue,
 permítales usar cualquier tipo que permita mostrar los nodos y canales de la infraestructura.
 ****
+endif::arc42help[]
 
 === Nivel de infraestructura 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Describa (Usualmente en una combinación de diagramas, tablas y texto):
@@ -52,6 +55,7 @@ conexiones físicas entre ellos
 
 Para múltiples ambientes o despliegues alternativos copie esta sección para todos los ambientes relevantes.
 ****
+endif::arc42help[]
 
 _**<Diagrama General>**_
 
@@ -69,12 +73,14 @@ _<Descripción del mapeo>_
 
 === Nivel de Infraestructura 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Aquí puede incluir la estructura interna de (algunos) elementos de infraestructura del nivel 1.
 
 Copie la estructura del nivel 1 para cada elemento elegido.
 ****
+endif::arc42help[]
 
 ==== _<Elemento de Infraestructura 1>_
 

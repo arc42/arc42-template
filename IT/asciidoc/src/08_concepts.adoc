@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Concetti trasversali
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuto
@@ -49,7 +50,7 @@ in questo elenco.
 
 image::08-Crosscutting-Concepts-Structure-IT.png["Possibili argomenti per concetti trasversali"]
 ****
-
+endif::arc42help[]
 
 === _<Concetto 1>_
 

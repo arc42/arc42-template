@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Architectuur Beperkingen
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -23,3 +24,4 @@ Zo nodig opgedeeld in technische, organisatorische en politieke beperkingen en c
 Zie https://docs.arc42.org/section-2/[Architectuur Beperkingen] in de arc42 documentatie.
 
 ****
+endif::arc42help[]

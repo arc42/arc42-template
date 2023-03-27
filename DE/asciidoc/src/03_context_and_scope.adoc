@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-context-and-scope]]
 == Kontextabgrenzung
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -28,9 +29,11 @@ Verschiedene Optionen:
 Siehe https://docs.arc42.org/section-3/[Kontextabgrenzung] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]
 
 === Fachlicher Kontext
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -46,6 +49,7 @@ Alle Diagrammarten, die das System als Blackbox darstellen und die fachlichen Sc
 Alternativ oder ergänzend können Sie eine Tabelle verwenden.
 Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationsbeziehung, Eingabe, Ausgabe.
 ****
+endif::arc42help[]
 
 **<Diagramm und/oder Tabelle>**
 
@@ -53,6 +57,7 @@ Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikat
 
 === Technischer Kontext
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -67,6 +72,7 @@ Insbesondere bei der Entwicklung von Infrastruktur oder Hardware sind diese tech
 .Form
 Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen, begleitet von einer Tabelle, die Kanäle auf Ein-/Ausgaben abbildet.
 ****
+endif::arc42help[]
 
 **<Diagramm oder Tabelle>**
 

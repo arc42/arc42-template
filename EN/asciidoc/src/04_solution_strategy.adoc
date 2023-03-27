@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Solution Strategy
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -30,3 +31,4 @@ Refer to details in the following sections.
 See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
 
 ****
+endif::arc42help[]
