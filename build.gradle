@@ -4,6 +4,7 @@
 
 plugins {
     id 'org.asciidoctor.jvm.convert' version '3.3.2'
+    id 'org.aim42.htmlSanityCheck' version '1.1.6'
 }
 
 apply plugin: 'java'
@@ -40,4 +41,32 @@ asciidoctor {
             include 'images/**'
         }
     }
+}
+
+htmlSanityCheck {
+    // ensure asciidoctor->html runs first
+    // and images are copied to build directory
+    dependsOn asciidoctor
+
+    sourceDir = new File( "$buildDir/$LANGUAGE" )
+
+    // files to check, specified as a file tree with filtering
+    sourceDocuments = fileTree(sourceDir) {
+        include "arc42-template.html"
+    }
+
+    // where to put results of sanityChecks...
+    checkingResultsDir = new File( "$buildDir/reports/$LANGUAGE" )
+
+    // fail build on errors?
+    failOnErrors = true
+
+    // http connection timeout in milliseconds
+    httpConnectionTimeout = 1000
+
+    // which statuscodes shall be interpreted as warning, error or success
+    // defaults to standard
+    httpWarningCodes = [401]
+    // httpErrorCodes
+    // httpSuccessCodes
 }
