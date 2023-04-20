@@ -56,8 +56,8 @@ include::src/01_introduction_and_goals.adoc[]
 include::src/02_architecture_constraints.adoc[]
 
 <<<<
-// 3. System Scope and Context
-include::src/03_system_scope_and_context.adoc[]
+// 3. Context and Scope
+include::src/03_context_and_scope.adoc[]
 
 <<<<
 // 4. Solution Strategy
