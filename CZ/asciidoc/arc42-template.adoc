@@ -57,7 +57,7 @@ include::src/02_architecture_constraints.adoc[]
 
 <<<<
 // 3. Vymezení a rozsah systému
-include::src/03_system_scope_and_context.adoc[]
+include::src/03_context_and_scope.adoc[]
 
 <<<<
 // 4. Strategie řešení

@@ -72,7 +72,7 @@ include::src/02_architecture_constraints.adoc[]
 
 <<<<
 // 3. Alcance y Contexto del Sistema
-include::src/03_system_scope_and_context.adoc[]
+include::src/03_context_and_scope.adoc[]
 
 <<<<
 // 4. Estrategia de solución
