@@ -1,0 +1,15 @@
+:homepage: https://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**A propos d'arc42**
+
+[role="lead"]
+arc42, le modèle de documentation de l'architecture des logiciels et des systèmes.
+
+Version du modèle {revnumber}. {revremark}, {revdate}
+
+Créé, maintenu et (C) par Dr. Peter Hruschka, Dr. Gernot Starke et les contributeurs.
+Voir https://arc42.org.
+

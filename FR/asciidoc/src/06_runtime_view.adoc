@@ -1,0 +1,49 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-runtime-view]]
+== Vue Exécution
+
+
+[role="arc42help"]
+****
+.Contenu
+La vue d'exécution décrit le comportement concret et les interactions des briques du système sous la forme de scénarios dans les domaines suivants :
+
+* cas d'utilisation ou caractéristiques importants : comment les briques les exécutent-ils ?
+* interactions aux interfaces externes critiques : comment les briques coopèrent-ils avec les utilisateurs et les systèmes voisins ?
+* fonctionnement et administration : lancement, démarrage, arrêt
+* scénarios d'erreur et d'exception
+
+Remarque : Le critère principal pour le choix des scénarios possibles (séquences, flux de travail) est leur *pertinence architecturale*. Il n'est *pas* important de décrire un grand nombre de scénarios. Vous devez plutôt documenter une sélection représentative.
+
+.Motivation
+Vous devez comprendre comment les (instances des) briques de votre système effectuent leur travail et communiquent au moment de l'exécution.
+Vous capturerez principalement des scénarios dans votre documentation afin de communiquer votre architecture aux parties prenantes qui sont moins disposées ou capables de lire et de comprendre les modèles statiques (vue en briques, vue déploiement).
+
+.Représentation
+Il existe de nombreuses notations pour décrire les scénarios, par exemple
+
+* liste numérotée d'étapes (en langage naturel)
+* diagrammes d'activités ou de flux
+* diagrammes de séquence
+* BPMN ou EPC (chaînes de processus d'événements)
+* machines à états
+* ...
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-6/[Runtime View] dans la documentation arc42.
+
+****
+
+=== <Scénario d'exécution 1>
+
+* _<insérer un diagramme d'exécution ou une description textuelle du scénario>_
+* _<insérer une description des aspects notables des interactions entre les instances des briques représentées dans ce diagramme.>_
+
+=== <Scénario d'exécution 2>
+
+=== ...
+
+=== <Scénario d'exécution n>

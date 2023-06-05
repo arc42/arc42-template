@@ -1,0 +1,69 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Concepts transverses
+
+
+[role="arc42help"]
+****
+.Contenu
+Cette section décrit les réglementations générales, principales et les idées de solutions qui sont pertinentes dans plusieurs parties (= transversales) de votre système.
+Ces concepts sont souvent liés à plusieurs briques.
+Ils peuvent inclure de nombreux sujets différents, tels que
+
+* les modèles, particulièrement les modèles de domaine
+* les patrons d'architecture ou de conception
+* règles d'utilisation d'une technologie spécifique
+* les décisions principales, souvent techniques, de nature globale (= transversale)
+* règles de mise en œuvre
+
+
+.Motivation
+Les concepts constituent la base de l'_intégrité conceptuelle_ (cohérence, homogénéité) de l'architecture. 
+Ils constituent donc une contribution importante à l'obtention des qualités internes de votre système.
+
+Certains de ces concepts ne peuvent pas être attribués à des briques individuels, par exemple la sécurité ou la sûreté.
+
+.Représentation
+La représentation peut être variée :
+
+* des documents conceptuels avec n'importe quel type de structure
+* des extraits de modèles transverses ou des scénarios utilisant les notations des vues de l'architecture
+* des exemples de mise en œuvre, en particulier pour les concepts techniques
+* référence à l'utilisation typique de frameworks standard (par exemple, l'utilisation d'Hibernate pour le mappage objet/relationnel)
+
+.Structure
+Une structure potentielle (mais non obligatoire) pour cette section pourrait être la suivante :
+
+* Concepts de domaine
+* Concepts d'expérience utilisateur (UX)
+* Concepts de sûreté et de sécurité
+* Architecture et modèles de conception
+* "Sous le capot"
+* Concepts de développement
+* Concepts opérationnels
+
+Remarque : il peut être difficile d'affecter des concepts individuels à un thème spécifique de cette liste.
+
+image::08-Crosscutting-Concepts-Structure-EN.png["Thèmes possibles pour les concepts transverses"]
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-8/[Concepts] dans la documentation arc42.
+****
+
+
+=== _<Concept 1>_
+
+_<explication>_
+
+=== _<Concept 2>_
+
+_<explication>_
+
+...
+
+=== _<Concept n>_
+
+_<explication>_

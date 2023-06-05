@@ -1,0 +1,92 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-introduction-and-goals]]
+== Introduction et Objectifs
+
+[role="arc42help"]
+****
+Décrit les exigences pertinentes et les forces motrices que les architectes logiciels et l'équipe de développement doivent prendre en compte. 
+Ces éléments sont les suivants
+
+* les objectifs commerciaux sous-jacents, 
+* les caractéristiques essentielles, 
+* les exigences fonctionnelles essentielles, 
+* les objectifs de qualité pour l'architecture et
+* les parties prenantes concernées et leurs attentes
+****
+
+=== Vue d'ensemble des exigences
+
+[role="arc42help"]
+****
+.Contenu
+Brève description des exigences fonctionnelles, des forces motrices, de l'extrait (ou du résumé) des exigences.
+Lien vers (en espérant qu'ils existent) les documents relatifs aux exigences (avec le numéro de version et des informations sur l'endroit où les trouver).
+
+.Motivation
+Du point de vue des utilisateurs finaux, un système est créé ou modifié pour
+améliorer le soutien d'une activité métier et/ou améliorer la qualité.
+
+.Représentation
+Brève description textuelle, probablement sous forme de tableau de cas d'utilisation.
+S'il existe des documents relatifs aux exigences, cette vue d'ensemble doit s'y référer.
+
+Ces extraits doivent être aussi courts que possible. Trouver un équilibre entre la lisibilité de ce document et la redondance potentielle par rapport aux documents d'exigences.
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-1/[Introduction and Goals] dans la documentation arc42.
+
+****
+
+=== Objectifs Qualité
+
+[role="arc42help"]
+****
+.Contenu
+Les trois (maximum cinq) principaux objectifs de qualité pour l'architecture dont la réalisation est de la plus haute importance pour les principales parties prenantes. 
+Nous parlons bien d'objectifs de qualité pour l'architecture. Ne les confondez pas avec les objectifs du projet.
+Ils ne sont pas nécessairement identiques.
+
+Voici un aperçu des sujets potentiels (basé sur la norme ISO 25010) :
+
+image::01_2_iso-25010-topics-EN.drawio.png["Catégories d'exigences de Qualité"]
+
+.Motivation
+Vous devez connaître les objectifs de qualité de vos principales parties prenantes, car ils influenceront les décisions architecturales fondamentales. 
+Veillez à être très concret sur ces qualités, évitez les mots à la mode.
+En tant qu'architecte, vous ne savez pas comment la qualité de votre travail sera jugée...
+
+.Représentation
+Un tableau avec des objectifs de qualité et des scénarios concrets, classés par ordre de priorité
+****
+
+=== Parties prenantes
+
+[role="arc42help"]
+****
+.Contenu
+Vue d'ensemble explicite des parties prenantes du système, c'est-à-dire toutes les personnes, rôles ou organisations qui
+
+* doit connaître l'architecture
+* doit être convaincu de l'architecture
+* doivent travailler avec l'architecture ou avec le code
+* ont besoin de la documentation d'architecture pour leur travail
+* doivent prendre des décisions concernant le système ou son développement
+
+.Motivation
+Vous devez connaître toutes les parties impliquées dans le développement du système ou concernées par celui-ci.
+Sinon, vous risquez d'avoir de mauvaises surprises plus tard dans le processus de développement.
+Ces parties prenantes déterminent l'étendue et le niveau de détail de votre travail et de ses résultats.
+
+.Représentation
+Tableau avec les noms des rôles, les noms des personnes et leurs attentes par rapport à l'architecture et à sa documentation.
+****
+
+[options="header",cols="1,2,2"]
+|===
+|Rôle/Nom|Contact|Attentes
+| _<Role-1>_ | _<Contact-1>_ | _<Attente-1>_
+| _<Role-2>_ | _<Contact-2>_ | _<Attente-2>_
+|===

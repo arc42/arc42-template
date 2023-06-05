@@ -1,0 +1,74 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-context-and-scope]]
+== Contexte et périmètre
+
+
+[role="arc42help"]
+****
+.Contenu
+Le contexte et le périmètre - comme son nom l'indique - délimitent votre système (c'est-à-dire votre périmètre) de tous ses partenaires de communication (systèmes voisins et utilisateurs, c'est-à-dire le contexte de votre système). Il spécifie ainsi les interfaces externes.
+
+Si nécessaire, différencier le contexte métier (entrées et sorties spécifiques au domaine) du contexte technique (canaux, protocoles, matériel).
+
+.Motivation
+Les interfaces de domaine et les interfaces techniques avec les partenaires de communication font partie des aspects les plus critiques de votre système. Assurez-vous de bien les comprendre.
+
+.Représentation
+Diverses options :
+
+* Diagrammes de contexte
+* Listes des partenaires de communication et de leurs interfaces.
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-3/[Context and Scope] dans la documentation arc42.
+
+****
+
+
+=== Contexte métier
+
+[role="arc42help"]
+****
+.Contenu
+Spécification de *tous* les partenaires de communication (utilisateurs, systèmes informatiques, ...) avec des explications sur les entrées et les sorties ou les interfaces spécifiques au domaine.
+En option, vous pouvez ajouter des formats ou des protocoles de communication spécifiques au domaine.
+
+.Motivation
+Toutes les parties prenantes doivent comprendre quelles données sont échangées avec l'environnement du système.
+
+.Représentation
+Toutes sortes de diagrammes qui montrent le système comme une boîte noire et spécifient les interfaces du domaine avec les partenaires de communication.
+
+Vous pouvez également (ou en plus) utiliser un tableau.
+Le titre du tableau est le nom de votre système, les trois colonnes contiennent le nom du partenaire de communication, les entrées et les sorties.
+
+****
+
+**<Schéma ou tableau>**
+
+**<éventuellement : Explication des interfaces de domaines externes>**
+
+=== Contexte Technique
+
+[role="arc42help"]
+****
+.Contenu
+Interfaces techniques (canaux et supports de transmission) reliant votre système à son environnement. En outre, il faut établir une correspondance entre les entrées/sorties spécifiques au domaine et les canaux, c'est-à-dire expliquer quelles Entrée/Sortie utilisent quel canal.
+
+.Motivation
+De nombreuses parties prenantes prennent des décisions architecturales basées sur les interfaces techniques entre le système et son contexte. Ce sont surtout les concepteurs d'infrastructure ou de matériel qui décident de ces interfaces techniques.
+
+.Représentation
+Par exemple, un diagramme de déploiement UML décrivant les canaux vers les systèmes voisins,
+ainsi qu'un tableau de correspondance montrant les relations entre les canaux et les entrées/sorties.
+
+****
+
+**<Schéma ou tableau>**
+
+**<en option : Explication des interfaces techniques>**
+
+**<Correspondance des entrées/sorties aux canaux>**

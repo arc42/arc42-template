@@ -1,0 +1,42 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-glossary]]
+== Glossaire
+
+[role="arc42help"]
+****
+.Contenu
+Les termes techniques et métier les plus importants que vos parties prenantes utilisent lorsqu'elles discutent du système.
+
+Le glossaire peut également servir de source pour les traductions si vous travaillez dans des équipes multilingues.
+
+.Motivation
+Vous devez définir clairement vos termes, de manière à ce que toutes les parties prenantes
+
+* aient une compréhension identique de ces termes
+* n'utilisent pas de synonymes et d'homonymes
+
+
+.Représentation
+
+Un tableau avec les colonnes <Terme> et <Définition>.
+
+Potentiellement plus de colonnes au cas où vous auriez besoin de traductions.
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-12/[Glossary] dans la documentation arc42.
+
+****
+
+[cols="e,2e" options="header"]
+|===
+|Terme |Définition
+
+|<Terme-1>
+|<Définition-1>
+
+|<Terme-2>
+|<Définition-2>
+|===
