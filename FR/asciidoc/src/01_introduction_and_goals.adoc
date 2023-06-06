@@ -6,13 +6,13 @@ ifndef::imagesdir[:imagesdir: ../images]
 [role="arc42help"]
 ****
 Décrit les exigences pertinentes et les forces motrices que les architectes logiciels et l'équipe de développement doivent prendre en compte. 
-Ces éléments sont les suivants
+Il s'agit notamment
 
-* les objectifs commerciaux sous-jacents, 
-* les caractéristiques essentielles, 
-* les exigences fonctionnelles essentielles, 
-* les objectifs de qualité pour l'architecture et
-* les parties prenantes concernées et leurs attentes
+* des objectifs métier sous-jacents, 
+* des caractéristiques essentielles, 
+* des exigences fonctionnelles essentielles, 
+* des objectifs de qualité pour l'architecture et
+* des parties prenantes concernées et leurs attentes
 ****
 
 === Vue d'ensemble des exigences
@@ -21,7 +21,7 @@ Ces éléments sont les suivants
 ****
 .Contenu
 Brève description des exigences fonctionnelles, des forces motrices, de l'extrait (ou du résumé) des exigences.
-Lien vers (en espérant qu'ils existent) les documents relatifs aux exigences (avec le numéro de version et des informations sur l'endroit où les trouver).
+Liens vers (en espérant qu'ils existent) les documents décrivant les exigences (avec le numéro de version et des informations sur l'endroit où les trouver).
 
 .Motivation
 Du point de vue des utilisateurs finaux, un système est créé ou modifié pour
@@ -29,9 +29,9 @@ améliorer le soutien d'une activité métier et/ou améliorer la qualité.
 
 .Représentation
 Brève description textuelle, probablement sous forme de tableau de cas d'utilisation.
-S'il existe des documents relatifs aux exigences, cette vue d'ensemble doit s'y référer.
+S'il existe des documents décrivant les exigences, cette vue d'ensemble doit s'y référer.
 
-Ces extraits doivent être aussi courts que possible. Trouver un équilibre entre la lisibilité de ce document et la redondance potentielle par rapport aux documents d'exigences.
+Ces extraits doivent être aussi courts que possible. Trouver un équilibre entre la lisibilité de ce document et la redondance potentielle par rapport aux documents décrivant les exigences.
 
 
 .Plus d'informations
@@ -40,7 +40,7 @@ Voir https://docs.arc42.org/section-1/[Introduction and Goals] dans la documenta
 
 ****
 
-=== Objectifs Qualité
+=== Objectifs de Qualité
 
 [role="arc42help"]
 ****

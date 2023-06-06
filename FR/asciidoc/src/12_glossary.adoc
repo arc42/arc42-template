@@ -23,6 +23,12 @@ Un tableau avec les colonnes <Terme> et <Définition>.
 
 Potentiellement plus de colonnes au cas où vous auriez besoin de traductions.
 
+[options="header",cols="1,1"]
+|===
+|Terme |Définition
+| _<Terme-1>_ | _<Définition-1>_
+| _<Terme-2>_ | _<Définition-2>_
+|===
 
 .Plus d'informations
 

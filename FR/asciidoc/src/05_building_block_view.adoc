@@ -23,13 +23,12 @@ La vue en briques est une collection hiérarchique de boîtes noires et de boît
 
 image::05_building_blocks-EN.png["Hiérarchie des briques"]
 
+*Niveau Contexte et Périmètre (Niveau 0)* a été décrit dans la section https://docs.arc42.org/section-3/[Context and Scope]. C'est pourquoi il n'est pas décrit ici, mais vous pouvez éventuellement insérer un lien vers https://docs.arc42.org/section-3/[Context and Scope].
+
 *Niveau 1* est la description en boîte blanche du système global ainsi que la description en boîte noire de toutes les briques qu'il contient.
 
 *Niveau 2* est un zoom sur certaines briques du niveau 1.
 Il contient donc la description en boîte blanche de certaines briques du niveau 1, ainsi que la description en boîte noire de leurs briques internes.
-
-*Niveau 3* est un zoom sur certaines briques du niveau 2, et ainsi de suite.
-
 
 .Plus d'informations
 
@@ -37,7 +36,7 @@ Voir https://docs.arc42.org/section-5/[Building Block View] dans la documentatio
 
 ****
 
-=== Système global Boîte blanche
+=== Niveau 1 : Système global Boîte blanche
 
 [role="arc42help"]
 ****
@@ -143,6 +142,8 @@ Ici, vous pouvez spécifier la structure interne de (certaines) briques du nivea
 Vous devez décider quels éléments de votre système sont suffisamment importants pour justifier une description aussi détaillée.
 Préférez la pertinence à l'exhaustivité. Spécifiez les éléments importants, surprenants, risqués, complexes ou volatils.
 Laissez de côté les éléments normaux, simples, ennuyeux ou standardisés de votre système.
+
+Si vous avez besoin de niveaux plus détaillés de votre architecture, c'est-à-dire des niveaux 3, 4 et ainsi de suite, veuillez copier cette partie d'arc42 pour les niveaux supplémentaires.
 ****
 
 ==== Boîte blanche _<brique 1>_
@@ -160,36 +161,7 @@ _<template boîte blanche>_
 
 ...
 
-==== Boîte blanche _<brique m>_
+==== Boîte blanche _<brique n>_
 
 _<template boîte blanche>_
 
-
-=== Niveau 3
-
-[role="arc42help"]
-****
-Ici, vous pouvez spécifier la structure interne de (certaines) briques du niveau 2 sous forme de boîtes blanches.
-
-Si vous avez besoin de niveaux plus détaillés de votre architecture, copiez cette partie de l'arc42 pour obtenir des niveaux supplémentaires.
-****
-
-
-==== Boîte blanche _<brique x.1>_
-
-[role="arc42help"]
-****
-Spécifie la structure interne de _brique x.1_.
-****
-
-_<template boîte blanche>_
-
-
-==== Boîte blanche _<brique x.2>_
-
-_<template boîte blanche>_
-
-
-==== Boîte blanche _<brique y.1>_
-
-_<template boîte blanche>_
