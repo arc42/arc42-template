@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Constraintes d'Architecture
+
+
+[role="arc42help"]
+****
+.Contenu
+Toute exigence qui limite la liberté des architectes logiciels dans leurs décisions de conception et de mise en œuvre ou dans leurs décisions concernant le processus de développement. Ces contraintes vont parfois au-delà des systèmes individuels et sont valables pour l'ensemble des organisations et des entreprises.
+
+.Motivation
+Les architectes doivent savoir exactement où ils sont libres dans leurs décisions de conception et où ils doivent respecter des contraintes.
+Les contraintes doivent toujours être prises en compte ; elles peuvent toutefois être négociables.
+
+.Représentation
+Tableaux simples de contraintes avec explications.
+Si nécessaire, vous pouvez les subdiviser en
+contraintes techniques, contraintes organisationnelles, politiques et
+conventions (par exemple, règles de développement ou de version, conventions de documentation ou de dénomination).
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-2/[Architecture Constraints] dans la documentation arc42.
+
+****

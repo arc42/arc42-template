@@ -1,0 +1,94 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Vue Déploiement
+
+[role="arc42help"]
+****
+.Contenu
+La vue déploiement décrit :
+
+1. l'infrastructure technique utilisée pour exécuter votre système, avec des éléments d'infrastructure tels que les emplacements géographiques, les environnements, les serveurs, les processeurs, les canaux et les topologies de réseau, ainsi que d'autres éléments d'infrastructure, et
+
+2. la correspondance entre les briques (logicielles) et les éléments d'infrastructure.
+
+Les systèmes sont souvent exécutés dans différents environnements, par exemple l'environnement de développement, l'environnement de test, l'environnement de production. Dans ce cas, vous devez documenter tous les environnements pertinents.
+
+Documenter en particulier une vue déploiement si votre logiciel est exécuté en tant que système distribué avec plus d'un ordinateur, processeur, serveur ou conteneur ou lorsque vous concevez et construisez vos propres processeurs et puces matérielles.
+
+D'un point de vue logiciel, il suffit de décrire uniquement les éléments d'une infrastructure qui sont nécessaires pour montrer le déploiement de vos briques. Les architectes matériel peuvent aller plus loin et décrire une infrastructure à n'importe quel niveau de détail.
+
+.Motivation
+Les logiciels ne fonctionnent pas sans matériel.
+Cette infrastructure sous-jacente peut influencer et influencera un système et/ou certains concepts transversaux.
+Il est donc nécessaire de connaître l'infrastructure.
+
+.Représentation
+
+Un diagramme de déploiement de haut niveau est peut-être déjà contenu dans la section 3.2. en tant que 
+contexte technique avec votre propre infrastructure comme UNE boîte noire. Dans cette section, 
+il est possible de zoomer sur cette boîte noire à l'aide de diagrammes de déploiement supplémentaires :
+
+* UML propose des diagrammes de déploiement pour exprimer ce point de vue. Utilisez-les, probablement avec des diagrammes imbriqués,
+lorsque votre infrastructure est plus complexe.
+* Lorsque vos parties prenantes (matérielles) préfèrent d'autres types de diagrammes plutôt qu'un diagramme de déploiement, laissez-les utiliser n'importe quel type de diagramme capable de montrer les nœuds et les canaux de l'infrastructure.
+
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-7/[Vue Déploiment] dans la documentation arc42.
+
+****
+
+=== Infrastructure Niveau 1
+
+[role="arc42help"]
+****
+Décrire (généralement à l'aide d'une combinaison de diagrammes, de tableaux et de textes) :
+
+* distribution d'un système à plusieurs endroits, environnements, machines, processeurs, ..., ainsi que les connexions physiques entre eux
+* justifications ou motivations importantes pour cette structure de déploiement
+* les caractéristiques de qualité et/ou de performance de cette infrastructure
+* la mise en correspondance des artefacts logiciels avec les éléments de cette infrastructure
+
+Pour les environnements multiples ou les déploiements alternatifs, veuillez copier et adapter cette section d'arc42 pour tous les environnements concernés.
+****
+
+_**<Schéma d'ensemble>**_
+
+Motivation::
+
+_<explication sous forme de texte>_
+
+Caractéristiques de qualité et/ou de performance::
+
+_<explication sous forme de texte>_
+
+Correspondance des briques vis à vis de l'infrastructure::
+_<description de la correspondance>_
+
+
+=== Infrastructure Niveau 2
+
+[role="arc42help"]
+****
+Ici, vous pouvez inclure la structure interne de (certains) éléments d'infrastructure du niveau 1.
+
+Veuillez copier la structure du niveau 1 pour chaque élément sélectionné.
+****
+
+==== _<Infrastructure Element 1>_
+
+_<schéma + explication>_
+
+==== _<Infrastructure Element 2>_
+
+_<schéma + explication>_
+
+...
+
+==== _<Infrastructure Element n>_
+
+_<schéma + explication>_

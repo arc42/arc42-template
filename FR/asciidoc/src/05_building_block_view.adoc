@@ -1,0 +1,167 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-building-block-view]]
+
+
+== Vue en Briques
+
+[role="arc42help"]
+****
+.Contenu
+La vue en briques montre la décomposition statique du système en briques (modules, composants, sous-systèmes, classes, interfaces, paquets, bibliothèques, cadres, couches, partitions, niveaux, fonctions, macros, opérations, structures de données, ...) ainsi que leurs dépendances (relations, associations, ...).
+
+Cette vue est obligatoire pour toute documentation sur l'architecture.
+Par analogie avec une maison, il s'agit du _plan de masse_.
+
+.Motivation
+Maintenir une vue d'ensemble de votre code source en rendant sa structure compréhensible grâce à l'abstraction.
+
+Cela vous permet de communiquer avec votre partie prenante à un niveau abstrait sans divulguer les détails de la mise en œuvre.
+
+.Représentation
+La vue en briques est une collection hiérarchique de boîtes noires et de boîtes blanches (voir figure ci-dessous) et de leurs descriptions.
+
+image::05_building_blocks-EN.png["Hiérarchie des briques"]
+
+*Niveau Contexte et Périmètre (Niveau 0)* a été décrit dans la section https://docs.arc42.org/section-3/[Context and Scope]. C'est pourquoi il n'est pas décrit ici, mais vous pouvez éventuellement insérer un lien vers https://docs.arc42.org/section-3/[Context and Scope].
+
+*Niveau 1* est la description en boîte blanche du système global ainsi que la description en boîte noire de toutes les briques qu'il contient.
+
+*Niveau 2* est un zoom sur certaines briques du niveau 1.
+Il contient donc la description en boîte blanche de certaines briques du niveau 1, ainsi que la description en boîte noire de leurs briques internes.
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-5/[Building Block View] dans la documentation arc42.
+
+****
+
+=== Niveau 1 : Système global Boîte blanche
+
+[role="arc42help"]
+****
+Vous décrivez ici la décomposition du système global à l'aide du modèle de boîte blanche suivant. Il contient
+
+ * un schéma d'ensemble
+ * une motivation pour la décomposition
+ * des descriptions boîte noire des briques contenues. Pour cela, nous vous proposons des alternatives :
+
+   ** utiliser _un_ tableau pour une vue d'ensemble courte et pragmatique de tous les éléments contenus et de leurs interfaces
+   ** utiliser une liste de descriptions boîte noire des briques conformément au modèle de boîte noire (voir ci-dessous).
+   Selon l'outil choisi, cette liste peut prendre la forme de sous-chapitres (dans les fichiers texte), de sous-pages (dans un wiki) ou d'éléments imbriqués (dans un outil de modélisation).
+
+
+ * (facultatif :) interfaces importantes, qui ne sont pas expliquées dans les modèles boîte noire d'une brique, mais qui sont très importantes pour la compréhension de la boîte blanche.
+Puisqu'il existe de nombreuses façons de spécifier les interfaces, pourquoi ne pas fournir un modèle spécifique pour celles-ci ?
+ Dans le pire des cas, vous devez spécifier et décrire la syntaxe, la sémantique, les protocoles, la gestion des erreurs, les restrictions, les versions, les qualités, les compatibilités nécessaires et bien d'autres choses encore.
+Dans le meilleur des cas, vous pourrez vous contenter d'exemples ou de simples signatures.
+
+****
+
+_**<Schéma d'ensemble>**_
+
+Motivation::
+
+_<texte explicatif>_
+
+
+Briques contenues::
+_<Description de la brique contenue (boîte noire)>_
+
+Interfaces Importantes::
+_<Description des interfaces importantes>_
+
+[role="arc42help"]
+****
+Insérez vos explications sur les boîtes noires du niveau 1 :
+
+Si vous utilisez la forme tabulaire, vous ne décrirez vos boîtes noires qu'avec leur nom et leur responsabilité selon le schéma suivant :
+
+[cols="1,2" options="header"]
+|===
+| **Nom** | **Responsabilité**
+| _<boîte noire 1>_ | _<Texte>_
+| _<boîte noire 2>_ | _<Texte>_
+|===
+
+Si vous utilisez une liste de descriptions de boîtes noires, vous devez remplir un modèle de boîte noire distinct pour chaque briques importante.
+Son titre est le nom de la boîte noire.
+****
+
+==== <Nom boîte noire 1>
+
+[role="arc42help"]
+****
+Vous décrivez ici la <boîte noire 1>
+selon le modèle de boîte noire suivant :
+
+* Objectif/Responsabilité
+* Interface(s), lorsqu'elle(s) n'est (ne sont) pas extraite(s) en tant que paragraphe(s) séparé(s). Ces interfaces peuvent inclure des qualités et des caractéristiques de performance.
+* (Facultatif) Caractéristiques de qualité/performance de la boîte noire, par exemple disponibilité, comportement en cours d'exécution, ....
+* (Facultatif) Emplacement du répertoire/fichier
+* (Facultatif) Exigences respectées (si vous avez besoin d'une traçabilité vers les exigences)
+* (Facultatif) Questions ouvertes/problèmes/risques en suspens
+
+****
+
+_<Objectif/Responsabilité>_
+
+_<Interface(s)>_
+
+_<(Facultatif) Caractéristiques de qualité/performance>_
+
+_<(Facultatif) Emplacement du répertoire/fichier>_
+
+_<(Facultatif) Exigences respectées>_
+
+_<(Facultatif) Questions ouvertes/problèmes/risques>_
+
+
+==== <Nom boîte noire 2>
+
+_<template boîte noire>_
+
+==== <Nom boîte noire n>
+
+_<template boîte noire>_
+
+==== <Nom interface 1>
+
+...
+
+==== <Nom interface m>
+
+
+
+=== Niveau 2
+
+[role="arc42help"]
+****
+Ici, vous pouvez spécifier la structure interne de (certaines) briques du niveau 1 sous forme de boîtes blanches.
+
+Vous devez décider quels éléments de votre système sont suffisamment importants pour justifier une description aussi détaillée.
+Préférez la pertinence à l'exhaustivité. Spécifiez les éléments importants, surprenants, risqués, complexes ou volatils.
+Laissez de côté les éléments normaux, simples, ennuyeux ou standardisés de votre système.
+
+Si vous avez besoin de niveaux plus détaillés de votre architecture, c'est-à-dire des niveaux 3, 4 et ainsi de suite, veuillez copier cette partie d'arc42 pour les niveaux supplémentaires.
+****
+
+==== Boîte blanche _<brique 1>_
+
+[role="arc42help"]
+****
+...décrit la structure interne de la _brique 1_.
+****
+
+_<template boîte blanche>_
+
+==== Boîte blanche _<brique 2>_
+
+_<template boîte blanche>_
+
+...
+
+==== Boîte blanche _<brique n>_
+
+_<template boîte blanche>_
+

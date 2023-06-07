@@ -1,0 +1,9 @@
+// Paramètres asciidoc pour FR (français)
+// ==================================
+:toc-title: Table des matières
+
+// activer table-of-contents
+:toc:
+
+// où se trouvent les images ?
+:imagesdir: ./images

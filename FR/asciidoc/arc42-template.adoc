@@ -1,0 +1,99 @@
+// fichier d'entête pour arc42-template,
+// y compris tous les textes d'aide
+//
+// ====================================
+
+// configure les paramètres FR pour asciidoc
+include::src/config.adoc[]
+
+= image:arc42-logo.png[arc42] Template
+:revnumber: 8.2 FR
+:revdate: January 2023
+:revremark: (basé sur la version AsciiDoc)
+// toc-title définition DOIT suivre le titre du document sans ligne blanche !
+:toc-title: Table des matières
+
+// style supplémentaire pour les appels à l'aide arc42
+ifdef::backend-html5[]
+++++
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:none;}
+}
+</style>
+++++
+endif::backend-html5[]
+
+
+include::src/about-arc42.adoc[]
+
+// ligne horizontale
+***
+
+[role="arc42help"]
+****
+[NOTE]
+====
+Cette version du modèle contient de l'aide et des explications.
+Elle est utilisée pour se familiariser avec arc42 et comprendre les concepts.
+Pour la documentation de votre propre système, il est préférable d'utiliser la version _simple_.
+====
+****
+
+
+// numérotation à partir d'ici
+:numbered:
+
+<<<<
+// 1. Introduction et Objectifs
+include::src/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Contraintes d'architecture
+include::src/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Contexte et périmètre
+include::src/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Stratégie de solution
+include::src/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Vue en Briques
+include::src/05_building_block_view.adoc[]
+
+<<<<
+// 6. Vue Exécution
+include::src/06_runtime_view.adoc[]
+
+<<<<
+// 7. Vue Déploiement
+include::src/07_deployment_view.adoc[]
+
+<<<<
+// 8. Concepts
+include::src/08_concepts.adoc[]
+
+<<<<
+// 9. Décisions d'architecture
+include::src/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Exigences de qualité
+include::src/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Risques techniques
+include::src/11_technical_risks.adoc[]
+
+<<<<
+// 12. Glossaire
+include::src/12_glossary.adoc[]
+
+

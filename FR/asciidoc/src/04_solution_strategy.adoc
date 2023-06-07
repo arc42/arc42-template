@@ -1,0 +1,38 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Stratégie de solution
+
+
+[role="arc42help"]
+****
+.Contenu
+Un bref résumé et une explication des décisions fondamentales et des stratégies de solution qui façonnent l'architecture du système. Il comprend
+
+* les décisions technologiques
+* les décisions relatives à la décomposition du système au niveau le plus élevé, par exemple l'utilisation d'un modèle architectural ou d'un modèle de conception
+* les décisions sur la manière d'atteindre les principaux objectifs de qualité
+* les décisions organisationnelles pertinentes, par exemple la sélection d'un processus de développement ou la délégation de certaines tâches à des tiers.
+
+.Motivation
+Ces décisions constituent les pierres angulaires de votre architecture. Elles constituent le fondement de nombreuses autres décisions détaillées ou règles de mise en œuvre.
+
+.Représentation
+Les explications relatives à ces décisions clés doivent être brèves.
+
+Motiver ce qui a été décidé et pourquoi cela a été décidé de cette manière, sur la base de l'énoncé du problème, des objectifs de qualité et des principales contraintes.
+
+Pour documenter la manière d'atteindre les principaux objectifs de qualité, vous pouvez utiliser le tableau suivant :
+
+[options="header",cols="1,1,1,1"]
+|===
+|Objectif de qualité|Scénario|Approche de la solution|Lien vers les détails
+| _<Objectif-Q1>_ | _<Scénario-1>_ | _<Solution-1>_ | _<Lien-1>_
+| _<Objectif-Q2>_ | _<Scénario-2>_ | _<Solution-2>_ | _<Lien-2>_
+|===
+
+.Plus d'informations
+
+Voir https://docs.arc42.org/section-4/[Solution Strategy] dans la documentation arc42.
+
+****
