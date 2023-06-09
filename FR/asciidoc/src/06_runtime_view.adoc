@@ -10,11 +10,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 La vue d'exécution décrit le comportement concret et les interactions des briques du système sous la forme de scénarios dans les domaines suivants :
 
 * cas d'utilisation ou caractéristiques importants : comment les briques les exécutent-ils ?
-* interactions aux interfaces externes critiques : comment les briques coopèrent-ils avec les utilisateurs et les systèmes voisins ?
+* interactions aux interfaces externes critiques : comment les briques coopèrent-elles avec les utilisateurs et les systèmes voisins ?
 * fonctionnement et administration : lancement, démarrage, arrêt
 * scénarios d'erreur et d'exception
 
-Remarque : Le critère principal pour le choix des scénarios possibles (séquences, flux de travail) est leur *pertinence architecturale*. Il n'est *pas* important de décrire un grand nombre de scénarios. Vous devez plutôt documenter une sélection représentative.
+Remarque : Le critère principal pour le choix des scénarios possibles (séquences, flux de travail) est leur *importance architecturale*. Il n'est *pas* important de décrire un grand nombre de scénarios. Vous devez plutôt documenter une sélection représentative.
 
 .Motivation
 Vous devez comprendre comment les (instances des) briques de votre système effectuent leur travail et communiquent au moment de l'exécution.
@@ -27,11 +27,11 @@ Il existe de nombreuses notations pour décrire les scénarios, par exemple
 * diagrammes d'activités ou de flux
 * diagrammes de séquence
 * BPMN ou EPC (chaînes de processus d'événements)
-* machines à états
+* machines d'états
 * ...
 
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-6/[Runtime View] dans la documentation arc42.
 

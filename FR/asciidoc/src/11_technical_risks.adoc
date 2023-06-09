@@ -17,7 +17,7 @@ C'est la devise pour la détection et l'évaluation systématiques des risques e
 .Représentation
 Liste des risques et/ou des dettes techniques, comprenant probablement des mesures suggérées pour minimiser, atténuer ou éviter les risques ou réduire les dettes techniques.
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-11/[Risks and Technical Debt] dans la documentation arc42.
 

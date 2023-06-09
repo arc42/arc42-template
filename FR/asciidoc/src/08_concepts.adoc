@@ -1,18 +1,18 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-concepts]]
-== Concepts transverses
+== Concepts transversaux
 
 
 [role="arc42help"]
 ****
 .Contenu
-Cette section décrit les réglementations générales, principales et les idées de solutions qui sont pertinentes dans plusieurs parties (= transversales) de votre système.
+Cette section décrit les réglementations générales, principales et les idées de solutions qui sont importantes dans plusieurs parties (= transversales) de votre système.
 Ces concepts sont souvent liés à plusieurs briques.
 Ils peuvent inclure de nombreux sujets différents, tels que
 
 * les modèles, particulièrement les modèles de domaine
-* les patrons d'architecture ou de conception
+* les modèles d'architecture ou de conception
 * règles d'utilisation d'une technologie spécifique
 * les décisions principales, souvent techniques, de nature globale (= transversale)
 * règles de mise en œuvre
@@ -22,7 +22,7 @@ Ils peuvent inclure de nombreux sujets différents, tels que
 Les concepts constituent la base de l'_intégrité conceptuelle_ (cohérence, homogénéité) de l'architecture. 
 Ils constituent donc une contribution importante à l'obtention des qualités internes de votre système.
 
-Certains de ces concepts ne peuvent pas être attribués à des briques individuels, par exemple la sécurité ou la sûreté.
+Certains de ces concepts ne peuvent pas être attribués à des briques individuelles, par exemple la sécurité ou la fiabilité.
 
 .Représentation
 La représentation peut être variée :
@@ -37,7 +37,7 @@ Une structure potentielle (mais non obligatoire) pour cette section pourrait êt
 
 * Concepts de domaine
 * Concepts d'expérience utilisateur (UX)
-* Concepts de sûreté et de sécurité
+* Concepts de fiabilité et de sécurité
 * Architecture et modèles de conception
 * "Sous le capot"
 * Concepts de développement
@@ -45,7 +45,7 @@ Une structure potentielle (mais non obligatoire) pour cette section pourrait êt
 
 Remarque : il peut être difficile d'affecter des concepts individuels à un thème spécifique de cette liste.
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Thèmes possibles pour les concepts transverses"]
+image::08-Crosscutting-Concepts-Structure-EN.png["Thèmes possibles pour les concepts transversaux"]
 
 
 .Plus d'informations

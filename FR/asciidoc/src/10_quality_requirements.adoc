@@ -1,25 +1,25 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-quality-scenarios]]
-== Exigences de qualité
+== Critères de qualité
 
 
 [role="arc42help"]
 ****
 
 .Contenu
-Cette section contient toutes les exigences de qualité sous la forme d'un arbre de qualité avec des scénarios. Les plus importantes ont déjà été décrites au point 1.2 (objectifs de qualité).
+Cette section contient tous les critères de qualité sous la forme d'un arbre de qualité avec des scénarios. Les plus importantes ont déjà été décrites au point 1.2 (objectifs de qualité).
 
-Ici, vous pouvez également capturer des exigences de qualité avec une priorité moindre,
+Ici, vous pouvez également capturer des critères de qualité avec une priorité moindre,
 qui n'entraîneront pas de risques élevés si elles ne sont pas entièrement satisfaites.
 
 .Motivation
-Étant donné que les exigences de qualité auront une grande influence sur les décisions architecturales,
+Étant donné que les critères de qualité auront une grande influence sur les décisions architecturales,
 vous devez savoir, pour chaque partie prenante, ce qui est vraiment important pour elle,
 ce qui est concret et mesurable.
 
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-10/[Quality Requirements] dans la documentation arc42.
 
@@ -33,10 +33,10 @@ Voir https://docs.arc42.org/section-10/[Quality Requirements] dans la documentat
 L'arbre de qualité (tel que défini dans ATAM – Architecture Tradeoff Analysis Method) avec des scénarios de qualité/évaluation sous forme de feuilles.
 
 .Motivation
-L'arborescence avec les priorités permet d'avoir une vue d'ensemble d'un nombre parfois important d'exigences de qualité.
+L'arborescence avec les priorités permet d'avoir une vue d'ensemble d'un nombre parfois important de critères de qualité.
 
 .Représentation
-L'arbre de qualité est une vue d'ensemble des objectifs et des exigences en matière de qualité :
+L'arbre de qualité est une vue d'ensemble des objectifs et des critères de qualité :
 
 * raffinement arborescent du terme "qualité". Utiliser "qualité" ou "utilité" comme racine
 * une carte mentale dont les principales branches sont les catégories de qualité
@@ -50,7 +50,7 @@ Dans tous les cas, l'arbre doit inclure des liens vers les scénarios de la sect
 [role="arc42help"]
 ****
 .Contenu
-Concrétisation des exigences de qualité (parfois vagues ou implicites) à l'aide de scénarios Qualité.
+Concrétisation des critères de qualité (parfois vagues ou implicites) à l'aide de scénarios Qualité.
 
 Ces scénarios décrivent ce qui doit se passer lorsqu'un stimulus arrive au système.
 

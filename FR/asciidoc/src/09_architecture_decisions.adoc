@@ -27,7 +27,7 @@ Diverses options :
 * Liste ou tableau, classés par ordre d'importance et de conséquences ou :
 * plus détaillé sous forme de sections séparées par décision
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-9/[Architecture Decisions] dans la documentation arc42.
 Vous y trouverez des liens et des exemples sur les ADR.
