@@ -1,32 +1,46 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-solution-strategy]]
-== Solution Strategy
+== Стратегия решения
 
 
 [role="arc42help"]
 ****
-.Contents
+.Содержание
 A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes
+
+Краткое изложение и объяснение основных решений и стратегий решения, которые формируют архитектуру системы. Оно включает
+
+* технологические решения
+* решения о декомпозиции системы на верхнем уровне, т.е. использование архитектурного шаблона или шаблона проектирования
+* решения о том, как достичь ключевых целей в области качества
+* соответствующие организационные решения, т.е. выбор процесса разработки или делегирование определенных задач третьим лицам.
 
 * technology decisions
 * decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
 * decisions on how to achieve key quality goals
 * relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
 
-.Motivation
+.Мотивация
 These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
 
-.Form
+Эти решения составляют основу вашей архитектуры. Они являются основой для многих других подробных решений или правил реализации.
+
+.Форма
 Keep the explanations of such key decisions short.
+
+Делайте объяснения таких ключевых решений короткими.
 
 Motivate what was decided and why it was decided that way,
 based upon problem statement, quality goals and key constraints.
 Refer to details in the following sections.
 
+Мотивируйте, что было решено и почему было решено именно так,
+на основе постановки задачи, целей в области качества и ключевых ограничений.
+Подробности см. в следующих разделах.
 
-.Further Information
+.Дальнейшая информация
 
-See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
+Смотрите https://docs.arc42.org/section-4/[Solution Strategy] в документации arc42.
 
 ****

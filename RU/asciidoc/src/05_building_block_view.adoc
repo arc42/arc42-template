@@ -3,27 +3,40 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-building-block-view]]
 
 
-== Building Block View
+== Представление строительных блоков
 
 [role="arc42help"]
 ****
-.Content
+.Содержание
 The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, ...) as well as their dependencies (relationships, associations, ...)
+
+Представление стандартных блоков показывает статическую декомпозицию системы на строительные блоки (модули, компоненты, подсистемы, классы, интерфейсы, пакеты, библиотеки, платформы, слои, разделы, уровни, функции, макросы, операции, структуры данных, ...) а также их зависимости (отношения, ассоциации, ...)
 
 This view is mandatory for every architecture documentation.
 In analogy to a house this is the _floor plan_.
 
-.Motivation
+Это представление является обязательным для любой документации по архитектуре.
+По аналогии с домом это план этажа.
+
+.Мотивация
 Maintain an overview of your source code by making its structure understandable through
 abstraction.
 
+Следите за своим исходным кодом, делая его структуру понятной с помощью
+абстракция.
+
 This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.
 
-.Form
+Это позволяет вам общаться с вашей заинтересованной стороной на абстрактном уровне, не раскрывая деталей реализации.
+
+.Форма
 The building block view is a hierarchical collection of black boxes and white boxes
 (see figure below) and their descriptions.
 
-image::05_building_blocks-EN.png["Hierarchy of building blocks"]
+Представление стандартных блоков представляет собой иерархическую коллекцию черных и белых ящиков.
+(см. рисунок ниже) и их описания.
+
+image::05_building_blocks-EN.png["Иерархия строительных блоков"]
 
 *Level 1* is the white box description of the overall system together with black
 box descriptions of all contained building blocks.
@@ -33,17 +46,26 @@ Thus it contains the white box description of selected building blocks of level 
 
 *Level 3* zooms into selected building blocks of level 2, and so on.
 
+*Уровень 1* представляет собой описание всей системы в белом поле вместе с черным
+бокс описания всех содержащихся строительных блоков.
 
-.Further Information
+*Уровень 2* увеличивает некоторые строительные блоки уровня 1.
+Таким образом, он содержит описание «белого ящика» выбранных строительных блоков уровня 1 вместе с описанием «черного ящика» их внутренних строительных блоков.
 
-See https://docs.arc42.org/section-5/[Building Block View] in the arc42 documentation.
+*Уровень 3* увеличивает масштаб выбранных строительных блоков уровня 2 и так далее.
+
+.Дальнейшая информация
+
+Смотрите https://docs.arc42.org/section-5/[Представление строительных блоков] в документации arc42.
 
 ****
 
-=== Whitebox Overall System
+=== Whitebox Система в общем
 
 [role="arc42help"]
 ****
+Здесь вы описываете декомпозицию всей системы, используя следующий шаблон белого ящика. Это содержит
+
 Here you describe the decomposition of the overall system using the following white box template. It contains
 
  * an overview diagram
@@ -54,6 +76,13 @@ Here you describe the decomposition of the overall system using the following wh
    ** use a list of black box descriptions of the building blocks according to the black box template (see below).
    Depending on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a modeling tool).
 
+* обзорная схема
+* мотивация разложения
+* Описания черного ящика содержащихся строительных блоков. Для них мы предлагаем вам альтернативы:
+
+** используйте _one_ таблицу для краткого и практичного обзора всех содержащихся строительных блоков и их интерфейсов
+** используйте список описаний составных частей «черного ящика» в соответствии с шаблоном «черного ящика» (см. ниже).
+В зависимости от выбранного вами инструмента этот список может состоять из подглав (в текстовых файлах), подстраниц (в Wiki) или вложенных элементов (в инструменте моделирования).
 
  * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
 Since there are so many ways to specify interfaces why do not provide a specific template for them.
@@ -61,20 +90,26 @@ Since there are so many ways to specify interfaces why do not provide a specific
  restrictions, versions, qualities, necessary compatibilities and many things more.
 In the best case you will get away with examples or simple signatures.
 
+* (необязательно:) важные интерфейсы, которые не объясняются в шаблонах черного ящика стандартного блока, но очень важны для понимания белого ящика.
+Поскольку существует так много способов указать интерфейсы, почему бы не предоставить для них специальный шаблон.
+В худшем случае вам придется указать и описать синтаксис, семантику, протоколы, обработку ошибок,
+ограничения, версии, качества, необходимые совместимости и многое другое.
+В лучшем случае вам сойдут с рук примеры или простые подписи.
+
 ****
 
-_**<Overview Diagram>**_
+_**<Обзорная диаграмма>**_
 
-Motivation::
+Мотивация::
 
-_<text explanation>_
+_<текстовое объяснение>_
 
 
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
+Содержащиеся строительные блоки::
+_<Описание содержащегося стандартного блока (черные ящики)>_
 
-Important Interfaces::
-_<Description of important interfaces>_
+Важные интерфейсы::
+_<Описание важных интерфейсов>_
 
 [role="arc42help"]
 ****
@@ -83,17 +118,26 @@ Insert your explanations of black boxes from level 1:
 If you use tabular form you will only describe your black boxes with name and
 responsibility according to the following schema:
 
+Вставьте свои объяснения черных ящиков из уровня 1:
+
+Если вы используете табличную форму, вы будете описывать только свои черные ящики с именем и
+ответственности по следующей схеме:
+
 [cols="1,2" options="header"]
 |===
-| **Name** | **Responsibility**
-| _<black box 1>_ | _<Text>_
-| _<black box 2>_ | _<Text>_
+| **Название** | **Ответственность**
+| _<black box 1>_ | _<Текст>_
+| _<black box 2>_ | _<Текст>_
 |===
 
 
 
 If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
 Its headline is the name of the black box.
+
+Если вы используете список описаний черного ящика, то вы заполняете отдельный шаблон черного ящика для каждого важного стандартного блока.
+Его заголовок — название черного ящика.
+
 ****
 
 
@@ -104,6 +148,9 @@ Its headline is the name of the black box.
 Here you describe <black box 1>
 according the the following black box template:
 
+Здесь вы описываете <черный ящик 1>
+в соответствии со следующим шаблоном черного ящика:
+
 * Purpose/Responsibility
 * Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance characteristics.
 * (Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ....
@@ -111,19 +158,26 @@ according the the following black box template:
 * (Optional) Fulfilled requirements (if you need traceability to requirements).
 * (Optional) Open issues/problems/risks
 
+* Цель/ответственность
+* Интерфейс(ы), если они не извлекаются как отдельные абзацы. Эти интерфейсы могут включать качества и рабочие характеристики.
+* (Необязательно) Характеристики качества/производительности черного ящика, например, доступность, поведение во время выполнения, ....
+* (Необязательно) расположение каталога/файла
+* (Необязательно) Выполненные требования (если вам нужна прослеживаемость к требованиям).
+* (Необязательно) Открытые вопросы/проблемы/риски
+
 ****
 
-_<Purpose/Responsibility>_
+_<Цель/обязанности>_
 
-_<Interface(s)>_
+_<Интерфейс(ы)>_
 
-_<(Optional) Quality/Performance Characteristics>_
+_<(Необязательно) Характеристики качества/производительности>_
 
-_<(Optional) Directory/File Location>_
+_<(Необязательно) Папка/Расположение файла>_
 
-_<(Optional) Fulfilled Requirements>_
+_<(Необязательно) Выполненные требования>_
 
-_<(optional) Open Issues/Problems/Risks>_
+_<(необязательно) Открытые проблемы/проблемы/риски>_
 
 
 
@@ -145,7 +199,8 @@ _<black box template>_
 
 
 
-=== Level 2
+
+=== Уровень 2
 
 [role="arc42help"]
 ****
@@ -154,6 +209,12 @@ Here you can specify the inner structure of (some) building blocks from level 1 
 You have to decide which building blocks of your system are important enough to justify such a detailed description.
 Please prefer relevance over completeness. Specify important, surprising, risky, complex or volatile building blocks.
 Leave out normal, simple, boring or standardized parts of your system
+
+Здесь вы можете указать внутреннюю структуру (некоторых) строительных блоков уровня 1 в виде белых прямоугольников.
+
+Вы должны решить, какие строительные блоки вашей системы достаточно важны, чтобы оправдать такое подробное описание.
+Пожалуйста, предпочтите релевантность полноте. Укажите важные, неожиданные, рискованные, сложные или изменчивые строительные блоки.
+Исключите нормальные, простые, скучные или стандартизированные части вашей системы.
 ****
 
 ==== White Box _<building block 1>_
@@ -187,6 +248,11 @@ Here you can specify the inner structure of (some) building blocks from level 2 
 
 When you need more detailed levels of your architecture please copy this
 part of arc42 for additional levels.
+
+Здесь вы можете указать внутреннюю структуру (некоторых) строительных блоков уровня 2 в виде белых прямоугольников.
+
+Если вам нужны более подробные уровни вашей архитектуры, пожалуйста, скопируйте это
+часть arc42 для дополнительных уровней.
 ****
 
 
