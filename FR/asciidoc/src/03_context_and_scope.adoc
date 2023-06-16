@@ -21,7 +21,7 @@ Diverses options :
 * Listes des partenaires de communication et de leurs interfaces.
 
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-3/[Context and Scope] dans la documentation arc42.
 
@@ -56,10 +56,10 @@ Le titre du tableau est le nom de votre système, les trois colonnes contiennent
 [role="arc42help"]
 ****
 .Contenu
-Interfaces techniques (canaux et supports de transmission) reliant votre système à son environnement. En outre, il faut établir une correspondance entre les entrées/sorties spécifiques au domaine et les canaux, c'est-à-dire expliquer quelles Entrée/Sortie utilisent quel canal.
+Interfaces techniques (canaux et supports de transmission) reliant votre système à son environnement. En outre, il faut établir une correspondance entre les entrées/sorties spécifiques au domaine et les canaux, c'est-à-dire expliquer quelles Entrées/Sorties utilisent quel canal.
 
 .Motivation
-De nombreuses parties prenantes prennent des décisions architecturales basées sur les interfaces techniques entre le système et son contexte. Ce sont surtout les concepteurs d'infrastructure ou de matériel qui décident de ces interfaces techniques.
+De nombreuses parties prenantes prennent des décisions architecturales basées sur les interfaces techniques entre le système et son contexte. Ce sont surtout les concepteurs d'infrastructure ou d'équipements informatiques qui décident de ces interfaces techniques.
 
 .Représentation
 Par exemple, un diagramme de déploiement UML décrivant les canaux vers les systèmes voisins,

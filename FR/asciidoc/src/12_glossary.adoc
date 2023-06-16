@@ -30,7 +30,7 @@ Potentiellement plus de colonnes au cas où vous auriez besoin de traductions.
 | _<Terme-2>_ | _<Définition-2>_
 |===
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-12/[Glossary] dans la documentation arc42.
 

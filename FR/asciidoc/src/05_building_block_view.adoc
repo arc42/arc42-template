@@ -14,9 +14,9 @@ Cette vue est obligatoire pour toute documentation sur l'architecture.
 Par analogie avec une maison, il s'agit du _plan de masse_.
 
 .Motivation
-Maintenir une vue d'ensemble de votre code source en rendant sa structure compréhensible grâce à l'abstraction.
+Maintenir une vue d'ensemble de votre code en rendant sa structure compréhensible grâce à l'abstraction.
 
-Cela vous permet de communiquer avec votre partie prenante à un niveau abstrait sans divulguer les détails de la mise en œuvre.
+Cela vous permet de communiquer avec toute partie prenante à un niveau abstrait sans divulguer les détails de l'inplementation.
 
 .Représentation
 La vue en briques est une collection hiérarchique de boîtes noires et de boîtes blanches (voir figure ci-dessous) et de leurs descriptions.
@@ -30,7 +30,7 @@ image::05_building_blocks-EN.png["Hiérarchie des briques"]
 *Niveau 2* est un zoom sur certaines briques du niveau 1.
 Il contient donc la description en boîte blanche de certaines briques du niveau 1, ainsi que la description en boîte noire de leurs briques internes.
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-5/[Building Block View] dans la documentation arc42.
 
@@ -84,7 +84,7 @@ Si vous utilisez la forme tabulaire, vous ne décrirez vos boîtes noires qu'ave
 | _<boîte noire 2>_ | _<Texte>_
 |===
 
-Si vous utilisez une liste de descriptions de boîtes noires, vous devez remplir un modèle de boîte noire distinct pour chaque briques importante.
+Si vous utilisez une liste de descriptions de boîtes noires, vous devez remplir un modèle de boîte noire distinct pour chaque brique importante.
 Son titre est le nom de la boîte noire.
 ****
 
@@ -100,7 +100,7 @@ selon le modèle de boîte noire suivant :
 * (Facultatif) Caractéristiques de qualité/performance de la boîte noire, par exemple disponibilité, comportement en cours d'exécution, ....
 * (Facultatif) Emplacement du répertoire/fichier
 * (Facultatif) Exigences respectées (si vous avez besoin d'une traçabilité vers les exigences)
-* (Facultatif) Questions ouvertes/problèmes/risques en suspens
+* (Facultatif) Questions ouvertes/problèmes/risques
 
 ****
 

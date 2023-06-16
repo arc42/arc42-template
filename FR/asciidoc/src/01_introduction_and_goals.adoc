@@ -5,36 +5,36 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 [role="arc42help"]
 ****
-Décrit les exigences pertinentes et les forces motrices que les architectes logiciels et l'équipe de développement doivent prendre en compte. 
+Décrit les specifications importantes et les facteurs déterminants que les architectes logiciels et l'équipe de développement doivent prendre en compte.
 Il s'agit notamment
 
-* des objectifs métier sous-jacents, 
+* des objectifs métier sous-jacents,
 * des caractéristiques essentielles, 
-* des exigences fonctionnelles essentielles, 
+* des spécifications fonctionnelles essentielles,
 * des objectifs de qualité pour l'architecture et
 * des parties prenantes concernées et leurs attentes
 ****
 
-=== Vue d'ensemble des exigences
+=== Aperçu des spécifications
 
 [role="arc42help"]
 ****
 .Contenu
-Brève description des exigences fonctionnelles, des forces motrices, de l'extrait (ou du résumé) des exigences.
-Liens vers (en espérant qu'ils existent) les documents décrivant les exigences (avec le numéro de version et des informations sur l'endroit où les trouver).
+Brève description des spécifications fonctionnelles, des facteurs déterminants, de l'extrait (ou du résumé) des spécifications.
+Liens vers (en espérant qu'ils existent) les documents décrivant les spécifications (avec le numéro de version et des informations sur l'endroit où les trouver).
 
 .Motivation
-Du point de vue des utilisateurs finaux, un système est créé ou modifié pour
+Du point de vue des utilisateurs, un système est créé ou modifié pour
 améliorer le soutien d'une activité métier et/ou améliorer la qualité.
 
 .Représentation
 Brève description textuelle, probablement sous forme de tableau de cas d'utilisation.
-S'il existe des documents décrivant les exigences, cette vue d'ensemble doit s'y référer.
+S'il existe des documents décrivant les spécifications, cet aperçu général doit s'y référer.
 
-Ces extraits doivent être aussi courts que possible. Trouver un équilibre entre la lisibilité de ce document et la redondance potentielle par rapport aux documents décrivant les exigences.
+Ces extraits doivent être aussi courts que possible. Trouver un équilibre entre la lisibilité de ce document et la redondance potentielle par rapport aux documents décrivant les spécifications.
 
 
-.Plus d'informations
+.Informations supplémentaires
 
 Voir https://docs.arc42.org/section-1/[Introduction and Goals] dans la documentation arc42.
 
@@ -45,7 +45,7 @@ Voir https://docs.arc42.org/section-1/[Introduction and Goals] dans la documenta
 [role="arc42help"]
 ****
 .Contenu
-Les trois (maximum cinq) principaux objectifs de qualité pour l'architecture dont la réalisation est de la plus haute importance pour les principales parties prenantes. 
+Les trois (maximum cinq) principaux objectifs de qualité pour l'architecture dont la réalisation est de la plus haute importance pour les principaux acteurs.
 Nous parlons bien d'objectifs de qualité pour l'architecture. Ne les confondez pas avec les objectifs du projet.
 Ils ne sont pas nécessairement identiques.
 
@@ -67,13 +67,13 @@ Un tableau avec des objectifs de qualité et des scénarios concrets, classés p
 [role="arc42help"]
 ****
 .Contenu
-Vue d'ensemble explicite des parties prenantes du système, c'est-à-dire toutes les personnes, rôles ou organisations qui
+Aperçu explicite des parties prenantes du système, c'est-à-dire toute personne, rôle ou organisation qui
 
 * doit connaître l'architecture
-* doit être convaincu de l'architecture
-* doivent travailler avec l'architecture ou avec le code
-* ont besoin de la documentation d'architecture pour leur travail
-* doivent prendre des décisions concernant le système ou son développement
+* doit être convaincue de l'architecture
+* doit travailler avec l'architecture ou avec le code
+* a besoin de la documentation d'architecture pour son travail
+* doit prendre des décisions concernant le système ou son développement
 
 .Motivation
 Vous devez connaître toutes les parties impliquées dans le développement du système ou concernées par celui-ci.

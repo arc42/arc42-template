@@ -14,7 +14,7 @@ La vue déploiement décrit :
 
 2. la correspondance entre les briques (logicielles) et les éléments d'infrastructure.
 
-Les systèmes sont souvent exécutés dans différents environnements, par exemple l'environnement de développement, l'environnement de test, l'environnement de production. Dans ce cas, vous devez documenter tous les environnements pertinents.
+Les systèmes sont souvent exécutés dans différents environnements, par exemple l'environnement de développement, l'environnement de test, l'environnement de production. Dans ce cas, vous devez documenter tous les environnements importants.
 
 Documenter en particulier une vue déploiement si votre logiciel est exécuté en tant que système distribué avec plus d'un ordinateur, processeur, serveur ou conteneur ou lorsque vous concevez et construisez vos propres processeurs et puces matérielles.
 
