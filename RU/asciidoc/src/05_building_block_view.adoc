@@ -10,47 +10,32 @@ ifndef::imagesdir[:imagesdir: ../images]
 .Содержание
 The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, ...) as well as their dependencies (relationships, associations, ...)
 
-Представление стандартных блоков показывает статическую декомпозицию системы на строительные блоки (модули, компоненты, подсистемы, классы, интерфейсы, пакеты, библиотеки, платформы, слои, разделы, уровни, функции, макросы, операции, структуры данных, ...) а также их зависимости (отношения, ассоциации, ...)
+Представление строительных блоков показывает статическую декомпозицию системы на строительные блоки (модули, компоненты, подсистемы, классы, интерфейсы, пакеты, библиотеки, платформы, слои, разделы, уровни, функции, макросы, операции, структуры данных, ...) а также их зависимости (отношения, ассоциации, ...)
 
-This view is mandatory for every architecture documentation.
-In analogy to a house this is the _floor plan_.
-
-Это представление является обязательным для любой документации по архитектуре.
-По аналогии с домом это план этажа.
+Это представление является обязательным для любой архитектурной документации.
+По аналогии с домом это _план этажа_.
 
 .Мотивация
-Maintain an overview of your source code by making its structure understandable through
-abstraction.
+Поддерживайте структуру исходного кода понятной с помощью абстракций.
 
-Следите за своим исходным кодом, делая его структуру понятной с помощью
-абстракция.
-
-This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.
-
-Это позволяет вам общаться с вашей заинтересованной стороной на абстрактном уровне, не раскрывая деталей реализации.
+Это позволит вам общаться с заинтересованными лицами на абстрактном уровне, не раскрывая деталей реализации.
 
 .Форма
-The building block view is a hierarchical collection of black boxes and white boxes
-(see figure below) and their descriptions.
-
 Представление стандартных блоков представляет собой иерархическую коллекцию черных и белых ящиков.
 (см. рисунок ниже) и их описания.
 
 image::05_building_blocks-EN.png["Иерархия строительных блоков"]
 
-*Level 1* is the white box description of the overall system together with black
+*Уровень 1* is the white box description of the overall system together with black
 box descriptions of all contained building blocks.
+
+*Уровень 1* представляет собой описание всей системы в виде «белого ящика» вместе с описаниями всех содержащихся строительных блоков в виде «черных ящиков».
 
 *Level 2* zooms into some building blocks of level 1.
 Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.
 
-*Level 3* zooms into selected building blocks of level 2, and so on.
-
-*Уровень 1* представляет собой описание всей системы в белом поле вместе с черным
-бокс описания всех содержащихся строительных блоков.
-
-*Уровень 2* увеличивает некоторые строительные блоки уровня 1.
-Таким образом, он содержит описание «белого ящика» выбранных строительных блоков уровня 1 вместе с описанием «черного ящика» их внутренних строительных блоков.
+*Уровень 2* раскрывает детали некоторых строительных блоков уровня 1.
+Таким образом, он содержит описание «белого ящика» выбранных строительных блоков уровня 1 вместе с описанием их внутренних строительных блоков как «черных ящиков».
 
 *Уровень 3* увеличивает масштаб выбранных строительных блоков уровня 2 и так далее.
 
@@ -60,37 +45,23 @@ Thus it contains the white box description of selected building blocks of level 
 
 ****
 
-=== Whitebox Система в общем
+=== Система в общем («белый ящик»)
 
 [role="arc42help"]
 ****
-Здесь вы описываете декомпозицию всей системы, используя следующий шаблон белого ящика. Это содержит
+Здесь вы описываете декомпозицию всей системы, используя следующий шаблон белого ящика. Описание содержит
 
-Here you describe the decomposition of the overall system using the following white box template. It contains
+* обзорную схему
+* мотивацию декомпозиции
+* описания содержащихся строительных блоков («черный ящик»). Для них мы предлагаем альтернативы:
 
- * an overview diagram
- * a motivation for the decomposition
- * black box descriptions of the contained building blocks. For these we offer you alternatives:
-
-   ** use _one_ table for a short and pragmatic overview of all contained building blocks and their interfaces
-   ** use a list of black box descriptions of the building blocks according to the black box template (see below).
-   Depending on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a modeling tool).
-
-* обзорная схема
-* мотивация разложения
-* Описания черного ящика содержащихся строительных блоков. Для них мы предлагаем вам альтернативы:
-
-** используйте _one_ таблицу для краткого и практичного обзора всех содержащихся строительных блоков и их интерфейсов
+** используйте _одну_ таблицу для краткого и практичного обзора всех содержащихся строительных блоков и их интерфейсов
 ** используйте список описаний составных частей «черного ящика» в соответствии с шаблоном «черного ящика» (см. ниже).
+
 В зависимости от выбранного вами инструмента этот список может состоять из подглав (в текстовых файлах), подстраниц (в Wiki) или вложенных элементов (в инструменте моделирования).
 
- * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
-Since there are so many ways to specify interfaces why do not provide a specific template for them.
- In the worst case you have to specify and describe syntax, semantics, protocols, error handling,
- restrictions, versions, qualities, necessary compatibilities and many things more.
-In the best case you will get away with examples or simple signatures.
 
-* (необязательно:) важные интерфейсы, которые не объясняются в шаблонах черного ящика стандартного блока, но очень важны для понимания белого ящика.
+* (необязательно:) важные интерфейсы, которые не объясняются в шаблонах «черного ящика» строительных блоков, но очень важны для понимания белого «ящика».
 Поскольку существует так много способов указать интерфейсы, почему бы не предоставить для них специальный шаблон.
 В худшем случае вам придется указать и описать синтаксис, семантику, протоколы, обработку ошибок,
 ограничения, версии, качества, необходимые совместимости и многое другое.
@@ -113,12 +84,8 @@ _<Описание важных интерфейсов>_
 
 [role="arc42help"]
 ****
-Insert your explanations of black boxes from level 1:
 
-If you use tabular form you will only describe your black boxes with name and
-responsibility according to the following schema:
-
-Вставьте свои объяснения черных ящиков из уровня 1:
+Вставьте свои объяснения черных «ящиков» из уровня 1:
 
 Если вы используете табличную форму, вы будете описывать только свои черные ящики с именем и
 ответственности по следующей схеме:
@@ -126,22 +93,18 @@ responsibility according to the following schema:
 [cols="1,2" options="header"]
 |===
 | **Название** | **Ответственность**
-| _<black box 1>_ | _<Текст>_
-| _<black box 2>_ | _<Текст>_
+| _<Черный ящик 1>_ | _<Текст>_
+| _<Черный ящик 2>_ | _<Текст>_
 |===
 
 
-
-If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
-Its headline is the name of the black box.
-
-Если вы используете список описаний черного ящика, то вы заполняете отдельный шаблон черного ящика для каждого важного стандартного блока.
+Если вы используете список описаний «черного ящика», то вы заполняете отдельный шаблон «черного ящика» для каждого важного стандартного блока.
 Его заголовок — название черного ящика.
 
 ****
 
 
-==== <Name black box 1>
+==== <Название черного ящика 1>
 
 [role="arc42help"]
 ****
