@@ -5,42 +5,23 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 [role="arc42help"]
 ****
-.Содержание
-The deployment view describes:
-
-1. technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
-
-2. mapping of (software) building blocks to that infrastructure elements.
-
 Представление развертывания описывает:
 
-1. техническая инфраструктура, используемая для работы вашей системы, с элементами инфраструктуры, такими как географические местоположения, среды, компьютеры, процессоры, каналы и сетевые топологии, а также другие элементы инфраструктуры и
+1. техническую инфраструктуру, используемуя для работы вашей системы, с элементами инфраструктуры, такими как географические местоположения, среды, компьютеры, процессоры, каналы и сетевые топологии, а также другие элементы инфраструктуры и
 
 2. сопоставление строительных блоков (программного обеспечения) с этими элементами инфраструктуры.
 
-Often systems are executed in different environments, e.g. development environment, test environment, production environment.
-In such cases you should document all relevant environments.
-
-Especially document a deployment view if your software is executed as distributed system with more than one computer, processor, server or container or when you design and construct your own hardware processors and chips.
-
-From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks.
-Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.
-
-Часто системы выполняются в разных средах, например. среда разработки, тестовая среда, производственная среда.
+Часто системы выполняются в разных средах, например. среда разработки, тестовая среда, продакшн.
 В таких случаях вы должны задокументировать все соответствующие среды.
 
-Особенно задокументируйте представление развертывания, если ваше программное обеспечение выполняется как распределенная система с более чем одним компьютером, процессором, сервером или контейнером или когда вы проектируете и создаете свои собственные аппаратные процессоры и микросхемы.
+Особенно важно задокументировать представление развертывания, если ваше программное обеспечение выполняется в виде распределенной системы с более чем одним компьютером, процессором, сервером или контейнером; или когда вы проектируете и создаете свои собственные аппаратные процессоры и микросхемы.
 
-С точки зрения программного обеспечения достаточно зафиксировать только те элементы инфраструктуры, которые необходимы для демонстрации развертывания ваших стандартных блоков.
+С точки зрения программного обеспечения достаточно зафиксировать только те элементы инфраструктуры, которые необходимы для демонстрации развертывания ваших строительных блоков.
 Архитекторы аппаратного обеспечения могут пойти дальше и описать инфраструктуру с любым уровнем детализации, который им необходим.
 
 .Мотивация
-Software does not run without hardware.
-This underlying infrastructure can and will influence a system and/or some cross-cutting concepts.
-Therefore, there is a need to know the infrastructure.
-
 Программное обеспечение не работает без аппаратного обеспечения.
-Эта базовая инфраструктура может и будет влиять на систему и/или некоторые сквозные концепции.
+Эта базовая инфраструктура может и будет влиять на систему и/или некоторые сквозные (cross-cutting) концепции.
 Поэтому необходимо знать инфраструктуру.
 
 .Форма
