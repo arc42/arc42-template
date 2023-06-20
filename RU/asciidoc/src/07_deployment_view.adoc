@@ -1,8 +1,6 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-deployment-view]]
-
-
 == Deployment View
 
 [role="arc42help"]
@@ -10,34 +8,57 @@ ifndef::imagesdir[:imagesdir: ../images]
 .Содержание
 The deployment view describes:
 
- 1. technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
+1. technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
 
 2. mapping of (software) building blocks to that infrastructure elements.
 
-Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environments.
+Представление развертывания описывает:
+
+1. техническая инфраструктура, используемая для работы вашей системы, с элементами инфраструктуры, такими как географические местоположения, среды, компьютеры, процессоры, каналы и сетевые топологии, а также другие элементы инфраструктуры и
+
+2. сопоставление строительных блоков (программного обеспечения) с этими элементами инфраструктуры.
+
+Often systems are executed in different environments, e.g. development environment, test environment, production environment.
+In such cases you should document all relevant environments.
 
 Especially document a deployment view if your software is executed as distributed system with more than one computer, processor, server or container or when you design and construct your own hardware processors and chips.
 
-From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks. Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.
+From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks.
+Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.
+
+Часто системы выполняются в разных средах, например. среда разработки, тестовая среда, производственная среда.
+В таких случаях вы должны задокументировать все соответствующие среды.
+
+Особенно задокументируйте представление развертывания, если ваше программное обеспечение выполняется как распределенная система с более чем одним компьютером, процессором, сервером или контейнером или когда вы проектируете и создаете свои собственные аппаратные процессоры и микросхемы.
+
+С точки зрения программного обеспечения достаточно зафиксировать только те элементы инфраструктуры, которые необходимы для демонстрации развертывания ваших стандартных блоков.
+Архитекторы аппаратного обеспечения могут пойти дальше и описать инфраструктуру с любым уровнем детализации, который им необходим.
 
 .Мотивация
 Software does not run without hardware.
-This underlying infrastructure can and will influence a system and/or some
-cross-cutting concepts. Therefore, there is a need to know the infrastructure.
+This underlying infrastructure can and will influence a system and/or some cross-cutting concepts.
+Therefore, there is a need to know the infrastructure.
+
+Программное обеспечение не работает без аппаратного обеспечения.
+Эта базовая инфраструктура может и будет влиять на систему и/или некоторые сквозные концепции.
+Поэтому необходимо знать инфраструктуру.
 
 .Форма
+Maybe a highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box.
+In this section one can zoom into this black box using additional deployment diagrams:
 
-Maybe a highest level deployment diagram is already contained in section 3.2. as
-technical context with your own infrastructure as ONE black box. In this section one can
-zoom into this black box using additional deployment diagrams:
+Возможно, схема развертывания самого высокого уровня уже содержится в разделе 3.2. как технический контекст с собственной инфраструктурой как ОДИН черный ящик.
+В этом разделе можно увеличить этот черный ящик, используя дополнительные диаграммы развертывания:
 
-* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
-when your infrastructure is more complex.
+* UML offers deployment diagrams to express that view.
+Use it, probably with nested diagrams, when your infrastructure is more complex.
 * When your (hardware) stakeholders prefer other kinds of diagrams rather than a deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 
+* UML предлагает диаграммы развертывания, чтобы выразить это представление.
+Используйте его, возможно, с вложенными диаграммами, когда ваша инфраструктура более сложна.
+* Когда заинтересованные стороны (аппаратного обеспечения) предпочитают другие виды диаграмм, а не диаграмму развертывания, позвольте им использовать любой вид, способный отображать узлы и каналы инфраструктуры.
 
 .Дальнейшая информация
-
 See https://docs.arc42.org/section-7/[Deployment View] в документации arc42.
 
 ****
@@ -54,21 +75,29 @@ Describe (usually in a combination of diagrams, tables, and text):
 * mapping of software artifacts to elements of this infrastructure
 
 For multiple environments or alternative deployments please copy and adapt this section of arc42 for all relevant environments.
+
+Опишите (обычно в комбинации диаграмм, таблиц и текста):
+
+* распределение системы по нескольким местоположениям, средам, компьютерам, процессорам и т. д., а также физическим соединениям между ними
+* важные обоснования или мотивы для этой структуры развертывания
+* характеристики качества и/или производительности этой инфраструктуры
+* сопоставление программных артефактов с элементами этой инфраструктуры
+
+Для нескольких сред или альтернативных развертываний скопируйте и адаптируйте этот раздел arc42 для всех соответствующих сред.
 ****
 
 _**<Overview Diagram>**_
 
 Motivation::
 
-_<explanation in text form>_
+_<объяснение в текстовом виде>_
 
 Quality and/or Performance Features::
 
-_<explanation in text form>_
+_<объяснение в текстовом виде>_
 
 Mapping of Building Blocks to Infrastructure::
 _<description of the mapping>_
-
 
 === Infrastructure Level 2
 
@@ -88,7 +117,6 @@ _<diagram + explanation>_
 _<diagram + explanation>_
 
 ...
-
 ==== _<Infrastructure Element n>_
 
 _<diagram + explanation>_
