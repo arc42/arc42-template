@@ -5,28 +5,28 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 [role="arc42help"]
 ****
-.Contents
+.Содержание
 The most important domain and technical terms that your stakeholders use when discussing the system.
 
 You can also see the glossary as source for translations if you work in multi-language teams.
 
-.Motivation
+.Мотивация
 You should clearly define your terms, so that all stakeholders
 
 * have an identical understanding of these terms
 * do not use synonyms and homonyms
 
 
-.Form
+.Форма
 
 A table with columns <Term> and <Definition>.
 
 Potentially more columns in case you need translations.
 
 
-.Further Information
+.Дальнейшая информация
 
-See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
+See https://docs.arc42.org/section-12/[Glossary] в документации arc42.
 
 ****
 

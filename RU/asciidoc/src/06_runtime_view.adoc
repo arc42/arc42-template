@@ -3,10 +3,9 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-runtime-view]]
 == Runtime View
 
-
 [role="arc42help"]
 ****
-.Contents
+.Содержание
 The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:
 
 * important use cases or features: how do building blocks execute them?
@@ -14,13 +13,29 @@ The runtime view describes concrete behavior and interactions of the system’s 
 * operation and administration: launch, start-up, stop
 * error and exception scenarios
 
-Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*. It is *not* important to describe a large number of scenarios. You should rather document a representative selection.
+Представление времени выполнения описывает конкретное поведение и взаимодействие строительных блоков системы в виде сценариев из следующих областей:
 
-.Motivation
+* важные варианты использования или функции: как строительные блоки их выполняют?
+* взаимодействия на критических внешних интерфейсах: как строительные блоки взаимодействуют с пользователями и соседними системами?
+* эксплуатация и администрирование: запуск, запуск, остановка
+* сценарии ошибок и исключений
+
+Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*.
+It is *not* important to describe a large number of scenarios.
+You should rather document a representative selection.
+
+Примечание: Основным критерием выбора возможных сценариев (последовательностей, рабочих процессов) является их *архитектурная релевантность*.
+*Не* важно описывать большое количество сценариев.
+Вам лучше задокументировать репрезентативный выбор.
+
+.Мотивация
 You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
 You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).
 
-.Form
+Вы должны понимать, как (экземпляры) строительных блоков вашей системы выполняют свою работу и взаимодействуют во время выполнения.
+В основном вы будете фиксировать сценарии в своей документации, чтобы сообщить о своей архитектуре заинтересованным сторонам, которые менее склонны или не способны читать и понимать статические модели (представление стандартных блоков, представление развертывания).
+
+.Форма
 There are many notations for describing scenarios, e.g.
 
 * numbered list of steps (in natural language)
@@ -31,21 +46,30 @@ There are many notations for describing scenarios, e.g.
 * ...
 
 
-.Further Information
+Существует множество обозначений для описания сценариев, например.
 
-See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
+* пронумерованный список шагов (на естественном языке)
+* диаграммы деятельности или блок-схемы
+* диаграммы последовательности
+* BPMN или EPC (цепочки событий)
+* государственные машины
+* ...
+
+.Дальнейшая информация
+Смотри https://docs.arc42.org/section-6/[Runtime View] в документации arc42.
 
 ****
 
-=== <Runtime Scenario 1>
-
+=== <Сценарий времени выполнения 1>
 
 * _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+* _<insert description of the notable aspects of the interactions between the building block instances depicted in this diagram.>_
 
-=== <Runtime Scenario 2>
+* _<вставьте диаграмму выполнения или текстовое описание сценария>_
+* _<вставьте описание важных аспектов взаимодействия между экземплярами стандартных блоков, изображенных на этой диаграмме.>_
+
+=== <Сценарий времени выполнения 2>
 
 === ...
 
-=== <Runtime Scenario n>
+=== <Сценарий времени выполнения n>

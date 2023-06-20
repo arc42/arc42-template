@@ -18,14 +18,14 @@ They can include many different topics, such as
 * implementation rules
 
 
-.Motivation
+.Мотивация
 Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. 
 Thus, they are an important contribution to achieve inner qualities of your system.
 
 Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety. 
 
 
-.Form
+.Форма
 The form can be varied:
 
 * concept papers with any kind of structure
@@ -50,9 +50,9 @@ on this list.
 image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
 
 
-.Further Information
+.Дальнейшая информация
 
-See https://docs.arc42.org/section-8/[Concepts] in the arc42 documentation.
+See https://docs.arc42.org/section-8/[Concepts] в документации arc42.
 ****
 
 
