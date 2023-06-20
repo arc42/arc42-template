@@ -7,7 +7,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [role="arc42help"]
 ****
 
-.Content
+.Содержание
 This section contains all quality requirements as quality tree with scenarios. The most important ones have already been described in section 1.2. (quality goals)
 
 Here you can also capture quality requirements with lesser priority,
@@ -29,7 +29,7 @@ See https://docs.arc42.org/section-10/[Quality Requirements] в документ
 
 [role="arc42help"]
 ****
-.Content
+.Содержание
 The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.
 
 .Мотивация
