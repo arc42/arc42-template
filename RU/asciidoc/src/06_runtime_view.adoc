@@ -6,13 +6,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 [role="arc42help"]
 ****
 .Содержание
-The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:
-
-* important use cases or features: how do building blocks execute them?
-* interactions at critical external interfaces: how do building blocks cooperate with users and neighboring systems?
-* operation and administration: launch, start-up, stop
-* error and exception scenarios
-
 Представление времени выполнения описывает конкретное поведение и взаимодействие строительных блоков системы в виде сценариев из следующих областей:
 
 * важные варианты использования или функции: как строительные блоки их выполняют?
@@ -20,39 +13,22 @@ The runtime view describes concrete behavior and interactions of the system’s 
 * эксплуатация и администрирование: запуск, запуск, остановка
 * сценарии ошибок и исключений
 
-Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*.
-It is *not* important to describe a large number of scenarios.
-You should rather document a representative selection.
-
 Примечание: Основным критерием выбора возможных сценариев (последовательностей, рабочих процессов) является их *архитектурная релевантность*.
-*Не* важно описывать большое количество сценариев.
+*Не* нужно без надобности описывать большое количество сценариев.
 Вам лучше задокументировать репрезентативный выбор.
 
 .Мотивация
-You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
-You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).
-
 Вы должны понимать, как (экземпляры) строительных блоков вашей системы выполняют свою работу и взаимодействуют во время выполнения.
 В основном вы будете фиксировать сценарии в своей документации, чтобы сообщить о своей архитектуре заинтересованным сторонам, которые менее склонны или не способны читать и понимать статические модели (представление стандартных блоков, представление развертывания).
 
 .Форма
-There are many notations for describing scenarios, e.g.
-
-* numbered list of steps (in natural language)
-* activity diagrams or flow charts
-* sequence diagrams
-* BPMN or EPCs (event process chains)
-* state machines
-* ...
-
-
 Существует множество обозначений для описания сценариев, например.
 
 * пронумерованный список шагов (на естественном языке)
-* диаграммы деятельности или блок-схемы
-* диаграммы последовательности
-* BPMN или EPC (цепочки событий)
-* государственные машины
+* диаграммы деятельности (activity diagrams) или блок-схемы
+* диаграммы последовательности (sequence diagrams)
+* BPMN или EPC (цепочки обработки событий)
+* конечные автоматы
 * ...
 
 .Дальнейшая информация
@@ -61,9 +37,6 @@ There are many notations for describing scenarios, e.g.
 ****
 
 === <Сценарий времени выполнения 1>
-
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the building block instances depicted in this diagram.>_
 
 * _<вставьте диаграмму выполнения или текстовое описание сценария>_
 * _<вставьте описание важных аспектов взаимодействия между экземплярами стандартных блоков, изображенных на этой диаграмме.>_
