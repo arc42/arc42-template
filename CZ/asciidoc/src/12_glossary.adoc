@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-glossary]]
 == Slovník pojmů
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -26,6 +27,7 @@ Měli byste jasně definovat důležité pojmy, aby všechny zainteresované str
 Anglická dokumentace arc42: https://docs.arc42.org/section-12/[Glossary].
 
 ****
+endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===

@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Deployment View
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -43,9 +44,11 @@ Gebruik passende diagrammen om de nodes en kanalen van de infrastructuur weer te
 Zie https://docs.arc42.org/section-7/[Deployment View] in de arc42 documentatie.
 
 ****
+endif::arc42help[]
 
 === Infrastructuur Niveau 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschrijf (normaliter in een combinatie van diagrammen, tabellen en text):
@@ -58,6 +61,7 @@ Beschrijf (normaliter in een combinatie van diagrammen, tabellen en text):
 Als er sprake is van meerdere omgevingen of alternatieve deployments kopieer en pas deze paragraaf van arc42 aan voor alle relevente omgevingen. 
 
 ****
+endif::arc42help[]
 
 _**<Overzichts Diagram>**_
 
@@ -75,12 +79,14 @@ _<beschrijving van de mapping>_
 
 === Infrastructuur Niveau 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Hier kunnen de interne structuren van (sommige) infrastructuur elementen uit niveau 1 worden toegevoegd.
 
 Kopieer de structuur van niveau 1 voor ieder geselecteerd element.
 ****
+endif::arc42help[]
 
 ==== _<Infrastructuur Element 1>_
 

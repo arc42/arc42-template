@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introduction et Objectifs
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Décrit les specifications importantes et les facteurs déterminants que les architectes logiciels et l'équipe de développement doivent prendre en compte.
@@ -14,9 +15,11 @@ Il s'agit notamment
 * des objectifs de qualité pour l'architecture et
 * des parties prenantes concernées et leurs attentes
 ****
+endif::arc42help[]
 
 === Aperçu des spécifications
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -39,9 +42,11 @@ Ces extraits doivent être aussi courts que possible. Trouver un équilibre entr
 Voir https://docs.arc42.org/section-1/[Introduction and Goals] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 === Objectifs de Qualité
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -61,9 +66,11 @@ En tant qu'architecte, vous ne savez pas comment la qualité de votre travail se
 .Représentation
 Un tableau avec des objectifs de qualité et des scénarios concrets, classés par ordre de priorité
 ****
+endif::arc42help[]
 
 === Parties prenantes
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -83,6 +90,7 @@ Ces parties prenantes déterminent l'étendue et le niveau de détail de votre t
 .Représentation
 Tableau avec les noms des rôles, les noms des personnes et leurs attentes par rapport à l'architecture et à sa documentation.
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

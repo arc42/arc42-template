@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Perspektiva stavebních bloků
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -34,9 +35,11 @@ Obsahuje tedy popis vybraných stavebních bloků úrovně 1 jako white-box spol
 Anglická dokumentace arc42: https://docs.arc42.org/section-5/[Building Block View].
 
 ****
+endif::arc42help[]
 
 === Celý systém jako white-box
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Zde popisujete rozklad celého systému pomocí následující white-box šablony. Obsahuje
@@ -56,6 +59,7 @@ V lepším případě vám stačí příklady nebo jednoduché podpisy.
 
 
 ****
+endif::arc42help[]
 
 _**<vložte přehledový diagram celého systému>**_
 
@@ -66,6 +70,7 @@ Obsažené stavební bloky :: _<popište obsažené stavební bloky (jako black-
 
 Důležitá rozhraní:: _<popište důležitá rozhraní>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Vložte vysvětlení black-boxů z úrovně 1:
@@ -82,10 +87,11 @@ Pokud použijete tabulkovou formu, popište black-boxy pouze jménem a odpovědn
 Pokud použijete seznam popisů jednotlivých black-boxů, vyplňte samostatnou black-box šablonu pro každý důležitý stavební blok. 
 Její titulek je název black-boxu.
 ****
-
+endif::arc42help[]
 
 ==== <Jméno black-boxu 1>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Popište <black-box 1> podle následující black-box šablony:
@@ -98,6 +104,7 @@ Popište <black-box 1> podle následující black-box šablony:
 * (Volitelně) Nevyřešené body/problémy/rizika
 
 ****
+endif::arc42help[]
 
 _<Účel/Odpovědnost>_
 
@@ -131,6 +138,7 @@ _<šablona black-box>_
 
 === Úroveň 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Zde popište vnitřní strukturu (některých) stavebních bloků z úrovně 1 jako white-box.
@@ -138,13 +146,16 @@ Zde popište vnitřní strukturu (některých) stavebních bloků z úrovně 1 j
 Musíte rozhodnout, které stavební bloky systému jsou natolik důležité, aby ospravedlnily tak podrobný popis. Upřednostněte relevanci před úplností. Uveďte důležité, překvapivé, riskantní, komplexní nebo volatilní stavební bloky. Vynechejte normální, jednoduché nebo standardizované části systému.
 
 ****
+endif::arc42help[]
 
 ==== white-box _<stavební blok 1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...popisuje vnitřní strukturu _stavebního bloku 1_.
 ****
+endif::arc42help[]
 
 _<šablona white-box>_
 
@@ -164,21 +175,23 @@ _<šablona white-box>_
 
 === Úroveň 3
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Zde můžete popsat vnitřní strukturu (některých) stavebních bloků z úrovně 2 jako white-box.
 
 Pokud potřebujete podrobnější úrovně architektury, zkopírujte si pro ně tuto část arc42.
 ****
-
+endif::arc42help[]
 
 ==== white-box <_stavební blok x.1_>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...popisuje vnitřní strukturu _stavebního bloku x.1_.
 ****
-
+endif::arc42help[]
 
 _<šablona white-box>_
 

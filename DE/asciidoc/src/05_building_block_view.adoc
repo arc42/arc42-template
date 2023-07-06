@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-building-block-view]]
 == Bausteinsicht
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -34,9 +35,11 @@ Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene
 
 Siehe https://docs.arc42.org/section-5/[Bausteinsicht] in der online-Dokumentation (auf Englisch!).
 ****
+endif::arc42help[]
 
 === Whitebox Gesamtsystem
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand des nachfolgenden Whitebox-Templates.
@@ -56,6 +59,7 @@ Aufgrund der vielfältigen Möglichkeiten oder Ausprägungen von Schnittstellen 
 Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten und vieles mehr spezifizieren oder beschreiben.
 Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 ****
+endif::arc42help[]
 
 _**<Übersichtsdiagramm>**_
 
@@ -65,6 +69,7 @@ Enthaltene Bausteine:: _<Beschreibung der enthaltenen Bausteine (Blackboxen)>_
 
 Wichtige Schnittstellen:: _<Beschreibung wichtiger Schnittstellen>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
@@ -81,9 +86,11 @@ Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin nur
 Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen, beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-Template.
 Dessen Überschrift ist jeweils der Namen dieser Blackbox.
 ****
+endif::arc42help[]
 
 ==== <Name Blackbox 1>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschreiben Sie die <Blackbox 1> anhand des folgenden Blackbox-Templates:
@@ -96,6 +103,7 @@ Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnitts
 * (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
 * (Optional) Offene Punkte/Probleme/Risiken
 ****
+endif::arc42help[]
 
 _<Zweck/Verantwortung>_
 
@@ -126,6 +134,7 @@ _<Blackbox-Template>_
 
 === Ebene 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als Whitebox.
@@ -135,13 +144,16 @@ Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
 Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders volatile Bausteine.
 Normale, einfache oder standardisierte Teile sollten Sie weglassen.
 ****
+endif::arc42help[]
 
 ==== Whitebox _<Baustein 1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...zeigt das Innenleben von _Baustein 1_.
 ****
+endif::arc42help[]
 
 _<Whitebox-Template>_
 
@@ -157,19 +169,23 @@ _<Whitebox-Template>_
 
 === Ebene 3
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als Whitebox.
 
 Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von arc42 für die weiteren Ebenen.
 ****
+endif::arc42help[]
 
 ==== Whitebox <_Baustein x.1_>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...zeigt das Innenleben von _Baustein x.1_.
 ****
+endif::arc42help[]
 
 _<Whitebox-Template>_
 

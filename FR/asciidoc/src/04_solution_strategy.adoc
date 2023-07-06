@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Stratégie de solution
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -36,3 +37,4 @@ Pour documenter la manière d'atteindre les principaux objectifs de qualité, vo
 Voir https://docs.arc42.org/section-4/[Solution Strategy] dans la documentation arc42.
 
 ****
+endif::arc42help[]

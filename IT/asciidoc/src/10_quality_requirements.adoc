@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Requisiti di Qualità
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -17,9 +18,11 @@ il che non creerà rischi elevati quando non sono pienamente raggiunti.
 Poiché i requisiti di qualità avranno molta influenza sulle decisioni architetturali,
 dovresti sapere per ogni stakeholder cosa è veramente importante per loro, concreto e misurabile.
 ****
+endif::arc42help[]
 
 === Albero di qualità
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuto
@@ -36,9 +39,11 @@ L'albero della qualità è una panoramica di alto livello degli obiettivi e dei 
 
 In ogni caso l'albero dovrebbe includere collegamenti agli scenari della sezione successiva.
 ****
+endif::arc42help[]
 
 === Scenari di qualità
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -66,3 +71,4 @@ più precisamente fino a un livello di scenari che possono essere discussi e val
 .Forma
 Testo tabulare o testo in formato libero.
 ****
+endif::arc42help[]

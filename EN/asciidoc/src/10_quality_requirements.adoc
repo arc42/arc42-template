@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Quality Requirements
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -24,9 +25,11 @@ concrete and measurable.
 See https://docs.arc42.org/section-10/[Quality Requirements] in the arc42 documentation.
 
 ****
+endif::arc42help[]
 
 === Quality Tree
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Content
@@ -45,9 +48,11 @@ In any case the tree should include links to the scenarios of the following sect
 
 
 ****
+endif::arc42help[]
 
 === Quality Scenarios
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -71,3 +76,4 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 .Form
 Tabular or free form text.
 ****
+endif::arc42help[]

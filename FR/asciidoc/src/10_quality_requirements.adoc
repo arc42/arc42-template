@@ -4,9 +4,9 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Critères de qualité
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
-
 .Contenu
 Cette section contient tous les critères de qualité sous la forme d'un arbre de qualité avec des scénarios. Les plus importantes ont déjà été décrites au point 1.2 (objectifs de qualité).
 
@@ -24,9 +24,11 @@ ce qui est concret et mesurable.
 Voir https://docs.arc42.org/section-10/[Quality Requirements] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 === Arbre de qualité
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -44,9 +46,11 @@ L'arbre de qualité est une vue d'ensemble des objectifs et des critères de qua
 Dans tous les cas, l'arbre doit inclure des liens vers les scénarios de la section suivante.
 
 ****
+endif::arc42help[]
 
 === Scénarios Qualité
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -69,3 +73,4 @@ plus précisément à un niveau de scénarios qui peuvent être discutés et év
 .Représentation
 Texte tabulaire ou libre.
 ****
+endif::arc42help[]

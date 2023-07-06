@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Runtime View
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -40,6 +41,7 @@ Er zijn meerdere manieren om de schenarios vast te leggen, bijvoorbeeld
 Zie https://docs.arc42.org/section-6/[Runtime View] in de arc42 documentatie.
 
 ****
+endif::arc42help[]
 
 === <Runtime Scenario 1>
 

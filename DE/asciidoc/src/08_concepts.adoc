@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-concepts]]
 == Querschnittliche Konzepte
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -48,6 +49,7 @@ image::08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutti
 Siehe https://docs.arc42.org/section-8/[Querschnittliche Konzepte] in der online-Dokumentation (auf Englisch).
 
 ****
+endif::arc42help[]
 
 === _<Konzept 1>_
 

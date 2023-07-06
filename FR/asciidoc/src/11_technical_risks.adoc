@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Risques et Dettes techniques
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -22,3 +23,4 @@ Liste des risques et/ou des dettes techniques, comprenant probablement des mesur
 Voir https://docs.arc42.org/section-11/[Risks and Technical Debt] dans la documentation arc42.
 
 ****
+endif::arc42help[]

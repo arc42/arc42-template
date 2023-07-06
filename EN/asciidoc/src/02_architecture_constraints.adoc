@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Architecture Constraints
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -25,3 +26,4 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
 
 ****
+endif::arc42help[]

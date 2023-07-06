@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-glossary]]
 == Glosario
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -20,6 +21,7 @@ Deberían definirse claramente los términos, para que todas las partes relacion
 * Crear una tabla con las columnas <Término> y <Definición>.
 * Se pueden agregar más columnas en caso de que se requieran traducciones.
 ****
+endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===

@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introducción y Metas
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Describe los requerimientos relevantes y las directrices que los arquitectos de software y el equipo de desarrollo
@@ -12,9 +13,11 @@ deben considerar. Entre estas se incluyen:
 * Metas de calidad para la arquitectura
 * Las partes interesadas pertinentes y sus expectativas
 ****
+endif::arc42help[]
 
 === Vista de Requerimientos
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -34,9 +37,11 @@ Mantenga estos extractos tan cortos como sea posible. Encuentre el balance entre
 la redundancia de este documento respecto a los documentos de requerimientos que se encuentren 
 relacionados.
 ****
+endif::arc42help[]
 
 === Metas de Calidad
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -52,9 +57,11 @@ Si como arquitecto no conoce la calidad de su trabajo, será juzgado...
 .Forma
 Una tabla con metas de calidad y escenarios concretos, ordenados por prioridades
 ****
+endif::arc42help[]
 
 === Partes interesadas (Stakeholders)
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -76,6 +83,7 @@ y sus resultados
 Tabla con nombres de los roles, personas, y sus expectativas con respecto a la arquitectura y su 
 documentación
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

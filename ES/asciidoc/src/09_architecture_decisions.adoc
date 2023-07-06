@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Decisiones de Diseño
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -27,3 +28,4 @@ Varias opciones:
 * Mayor detalle en secciones separadas por cada sección.
 * Registro de Decisiones de Arquitectura (ADR por sus siglas en inglés) para cada decisión importante.
 ****
+endif::arc42help[]

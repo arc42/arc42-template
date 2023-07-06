@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Rizika a technické dluhy
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -24,3 +25,4 @@ Seznam rizik a/nebo technických dluhů, pravděpodobně včetně navrhovaných 
 Anglická dokumentace arc42: https://docs.arc42.org/section-11/[Risks and Technical Debt].
 
 ****
+endif::arc42help[]

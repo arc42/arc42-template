@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Ризики та технічні борги
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -23,3 +24,4 @@ ifndef::imagesdir[:imagesdir: ../images]
 Див. https://docs.arc42.org/section-11/[Ризики та технічний борг] в документації arc42.
 
 ****
+endif::arc42help[]

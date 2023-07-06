@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Risico's en Technical Debt
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -23,3 +24,4 @@ Lijst van risico's en/of technical dept eventueel aangevuld met maatregelen om d
 Zie https://docs.arc42.org/section-11/[Risks and Technical Debt] in de arc42 documentatie.
 
 ****
+endif::arc42help[]

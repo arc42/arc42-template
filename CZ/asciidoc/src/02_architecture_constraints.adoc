@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Omezení na realizaci systému
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -24,3 +25,4 @@ V případě potřeby rozdělená na technická, organizační nebo politická o
 Anglická dokumentace arc42: https://docs.arc42.org/section-2/[Architecture Constraints].
 
 ****
+endif::arc42help[]

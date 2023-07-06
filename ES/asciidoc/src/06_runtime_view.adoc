@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Vista de Ejecución
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -35,6 +36,7 @@ Hay muchas notaciones para describir los escenarios, por ejemplo:
 * Máquinas de estado
 * ....
 ****
+endif::arc42help[]
 
 === <Escenario de ejecución 1>
 

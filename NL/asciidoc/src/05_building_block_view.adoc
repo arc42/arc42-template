@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Bouwstenen View
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -36,9 +37,11 @@ Zodoende bevat het de 'white box' beschrijving van specifieke bouwstenen uit niv
 Zie https://docs.arc42.org/section-5/[Building Block View] in de arc42 documentatie.
 
 ****
+endif::arc42help[]
 
 === Gehele whitebox Systeem
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Hier wordt de decompositie van het gehele systeem beschreven aan de hand van het volgende 'white box' template.
@@ -58,6 +61,7 @@ In het ergste geval moeten syntax, semantiek, protocollen, error afhandeling, be
 In het beste geval zijn voorbeelden of simpele beschrijvingen voldoende.
 
 ****
+endif::arc42help[]
 
 _**<Overzichts Diagram>**_
 
@@ -72,6 +76,7 @@ _<Beschrijving van ingesloten bouwstenen ('black boxes')>_
 Belangrijke Interfaces::
 _<Beschrijving van belangrijke interfaces>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Voeg hier de uitleg van de 'black boxes' van niveau 1 toe:
@@ -89,10 +94,11 @@ In tabel vorm moeten hier enkel de 'black boxes' met hun naam een verantwoordeli
 In het geval er een lijst met 'black box' beschrijvingen wordt gebruikt, vul dan een aparte 'black box' template in voor iedere belangrijke bouwsteen.
 De kop bij die sectie is dan de naam van de specifieke 'black box'.
 ****
-
+endif::arc42help[]
 
 ==== <Naam black box 1>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschrijf hier <'black box' 1>
@@ -106,6 +112,7 @@ Deze interface beschrijvingen kunnen kwaliteit en prestatie karakteristieken bev
 * (Optioneel) Vervulde requirements (als er traceerbaarheid van de requirements is vereist)
 * (Optioneel) Open issues/problemen/risico's
 ****
+endif::arc42help[]
 
 _<Doel/Verantwoordelijkheid>_
 
@@ -139,6 +146,7 @@ _<black box template>_
 
 === Niveau 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Hier kunnen de innerlijke structuren van (sommige) bouwstenen uit niveau 1 als 'white boxes' worden gespecificeerd.
@@ -148,13 +156,16 @@ Geeft de voorkeur aan relevantie boven compleetheid.
 Beschrijf belangrijke, verassende, risicovolle, complexe of vluchtige bouwstenen.
 Laat normale, simpele, saaie of gestandardiseerde delen van het systeem buiten beschouwing.
 ****
+endif::arc42help[]
 
 ==== White Box _<bouwsteen 1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...beschrijft de interne structuur van _bouwsteen 1_.
 ****
+endif::arc42help[]
 
 _<white box template>_
 
@@ -174,22 +185,24 @@ _<white box template>_
 
 === Niveau 3
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Hier kan de interne structuur van (sommige) niveau 2 bouwstenen als 'white boxes' worden beschreven.
 
 Als er meer gedetailleerde niveaus van de architectuur nodig zijn, kopieer dan dit deel van arc42 voor aanvullende niveaus.
 ****
-
+endif::arc42help[]
 
 ==== White Box _<bouwsteen x.1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Specificeer de interne structuur van _bouwsteen x.1_.
 
 ****
-
+endif::arc42help[]
 
 _<white box template>_
 

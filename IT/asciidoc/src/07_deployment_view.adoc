@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Deployment View
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenuti
@@ -37,9 +38,11 @@ ingrandire questa scatola nera utilizzando Deployment View aggiuntivi:
 quando la tua infrastruttura è più complessa.
 * Quando i tuoi stakeholder (hardware) preferiscono altri tipi di diagrammi piuttosto che il Deployment View, lascia che utilizzino qualsiasi tipo che sia in grado di mostrare nodi e canali dell'infrastruttura.
 ****
+endif::arc42help[]
 
 === Livello infrastruttura 1
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Descrivi (di solito in una combinazione di diagrammi, tabelle e testo):
@@ -51,6 +54,7 @@ Descrivi (di solito in una combinazione di diagrammi, tabelle e testo):
 
 Per più ambienti o distribuzioni alternative, copia quella sezione di arc42 per tutti gli ambienti pertinenti.
 ****
+endif::arc42help[]
 
 _**<Overview Diagram>**_
 
@@ -68,12 +72,14 @@ _<descrizione della mappatura>_
 
 === Livello infrastruttura 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Qui puoi includere la struttura interna di (alcuni) elementi dell'infrastruttura dal livello 1.
 
 Si prega di copiare la struttura dal livello 1 per ogni elemento selezionato.
 ****
+endif::arc42help[]
 
 ==== _<Elemento infrastruttura 1>_
 

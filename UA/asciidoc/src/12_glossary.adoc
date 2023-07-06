@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[розділ-глосарій]]
 == Глосарій
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Зміст
@@ -26,6 +27,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 Див. https://docs.arc42.org/section-12/[Глосарій] в документації arc42.
 
 ****
+endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===

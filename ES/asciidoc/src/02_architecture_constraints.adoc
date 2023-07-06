@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Restricciones de la Arquitectura
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -20,3 +21,4 @@ Tablas de restricciones con sus explicaciones.
 Si se requiere, se pueden subdividir en restricciones técnicas, organizacionales y/o políticas y convenciones
 (por ejemplo, guías de versionado o programación, convenciones de documentación o nombrado)
 ****
+endif::arc42help[]

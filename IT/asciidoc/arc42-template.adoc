@@ -31,6 +31,7 @@ include::src/about-arc42.adoc[]
 // horizontal line
 ***
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 [NOTE]
@@ -40,7 +41,7 @@ It is used for familiarization with arc42 and the understanding of the concepts.
 For documentation of your own system you use better the _plain_ version.
 ====
 ****
-
+endif::arc42help[]
 
 // numbering from here on
 :numbered:

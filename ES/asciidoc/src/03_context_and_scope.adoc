@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Alcance y Contexto del Sistema
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -25,10 +26,11 @@ Varias opciones:
 * Diagramas de contexto
 * Listas de socios de comunicación y sus interfases.
 ****
-
+endif::arc42help[]
 
 === Contexto de Negocio
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -47,6 +49,7 @@ De manera alternativa (o adicional) se puede utilizar una tabla.
 El título de la tabla es el nombre del sistema, las tres columnas contienen el nombre del socio de comunicación, las
 entradas y las salidas
 ****
+endif::arc42help[]
 
 **<Diagrama o Tabla>**
 
@@ -54,6 +57,7 @@ entradas y las salidas
 
 === Contexto Técnico
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -69,6 +73,7 @@ su contexto. Especialmente los diseñadores de infraestructura o hardware decide
 Por ejemplo, diagramas UML de despligue describiendo los canales a sistemas vecinos, junto con una tabla de 
 mapeo mostrando las relaciones entre los canales y las entradas/salidas.
 ****
+endif::arc42help[]
 
 **<Diagrama o Tabla>**
 

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Architectuur Beslissingen
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -31,3 +32,4 @@ Zie https://docs.arc42.org/section-9/[Architecture Decisions] in de arc42 docume
 Daar zijn ook links en voorbeelden van een ADR te vinden.
 
 ****
+endif::arc42help[]

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Estrategia de solución
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -27,3 +28,4 @@ Justifique las decisiones y porque se realizaron de esa manera, basado en el pla
 las metas de calidad y restricciones clave.
 Refierase a los detalles en las secciones posteriores.
 ****
+endif::arc42help[]

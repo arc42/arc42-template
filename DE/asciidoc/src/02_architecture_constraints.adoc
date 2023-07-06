@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-architecture-constraints]]
 == Randbedingungen
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -23,3 +24,4 @@ Bei Bedarf unterscheiden Sie technische, organisatorische und politische Randbed
 Siehe https://docs.arc42.org/section-2/[Randbedingungen] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]

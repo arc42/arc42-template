@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Vue en Briques
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -35,9 +36,11 @@ Il contient donc la description en boîte blanche de certaines briques du niveau
 Voir https://docs.arc42.org/section-5/[Building Block View] dans la documentation arc42.
 
 ****
+endif::arc42help[]
 
 === Niveau 1 : Système global Boîte blanche
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Vous décrivez ici la décomposition du système global à l'aide du modèle de boîte blanche suivant. Il contient
@@ -57,6 +60,7 @@ Puisqu'il existe de nombreuses façons de spécifier les interfaces, pourquoi ne
 Dans le meilleur des cas, vous pourrez vous contenter d'exemples ou de simples signatures.
 
 ****
+endif::arc42help[]
 
 _**<Schéma d'ensemble>**_
 
@@ -71,6 +75,7 @@ _<Description de la brique contenue (boîte noire)>_
 Interfaces Importantes::
 _<Description des interfaces importantes>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Insérez vos explications sur les boîtes noires du niveau 1 :
@@ -87,9 +92,11 @@ Si vous utilisez la forme tabulaire, vous ne décrirez vos boîtes noires qu'ave
 Si vous utilisez une liste de descriptions de boîtes noires, vous devez remplir un modèle de boîte noire distinct pour chaque brique importante.
 Son titre est le nom de la boîte noire.
 ****
+endif::arc42help[]
 
 ==== <Nom boîte noire 1>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Vous décrivez ici la <boîte noire 1>
@@ -103,6 +110,7 @@ selon le modèle de boîte noire suivant :
 * (Facultatif) Questions ouvertes/problèmes/risques
 
 ****
+endif::arc42help[]
 
 _<Objectif/Responsabilité>_
 
@@ -135,6 +143,7 @@ _<template boîte noire>_
 
 === Niveau 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Ici, vous pouvez spécifier la structure interne de (certaines) briques du niveau 1 sous forme de boîtes blanches.
@@ -145,13 +154,16 @@ Laissez de côté les éléments normaux, simples, ennuyeux ou standardisés de 
 
 Si vous avez besoin de niveaux plus détaillés de votre architecture, c'est-à-dire des niveaux 3, 4 et ainsi de suite, veuillez copier cette partie d'arc42 pour les niveaux supplémentaires.
 ****
+endif::arc42help[]
 
 ==== Boîte blanche _<brique 1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...décrit la structure interne de la _brique 1_.
 ****
+endif::arc42help[]
 
 _<template boîte blanche>_
 

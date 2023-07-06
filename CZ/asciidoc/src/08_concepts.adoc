@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Průřezové (cross-cutting) koncepty
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -53,7 +54,7 @@ image::08-Crosscutting-Concepts-Structure-EN.png["Témata pro průřezové konce
 
 Anglická dokumentace arc42: https://docs.arc42.org/section-8/[Concepts].
 ****
-
+endif::arc42help[]
 
 === _<Koncept 1>_
 

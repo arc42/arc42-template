@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Requerimientos de Calidad
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -18,9 +19,11 @@ no sean cubiertos con totalidad.
 Dado que los requerimientos de calidad tendrán mucha influencia en las decisiones arquitectónicas deben tomarse
 en cuenta los elementos importantes para las partes relacionadas que sean concretas y medibles.
 ****
+endif::arc42help[]
 
 === Árbol de Calidad
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -38,9 +41,11 @@ El árbol de calidad es un vistazo a alto nivel de las metas de calidad y requer
 
 En cualquier caso incluya ligas a los escenarios de las siguientes secciones.
 ****
+endif::arc42help[]
 
 === Escenarios de calidad
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -66,3 +71,4 @@ Cuando se requiere evaluar la arquitectura utilizando métodos como ATAM se nece
 .Forma
 Texto en forma libre o tabular.
 ****
+endif::arc42help[]

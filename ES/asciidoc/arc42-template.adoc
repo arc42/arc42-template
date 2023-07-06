@@ -34,6 +34,7 @@ include::src/about-arc42.adoc[]
 // Línea horizontal
 ***
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 [NOTE]
@@ -43,6 +44,7 @@ Se utiliza para familiarizarse con arc42 y comprender sus conceptos.
 Para la documentación de su propio sistema puede utilizar la version _plain_.
 ====
 ****
+endif::arc42help[]
 
 ////
 * This block is present in docToolChain but not in the original arc42-template

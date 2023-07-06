@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Describes the relevant requirements and the driving forces that software architects and development team must consider. 
@@ -14,9 +15,11 @@ These include
 * quality goals for the architecture and
 * relevant stakeholders and their expectations
 ****
+endif::arc42help[]
 
 === Requirements Overview
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -40,9 +43,11 @@ Keep these excerpts as short as possible. Balance readability of this document w
 See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 documentation.
 
 ****
+endif::arc42help[]
 
 === Quality Goals
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -62,9 +67,11 @@ If you as an architect do not know how the quality of your work will be judged..
 .Form
 A table with quality goals and concrete scenarios, ordered by priorities
 ****
+endif::arc42help[]
 
 === Stakeholders
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contents
@@ -84,6 +91,7 @@ These stakeholders determine the extent and the level of detail of your work and
 .Form
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

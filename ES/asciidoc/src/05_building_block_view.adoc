@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Vista de Bloques
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -35,9 +36,11 @@ internas.
 
 *Nivel 3* Hace zoom a los bloques selectos del nivel 2, y así sucesivamente.
 ****
+endif::arc42help[]
 
 === Sistema General de Caja Blanca
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Aquí se describe la descomposición del sistema en general usando la siguiente plantilla de caja blanca. Contiene:
@@ -55,6 +58,7 @@ pero que son muy importantes para entender la caja blanca. En el peor de los cas
 sintaxis, semántica, protocolos, manejo de errores, restricciones, versiones, calidades, compatibilidades necesarias, entre
 otras. En el mejor de los casos bastará con ejemplos o la firma de los mismos.
 ****
+endif::arc42help[]
 
 _**<Diagrama general>**_
 
@@ -69,6 +73,7 @@ _<Desripción de los bloques de construcción contenidos (Cajas negras)>_
 Interfases importantes::
 _<Descripción de las interfases importantes>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Inserte las explicaciones de las cajas negras del nivel 1:
@@ -86,10 +91,11 @@ siguiente esquema:
 Si utiliza una lista de descripciones de cajas negras entonces llene una plantilla de caja negra por cada bloque de construcción
 importante. El título es el nombre de la caja negra.
 ****
-
+endif::arc42help[]
 
 ==== <Caja Negra 1>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Aqui se describe la <caja negra 1> acorde a la siguiente plantilla:
@@ -101,6 +107,7 @@ Aqui se describe la <caja negra 1> acorde a la siguiente plantilla:
 * (Opcional) Requerimientos satisfechos (si se necesita contar con la trazabilidad a los requerimientos).
 * (Opcional) Incidentes/problemas/riesgos abiertos
 ****
+endif::arc42help[]
 
 _<Propósito/Responsabilidad>_
 
@@ -134,6 +141,7 @@ _<Plantilla de caja negra>_
 
 === Nivel 2
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Aquí se especifica la estructura interna de (algunos) bloques de construcción del nivel 1 como cajas blancas.
@@ -142,13 +150,16 @@ Debe decidir cuales bloques de construcción del sistema son lo suficientemente 
 descripción detallada. Prefiera la relevancia sobre la completitud. Especifique bloques de construcción importantes,
 sorprendentes, riesgosos, complejos o volátiles. Deje fuera las partes normales, simples, estándares o aburridas del sistema.
 ****
+endif::arc42help[]
 
 ==== Caja Blanca _<bloque de construcción 1>_
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 ...Describe la estructura interna de _bloque de construcción 1_.
 ****
+endif::arc42help[]
 
 _<plantilla de caja blanca>_
 
@@ -168,21 +179,23 @@ _<plantilla de caja blanca>_
 
 === Nivel 3
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Aqui se especifica la estructura interna de (algunos) de los bloques de construcción del nivel 2 como cajas blancas.
 
 Cuando la arquitectura requiera más niveles detallados copiar esta sección para niveles adicionales.
 ****
-
+endif::arc42help[]
 
 ==== Caja Blanca <_bloque de construcción x.1_>
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Especifica la estructura interna de _bloque de construcción x.1_.
 ****
-
+endif::arc42help[]
 
 _<plantilla de caja blanca>_
 

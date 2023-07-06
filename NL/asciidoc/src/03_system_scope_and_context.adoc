@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 ==  Context en Systeem Scope
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -28,10 +29,11 @@ Verschillend opties:
 Zie https://docs.arc42.org/section-3/[Context en Scope] in de arc42 documentatie.
 
 ****
-
+endif::arc42help[]
 
 === Business Context
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -49,6 +51,7 @@ De naam van het systeem is de titel van de tabel.
 De drie kolommen bevatten de naam van de communicatie partner, de inputs en de outputs.
 
 ****
+endif::arc42help[]
 
 **<Diagram of Tabel>**
 
@@ -56,6 +59,7 @@ De drie kolommen bevatten de naam van de communicatie partner, de inputs en de o
 
 === Technische Context
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -70,6 +74,7 @@ Met name infrastructuur of hardware ontwerpers beslissen aan de hand van deze te
 Bijvoorbeeld UML deployment diagrammen die de kanalen naar naburige systemen beschrijven, gecombineerd met mapping tabellen die de relatie tussen de kanalen en de input/output tonen.
 
 ****
+endif::arc42help[]
 
 **<Diagram of Tabel>**
 

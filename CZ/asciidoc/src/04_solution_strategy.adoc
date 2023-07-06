@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Strategie řešení
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -31,3 +32,4 @@ Pro podrobnosti odkažte na následující části.
 Anglická dokumentace arc42: https://docs.arc42.org/section-4/[Solution Strategy].
 
 ****
+endif::arc42help[]

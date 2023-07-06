@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Oplossing Strategie
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhoud
@@ -31,3 +32,4 @@ Verwijs naar details in de volgende secties.
 Zie https://docs.arc42.org/section-4/[Solution Strategy] in de arc42 documentatie.
 
 ****
+endif::arc42help[]

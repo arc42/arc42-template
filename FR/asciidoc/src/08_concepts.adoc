@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Concepts transversaux
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenu
@@ -52,6 +53,7 @@ image::08-Crosscutting-Concepts-Structure-EN.png["Thèmes possibles pour les con
 
 Voir https://docs.arc42.org/section-8/[Concepts] dans la documentation arc42.
 ****
+endif::arc42help[]
 
 
 === _<Concept 1>_

@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Úvod a cíle
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Popisuje nejdůležitější požadavky a omezení, které musí softwaroví architekti a vývojový tým zvážit.
@@ -14,9 +15,11 @@ Tyto zahrnují
 * kvalitativní cíle pro architekturu,
 * strany zainteresované na systému (Stakeholder) a jejich potřeby
 ****
+endif::arc42help[]
 
 === Přehled požadavků
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -37,9 +40,11 @@ Udržujte tento popis co nejkratší (z hlediska čitelnosti), ale tak aby nebyl
 Anglická dokumentace arc42: https://docs.arc42.org/section-1/[Introduction and Goals].
 
 ****
+endif::arc42help[]
 
 === Kvalitativní cíle
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -57,9 +62,11 @@ Ujistěte se, že jsou tyto požadavky na systém jednoznačné (nebo měřiteln
 .Forma
 Tabulka s nejdůležitějšími kvalitativními cíli a konkrétními scénáři, seřazená podle priorit.
 ****
+endif::arc42help[]
 
 === Strany zainteresované na systému (Stakeholder)
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
@@ -78,6 +85,7 @@ Tyto zainteresované strany určují rozsah a úroveň detailu vaší práce a j
 .Forma
 Tabulka s názvy rolí, jmény osob a jejich očekáváním na architekturu a její dokumentaci.
 ****
+endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===

@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 Beschreibt die wesentlichen Anforderungen und treibenden Kräfte, die bei der Umsetzung der Softwarearchitektur und Entwicklung des Systems berücksichtigt werden müssen.
@@ -15,9 +16,11 @@ Dazu gehören:
 * Qualitätsziele für die Architektur und
 * relevante Stakeholder und deren Erwartungshaltung.
 ****
+endif::arc42help[]
 
 === Aufgabenstellung
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -39,9 +42,11 @@ Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Re
 Siehe https://docs.arc42.org/section-1/[Anforderungen und Ziele] in der online-Dokumentation (auf Englisch!).
 
 ****
+endif::arc42help[]
 
 === Qualitätsziele
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -59,9 +64,11 @@ Weil Qualitätsziele grundlegende Architekturentscheidungen oft maßgeblich beei
 .Form
 Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien, geordnet nach Prioritäten.
 ****
+endif::arc42help[]
 
 === Stakeholder
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Inhalt
@@ -80,6 +87,7 @@ Diese Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der von 
 .Form
 Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung bezüglich der Architektur und deren Dokumentation.
 ****
+endif::arc42help[]
 
 [cols="1,1,2" options="header"]
 |===

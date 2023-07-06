@@ -7,6 +7,7 @@
 
 // where are images located?
 :imagesdir: ./images
+:arc42help:
 
 // Las imágenes en línea (inline)
 // generan un html de salida de un solo archivo

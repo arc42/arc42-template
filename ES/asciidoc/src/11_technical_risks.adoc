@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Riesgos y deuda técnica
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
@@ -20,3 +21,4 @@ de producto) como parte de la planeación y medición de riesgos en general.
 Lista de riesgos y/o deuda técnica, que podría incluir una medidas sugeridas para minimizar, mitigar o evitar riesgos
 o reducir la deuda técnica.
 ****
+endif::arc42help[]
