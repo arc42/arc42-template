@@ -28,16 +28,12 @@ ifndef::imagesdir[:imagesdir: ../images]
 Maybe a highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box.
 In this section one can zoom into this black box using additional deployment diagrams:
 
-Возможно, схема развертывания самого высокого уровня уже содержится в разделе 3.2. как технический контекст с собственной инфраструктурой как ОДИН черный ящик.
-В этом разделе можно увеличить этот черный ящик, используя дополнительные диаграммы развертывания:
-
-* UML offers deployment diagrams to express that view.
-Use it, probably with nested diagrams, when your infrastructure is more complex.
-* When your (hardware) stakeholders prefer other kinds of diagrams rather than a deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+Возможно, схема развертывания самого высокого уровня уже содержится в разделе 3.2. в виде технического контекста с собственной инфраструктурой, описанной ОДНИМ черным ящиком.
+В этом разделе можно раскрыть этот черный ящик, используя дополнительные диаграммы развертывания:
 
 * UML предлагает диаграммы развертывания, чтобы выразить это представление.
-Используйте его, возможно, с вложенными диаграммами, когда ваша инфраструктура более сложна.
-* Когда заинтересованные стороны (аппаратного обеспечения) предпочитают другие виды диаграмм, а не диаграмму развертывания, позвольте им использовать любой вид, способный отображать узлы и каналы инфраструктуры.
+Используйте его, возможно, с вложенными диаграммами, в случае если ваша инфраструктура более сложна.
+* Если заинтересованные стороны (связанные с аппаратным обеспечением) предпочитают другие виды диаграмм, а не диаграмму развертывания, позвольте им использовать любой вид, способный отображать узлы и каналы инфраструктуры.
 
 .Дальнейшая информация
 See https://docs.arc42.org/section-7/[Deployment View] в документации arc42.
