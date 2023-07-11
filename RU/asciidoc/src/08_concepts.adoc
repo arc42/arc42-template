@@ -28,10 +28,12 @@ ifndef::imagesdir[:imagesdir: ../images]
 .Форма
 The form can be varied:
 
-* concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views
 * sample implementations, especially for technical concepts
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
+* концептуальные документы любой структуры
+* сквозные фрагменты моделей или сценарии с использованием обозначений архитектурных представлений
+* примеры реализации, особенно для технических концепций
+* ссылка на типичное использование стандартных фреймворков (например, использование Hibernate для объектно-реляционного сопоставления)
 
 .Структура
 Потенциальная (но не обязательная) структура этого раздела может быть следующей:

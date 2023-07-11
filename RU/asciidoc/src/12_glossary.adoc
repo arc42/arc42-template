@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-glossary]]
-== Glossary
+== Глоссарий
 
 [role="arc42help"]
 ****
@@ -18,7 +18,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 .Форма
 
-Таблица со столбцами <Term> и <Definition>.
+Таблица со столбцами <Термин> и <Определение>.
 
 Потенциально больше столбцов на случай, если вам понадобятся переводы.
 

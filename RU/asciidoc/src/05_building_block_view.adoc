@@ -31,8 +31,8 @@ box descriptions of all contained building blocks.
 
 *Уровень 1* представляет собой описание всей системы в виде «белого ящика» вместе с описаниями всех содержащихся строительных блоков в виде «черных ящиков».
 
-*Level 2* zooms into some building blocks of level 1.
-Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.
+*Уровень 2* zooms into some building blocks of уровень 1.
+Thus it contains the white box description of selected building blocks of уровень 1, together with black box descriptions of their internal building blocks.
 
 *Уровень 2* раскрывает детали некоторых строительных блоков уровня 1.
 Таким образом, он содержит описание «белого ящика» выбранных строительных блоков уровня 1 вместе с описанием их внутренних строительных блоков как «черных ящиков».
@@ -189,7 +189,7 @@ _<шаблон белого ящика>_
 
 
 
-=== Level 3
+=== Уровень 3
 
 [role="arc42help"]
 ****

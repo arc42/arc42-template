@@ -23,7 +23,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 ****
 
-=== Quality Tree
+=== Дерево качества
 
 [role="arc42help"]
 ****
@@ -43,7 +43,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 ****
 
-=== Quality Scenarios
+=== Сценарии качества
 
 [role="arc42help"]
 ****

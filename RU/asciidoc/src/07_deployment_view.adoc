@@ -21,11 +21,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 .Мотивация
 Программное обеспечение не работает без аппаратного обеспечения.
-Эта базовая инфраструктура может и будет влиять на систему и/или некоторые сквозные (cross-cutting) концепции.
+Эта базовая инфраструктура может и будет влиять на систему и/или некоторые сквозные (сквозные) концепции.
 Поэтому необходимо знать инфраструктуру.
 
 .Форма
-Maybe a highest level deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box.
+Maybe a highest уровень deployment diagram is already contained in section 3.2. as technical context with your own infrastructure as ONE black box.
 In this section one can zoom into this black box using additional deployment diagrams:
 
 Возможно, схема развертывания самого высокого уровня уже содержится в разделе 3.2. в виде технического контекста с собственной инфраструктурой, описанной ОДНИМ черным ящиком.
@@ -40,7 +40,7 @@ In this section one can zoom into this black box using additional deployment dia
 
 ****
 
-=== Infrastructure Level 1
+=== Инфраструктурный уровень 1
 
 [role="arc42help"]
 ****
@@ -76,24 +76,24 @@ _<объяснение в текстовом виде>_
 Mapping of Building Blocks to Infrastructure::
 _<description of the mapping>_
 
-=== Infrastructure Level 2
+=== Инфраструктурный уровень 2
 
 [role="arc42help"]
 ****
-Here you can include the internal structure of (some) infrastructure elements from level 1.
+Here you can include the internal structure of (some) Инфраструктурный элементs from level 1.
 
 Please copy the structure from level 1 for each selected element.
 ****
 
-==== _<Infrastructure Element 1>_
+==== _<Инфраструктурный элемент 1>_
 
 _<diagram + explanation>_
 
-==== _<Infrastructure Element 2>_
+==== _<Инфраструктурный элемент 2>_
 
 _<diagram + explanation>_
 
 ...
-==== _<Infrastructure Element n>_
+==== _<Инфраструктурный элемент n>_
 
 _<diagram + explanation>_
