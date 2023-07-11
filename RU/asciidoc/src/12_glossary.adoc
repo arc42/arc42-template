@@ -6,37 +6,36 @@ ifndef::imagesdir[:imagesdir: ../images]
 [role="arc42help"]
 ****
 .Содержание
-The most important domain and technical terms that your stakeholders use when discussing the system.
+Наиболее важные доменные и технические термины, которые ваши заинтересованные стороны используют при обсуждении системы.
 
-You can also see the glossary as source for translations if you work in multi-language teams.
+Вы также можете использовать глоссарий в качестве источника переводов, если вы работаете в многоязычной команде.
 
 .Мотивация
-You should clearly define your terms, so that all stakeholders
+Вы должны четко определить свои условия, чтобы все заинтересованные стороны
 
-* have an identical understanding of these terms
-* do not use synonyms and homonyms
-
+* имели одинаковое понимание этих терминов
+* не использовали синонимы и омонимы
 
 .Форма
 
-A table with columns <Term> and <Definition>.
+Таблица со столбцами <Term> и <Definition>.
 
-Potentially more columns in case you need translations.
+Потенциально больше столбцов на случай, если вам понадобятся переводы.
 
 
 .Дальнейшая информация
 
-Смотри https://docs.arc42.org/section-12/[Glossary] в документации arc42.
+Смотри https://docs.arc42.org/section-12/[Глоссарий] в документации arc42.
 
 ****
 
 [cols="e,2e" options="header"]
 |===
-|Term |Definition
+|Термин |Определение
 
-|<Term-1>
-|<definition-1>
+|<Термин-1>
+|<определение-1>
 
-|<Term-2>
-|<definition-2>
+|<Термин-2>
+|<определение-2>
 |===
