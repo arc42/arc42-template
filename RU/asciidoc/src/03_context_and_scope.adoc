@@ -1,7 +1,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-context-and-scope]]
-== Context and Scope
+== Контекст и рамки
 
 
 [role="arc42help"]
@@ -39,7 +39,7 @@ Various options:
 ****
 
 
-=== Business Context
+=== Бизнес контекст
 
 [role="arc42help"]
 ****
