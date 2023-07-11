@@ -29,7 +29,7 @@ Various options:
 
 .Дальнейшая информация
 
-See https://docs.arc42.org/section-9/[Architecture Decisions] в документации arc42.
+Смотри https://docs.arc42.org/section-9/[Architecture Decisions] в документации arc42.
 There you will find links and examples about ADR.
 
 ****

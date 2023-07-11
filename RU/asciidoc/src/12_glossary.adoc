@@ -26,7 +26,7 @@ Potentially more columns in case you need translations.
 
 .Дальнейшая информация
 
-See https://docs.arc42.org/section-12/[Glossary] в документации arc42.
+Смотри https://docs.arc42.org/section-12/[Glossary] в документации arc42.
 
 ****
 

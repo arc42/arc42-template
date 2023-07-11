@@ -11,5 +11,5 @@ arc42, the template for documentation of software and system architecture.
 Template Version {revnumber}. {revremark}, {revdate}
 
 Created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
-See https://arc42.org.
+Смотри https://arc42.org.
 

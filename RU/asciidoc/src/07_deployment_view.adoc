@@ -36,7 +36,7 @@ In this section one can zoom into this black box using additional deployment dia
 * Если заинтересованные стороны (связанные с аппаратным обеспечением) предпочитают другие виды диаграмм, а не диаграмму развертывания, позвольте им использовать любой вид, способный отображать узлы и каналы инфраструктуры.
 
 .Дальнейшая информация
-See https://docs.arc42.org/section-7/[Deployment View] в документации arc42.
+Смотри https://docs.arc42.org/section-7/[Deployment View] в документации arc42.
 
 ****
 

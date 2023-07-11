@@ -1,29 +1,29 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-concepts]]
-== Cross-cutting Concepts
+== Сквозные концепции
 
 
 [role="arc42help"]
 ****
 .Содержание
-This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as
+В этом разделе описываются главные правила и идеи решений, которые применимы к нескольким частям (= сквозные) вашей системы.
+Такие концепции часто связаны с несколькими строительными блоками.
+Они могут включать множество различных тем, таких как
 
-* models, especially domain models
-* architecture or design patterns
-* rules for using specific technology
-* principal, often technical decisions of an overarching (= cross-cutting) nature
-* implementation rules
+* модели, особенно модели предметной области
+* архитектура или шаблоны дизайна
+* правила использования конкретных технологий
+* принципиальные, часто технические решения всеобъемлющего (= сквозного) характера
+* правила реализации
 
 
 .Мотивация
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. 
-Thus, they are an important contribution to achieve inner qualities of your system.
 
-Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety. 
+Концепции составляют основу _концептуальной целостности_ (непротиворечивости, однородности) архитектуры.
+Таким образом, они являются важным вкладом в достижение внутренних качеств вашей системы.
 
+Некоторые из этих концепций не могут быть отнесены к отдельным строительным блокам, например к безопасности или производительноси.
 
 .Форма
 The form can be varied:
@@ -33,41 +33,40 @@ The form can be varied:
 * sample implementations, especially for technical concepts
 * reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 
-.Structure
-A potential (but not mandatory) structure for this section could be:
+ .Структура
+Потенциальная (но не обязательная) структура этого раздела может быть следующей:
 
-* Domain concepts
-* User Experience concepts (UX)
-* Safety and security concepts
-* Architecture and design patterns
-* "Under-the-hood"
-* development concepts
-* operational concepts
+* Концепции домена
+* Концепции взаимодействия с пользователем (UX)
+* Концепции безопасности и защиты
+* Архитектура и шаблоны проектирования
+* "Под капотом"
+* концепции развития
+* операционные концепции
 
-Note: it might be difficult to assign individual concepts to one specific topic
-on this list.
+Примечание: может быть сложно отнести отдельные концепции к одной конкретной теме в этом списке.
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+image::08-Crosscutting-Concepts-Structure-EN.png["Возможные темы для сквозных концепций"]
 
 
 .Дальнейшая информация
 
-See https://docs.arc42.org/section-8/[Concepts] в документации arc42.
+Смотри https://docs.arc42.org/section-8/[Концепции] в документации arc42.
 ****
 
 
-=== _<Concept 1>_
+=== _<Концепция 1>_
 
-_<explanation>_
+_<объяснение>_
 
 
 
-=== _<Concept 2>_
+=== _<Концепция 2>_
 
-_<explanation>_
+_<объяснение>_
 
 ...
 
-=== _<Concept n>_
+=== _<Концепция n>_
 
-_<explanation>_
+_<объяснение>_

@@ -21,7 +21,7 @@ concrete and measurable.
 
 .Дальнейшая информация
 
-See https://docs.arc42.org/section-10/[Quality Requirements] в документации arc42.
+Смотри https://docs.arc42.org/section-10/[Quality Requirements] в документации arc42.
 
 ****
 
