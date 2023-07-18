@@ -32,7 +32,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 * ...
 
 .Дальнейшая информация
-Смотри https://docs.arc42.org/section-6/[Runtime View] в документации arc42.
+Смотри https://docs.arc42.org/section-6/[Представление времени выполнения] в документации arc42.
 
 ****
 

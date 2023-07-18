@@ -26,10 +26,8 @@ ifndef::imagesdir[:imagesdir: ../images]
 Некоторые из этих концепций не могут быть отнесены к отдельным строительным блокам, например к безопасности или производительности.
 
 .Форма
-The form can be varied:
+Форма может быть разнообразной:
 
-* sample implementations, especially for technical concepts
-* reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
 * концептуальные документы любой структуры
 * сквозные фрагменты моделей или сценарии с использованием обозначений архитектурных представлений
 * примеры реализации, особенно для технических концепций
