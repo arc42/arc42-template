@@ -63,37 +63,38 @@ For multiple environments or alternative deployments please copy and adapt this 
 Для нескольких сред или альтернативных развертываний скопируйте и адаптируйте этот раздел arc42 для всех соответствующих сред.
 ****
 
-_**<Overview Diagram>**_
+_**<Обзорная диаграмма>**_
 
-Motivation::
-
-_<объяснение в текстовом виде>_
-
-Quality and/or Performance Features::
+Мотивация::
 
 _<объяснение в текстовом виде>_
 
-Mapping of Building Blocks to Infrastructure::
-_<description of the mapping>_
+Характеристики качества и/или производительности::
+
+_<объяснение в текстовом виде>_
+
+Сопоставление строительных блоков с инфраструктурой::
+_<описание сопоставления>_
 
 === Инфраструктурный уровень 2
 
 [role="arc42help"]
 ****
-Here you can include the internal structure of (some) Инфраструктурный элементs from level 1.
+Сюда можно включить внутреннюю структуру (некоторых) Инфраструктурных элементов уровня 1.
 
-Please copy the structure from level 1 for each selected element.
+Пожалуйста, скопируйте структуру уровня 1 для каждого выбранного элемента.
 ****
 
 ==== _<Инфраструктурный элемент 1>_
 
-_<diagram + explanation>_
+_<диаграмма + объяснение>_
 
 ==== _<Инфраструктурный элемент 2>_
 
-_<diagram + explanation>_
+_<диаграмма + объяснение>_
 
 ...
+
 ==== _<Инфраструктурный элемент n>_
 
-_<diagram + explanation>_
+_<диаграмма + объяснение>_
