@@ -21,7 +21,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 .Форма
 Различные варианты:
 
-* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]) для каждого важного решения
+* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Документирование архитектурных решений]) для каждого важного решения
 * Список или таблица, упорядоченные по важности и последствиям или:
 * подробнее в виде отдельных разделов по решению
 
