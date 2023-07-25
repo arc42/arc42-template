@@ -1,0 +1,15 @@
+:homepage: https://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**Об arc42**
+
+[role="lead"]
+arc42, шаблон для документации программного обеспечения и системной архитектуры.
+
+Версия шаблона {revnumber}. {revremark}, {revdate}
+
+Создано и поддерживается (C) доктором Петером Хрушкой, доктором Гернотом Старке и другими участниками.
+Смотри https://arc42.org.
+
