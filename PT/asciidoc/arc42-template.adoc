@@ -1,0 +1,100 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+// configure EN settings for asciidoc
+include::src/config.adoc[]
+
+= image:arc42-logo.png[arc42] Template
+:revnumber: 8.2 EN
+:revdate: January 2023
+:revremark: (based upon AsciiDoc version)
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Table of Contents
+
+//additional style for arc42 help callouts
+ifdef::backend-html5[]
+++++
+<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:none;}
+}
+</style>
+++++
+endif::backend-html5[]
+
+
+include::src/about-arc42.adoc[]
+
+// horizontal line
+***
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+[NOTE]
+====
+This version of the template contains some help and explanations.
+It is used for familiarization with arc42 and the understanding of the concepts.
+For documentation of your own system you use better the _plain_ version.
+====
+****
+endif::arc42help[]
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Introduction and Goals
+include::src/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Architecture Constraints
+include::src/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Context and Scope
+include::src/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Solution Strategy
+include::src/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Building Block View
+include::src/05_building_block_view.adoc[]
+
+<<<<
+// 6. Runtime View
+include::src/06_runtime_view.adoc[]
+
+<<<<
+// 7. Deployment View
+include::src/07_deployment_view.adoc[]
+
+<<<<
+// 8. Concepts
+include::src/08_concepts.adoc[]
+
+<<<<
+// 9. Architecture Decisions
+include::src/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Quality Requirements
+include::src/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Technical Risks
+include::src/11_technical_risks.adoc[]
+
+<<<<
+// 12. Glossary
+include::src/12_glossary.adoc[]
+
+
