@@ -39,7 +39,7 @@ Mantenha esses trechos o mais curtos possível. Equilibre a legibilidade deste d
 
 .Mais informações
 
-Consulte https://docs.arc42.org/section-1/[Introdução e objetivos] na documentação do arc42.
+Consulte https://docs.arc42.org/section-1/[Introduction and Goals] na documentação do arc42.
 
 ****
 endif::arc42help[]
@@ -63,7 +63,7 @@ Você deve saber os objetivos de qualidade de suas partes interessadas mais impo
 Certifique-se de ser muito concreto sobre essas qualidades, evite chavões.
 Se você, como arquiteto, não sabe como a qualidade do seu trabalho será julgada...
 
-.Formulário
+.Forma
 Uma tabela com objetivos de qualidade e cenários concretos, ordenados por prioridades
 ****
 endif::arc42help[]
@@ -87,7 +87,7 @@ Você deve conhecer todas as partes envolvidas no desenvolvimento do sistema ou 
 Caso contrário, você pode ter surpresas desagradáveis ​​mais tarde no processo de desenvolvimento.
 Essas partes interessadas determinam a extensão e o nível de detalhes do seu trabalho e seus resultados.
 
-.Formulário
+.Forma
 Tabela com nomes de funções, nomes de pessoas e suas expectativas com relação à arquitetura e sua documentação.
 ****
 endif::arc42help[]

@@ -1,80 +1,78 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-context-and-scope]]
-== Context and Scope
+== Contexto e Escopo
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Context and scope - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
-(neighboring systems and users, i.e. the context of your system). It thereby specifies the external interfaces.
+.Conteúdo
+Contexto e escopo - como o nome sugere - delimita seu sistema (ou seja, seu escopo) de todos os seus parceiros de comunicação
+(sistemas e usuários vizinhos, ou seja, o contexto do seu sistema). Ele especifica, portanto, as interfaces externas.
 
-If necessary, differentiate the business context (domain specific inputs and outputs) from the technical context (channels, protocols, hardware).
+Se necessário, diferencie o contexto de negócios (entradas e saídas específicas do domínio) do contexto técnico (canais, protocolos, hardware).
 
-.Motivation
-The domain interfaces and technical interfaces to communication partners are among your system's most critical aspects. Make sure that you completely understand them.
+.Motivação
+As interfaces de domínio e as interfaces técnicas para parceiros de comunicação estão entre os aspectos mais críticos do seu sistema. Certifique-se de entendê-las completamente.
 
-.Form
-Various options:
+.Forma
+Várias opções:
 
-* Context diagrams
-* Lists of communication partners and their interfaces.
+* Diagramas de contexto
+* Listas de parceiros de comunicação e suas interfaces.
 
+.Mais informações
 
-.Further Information
-
-See https://docs.arc42.org/section-3/[Context and Scope] in the arc42 documentation.
+Consulte https://docs.arc42.org/section-3/[Context and Scope] na documentação do arc42.
 
 ****
 endif::arc42help[]
 
-=== Business Context
+=== Contexto Negocial
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Specification of *all* communication partners (users, IT-systems, ...) with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication protocols.
+.Conteúdo
+Especificação de *todos* os parceiros de comunicação (usuários, sistemas de TI, ...) com explicações de entradas e saídas ou interfaces específicas do domínio.
+Opcionalmente, você pode adicionar formatos específicos do domínio ou protocolos de comunicação.
 
-.Motivation
-All stakeholders should understand which data are exchanged with the environment of the system.
+.Motivação
+Todas as partes interessadas devem entender quais dados são trocados com o ambiente do sistema.
 
-.Form
-All kinds of diagrams that show the system as a black box and specify the domain interfaces to communication partners.
+.Forma
+Todos os tipos de diagramas que mostram o sistema como uma caixa preta e especificam as interfaces de domínio para os parceiros de comunicação.
 
-Alternatively (or additionally) you can use a table.
-The title of the table is the name of your system, the three columns contain the name of the communication partner, the inputs, and the outputs.
-
+Como alternativa (ou adicionalmente), você pode usar uma tabela.
+O título da tabela é o nome do seu sistema, as três colunas contêm o nome do parceiro de comunicação, as entradas e as saídas.
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+**<Diagrama ou Tabela>**
 
-**<optionally: Explanation of external domain interfaces>**
+**<opcionalmente: Explicação das interfaces de domínio externo>**
 
-=== Technical Context
+=== Contexto Técnico
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation which I/O uses which channel.
+.Conteúdo
+Interfaces técnicas (canais e mídias de transmissão) que vinculam seu sistema ao seu ambiente. Além disso, um mapeamento de entrada/saída específica de domínio para os canais, ou seja, uma explicação de qual E/S usa qual canal.
 
-.Motivation
-Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
+.Motivação
+Muitas partes interessadas tomam decisões arquiteturais com base nas interfaces técnicas entre o sistema e seu contexto. Especialmente os designers de infraestrutura ou hardware decidem essas interfaces técnicas.
 
-.Form
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels and input/output.
+.Forma
+Por exemplo, diagrama de implantação UML descrevendo canais para sistemas vizinhos,
+junto com uma tabela de mapeamento mostrando os relacionamentos entre canais e entrada/saída.
 
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+**<Diagrama ou Tabela>**
 
-**<optionally: Explanation of technical interfaces>**
+**<opcionalmente: Explicação das interfaces técnicas>**
 
-**<Mapping Input/Output to Channels>**
+**<Mapeamento de entrada/saída para canais>**
