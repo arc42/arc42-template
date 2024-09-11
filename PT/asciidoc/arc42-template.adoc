@@ -7,9 +7,11 @@
 include::src/config.adoc[]
 
 = Modelo image:arc42-logo.png[arc42]
+:title: Modelo arc42
 :revnumber: 8.2 PT
-:revdate: Janeiro de 2023
+:revdate: Setembro de 2024
 :revremark: (baseado na versão AsciiDoc)
+:version-label: Versão
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Sumário
 
