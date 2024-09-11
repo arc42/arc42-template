@@ -1,37 +1,37 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-design-decisions]]
-== Architecture Decisions
+== Decisões Arquiteturais
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Important, expensive, large scale or risky architecture decisions including rationales.
-With "decisions" we mean selecting one alternative based on given criteria.
+.Conteúdo
+Decisões arquiteturais importantes, caras, de grande escala ou arriscadas, incluindo justificativas.
+Com "decisões", queremos dizer selecionar uma alternativa com base em critérios fornecidos.
 
-Please use your judgement to decide whether an architectural decision should be documented
-here in this central section or whether you better document it locally
-(e.g. within the white box template of one building block).
+Use seu julgamento para decidir se uma decisão de arquitetura deve ser documentada
+aqui nesta seção central ou se é melhor documentá-la localmente
+(por exemplo, dentro do modelo de caixa branca de um bloco de construção).
 
-Avoid redundancy. 
-Refer to section 4, where you already captured the most important decisions of your architecture.
+Evite redundância.
+Consulte a seção 4, onde você já capturou as decisões mais importantes da sua arquitetura.
 
-.Motivation
-Stakeholders of your system should be able to comprehend and retrace your decisions.
+.Motivação
+As partes interessadas do seu sistema devem ser capazes de compreender e refazer suas decisões.
 
-.Form
-Various options:
+.Forma
+Várias opções:
 
-* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]) for every important decision
-* List or table, ordered by importance and consequences or:
-* more detailed in form of separate sections per decision
+* ADR (Architecture Decision Record) (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documentando Decisões de Arquitetura]) para cada decisão importante
+* Lista ou tabela, ordenada por importância e consequências ou:
+* mais detalhada em forma de seções separadas por decisão
 
-.Further Information
+.Mais informações
 
-See https://docs.arc42.org/section-9/[Architecture Decisions] in the arc42 documentation.
-There you will find links and examples about ADR.
+Veja https://docs.arc42.org/section-9/[Architecture Decisions] na documentação do arc42.
+Lá você encontrará links e exemplos sobre ADR.
 
 ****
 endif::arc42help[]

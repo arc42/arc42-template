@@ -1,27 +1,27 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-technical-risks]]
-== Risks and Technical Debts
+== Riscos e Débitos Técnicos
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-A list of identified technical risks or technical debts, ordered by priority
+.Conteúdo
+Uma lista de riscos técnicos identificados ou débitos técnicos, ordenadas por prioridade
 
-.Motivation
-“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.) 
+.Motivação
+“Gerenciamento de riscos é gerenciamento de projetos para adultos” (Tim Lister, Atlantic Systems Guild.)
 
-This should be your motto for systematic detection and evaluation of risks and technical debts in the architecture, which will be needed by management stakeholders (e.g. project managers, product owners) as part of the overall risk analysis and measurement planning.
+Este deve ser seu lema para detecção e avaliação sistemáticas de riscos e débitos técnicos na arquitetura, que serão necessárias para as partes interessadas da gerência (por exemplo, gerentes de projeto, proprietários de produtos) como parte da análise geral de riscos e planejamento de medição.
 
-.Form
-List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
+.Forma
+Lista de riscos e/ou débitos técnicos, provavelmente incluindo medidas sugeridas para minimizar, mitigar ou evitar riscos ou reduzir débitos técnicos.
 
 
-.Further Information
+.Mais informações
 
-See https://docs.arc42.org/section-11/[Risks and Technical Debt] in the arc42 documentation.
+Veja https://docs.arc42.org/section-11/[Risks and Technical Debt] na documentação do arc42.
 
 ****
 endif::arc42help[]

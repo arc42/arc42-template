@@ -202,7 +202,7 @@ parte do arc42 para níveis adicionais.
 ****
 endif::arc42help[]
 
-==== Caixa Branca <_bloco de construção x.1_>
+==== Caixa Branca <_Bloco de Construção x.1_>
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -214,12 +214,12 @@ endif::arc42help[]
 _<modelo de caixa branca>_
 
 
-==== Caixa Branca <_bloco de construção x.2_>
+==== Caixa Branca <_Bloco de Construção x.2_>
 
 _<modelo de caixa branca>_
 
 
 
-==== Caixa Branca <_bloco de construção y.1_>
+==== Caixa Branca <_Bloco de Construção y.1_>
 
 _<modelo de caixa branca>_

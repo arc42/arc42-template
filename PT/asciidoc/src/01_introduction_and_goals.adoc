@@ -59,7 +59,7 @@ Considere esta visão geral de tópicos potenciais (com base no padrão ISO 2501
 image::01_2_iso-25010-topics-EN.drawio.png["Categorias de Requisitos de Qualidade"]
 
 .Motivação
-Você deve saber os objetivos de qualidade de suas partes interessadas mais importantes, pois elas influenciarão decisões arquitetônicas fundamentais.
+Você deve saber os objetivos de qualidade de suas partes interessadas mais importantes, pois elas influenciarão decisões arquiteturais fundamentais.
 Certifique-se de ser muito concreto sobre essas qualidades, evite chavões.
 Se você, como arquiteto, não sabe como a qualidade do seu trabalho será julgada...
 

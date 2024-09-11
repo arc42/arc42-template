@@ -1,74 +1,74 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-concepts]]
-== Cross-cutting Concepts
+== Conceitos Transversais
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Content
-This section describes overall, principal regulations and solution ideas that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as
+.Conteúdo
+Esta seção descreve globalmente, as principais regulamentações e ideias de soluções que são relevantes em várias partes (= transversais) do seu sistema.
+Esses conceitos geralmente estão relacionados a vários blocos de construção.
+Eles podem incluir muitos tópicos diferentes, como
 
-* models, especially domain models
-* architecture or design patterns
-* rules for using specific technology
-* principal, often technical decisions of an overarching (= cross-cutting) nature
-* implementation rules
-
-
-.Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity) of the architecture. 
-Thus, they are an important contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks, e.g. security or safety. 
+* modelos, especialmente modelos de domínio
+* padrões de arquitetura ou _design patterns_
+* regras para usar tecnologia específica
+* principais decisões, geralmente técnicas, de natureza abrangente (= transversais)
+* regras de implementação
 
 
-.Form
-The form can be varied:
+.Motivação
+Os conceitos formam a base para a _integridade conceitual_ (consistência, homogeneidade) da arquitetura.
+Portanto, eles são uma contribuição importante para atingir as qualidades internas do seu sistema.
 
-* concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations, especially for technical concepts
-* reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
-
-.Structure
-A potential (but not mandatory) structure for this section could be:
-
-* Domain concepts
-* User Experience concepts (UX)
-* Safety and security concepts
-* Architecture and design patterns
-* "Under-the-hood"
-* development concepts
-* operational concepts
-
-Note: it might be difficult to assign individual concepts to one specific topic
-on this list.
-
-image::08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+Alguns desses conceitos não podem ser atribuídos a blocos de construção individuais, por exemplo segurança ou proteção.
 
 
-.Further Information
+.Forma
+A forma pode ser variada:
 
-See https://docs.arc42.org/section-8/[Concepts] in the arc42 documentation.
+* documentos conceituais com qualquer tipo de estrutura
+* trechos ou cenários de modelos transversais usando notações das visualizações de arquitetura
+* amostra de implementações, especialmente para conceitos técnicos
+* referência ao uso típico de _frameworks_ padrão (por exemplo, usando Hibernate para mapeamento de objeto/relacional)
+
+.Estrutura
+Uma estrutura potencial (mas não obrigatória) para esta seção poderia ser:
+
+* Conceitos de domínio
+* Conceitos de Experiência do Usuário (UX)
+* Conceitos de proteção e segurança
+* Padrões de arquitetura e _design patterns_
+* Estruturas internas
+* Conceitos de desenvolvimento
+* Conceitos operacionais
+
+Observação: pode ser difícil atribuir conceitos individuais a um tópico específico
+nesta lista.
+
+image::08-Crosscutting-Concepts-Structure-EN.png["Tópicos possíveis para conceitos transversais"]
+
+
+.Mais informações
+
+Veja https://docs.arc42.org/section-8/[Concepts] na documentação do arc42.
 ****
 endif::arc42help[]
 
-=== _<Concept 1>_
+=== _<Conceito 1>_
 
-_<explanation>_
+_<explicação>_
 
 
 
-=== _<Concept 2>_
+=== _<Conceito 2>_
 
-_<explanation>_
+_<explicação>_
 
 ...
 
-=== _<Concept n>_
+=== _<Conceito n>_
 
-_<explanation>_
+_<explicação>_
