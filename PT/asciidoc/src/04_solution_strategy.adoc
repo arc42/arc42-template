@@ -1,34 +1,33 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-solution-strategy]]
-== Solution Strategy
+== Estratégia de Solução
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes
+.Conteúdo
+Um breve resumo e explicação das decisões fundamentais e estratégias de solução que moldam a arquitetura do sistema. Inclui
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* decisões de tecnologia
+* decisões sobre a decomposição de nível superior do sistema, por exemplo, uso de um padrão arquitetural ou _design pattern_
+* decisões sobre como atingir as principais metas de qualidade
+* decisões organizacionais relevantes, por exemplo, selecionar um processo de desenvolvimento ou delegar certas tarefas a terceiros.
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
+.Motivação
+Essas decisões formam os pilares da sua arquitetura. Elas são a base para muitas outras decisões detalhadas ou regras de implementação.
 
-.Form
-Keep the explanations of such key decisions short.
+.Forma
+Mantenha as explicações dessas decisões-chave curtas.
 
-Motivate what was decided and why it was decided that way,
-based upon problem statement, quality goals and key constraints.
-Refer to details in the following sections.
+Motive o que foi decidido e por que foi decidido dessa forma,
+com base na declaração do problema, metas de qualidade e principais restrições.
+Consulte os detalhes nas seções a seguir.
 
+.Mais informações
 
-.Further Information
-
-See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
+Consulte https://docs.arc42.org/section-4/[Solution Strategy] na documentação do arc42.
 
 ****
 endif::arc42help[]

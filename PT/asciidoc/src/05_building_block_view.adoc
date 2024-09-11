@@ -3,223 +3,223 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-building-block-view]]
 
 
-== Building Block View
+== Visão de Blocos de Construção
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Content
-The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, ...) as well as their dependencies (relationships, associations, ...)
+.Conteúdo
+A visão de blocos de construção mostra a decomposição estática do sistema em blocos de construção (módulos, componentes, subsistemas, classes, interfaces, pacotes, bibliotecas, frameworks, camadas, partições, níveis, funções, macros, operações, estruturas de dados, ...) bem como suas dependências (relacionamentos, associações, ...)
 
-This view is mandatory for every architecture documentation.
-In analogy to a house this is the _floor plan_.
+Esta visão é obrigatória para toda documentação de arquitetura.
+Em analogia a uma casa, esta é a _planta baixa_.
 
-.Motivation
-Maintain an overview of your source code by making its structure understandable through
-abstraction.
+.Motivação
+Mantenha uma visão geral do seu código-fonte tornando sua estrutura compreensível por meio de
+abstração.
 
-This allows you to communicate with your stakeholder on an abstract level without disclosing implementation details.
+Isso permite que você se comunique com suas partes interessadas em um nível abstrato sem revelar detalhes de implementação.
 
-.Form
-The building block view is a hierarchical collection of black boxes and white boxes
-(see figure below) and their descriptions.
+.Formulário
+A visão de blocos de construção é uma coleção hierárquica de caixas pretas e caixas brancas
+(veja a figura abaixo) e suas descrições.
 
-image::05_building_blocks-EN.png["Hierarchy of building blocks"]
+image::05_building_blocks-EN.png["Hierarquia de blocos de construção"]
 
-*Level 1* is the white box description of the overall system together with black
-box descriptions of all contained building blocks.
+*Nível 1* é a descrição da caixa branca do sistema geral, juntamente com descrições
+de caixa preta de todos os blocos de construção contidos.
 
-*Level 2* zooms into some building blocks of level 1.
-Thus it contains the white box description of selected building blocks of level 1, together with black box descriptions of their internal building blocks.
+*Nível 2* amplia alguns blocos de construção do nível 1.
+Portanto, ele contém a descrição da caixa branca dos blocos de construção selecionados do nível 1, juntamente com descrições de caixa preta de seus blocos de construção internos.
 
-*Level 3* zooms into selected building blocks of level 2, and so on.
+*Nível 3* amplia os blocos de construção selecionados do nível 2, e assim por diante.
 
 
-.Further Information
+.Mais informações
 
-See https://docs.arc42.org/section-5/[Building Block View] in the arc42 documentation.
+Consulte https://docs.arc42.org/section-5/[Building Block View] na documentação do arc42.
 
 ****
 endif::arc42help[]
 
-=== Whitebox Overall System
+=== Visão Sistêmica Geral de Caixa Branca
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Here you describe the decomposition of the overall system using the following white box template. It contains
+Aqui você descreve a decomposição geral do sistema usando o seguinte modelo de caixa branca. Ele contém
 
- * an overview diagram
- * a motivation for the decomposition
- * black box descriptions of the contained building blocks. For these we offer you alternatives:
+* um diagrama de visão geral
+* uma motivação para a decomposição
+* descrições de caixa preta dos blocos de construção contidos. Para isso, oferecemos alternativas:
 
-   ** use _one_ table for a short and pragmatic overview of all contained building blocks and their interfaces
-   ** use a list of black box descriptions of the building blocks according to the black box template (see below).
-   Depending on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a modeling tool).
+** use _uma_ tabela para uma visão geral curta e pragmática de todos os blocos de construção contidos e suas interfaces
+** use uma lista de descrições de caixa preta dos blocos de construção de acordo com o modelo de caixa preta (veja abaixo).
+Dependendo da sua escolha de ferramenta, esta lista pode ser subcapítulos (em arquivos de texto), subpáginas (em um Wiki) ou elementos aninhados (em uma ferramenta de modelagem).
 
 
- * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
-Since there are so many ways to specify interfaces why do not provide a specific template for them.
- In the worst case you have to specify and describe syntax, semantics, protocols, error handling,
- restrictions, versions, qualities, necessary compatibilities and many things more.
-In the best case you will get away with examples or simple signatures.
+* (opcional:) interfaces importantes, que não são explicadas nos modelos de caixa preta de um bloco de construção, mas são muito importantes para entender a caixa branca.
+Já que há tantas maneiras de especificar interfaces, por que não fornecer um modelo específico para elas?
+No pior caso, você tem que especificar e descrever sintaxe, semântica, protocolos, tratamento de erros,
+restrições, versões, qualidades, compatibilidades necessárias e muito mais.
+Na melhor das hipóteses, você conseguirá usar exemplos ou assinaturas simples.
 
 ****
 endif::arc42help[]
 
-_**<Overview Diagram>**_
+_**<Diagrama de Visão Geral>**_
 
-Motivation::
+Motivação::
 
-_<text explanation>_
+_<explicação textual>_
 
 
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
+Blocos de Construção Contidos::
+_<Descrição dos blocos de construção contidos (caixas pretas)>_
 
-Important Interfaces::
-_<Description of important interfaces>_
+Interfaces Importantes::
+_<Descrição de interfaces importantes>_
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Insert your explanations of black boxes from level 1:
+Insira suas explicações de caixas pretas do nível 1:
 
-If you use tabular form you will only describe your black boxes with name and
-responsibility according to the following schema:
+Se você usar a forma tabular, você descreverá apenas suas caixas pretas com nome e
+responsabilidade de acordo com o seguinte esquema:
 
 [cols="1,2" options="header"]
 |===
-| **Name** | **Responsibility**
-| _<black box 1>_ | _<Text>_
-| _<black box 2>_ | _<Text>_
+| **Nome** | **Responsabilidade**
+| _<caixa preta 1>_ | _<Texto>_
+| _<caixa preta 2>_ | _<Texto>_
 |===
 
 
 
-If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
-Its headline is the name of the black box.
+Se você usar uma lista de descrições de caixa preta, então você preenche um modelo de caixa preta separado para cada bloco de construção importante.
+Seu título é o nome da caixa preta.
 ****
 endif::arc42help[]
 
-==== <Name black box 1>
+==== <Nome caixa preta 1>
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Here you describe <black box 1>
-according the the following black box template:
+Aqui você descreve <caixa preta 1>
+de acordo com o seguinte modelo de caixa preta:
 
-* Purpose/Responsibility
-* Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance characteristics.
-* (Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ....
-* (Optional) directory/file location
-* (Optional) Fulfilled requirements (if you need traceability to requirements).
-* (Optional) Open issues/problems/risks
+* Propósito/Responsabilidade
+* Interface(s), quando não são extraídas como parágrafos separados. Essas interfaces podem incluir qualidades e características de desempenho.
+* (Opcional) Características de qualidade/desempenho da caixa preta, por exemplo, disponibilidade, comportamento de tempo de execução, ....
+* (Opcional) Local do diretório/arquivo
+* (Opcional) Requisitos atendidos (se você precisar de rastreabilidade para requisitos).
+* (Opcional) Problemas/questões/riscos abertos
 
 ****
 endif::arc42help[]
 
-_<Purpose/Responsibility>_
+_<Propósito/Responsabilidade>_
 
 _<Interface(s)>_
 
-_<(Optional) Quality/Performance Characteristics>_
+_<(Opcional) Características de Qualidade/Desempenho>_
 
-_<(Optional) Directory/File Location>_
+_<(Opcional) Local do Diretório/Arquivo>_
 
-_<(Optional) Fulfilled Requirements>_
+_<(Opcional) Requisitos Cumpridos>_
 
-_<(optional) Open Issues/Problems/Risks>_
-
-
-
-
-==== <Name black box 2>
-
-_<black box template>_
-
-==== <Name black box n>
-
-_<black box template>_
-
-
-==== <Name interface 1>
-
-...
-
-==== <Name interface m>
+_<(opcional) Problemas/Riscos Abertos>_
 
 
 
-=== Level 2
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.
+==== <Nome caixa preta 2>
 
-You have to decide which building blocks of your system are important enough to justify such a detailed description.
-Please prefer relevance over completeness. Specify important, surprising, risky, complex or volatile building blocks.
-Leave out normal, simple, boring or standardized parts of your system
-****
-endif::arc42help[]
+_<modelo de caixa preta>_
 
-==== White Box _<building block 1>_
+==== <Nome caixa preta n>
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-...describes the internal structure of _building block 1_.
-****
-endif::arc42help[]
-
-_<white box template>_
-
-==== White Box _<building block 2>_
+_<modelo de caixa preta>_
 
 
-_<white box template>_
+==== <Nome interface 1>
 
 ...
 
-==== White Box _<building block m>_
-
-
-_<white box template>_
+==== <Nome interface m>
 
 
 
-=== Level 3
+=== Nível 2
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.
+Aqui você pode especificar a estrutura interna de (alguns) blocos de construção do nível 1 como caixas brancas.
 
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
+Você tem que decidir quais blocos de construção do seu sistema são importantes o suficiente para justificar uma descrição tão detalhada.
+Por favor, prefira relevância à completude. Especifique blocos de construção importantes, surpreendentes, arriscados, complexos ou voláteis.
+Deixe de fora partes normais, simples, chatas ou padronizadas do seu sistema
 ****
 endif::arc42help[]
 
-==== White Box <_building block x.1_>
+==== Caixa Branca _<bloco de construção 1>_
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Specifies the internal structure of _building block x.1_.
+...descreve a estrutura interna do _bloco de construção 1_.
 ****
 endif::arc42help[]
 
-_<white box template>_
+_<modelo de caixa branca>_
+
+==== Caixa Branca _<bloco de construção 2>_
 
 
-==== White Box <_building block x.2_>
+_<modelo de caixa branca>_
 
-_<white box template>_
+...
+
+==== Caixa Branca _<bloco de construção m>_
+
+
+_<modelo de caixa branca>_
 
 
 
-==== White Box <_building block y.1_>
+=== Nível 3
 
-_<white box template>_
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Aqui você pode especificar a estrutura interna de (alguns) blocos de construção do nível 2 como caixas brancas.
+
+Quando precisar de níveis mais detalhados de sua arquitetura, copie esta
+parte do arc42 para níveis adicionais.
+****
+endif::arc42help[]
+
+==== Caixa Branca <_bloco de construção x.1_>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Especifica a estrutura interna do _bloco de construção x.1_.
+****
+endif::arc42help[]
+
+_<modelo de caixa branca>_
+
+
+==== Caixa Branca <_bloco de construção x.2_>
+
+_<modelo de caixa branca>_
+
+
+
+==== Caixa Branca <_bloco de construção y.1_>
+
+_<modelo de caixa branca>_
