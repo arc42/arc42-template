@@ -1,53 +1,52 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-runtime-view]]
-== Runtime View
+== Visão de Tempo de Execução
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:
+.Conteúdo
+A visão de tempo de execução descreve o comportamento concreto e as interações dos blocos de construção do sistema na forma de cenários das seguintes áreas:
 
-* important use cases or features: how do building blocks execute them?
-* interactions at critical external interfaces: how do building blocks cooperate with users and neighboring systems?
-* operation and administration: launch, start-up, stop
-* error and exception scenarios
+* casos de uso ou recursos importantes: como os blocos de construção os executam?
+* interações em interfaces externas críticas: como os blocos de construção cooperam com os usuários e sistemas vizinhos?
+* operação e administração: lançamento, inicialização, parada
+* cenários de erro e exceção
 
-Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*. It is *not* important to describe a large number of scenarios. You should rather document a representative selection.
+Observação: O principal critério para a escolha de cenários possíveis (sequências, fluxos de trabalho) é sua *relevância arquitetural*. *Não* é importante descrever um grande número de cenários. Você deve documentar uma seleção representativa.
 
-.Motivation
-You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
-You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).
+.Motivação
+Você deve entender como (instâncias de) blocos de construção do seu sistema realizam seu trabalho e se comunicam em tempo de execução.
+Você capturará principalmente cenários em sua documentação para comunicar sua arquitetura às partes interessadas que estão menos dispostas ou capazes de ler e entender os modelos estáticos (visão de bloco de construção, visão de implantação).
 
-.Form
-There are many notations for describing scenarios, e.g.
+.Forma
+Há muitas notações para descrever cenários, por exemplo,
 
-* numbered list of steps (in natural language)
-* activity diagrams or flow charts
-* sequence diagrams
-* BPMN or EPCs (event process chains)
-* state machines
+* lista numerada de etapas (em linguagem natural)
+* diagramas de atividade ou fluxogramas
+* diagramas de sequência
+* BPMN ou EPCs (cadeias de processos de eventos)
+* máquinas de estado
 * ...
 
+.Mais informações
 
-.Further Information
 
-See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
+Consulte https://docs.arc42.org/section-6/[Runtime View] na documentação do arc42.
 
 ****
 endif::arc42help[]
 
-=== <Runtime Scenario 1>
+=== <Cenário de Tempo de Execução 1>
 
+* _<inserir diagrama de tempo de execução ou descrição textual do cenário>_
+* _<inserir descrição dos aspectos notáveis ​​das interações entre as
+instâncias do bloco de construção descritas neste diagrama.>_
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
-
-=== <Runtime Scenario 2>
+=== <Cenário de Tempo de Execução 2>
 
 === ...
 
-=== <Runtime Scenario n>
+=== <Cenário de Tempo de Execução n>

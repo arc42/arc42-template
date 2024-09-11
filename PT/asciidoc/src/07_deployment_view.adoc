@@ -3,98 +3,98 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-deployment-view]]
 
 
-== Deployment View
+== Visão de Implantação
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Content
-The deployment view describes:
+.Conteúdo
+A visão de implantação descreve:
 
- 1. technical infrastructure used to execute your system, with infrastructure elements like geographical locations, environments, computers, processors, channels and net topologies as well as other infrastructure elements and
+1. infraestrutura técnica usada para executar seu sistema, com elementos de infraestrutura como localizações geográficas, ambientes, computadores, processadores, canais e topologias de rede, bem como outros elementos de infraestrutura e
 
-2. mapping of (software) building blocks to that infrastructure elements.
+2. mapeamento de blocos de construção (de software) para esses elementos de infraestrutura.
 
-Often systems are executed in different environments, e.g. development environment, test environment, production environment. In such cases you should document all relevant environments.
+Frequentemente, os sistemas são executados em ambientes diferentes, por exemplo, ambiente de desenvolvimento, ambiente de teste, ambiente de produção. Nesses casos, você deve documentar todos os ambientes relevantes.
 
-Especially document a deployment view if your software is executed as distributed system with more than one computer, processor, server or container or when you design and construct your own hardware processors and chips.
+Documente especialmente uma visão de implantação se seu software for executado como um sistema distribuído com mais de um computador, processador, servidor ou contêiner ou quando você projeta e constrói seus próprios processadores e chips de hardware.
 
-From a software perspective it is sufficient to capture only those elements of an infrastructure that are needed to show a deployment of your building blocks. Hardware architects can go beyond that and describe an infrastructure to any level of detail they need to capture.
+De uma perspectiva de software, é suficiente capturar apenas os elementos de uma infraestrutura que são necessários para mostrar uma implantação de seus blocos de construção. Arquitetos de hardware podem ir além disso e descrever uma infraestrutura em qualquer nível de detalhe que precisem capturar.
 
-.Motivation
-Software does not run without hardware.
-This underlying infrastructure can and will influence a system and/or some
-cross-cutting concepts. Therefore, there is a need to know the infrastructure.
+.Motivação
+O software não roda sem hardware.
+Essa infraestrutura subjacente pode e influenciará um sistema e/ou alguns
+conceitos transversais. Portanto, é necessário conhecer a infraestrutura.
 
-.Form
+.Forma
 
-Maybe a highest level deployment diagram is already contained in section 3.2. as
-technical context with your own infrastructure as ONE black box. In this section one can
-zoom into this black box using additional deployment diagrams:
+Talvez um diagrama de implantação de nível mais alto já esteja contido na seção 3.2. como
+contexto técnico com sua própria infraestrutura como UMA caixa preta. Nesta seção, pode-se
+ampliar esta caixa preta usando diagramas de implantação adicionais:
 
-* UML offers deployment diagrams to express that view. Use it, probably with nested diagrams,
-when your infrastructure is more complex.
-* When your (hardware) stakeholders prefer other kinds of diagrams rather than a deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+* UML oferece diagramas de implantação para expressar essa visão. Use-o, provavelmente com diagramas aninhados,
+quando sua infraestrutura for mais complexa.
+* Quando suas partes interessadas (de hardware) preferirem outros tipos de diagramas em vez de um diagrama de implantação, deixe-os usar qualquer tipo que seja capaz de mostrar nós e canais da infraestrutura.
 
 
-.Further Information
+.Mais informações
 
-See https://docs.arc42.org/section-7/[Deployment View] in the arc42 documentation.
+Consulte https://docs.arc42.org/section-7/[Deployment View] na documentação do arc42.
 
 ****
 endif::arc42help[]
 
-=== Infrastructure Level 1
+=== Nível de Infraestrutura 1
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Describe (usually in a combination of diagrams, tables, and text):
+Descreva (geralmente em uma combinação de diagramas, tabelas e texto):
 
-* distribution of a system to multiple locations, environments, computers, processors, .., as well as physical connections between them
-* important justifications or motivations for this deployment structure
-* quality and/or performance features of this infrastructure
-* mapping of software artifacts to elements of this infrastructure
+* distribuição de um sistema para vários locais, ambientes, computadores, processadores, .., bem como conexões físicas entre eles
+* justificativas ou motivações importantes para esta estrutura de implantação
+* recursos de qualidade e/ou desempenho desta infraestrutura
+* mapeamento de artefatos de software para elementos desta infraestrutura
 
-For multiple environments or alternative deployments please copy and adapt this section of arc42 for all relevant environments.
+Para vários ambientes ou implantações alternativas, copie e adapte esta seção do arc42 para todos os ambientes relevantes.
 ****
 endif::arc42help[]
 
-_**<Overview Diagram>**_
+_**<Diagrama de Visão Geral>**_
 
-Motivation::
+Motivação::
 
-_<explanation in text form>_
+_<explicação em forma de texto>_
 
-Quality and/or Performance Features::
+Características de Qualidade e/ou Desempenho::
 
-_<explanation in text form>_
+_<explicação em forma de texto>_
 
-Mapping of Building Blocks to Infrastructure::
-_<description of the mapping>_
+Mapeamento de Blocos de Construção para Infraestrutura::
+_<descrição do mapeamento>_
 
 
-=== Infrastructure Level 2
+=== Nível de Infraestrutura 2
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Here you can include the internal structure of (some) infrastructure elements from level 1.
+Aqui você pode incluir a estrutura interna de (alguns) elementos de infraestrutura do nível 1.
 
-Please copy the structure from level 1 for each selected element.
+Copie a estrutura do nível 1 para cada elemento selecionado.
 ****
 endif::arc42help[]
 
-==== _<Infrastructure Element 1>_
+==== _<Elemento de Infraestrutura 1>_
 
-_<diagram + explanation>_
+_<diagrama + explicação>_
 
-==== _<Infrastructure Element 2>_
+==== _<Elemento de Infraestrutura 2>_
 
-_<diagram + explanation>_
+_<diagrama + explicação>_
 
 ...
 
-==== _<Infrastructure Element n>_
+==== _<Elemento de Infraestrutura n>_
 
-_<diagram + explanation>_
+_<diagrama + explicação>_

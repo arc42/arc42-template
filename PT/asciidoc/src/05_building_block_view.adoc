@@ -20,7 +20,7 @@ abstração.
 
 Isso permite que você se comunique com suas partes interessadas em um nível abstrato sem revelar detalhes de implementação.
 
-.Formulário
+.Forma
 A visão de blocos de construção é uma coleção hierárquica de caixas pretas e caixas brancas
 (veja a figura abaixo) e suas descrições.
 
@@ -102,7 +102,7 @@ Seu título é o nome da caixa preta.
 ****
 endif::arc42help[]
 
-==== <Nome caixa preta 1>
+==== <Nome Caixa Preta 1>
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -135,20 +135,20 @@ _<(opcional) Problemas/Riscos Abertos>_
 
 
 
-==== <Nome caixa preta 2>
+==== <Nome Caixa Preta 2>
 
 _<modelo de caixa preta>_
 
-==== <Nome caixa preta n>
+==== <Nome Caixa Preta n>
 
 _<modelo de caixa preta>_
 
 
-==== <Nome interface 1>
+==== <Nome Interface 1>
 
 ...
 
-==== <Nome interface m>
+==== <Nome Interface m>
 
 
 
@@ -165,7 +165,7 @@ Deixe de fora partes normais, simples, chatas ou padronizadas do seu sistema
 ****
 endif::arc42help[]
 
-==== Caixa Branca _<bloco de construção 1>_
+==== Caixa Branca _<Bloco de Construção 1>_
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -176,14 +176,14 @@ endif::arc42help[]
 
 _<modelo de caixa branca>_
 
-==== Caixa Branca _<bloco de construção 2>_
+==== Caixa Branca _<Bloco de Construção 2>_
 
 
 _<modelo de caixa branca>_
 
 ...
 
-==== Caixa Branca _<bloco de construção m>_
+==== Caixa Branca _<Bloco de Construção m>_
 
 
 _<modelo de caixa branca>_
