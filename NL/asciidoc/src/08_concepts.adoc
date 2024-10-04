@@ -46,7 +46,7 @@ Een mogelijke (maar niet verplicht) structuur van deze paragraaf zou kunnen best
 
 NOTE: het kan moeilijk zijn om individuele concepten toe te kennen aan een specifiek onderwerp van deze lijst
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Mogelijke onderwerpen voor cross-cutting concepten"]
+image::08-concepts-EN.drawio.png["Mogelijke onderwerpen voor cross-cutting concepten"]
 
 
 

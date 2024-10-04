@@ -46,7 +46,7 @@ Une structure potentielle (mais non obligatoire) pour cette section pourrait êt
 
 Remarque : il peut être difficile d'affecter des concepts individuels à un thème spécifique de cette liste.
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Thèmes possibles pour les concepts transversaux"]
+image::08-concepts-EN.drawio.png["Thèmes possibles pour les concepts transversaux"]
 
 
 .Plus d'informations

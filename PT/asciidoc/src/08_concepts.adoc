@@ -48,7 +48,7 @@ Uma estrutura potencial (mas não obrigatória) para esta seção poderia ser:
 Observação: pode ser difícil atribuir conceitos individuais a um tópico específico
 nesta lista.
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Tópicos possíveis para conceitos transversais"]
+image::08-concepts-EN.drawio.png["Tópicos possíveis para conceitos transversais"]
 
 
 .Mais informações

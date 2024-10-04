@@ -47,7 +47,7 @@ Potenciální (nikoli však povinná) struktura pro tento oddíl dokumentace mů
 Poznámka: Může být obtížné přiřadit jednotlivé koncepty k jednomu konkrétnímu tématu
 z tohoto seznamu.
 
-image::08-Crosscutting-Concepts-Structure-EN.png["Témata pro průřezové koncepty"]
+image::08-concepts-EN.drawio.png["Témata pro průřezové koncepty"]
 
 
 .Další informace
