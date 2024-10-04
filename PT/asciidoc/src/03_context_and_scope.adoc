@@ -1,0 +1,78 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-context-and-scope]]
+== Contexto e Escopo
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Contexto e escopo - como o nome sugere - delimita seu sistema (ou seja, seu escopo) de todos os seus parceiros de comunicação
+(sistemas e usuários vizinhos, ou seja, o contexto do seu sistema). Ele especifica, portanto, as interfaces externas.
+
+Se necessário, diferencie o contexto de negócios (entradas e saídas específicas do domínio) do contexto técnico (canais, protocolos, hardware).
+
+.Motivação
+As interfaces de domínio e as interfaces técnicas para parceiros de comunicação estão entre os aspectos mais críticos do seu sistema. Certifique-se de entendê-las completamente.
+
+.Forma
+Várias opções:
+
+* Diagramas de contexto
+* Listas de parceiros de comunicação e suas interfaces.
+
+.Mais informações
+
+Consulte https://docs.arc42.org/section-3/[Context and Scope] na documentação do arc42.
+
+****
+endif::arc42help[]
+
+=== Contexto Negocial
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Especificação de *todos* os parceiros de comunicação (usuários, sistemas de TI, ...) com explicações de entradas e saídas ou interfaces específicas do domínio.
+Opcionalmente, você pode adicionar formatos específicos do domínio ou protocolos de comunicação.
+
+.Motivação
+Todas as partes interessadas devem entender quais dados são trocados com o ambiente do sistema.
+
+.Forma
+Todos os tipos de diagramas que mostram o sistema como uma caixa preta e especificam as interfaces de domínio para os parceiros de comunicação.
+
+Como alternativa (ou adicionalmente), você pode usar uma tabela.
+O título da tabela é o nome do seu sistema, as três colunas contêm o nome do parceiro de comunicação, as entradas e as saídas.
+****
+endif::arc42help[]
+
+**<Diagrama ou Tabela>**
+
+**<opcionalmente: Explicação das interfaces de domínio externo>**
+
+=== Contexto Técnico
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Interfaces técnicas (canais e mídias de transmissão) que vinculam seu sistema ao seu ambiente. Além disso, um mapeamento de entrada/saída específica de domínio para os canais, ou seja, uma explicação de qual E/S usa qual canal.
+
+.Motivação
+Muitas partes interessadas tomam decisões arquiteturais com base nas interfaces técnicas entre o sistema e seu contexto. Especialmente os designers de infraestrutura ou hardware decidem essas interfaces técnicas.
+
+.Forma
+Por exemplo, diagrama de implantação UML descrevendo canais para sistemas vizinhos,
+junto com uma tabela de mapeamento mostrando os relacionamentos entre canais e entrada/saída.
+
+****
+endif::arc42help[]
+
+**<Diagrama ou Tabela>**
+
+**<opcionalmente: Explicação das interfaces técnicas>**
+
+**<Mapeamento de entrada/saída para canais>**

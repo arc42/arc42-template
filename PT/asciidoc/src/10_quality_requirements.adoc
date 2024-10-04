@@ -1,0 +1,79 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-quality-scenarios]]
+== Requisitos de qualidade
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.Conteúdo
+Esta seção contém todos os requisitos de qualidade como árvore de qualidade com cenários. Os mais importantes já foram descritos na seção 1.2. (objetivos de qualidade)
+
+Aqui você também pode capturar requisitos de qualidade com menor prioridade,
+que não criarão altos riscos quando não forem totalmente alcançados.
+
+.Motivação
+Como os requisitos de qualidade terão muita influência nas decisões arquiteturais,
+você deve saber para cada parte interessada o que é realmente importante para eles,
+concreto e mensurável.
+
+
+.Mais informações
+
+Veja https://docs.arc42.org/section-10/[Quality Requirements] na documentação do arc42.
+
+****
+endif::arc42help[]
+
+=== Árvore de qualidade
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+A árvore de qualidade (conforme definido no ATAM – Architecture Tradeoff Analysis Method) com cenários de qualidade/avaliação como folhas.
+
+.Motivação
+A estrutura de árvore com prioridades fornece uma visão geral para um número às vezes grande de requisitos de qualidade.
+
+.Forma
+A árvore de qualidade é uma visão geral de alto nível das metas e requisitos de qualidade:
+
+* refinamento em forma de árvore do termo "qualidade". Use "qualidade" ou "utilidade" como raiz
+* um mapa mental com categorias de qualidade como ramos principais
+
+Em qualquer caso, a árvore deve incluir links para os cenários da seção a seguir.
+
+
+****
+endif::arc42help[]
+
+=== Cenários de Qualidade
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Concretização de requisitos de qualidade (às vezes vagos ou implícitos) usando cenários (de qualidade).
+
+Esses cenários descrevem o que deve acontecer quando um estímulo chega ao sistema.
+
+Para arquitetos, dois tipos de cenários são importantes:
+
+* Cenários de uso (também chamados de cenários de aplicação ou cenários de caso de uso) descrevem a reação do tempo de execução do sistema a um determinado estímulo. Isso também inclui cenários que descrevem a eficiência ou o desempenho do sistema. Exemplo: O sistema reage à solicitação de um usuário em um segundo.
+* Cenários de mudança descrevem uma modificação do sistema ou de seu ambiente imediato. Exemplo: Funcionalidade adicional é implementada ou requisitos para um atributo de qualidade mudam.
+
+.Motivação
+Os cenários tornam os requisitos de qualidade concretos e permitem
+medir ou decidir mais facilmente se eles são atendidos.
+
+Especialmente quando você quer avaliar sua arquitetura usando métodos como
+ATAM você precisa descrever suas metas de qualidade (da seção 1.2)
+mais precisamente até um nível de cenários que podem ser discutidos e avaliados.
+
+.Form
+Tabular ou texto livre.
+****
+endif::arc42help[]

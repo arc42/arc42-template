@@ -1,0 +1,100 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Visão de Implantação
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+A visão de implantação descreve:
+
+1. infraestrutura técnica usada para executar seu sistema, com elementos de infraestrutura como localizações geográficas, ambientes, computadores, processadores, canais e topologias de rede, bem como outros elementos de infraestrutura e
+
+2. mapeamento de blocos de construção (de software) para esses elementos de infraestrutura.
+
+Frequentemente, os sistemas são executados em ambientes diferentes, por exemplo, ambiente de desenvolvimento, ambiente de teste, ambiente de produção. Nesses casos, você deve documentar todos os ambientes relevantes.
+
+Documente especialmente uma visão de implantação se seu software for executado como um sistema distribuído com mais de um computador, processador, servidor ou contêiner ou quando você projeta e constrói seus próprios processadores e chips de hardware.
+
+De uma perspectiva de software, é suficiente capturar apenas os elementos de uma infraestrutura que são necessários para mostrar uma implantação de seus blocos de construção. Arquitetos de hardware podem ir além disso e descrever uma infraestrutura em qualquer nível de detalhe que precisem capturar.
+
+.Motivação
+O software não roda sem hardware.
+Essa infraestrutura subjacente pode e influenciará um sistema e/ou alguns
+conceitos transversais. Portanto, é necessário conhecer a infraestrutura.
+
+.Forma
+
+Talvez um diagrama de implantação de nível mais alto já esteja contido na seção 3.2. como
+contexto técnico com sua própria infraestrutura como UMA caixa preta. Nesta seção, pode-se
+ampliar esta caixa preta usando diagramas de implantação adicionais:
+
+* UML oferece diagramas de implantação para expressar essa visão. Use-o, provavelmente com diagramas aninhados,
+quando sua infraestrutura for mais complexa.
+* Quando suas partes interessadas (de hardware) preferirem outros tipos de diagramas em vez de um diagrama de implantação, deixe-os usar qualquer tipo que seja capaz de mostrar nós e canais da infraestrutura.
+
+
+.Mais informações
+
+Consulte https://docs.arc42.org/section-7/[Deployment View] na documentação do arc42.
+
+****
+endif::arc42help[]
+
+=== Nível de Infraestrutura 1
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Descreva (geralmente em uma combinação de diagramas, tabelas e texto):
+
+* distribuição de um sistema para vários locais, ambientes, computadores, processadores, .., bem como conexões físicas entre eles
+* justificativas ou motivações importantes para esta estrutura de implantação
+* recursos de qualidade e/ou desempenho desta infraestrutura
+* mapeamento de artefatos de software para elementos desta infraestrutura
+
+Para vários ambientes ou implantações alternativas, copie e adapte esta seção do arc42 para todos os ambientes relevantes.
+****
+endif::arc42help[]
+
+_**<Diagrama de Visão Geral>**_
+
+Motivação::
+
+_<explicação em forma de texto>_
+
+Características de Qualidade e/ou Desempenho::
+
+_<explicação em forma de texto>_
+
+Mapeamento de Blocos de Construção para Infraestrutura::
+_<descrição do mapeamento>_
+
+
+=== Nível de Infraestrutura 2
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Aqui você pode incluir a estrutura interna de (alguns) elementos de infraestrutura do nível 1.
+
+Copie a estrutura do nível 1 para cada elemento selecionado.
+****
+endif::arc42help[]
+
+==== _<Elemento de Infraestrutura 1>_
+
+_<diagrama + explicação>_
+
+==== _<Elemento de Infraestrutura 2>_
+
+_<diagrama + explicação>_
+
+...
+
+==== _<Elemento de Infraestrutura n>_
+
+_<diagrama + explicação>_
