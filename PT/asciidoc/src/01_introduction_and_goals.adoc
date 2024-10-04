@@ -1,0 +1,100 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-introduction-and-goals]]
+== Introdução e Objetivos
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Descreve os requisitos relevantes e as forças motrizes que os arquitetos de software e a equipe de desenvolvimento devem considerar.
+Isso inclui
+
+* objetivos de negócios subjacentes,
+* recursos essenciais,
+* requisitos funcionais essenciais,
+* objetivos de qualidade para a arquitetura e
+* partes interessadas relevantes e suas expectativas
+****
+endif::arc42help[]
+
+=== Visão Geral dos Requisitos
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Descrição curta dos requisitos funcionais, forças motrizes, excerto (ou resumo)
+dos requisitos. Link para (esperançosamente existentes) documentos de requisitos
+(com número da versão e informações sobre onde encontrá-lo).
+
+.Motivação
+Do ponto de vista dos usuários finais, um sistema é criado ou modificado para
+melhorar o suporte e/ou melhorar a qualidade de uma atividade negocial.
+
+.Forma
+Descrição textual curta, provavelmente em formato tabular de casos de uso.
+Se existirem documentos de requisitos, esta visão geral deve se referir a esses documentos.
+
+Mantenha esses trechos o mais curtos possível. Equilibre a legibilidade deste documento com a redundância potencial em relação aos documentos de requisitos.
+
+.Mais informações
+
+Consulte https://docs.arc42.org/section-1/[Introduction and Goals] na documentação do arc42.
+
+****
+endif::arc42help[]
+
+=== Objetivos de Qualidade
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Os três principais (máx. cinco) objetivos de qualidade para a arquitetura cujo cumprimento é de maior importância para as principais partes interessadas.
+Nós realmente queremos dizer objetivos de qualidade para a arquitetura. Não os confunda com objetivos de projeto.
+Eles não são necessariamente idênticos.
+
+Considere esta visão geral de tópicos potenciais (com base no padrão ISO 25010):
+
+image::01_2_iso-25010-topics-EN.drawio.png["Categorias de Requisitos de Qualidade"]
+
+.Motivação
+Você deve saber os objetivos de qualidade de suas partes interessadas mais importantes, pois elas influenciarão decisões arquiteturais fundamentais.
+Certifique-se de ser muito concreto sobre essas qualidades, evite chavões.
+Se você, como arquiteto, não sabe como a qualidade do seu trabalho será julgada...
+
+.Forma
+Uma tabela com objetivos de qualidade e cenários concretos, ordenados por prioridades
+****
+endif::arc42help[]
+
+=== Partes Interessadas
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Visão geral explícita das partes interessadas do sistema, ou seja, todas as pessoas, funções ou organizações que
+
+* devem conhecer a arquitetura
+* precisam ser convencidas da arquitetura
+* precisam trabalhar com a arquitetura ou com código
+* precisam da documentação da arquitetura para seu trabalho
+* precisam tomar decisões sobre o sistema ou seu desenvolvimento
+
+.Motivação
+Você deve conhecer todas as partes envolvidas no desenvolvimento do sistema ou afetadas pelo sistema.
+Caso contrário, você pode ter surpresas desagradáveis ​​mais tarde no processo de desenvolvimento.
+Essas partes interessadas determinam a extensão e o nível de detalhes do seu trabalho e seus resultados.
+
+.Forma
+Tabela com nomes de funções, nomes de pessoas e suas expectativas com relação à arquitetura e sua documentação.
+****
+endif::arc42help[]
+
+[options="header",cols="1,2,2"]
+|===
+|Função/Nome|Contato|Expectativas
+| _<Função-1>_ | _<Contato-1>_ | _<Expectativa-1>_
+| _<Função-2>_ | _<Contato-2>_ | _<Expectativa-2>_
+|===

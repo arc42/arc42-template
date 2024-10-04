@@ -1,0 +1,37 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== Decisões Arquiteturais
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Decisões arquiteturais importantes, caras, de grande escala ou arriscadas, incluindo justificativas.
+Com "decisões", queremos dizer selecionar uma alternativa com base em critérios fornecidos.
+
+Use seu julgamento para decidir se uma decisão de arquitetura deve ser documentada
+aqui nesta seção central ou se é melhor documentá-la localmente
+(por exemplo, dentro do modelo de caixa branca de um bloco de construção).
+
+Evite redundância.
+Consulte a seção 4, onde você já capturou as decisões mais importantes da sua arquitetura.
+
+.Motivação
+As partes interessadas do seu sistema devem ser capazes de compreender e refazer suas decisões.
+
+.Forma
+Várias opções:
+
+* ADR (Architecture Decision Record) (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documentando Decisões de Arquitetura]) para cada decisão importante
+* Lista ou tabela, ordenada por importância e consequências ou:
+* mais detalhada em forma de seções separadas por decisão
+
+.Mais informações
+
+Veja https://docs.arc42.org/section-9/[Architecture Decisions] na documentação do arc42.
+Lá você encontrará links e exemplos sobre ADR.
+
+****
+endif::arc42help[]
