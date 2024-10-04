@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Riscos e Débitos Técnicos
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Uma lista de riscos técnicos identificados ou débitos técnicos, ordenadas por prioridade
+
+.Motivação
+“Gerenciamento de riscos é gerenciamento de projetos para adultos” (Tim Lister, Atlantic Systems Guild.)
+
+Este deve ser seu lema para detecção e avaliação sistemáticas de riscos e débitos técnicos na arquitetura, que serão necessárias para as partes interessadas da gerência (por exemplo, gerentes de projeto, proprietários de produtos) como parte da análise geral de riscos e planejamento de medição.
+
+.Forma
+Lista de riscos e/ou débitos técnicos, provavelmente incluindo medidas sugeridas para minimizar, mitigar ou evitar riscos ou reduzir débitos técnicos.
+
+
+.Mais informações
+
+Veja https://docs.arc42.org/section-11/[Risks and Technical Debt] na documentação do arc42.
+
+****
+endif::arc42help[]

@@ -1,0 +1,74 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Conceitos Transversais
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Esta seção descreve globalmente, as principais regulamentações e ideias de soluções que são relevantes em várias partes (= transversais) do seu sistema.
+Esses conceitos geralmente estão relacionados a vários blocos de construção.
+Eles podem incluir muitos tópicos diferentes, como
+
+* modelos, especialmente modelos de domínio
+* padrões de arquitetura ou _design patterns_
+* regras para usar tecnologia específica
+* principais decisões, geralmente técnicas, de natureza abrangente (= transversais)
+* regras de implementação
+
+
+.Motivação
+Os conceitos formam a base para a _integridade conceitual_ (consistência, homogeneidade) da arquitetura.
+Portanto, eles são uma contribuição importante para atingir as qualidades internas do seu sistema.
+
+Alguns desses conceitos não podem ser atribuídos a blocos de construção individuais, por exemplo segurança ou proteção.
+
+
+.Forma
+A forma pode ser variada:
+
+* documentos conceituais com qualquer tipo de estrutura
+* trechos ou cenários de modelos transversais usando notações das visualizações de arquitetura
+* amostra de implementações, especialmente para conceitos técnicos
+* referência ao uso típico de _frameworks_ padrão (por exemplo, usando Hibernate para mapeamento de objeto/relacional)
+
+.Estrutura
+Uma estrutura potencial (mas não obrigatória) para esta seção poderia ser:
+
+* Conceitos de domínio
+* Conceitos de Experiência do Usuário (UX)
+* Conceitos de proteção e segurança
+* Padrões de arquitetura e _design patterns_
+* Estruturas internas
+* Conceitos de desenvolvimento
+* Conceitos operacionais
+
+Observação: pode ser difícil atribuir conceitos individuais a um tópico específico
+nesta lista.
+
+image::08-Crosscutting-Concepts-Structure-EN.png["Tópicos possíveis para conceitos transversais"]
+
+
+.Mais informações
+
+Veja https://docs.arc42.org/section-8/[Concepts] na documentação do arc42.
+****
+endif::arc42help[]
+
+=== _<Conceito 1>_
+
+_<explicação>_
+
+
+
+=== _<Conceito 2>_
+
+_<explicação>_
+
+...
+
+=== _<Conceito n>_
+
+_<explicação>_

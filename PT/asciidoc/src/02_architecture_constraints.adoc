@@ -1,0 +1,28 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Restrições Arquiteturais
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Qualquer requisito que restrinja arquitetos de software em sua liberdade de decisões de design e implementação ou decisão sobre o processo de desenvolvimento. Essas restrições às vezes vão além de sistemas individuais e são válidas para organizações e empresas inteiras.
+
+.Motivação
+Arquitetos devem saber exatamente onde são livres em suas decisões de design e onde devem aderir às restrições.
+Restrições devem sempre ser tratadas; elas podem ser negociáveis, no entanto.
+
+.Forma
+Tabelas simples de restrições com explicações.
+Se necessário, você pode subdividi-las em
+restrições técnicas, restrições organizacionais e políticas e
+convenções (por exemplo, diretrizes de programação ou controle de versão, convenções de documentação ou nomenclatura)
+
+.Mais informações
+
+Consulte https://docs.arc42.org/section-2/[Architecture Constraints] na documentação do arc42.
+
+****
+endif::arc42help[]

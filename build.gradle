@@ -13,8 +13,9 @@ apply plugin: 'java'
 // what version of the template are we building here
 // 8.1 -> add UA and CZ version
 // 8.1.1 -> bugfix in EN version
+// 8.2.1 -> change concept image in DE and EN, add PT and RU versions
 // these comments should go into a decent history.adoc file...
-version = "8.2-${LANGUAGE}-LOCAL-BUILD"
+version = "8.2.1-${LANGUAGE}-LOCAL-BUILD"
 
 repositories {
     mavenCentral()

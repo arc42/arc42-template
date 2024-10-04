@@ -1,0 +1,33 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Estratégia de Solução
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Conteúdo
+Um breve resumo e explicação das decisões fundamentais e estratégias de solução que moldam a arquitetura do sistema. Inclui
+
+* decisões de tecnologia
+* decisões sobre a decomposição de nível superior do sistema, por exemplo, uso de um padrão arquitetural ou _design pattern_
+* decisões sobre como atingir as principais metas de qualidade
+* decisões organizacionais relevantes, por exemplo, selecionar um processo de desenvolvimento ou delegar certas tarefas a terceiros.
+
+.Motivação
+Essas decisões formam os pilares da sua arquitetura. Elas são a base para muitas outras decisões detalhadas ou regras de implementação.
+
+.Forma
+Mantenha as explicações dessas decisões-chave curtas.
+
+Motive o que foi decidido e por que foi decidido dessa forma,
+com base na declaração do problema, metas de qualidade e principais restrições.
+Consulte os detalhes nas seções a seguir.
+
+.Mais informações
+
+Consulte https://docs.arc42.org/section-4/[Solution Strategy] na documentação do arc42.
+
+****
+endif::arc42help[]
