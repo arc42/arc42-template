@@ -9,7 +9,7 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Conteúdo
-A visão de blocos de construção mostra a decomposição estática do sistema em blocos de construção (módulos, componentes, subsistemas, classes, interfaces, pacotes, bibliotecas, frameworks, camadas, partições, níveis, funções, macros, operações, estruturas de dados, ...) bem como suas dependências (relacionamentos, associações, ...)
+A visão de blocos de construção mostra a decomposição estática do sistema em blocos (módulos, componentes, subsistemas, classes, interfaces, pacotes, bibliotecas, frameworks, camadas, partições, níveis, funções, macros, operações, estruturas de dados, ...) bem como suas dependências (relacionamentos, associações, ...)
 
 Esta visão é obrigatória para toda documentação de arquitetura.
 Em analogia a uma casa, esta é a _planta baixa_.
@@ -55,14 +55,14 @@ Aqui você descreve a decomposição geral do sistema usando o seguinte modelo d
 
 ** use _uma_ tabela para uma visão geral curta e pragmática de todos os blocos de construção contidos e suas interfaces
 ** use uma lista de descrições de caixa preta dos blocos de construção de acordo com o modelo de caixa preta (veja abaixo).
-Dependendo da sua escolha de ferramenta, esta lista pode ser subcapítulos (em arquivos de texto), subpáginas (em um Wiki) ou elementos aninhados (em uma ferramenta de modelagem).
+Dependendo da sua escolha de ferramenta, esta lista pode ser subcapítulos (em arquivos de texto), subpáginas (em uma Wiki) ou elementos aninhados (em uma ferramenta de modelagem).
 
 
 * (opcional:) interfaces importantes, que não são explicadas nos modelos de caixa preta de um bloco de construção, mas são muito importantes para entender a caixa branca.
 Já que há tantas maneiras de especificar interfaces, por que não fornecer um modelo específico para elas?
 No pior caso, você tem que especificar e descrever sintaxe, semântica, protocolos, tratamento de erros,
 restrições, versões, qualidades, compatibilidades necessárias e muito mais.
-Na melhor das hipóteses, você conseguirá usar exemplos ou assinaturas simples.
+Na melhor das hipóteses, você conseguirá usar exemplos ou descrições simples.
 
 ****
 endif::arc42help[]
