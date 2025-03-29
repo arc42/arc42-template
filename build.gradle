@@ -1,73 +1,129 @@
-// this is a local build file, used for debugging purposes only!
-// YOU CANNOT CREATE DISTRIBUTIONS WITH IT
-//
-
 plugins {
     id 'org.asciidoctor.jvm.convert' version '3.3.2'
-    id 'org.aim42.htmlSanityCheck' version '1.1.6'
+    id 'org.asciidoctor.jvm.pdf' version '3.3.2'
 }
 
-apply plugin: 'java'
-
-
-// what version of the template are we building here
-// 8.1 -> add UA and CZ version
-// 8.1.1 -> bugfix in EN version
-// 8.2.1 -> change concept image in DE and EN, add PT and RU versions
-// these comments should go into a decent history.adoc file...
-version = "8.2.1-${LANGUAGE}-LOCAL-BUILD"
+// Read language settings from gradle.properties
+def languages = project.findProperty('languages')?.split(',')?.collect { it.trim() } ?: ['DE']
 
 repositories {
     mavenCentral()
 }
 
-// not found: /Users/gernotstarke/projects/arc42/arc42-template/src/config.adoc
+// Configure common AsciiDoc attributes
+ext {
+    asciidocAttributes = [
+        'source-highlighter': 'coderay',
+        'toc': 'left',
+        'toclevels': '3',
+        'doctype': 'book'
+    ]
+}
 
-asciidoctor {
-    baseDir file('./')
-    baseDirFollowsSourceDir()
-
-    sourceDir file("${LANGUAGE}/asciidoc")
-    sources{ include 'arc42-template.adoc' }
-   
-    options = [
-        includedir: "./${LANGUAGE}/asciidoc/",
-        imagesdir: '../images'
-    ]    
+// Create HTML and PDF tasks for each configured language
+languages.each { language ->
+    // Define HTML conversion task for this language
+    tasks.register("asciidoctorHtml${language}", org.asciidoctor.gradle.jvm.AsciidoctorTask) {
+        // Configure source - using language-specific directory
+        sourceDir file("${language}/asciidoc")
+        sources {
+            include 'arc42-template.adoc'
+        }
+        
+        // Configure output
+        outputDir file("build/${language}/html")
+        
+        // Set base directory to make includes work
+        baseDirFollowsSourceDir()
+        
+        // Set attributes
+        attributes asciidocAttributes + [
+            'imagesdir': "${projectDir}/images"
+        ]
+        
+        // Log completion
+        doLast {
+            println "HTML conversion completed for language: ${language}"
+            println "Output directory: ${outputDir}"
+        }
+    }
     
-    outputDir = file( "build/${LANGUAGE}" )
-
-    resources {
-        from('./') {
-            include 'images/**'
+    // Define PDF conversion task for this language
+    tasks.register("asciidoctorPdf${language}", org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask) {
+        // Configure source - using language-specific directory
+        sourceDir file("${language}/asciidoc")
+        sources {
+            include 'arc42-template.adoc'
+        }
+        
+        // Configure output
+        outputDir file("build/${language}/pdf")
+        
+        // Set base directory to make includes work
+        baseDirFollowsSourceDir()
+        
+        // Set attributes
+        attributes asciidocAttributes + [
+            'imagesdir': "${projectDir}/images",
+            'pdf-page-size': 'A4'
+        ]
+        
+        // Log completion
+        doLast {
+            println "PDF conversion completed for language: ${language}"
+            println "Output directory: ${outputDir}"
         }
     }
 }
 
-htmlSanityCheck {
-    // ensure asciidoctor->html runs first
-    // and images are copied to build directory
-    dependsOn asciidoctor
-
-    sourceDir = new File( "$buildDir/$LANGUAGE" )
-
-    // files to check, specified as a file tree with filtering
-    sourceDocuments = fileTree(sourceDir) {
-        include "arc42-template.html"
+// Create aggregate tasks for all languages
+tasks.register('asciidoctorHtmlAll') {
+    description 'Builds HTML for all configured languages'
+    group 'Documentation'
+    
+    languages.each { language ->
+        dependsOn tasks.named("asciidoctorHtml${language}")
     }
+}
 
-    // where to put results of sanityChecks...
-    checkingResultsDir = new File( "$buildDir/reports/$LANGUAGE" )
+tasks.register('asciidoctorPdfAll') {
+    description 'Builds PDF for all configured languages'
+    group 'Documentation'
+    
+    languages.each { language ->
+        dependsOn tasks.named("asciidoctorPdf${language}")
+    }
+}
 
-    // fail build on errors?
-    failOnErrors = true
+tasks.register('asciidoctorAll') {
+    description 'Builds HTML and PDF for all configured languages'
+    group 'Documentation'
+    
+    dependsOn tasks.named('asciidoctorHtmlAll')
+    dependsOn tasks.named('asciidoctorPdfAll')
+}
 
-    // http connection timeout in milliseconds
-    httpConnectionTimeout = 1000
+// Clean task to remove all build artifacts
+tasks.named('clean') {
+    description 'Deletes the build directory'
+    group 'Build'
+    
+    doLast {
+        delete 'build'
+        println "Build directory cleaned"
+    }
+}
 
-    // which statuscodes shall be interpreted as warning, error or success
-    // defaults to standard
-    httpWarningCodes = [401]
-    // httpErrorCodes
-    // httpSuccessCodes
+// Default task to generate documentation
+defaultTasks 'asciidoctorAll'
+
+// Print configuration info at start of build
+gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(':asciidoctorAll') || 
+        taskGraph.hasTask(':asciidoctorHtmlAll') || 
+        taskGraph.hasTask(':asciidoctorPdfAll')) {
+        println "Building arc42 documentation for languages: ${languages.join(', ')}"
+        println "Using language directories: ${languages.collect { "${it}/asciidoc" }.join(', ')}"
+        println "Main file: arc42-template.adoc"
+    }
 }
