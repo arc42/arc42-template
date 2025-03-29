@@ -62,7 +62,125 @@ To select another language set the Gradle build property `LANGUAGE` to one of th
 include::gradle.properties[]
 ----
 
-Currently (March 2022) you need to use **Java 8** to build!
+C# arc42 Documentation Builder
+
+This Gradle project builds the arc42 documentation template in multiple formats (HTML and PDF) and supports multiple languages.
+
+## Project Structure
+
+The project assumes the following directory structure:
+
+```
+<root>/
+  ├── DE/                     // German language files
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for German
+  │         └── src/             // Included files
+  │
+  ├── EN/                     // English language files 
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for English
+  │         └── src/             // Included files
+  │
+  ├── images/                // Shared images for all languages
+  │    └── *.png, *.jpg, etc.   // Image files
+  │ 
+  └── build/                  // Generated output
+       ├── DE/                  // German output
+       │    ├── html/           // HTML output
+       │    └── pdf/            // PDF output
+       │
+       └── EN/                  // English output
+            ├── html/           // HTML output
+            └── pdf/            // PDF output
+```
+
+## Requirements
+
+- Java 11 or newer
+- Gradle 8.0 or newer (or use the included Gradle wrapper)
+
+## Configuration
+
+Language configuration is done in the `gradle.properties` file:
+
+```properties
+# Configure languages to be built (comma-separated list)
+languages=DE
+```
+
+The project name is set to 'arc42-template' in the settings.gradle file.
+
+You can add multiple languages by separating them with commas:
+
+```properties
+languages=DE,EN,FR
+```
+
+## Building Documentation
+
+### Clean the build directory
+
+```bash
+./gradlew clean
+```
+
+### Build all formats for all configured languages
+
+```bash
+./gradlew
+```
+
+or
+
+```bash
+./gradlew asciidoctorAll
+```
+
+### Build only HTML for all configured languages
+
+```bash
+./gradlew asciidoctorHtmlAll
+```
+
+### Build only PDF for all configured languages
+
+```bash
+./gradlew asciidoctorPdfAll
+```
+
+### Build specific language in HTML format
+
+```bash
+./gradlew asciidoctorHtmlDE
+```
+
+Replace `DE` with the desired language code.
+
+### Build specific language in PDF format
+
+```bash
+./gradlew asciidoctorPdfDE
+```
+
+Replace `DE` with the desired language code.
+
+## Output
+
+Generated documentation will be available in the build directory:
+
+- HTML: `build/<LANGUAGE>/html/`
+- PDF: `build/<LANGUAGE>/pdf/`
+
+For example, German (DE) documentation would be in:
+- `build/DE/html/arc42-template.html`
+- `build/DE/pdf/arc42-template.pdf`
+
+## Adding a New Language
+
+1. Add the language code to the `languages` property in `gradle.properties`
+2. Create the necessary AsciiDoc source files for the new language
+3. Run the build
 
 
 == Questions on using arc42?

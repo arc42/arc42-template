@@ -11,6 +11,7 @@ repositories {
 }
 
 // Configure common AsciiDoc attributes
+
 ext {
     asciidocAttributes = [
         'source-highlighter': 'coderay',
