@@ -11,6 +11,16 @@ repositories {
 }
 
 tasks.withType(org.asciidoctor.gradle.jvm.AsciidoctorTask) {
+    // Set encoding through the asciidoctorj configuration instead
+    asciidoctorj {
+        options = [
+            doctype: 'book'
+        ]
+        attributes = [
+            'encoding': 'UTF-8'
+        ]
+    }
+    
     configure {
         forkOptions {
             jvmArgs(
@@ -28,7 +38,9 @@ def loadVersionProperties(language) {
     if (!propFile.exists()) {
         throw new GradleException("Version properties file not found for language ${language}: ${propFile}")
     }
-    propFile.withInputStream { props.load(it) }
+    propFile.withInputStream { 
+        props.load(new InputStreamReader(it, "UTF-8")) // Use UTF-8 when reading properties
+    }
     return [
         'revnumber': props.revnumber ?: 'UNKNOWN',
         'revdate': props.revdate ?: 'UNKNOWN',
@@ -47,7 +59,9 @@ ext {
         'source-highlighter': 'coderay',
         'toc': 'left',
         'toclevels': '3',
-        'doctype': 'book'
+        'doctype': 'book',
+        'encoding': 'UTF-8',
+        'lang': 'en' // This will be overridden for each language
     ]
 }
 
@@ -75,7 +89,8 @@ languages.each { language ->
             'imagesdir': "${projectDir}/images",
             'revnumber': versionInfo.revnumber,
             'revdate': versionInfo.revdate,
-            'revremark': versionInfo.revremark
+            'revremark': versionInfo.revremark,
+            'lang': language.toLowerCase() // Set the language code
         ]
         
         doLast {
@@ -93,14 +108,13 @@ languages.each { language ->
         outputDir file("build/${language}/pdf")
         baseDirFollowsSourceDir()
         
-
-        
         attributes asciidocAttributes + [
             'imagesdir': "${projectDir}/images",
             'pdf-page-size': 'A4',
             'revnumber': versionInfo.revnumber,
             'revdate': versionInfo.revdate,
-            'revremark': versionInfo.revremark
+            'revremark': versionInfo.revremark,
+            'lang': language.toLowerCase() // Set the language code
         ]
         
         doLast {

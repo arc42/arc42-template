@@ -56,7 +56,7 @@ Beachten Sie den Unterschied.
 
 Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010 Standard):
 
-image::01_2_iso-25010-topics-DE.drawio.png["Kategorien von Qualitätsanforderungen"]
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Kategorien von Qualitätsanforderungen"]
 
 .Motivation
 Weil Qualitätsziele grundlegende Architekturentscheidungen oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten Qualitätsziele kennen, möglichst konkret und operationalisierbar.

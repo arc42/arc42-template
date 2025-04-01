@@ -56,7 +56,7 @@ Ils ne sont pas nécessairement identiques.
 
 Voici un aperçu des sujets potentiels (basé sur la norme ISO 25010) :
 
-image::01_2_iso-25010-topics-EN.drawio.png["Catégories d'exigences de Qualité"]
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Catégories d'exigences de Qualité"]
 
 .Motivation
 Vous devez connaître les objectifs de qualité de vos principales parties prenantes, car ils influenceront les décisions architecturales fondamentales. 
