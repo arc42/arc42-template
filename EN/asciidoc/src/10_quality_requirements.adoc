@@ -100,5 +100,12 @@ The long form of scenarios (favoured by the SEI and [Bass+23]):
 
 .Examples
 See https://quality.arc42.org[the Q42 quality model website] for detailes examples of quality requirements.
+
+.Further Information
+
+* Len Bass, Paul Clements, Rick Kazman: "Software Architecture in Practice", 4th Edition, Addison-Wesley, 2021.
+
 ****
+
+
 endif::arc42help[]
