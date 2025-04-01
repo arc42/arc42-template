@@ -7,26 +7,14 @@
 include::src/config.adoc[]
 
 = image:arc42-logo.png[arc42] Шаблон
-:revnumber: 8.2 RU
-:revdate: Январь 2023
-:revremark: (основана на версии AsciiDoc)
+:revnumber: {revnumber}
+:revdate: {revdate}
+:revremark: {revremark}
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Оглавление
 
 //additional style for arc42 help callouts
-ifdef::backend-html5[]
-++++
-<style>
-.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
-.arc42help::before {content: "?";}
-.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
-.arc42help:hover::before {content: "";}
-@media print {
-	.arc42help {display:none;}
-}
-</style>
-++++
-endif::backend-html5[]
+include::../../common/styles/arc42-help-style.adoc[]
 
 
 include::src/about-arc42.adoc[]
