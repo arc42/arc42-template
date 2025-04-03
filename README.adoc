@@ -4,16 +4,12 @@
 
 image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
 
-arc42 - the template for effective, practical and pragmatic software architecture
-documentation and communication.
+arc42 - the template for effective, practical and pragmatic software architecture documentation and communication.
 
-Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
-free and open source.
+Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...), free and open source.
 
 
-This repository contains all downloadable versions plus the (AsciiDoc)
-source of the arc42 template.
-
+This repository contains the (AsciiDoc) source of the arc42 template.
 
 It is used...
 
@@ -24,6 +20,11 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* 9.0: April 2025: 
+  ** Clarified and re-structured section 10 (Quality Requirements) to include overview (10.1) and details (10.2). 
+  ** Unified concept-image in section 8. 
+  ** Unified usage of revision number by adding version.properties file to every language. 
+  ** Reworked the local build to facilitate translations.
 * 8.2: Jan 28th 2023: Thx to A. Bentele, added imagedir def to all files, for easier editing asciidoc. See #178
 
 == Diagrams
@@ -38,13 +39,59 @@ Therefore we will gradually remove all files under `./graphics-originals`
 
 == Downloads
 
-Please refer to the https://arc42.org/download[official download page] for
-all downloads.
+Please refer to the https://arc42.org/download[official download page] for all downloads.
 
 == Languages
 
 The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
 Translations to additional languages (see below) have been provided by volunteers, but won't be automatically updated.
+
+The following languages are currently available:
+[cols="1,1,1", options="header"]
+|===
+| Language | Translator | Available Since
+
+| Czech (CZ)
+| jakub_rc <jakub.tomisek@gmail.com>
+| 2022-10-12
+
+| Dutch (NL)
+| mv <verburg.maarten@gmail.com> 
+| 2022-05-01
+
+| **English (EN)**
+| Gernot Starke, Peter Hruschka (founders)
+| 2005
+
+| Spanish (ES)
+| Isidoro <isidoro.trevino@vintec.mx>
+| 2017-09-19
+
+| French (FR)
+| Damien Lucas <d.lucas@groupeonepoint.com> 
+| 2023-06-05
+
+| **German (DE)**
+| Gernot Starke, Peter Hruschka (founders)
+| 2005
+
+| Italian (IT)
+| Mario Giustiniani <mariogiustiniani@gmail.com>
+| 2021-04-04
+
+| Portuguese (PT)
+| Guilherme I F L Weizenmann <g.weizenmann@gmail.com>
+| 2024-09-10
+
+| Russian (RU)
+| Various contributors, Ерилин Никита <nerilin@cinimex.ru>
+| 2018-11-14
+
+| Ukrainian (UKR)
+| Ivan Bulyk, Larysa Visengeriyeva
+| 2024-11-10  
+
+|===
 
 == Build the HTML version 
 
@@ -62,7 +109,7 @@ To select another language set the Gradle build property `LANGUAGE` to one of th
 include::gradle.properties[]
 ----
 
-C# arc42 Documentation Builder
+== arc42 Documentation Builder
 
 This Gradle project builds the arc42 documentation template in multiple formats (HTML and PDF) and supports multiple languages.
 
