@@ -24,7 +24,7 @@ In case you find issues within the template or its explanations, this is the rep
   ** Clarified and re-structured section 10 (Quality Requirements) to include overview (10.1) and details (10.2). 
   ** Unified concept-image in section 8. 
   ** Unified usage of revision number by adding version.properties file to every language. 
-  ** Reworked the local build to facilitate translations.
+  ** Reworked the local build to facilitate translations
 * 8.2: Jan 28th 2023: Thx to A. Bentele, added imagedir def to all files, for easier editing asciidoc. See #178
 
 == Diagrams
@@ -93,29 +93,26 @@ The following languages are currently available:
 
 |===
 
-== Build the HTML version 
+== Build a Local Version 
 
-In case you want to build the HTML version of the template, just checkout this repo and call
+In case you want to build the HTML or PDF version of the template on your local, just checkout this repo and call
 
 ----
-$> gradle asciidoctor
+$> gradle
 ----
 
 on the command line.
-To select another language set the Gradle build property `LANGUAGE` to one of the provided languages, cf.
+To select another language set the Gradle build property `languages` in the file `gradle.properties` to one of the provided languages (e.g. DE, EN, ES, IT, NL etc).
 
 [source, java]
 ----
 include::gradle.properties[]
 ----
 
-== arc42 Documentation Builder
 
-This Gradle project builds the arc42 documentation template in multiple formats (HTML and PDF) and supports multiple languages.
+### Directory Structure
 
-## Project Structure
-
-The project assumes the following directory structure:
+The build process assumes the following directory structure:
 
 ```
 <root>/
@@ -123,11 +120,13 @@ The project assumes the following directory structure:
   │    └── asciidoc/            // AsciiDoc source files
   │         ├── arc42-template.adoc  // Main document for German
   │         └── src/             // Included files
+  │    └── version.properties    // version information for German
   │
   ├── EN/                     // English language files 
   │    └── asciidoc/            // AsciiDoc source files
   │         ├── arc42-template.adoc  // Main document for English
   │         └── src/             // Included files
+  │    └── version.properties    // version information for English
   │
   ├── images/                // Shared images for all languages
   │    └── *.png, *.jpg, etc.   // Image files
@@ -140,6 +139,11 @@ The project assumes the following directory structure:
        └── EN/                  // English output
             ├── html/           // HTML output
             └── pdf/            // PDF output
+  ├── <LC>/                     // language files for language <LC>
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for <LC>
+  │         └── src/             // Included files
+  │    └── version.properties    // version information for <LC>
 ```
 
 ## Requirements
@@ -164,7 +168,6 @@ You can add multiple languages by separating them with commas:
 languages=DE,EN,FR
 ```
 
-## Building Documentation
 
 ### Clean the build directory
 
