@@ -15,7 +15,7 @@ Dazu können vielerlei Themen gehören, beispielsweise:
 * Modelle, insbesondere fachliche Modelle
 * Architektur- oder Entwurfsmuster
 * Regeln für den konkreten Einsatz von Technologien
-* prinzipielle -- meist technische -- Festlegungen übergreifender Art
+* prinzipielle -- oft technische -- Festlegungen übergreifender Art
 * Implementierungsregeln
 
 .Motivation
@@ -42,7 +42,7 @@ Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könn
 * Entwicklungskonzepte
 * Betriebskonzepte
 
-image::08-concepts-DE.drawio.png["Possible topics for crosscutting concepts"]
+image::08-concepts-DE.drawio.png["Mögliche Themen für querschnittliche Konzepte"]
 
 .Weiterführende Informationen
 
