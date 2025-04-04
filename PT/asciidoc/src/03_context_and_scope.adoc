@@ -14,13 +14,13 @@ Contexto e escopo - como o nome sugere - delimita seu sistema (ou seja, seu esco
 Se necessário, diferencie o contexto de negócios (entradas e saídas específicas do domínio) do contexto técnico (canais, protocolos, hardware).
 
 .Motivação
-As interfaces de domínio e as interfaces técnicas para parceiros de comunicação estão entre os aspectos mais críticos do seu sistema. Certifique-se de entendê-las completamente.
+As interfaces de domínio e as interfaces técnicas para componentes externos estão entre os aspectos mais críticos do seu sistema. Certifique-se de entendê-las completamente.
 
 .Forma
 Várias opções:
 
 * Diagramas de contexto
-* Listas de parceiros de comunicação e suas interfaces.
+* Listas de componentes externos e suas interfaces.
 
 .Mais informações
 
@@ -35,17 +35,17 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Conteúdo
-Especificação de *todos* os parceiros de comunicação (usuários, sistemas de TI, ...) com explicações de entradas e saídas ou interfaces específicas do domínio.
+Especificação de *todos* os componentes externos (usuários, sistemas de TI, ...) com explicações de entradas e saídas ou interfaces específicas do domínio.
 Opcionalmente, você pode adicionar formatos específicos do domínio ou protocolos de comunicação.
 
 .Motivação
 Todas as partes interessadas devem entender quais dados são trocados com o ambiente do sistema.
 
 .Forma
-Todos os tipos de diagramas que mostram o sistema como uma caixa preta e especificam as interfaces de domínio para os parceiros de comunicação.
+Todos os tipos de diagramas que mostram o sistema como uma caixa preta e especificam as interfaces de domínio para os componentes externos.
 
 Como alternativa (ou adicionalmente), você pode usar uma tabela.
-O título da tabela é o nome do seu sistema, as três colunas contêm o nome do parceiro de comunicação, as entradas e as saídas.
+O título da tabela é o nome do seu sistema, as três colunas contêm o nome do componente externo, as entradas e as saídas.
 ****
 endif::arc42help[]
 
