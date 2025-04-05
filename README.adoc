@@ -64,11 +64,11 @@ The following languages are currently available:
 | 2005
 
 | Spanish (ES)
-| Isidoro <isidoro.trevino@vintec.mx>
+| Isidoro (isidoro.trevino@vintec.mx)
 | 2017-09-19
 
 | French (FR)
-| Damien Lucas <d.lucas@groupeonepoint.com> 
+| Damien Lucas (d.lucas@groupeonepoint.com) 
 | 2023-06-05
 
 | **German (DE)**
@@ -76,19 +76,23 @@ The following languages are currently available:
 | 2005
 
 | Italian (IT)
-| Mario Giustiniani <mariogiustiniani@gmail.com>
+| Mario Giustiniani (mariogiustiniani@gmail.com)
 | 2021-04-04
 
+| Dutch (NL)
+| Maarten Verburg (verburg.maarten@gmail.com)
+| 2022-05-01
+
 | Portuguese (PT)
-| Guilherme I F L Weizenmann <g.weizenmann@gmail.com>
+| Guilherme Weizenmann (g.weizenmann@gmail.com)
 | 2024-09-10
 
 | Russian (RU)
-| Various contributors, Ерилин Никита <nerilin@cinimex.ru>
+| Various contributors, <nerilin@cinimex.ru>, max.arshinov@gmail.com
 | 2018-11-14
 
 | Ukrainian (UKR)
-| Ivan Bulyk, Larysa Visengeriyeva
+| Ivan Bulyk, Larysa Visengeriyeva (visenger@gmail.com)
 | 2024-11-10  
 
 |===
