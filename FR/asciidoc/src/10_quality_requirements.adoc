@@ -7,70 +7,101 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contenu
-Cette section contient tous les critères de qualité sous la forme d'un arbre de qualité avec des scénarios. Les plus importantes ont déjà été décrites au point 1.2 (objectifs de qualité).
 
-Ici, vous pouvez également capturer des critères de qualité avec une priorité moindre,
-qui n'entraîneront pas de risques élevés si elles ne sont pas entièrement satisfaites.
+.Contenu
+Cette section contient toutes les exigences de qualité pertinentes. 
+
+Les plus importantes d'entre elles ont déjà été décrites au point 1.2 (objectifs de qualité) ; il convient donc de n'y faire référence qu'ici.
+Dans cette section, il convient également d'indiquer les exigences de qualité de moindre importance, qui n'entraîneront pas de risques élevés si elles ne sont pas entièrement satisfaites (quand même, il serait préférable qu'elles soient satisfaites).
 
 .Motivation
-Étant donné que les critères de qualité auront une grande influence sur les décisions architecturales,
-vous devez savoir, pour chaque partie prenante, ce qui est vraiment important pour elle,
-ce qui est concret et mesurable.
+Comme les exigences de qualité ont une grande influence sur les décisions architecturales, vous devez savoir quelles sont les qualités réellement importantes pour vos parties prenantes, d'une manière spécifique et mesurable.
 
 
 .Informations supplémentaires
 
 Voir https://docs.arc42.org/section-10/[Quality Requirements] dans la documentation arc42.
+En plus, voir aussi https://quality.arc42.org[Q42 Quality Model on https://quality.arc42.org].
 
 ****
 endif::arc42help[]
 
-=== Arbre de qualité
+=== Exigences de qualité - Vue d'ensemble
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
+
 .Contenu
-L'arbre de qualité (tel que défini dans ATAM – Architecture Tradeoff Analysis Method) avec des scénarios de qualité/évaluation sous forme de feuilles.
+Une vue d'ensemble ou un résumé des exigences de qualité.
+
 
 .Motivation
-L'arborescence avec les priorités permet d'avoir une vue d'ensemble d'un nombre parfois important de critères de qualité.
+Nous rencontrons souvent des dizaines (voire des centaines) d'exigences de qualité détaillées. 
+Dans cette section générale, vous devez essayer de les résumer, par exemple en décrivant des attributs de qualité (comme suggéré par https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en [ISO 25010:2023] ou https://quality.arc42.org [Q42]).
+
+Si ces descriptions sommaires sont déjà suffisamment précises, spécifiques et mesurables, vous pouvez sauter la section 10.2.
 
 .Représentation
-L'arbre de qualité est une vue d'ensemble des objectifs et des critères de qualité :
+Utilisez un tableau simple dans lequel chaque ligne contient un attribut ou un sous-attribut et une brève description de l'exigence de qualité.
+Vous pouvez également utiliser une carte heuristique pour structurer ces exigences de qualité.
+Dans la littérature, l'idée d'un _arbre d'attributs de qualité_ a également été décrite, qui place le terme générique « qualité » à la racine et utilise un raffinement arborescent du terme « qualité » avec les attributs, les sous-attributs et finalement les liens vers les scénarios (cf. section suivante).
+[Bass+21] a introduit le terme « Quality Attribute Utility Tree » pour cet _arbre d'attributs de qualité_.
 
-* raffinement arborescent du terme "qualité". Utiliser "qualité" ou "utilité" comme racine
-* une carte mentale dont les principales branches sont les catégories de qualité
-
-Dans tous les cas, l'arbre doit inclure des liens vers les scénarios de la section suivante.
 
 ****
 endif::arc42help[]
+
 
 === Scénarios Qualité
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
+
 .Contenu
-Concrétisation des critères de qualité (parfois vagues ou implicites) à l'aide de scénarios Qualité.
+Les scénarios de qualité concrétisent les exigences de qualité et permettent de décider si elles sont satisfaites (au sens des critères d'acceptation).
+Veillez à ce que vos scénarios soient spécifiques et mesurables.
 
-Ces scénarios décrivent ce qui doit se passer lorsqu'un stimulus arrive au système.
 
-Pour les architectes, deux types de scénarios sont importants :
 
-* Les scénarios d'utilisation (également appelés scénarios d'application ou scénarios de cas d'utilisation) décrivent la réaction du système en cours d'exécution à un certain stimulus. Cela inclut également les scénarios qui décrivent l'efficacité ou la performance du système. Exemple : Le système réagit à la demande d'un utilisateur en une seconde.
-* Les scénarios de changement décrivent une modification du système ou de son environnement immédiat. Exemple : Une fonctionnalité supplémentaire est mise en œuvre ou les exigences relatives à la modification d'un attribut Qualité.
+Deux types de scénarios sont particulièrement utiles
 
-.Motivation
-Les scénarios concrétisent les exigences de qualité et permettent de mesurer ou de décider plus facilement si elles sont satisfaites.
-
-En particulier lorsque vous souhaitez évaluer votre architecture à l'aide de méthodes telles que
-ATAM, vous devez décrire vos objectifs qualité (voir section 1.2)
-plus précisément à un niveau de scénarios qui peuvent être discutés et évalués.
+* Les scénarios d'utilisation (également appelés scénarios d'application ou scénarios de cas d'utilisation) décrivent la réaction du système en cours d'exécution à un certain stimulus. 
+Cela inclut également les scénarios qui décrivent l'efficacité ou la performance du système. 
+Exemple : Le système réagit à la demande d'un utilisateur en une seconde.
+* Les scénarios de changement décrivent l'effet souhaité d'une modification ou d'une extension du système ou de son environnement immédiat. 
+Exemple : Une fonctionnalité supplémentaire est mise en œuvre ou les exigences relatives à un attribut de qualité sont modifiées, et l'effort ou la durée du changement est mesuré.
 
 .Représentation
-Texte tabulaire ou libre.
+Les informations typiques pour les scénarios détaillés sont les suivantes :
+
+Sous forme abrégée (privilégiée dans le modèle Q42) :
+
+* **Contexte** : Quel type de système ou de composant, quel est l'environnement ou la situation ?
+* **Source/Stimulus** : Qui ou quoi initie ou déclenche un comportement, une réaction ou une action.
+* **Critères de mesure/d'acceptation** : Une réponse comprenant une _mesure_ ou une _métrie_.
+
+
+La forme longue des scénarios (privilégiée par le SEI et [Bass+21]) est plus détaillée et comprend les informations suivantes :
+
+* **Identification du scénario** : Un identifiant unique pour le scénario.
+* **Nom du scénario** : Un nom court et descriptif pour le scénario.
+* **Source** : L'entité (utilisateur, système ou événement) qui initie le scénario.
+* **Stimulus** : L'événement déclencheur ou la condition à laquelle le système doit répondre.
+* **Environnement** : Le contexte opérationnel ou la condition dans laquelle le système subit le stimulus.
+* **Artifact** : Les blocs de construction ou autres éléments du système affectés par le stimulus.
+* **Réponse** : Le résultat ou le comportement du système en réaction au stimulus.
+* **Mesure de la réponse** : Critères ou mesures permettant d'évaluer la réponse du système.
+
+.Exemples
+Voir https://quality.arc42.org [le site web du modèle de qualité Q42] pour des exemples détaillés d'exigences de qualité.
+
+.Informations complémentaires
+
+* Len Bass, Paul Clements, Rick Kazman : « Software Architecture in Practice », 4e édition, Addison-Wesley, 2022.
+
 ****
+
+
 endif::arc42help[]
