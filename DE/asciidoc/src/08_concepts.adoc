@@ -10,41 +10,37 @@ ifdef::arc42help[]
 Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungsansätze, die an mehreren Stellen (=_querschnittlich_) relevant sind.
 
 Solche Konzepte betreffen oft mehrere Bausteine.
-Dazu können vielerlei Themen gehören, beispielsweise:
+Dazu können vielerlei Themen gehören, wie beispielsweise die Themen aus dem nachfolgenden Diagramm:
 
-* Modelle, insbesondere fachliche Modelle
-* Architektur- oder Entwurfsmuster
-* Regeln für den konkreten Einsatz von Technologien
-* prinzipielle -- oft technische -- Festlegungen übergreifender Art
-* Implementierungsregeln
+image::08-concepts-DE.drawio.png["Mögliche Themen für querschnittliche Konzepte"]
 
 .Motivation
 Konzepte bilden die Grundlage für _konzeptionelle Integrität_ (Konsistenz, Homogenität) der Architektur und damit eine wesentliche Grundlage für die innere Qualität Ihrer Systeme.
 
-Manche dieser Themen lassen sich nur schwer als Baustein in der Architektur unterbringen (z.B. das Thema „Sicherheit“).
+Dieser Abschnitt im Template ist der richtige Ort für die konsistente Behandlung solcher Themen.
+
+Viele solche Konzepte beeinflussen oder beziehen sich auf mehrerer Ihrer Bausteine.
 
 .Form
 Kann vielfältig sein:
 
 * Konzeptpapiere mit beliebiger Gliederung,
-* übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
 * beispielhafte Implementierung speziell für technische Konzepte,
-* Verweise auf „übliche“ Nutzung von Standard-Frameworks (beispielsweise die Nutzung von Hibernate als Object/Relational Mapper).
+* übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den Architektursichten nutzen,
+
 
 .Struktur
-Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könnte wie folgt aussehen (wobei die Zuordnung von Themen zu den Gruppen nicht immer eindeutig ist):
+Wählen Sie **nur** die wichtigsten Themen für Ihr System und erklären das jeweilige Konzept dann unter einer Level-2 Überschrift dieser Sektion (z.B. 8.1, 8.2 etc).
 
-* Fachliche Konzepte
-* User Experience (UX)
-* Sicherheitskonzepte (Safety und Security)
-* Architektur- und Entwurfsmuster
-* Unter-der-Haube
-* Entwicklungskonzepte
-* Betriebskonzepte
-
-image::08-concepts-DE.drawio.png["Mögliche Themen für querschnittliche Konzepte"]
+Beschränken Sie sich auf die wichtigen, und versuchen **auf keinen Fall** alle oben dargestellten Themen zu bearbeiten.
 
 .Weiterführende Informationen
+
+Einige Themen innerhalb von Systemen betreffen oft mehrere Bausteine, Hardwareelemente oder Prozesse.
+Es könnte einfacher sein, solche _Querschnittsthemen_ an einer zentralen Stelle zu kommunizieren oder zu dokumentieren, anstatt sie in der Beschreibung der betreffenden Bausteine, Hardwareelemente oder Entwicklungsprozesse zu wiederholen.
+
+Bestimmte Konzepte können **alle** Elemente eines Systems betreffen, andere sind vielleicht nur für einige wenige relevant.
+
 
 Siehe https://docs.arc42.org/section-8/[Querschnittliche Konzepte] in der online-Dokumentation (auf Englisch).
 
