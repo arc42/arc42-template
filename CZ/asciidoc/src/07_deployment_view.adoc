@@ -11,11 +11,11 @@ ifdef::arc42help[]
 .Obsah
 Perspektiva nasazení softwaru popisuje:
 
-1. technickou infrastrukturu, na které systém poběží, s jednotlivými prvky infrastruktury, jako jsou např. geografická poloha, prostředí, počítače, procesory, kanály a topologie sítí a další, jakož i 
+1. technickou infrastrukturu, na které systém poběží, s jednotlivými prvky infrastruktury, jako jsou například geografická poloha, prostředí, počítače, procesory, kanály a topologie sítí a další, jakož i
 
 2. mapování (softwarových) stavebních bloků na jednotlivé prvky této infrastruktury.
 
-Systémy bývají často spouštěny v různých prostředích, např. vývojovém prostředí, testovacím prostředí, produkčním prostředí. V takových případech by měla být zdokumentována všechna relevantní prostředí.
+Systémy bývají často spouštěny v různých prostředích, například vývojovém prostředí, testovacím prostředí, produkčním prostředí. V takových případech by měla být zdokumentována všechna relevantní prostředí.
 
 Zejména dokumentujte perspektivu nasazení softwaru, pokud je software provozován jako distribuovaný systém s více než jedním počítačem, procesorem, serverem nebo kontejnerem nebo když jsou navrhovány a konstruovány vlastní hardwarové procesory a čipy.
 
@@ -52,7 +52,7 @@ ifdef::arc42help[]
 ****
 Popište (obvykle kombinací diagramů, tabulek a textu):
 
-* distribuci systému na více míst, prostředí, počítačů, procesorů, .., jakož i fyzická propojení mezi nimi
+* distribuci systému na více míst, prostředí, počítačů, procesorů,.., jakož i fyzická propojení mezi nimi
 * důležité důvody nebo motivaci pro tuto strukturu nasazení
 * kvalitativní a/nebo výkonnostní vlastnosti této infrastruktury
 * mapování softwarových artefaktů na prvky této infrastruktury

@@ -25,7 +25,7 @@ image::05_building_blocks-EN.png["Hierarchie stavebních bloků"]
 
 *Úroveň 1* je popis celého systému jako white-box spolu s popisem všech obsažených stavebních bloků ve formátu black-box.
 
-*Úroveň 2* přibližuje některé stavební bloky úrovně 1. 
+*Úroveň 2* přibližuje některé stavební bloky úrovně 1.
 Obsahuje tedy popis vybraných stavebních bloků úrovně 1 jako white-box spolu s popisy jejich vnitřních stavebních bloků jako black-box.
 
 *Úroveň 3* přiblíží vybrané stavební bloky úrovně 2 a tak dále.
@@ -49,7 +49,7 @@ Zde popisujete rozklad celého systému pomocí následující white-box šablon
 * popis jednotlivých stavebních bloků jako black-box. K tomu jsou k dispozici různé alternativy:
 
 ** použijte _jednu_ tabulku pro krátký a pragmatický přehled všech obsažených stavebních bloků a jejich rozhraní.
-** použijte seznam stavebních bloků popsaných podle black-box šablony (viz níže). 
+** použijte seznam stavebních bloků popsaných podle black-box šablony (viz níže).
 V závislosti na výběru konkrétního nástroje může tento seznam obsahovat podkapitoly (v textových souborech), podstránky (ve Wiki) nebo vnořené prvky (v modelovacím nástroji).
 
 * (Volitelně:) důležitá rozhraní, která nejsou vysvětlena v black-box šablonách stavebního bloku, ale jsou velmi důležitá pro pochopení popisovaného white-boxu.
@@ -84,7 +84,7 @@ Pokud použijete tabulkovou formu, popište black-boxy pouze jménem a odpovědn
 | _<black-box 2>_ | _<Text>_
 |===
 
-Pokud použijete seznam popisů jednotlivých black-boxů, vyplňte samostatnou black-box šablonu pro každý důležitý stavební blok. 
+Pokud použijete seznam popisů jednotlivých black-boxů, vyplňte samostatnou black-box šablonu pro každý důležitý stavební blok.
 Její titulek je název black-boxu.
 ****
 endif::arc42help[]
@@ -98,7 +98,7 @@ Popište <black-box 1> podle následující black-box šablony:
 
 * Účel/Odpovědnost
 * Rozhraní, pokud nejsou vyjmuta jako samostatné odstavce. Případně sem patří nároky na kvalitu a výkonnostní rozhraní.
-* (Volitelně) Popis požadavků na kvalitu/výkon black-boxu, např. dostupnost, runtime vlastnosti, ….
+* (Volitelně) Popis požadavků na kvalitu/výkon black-boxu, například dostupnost, runtime vlastnosti, ….
 * (Volitelně) Umístění/složky a soubory
 * (Volitelně) Splněné požadavky (pokud potřebujete dohledat vztah k požadavkům).
 * (Volitelně) Nevyřešené body/problémy/rizika

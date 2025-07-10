@@ -8,39 +8,40 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Tato část obsahuje všechny požadavky na kvalitu jako strom kvality se scénáři. Ty nejdůležitější již byly popsány v části 1.2. (kvalitativní cíle pro architekturu)
+Tato kapitola shrnuje všechny relevantní požadavky na kvalitu.
 
-Zde můžete také zachytit požadavky na kvalitu s nižší prioritou, jejichž neúplné dosažení nevytvoří pro systém vysoká rizika.
+Nejdůležitější z těchto požadavků již byly popsány v kapitole 1.2 (kvalitativní cíle), a proto by zde měly být pouze odkázány.  
+V této kapitole (10) je vhodné zaznamenat i méně důležité požadavky na kvalitu, jejichž nesplnění nepředstavuje zásadní riziko, ale které mohou být užitečné či žádoucí (_nice-to-have_).
 
 .Motivace
-Protože požadavky na kvalitu mají na architekturu velký vliv, je důležité vědět, co je pro strany zainteresované na systému skutečně důležité, a to v konkrétní a měřitelné podobě.
-
+Požadavky na kvalitu mají výrazný vliv na architektonická rozhodnutí. Je proto důležité znát kvalitativní očekávání zainteresovaných stran, a to konkrétně a měřitelně.
 
 .Další informace
 
-Anglická dokumentace arc42: https://docs.arc42.org/section-10/[Quality Requirements].
+* Dokumentace arc42: https://docs.arc42.org/section-10/[Quality Requirements]  
+* Model kvality Q42: https://quality.arc42.org
 
 ****
 endif::arc42help[]
 
-=== Strom kvality
+=== Přehled požadavků na kvalitu
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Strom kvality (jak je definován v ATAM – Architecture Tradeoff Analysis Method) se scénáři kvality/hodnocení jako jednotlivými listy.
-(Dle Carnegie Mellon University: https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=513908[ATAM]).
-
+Stručný přehled požadavků na kvalitu.
 
 .Motivace
-Stromová struktura s prioritami poskytuje přehled o někdy velkém množství požadavků na kvalitu.
+V praxi se často setkáváme s desítkami či stovkami požadavků na kvalitu.  
+Tento přehled by měl nabídnout jejich kategorizaci či shrnutí – například dle standardu https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] nebo podle https://quality.arc42.org[modelu Q42].
+
+Pokud je tento přehled dostatečně konkrétní, specifický a měřitelný, může být část 10.2 vynechána.
 
 .Forma
-* stromovité rozvinutí pojmu "kvalita". Jako kořen (základ) použijte "kvalitu" nebo "užitečnost".
-* "mind map" s kategoriemi kvality jako hlavními větvemi
-
-V každém případě by strom měl obsahovat odkazy na scénáře popsané v následující části dokumentace.
+Použijte jednoduchou tabulku, kde každý řádek reprezentuje kategorii nebo typ požadavku na kvalitu spolu s krátkým popisem.  
+Alternativně lze využít mind map pro vizuální strukturování požadavků.  
+V literatuře se také vyskytuje pojem _strom kvalitativních atributů_ (_Quality Attribute Utility Tree_), který rozvíjí pojem „kvalita“ jako kořenový uzel stromu s větvemi představujícími konkrétní požadavky.
 
 ****
 endif::arc42help[]
@@ -51,23 +52,39 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Konkretizace (někdy vágních nebo implicitních) požadavků na kvalitu pomocí scénářů kvality.
+Scénáře kvality konkretizují požadavky na kvalitu a umožňují ověřit, zda byly splněny (například pomocí akceptačních kritérií).  
+Scénáře by měly být jednoznačné a měřitelné.
 
-Tyto scénáře popisují, co by se mělo stát, když do systému dorazí vnější podnět.
+Dva typy scénářů jsou obzvláště užitečné:
 
-Pro architekty jsou důležité zejména dva druhy scénářů:
+* _Scénáře použití_ (též aplikační nebo provozní scénáře) popisují chování systému v reakci na určitý podnět v runtime – včetně výkonnosti, odezvy apod.  
+Příklad: Systém odpoví na požadavek uživatele do jedné sekundy.
 
-* Scénáře použití (také nazývané aplikační scénáře) popisují reakci systému na určitý podnět. Patří sem také scénáře, které popisují efektivitu nebo výkon systému. 
-Příklad: Systém zareaguje na požadavek uživatele do jedné sekundy.
-* Scénáře změn popisují úpravy systému nebo jeho bezprostředního okolí. Příklad: Je implementována další funkce nebo se mění požadavky na kvalitu.
-
-.Motivace
-Scénáře konkretizují požadavky na kvalitu a umožňují je snadněji měřit nebo rozhodovat, zda jsou splněny.
-
-Zejména pokud je potřeba architekturu posoudit pomocí metod jako je ATAM, je nutné popsat kvalitativní cíle (z kapitoly 1.2)
-přesněji až na úroveň jednotlivých scénářů, které lze diskutovat a vyhodnocovat.
+* _Scénáře změn_ popisují chování systému při jeho úpravách nebo rozšiřování, případně změnách okolního prostředí.  
+Příklad: Do systému je doplněna nová funkce, mění se požadavek na kvalitu a měří se náročnost změny.
 
 .Forma
-Tabulka nebo text.
+Typická struktura scénáře může mít dvě podoby:
+
+* **Krátká forma** (upřednostňuje ji model Q42):
+* **Kontext**: O jaký systém nebo komponentu se jedná? Jaké je okolí nebo situace?
+* **Zdroj/Podnět**: Kdo nebo co spouští chování nebo reakci systému?
+* **Kritérium/Metoda ověření**: Jak poznáme, že je požadavek splněn? (metrika, měřitelný výstup)
+
+* **Dlouhá forma** (používaná v SEI, např. [Bass+21]):
+* **ID scénáře**
+* **Název scénáře**
+* **Zdroj** (uživatel, systém, událost)
+* **Podnět**
+* **Provozní prostředí**
+* **Artefakt** (část systému, která je podnětem ovlivněna)
+* **Odezva**
+* **Metrika odezvy** (kritérium pro hodnocení odezvy systému)
+
+.Příklady
+Viz https://quality.arc42.org[model kvality Q42] pro detailní ukázky scénářů.
+
+.Další informace
+* Len Bass, Paul Clements, Rick Kazman: _Software Architecture in Practice_, 4. vydání, Addison-Wesley, 2021.
 ****
 endif::arc42help[]

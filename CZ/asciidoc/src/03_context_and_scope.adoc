@@ -14,7 +14,7 @@ Tím se specifikují externí rozhraní (interface) systému a určí zodpovědn
 V případě potřeby odlište firemní kontext (doménově specifické vstupy a výstupy) od technického kontextu (kanály, protokoly, hardware).
 
 .Motivace
-Doménová a technická komunikační rozhraní patří mezi nejdůležitější aspekty systému. 
+Doménová a technická komunikační rozhraní patří mezi nejdůležitější aspekty systému.
 Ujistěte se, že jim zcela rozumíte.
 
 .Forma
@@ -32,13 +32,13 @@ Anglická dokumentace arc42: https://docs.arc42.org/section-3/[Context and Scope
 ****
 endif::arc42help[]
 
-=== Firemní kontext 
+=== Firemní kontext
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Specifikace *všech* komunikačních partnerů systému (uživatelů, IT systémů, …) s vysvětlením doménově specifických vstupů a výstupů nebo rozhraní. 
+Specifikace *všech* komunikačních partnerů systému (uživatelů, IT systémů, …) s vysvětlením doménově specifických vstupů a výstupů nebo rozhraní.
 Podle potřeby můžete přidat doménově specifické datové formáty nebo komunikační protokoly.
 
 .Motivace
@@ -57,7 +57,7 @@ endif::arc42help[]
 
 **<(volitelně:) vložte vysvětlení externích doménových rozhraní>**
 
-=== Technický kontext 
+=== Technický kontext
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -66,7 +66,7 @@ ifdef::arc42help[]
 Technická rozhraní (kanály a přenosová média) propojující váš systém s jeho okolím. Navíc mapování doménově specifického vstupu/výstupu na tyto kanály, tj. vysvětlení, která doménová data používají který kanál.
 
 .Motivace
-Mnoho zainteresovaných stran činí architektonická rozhodnutí na základě technických rozhraní mezi systémem a jeho okolím. 
+Mnoho zainteresovaných stran činí architektonická rozhodnutí na základě technických rozhraní mezi systémem a jeho okolím.
 Zejména při výběru infrastruktury nebo hardwaru jsou tato technická rozhraní rozhodující.
 
 .Forma
