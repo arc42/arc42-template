@@ -19,7 +19,7 @@ Požadavky na kvalitu mají výrazný vliv na architektonická rozhodnutí. Je p
 .Další informace
 
 * Dokumentace arc42: https://docs.arc42.org/section-10/[Quality Requirements]  
-* Model kvality Q42: https://quality.arc42.org
+* Model kvality Q42: https://quality.arc42.org[Q42 quality model na https://quality.arc42.org].
 
 ****
 endif::arc42help[]

@@ -53,7 +53,7 @@ Nepleťte si je s cíli projektu, ty nemusí být nutně totožné.
 
 Norma ISO 25010 poskytuje přehled jednotlivých oblastí:
 
-image::01_2_iso-25010-topics-EN.drawio.png["Kategorie kvalitativních cílů"]
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Kategorie kvalitativních cílů"]
 
 .Motivace
 Je vhodné znát kvalitativní cíle klíčových zainteresovaných stran systému, protože ty ovlivní zásadní architektonická rozhodnutí.
