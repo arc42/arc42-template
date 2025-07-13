@@ -14,10 +14,10 @@ Seznam známých technických rizik nebo technických dluhů seřazený podle je
 „Řízení rizik je řízení projektu pro dospělé.“
 -- Tim Lister, Atlantic Systems Guild
 
-Tak by mělo znít motto pro systematické zjišťování a hodnocení rizik a technických dluhů v architektuře, které potřebují znát zainteresované strany z oblasti managementu (např. projektoví manažeři, vlastníci produktu - (Product Owner)) jako součást celkové analýzy rizik.
+Tak by mělo znít motto pro systematické zjišťování a hodnocení rizik a technických dluhů v architektuře, které potřebují znát zainteresované strany z oblasti managementu (například projektoví manažeři, vlastníci produktu - (Product Owner)) jako součást celkové analýzy rizik.
 
 .Forma
-Seznam rizik a/nebo technických dluhů, pravděpodobně včetně navrhovaných opatření k jejich minimalizaci, zmírnění nebo vyloučení. 
+Seznam rizik a/nebo technických dluhů, pravděpodobně včetně navrhovaných opatření k jejich minimalizaci, zmírnění nebo vyloučení.
 
 
 .Další informace

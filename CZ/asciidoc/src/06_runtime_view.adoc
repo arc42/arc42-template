@@ -11,7 +11,7 @@ ifdef::arc42help[]
 Perspektiva runtime popisuje konkrétní chování a interakce stavebních bloků systému ve formě scénářů v následujících oblastech:
 
 
-* důležité procesy nebo funkce: jak je stavební bloky systému provádějí? 
+* důležité procesy nebo funkce: jak je stavební bloky systému provádějí?
 * interakce na kritických externích rozhraních: jak spolupracují stavební bloky s uživateli a sousedními systémy?
 * provoz a administrace: prvotní konfigurace, spuštění, zastavení
 * scénáře pro chyby a výjimky
@@ -19,16 +19,16 @@ Perspektiva runtime popisuje konkrétní chování a interakce stavebních blok�
 Poznámka: Hlavním kritériem pro výběr dokumentovaných scénářů (sekvencí, pracovních postupů) je jejich *význam pro architekturu*. Není cílem popisovat velké množství scénářů, ale raději *reprezentativní* výběr.
 
 .Motivace
-Měli byste rozumět tomu, jak stavební bloky systému (nebo jejich instance) vykonávají svoji práci a jak spolu komunikují za běhu.
+Je důležité rozumět tomu, jak stavební bloky systému (nebo jejich instance) vykonávají svoji práci a jak spolu komunikují za běhu.
 Ve této části dokumentace popište především scénáře, kterými architekturu vysvětlíte těm stranám zainteresovaným na systému, které jsou méně ochotné nebo schopné číst a chápat statické modely (perspektivu stavebních bloků, perspektivu nasazení softwaru).
 
 .Forma
-Existuje mnoho notací pro popis scénářů, např.
+Existuje mnoho notací pro popis scénářů, například
 
 * očíslovaný seznam jednotlivých kroků (jako text)
 * diagramy aktivit nebo vývojové diagramy (flow chart)
 * sekvenční diagramy
-* Business Process Model and Notation (BPMN) nebo Event-driven Process Chain (EPC) 
+* Business Process Model and Notation (BPMN) nebo Event-driven Process Chain (EPC)
 * konečné automaty nebo přechodové systémy
 * ...
 
