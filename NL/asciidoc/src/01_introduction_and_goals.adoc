@@ -57,7 +57,7 @@ Niet te verwarren met project doelen.
 
 Overweeg dit overzicht met mogelijke onderwerpen (gebaseerd op de ISO 25010 standaard):
 
-image::01_2_iso-25010-topics-EN.png["Categorieen van mogelijke Kwaliteits Requirements"]
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Categorieen van mogelijke Kwaliteits Requirements"]
 
 .Motivatie
 Het is belangrijk de kwaliteits doelen van je belangrijkste belanghebbenden te kennen omdat deze invloed hebben op fundamentele architectuur keuzes.

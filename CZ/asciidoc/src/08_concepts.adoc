@@ -11,7 +11,7 @@ ifdef::arc42help[]
 Tato část dokumentace popisuje přesahující principy, předpisy a řešení, které jsou relevantní pro více částí systému (= průřezové).
 Takové koncepty se často týkají více stavebních bloků.
 
-Může zahrnovat mnoho různých témat, jako např.
+Může zahrnovat mnoho různých témat, jako například
 
 * modely, zejména doménové modely
 * architekturu nebo designové vzory
@@ -23,7 +23,7 @@ Může zahrnovat mnoho různých témat, jako např.
 Koncepty tvoří základ _konceptuální integrity_ (konzistence, homogenity) softwarové architektury.
 Jsou tedy důležitým příspěvkem k dosažení vnitřní kvality vyvíjeného systému.
 
-Některé z těchto konceptů nelze přiřadit k jednotlivým stavebním blokům, např. zabezpečení.
+Některé z těchto konceptů nelze přiřadit k jednotlivým stavebním blokům, například zabezpečení.
 
 .Forma
 Forma může být různá:
@@ -31,7 +31,7 @@ Forma může být různá:
 * koncepční dokumenty s jakoukoliv strukturou
 * průřezové modely nebo scénáře, které jsou již využity v jednotlivých perspektivách architektury
 * vzorové implementace, zejména pro technické koncepty
-* odkaz na "typické" používání standardních frameworků (např. používání Hibernate pro objektové/relační mapování)
+* odkaz na "typické" používání standardních frameworků (například používání Hibernate pro objektové/relační mapování)
 
 .Struktura
 Potenciální (nikoli však povinná) struktura pro tento oddíl dokumentace může být:

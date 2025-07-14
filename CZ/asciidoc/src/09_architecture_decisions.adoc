@@ -12,7 +12,7 @@ Důležitá, drahá, rozsáhlá nebo riskantní rozhodnutí o architektuře vče
 „Rozhodnutím“ rozumíme výběr jedné nebo více alternativ na základě daných kritérií.
 
 Uvažte, zda má být architektonické rozhodnutí zdokumentována zde v této centrální sekci, nebo zda je lepší je zdokumentovat lokálně
-(např. v šabloně white-box konkrétního stavebního bloku).
+(například v šabloně white-box konkrétního stavebního bloku).
 
 
 Vyvarujte se opakovaní.

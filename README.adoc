@@ -4,16 +4,12 @@
 
 image:https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg[https://vshymanskyy.github.io/StandWithUkraine]
 
-arc42 - the template for effective, practical and pragmatic software architecture
-documentation and communication.
+arc42 - the template for effective, practical and pragmatic software architecture documentation and communication.
 
-Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...),
-free and open source.
+Initially created by Dr. Gernot Starke and Dr. Peter Hruschka (way back in 2005...), free and open source.
 
 
-This repository contains all downloadable versions plus the (AsciiDoc)
-source of the arc42 template.
-
+This repository contains the (AsciiDoc) source of the arc42 template.
 
 It is used...
 
@@ -24,6 +20,11 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* 9.0: April 2025: 
+  ** Clarified and re-structured section 10 (Quality Requirements) to include overview (10.1) and details (10.2). 
+  ** Unified concept-image in section 8. 
+  ** Unified usage of revision number by adding version.properties file to every language. 
+  ** Reworked the local build to facilitate translations
 * 8.2: Jan 28th 2023: Thx to A. Bentele, added imagedir def to all files, for easier editing asciidoc. See #178
 
 == Diagrams
@@ -38,31 +39,202 @@ Therefore we will gradually remove all files under `./graphics-originals`
 
 == Downloads
 
-Please refer to the https://arc42.org/download[official download page] for
-all downloads.
+Please refer to the https://arc42.org/download[official download page] for all downloads.
 
 == Languages
 
 The EN and DE versions are actively maintained by the founders (G.Starke & P.Hruschka).
 Translations to additional languages (see below) have been provided by volunteers, but won't be automatically updated.
 
-== Build the HTML version 
+The following languages are currently available:
+[cols="1,1,1", options="header"]
+|===
+| Language | Translator | Available Since
 
-In case you want to build the HTML version of the template, just checkout this repo and call
+| Czech (CZ)
+| jakub_rc <jakub.tomisek@gmail.com>
+| 2022-10-12
+
+| Dutch (NL)
+| mv <verburg.maarten@gmail.com> 
+| 2022-05-01
+
+| **English (EN)**
+| Gernot Starke, Peter Hruschka (founders)
+| 2005
+
+| Spanish (ES)
+| Isidoro (isidoro.trevino@vintec.mx)
+| 2017-09-19
+
+| French (FR)
+| Damien Lucas (d.lucas@groupeonepoint.com) 
+| 2023-06-05
+
+| **German (DE)**
+| Gernot Starke, Peter Hruschka (founders)
+| 2005
+
+| Italian (IT)
+| Mario Giustiniani (mariogiustiniani@gmail.com)
+| 2021-04-04
+
+| Dutch (NL)
+| Maarten Verburg (verburg.maarten@gmail.com)
+| 2022-05-01
+
+| Portuguese (PT)
+| Guilherme Weizenmann (g.weizenmann@gmail.com)
+| 2024-09-10
+
+| Russian (RU)
+| Various contributors, <nerilin@cinimex.ru>, max.arshinov@gmail.com
+| 2018-11-14
+
+| Ukrainian (UKR)
+| Ivan Bulyk, Larysa Visengeriyeva (visenger@gmail.com)
+| 2024-11-10  
+
+|===
+
+== Build a Local Version 
+
+In case you want to build the HTML or PDF version of the template on your local, just checkout this repo and call
 
 ----
-$> gradle asciidoctor
+$> gradle
 ----
 
 on the command line.
-To select another language set the Gradle build property `LANGUAGE` to one of the provided languages, cf.
+To select another language set the Gradle build property `languages` in the file `gradle.properties` to one of the provided languages (e.g. DE, EN, ES, IT, NL etc).
 
 [source, java]
 ----
 include::gradle.properties[]
 ----
 
-Currently (March 2022) you need to use **Java 8** to build!
+
+### Directory Structure
+
+The build process assumes the following directory structure:
+
+```
+<root>/
+  ├── DE/                     // German language files
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for German
+  │         └── src/             // Included files
+  │    └── version.properties    // version information for German
+  │
+  ├── EN/                     // English language files 
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for English
+  │         └── src/             // Included files
+  │    └── version.properties    // version information for English
+  │
+  ├── images/                // Shared images for all languages
+  │    └── *.png, *.jpg, etc.   // Image files
+  │ 
+  └── build/                  // Generated output
+       ├── DE/                  // German output
+       │    ├── html/           // HTML output
+       │    └── pdf/            // PDF output
+       │
+       └── EN/                  // English output
+            ├── html/           // HTML output
+            └── pdf/            // PDF output
+  ├── <LC>/                     // language files for language <LC>
+  │    └── asciidoc/            // AsciiDoc source files
+  │         ├── arc42-template.adoc  // Main document for <LC>
+  │         └── src/             // Included files
+  │    └── version.properties    // version information for <LC>
+```
+
+## Requirements
+
+- Java 11 or newer
+- Gradle 8.0 or newer (or use the included Gradle wrapper)
+
+## Configuration
+
+Language configuration is done in the `gradle.properties` file:
+
+```properties
+# Configure languages to be built (comma-separated list)
+languages=DE
+```
+
+The project name is set to 'arc42-template' in the settings.gradle file.
+
+You can add multiple languages by separating them with commas:
+
+```properties
+languages=DE,EN,FR
+```
+
+
+### Clean the build directory
+
+```bash
+./gradlew clean
+```
+
+### Build all formats for all configured languages
+
+```bash
+./gradlew
+```
+
+or
+
+```bash
+./gradlew asciidoctorAll
+```
+
+### Build only HTML for all configured languages
+
+```bash
+./gradlew asciidoctorHtmlAll
+```
+
+### Build only PDF for all configured languages
+
+```bash
+./gradlew asciidoctorPdfAll
+```
+
+### Build specific language in HTML format
+
+```bash
+./gradlew asciidoctorHtmlDE
+```
+
+Replace `DE` with the desired language code.
+
+### Build specific language in PDF format
+
+```bash
+./gradlew asciidoctorPdfDE
+```
+
+Replace `DE` with the desired language code.
+
+## Output
+
+Generated documentation will be available in the build directory:
+
+- HTML: `build/<LANGUAGE>/html/`
+- PDF: `build/<LANGUAGE>/pdf/`
+
+For example, German (DE) documentation would be in:
+- `build/DE/html/arc42-template.html`
+- `build/DE/pdf/arc42-template.pdf`
+
+## Adding a New Language
+
+1. Add the language code to the `languages` property in `gradle.properties`
+2. Create the necessary AsciiDoc source files for the new language
+3. Run the build
 
 
 == Questions on using arc42?

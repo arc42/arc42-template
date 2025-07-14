@@ -1,6 +1,6 @@
-// asciidoc settings for EN (English)
+// asciidoc settings for IT (Italian)
 // ==================================
-:toc-title: table of contents
+:toc-title: indice
 
 // enable table-of-contents
 :toc:

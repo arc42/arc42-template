@@ -12,7 +12,7 @@ Nejdůležitější doménové a technické termíny, které zainteresované str
 Pokud pracujete ve vícejazyčných týmech, můžete glosář používat jako zdroj překladů.
 
 .Motivace
-Měli byste jasně definovat důležité pojmy, aby všechny zainteresované strany
+Je důležité jasně definovat klíčové pojmy, aby všechny zainteresované strany
 
 * chápaly tyto pojmy stejně
 * a aby neexistovalo pro jednu a stejnou věc více variant

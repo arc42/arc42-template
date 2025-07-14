@@ -6,14 +6,14 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Popisuje nejdůležitější požadavky a omezení, které musí softwaroví architekti a vývojový tým zvážit.
-Tyto zahrnují
+Shrnuje klíčové požadavky a omezení, se kterými musí softwaroví architekti i vývojový tým počítat.  
+Patří sem zejména:
 
-* základní podnikatelské cíle,
-* základní vlastnosti systému, 
-* funkční požadavky na systém, 
-* kvalitativní cíle pro architekturu,
-* strany zainteresované na systému (Stakeholder) a jejich potřeby
+* hlavní obchodní cíle,
+* základní vlastnosti systému,
+* funkční požadavky,
+* kvalitativní cíle architektury,
+* zainteresované strany systému (stakeholder) a jejich potřeby.
 ****
 endif::arc42help[]
 
@@ -23,14 +23,14 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Krátký popis (shrnutí nebo abstrakt) funkčních i kvalitativních požadavků. 
+Stručný popis (shrnutí či abstrakt) funkčních i kvalitativních požadavků.
 Odkaz na (doufejme existující) dokumentaci požadavků (s číslem verze a informacemi, kde ji najít).
 
 .Motivace
-Z hlediska koncových uživatelů je cílem vývoje nebo změny systému zlepšení jeho funkcí k naplňovaní podnikatelské činnosti a/nebo zlepšení jeho kvality.
+Z hlediska koncových uživatelů je cílem vývoje nebo změny systému zlepšení jeho funkcí k plnění obchodních cílů a/nebo zlepšení jeho kvality.
 
 .Forma
-Krátký popis, pravděpodobně ve formátu tabulkového přehledu funkcí (use-case). 
+Stručný popis, pravděpodobně ve formátu tabulkového přehledu funkcí (use-case).
 Pokud existují dokumenty požadavků, měl by na ně tento přehled odkazovat.
 
 Udržujte tento popis co nejkratší (z hlediska čitelnosti), ale tak aby nebyly zbytečně opakovány informace z dokumentace požadavků.
@@ -48,29 +48,29 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Tři (maximálně pět) nejdůležitějších kvalitativních cílů pro architekturu, jejichž splnění je pro hlavní zainteresované strany nejdůležitější. Opravdu máme na mysli kvalitativní cíle pro architekturu. 
+Tři (maximálně pět) nejdůležitějších kvalitativních cílů pro architekturu, jejichž splnění je pro hlavní zainteresované strany nejdůležitější. Jedná se skutečně o kvalitativní cíle pro architekturu.
 Nepleťte si je s cíli projektu, ty nemusí být nutně totožné.
 
 Norma ISO 25010 poskytuje přehled jednotlivých oblastí:
 
-image::01_2_iso-25010-topics-EN.drawio.png["Kategorie kvalitativních cílů"]
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Kategorie kvalitativních cílů"]
 
 .Motivace
-Měli byste znát kvalitativní cíle nejdůležitějších stran zainteresovaných na systému, protože ty ovlivní zásadní architektonická rozhodnutí. 
-Ujistěte se, že jsou tyto požadavky na systém jednoznačné (nebo měřitelné), vyhněte se obecným frázím.
+Je vhodné znát kvalitativní cíle klíčových zainteresovaných stran systému, protože ty ovlivní zásadní architektonická rozhodnutí.
+Ujistěte se, že jsou tyto požadavky na systém jednoznačné či měřitelné, vyvarujte se vágních formulací.
 
 .Forma
-Tabulka s nejdůležitějšími kvalitativními cíli a konkrétními scénáři, seřazená podle priorit.
+Tabulka s nejdůležitějšími kvalitativními cíli a praktickými scénáři, seřazená podle priorit.
 ****
 endif::arc42help[]
 
-=== Strany zainteresované na systému (Stakeholder)
+=== Strany zainteresované na systému (stakeholder)
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Obsah
-Explicitní přehled všech stran zainteresovaných na systému, tedy všech osob, rolí nebo organizací, které
+Jasný přehled všech stran zainteresovaných na systému, tedy všech osob, rolí nebo organizací, které
 
 * by měli architekturu znát,
 * by měli s architekturou souhlasit,
@@ -79,8 +79,8 @@ Explicitní přehled všech stran zainteresovaných na systému, tedy všech oso
 * rozhodují o vývoji a designu systému.
 
 .Motivace
-Měli byste znát všechny strany zapojené do vývoje systému (nebo systémem ovlivněné). V opačném případě se můžete později v procesu vývoje dočkat nepříjemných překvapení. 
-Tyto zainteresované strany určují rozsah a úroveň detailu vaší práce a jejích výsledků.
+Je vhodné znát všechny strany zapojené do vývoje systému (nebo systémem ovlivněné). Jinak se může stát, že se později v procesu vývoje objeví nepříjemná překvapení.
+Zainteresované strany ovlivňují rozsah a úroveň detailu vaší práce a jejích výsledků.
 
 .Forma
 Tabulka s názvy rolí, jmény osob a jejich očekáváním na architekturu a její dokumentaci.

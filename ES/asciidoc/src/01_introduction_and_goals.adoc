@@ -45,9 +45,14 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Contenido
-Las tres metas de calidad principales (o hasta cinco) cuyo cumplimiento sea de la mayor importancia para las
-principales partes interesadas. Nos referimos a las metas de calidad para la arquitectura. No confundir
-con las metas del proyecto. No necesariamente son idénticas.
+Las tres metas de calidad principales (o hasta cinco) cuyo cumplimiento sea de la mayor importancia para las principales partes interesadas. 
+Nos referimos a las metas de calidad para la arquitectura. 
+No confundir con las metas del proyecto. 
+No necesariamente son idénticas.
+
+Considere esta visión general de las categorías de requerimientos de calidad según ISO 25010.
+
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Categorías de Requerimientos de Calidad"]
 
 .Motivación
 Debe conocer las metas de calidad de las partes interesadas más importantes, ya que ellos influenciarán
