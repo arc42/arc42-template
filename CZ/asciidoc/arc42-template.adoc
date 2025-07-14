@@ -14,7 +14,7 @@ include::src/config.adoc[]
 :toc-title: Obsah
 
 //additional style for arc42 help callouts
-include::../../common/styles/arc42-help-style.adoc[]
+include::styles/arc42-help-style.adoc[]
 
 
 

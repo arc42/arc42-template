@@ -14,7 +14,7 @@ include::src/config.adoc[]
 :toc-title: Table des matières
 
 // style supplémentaire pour les appels à l'aide arc42
-include::../../common/styles/arc42-help-style.adoc[]
+include::styles/arc42-help-style.adoc[]
 
 
 
