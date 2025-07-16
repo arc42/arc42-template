@@ -13,7 +13,7 @@ include::src/config.adoc[]
 :toc-title: Contenido
 
 //Estilos adicionales para las llamadas de ayuda de arc42
-include::styles/arc42-help-style.adoc[]
+include::../../common/styles/arc42-help-style.adoc[]
 
 
 
