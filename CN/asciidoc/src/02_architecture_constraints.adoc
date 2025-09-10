@@ -3,7 +3,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-architecture-constraints]]
 == 架构约束
 
-
 ifdef::arc42help[]
 [role="arc42help"]
 ****
@@ -14,7 +13,7 @@ ifdef::arc42help[]
 架构师应该确切知道在设计决策中哪些地方是自由发挥的，哪些地方必须遵守限制。
 限制必须始终被关注；尽管它们可能是可协商的。
 
-.表格
+.形式
 带有解释的约束表。
 如有需要，您可以将其细分为：技术限制、组织和政治限制以及惯例（例如编程或版本控制指南、文档或命名规范）
 

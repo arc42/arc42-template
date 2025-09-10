@@ -6,11 +6,11 @@
 // configure CN settings for asciidoc
 include::src/config.adoc[]
 
-= image:arc42-logo.png[arc42] Template
+= image:arc42-logo.png[arc42] 模板
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
-:toc-title: Table of Contents
+:toc-title: 目录
 
 //additional style for arc42 help callouts
 include::../../common/styles/arc42-help-style.adoc[]
@@ -25,11 +25,10 @@ include::src/about-arc42.adoc[]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-[NOTE]
+[注意]
 ====
-This version of the template contains some help and explanations.
-It is used for familiarization with arc42 and the understanding of the concepts.
-For documentation of your own system you use better the _plain_ version.
+此模板版本包含一些帮助和说明。它用于熟悉arc42以及理解概念。对于您自己的系统文档，您最好使用 _纯文本_ 版本。
+
 ====
 ****
 endif::arc42help[]

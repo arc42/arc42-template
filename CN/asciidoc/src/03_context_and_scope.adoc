@@ -1,80 +1,75 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-context-and-scope]]
-== Context and Scope
+== 上下文和范围
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Context and scope - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
-(neighboring systems and users, i.e. the context of your system). It thereby specifies the external interfaces.
+.内容
+上下文和范围——正如其名所示——界定您的系统（即您的范围）与其所有通信对手方的界限（周边系统和使用者，即您系统的上下文）。因此，它规定了外部接口。如有必要，区分业务上下文（特定领域的输入和输出）与技术上下文（通道、协议、硬件）。
 
-If necessary, differentiate the business context (domain specific inputs and outputs) from the technical context (channels, protocols, hardware).
+.起因
+与通信对手方的域接口和技术接口是系统最关键的方面之一。确保你完全理解他们。
 
-.Motivation
-The domain interfaces and technical interfaces to communication partners are among your system's most critical aspects. Make sure that you completely understand them.
+.形式
+有以下集中选择:
 
-.Form
-Various options:
-
-* Context diagrams
-* Lists of communication partners and their interfaces.
+* 下文关系图
+* 通信对手方及其接口列表
 
 
-.Further Information
+.参考资料
 
-See https://docs.arc42.org/section-3/[Context and Scope] in the arc42 documentation.
+参考 arc42 文档中的 https://docs.arc42.org/section-3/[上下文和范围] 
 
 ****
 endif::arc42help[]
 
-=== Business Context
+=== 业务上下文
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Specification of *all* communication partners (users, IT-systems, ...) with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication protocols.
+.内容
+*所有*通信对手方（例如：用户、IT系统等）的规范，并解释特定领域的输入和输出或接口。
+您可以选择添加特定领域的格式或通信协议。
 
-.Motivation
-All stakeholders should understand which data are exchanged with the environment of the system.
+.起因
+所有利益相关方都应该了解哪些数据在系统间流转。
 
-.Form
-All kinds of diagrams that show the system as a black box and specify the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table.
-The title of the table is the name of your system, the three columns contain the name of the communication partner, the inputs, and the outputs.
+.形式
+将系统显示为黑盒并指定与通信对手方的域接口的各种图表。
+或者（或另外）您可以使用一个表格。
+表格的标题是您系统的名称，三列包含通信对手方的名称、输入和输出。
 
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+**<图或者表>**
 
-**<optionally: Explanation of external domain interfaces>**
+**<可选：外部域名接口说明>**
 
-=== Technical Context
+=== 技术上下文
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation which I/O uses which channel.
+.内容
+技术接口（通道和传输介质）将您的系统与其环境连接起来。此外，将特定领域的输入/输出映射到通道上，即解释哪些输入/输出使用哪些通道。
 
-.Motivation
-Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
+.起因
+许多利益相关方根据系统及其环境之间的技术接口做出架构决策。尤其是基础设施或硬件设计师决定这些技术接口。
 
-.Form
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels and input/output.
+.形式
+例如，描述通道到相邻系统的UML部署图，以及一个展示通道与输入/输出之间关系的映射表。
 
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+**<图或者表>**
 
-**<optionally: Explanation of technical interfaces>**
+**<可选：技术接口说明>**
 
-**<Mapping Input/Output to Channels>**
+**<输入、输出与通道之间的映射关系>**
