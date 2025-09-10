@@ -9,7 +9,6 @@ ifdef::arc42help[]
 描述软件架构师和开发团队必须考虑的相关要求和起因。
 这些包括
 
-
 * 潜在的商业目标, 
 * 基础功能, 
 * 基础功能需求, 
@@ -37,7 +36,6 @@ ifdef::arc42help[]
 .更多信息
 
 参考 arc42 文档中的 https://docs.arc42.org/section-1/[引言与目标].
-
 ****
 endif::arc42help[]
 
@@ -51,47 +49,47 @@ ifdef::arc42help[]
 我们真正指的是架构的质量目标。不要将它们与项目目标混淆，二者不一定相同.
 
 
-考虑以下潜在主题概述 (基于 ISO 25010 standard):
+考虑以下潜在主题概述 (基于 ISO 25010 标准):
 
-image::01_2_iso-25010-topics-EN-2023.drawio.png["Categories of Quality Requirements"]
+image::01_2_iso-25010-topics-CN-2023.drawio.png["质量需求类别"]
 
 .起因
-You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 
-Make sure to be very concrete about these qualities, avoid buzzwords.
-If you as an architect do not know how the quality of your work will be judged...
+你应该了解你最重要的利益相关者的质量目标，因为它们将影响基本的架构决策。
+确保对这些质量非常具体，避免使用流行语。
+你作为一个架构师,你应当清楚你的工作质量将如何被评判...
 
 .表格
-A table with quality goals and concrete scenarios, ordered by priorities
+按优先级排序的质量目标与具体场景表格
 ****
 endif::arc42help[]
 
-=== Stakeholders
+=== 干系人
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
+.内容
+明确概述系统的利益相关者，即所有个人、角色或组织，包括但不限于：
 
-* should know the architecture
-* have to be convinced of the architecture
-* have to work with the architecture or with code
-* need the documentation of the architecture for their work
-* have to come up with decisions about the system or its development
+* 应当了解架构的人
+* 必须信任架构的人
+* 必须依赖架构或代码开展工作的人
+* 依赖架构文档工作的人
+* 对系统或系统的开发必须做决策的人
 
-.Motivation
-You should know all parties involved in development of the system or affected by the system.
-Otherwise, you may get nasty surprises later in the development process.
-These stakeholders determine the extent and the level of detail of your work and its results.
+.起因
+您应该了解参与系统开发或受系统影响的所有各方,否则在开发过程的后期，您可能会遇到令人讨厌的惊喜。
+这些利益相关者决定您工作的范围和详细程度及其结果。
 
-.Form
-Table with role names, person names, and their expectations with respect to the architecture and its documentation.
+.表格
+包含角色名称、人名以及他们对架构及文档的期望的表格。
+
 ****
 endif::arc42help[]
 
 [options="header",cols="1,2,2"]
 |===
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|角色/名字|关系|期望
+| _<角色1>_ | _<关系1>_ | _<期望1>_
+| _<角色2>_ | _<关系2>_ | _<期望2>_
 |===
