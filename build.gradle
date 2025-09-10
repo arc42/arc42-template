@@ -117,9 +117,17 @@ languages.each { language ->
             'lang': language.toLowerCase() // Set the language code
         ]
         
+         //In order to render non-Latin languages (like Chinese) correctly in pdf
+        if (language == 'CN') {
+            attributes asciidocAttributes + [
+                'pdf-theme': file('pdf-theme/arc42-theme.yml').absolutePath, 
+                'pdf-fontsdir': file('pdf-theme/fonts').absolutePath,
+            ]
+        }
         doLast {
             println "PDF conversion completed for ${language} (v${versionInfo.revnumber})"
             println "  Output: ${outputDir}"
+            println "  asciidocAttributes: ${asciidocAttributes}"
         }
     }
 }

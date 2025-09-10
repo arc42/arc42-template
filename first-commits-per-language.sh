@@ -5,7 +5,7 @@
 
 # Define the array of language codes
 # Edit this array as needed for your repository
-languages=("DE" "EN" "ES" "PT" "NL" "CZ" "IT" "RU" "UKR" "FR")
+languages=("DE" "EN" "ES" "PT" "NL" "CZ" "IT" "RU" "UKR" "FR" "CN")
 
 # Print header of markdown table
 echo "| Language | First Commit Date | Author |"
