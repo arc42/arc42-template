@@ -1,34 +1,30 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-solution-strategy]]
-== Solution Strategy
+== 解决方案策略
 
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes
+.内容
+对形成系统架构的基本决策和解决方案策略的简短总结和解释。包括：
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* 技术决策
+* 关于系统顶层分解的决策，例如使用架构模式或设计模式
+* 关于如何实现关键质量目标的决策
+* 相关组织决策，例如选择一个开发流程或将某些任务委托给第三方。
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
+.起因
+这些决策构成了架构的基石。它们是许多其他详细决策或实施规则的基础。
 
-.Form
-Keep the explanations of such key decisions short.
+.形式
+做出的决策的起因，以及为什么做出这样的决定，
+基于问题陈述、质量目标和关键约束。请参阅以下章节中的详细信息（第5节是结构细节，第8节是交叉概念）。
 
-Motivate what was decided and why it was decided that way,
-based upon problem statement, quality goals and key constraints.
-Refer to details in the following sections.
+.参考资料
 
-
-.Further Information
-
-See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
+参考 arc42 文档中的 https://docs.arc42.org/section-4/[解决方案策略] 
 
 ****
 endif::arc42help[]
