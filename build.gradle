@@ -1,6 +1,6 @@
 plugins {
-    id 'org.asciidoctor.jvm.convert' version '3.3.2'
-    id 'org.asciidoctor.jvm.pdf' version '3.3.2'
+    id 'org.asciidoctor.jvm.convert' version '4.0.5'
+    id 'org.asciidoctor.jvm.pdf' version '4.0.5'
 }
 
 // Read language settings from gradle.properties
@@ -8,6 +8,7 @@ def languages = project.findProperty('languages')?.split(',')?.collect { it.trim
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
 }
 
 tasks.withType(org.asciidoctor.gradle.jvm.AsciidoctorTask) {
@@ -78,11 +79,11 @@ languages.each { language ->
     
     // Define HTML conversion task for this language
     tasks.register("asciidoctorHtml${language}", org.asciidoctor.gradle.jvm.AsciidoctorTask) {
-        sourceDir file("${language}/asciidoc")
+        sourceDir = file("${language}/asciidoc")
         sources {
             include 'arc42-template.adoc'
         }
-        outputDir file("build/${language}/html")
+        outputDir = file("build/${language}/html")
         baseDirFollowsSourceDir()
         
         attributes asciidocAttributes + [
@@ -101,11 +102,11 @@ languages.each { language ->
     
     // Define PDF conversion task for this language
     tasks.register("asciidoctorPdf${language}", org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask) {
-        sourceDir file("${language}/asciidoc")
+        sourceDir = file("${language}/asciidoc")
         sources {
             include 'arc42-template.adoc'
         }
-        outputDir file("build/${language}/pdf")
+        outputDir = file("build/${language}/pdf")
         baseDirFollowsSourceDir()
         
         attributes asciidocAttributes + [
@@ -126,8 +127,8 @@ languages.each { language ->
 
 // Create aggregate tasks for all languages
 tasks.register('asciidoctorHtmlAll') {
-    description 'Builds HTML for all configured languages'
-    group 'Documentation'
+    description = 'Builds HTML for all configured languages'
+    group = 'Documentation'
     
     doFirst {
         println "\nStarting HTML generation for all languages"
@@ -143,8 +144,8 @@ tasks.register('asciidoctorHtmlAll') {
 }
 
 tasks.register('asciidoctorPdfAll') {
-    description 'Builds PDF for all configured languages'
-    group 'Documentation'
+    description = 'Builds PDF for all configured languages'
+    group = 'Documentation'
     
     doFirst {
         println "\nStarting PDF generation for all languages"
@@ -160,8 +161,8 @@ tasks.register('asciidoctorPdfAll') {
 }
 
 tasks.register('asciidoctorAll') {
-    description 'Builds HTML and PDF for all configured languages'
-    group 'Documentation'
+    description = 'Builds HTML and PDF for all configured languages'
+    group = 'Documentation'
     
     dependsOn tasks.named('asciidoctorHtmlAll')
     dependsOn tasks.named('asciidoctorPdfAll')
@@ -175,8 +176,8 @@ tasks.register('asciidoctorAll') {
 }
 
 tasks.named('clean') {
-    description 'Deletes the build directory'
-    group 'Build'
+    description = 'Deletes the build directory'
+    group = 'Build'
     
     doLast {
         delete 'build'
