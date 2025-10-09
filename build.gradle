@@ -184,7 +184,7 @@ tasks.register('asciidoctorAll') {
 }
 
 tasks.named('clean') {
-    description== 'Deletes the build directory'
+    description = 'Deletes the build directory'
     group = 'Build'
     
     doLast {
