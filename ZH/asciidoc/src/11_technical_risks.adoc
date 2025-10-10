@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== 风险和技术债务
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.内容
+按优先级排序的已识别技术风险或技术债务列表
+
+.动机
+[quote,Tim Lister，Atlantic Systems Guild]
+风险管理是成年人的项目管理
+
+
+这应该是您系统性检测和评估架构中风险和技术债务的座右铭，管理干系人（例如项目经理、产品负责人）将需要这些信息作为整体风险分析和度量规划的一部分。
+
+.形式
+风险和/或技术债务列表，可能包括建议的措施来最小化、缓解或避免风险或减少技术债务。
+
+
+.更多信息
+
+参见 arc42 文档中的 https://docs.arc42.org/section-11/[风险和技术债务]。
+
+****
+endif::arc42help[]

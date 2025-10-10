@@ -1,0 +1,26 @@
+// asciidoc settings for ZH (Simplified Chinese)
+// ==================================
+//:toc-title: 目录
+
+// enable table-of-contents
+:toc:
+
+// where are images located?
+:imagesdir: ./images
+:arc42help: 
+
+:caution-caption: 注意
+:important-caption: 重要
+:note-caption: 说明
+:tip-caption: 提示
+:warning-caption: 警告
+:appendix-caption: 附录
+:example-caption: 示例
+:figure-caption: 图标
+:table-caption: 表格
+:last-update-label: 最后更新
+
+// :sectnums:  // 启用章节编号（必须开启，否则不显示前缀）
+:!chapter-signifier:
+//:chapter-signifier: ???
+//:chapter-refsig: {chapter-signifier}
