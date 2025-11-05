@@ -22,9 +22,9 @@ ifdef::arc42help[]
 .形式
 各种选择：
 
-* 每个重要决策的 ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[记录架构决策])
+* 每个重要决策的 ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[架构决策记录])
 * 按重要性和后果排序的列表或表格，或：
-* 每个决策单独章节的更详细形式
+每个决策记录都以独立的部分呈现，以体现更多详情
 
 .更多信息
 

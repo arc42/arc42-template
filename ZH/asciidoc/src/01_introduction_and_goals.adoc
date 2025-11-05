@@ -6,8 +6,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-描述软件架构师和开发团队必须考虑的相关要求和动机。
-这些包括
+描述软件架构师和开发团队必须考虑的相关要求和动机,这些包括:
 
 * 潜在的商业目标, 
 * 关键特性，
