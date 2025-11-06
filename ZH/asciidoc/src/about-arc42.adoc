@@ -1,0 +1,14 @@
+:homepage: https://arc42.org
+
+:keywords: 软件架构, 文档, 模板, arc42
+
+:numbered!:
+**关于 arc42**
+
+[role="lead"]
+arc42，软件和系统架构文档模板。
+
+模板版本 {revnumber}。{revremark}，{revdate}
+
+由 Dr. Peter Hruschka、Dr. Gernot Starke 及贡献者创建、维护和版权所有。
+参见 https://arc42.org 。

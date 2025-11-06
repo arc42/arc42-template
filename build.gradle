@@ -11,6 +11,12 @@ repositories {
     gradlePluginPortal()
 }
 
+asciidoctorj {
+    modules {
+        pdf.version = '2.3.19'
+    }
+}
+
 tasks.withType(org.asciidoctor.gradle.jvm.AsciidoctorTask) {
     // Set encoding through the asciidoctorj configuration instead
     asciidoctorj {
@@ -117,7 +123,22 @@ languages.each { language ->
             'revremark': versionInfo.revremark,
             'lang': language.toLowerCase() // Set the language code
         ]
+
+        //load PDF theme YAML file (font files) to render non-Latin languages (like Chinese,Japanese,Korean) correctly in pdf
+        def pdfThemeYmlFile = file("${language}/asciidoc/pdf-theme/${language.toLowerCase()}-theme.yml")
+        if( pdfThemeYmlFile.exists()){
+            println "load pdf theme from ${pdfThemeYmlFile.absolutePath}"
         
+            attributes asciidocAttributes + [
+                'pdf-theme': pdfThemeYmlFile.absolutePath,
+                'pdf-fontsdir': file("${language}/asciidoc/pdf-theme/fonts").absolutePath,
+                // Activates line break rules for CJK languages (specifically Chinese and Japanese).
+                'script': 'cjk', 
+                'text-align': 'left'
+            ]
+            println "asciidocAttributes for ${language}: ${asciidocAttributes}"
+        }
+
         doLast {
             println "PDF conversion completed for ${language} (v${versionInfo.revnumber})"
             println "  Output: ${outputDir}"
