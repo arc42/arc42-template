@@ -20,6 +20,7 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* November 2025: first Chinese version
 * 9.0: July 2025: 
   ** Clarified and re-structured section 10 (Quality Requirements) to include overview (10.1) and details (10.2). 
   ** Unified concept-image in section 8. 
@@ -54,6 +55,10 @@ The following languages are currently available:
 | Czech (CZ)
 | jakub_rc <jakub.tomisek@gmail.com>
 | 2022-10-12
+
+| Chinese (ZH)
+| Chris (Gentle) Y杨 (nodexy@gmail.com) with DannyGe
+| 2025-10-30
 
 | Dutch (NL)
 | mv <verburg.maarten@gmail.com> 
