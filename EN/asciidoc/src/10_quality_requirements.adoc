@@ -100,7 +100,7 @@ The long form of scenarios (favoured by the SEI and [Bass+21]) is more detailed 
 
 
 .Examples
-See https://quality.arc42.org[the Q42 quality model website] for detailes examples of quality requirements.
+See https://quality.arc42.org[the Q42 quality model website] for detailed examples of quality requirements.
 
 .Further Information
 
