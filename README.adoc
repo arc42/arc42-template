@@ -20,7 +20,7 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
-* 9.0: April 2025: 
+* 9.0: July 2025: 
   ** Clarified and re-structured section 10 (Quality Requirements) to include overview (10.1) and details (10.2). 
   ** Unified concept-image in section 8. 
   ** Unified usage of revision number by adding version.properties file to every language. 

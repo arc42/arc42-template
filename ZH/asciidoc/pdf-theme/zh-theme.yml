@@ -1,0 +1,12 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    Noto Sans SC:
+      normal: NotoSansSC-Regular.ttf
+      bold: NotoSansSC-Bold.ttf
+      italic: NotoSansSC-SemiBold.ttf 
+      bold_italic: NotoSansSC-SemiBold.ttf 
+  fallbacks:
+    - Noto Sans SC
+base_font_family: Noto Sans SC
