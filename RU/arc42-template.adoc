@@ -1,0 +1,88 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+// configure EN settings for asciidoc
+include::adoc/config.adoc[]
+
+= image:arc42-logo.png[arc42] Шаблон
+:revnumber: {revnumber}
+:revdate: {revdate}
+:revremark: {revremark}
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Оглавление
+
+//additional style for arc42 help callouts
+include::../common/styles/arc42-help-style.adoc[]
+
+
+include::adoc/about-arc42.adoc[]
+
+// horizontal line
+***
+
+[role="arc42help"]
+****
+[NOTE]
+====
+Эта версия шаблона содержит подсказки и пояснения.
+Используйте для ознакомления с arc42 и понимания концепций.
+Для документирования собственной системы лучше использовать _простую(plain)_ версию.
+
+====
+****
+
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Introduction and Goals
+include::adoc/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Architecture Constraints
+include::adoc/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Context and Scope
+include::adoc/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Solution Strategy
+include::adoc/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Building Block View
+include::adoc/05_building_block_view.adoc[]
+
+<<<<
+// 6. Runtime View
+include::adoc/06_runtime_view.adoc[]
+
+<<<<
+// 7. Deployment View
+include::adoc/07_deployment_view.adoc[]
+
+<<<<
+// 8. Concepts
+include::adoc/08_concepts.adoc[]
+
+<<<<
+// 9. Architecture Decisions
+include::adoc/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Quality Requirements
+include::adoc/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Technical Risks
+include::adoc/11_technical_risks.adoc[]
+
+<<<<
+// 12. Glossary
+include::adoc/12_glossary.adoc[]
+
+

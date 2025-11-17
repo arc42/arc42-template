@@ -82,41 +82,57 @@ println ""
 // Create HTML and PDF tasks for each configured language
 languages.each { language ->
     def versionInfo = allVersionInfo[language]
-    
+
+    def sourceDirFile
+    def imagesDirAttr
+    def pdfThemeBaseDir
+
+    if (language in ['DE', 'EN', 'CZ', 'ES', 'FR', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
+        sourceDirFile = file(language)
+        imagesDirAttr = file("${language}/images").absolutePath
+        pdfThemeBaseDir = file(language)
+    } else {
+        sourceDirFile = file("${language}/asciidoc")
+        imagesDirAttr = "${projectDir}/images"
+        pdfThemeBaseDir = file("${language}/asciidoc")
+    }
+
     // Define HTML conversion task for this language
     tasks.register("asciidoctorHtml${language}", org.asciidoctor.gradle.jvm.AsciidoctorTask) {
-        sourceDir = file("${language}/asciidoc")
+        sourceDir = sourceDirFile
         sources {
             include 'arc42-template.adoc'
         }
         outputDir = file("build/${language}/html")
         baseDirFollowsSourceDir()
-        
+
         attributes asciidocAttributes + [
-            'imagesdir': "${projectDir}/images",
+            'imagesdir': imagesDirAttr,
             'revnumber': versionInfo.revnumber,
             'revdate': versionInfo.revdate,
             'revremark': versionInfo.revremark,
             'lang': language.toLowerCase() // Set the language code
         ]
-        
+
         doLast {
+            def newName = "arc42-template-${language}.html"
+            file("${outputDir}/arc42-template.html").renameTo(file("${outputDir}/${newName}"))
             println "HTML conversion completed for ${language} (v${versionInfo.revnumber})"
-            println "  Output: ${outputDir}"
+            println "  Output: ${outputDir}/${newName}"
         }
     }
-    
+
     // Define PDF conversion task for this language
     tasks.register("asciidoctorPdf${language}", org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask) {
-        sourceDir = file("${language}/asciidoc")
+        sourceDir = sourceDirFile
         sources {
             include 'arc42-template.adoc'
         }
         outputDir = file("build/${language}/pdf")
         baseDirFollowsSourceDir()
-        
+
         attributes asciidocAttributes + [
-            'imagesdir': "${projectDir}/images",
+            'imagesdir': imagesDirAttr,
             'pdf-page-size': 'A4',
             'revnumber': versionInfo.revnumber,
             'revdate': versionInfo.revdate,
@@ -125,23 +141,25 @@ languages.each { language ->
         ]
 
         //load PDF theme YAML file (font files) to render non-Latin languages (like Chinese,Japanese,Korean) correctly in pdf
-        def pdfThemeYmlFile = file("${language}/asciidoc/pdf-theme/${language.toLowerCase()}-theme.yml")
+        def pdfThemeYmlFile = file("${pdfThemeBaseDir}/pdf-theme/${language.toLowerCase()}-theme.yml")
         if( pdfThemeYmlFile.exists()){
             println "load pdf theme from ${pdfThemeYmlFile.absolutePath}"
-        
+
             attributes asciidocAttributes + [
                 'pdf-theme': pdfThemeYmlFile.absolutePath,
-                'pdf-fontsdir': file("${language}/asciidoc/pdf-theme/fonts").absolutePath,
+                'pdf-fontsdir': file("${pdfThemeBaseDir}/pdf-theme/fonts").absolutePath,
                 // Activates line break rules for CJK languages (specifically Chinese and Japanese).
-                'script': 'cjk', 
+                'script': 'cjk',
                 'text-align': 'left'
             ]
             println "asciidocAttributes for ${language}: ${asciidocAttributes}"
         }
 
         doLast {
+            def newName = "arc42-template-${language}.pdf"
+            file("${outputDir}/arc42-template.pdf").renameTo(file("${outputDir}/${newName}"))
             println "PDF conversion completed for ${language} (v${versionInfo.revnumber})"
-            println "  Output: ${outputDir}"
+            println "  Output: ${outputDir}/${newName}"
         }
     }
 }
@@ -209,12 +227,19 @@ tasks.named('clean') {
 defaultTasks 'asciidoctorAll'
 
 gradle.taskGraph.whenReady { taskGraph ->
-    if (taskGraph.hasTask(':asciidoctorAll') || 
-        taskGraph.hasTask(':asciidoctorHtmlAll') || 
+    if (taskGraph.hasTask(':asciidoctorAll') ||
+        taskGraph.hasTask(':asciidoctorHtmlAll') ||
         taskGraph.hasTask(':asciidoctorPdfAll')) {
         println "\nBuilding arc42 documentation with the following configuration:"
         println "  Languages: ${languages.join(', ')}"
-        println "  Source directories: ${languages.collect { "${it}/asciidoc" }.join(', ')}"
+        def sourceDirs = languages.collect { lang ->
+            if (lang in ['DE', 'EN', 'CZ', 'ES', 'FR', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
+                return lang
+            } else {
+                return "${lang}/asciidoc"
+            }
+        }
+        println "  Source directories: ${sourceDirs.join(', ')}"
         println "  Main file: arc42-template.adoc"
     }
 }

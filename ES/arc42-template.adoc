@@ -1,0 +1,113 @@
+// encabezado para arc42-template,
+// incluye todos los textos de ayuda
+//
+// ====================================
+
+// Opciones de configuración en español (ES) para asciidoc
+include::adoc/config.adoc[]
+= Plantilla image:arc42-logo.png[arc42]
+:revnumber: {revnumber}
+:revdate: {revdate}
+:revremark: {revremark}
+// toc-title La definición debe situarse abajo del título del documento sin líneas en blanco!
+:toc-title: Contenido
+
+//Estilos adicionales para las llamadas de ayuda de arc42
+include::../common/styles/arc42-help-style.adoc[]
+
+
+
+
+include::adoc/about-arc42.adoc[]
+
+// Línea horizontal
+***
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+[NOTE]
+====
+La versión de esta plantilla contiene textos de ayuda y explicación
+Se utiliza para familiarizarse con arc42 y comprender sus conceptos.
+Para la documentación de su propio sistema puede utilizar la version _plain_.
+====
+****
+endif::arc42help[]
+
+////
+* This block is present in docToolChain but not in the original arc42-template
+
+.Histórico de Cambios
+[options="header",cols="1,2,6"]
+|====
+| Fecha
+| Autor
+| Comentario
+
+include::../../build/docs/changelog.adoc[]
+
+|====
+////
+
+// Numeramos las secciones a partir de aquí
+:numbered:
+
+<<<<
+// 1. Introducción y Metas
+include::adoc/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Restricciones de la Arquitectura
+include::adoc/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Alcance y Contexto del Sistema
+include::adoc/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Estrategia de solución
+include::adoc/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Vista de Bloques
+include::adoc/05_building_block_view.adoc[]
+
+<<<<
+// 6. Vista de Ejecución
+include::adoc/06_runtime_view.adoc[]
+
+<<<<
+// 7. Vista de Despliegue
+include::adoc/07_deployment_view.adoc[]
+
+<<<<
+// 8. Conceptos Transversales (Cross-cutting)
+include::adoc/08_concepts.adoc[]
+
+<<<<
+// 9. Decisiones de Diseño
+include::adoc/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Requerimientos de Calidad
+include::adoc/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Riesgos y deuda técnica
+include::adoc/11_technical_risks.adoc[]
+
+<<<<
+// 12. Glosario
+include::adoc/12_glossary.adoc[]
+
+////
+* This block is present in docToolChain but not in the original arc42-template
+// Apéndices:
+// =====================================
+
+<<<<
+// Apéndice. Incidentes abiertos
+include::adoc/appendix-open_issues.adoc[]
+
+////
