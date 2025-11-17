@@ -8,5 +8,6 @@ font:
       italic: NotoSansSC-SemiBold.ttf 
       bold_italic: NotoSansSC-SemiBold.ttf 
   fallbacks:
+    - Helvetica
     - Noto Sans SC
 base_font_family: Noto Sans SC
