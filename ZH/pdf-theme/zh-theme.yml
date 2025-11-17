@@ -5,8 +5,13 @@ font:
     Noto Sans SC:
       normal: NotoSansSC-Regular.ttf
       bold: NotoSansSC-Bold.ttf
-      italic: NotoSansSC-SemiBold.ttf 
-      bold_italic: NotoSansSC-SemiBold.ttf 
+      italic: NotoSansSC-SemiBold.ttf
+      bold_italic: NotoSansSC-SemiBold.ttf
   fallbacks:
     - Noto Sans SC
+    - Helvetica
 base_font_family: Noto Sans SC
+# Strip zero-width characters during processing
+role:
+  _:
+    font-color: null
