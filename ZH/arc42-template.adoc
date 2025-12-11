@@ -3,14 +3,14 @@
 //
 // ====================================
 
-// configure zh settings for asciidoc
-include::adoc/config.adoc[]
-
 = image:arc42-logo.png[arc42] 模板
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
 :toc-title: 目录
+
+// configure zh settings for asciidoc
+include::adoc/config.adoc[]
 
 //additional style for arc42 help callouts
 include::../common/styles/arc42-help-style.adoc[]

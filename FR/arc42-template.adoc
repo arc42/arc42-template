@@ -3,15 +3,15 @@
 //
 // ====================================
 
-// configure les paramètres FR pour asciidoc
-include::adoc/config.adoc[]
-
 = image:arc42-logo.png[arc42] Template
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
 // toc-title définition DOIT suivre le titre du document sans ligne blanche !
 :toc-title: Table des matières
+
+// configure les paramètres FR pour asciidoc
+include::adoc/config.adoc[]
 
 // style supplémentaire pour les appels à l'aide arc42
 include::../common/styles/arc42-help-style.adoc[]

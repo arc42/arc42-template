@@ -3,15 +3,15 @@
 //
 // ====================================
 
-// configure EN settings for asciidoc
-include::adoc/config.adoc[]
-
 = Modelo image:arc42-logo.png[arc42]
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Sumário
+
+// configure EN settings for asciidoc
+include::adoc/config.adoc[]
 
 //additional style for arc42 help callouts
 include::../common/styles/arc42-help-style.adoc[]
