@@ -60,6 +60,65 @@ def allVersionInfo = languages.collectEntries { lang ->
     [lang, loadVersionProperties(lang)]
 }
 
+// Function to validate image references in AsciiDoc files
+def validateImageReferences(String language, File sourceDir, File imagesDir) {
+    def results = [
+        language: language,
+        missingImages: [],
+        totalChecked: 0
+    ]
+
+    // Find all .adoc files recursively
+    def adocFiles = fileTree(sourceDir) {
+        include '**/*.adoc'
+    }
+
+    // Define regex patterns for image references
+    // Block images: image::filename[alt]
+    // Inline images: image:filename[alt] (but not image:: with double colon)
+    def blockPattern = ~/image::([^\[]+)\[/
+    def inlinePattern = ~/(?<!:)image:([^:\[]+)\[/
+
+    // Scan each file for image references
+    adocFiles.each { file ->
+        def lineNumber = 0
+        file.eachLine('UTF-8') { line ->
+            lineNumber++
+
+            // Check for block images (image::)
+            def blockMatcher = line =~ blockPattern
+            blockMatcher.each { match ->
+                def imageName = match[1].trim()
+                checkImageExists(imageName, file, lineNumber, imagesDir, results)
+            }
+
+            // Check for inline images (image:)
+            def inlineMatcher = line =~ inlinePattern
+            inlineMatcher.each { match ->
+                def imageName = match[1].trim()
+                checkImageExists(imageName, file, lineNumber, imagesDir, results)
+            }
+        }
+    }
+
+    return results
+}
+
+// Helper function to check if an image file exists
+def checkImageExists(String imageName, File sourceFile, int lineNumber, File imagesDir, Map results) {
+    results.totalChecked++
+    def imageFile = new File(imagesDir, imageName)
+
+    if (!imageFile.exists()) {
+        results.missingImages << [
+            file: sourceFile.path,
+            line: lineNumber,
+            imageName: imageName,
+            expectedPath: imageFile.absolutePath
+        ]
+    }
+}
+
 // Configure common AsciiDoc attributes
 ext {
     asciidocAttributes = [
@@ -97,8 +156,43 @@ languages.each { language ->
         pdfThemeBaseDir = file("${language}/asciidoc")
     }
 
+    // Register image validation task for this language
+    tasks.register("validateImages${language}") {
+        group = 'Verification'
+        description = "Validates that all image references in ${language} AsciiDoc files exist"
+
+        doLast {
+            def results = validateImageReferences(language, sourceDirFile, file("${language}/images"))
+
+            if (results.missingImages.isEmpty()) {
+                logger.lifecycle("✓ Image validation for ${language}: All ${results.totalChecked} image references are valid")
+            } else {
+                logger.warn("")
+                logger.warn("=" * 70)
+                logger.warn("⚠ Image Reference Validation: ${language}")
+                logger.warn("=" * 70)
+                logger.warn("")
+                logger.warn("WARNING: Missing image references found:")
+                logger.warn("")
+
+                results.missingImages.each { missing ->
+                    logger.warn("  File: ${missing.file}:${missing.line}")
+                    logger.warn("  Missing: ${missing.imageName}")
+                    logger.warn("  Expected: ${missing.expectedPath}")
+                    logger.warn("")
+                }
+
+                logger.warn("Summary: ${results.missingImages.size()} missing image(s) in ${language}")
+                logger.warn("Build will continue, but output may have broken image placeholders.")
+                logger.warn("=" * 70)
+                logger.warn("")
+            }
+        }
+    }
+
     // Define HTML conversion task for this language
     tasks.register("asciidoctorHtml${language}", org.asciidoctor.gradle.jvm.AsciidoctorTask) {
+        dependsOn tasks.named("validateImages${language}")
         sourceDir = sourceDirFile
         sources {
             include 'arc42-template.adoc'
@@ -124,6 +218,7 @@ languages.each { language ->
 
     // Define PDF conversion task for this language
     tasks.register("asciidoctorPdf${language}", org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask) {
+        dependsOn tasks.named("validateImages${language}")
         sourceDir = sourceDirFile
         sources {
             include 'arc42-template.adoc'
@@ -185,18 +280,47 @@ tasks.register('asciidoctorHtmlAll') {
 tasks.register('asciidoctorPdfAll') {
     description = 'Builds PDF for all configured languages'
     group = 'Documentation'
-    
+
     doFirst {
         println "\nStarting PDF generation for all languages"
     }
-    
+
     languages.each { language ->
         dependsOn tasks.named("asciidoctorPdf${language}")
     }
-    
+
     doLast {
         println "\nPDF generation completed for all languages"
     }
+}
+
+tasks.register('validateImagesAll') {
+    description = 'Validates image references for all configured languages'
+    group = 'Verification'
+
+    languages.each { language ->
+        dependsOn tasks.named("validateImages${language}")
+    }
+
+    doLast {
+        println "\nImage validation completed for all languages"
+    }
+}
+
+// Synonym for validateImagesAll
+tasks.register('validateImages') {
+    description = 'Validates image references for all configured languages (synonym for validateImagesAll)'
+    group = 'Verification'
+
+    dependsOn tasks.named('validateImagesAll')
+}
+
+// Short validation task
+tasks.register('validate') {
+    description = 'Validates image references for all configured languages (short form)'
+    group = 'Verification'
+
+    dependsOn tasks.named('validateImagesAll')
 }
 
 tasks.register('asciidoctorAll') {
