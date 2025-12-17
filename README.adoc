@@ -126,20 +126,22 @@ The build process assumes the following directory structure:
 ```
 <root>/
   ├── DE/                     // German language files
-  │    └── asciidoc/            // AsciiDoc source files
-  │         ├── arc42-template.adoc  // Main document for German
-  │         └── src/             // Included files
-  │    └── version.properties    // version information for German
+  │    ├── arc42-template.adoc  // Main document for German
+  │    ├── version.properties    // Version information for German
+  │    ├── adoc/                 // AsciiDoc chapter files
+  │    └── images/               // Language-specific images
   │
   ├── EN/                     // English language files 
-  │    └── asciidoc/            // AsciiDoc source files
-  │         ├── arc42-template.adoc  // Main document for English
-  │         └── src/             // Included files
-  │    └── version.properties    // version information for English
+  │    ├── arc42-template.adoc  // Main document for English
+  │    ├── version.properties    // Version information for English
+  │    ├── adoc/                 // AsciiDoc chapter files
+  │    └── images/               // Language-specific images
   │
-  ├── images/                // Shared images for all languages
-  │    └── *.png, *.jpg, etc.   // Image files
-  │ 
+  ├── common/                 // Common files (e.g., styles)
+  │    └── styles/
+  │
+  ├── graphics-originals/     // Original diagram sources (being phased out)
+  │
   └── build/                  // Generated output
        ├── DE/                  // German output
        │    ├── html/           // HTML output
@@ -148,11 +150,11 @@ The build process assumes the following directory structure:
        └── EN/                  // English output
             ├── html/           // HTML output
             └── pdf/            // PDF output
-  ├── <LC>/                     // language files for language <LC>
-  │    └── asciidoc/            // AsciiDoc source files
-  │         ├── arc42-template.adoc  // Main document for <LC>
-  │         └── src/             // Included files
-  │    └── version.properties    // version information for <LC>
+  ├── <LC>/                     // Language files for language <LC>
+  │    ├── arc42-template.adoc  // Main document for <LC>
+  │    ├── version.properties    // Version information for <LC>
+  │    ├── adoc/                 // AsciiDoc chapter files
+  │    └── images/               // Language-specific images
 ```
 
 ## Requirements
@@ -228,12 +230,12 @@ Replace `DE` with the desired language code.
 
 Generated documentation will be available in the build directory:
 
-- HTML: `build/<LANGUAGE>/html/`
-- PDF: `build/<LANGUAGE>/pdf/`
+- HTML: `build/<LANGUAGE>/html/arc42-template-<LANGUAGE>.html`
+- PDF: `build/<LANGUAGE>/pdf/arc42-template-<LANGUAGE>.pdf`
 
 For example, German (DE) documentation would be in:
-- `build/DE/html/arc42-template.html`
-- `build/DE/pdf/arc42-template.pdf`
+- `build/DE/html/arc42-template-DE.html`
+- `build/DE/pdf/arc42-template-DE.pdf`
 
 ## Adding a New Language
 
