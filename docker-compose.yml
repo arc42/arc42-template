@@ -1,0 +1,45 @@
+services:
+  # Build service for documentation
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: arc42-builder
+    volumes:
+      # Mount output directory to host for easy access
+      - ./build:/workspace/build
+    # Optional: Override language selection
+    # Uncomment and modify the environment section to build specific languages only
+    # environment:
+    #   LANGUAGES: "DE,EN"
+    command: bash -c "./gradlew asciidoctorAll && echo 'Build complete!'"
+
+  # Optional: Simple HTTP server to view documentation
+  server:
+    image: nginx:alpine
+    container_name: arc42-server
+    ports:
+      - "8080:80"
+    volumes:
+      # Serve generated HTML documentation
+      - ./build:/usr/share/nginx/html:ro
+      # Optional: nginx config for better routing
+      # - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - build
+    # Only start server if build succeeds
+
+  # Validation service (optional)
+  validate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: arc42-validator
+    command: bash -c "./gradlew validate"
+    volumes:
+      - ./build:/workspace/build
+
+# Optional: Named volume for build artifacts
+volumes:
+  build-output:
+    driver: local

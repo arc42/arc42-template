@@ -226,6 +226,38 @@ Replace `DE` with the desired language code.
 
 Replace `DE` with the desired language code.
 
+### Validate Image References
+
+The build system automatically validates that all images referenced in AsciiDoc files exist before generating documentation. You can also run validation independently:
+
+```bash
+# Validate all configured languages (shortest form)
+./gradlew validate
+
+# Alternative commands (same result)
+./gradlew validateImages
+./gradlew validateImagesAll
+
+# Validate specific language
+./gradlew validateImagesDE
+./gradlew validateImagesEN
+```
+
+If images are missing, you'll see warnings like:
+
+```
+⚠ Image Reference Validation: DE
+WARNING: Missing image references found:
+
+  File: DE/adoc/01_introduction_and_goals.adoc:60
+  Missing: diagram.png
+  Expected: /path/to/DE/images/diagram.png
+
+Summary: 1 missing image(s) in DE
+```
+
+The build continues with warnings (permissive mode), but the generated documentation will show broken image placeholders. Image validation runs automatically before every HTML and PDF build.
+
 ## Output
 
 Generated documentation will be available in the build directory:
@@ -242,6 +274,63 @@ For example, German (DE) documentation would be in:
 1. Add the language code to the `languages` property in `gradle.properties`
 2. Create the necessary AsciiDoc source files for the new language
 3. Run the build
+
+## Building with Docker (Optional)
+
+If you prefer not to install Java locally, you can use Docker to build the documentation. This approach is optional and fully compatible with the traditional local build.
+
+### Requirements
+
+- Docker (version 20.10 or newer)
+- Docker Compose (version 1.29 or newer)
+
+### Building with Docker Compose
+
+```bash
+# Build all languages using Docker
+docker-compose up build
+
+# Build and verify images are referenced correctly
+docker-compose up validate
+
+# Build and run a web server (http://localhost:8080) to view HTML documentation
+docker-compose up server
+```
+
+### Building with Docker directly
+
+```bash
+# Build the Docker image
+docker build -t arc42-template .
+
+# Run a container to generate documentation
+docker run -v $(pwd)/build:/workspace/build arc42-template
+
+# Run validation
+docker run arc42-template ./gradlew validate
+
+# Build specific languages only (override languages in environment)
+docker run -e LANGUAGES=DE,EN -v $(pwd)/build:/workspace/build arc42-template
+```
+
+### Docker Advantages
+
+- No Java installation required
+- Guaranteed build reproducibility (same Java version for all)
+- Pre-installed fonts for proper PDF rendering of multi-language documents (especially CJK: Chinese, Japanese, Korean)
+- Consistent builds across Windows, macOS, and Linux
+
+### Docker Output
+
+Generated documentation will be available in the `build/` directory on your host system (same location as traditional builds):
+- HTML: `build/<LANGUAGE>/html/arc42-template-<LANGUAGE>.html`
+- PDF: `build/<LANGUAGE>/pdf/arc42-template-<LANGUAGE>.pdf`
+
+### Notes
+
+- The Docker image is built multi-stage for efficiency (one stage for building, one for runtime)
+- Build artifacts are mounted as volumes, so the output is accessible directly on your host
+- The optional Nginx server displays HTML documentation only (PDFs must be downloaded)
 
 
 == Questions on using arc42?

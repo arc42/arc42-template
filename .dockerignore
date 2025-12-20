@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Build outputs
+build/
+dist/
+.gradle/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+.travis.yml
+
+# Documentation
+*.md
+*.adoc
+README*
+CHANGELOG*
+LICENSE*
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+.env.local
+*.pem
+*.key
+
+# Node (if added in future)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Maven (if added in future)
+target/
+.m2/
+
+# Other
+*.jar
+!gradle/wrapper/*.jar
