@@ -3,7 +3,7 @@ services:
   build:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.build
     container_name: arc42-builder
     volumes:
       # Mount output directory to host for easy access
@@ -12,7 +12,6 @@ services:
     # Uncomment and modify the environment section to build specific languages only
     # environment:
     #   LANGUAGES: "DE,EN"
-    command: bash -c "./gradlew asciidoctorAll && echo 'Build complete!'"
 
   # Optional: Simple HTTP server to view documentation
   server:

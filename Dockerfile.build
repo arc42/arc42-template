@@ -1,0 +1,32 @@
+# Dockerfile for building arc42 documentation
+# Single-stage: builds and outputs to mounted volume
+FROM eclipse-temurin:11-jdk-jammy
+
+WORKDIR /workspace
+
+# Install additional dependencies for PDF generation and font support
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    fonts-noto-cjk \
+    fonts-noto-cjk-extra \
+    fonts-liberation \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the entire project
+COPY . .
+
+# Make gradlew executable
+RUN chmod +x gradlew
+
+# Create version.properties files for all languages if they don't exist
+RUN for lang in CZ DE EN ES FR IT NL PT RU UKR ZH; do \
+    if [ ! -f "$lang/version.properties" ]; then \
+      mkdir -p "$lang" && \
+      echo "revnumber=9.0" > "$lang/version.properties" && \
+      echo "revdate=$(date +'%B %Y')" >> "$lang/version.properties" && \
+      echo "revremark=" >> "$lang/version.properties"; \
+    fi; \
+  done
+
+# Build all languages (HTML and PDF) - output goes to /workspace/build which is mounted as volume
+# Note: We don't use 'clean' because the build directory is a mounted volume
+CMD ["bash", "-c", "./gradlew asciidoctorAll && echo 'Build complete! Documentation is in /workspace/build'"]
