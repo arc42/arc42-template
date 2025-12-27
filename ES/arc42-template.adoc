@@ -3,14 +3,15 @@
 //
 // ====================================
 
-// Opciones de configuración en español (ES) para asciidoc
-include::adoc/config.adoc[]
 = Plantilla image:arc42-logo.png[arc42]
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
 // toc-title La definición debe situarse abajo del título del documento sin líneas en blanco!
 :toc-title: Contenido
+
+// Opciones de configuración en español (ES) para asciidoc
+include::adoc/config.adoc[]
 
 //Estilos adicionales para las llamadas de ayuda de arc42
 include::../common/styles/arc42-help-style.adoc[]
