@@ -42,7 +42,7 @@ The requirements summarized in this section are based on the Business Requiremen
 
 |1
 |Usability
-|The system will be used by students, lecturers, and administrators. It should therefore be easy to understand and simple to use for all user groups.
+|The system will be used by students, lecturers, and administrators. It should be easy to understand and simple to use for all user groups.
 
 |2
 |Security
