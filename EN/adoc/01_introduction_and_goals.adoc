@@ -3,99 +3,83 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-Describes the relevant requirements and the driving forces that software architects and development team must consider. 
-These include
-
-* underlying business goals, 
-* essential features, 
-* essential functional requirements, 
-* quality goals for the architecture and
-* relevant stakeholders and their expectations
-****
-endif::arc42help[]
-
 === Requirements Overview
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-Short description of the functional requirements, driving forces, extract (or abstract)
-of requirements. Link to (hopefully existing) requirements documents
-(with version number and information where to find it).
+The University Management System (UMS) is a web-based system that supports and simplifies important university processes.
 
-.Motivation
-From the point of view of the end users a system is created or modified to
-improve support of a business activity and/or improve the quality.
+At the moment, many tasks are still handled manually using spreadsheets and emails. This takes a lot of time, increases the chance of mistakes, and makes communication more difficult than necessary.
 
-.Form
-Short textual description, probably in tabular use-case format.
-If requirements documents exist this overview should refer to these documents.
+The goal of the system is to bring these processes together in one central platform for students, lecturers, and administrators.
 
-Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
+The main features of the system are:
 
+* course and curriculum management
+* enrollment management
+* attendance tracking
+* grading and transcript management
+* billing and payment management
+* reporting and analytics
+* user authentication and authorization
+* access to course materials
 
-.Further Information
+The most important use cases are:
 
-See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 documentation.
+* students enroll in courses
+* lecturers track attendance
+* lecturers manage grades
+* students view course material
+* administrators generate reports
 
-****
-endif::arc42help[]
+Overall, the system should reduce manual work, improve communication, and make university processes more efficient and reliable.
+
+The requirements summarized in this section are based on the Business Requirements Document, the Use Case Document, and the stakeholder interview.
 
 === Quality Goals
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. 
-We really mean quality goals for the architecture. Don't confuse them with project goals.
-They are not necessarily identical.
+[options="header",cols="1,2,3"]
+|===
+|Priority |Quality Goal |Motivation / Scenario
 
-Consider this overview of potential topics (based upon the ISO 25010 standard):
+|1
+|Usability
+|The system will be used by students, lecturers, and administrators. It should therefore be easy to understand and simple to use for all user groups.
 
-image::01_2_iso-25010-topics-EN-2023.drawio.png["Categories of Quality Requirements"]
+|2
+|Security
+|The system handles sensitive information such as student data, grades, and attendance records. This data must be protected and only be accessible to authorized users.
 
-.Motivation
-You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 
-Make sure to be very concrete about these qualities, avoid buzzwords.
-If you as an architect do not know how the quality of your work will be judged...
-
-.Form
-A table with quality goals and concrete scenarios, ordered by priorities
-****
-endif::arc42help[]
+|3
+|Reliability
+|The system should work correctly and be available during important processes such as course enrollment, attendance tracking, and grade submission.
+|===
 
 === Stakeholders
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
-
-* should know the architecture
-* have to be convinced of the architecture
-* have to work with the architecture or with code
-* need the documentation of the architecture for their work
-* have to come up with decisions about the system or its development
-
-.Motivation
-You should know all parties involved in development of the system or affected by the system.
-Otherwise, you may get nasty surprises later in the development process.
-These stakeholders determine the extent and the level of detail of your work and its results.
-
-.Form
-Table with role names, person names, and their expectations with respect to the architecture and its documentation.
-****
-endif::arc42help[]
-
 [options="header",cols="1,2,2"]
 |===
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|Role/Name |Contact |Expectations
+
+|John Smith, University Administrator
+|University Administration
+|Needs a reliable system that supports administrative work and reduces manual effort.
+
+|Michael Lee, Chief Information Officer
+|University IT Department
+|Expects a secure system that can integrate with existing university systems and support long-term operation.
+
+|Jane Doe, Senior Lecturer
+|Faculty
+|Needs support for grading, attendance tracking, easier communication with students, and less manual administrative work.
+
+|Emily Chen, Student Representative
+|Students
+|Expects a user-friendly system for enrollment, course materials, grades, and notifications.
+
+|Sarah Johnson, Financial Officer
+|Finance Department
+|Needs correct and reliable handling of billing and financial data.
+
+|Project Team
+|Development Team
+|Needs clear requirements, understandable documentation, and a realistic project scope.
 |===
