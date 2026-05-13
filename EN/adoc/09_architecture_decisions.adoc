@@ -5,19 +5,19 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 This section summarizes the main architecture decisions of the system.
 
-[options="header",cols="1,2,2"]
+[options="header",cols="1,1,1"]
 |===
 |Problem |Considered Alternatives |Decision
 
-|The application must support several connected university processes in one maintainable platform.
+|The system should support multiple university processes in one application.
 |Microservices, SOA, Modular Monolith
 |A modular monolith was chosen because the university processes are closely related and this approach offers lower complexity and easier maintenance for the rather small development team.
 
-|The application must integrate with the existing student information system and financial management system.
-|Direct database access, manual import/export, API-based integration
-|API-based integration was chosen because it reduces coupling and is easier to maintain and security-wise the only reliable choice.
+|The application must communicate with the existing student information and finance systems.
+|Direct database access, file import/export, API integration
+|API integration was chosen because it reduces coupling and provides a clear and maintainable interface between systems.
 
-|The system must support different user groups with different permissions.
-|Simple login, shared access, role-based access control
-|Role-based access control (RBAC) was chosen because it fits the needs of students, lecturers, administrators, and finance staff.
+|Different user groups require different access permissions.
+|Shared access, manually assigned permissions, role-based access control
+|Role-based access control (RBAC) was chosen because it allows permissions to be managed clearly for students, lecturers, administrators, and finance staff.
 |===
