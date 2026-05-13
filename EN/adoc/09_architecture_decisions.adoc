@@ -1,19 +1,21 @@
-[[section-architecture-decisions]]
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
 == Architecture Decisions
 
-This section summarizes the most important architectural decisions. Detailed reasoning can be documented separately as ADRs.
+This section summarizes the main architecture decisions of the system.
 
 [options="header",cols="1,2,2"]
 |===
-|Problem |Alternatives Considered |Decision
+|Problem |Considered Alternatives |Decision
 
 |The application must support several connected university processes in one maintainable platform.
 |Microservices, SOA, Modular Monolith
-|A modular monolith was chosen because the university processes are closely related and this approach offers lower complexity and easier maintenance.
+|A modular monolith was chosen because the university processes are closely related and this approach offers lower complexity and easier maintenance for the rather small development team.
 
 |The application must integrate with the existing student information system and financial management system.
 |Direct database access, manual import/export, API-based integration
-|API-based integration was chosen because it reduces coupling and is easier to maintain and secure.
+|API-based integration was chosen because it reduces coupling and is easier to maintain and security-wise the only reliable choice.
 
 |The system must support different user groups with different permissions.
 |Simple login, shared access, role-based access control

@@ -1,14 +1,16 @@
-[section-solution-strategy]]
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
 == Solution Strategy
 
-The overall solution strategy is to design the University Management System as a modular, web-based platform that integrates the most important university processes in one system.
+The overall strategy is to design the University Management System as an integrated, web-based platform that supports the most important university processes in one system.
 
-The following strategic decisions shape the architecture:
+The main solution approaches are:
 
-* A modular monolith is used to keep the system manageable while still separating important functional areas.
-* The system is designed as a cloud-hosted web application to support access for different user groups.
-* Integration with existing university systems is handled through APIs with clearly defined interfaces.
-* Role-based access control is used to support different permissions for students, lecturers, administrators, and finance staff.
-* Automated workflows and notifications are used to reduce manual work and lower the risk of human error.
+* Use a modular monolith to keep the system manageable while still separating the main functional areas.
+* Provide the system as a cloud-hosted web application so that all user groups can access it centrally.
+* Integrate existing university systems through clearly defined APIs.
+* Use role-based access control to separate permissions for students, lecturers, administrators, and finance staff.
+* Support important workflows such as enrollment, attendance tracking, grading, and notifications in one integrated platform.
 
-This strategy supports the main project goals of improving efficiency, reducing manual administration, and providing a more reliable and user-friendly university platform.
+This strategy supports the main project goals of reducing manual work, lowering the risk of human error, improving communication, and creating a more reliable system for academic administration.

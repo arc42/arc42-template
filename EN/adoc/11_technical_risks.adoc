@@ -1,5 +1,7 @@
-[[section-risks-and-technical-debt]]
-== Risks and Technical Debt
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Risks and Technical Debts
 
 [options="header",cols="1,3"]
 |===
@@ -13,4 +15,7 @@
 
 |Security and access control debt
 |If roles and permissions are not defined carefully from the start, sensitive student, grade, and financial data could be exposed incorrectly.
+
+|Project scope risk
+|Since this is a semester project, there is a risk of defining too many features or making the architecture more complex than necessary.
 |===
