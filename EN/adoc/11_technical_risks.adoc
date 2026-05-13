@@ -7,8 +7,9 @@ ifndef::imagesdir[:imagesdir: ../images]
 |===
 |Risk / Technical Debt |Description
 
-|Changing requirements
-|University processes and requirements may change during development, requiring adjustments in the system.
+
+|Access control complexity
+|Managing permissions for different user groups increases the risk of incorrect or overly broad access rights.
 
 |Integration complexity
 |Connecting the application with existing university systems could cause unexpected technical issues.
