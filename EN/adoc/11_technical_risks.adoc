@@ -7,12 +7,12 @@ ifndef::imagesdir[:imagesdir: ../images]
 |===
 |Risk / Technical Debt |Description
 
-|Weak module boundaries
-|If the modular monolith is not clearly separated into modules, dependencies may grow over time and make the system harder to maintain.
+|Changing requirements
+|University processes and requirements may change during development, requiring adjustments in the system.
 
-|Integration dependency risk
-|The system depends on existing student information and financial systems. If these systems change or provide unstable interfaces, integration problems may occur.
+|Integration complexity
+|Connecting the application with existing university systems could cause unexpected technical issues.
 
-|Security and access control debt
-|If roles and permissions are not defined carefully from the start, sensitive student, grade, and financial data could be exposed incorrectly.
+|Limited testing time
+|Because of the limited project duration, not all scenarios and edge cases may be fully tested.
 |===
