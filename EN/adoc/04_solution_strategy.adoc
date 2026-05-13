@@ -1,34 +1,14 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
-[[section-solution-strategy]]
+[section-solution-strategy]]
 == Solution Strategy
 
+The overall solution strategy is to design the University Management System as a modular, web-based platform that integrates the most important university processes in one system.
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes
+The following strategic decisions shape the architecture:
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* A modular monolith is used to keep the system manageable while still separating important functional areas.
+* The system is designed as a cloud-hosted web application to support access for different user groups.
+* Integration with existing university systems is handled through APIs with clearly defined interfaces.
+* Role-based access control is used to support different permissions for students, lecturers, administrators, and finance staff.
+* Automated workflows and notifications are used to reduce manual work and lower the risk of human error.
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
-
-.Form
-Keep the explanations of such key decisions short.
-
-Motivate what was decided and why it was decided that way,
-based upon problem statement, quality goals and key constraints.
-Refer to details in the following sections.
-
-
-.Further Information
-
-See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
-
-****
-endif::arc42help[]
+This strategy supports the main project goals of improving efficiency, reducing manual administration, and providing a more reliable and user-friendly university platform.

@@ -1,29 +1,24 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-architecture-constraints]]
 == Architecture Constraints
 
+The architecture of the University Management System is influenced by several technical and organizational constraints.
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-Any requirement that constraints software architects in their freedom of design and implementation decisions or decision about the development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
+[options="header",cols="1,3"]
+|===
+|Constraint |Explanation
 
-.Motivation
-Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
-Constraints must always be dealt with; they may be negotiable, though.
+|Web-based platform
+|The system must be accessible for students, lecturers, and administrators through a web interface.
 
-.Form
-Simple tables of constraints with explanations.
-If needed you can subdivide them into
-technical constraints, organizational and political constraints and
-conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+|Integration with existing university systems
+|The application must integrate with the existing student information system and financial management system.
 
+|Data protection and privacy
+|The system handles sensitive student, academic, and financial data and must therefore consider privacy and security requirements.
 
-.Further Information
+|Limited project scope
+|Since this is a semester project, the architecture must remain realistic and manageable in terms of complexity.
 
-See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
-
-****
-endif::arc42help[]
+|Documentation with arc42
+|The system architecture must be documented using the arc42 template.
+|===

@@ -1,27 +1,16 @@
-ifndef::imagesdir[:imagesdir: ../images]
+[[section-risks-and-technical-debt]]
+== Risks and Technical Debt
 
-[[section-technical-risks]]
-== Risks and Technical Debts
+[options="header",cols="1,3"]
+|===
+|Risk / Technical Debt |Description
 
+|Weak module boundaries
+|If the modular monolith is not clearly separated into modules, dependencies may grow over time and make the system harder to maintain.
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-A list of identified technical risks or technical debts, ordered by priority
+|Integration dependency risk
+|The system depends on existing student information and financial systems. If these systems change or provide unstable interfaces, integration problems may occur.
 
-.Motivation
-“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.) 
-
-This should be your motto for systematic detection and evaluation of risks and technical debts in the architecture, which will be needed by management stakeholders (e.g. project managers, product owners) as part of the overall risk analysis and measurement planning.
-
-.Form
-List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-
-.Further Information
-
-See https://docs.arc42.org/section-11/[Risks and Technical Debt] in the arc42 documentation.
-
-****
-endif::arc42help[]
+|Security and access control debt
+|If roles and permissions are not defined carefully from the start, sensitive student, grade, and financial data could be exposed incorrectly.
+|===
