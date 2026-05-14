@@ -1,0 +1,100 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Telepítési nézet
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A telepítési nézet a következőket írja le:
+
+ 1. a rendszer futtatásához használt technikai infrastruktúrát, beleértve az infrastruktúra-elemeket, mint földrajzi helyszínek, környezetek, számítógépek, processzorok, csatornák és hálózati topológiák, valamint egyéb infrastruktúra-elemek, és
+
+2. a (szoftver) építőelemek leképezését ezekre az infrastruktúra-elemekre.
+
+A rendszerek gyakran különböző környezetekben futnak, pl. fejlesztői környezet, tesztkörnyezet, éles környezet. Ilyen esetekben dokumentálja az összes releváns környezetet.
+
+Különösen akkor dokumentálja a telepítési nézetet, ha a szoftver elosztott rendszerként fut egynél több számítógépen, processzoron, szerveren vagy konténerben, illetve ha saját hardverprocesszorokat és chipeket tervez és épít.
+
+Szoftver szempontból elegendő csak azokat az infrastruktúra-elemeket rögzíteni, amelyek szükségesek az építőelemek telepítésének bemutatásához. A hardverarchitektek túlmehetnek ezen, és az infrastruktúrát bármilyen részletességi szintig leírhatják.
+
+.Motiváció
+A szoftver nem fut hardver nélkül.
+Ez az alapul szolgáló infrastruktúra befolyásolhatja a rendszert és/vagy néhány
+keresztmetszeti koncepciót. Ezért szükséges az infrastruktúra ismerete.
+
+.Forma
+
+Lehetséges, hogy a legfelső szintű telepítési diagram már a 3.2. fejezetben megjelent
+technikai kontextusként, saját infrastruktúrájával mint EGY fekete doboz. Ebben a fejezetben
+további telepítési diagramokkal közelíthet be ebbe a fekete dobozba:
+
+* Az UML telepítési diagramokat kínál ennek a nézetnek a kifejezésére. Használja ezeket, esetleg beágyazott diagramokkal,
+ha az infrastruktúra összetettebb.
+* Ha a (hardver) érdekelt felek más jellegű diagramokat részesítenek előnyben a telepítési diagram helyett, engedje, hogy bármilyen diagramot használjanak, amely képes az infrastruktúra csomópontjait és csatornáit megjeleníteni.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-7/[Telepítési nézet] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+=== 1. infrastruktúra-szint
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Írja le (általában diagramok, táblázatok és szöveg kombinációjával):
+
+* a rendszer elosztását több helyszínre, környezetre, számítógépre, processzorra stb., valamint a közöttük lévő fizikai kapcsolatokat
+* a telepítési struktúra fontos indoklásait vagy motivációit
+* az infrastruktúra minőségi és/vagy teljesítményjellemzőit
+* a szoftver-artefaktumok leképezését az infrastruktúra-elemekre
+
+Több környezet vagy alternatív telepítés esetén másolja és adaptálja az arc42 ezen fejezetét az összes releváns környezethez.
+****
+endif::arc42help[]
+
+_**<Áttekintő diagram>**_
+
+Motiváció::
+
+_<szöveges magyarázat>_
+
+Minőségi és/vagy teljesítményjellemzők::
+
+_<szöveges magyarázat>_
+
+Építőelemek leképezése az infrastruktúrára::
+_<a leképezés leírása>_
+
+
+=== 2. infrastruktúra-szint
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Itt megadhatja az 1. szint (néhány) infrastruktúra-elemének belső szerkezetét.
+
+Kérjük, másolja az 1. szint struktúráját minden kiválasztott elemhez.
+****
+endif::arc42help[]
+
+==== _<1. infrastruktúra-elem>_
+
+_<diagram + magyarázat>_
+
+==== _<2. infrastruktúra-elem>_
+
+_<diagram + magyarázat>_
+
+...
+
+==== _<n. infrastruktúra-elem>_
+
+_<diagram + magyarázat>_

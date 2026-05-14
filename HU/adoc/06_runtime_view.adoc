@@ -1,0 +1,53 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-runtime-view]]
+== Futásidejű nézet
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A futásidejű nézet a rendszer építőelemeinek konkrét viselkedését és interakcióit írja le forgatókönyvek formájában, az alábbi területekről:
+
+* fontos használati esetek vagy funkciók: hogyan hajtják végre az építőelemek?
+* interakciók kritikus külső interfészeken: hogyan működnek együtt az építőelemek a felhasználókkal és szomszédos rendszerekkel?
+* üzemeltetés és adminisztráció: indítás, elindulás, leállás
+* hiba- és kivételkezelési forgatókönyvek
+
+Megjegyzés: A lehetséges forgatókönyvek (szekvenciák, munkafolyamatok) kiválasztásának fő kritériuma az *architekturális relevancia*. *Nem* fontos nagyszámú forgatókönyvet leírni. Inkább egy reprezentatív válogatást dokumentáljon.
+
+.Motiváció
+Meg kell értenie, hogyan végzik az építőelemek (példányai) a feladataikat és hogyan kommunikálnak futásidőben.
+A forgatókönyveket elsősorban azért rögzíti a dokumentációban, hogy az architektúrát kommunikálja azoknak az érdekelt feleknek, akik kevésbé hajlandók vagy képesek elolvasni és megérteni a statikus modelleket (építőelem-nézet, telepítési nézet).
+
+.Forma
+Számos jelölés létezik a forgatókönyvek leírására, pl.:
+
+* lépések számozott listája (természetes nyelven)
+* tevékenységdiagramok vagy folyamatábrák
+* szekvenciadiagramok
+* BPMN vagy EPC-k (eseményvezérelt folyamatláncok)
+* állapotgépek
+* ...
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-6/[Futásidejű nézet] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+=== <Futásidejű forgatókönyv 1>
+
+
+* _<illesszen be futásidejű diagramot vagy a forgatókönyv szöveges leírását>_
+* _<illesszen be leírást az ábrázolt építőelem-példányok közötti interakciók
+figyelemre méltó aspektusairól.>_
+
+=== <Futásidejű forgatókönyv 2>
+
+=== ...
+
+=== <Futásidejű forgatókönyv n>

@@ -1,0 +1,225 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-building-block-view]]
+
+
+== Építőelem-nézet
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Az építőelem-nézet a rendszer statikus dekompozícióját mutatja építőelemekre (modulok, komponensek, alrendszerek, osztályok, interfészek, csomagok, könyvtárak, keretrendszerek, rétegek, partíciók, szintek, függvények, makrók, műveletek, adatstruktúrák, ...), valamint azok függőségeit (kapcsolatok, asszociációk, ...).
+
+Ez a nézet minden architektúra-dokumentációban kötelező.
+Egy ház analógiájával élve ez az _alaprajz_.
+
+.Motiváció
+Tartsa kézben a forráskód áttekinthetőségét azzal, hogy annak szerkezetét
+absztrakción keresztül érthetővé teszi.
+
+Ez lehetővé teszi, hogy absztrakt szinten kommunikáljon az érdekelt felekkel, anélkül, hogy a megvalósítás részleteit felfedné.
+
+.Forma
+Az építőelem-nézet fekete dobozok és fehér dobozok hierarchikus gyűjteménye
+(lásd az alábbi ábrát) és azok leírásai.
+
+image::05_building_blocks-HU.png["Építőelemek hierarchiája"]
+
+Az *1. szint* a teljes rendszer fehér doboz leírása a benne található összes
+építőelem fekete doboz leírásával együtt.
+
+A *2. szint* az 1. szint néhány építőelemébe közelít.
+Így az 1. szint kiválasztott építőelemeinek fehér doboz leírását tartalmazza, azok belső építőelemeinek fekete doboz leírásával együtt.
+
+A *3. szint* a 2. szint kiválasztott építőelemeibe közelít, és így tovább.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-5/[Építőelem-nézet] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+=== Fehér doboz – Teljes rendszer
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Itt írja le a teljes rendszer dekompozícióját az alábbi fehér doboz sablon segítségével. Ez tartalmazza:
+
+ * egy áttekintő diagramot
+ * a dekompozíció indoklását
+ * a tartalmazott építőelemek fekete doboz leírásait. Ehhez a következő alternatívákat kínáljuk:
+
+   ** használjon _egy_ táblázatot az összes tartalmazott építőelem és interfészük rövid és pragmatikus áttekintéséhez
+   ** használja a fekete doboz sablon szerinti fekete doboz leírások listáját (lásd alább).
+   Az eszközválasztástól függően ez a lista lehet alfejezet (szöveges fájlokban), aloldal (wikiben) vagy beágyazott elem (modellező eszközben).
+
+
+ * (opcionális:) olyan fontos interfészek, amelyeket nem a fekete doboz sablonok magyaráznak meg, de nagyon fontosak a fehér doboz megértéséhez.
+Mivel az interfészek megadásának oly sok módja létezik, nem adunk meg hozzájuk specifikus sablont.
+ A legrosszabb esetben meg kell adnia és le kell írnia a szintaxist, szemantikát, protokollokat, hibakezelést,
+ korlátozásokat, verziókat, minőségi jellemzőket, szükséges kompatibilitásokat és sok mást.
+A legjobb esetben elegendőek lesznek a példák vagy egyszerű szignatúrák.
+
+****
+endif::arc42help[]
+
+_**<Áttekintő diagram>**_
+
+Motiváció::
+
+_<szöveges magyarázat>_
+
+
+Tartalmazott építőelemek::
+_<A tartalmazott építőelemek (fekete dobozok) leírása>_
+
+Fontos interfészek::
+_<Fontos interfészek leírása>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Illessze be az 1. szint fekete dobozainak magyarázatát:
+
+Ha táblázatos formát használ, a fekete dobozokat csak név és
+felelősség szerint írja le a következő séma szerint:
+
+[cols="1,2" options="header"]
+|===
+| **Név** | **Felelősség**
+| _<fekete doboz 1>_ | _<Szöveg>_
+| _<fekete doboz 2>_ | _<Szöveg>_
+|===
+
+
+
+Ha fekete doboz leírások listáját használja, minden fontos építőelemhez külön fekete doboz sablont tölt ki.
+A címsora az adott fekete doboz neve.
+****
+endif::arc42help[]
+
+==== <Fekete doboz 1 neve>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Itt írja le a <fekete doboz 1>-et
+a következő fekete doboz sablon szerint:
+
+* Cél/Felelősség
+* Interfész(ek), ha nem külön bekezdésbe vannak kiemelve. Ezek az interfészek tartalmazhatnak minőségi és teljesítményjellemzőket.
+* (Opcionális) Minőségi/Teljesítményjellemzők a fekete dobozra vonatkozóan, pl. rendelkezésre állás, futásidejű viselkedés, ....
+* (Opcionális) Könyvtár/fájl elérési út
+* (Opcionális) Teljesített követelmények (ha nyomon követhetőség szükséges a követelményekhez).
+* (Opcionális) Nyitott kérdések/problémák/kockázatok
+
+****
+endif::arc42help[]
+
+_<Cél/Felelősség>_
+
+_<Interfész(ek)>_
+
+_<(Opcionális) Minőségi/Teljesítményjellemzők>_
+
+_<(Opcionális) Könyvtár/Fájl elérési út>_
+
+_<(Opcionális) Teljesített követelmények>_
+
+_<(Opcionális) Nyitott kérdések/Problémák/Kockázatok>_
+
+
+
+
+==== <Fekete doboz 2 neve>
+
+_<fekete doboz sablon>_
+
+==== <Fekete doboz n neve>
+
+_<fekete doboz sablon>_
+
+
+==== <Interfész 1 neve>
+
+...
+
+==== <Interfész m neve>
+
+
+
+=== 2. szint
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Itt adhatja meg az 1. szint (néhány) építőelemének belső szerkezetét fehér dobozként.
+
+El kell döntenie, hogy a rendszer mely építőelemei elég fontosak ahhoz, hogy ilyen részletes leírást kapjanak.
+Részesítse előnyben a relevanciát a teljességgel szemben. Írja le a fontos, meglepő, kockázatos, összetett vagy instabil építőelemeket.
+Hagyja ki a normális, egyszerű, unalmas vagy szabványos részeket.
+****
+endif::arc42help[]
+
+==== Fehér doboz _<1. építőelem>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+...az _1. építőelem_ belső szerkezetét írja le.
+****
+endif::arc42help[]
+
+_<fehér doboz sablon>_
+
+==== Fehér doboz _<2. építőelem>_
+
+
+_<fehér doboz sablon>_
+
+...
+
+==== Fehér doboz _<m. építőelem>_
+
+
+_<fehér doboz sablon>_
+
+
+
+=== 3. szint
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Itt adhatja meg a 2. szint (néhány) építőelemének belső szerkezetét fehér dobozként.
+
+Ha az architektúrában részletesebb szintekre van szükség, másolja le
+az arc42 ezen részét a további szintekhez.
+****
+endif::arc42help[]
+
+==== Fehér doboz <_x.1 építőelem_>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Az _x.1 építőelem_ belső szerkezetét adja meg.
+****
+endif::arc42help[]
+
+_<fehér doboz sablon>_
+
+
+==== Fehér doboz <_x.2 építőelem_>
+
+_<fehér doboz sablon>_
+
+
+
+==== Fehér doboz <_y.1 építőelem_>
+
+_<fehér doboz sablon>_

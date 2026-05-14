@@ -1,0 +1,80 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-context-and-scope]]
+== Kontextus és hatókör
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A kontextus és hatókör – ahogy a neve is sugallja – elhatárolja a rendszert (azaz a hatókört) az összes kommunikációs partnerétől
+(szomszédos rendszerek és felhasználók, azaz a rendszer kontextusa). Ezáltal meghatározza a külső interfészeket.
+
+Szükség esetén különítse el az üzleti kontextust (szakterület-specifikus bemenetek és kimenetek) a technikai kontextustól (csatornák, protokollok, hardver).
+
+.Motiváció
+A kommunikációs partnerek felé mutató szakterületi és technikai interfészek a rendszer legkritikusabb szempontjai közé tartoznak. Győződjön meg róla, hogy teljesen megérti őket.
+
+.Forma
+Különböző lehetőségek:
+
+* Kontextus-diagramok
+* Kommunikációs partnerek és interfészeik listája.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-3/[Kontextus és hatókör] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+=== Üzleti kontextus
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Az *összes* kommunikációs partner (felhasználók, IT-rendszerek, ...) specifikációja a szakterület-specifikus bemenetek és kimenetek, illetve interfészek magyarázatával.
+Opcionálisan hozzáadhatók szakterület-specifikus formátumok vagy kommunikációs protokollok.
+
+.Motiváció
+Minden érdekelt félnek meg kell értenie, milyen adatok cserélődnek a rendszer környezetével.
+
+.Forma
+Bármilyen diagram, amely a rendszert fekete dobozként mutatja, és meghatározza a szakterületi interfészeket a kommunikációs partnerek felé.
+
+Alternatívaként (vagy kiegészítésként) használhat táblázatot is.
+A táblázat címe a rendszer neve, a három oszlop tartalmazza a kommunikációs partner nevét, a bemeneteket és a kimeneteket.
+
+****
+endif::arc42help[]
+
+**<Diagram vagy táblázat>**
+
+**<opcionális: Külső szakterületi interfészek magyarázata>**
+
+=== Technikai kontextus
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Technikai interfészek (csatornák és átviteli közegek), amelyek a rendszert a környezetéhez kapcsolják. Emellett a szakterület-specifikus bemenet/kimenet leképezése a csatornákra, azaz annak magyarázata, hogy melyik I/O melyik csatornát használja.
+
+.Motiváció
+Sok érdekelt fél a rendszer és kontextusa közötti technikai interfészek alapján hoz architekturális döntéseket. Különösen az infrastruktúra- vagy hardvertervezők döntik el ezeket a technikai interfészeket.
+
+.Forma
+Pl. UML telepítési diagram, amely a szomszédos rendszerek felé mutató csatornákat írja le,
+kiegészítve egy leképezési táblázattal, amely a csatornák és a bemenet/kimenet közötti kapcsolatokat mutatja.
+
+****
+endif::arc42help[]
+
+**<Diagram vagy táblázat>**
+
+**<opcionális: Technikai interfészek magyarázata>**
+
+**<Bemenet/kimenet leképezése csatornákra>**

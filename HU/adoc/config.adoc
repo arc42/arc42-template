@@ -1,0 +1,22 @@
+// asciidoc settings for HU (Hungarian)
+// ==================================
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Tartalomjegyzék
+
+// enable table-of-contents
+:toc:
+
+:caution-caption: Figyelem
+:important-caption: Fontos
+:note-caption: Megjegyzés
+:tip-caption: Tipp
+:warning-caption: Figyelmeztetés
+
+:appendix-caption: Függelék
+:example-caption: Példa
+:figure-caption: Ábra
+:table-caption: Táblázat
+
+// where are images located?
+:imagesdir: ./images
+:arc42help:

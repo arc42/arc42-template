@@ -1,0 +1,37 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== Architektúra-döntések
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Fontos, költséges, nagy léptékű vagy kockázatos architekturális döntések, beleértve az indoklásokat.
+A „döntések" alatt egy alternatíva kiválasztását értjük adott kritériumok alapján.
+
+Kérjük, használja a saját megítélését annak eldöntéséhez, hogy egy architekturális döntést
+itt, ebben a központi fejezetben kell-e dokumentálni, vagy inkább lokálisan
+(pl. egy építőelem fehér doboz sablonján belül).
+
+Kerülje a redundanciát.
+Hivatkozzon a 4. fejezetre, ahol már rögzítette az architektúra legfontosabb döntéseit.
+
+.Motiváció
+Az érdekelt feleknek képesnek kell lenniük megérteni és visszakövetni a döntéseit.
+
+.Forma
+Különböző lehetőségek:
+
+* ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Architektúra-döntések dokumentálása]) minden fontos döntéshez
+* Lista vagy táblázat, fontosság és következmények szerint rendezve, vagy:
+* részletesebben, döntésenként külön fejezetben
+
+.További információ
+
+Lásd https://docs.arc42.org/section-9/[Architektúra-döntések] az arc42 dokumentációban.
+Ott hivatkozásokat és példákat talál az ADR-ekről.
+
+****
+endif::arc42help[]

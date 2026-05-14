@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Architekturális megkötések
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Minden olyan követelmény, amely korlátozza a szoftverarchitekteket a tervezési és megvalósítási döntéseikben, illetve a fejlesztési folyamatra vonatkozó döntéseikben. Ezek a megkötések néha túlmutatnak az egyes rendszereken, és egész szervezetekre vagy vállalatokra érvényesek.
+
+.Motiváció
+Az architekteknek pontosan tudniuk kell, hol szabadok a tervezési döntéseikben, és hol kell betartaniuk a megkötéseket.
+A megkötésekkel mindig foglalkozni kell; bár lehetnek tárgyalhatók.
+
+.Forma
+Egyszerű táblázatok megkötésekkel és magyarázatokkal.
+Szükség esetén feloszthatók
+technikai korlátokra, szervezeti és politikai megkötésekre, valamint
+konvenciókra (pl. programozási vagy verziókezelési irányelvek, dokumentációs vagy elnevezési konvenciók).
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-2/[Architekturális megkötések] az arc42 dokumentációban.
+
+****
+endif::arc42help[]

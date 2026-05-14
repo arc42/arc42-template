@@ -1,0 +1,44 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-glossary]]
+== Szójegyzék
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A legfontosabb szakterületi és technikai kifejezések, amelyeket az érdekelt felek a rendszer megvitatásakor használnak.
+
+A szójegyzék fordítási forrásként is szolgálhat, ha többnyelvű csapatokban dolgozik.
+
+.Motiváció
+Egyértelműen meg kell határoznia a kifejezéseket, hogy minden érdekelt fél
+
+* azonos módon értse ezeket a kifejezéseket
+* ne használjon szinonimákat és homonimákat
+
+
+.Forma
+
+Táblázat <Kifejezés> és <Meghatározás> oszlopokkal.
+
+Szükség esetén további oszlopok fordításokhoz.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-12/[Szójegyzék] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+[cols="e,2e" options="header"]
+|===
+|Kifejezés |Meghatározás
+
+|<Kifejezés-1>
+|<meghatározás-1>
+
+|<Kifejezés-2>
+|<meghatározás-2>
+|===

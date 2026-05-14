@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Megoldási stratégia
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Az alapvető döntések és megoldási stratégiák rövid összefoglalása és magyarázata, amelyek a rendszer architektúráját alakítják. Ezek a következők:
+
+* technológiai döntések
+* a rendszer legfelső szintű dekompozíciójára vonatkozó döntések, pl. architekturális minta vagy tervezési minta alkalmazása
+* a kulcsfontosságú minőségi célok elérésére vonatkozó döntések
+* releváns szervezeti döntések, pl. fejlesztési folyamat kiválasztása vagy bizonyos feladatok harmadik félnek történő delegálása.
+
+.Motiváció
+Ezek a döntések képezik az architektúra sarokköveit. Számos más részletes döntés vagy megvalósítási szabály alapjául szolgálnak.
+
+.Forma
+Tartsa rövidre az ilyen kulcsfontosságú döntések magyarázatát.
+
+Indokolja meg, hogy mit döntöttek és miért úgy döntöttek,
+a probléma-meghatározás, a minőségi célok és a kulcsfontosságú megkötések alapján.
+Hivatkozzon a következő fejezetek részleteire.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-4/[Megoldási stratégia] az arc42 dokumentációban.
+
+****
+endif::arc42help[]

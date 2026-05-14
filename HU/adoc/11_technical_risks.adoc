@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Kockázatok és technikai adósságok
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Az azonosított technikai kockázatok vagy technikai adósságok listája, prioritás szerint rendezve.
+
+.Motiváció
+„A kockázatkezelés felnőttek projektmenedzsmentje" (Tim Lister, Atlantic Systems Guild.)
+
+Ez legyen az irányelv a kockázatok és technikai adósságok szisztematikus felderítéséhez és értékeléséhez az architektúrában, amelyre a menedzsment érdekelt feleknek (pl. projektvezetők, terméktulajdonosok) szükségük van az átfogó kockázatelemzés és méréstervezés részeként.
+
+.Forma
+Kockázatok és/vagy technikai adósságok listája, valószínűleg javasolt intézkedésekkel a kockázatok minimalizálására, mérséklésére vagy elkerülésére, illetve a technikai adósságok csökkentésére.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-11/[Kockázatok és technikai adósság] az arc42 dokumentációban.
+
+****
+endif::arc42help[]

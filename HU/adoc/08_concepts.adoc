@@ -1,0 +1,65 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Keresztmetszeti koncepciók
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Ez a fejezet a keresztmetszeti koncepciókat (gyakorlatok, minták, szabályozások vagy megoldási ötletek) írja le.
+Az ilyen koncepciók gyakran több építőelemhez kapcsolódnak.
+Számos különböző témát tartalmazhatnak, mint például az alábbi ábrán bemutatottak:
+
+image::08-concepts-HU.drawio.png["A keresztmetszeti koncepciók lehetséges témái"]
+
+.Motiváció
+A koncepciók alkotják az architektúra _fogalmi integritásának_ (konzisztencia, homogenitás) alapját.
+Ezáltal fontos hozzájárulást jelentenek a rendszer belső minőségeinek eléréséhez.
+
+Ez a sablon azon helye, amelyet az ilyen koncepciók egységes specifikációjára biztosítottunk.
+
+Ezek közül sok koncepció több építőelemhez kapcsolódik vagy hat rájuk.
+
+.Forma
+A forma változatos lehet:
+
+* koncepciódokumentumok bármilyen struktúrával
+* példamegvalósítások, különösen technikai koncepciókhoz
+* keresztmetszeti modellrészletek vagy forgatókönyvek az architekturális nézetek jelöléseivel
+
+.Struktúra
+Válassza ki **csak** a rendszer számára leginkább szükséges témákat, és rendeljen hozzájuk egy 2. szintű címsort ebben a fejezetben (pl. 8.1, 8.2 stb).
+
+NE PRÓBÁLJA meg lefedni a fent említett diagram összes témáját.
+
+
+.További információ
+
+Egyes témák a rendszerekben gyakran több építőelemet, hardverelemet vagy fejlesztési folyamatot érintenek.
+Könnyebb lehet az ilyen _keresztmetszeti_ témákat egy központi helyen kommunikálni vagy dokumentálni, ahelyett hogy megismételnénk őket az érintett építőelemek, hardverelemek vagy fejlesztési folyamatok leírásában.
+
+Bizonyos koncepciók **minden** elemre vonatkozhatnak, mások csak néhányra lehetnek relevánsak.
+A fenti ábrán a naplózás mindhárom komponenst érinti, míg a biztonság csak két komponens számára releváns.
+
+
+Lásd https://docs.arc42.org/section-8/[Koncepciók] az arc42 dokumentációban.
+****
+endif::arc42help[]
+
+=== _<1. koncepció>_
+
+_<magyarázat>_
+
+
+
+=== _<2. koncepció>_
+
+_<magyarázat>_
+
+...
+
+=== _<n. koncepció>_
+
+_<magyarázat>_

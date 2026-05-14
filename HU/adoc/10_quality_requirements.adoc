@@ -1,0 +1,111 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-quality-scenarios]]
+== Minőségi követelmények
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.Tartalom
+Ez a fejezet tartalmazza az összes releváns minőségi követelményt.
+
+Ezek közül a legfontosabbak már az 1.2. fejezetben (minőségi célok) le lettek írva, ezért itt csak hivatkozni kell rájuk.
+Ebben a 10. fejezetben rögzítse azokat a minőségi követelményeket is, amelyek kisebb jelentőségűek, és amelyek nem teljesülése nem jelent nagy kockázatot (de _kellemes lenne, ha megvalósulnának_).
+
+.Motiváció
+Mivel a minőségi követelmények nagymértékben befolyásolják az architekturális döntéseket, tudnia kell, milyen minőségi jellemzők igazán fontosak az érdekelt felek számára, konkrét és mérhető módon.
+
+
+.További információ
+
+* Lásd https://docs.arc42.org/section-10/[Minőségi követelmények] az arc42 dokumentációban.
+* Lásd a részletes https://quality.arc42.org[Q42 minőségi modellt a https://quality.arc42.org oldalon].
+
+****
+endif::arc42help[]
+
+
+=== Minőségi követelmények áttekintése
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.Tartalom
+A minőségi követelmények áttekintése vagy összefoglalása.
+
+
+.Motiváció
+Gyakran találkozunk tucatnyi (vagy akár százas nagyságrendű) részletes minőségi követelménnyel.
+Ebben az áttekintő fejezetben próbálja meg összefoglalni őket, pl. kategóriák vagy témák leírásával (ahogyan az https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] vagy a https://quality.arc42.org[Q42] javasolja).
+
+Ha ezek az összefoglaló leírások már elég pontosak, specifikusak és mérhetőek, kihagyhatja a 10.2. fejezetet.
+
+.Forma
+Használjon egyszerű táblázatot, amelyben minden sor egy kategóriát vagy témát és a minőségi követelmény rövid leírását tartalmazza.
+Alternatívaként gondolattérképet is használhat a minőségi követelmények strukturálásához.
+Az irodalomban a _minőségi attribútum fa_ gondolata is leírásra került, amely a „minőség" általános fogalmát helyezi a gyökérbe, és faszerű finomítást alkalmaz.
+[Bass+21] erre a célra a „Minőségi attribútum hasznossági fa" (Quality Attribute Utility Tree) kifejezést vezette be.
+
+
+
+****
+endif::arc42help[]
+
+
+=== Minőségi forgatókönyvek
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.Tartalom
+A minőségi forgatókönyvek konkretizálják a minőségi követelményeket, és lehetővé teszik annak eldöntését, hogy teljesültek-e (elfogadási kritériumok értelmében).
+Győződjön meg róla, hogy a forgatókönyvei specifikusak és mérhetőek.
+
+
+
+Két fajta forgatókönyv különösen hasznos:
+
+* _Használati forgatókönyvek_ (más néven alkalmazási forgatókönyvek vagy használati eset forgatókönyvek) írják le a rendszer futásidejű reakcióját egy adott ingerre.
+Ide tartoznak a rendszer hatékonyságát vagy teljesítményét leíró forgatókönyvek is.
+Példa: A rendszer egy másodpercen belül reagál a felhasználó kérésére.
+* _Változási forgatókönyvek_ írják le a rendszer vagy közvetlen környezete módosításának vagy bővítésének kívánt hatását.
+Példa: További funkcionalitás kerül megvalósításra, vagy egy minőségi attribútum követelménye megváltozik, és a változtatás ráfordítása vagy időtartama mérhető.
+
+
+.Forma
+
+A részletes forgatókönyvek jellemző információi a következők:
+
+Rövid formában (a Q42 modell által előnyben részesítve):
+
+* **Kontextus/Háttér**: Milyen rendszerről vagy komponensről van szó, mi a környezet vagy helyzet?
+* **Forrás/Inger**: Ki vagy mi indít el egy viselkedést, reakciót vagy cselekvést.
+* **Metrika/Elfogadási kritérium**: Egy válasz _mérőszámmal_ vagy _metrikával_
+
+A forgatókönyvek hosszú formája (az SEI és [Bass+21] által előnyben részesítve) részletesebb, és a következő információkat tartalmazza:
+
+* **Forgatókönyv-azonosító**: A forgatókönyv egyedi azonosítója.
+* **Forgatókönyv neve**: A forgatókönyv rövid, leíró neve.
+* **Forrás**: A forgatókönyvet kezdeményező entitás (felhasználó, rendszer vagy esemény).
+* **Inger**: A kiváltó esemény vagy feltétel, amelyet a rendszernek kezelnie kell.
+* **Környezet**: Az az üzemeltetési kontextus vagy feltétel, amelyben a rendszer az ingert tapasztalja.
+* **Artefaktum**: Az inger által érintett építőelemek vagy a rendszer egyéb elemei.
+* **Válasz**: Az eredmény vagy viselkedés, amelyet a rendszer az ingerre adott reakcióként mutat.
+* **Válaszmérték**: A kritérium vagy metrika, amely alapján a rendszer válaszát értékelik.
+
+
+.Példák
+Lásd https://quality.arc42.org[a Q42 minőségi modell weboldalt] a minőségi követelmények részletes példáiért.
+
+.További információ
+
+* Len Bass, Paul Clements, Rick Kazman: "Software Architecture in Practice", 4th Edition, Addison-Wesley, 2021.
+
+****
+
+
+endif::arc42help[]

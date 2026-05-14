@@ -80,6 +80,10 @@ The following languages are currently available:
 | Gernot Starke, Peter Hruschka (founders)
 | 2005
 
+| Hungarian (HU)
+| László Séra (laszlo.sera@gmail.com)
+| 2026-05-14
+
 | Italian (IT)
 | Mario Giustiniani (mariogiustiniani@gmail.com)
 | 2021-04-04
