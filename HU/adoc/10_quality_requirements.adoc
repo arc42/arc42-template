@@ -47,7 +47,7 @@ Ha ezek az összefoglaló leírások már elég pontosak, specifikusak és mérh
 Használjon egyszerű táblázatot, amelyben minden sor egy kategóriát vagy témát és a minőségi követelmény rövid leírását tartalmazza.
 Alternatívaként gondolattérképet is használhat a minőségi követelmények strukturálásához.
 Az irodalomban a _minőségi attribútum fa_ gondolata is leírásra került, amely a „minőség" általános fogalmát helyezi a gyökérbe, és faszerű finomítást alkalmaz.
-[Bass+21] erre a célra a „Minőségi attribútum hasznossági fa" (Quality Attribute Utility Tree) kifejezést vezette be.
+[Bass+21] erre a célra a „Minőségi attribútum hasznossági fa” (Quality Attribute Utility Tree) kifejezést vezette be.
 
 
 
