@@ -146,7 +146,7 @@ languages.each { language ->
     def imagesDirAttr
     def pdfThemeBaseDir
 
-    if (language in ['DE', 'EN', 'CZ', 'ES', 'FR', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
+    if (language in ['DE', 'EN', 'CZ', 'ES', 'FR', 'HU', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
         sourceDirFile = file(language)
         imagesDirAttr = file("${language}/images").absolutePath
         pdfThemeBaseDir = file(language)
@@ -357,7 +357,7 @@ gradle.taskGraph.whenReady { taskGraph ->
         println "\nBuilding arc42 documentation with the following configuration:"
         println "  Languages: ${languages.join(', ')}"
         def sourceDirs = languages.collect { lang ->
-            if (lang in ['DE', 'EN', 'CZ', 'ES', 'FR', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
+            if (lang in ['DE', 'EN', 'CZ', 'ES', 'FR', 'HU', 'IT', 'NL', 'PT', 'RU', 'UKR', 'ZH']) {
                 return lang
             } else {
                 return "${lang}/asciidoc"

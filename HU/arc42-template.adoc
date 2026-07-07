@@ -1,0 +1,87 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+// configure HU settings for asciidoc
+include::adoc/config.adoc[]
+
+= image:arc42-logo.png[arc42] Sablon
+:revnumber: {revnumber}
+:revdate: {revdate}
+:revremark: {revremark}
+:toc-title: Tartalomjegyzék
+
+//additional style for arc42 help callouts
+include::../common/styles/arc42-help-style.adoc[]
+
+
+
+include::adoc/about-arc42.adoc[]
+
+// horizontal line
+***
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+[NOTE]
+====
+A sablon ezen verziója súgókat és magyarázatokat tartalmaz.
+Az arc42 megismeréséhez és a koncepciók megértéséhez használható.
+Saját rendszer dokumentálásához használja inkább az _egyszerű_ verziót.
+====
+****
+endif::arc42help[]
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Bevezetés és célok
+include::adoc/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Architekturális megkötések
+include::adoc/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Kontextus és hatókör
+include::adoc/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Megoldási stratégia
+include::adoc/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Építőelem-nézet
+include::adoc/05_building_block_view.adoc[]
+
+<<<<
+// 6. Futásidejű nézet
+include::adoc/06_runtime_view.adoc[]
+
+<<<<
+// 7. Telepítési nézet
+include::adoc/07_deployment_view.adoc[]
+
+<<<<
+// 8. Keresztmetszeti koncepciók
+include::adoc/08_concepts.adoc[]
+
+<<<<
+// 9. Architektúra-döntések
+include::adoc/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Minőségi követelmények
+include::adoc/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Kockázatok és technikai adósságok
+include::adoc/11_technical_risks.adoc[]
+
+<<<<
+// 12. Szójegyzék
+include::adoc/12_glossary.adoc[]
+

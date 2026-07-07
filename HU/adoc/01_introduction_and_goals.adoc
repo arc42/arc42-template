@@ -1,0 +1,101 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-introduction-and-goals]]
+== Bevezetés és célok
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Leírja azokat a követelményeket és hajtóerőket, amelyeket a szoftverarchitekteknek és a fejlesztőcsapatnak figyelembe kell venniük.
+Ezek a következők:
+
+* alapvető üzleti célok,
+* lényeges funkciók,
+* lényeges funkcionális követelmények,
+* az architektúra minőségi céljai és
+* a releváns érdekelt felek és elvárásaik
+****
+endif::arc42help[]
+
+=== Követelmények áttekintése
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A funkcionális követelmények rövid leírása, hajtóerők, a követelmények kivonata (vagy összefoglalása).
+Hivatkozás a (remélhetőleg létező) követelmény-dokumentumokra
+(verziószámmal és az elérhetőség megjelölésével).
+
+.Motiváció
+A végfelhasználók szemszögéből a rendszert egy üzleti tevékenység jobb támogatása
+és/vagy a minőség javítása érdekében hozzák létre vagy módosítják.
+
+.Forma
+Rövid szöveges leírás, lehetőleg táblázatos használati eset formátumban.
+Ha léteznek követelmény-dokumentumok, ez az áttekintés hivatkozzon azokra.
+
+Tartsa ezeket a kivonatokat a lehető legrövidebben. Egyensúlyozzon a dokumentum olvashatósága és a követelmény-dokumentumokkal való esetleges redundancia között.
+
+
+.További információ
+
+Lásd https://docs.arc42.org/section-1/[Bevezetés és célok] az arc42 dokumentációban.
+
+****
+endif::arc42help[]
+
+=== Minőségi célok
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+Az architektúra három (legfeljebb öt) legfontosabb minőségi célja, amelyek teljesülése a legfontosabb érdekelt felek számára a legnagyobb jelentőséggel bír.
+Valóban az architektúra minőségi céljairól van szó. Ne keverje össze ezeket a projekt céljaival.
+Nem feltétlenül azonosak.
+
+Tekintse át a lehetséges témák alábbi áttekintését (az ISO 25010 szabvány alapján):
+
+image::01_2_iso-25010-topics-HU-2023.drawio.png["Minőségi követelmények kategóriái"]
+
+.Motiváció
+Ismernie kell a legfontosabb érdekelt felek minőségi céljait, mivel ezek alapvető architekturális döntéseket befolyásolnak.
+Legyen nagyon konkrét ezekkel a minőségi jellemzőkkel kapcsolatban, kerülje a divatos szavakat.
+Ha architektként nem tudja, hogyan fogják munkája minőségét megítélni...
+
+.Forma
+Táblázat minőségi célokkal és konkrét forgatókönyvekkel, prioritás szerint rendezve
+****
+endif::arc42help[]
+
+=== Érdekelt felek
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Tartalom
+A rendszer érdekelt feleinek explicit áttekintése, azaz minden személy, szerepkör vagy szervezet, amely
+
+* ismeri az architektúrát
+* meggyőzendő az architektúráról
+* az architektúrával vagy a kóddal dolgozik
+* munkájához szüksége van az architektúra dokumentációjára
+* a rendszerrel vagy annak fejlesztésével kapcsolatos döntéseket kell hoznia
+
+.Motiváció
+Ismernie kell minden, a rendszer fejlesztésében érintett vagy a rendszer által érintett felet.
+Ellenkező esetben kellemetlen meglepetések érhetik a fejlesztési folyamat során.
+Ezek az érdekelt felek határozzák meg munkája terjedelmét és részletességi szintjét, valamint annak eredményeit.
+
+.Forma
+Táblázat szerepkörökkel, személynevekkel és az architektúrával, illetve annak dokumentációjával kapcsolatos elvárásaikkal.
+****
+endif::arc42help[]
+
+[options="header",cols="1,2,2"]
+|===
+|Szerepkör/Név|Elérhetőség|Elvárások
+| _<Szerepkör-1>_ | _<Elérhetőség-1>_ | _<Elvárás-1>_
+| _<Szerepkör-2>_ | _<Elérhetőség-2>_ | _<Elvárás-2>_
+|===
