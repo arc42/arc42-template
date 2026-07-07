@@ -13,12 +13,12 @@ A futásidejű nézet a rendszer építőelemeinek konkrét viselkedését és i
 * fontos használati esetek vagy funkciók: hogyan hajtják végre az építőelemek?
 * interakciók kritikus külső interfészeken: hogyan működnek együtt az építőelemek a felhasználókkal és szomszédos rendszerekkel?
 * üzemeltetés és adminisztráció: indítás, elindulás, leállás
-* hiba- és kivételkezelési forgatókönyvek
+* hiba- és kivételforgatókönyvek
 
 Megjegyzés: A lehetséges forgatókönyvek (szekvenciák, munkafolyamatok) kiválasztásának fő kritériuma az *architekturális relevancia*. *Nem* fontos nagyszámú forgatókönyvet leírni. Inkább egy reprezentatív válogatást dokumentáljon.
 
 .Motiváció
-Meg kell értenie, hogyan végzik az építőelemek (példányai) a feladataikat és hogyan kommunikálnak futásidőben.
+Meg kell értenie, hogyan végzik el a rendszerét alkotó építőelemek (illetve azok példányai) a feladataikat, és hogyan kommunikálnak futásidőben.
 A forgatókönyveket elsősorban azért rögzíti a dokumentációban, hogy az architektúrát kommunikálja azoknak az érdekelt feleknek, akik kevésbé hajlandók vagy képesek elolvasni és megérteni a statikus modelleket (építőelem-nézet, telepítési nézet).
 
 .Forma

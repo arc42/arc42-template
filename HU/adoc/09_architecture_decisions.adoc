@@ -9,7 +9,7 @@ ifdef::arc42help[]
 ****
 .Tartalom
 Fontos, költséges, nagy léptékű vagy kockázatos architekturális döntések, beleértve az indoklásokat.
-A „döntések" alatt egy alternatíva kiválasztását értjük adott kritériumok alapján.
+A „döntések” alatt egy alternatíva kiválasztását értjük adott kritériumok alapján.
 
 Kérjük, használja a saját megítélését annak eldöntéséhez, hogy egy architekturális döntést
 itt, ebben a központi fejezetben kell-e dokumentálni, vagy inkább lokálisan
@@ -19,7 +19,7 @@ Kerülje a redundanciát.
 Hivatkozzon a 4. fejezetre, ahol már rögzítette az architektúra legfontosabb döntéseit.
 
 .Motiváció
-Az érdekelt feleknek képesnek kell lenniük megérteni és visszakövetni a döntéseit.
+Rendszere érdekelt feleinek képesnek kell lenniük megérteni és nyomon követni az Ön döntéseit.
 
 .Forma
 Különböző lehetőségek:

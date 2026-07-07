@@ -8,8 +8,8 @@
 [role="lead"]
 arc42, a szoftver- és rendszerarchitektúra dokumentálásának sablonja.
 
-Sablon verzió: {revnumber}. {revremark}, {revdate}
+Sablonverzió {revnumber}. {revremark}, {revdate}
 
-Készítette és karbantartja Dr. Peter Hruschka, Dr. Gernot Starke és a közreműködők (©).
+Készítették és karbantartják Dr. Peter Hruschka, Dr. Gernot Starke és a közreműködők (©).
 Lásd https://arc42.org.
 

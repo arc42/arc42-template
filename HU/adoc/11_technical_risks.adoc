@@ -11,9 +11,9 @@ ifdef::arc42help[]
 Az azonosított technikai kockázatok vagy technikai adósságok listája, prioritás szerint rendezve.
 
 .Motiváció
-„A kockázatkezelés felnőttek projektmenedzsmentje" (Tim Lister, Atlantic Systems Guild.)
+„A kockázatkezelés felnőttek projektmenedzsmentje” (Tim Lister, Atlantic Systems Guild.)
 
-Ez legyen az irányelv a kockázatok és technikai adósságok szisztematikus felderítéséhez és értékeléséhez az architektúrában, amelyre a menedzsment érdekelt feleknek (pl. projektvezetők, terméktulajdonosok) szükségük van az átfogó kockázatelemzés és méréstervezés részeként.
+Ez legyen az irányelv a kockázatok és technikai adósságok szisztematikus felderítéséhez és értékeléséhez az architektúrában, amelyre a vezetői szintű érdekelt feleknek (pl. projektvezetők, terméktulajdonosok) szükségük van az átfogó kockázatelemzés és méréstervezés részeként.
 
 .Forma
 Kockázatok és/vagy technikai adósságok listája, valószínűleg javasolt intézkedésekkel a kockázatok minimalizálására, mérséklésére vagy elkerülésére, illetve a technikai adósságok csökkentésére.

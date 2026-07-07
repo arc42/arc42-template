@@ -23,14 +23,14 @@ Szoftver szempontból elegendő csak azokat az infrastruktúra-elemeket rögzít
 
 .Motiváció
 A szoftver nem fut hardver nélkül.
-Ez az alapul szolgáló infrastruktúra befolyásolhatja a rendszert és/vagy néhány
+Ez az alapul szolgáló infrastruktúra befolyásolja, és befolyásolni is fogja a rendszert és/vagy néhány
 keresztmetszeti koncepciót. Ezért szükséges az infrastruktúra ismerete.
 
 .Forma
 
 Lehetséges, hogy a legfelső szintű telepítési diagram már a 3.2. fejezetben megjelent
-technikai kontextusként, saját infrastruktúrájával mint EGY fekete doboz. Ebben a fejezetben
-további telepítési diagramokkal közelíthet be ebbe a fekete dobozba:
+technikai kontextusként, ahol saját infrastruktúráját EGY fekete dobozként ábrázolja. Ebben a fejezetben
+további telepítési diagramok segítségével részletesebben megvizsgálhatja (belenagyíthat) ebbe a fekete dobozba:
 
 * Az UML telepítési diagramokat kínál ennek a nézetnek a kifejezésére. Használja ezeket, esetleg beágyazott diagramokkal,
 ha az infrastruktúra összetettebb.
@@ -56,7 +56,7 @@ ifdef::arc42help[]
 * az infrastruktúra minőségi és/vagy teljesítményjellemzőit
 * a szoftver-artefaktumok leképezését az infrastruktúra-elemekre
 
-Több környezet vagy alternatív telepítés esetén másolja és adaptálja az arc42 ezen fejezetét az összes releváns környezethez.
+Több környezet vagy alternatív telepítés esetén kérjük, másolja és adaptálja az arc42 ezen fejezetét az összes releváns környezethez.
 ****
 endif::arc42help[]
 

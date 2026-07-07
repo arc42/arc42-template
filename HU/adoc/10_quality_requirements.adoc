@@ -12,7 +12,7 @@ ifdef::arc42help[]
 Ez a fejezet tartalmazza az összes releváns minőségi követelményt.
 
 Ezek közül a legfontosabbak már az 1.2. fejezetben (minőségi célok) le lettek írva, ezért itt csak hivatkozni kell rájuk.
-Ebben a 10. fejezetben rögzítse azokat a minőségi követelményeket is, amelyek kisebb jelentőségűek, és amelyek nem teljesülése nem jelent nagy kockázatot (de _kellemes lenne, ha megvalósulnának_).
+Ebben a 10. fejezetben rögzítse azokat a minőségi követelményeket is, amelyek kisebb jelentőségűek, és amelyek nem teljesülése nem jelent nagy kockázatot (de lehetnek _kívánatos, nem kötelező_ elemek).
 
 .Motiváció
 Mivel a minőségi követelmények nagymértékben befolyásolják az architekturális döntéseket, tudnia kell, milyen minőségi jellemzők igazán fontosak az érdekelt felek számára, konkrét és mérhető módon.
@@ -46,7 +46,7 @@ Ha ezek az összefoglaló leírások már elég pontosak, specifikusak és mérh
 .Forma
 Használjon egyszerű táblázatot, amelyben minden sor egy kategóriát vagy témát és a minőségi követelmény rövid leírását tartalmazza.
 Alternatívaként gondolattérképet is használhat a minőségi követelmények strukturálásához.
-Az irodalomban a _minőségi attribútum fa_ gondolata is leírásra került, amely a „minőség" általános fogalmát helyezi a gyökérbe, és faszerű finomítást alkalmaz.
+Az irodalomban a _minőségi attribútum fa_ gondolata is leírásra került, amely a „minőség” általános fogalmát helyezi a gyökérbe, és a „minőség” fogalmának faszerű finomítását alkalmazza.
 [Bass+21] erre a célra a „Minőségi attribútum hasznossági fa” (Quality Attribute Utility Tree) kifejezést vezette be.
 
 

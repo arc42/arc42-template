@@ -32,7 +32,7 @@ A végfelhasználók szemszögéből a rendszert egy üzleti tevékenység jobb 
 és/vagy a minőség javítása érdekében hozzák létre vagy módosítják.
 
 .Forma
-Rövid szöveges leírás, lehetőleg táblázatos használati eset formátumban.
+Rövid szöveges leírás, valószínűleg táblázatos használati eset formátumban.
 Ha léteznek követelmény-dokumentumok, ez az áttekintés hivatkozzon azokra.
 
 Tartsa ezeket a kivonatokat a lehető legrövidebben. Egyensúlyozzon a dokumentum olvashatósága és a követelmény-dokumentumokkal való esetleges redundancia között.
@@ -77,16 +77,16 @@ ifdef::arc42help[]
 .Tartalom
 A rendszer érdekelt feleinek explicit áttekintése, azaz minden személy, szerepkör vagy szervezet, amely
 
-* ismeri az architektúrát
-* meggyőzendő az architektúráról
-* az architektúrával vagy a kóddal dolgozik
+* ismernie kell az architektúrát
+* meg kell győzni az architektúráról
+* az architektúrával vagy a kóddal kell dolgoznia
 * munkájához szüksége van az architektúra dokumentációjára
 * a rendszerrel vagy annak fejlesztésével kapcsolatos döntéseket kell hoznia
 
 .Motiváció
 Ismernie kell minden, a rendszer fejlesztésében érintett vagy a rendszer által érintett felet.
 Ellenkező esetben kellemetlen meglepetések érhetik a fejlesztési folyamat során.
-Ezek az érdekelt felek határozzák meg munkája terjedelmét és részletességi szintjét, valamint annak eredményeit.
+Ezek az érdekelt felek határozzák meg munkája és annak eredményei terjedelmét, valamint részletességi szintjét.
 
 .Forma
 Táblázat szerepkörökkel, személynevekkel és az architektúrával, illetve annak dokumentációjával kapcsolatos elvárásaikkal.

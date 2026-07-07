@@ -15,8 +15,8 @@ Ez a nézet minden architektúra-dokumentációban kötelező.
 Egy ház analógiájával élve ez az _alaprajz_.
 
 .Motiváció
-Tartsa kézben a forráskód áttekinthetőségét azzal, hogy annak szerkezetét
-absztrakción keresztül érthetővé teszi.
+Őrizze meg a forráskód áttekinthetőségét azáltal, hogy szerkezetét
+absztrakcióval érthetővé teszi.
 
 Ez lehetővé teszi, hogy absztrakt szinten kommunikáljon az érdekelt felekkel, anélkül, hogy a megvalósítás részleteit felfedné.
 
@@ -29,10 +29,10 @@ image::05_building_blocks-HU.png["Építőelemek hierarchiája"]
 Az *1. szint* a teljes rendszer fehér doboz leírása a benne található összes
 építőelem fekete doboz leírásával együtt.
 
-A *2. szint* az 1. szint néhány építőelemébe közelít.
+A *2. szint* ráközelít az 1. szint néhány építőelemére.
 Így az 1. szint kiválasztott építőelemeinek fehér doboz leírását tartalmazza, azok belső építőelemeinek fekete doboz leírásával együtt.
 
-A *3. szint* a 2. szint kiválasztott építőelemeibe közelít, és így tovább.
+A *3. szint* ráközelít a 2. szint kiválasztott építőelemeire, és így tovább.
 
 
 .További információ
@@ -42,7 +42,7 @@ Lásd https://docs.arc42.org/section-5/[Építőelem-nézet] az arc42 dokumentá
 ****
 endif::arc42help[]
 
-=== Fehér doboz – Teljes rendszer
+=== Fehér doboz Teljes rendszer
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -50,7 +50,7 @@ ifdef::arc42help[]
 Itt írja le a teljes rendszer dekompozícióját az alábbi fehér doboz sablon segítségével. Ez tartalmazza:
 
  * egy áttekintő diagramot
- * a dekompozíció indoklását
+ * a dekompozíció motivációját
  * a tartalmazott építőelemek fekete doboz leírásait. Ehhez a következő alternatívákat kínáljuk:
 
    ** használjon _egy_ táblázatot az összes tartalmazott építőelem és interfészük rövid és pragmatikus áttekintéséhez
@@ -161,7 +161,7 @@ Itt adhatja meg az 1. szint (néhány) építőelemének belső szerkezetét feh
 
 El kell döntenie, hogy a rendszer mely építőelemei elég fontosak ahhoz, hogy ilyen részletes leírást kapjanak.
 Részesítse előnyben a relevanciát a teljességgel szemben. Írja le a fontos, meglepő, kockázatos, összetett vagy instabil építőelemeket.
-Hagyja ki a normális, egyszerű, unalmas vagy szabványos részeket.
+Hagyja ki a rendszer normális, egyszerű, unalmas vagy szabványos részeit.
 ****
 endif::arc42help[]
 
