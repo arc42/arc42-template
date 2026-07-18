@@ -90,6 +90,24 @@ These stakeholders determine the extent and the level of detail of your work and
 
 .Form
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
+
+.Example
+The following stakeholder roles recur across most software projects. Use it as a
+starting point, then adapt the roles, names and expectations to your actual project
+-- not every project has all of these roles, and some will have additional ones.
+
+[options="header",cols="1,2,2"]
+|===
+|Role/Name|Contact|Expectations
+|Product Owner|Product Management|Prioritizes features by business value; needs Section 1 (Requirements Overview, Quality Goals) kept aligned with product strategy
+|End Users / Customers|represented via UX research, support tickets|Need the system to be usable, reliable and fast; drive quality goals such as performance and usability
+|Software Architect(s)|Architecture Team|Own and maintain this documentation; use it to justify and communicate technical decisions
+|Development Team|Engineering Team|Need clear building blocks (Section 5) and runtime scenarios (Section 6) to implement correctly
+|Operations / SRE|Ops Team|Need the deployment view (Section 7) and cross-cutting concepts (Section 8, e.g. monitoring, logging) to run the system reliably
+|Security Officer / InfoSec|Security Team|Review the architecture against risks (Section 11) and quality requirements (Section 10); need evidence that security constraints are addressed
+|Compliance / Legal|Legal/Compliance Team|Need evidence that regulatory constraints (Section 2) are respected, e.g. data protection, licensing
+|Project Sponsor / Management|Steering Committee|Need confidence that architecture decisions (Section 9) support budget, timeline and strategic goals
+|===
 ****
 endif::arc42help[]
 
