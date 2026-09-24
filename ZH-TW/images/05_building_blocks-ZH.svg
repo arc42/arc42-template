@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024">
+  <rect width="768" height="1024" fill="#000000"/>
+  <style>
+    .panel { fill: #ffffff; stroke: #dddddd; stroke-width: 1.5; }
+    .node { fill: #d9d9d9; stroke: #555555; stroke-width: 2; }
+    .neighbor { fill: #ffffff; stroke: #999999; stroke-width: 1.5; }
+    .label { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #111; font-size: 16px; }
+    .small { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #777; font-size: 15px; }
+    .title { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #111; font-size: 20px; }
+    .arrow { stroke: #333; stroke-width: 1.5; fill: none; stroke-dasharray: 5 5; marker-end: url(#arrow); }
+    .solid-arrow { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    .dot { fill: #ffffff; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#333" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <!-- Level 1 -->
+  <rect class="panel" x="277" y="16" width="407" height="218" rx="6"/>
+  <rect class="neighbor" x="286" y="40" width="88" height="62"/>
+  <text class="small" x="296" y="64">鄰近</text><text class="small" x="296" y="83">系統 1</text>
+  <rect class="node" x="412" y="121" width="88" height="74"/>
+  <text class="label" x="456" y="153" text-anchor="middle">系統</text><text class="label" x="456" y="176" text-anchor="middle">X</text>
+  <rect class="neighbor" x="576" y="152" width="89" height="62"/>
+  <text class="small" x="586" y="176">鄰近</text><text class="small" x="586" y="195">系統 2</text>
+  <circle cx="342" cy="142" r="10" fill="none" stroke="#333" stroke-width="2"/>
+  <path d="M342 152 L342 184 M326 165 L358 165 M342 184 L329 207 M342 184 L355 207" stroke="#333" stroke-width="2" fill="none"/>
+  <text class="label" x="286" y="218">管理員</text>
+  <path class="arrow" d="M362 164 L408 164"/>
+  <path class="arrow" d="M412 139 L376 103"/>
+  <path class="arrow" d="M500 153 L572 168"/>
+  <path class="arrow" d="M438 195 L416 257"/>
+  <path class="arrow" d="M473 195 L511 257"/>
+
+  <!-- Level 2 -->
+  <rect class="neighbor" x="229" y="351" width="66" height="49"/>
+  <text class="small" x="236" y="373">鄰近</text><text class="small" x="236" y="390">系統 1</text>
+  <rect class="panel" x="354" y="354" width="286" height="147" rx="6"/>
+  <text class="title" x="362" y="377">系統 X 白箱</text>
+  <rect class="node" x="397" y="413" width="72" height="48"/>
+  <text class="label" x="433" y="443" text-anchor="middle">A</text>
+  <rect class="node" x="505" y="377" width="37" height="37"/>
+  <text class="label" x="523" y="402" text-anchor="middle">C</text>
+  <rect class="node" x="559" y="377" width="60" height="37"/>
+  <text class="label" x="589" y="402" text-anchor="middle">D</text>
+  <rect class="node" x="530" y="437" width="73" height="49"/>
+  <text class="label" x="566" y="468" text-anchor="middle">B</text>
+  <path class="solid-arrow" d="M543 395 L555 395"/>
+  <path class="arrow" d="M469 420 L502 397"/>
+  <path class="arrow" d="M469 438 L526 453"/>
+  <path class="arrow" d="M354 410 L397 428"/>
+  <path class="arrow" d="M640 441 L704 421"/>
+  <path class="arrow" d="M397 470 L360 502"/>
+  <rect class="neighbor" x="688" y="398" width="75" height="49"/>
+  <text class="small" x="695" y="420">鄰近</text><text class="small" x="695" y="437">系統 2</text>
+  <circle class="dot" cx="258" cy="449" r="5"/>
+
+  <!-- Level 3 -->
+  <rect class="neighbor" x="99" y="739" width="70" height="50"/>
+  <text class="small" x="107" y="760">鄰近</text><text class="small" x="107" y="778">系統 1</text>
+  <rect class="panel" x="204" y="624" width="220" height="167" rx="6"/>
+  <text class="title" x="213" y="648">白箱 A</text>
+  <rect class="node" x="218" y="666" width="72" height="47"/>
+  <text class="label" x="254" y="696" text-anchor="middle">A1</text>
+  <rect class="node" x="337" y="648" width="74" height="49"/>
+  <text class="label" x="374" y="679" text-anchor="middle">A2</text>
+  <rect class="node" x="314" y="722" width="74" height="45"/>
+  <text class="label" x="351" y="751" text-anchor="middle">A3</text>
+  <path class="solid-arrow" d="M290 688 L335 675"/>
+  <path class="solid-arrow" d="M374 698 L351 720"/>
+  <path class="arrow" d="M204 703 L218 690"/>
+  <path class="arrow" d="M411 655 L452 620"/>
+  <path class="arrow" d="M388 747 L452 783"/>
+  <rect class="node" x="450" y="585" width="37" height="38"/>
+  <text class="label" x="468" y="611" text-anchor="middle">C</text>
+
+  <rect class="panel" x="510" y="631" width="228" height="158" rx="6"/>
+  <text class="title" x="520" y="655">白箱 B</text>
+  <rect class="node" x="540" y="687" width="75" height="48"/>
+  <text class="label" x="577" y="718" text-anchor="middle">B1</text>
+  <rect class="node" x="659" y="666" width="58" height="47"/>
+  <text class="label" x="688" y="696" text-anchor="middle">B2</text>
+  <path class="solid-arrow" d="M615 711 L656 691"/>
+  <path class="arrow" d="M510 681 L540 699"/>
+  <path class="arrow" d="M717 701 L757 726"/>
+  <rect class="neighbor" x="682" y="780" width="77" height="48"/>
+  <text class="small" x="689" y="801">鄰近</text><text class="small" x="689" y="819">系統 2</text>
+  <circle class="dot" cx="258" cy="817" r="5"/>
+</svg>

@@ -1,0 +1,35 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== 架構決策
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.內容
+重要、成本高、規模大或風險高的架構決策及其理由。
+我們所說的「決策」是指基於既定標準選擇替代方案。
+
+請自行判斷架構決策是否應記錄在此中央章節，或是更適合在本地記錄（例如，記錄在某個建構模組的白箱範本中）。
+
+避免重複。
+參見第 4 節，您已在該處記錄架構最重要的決策。
+
+.動機
+您系統的利害關係者應能理解並追溯您的決策。
+
+.形式
+各種選擇：
+
+* 為每個重要決策撰寫一份 ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[記錄架構決策])
+* 依重要性與後果排序的清單或表格；或
+* 針對每個決策，以獨立章節提供更詳細的說明
+
+.更多資訊
+
+參見 arc42 文件中的 https://docs.arc42.org/section-9/[架構決策]。
+您將在那裡找到關於 ADR 的連結與範例。
+
+****
+endif::arc42help[]

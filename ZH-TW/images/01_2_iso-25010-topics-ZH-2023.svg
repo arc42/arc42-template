@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="768" viewBox="0 0 2048 768">
+  <rect width="2048" height="768" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <style>
+    .card { fill: #ffd0b8; stroke: #c87516; stroke-width: 2; }
+    .title { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; font-size: 38px; font-weight: 700; text-anchor: middle; fill: #111; }
+    .body { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; font-size: 20px; text-anchor: middle; fill: #111; }
+    .source { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; font-size: 18px; fill: #111; }
+  </style>
+
+  <rect class="card" x="72" y="54" width="338" height="304"/>
+  <text class="title" x="241" y="102"><tspan x="241">功能適切性</tspan></text>
+  <text class="body" x="241" y="174"><tspan x="241">……在特定條件下使用時，</tspan><tspan x="241" dy="27">為預期使用者提供滿足明示與</tspan><tspan x="241" dy="27">默示需求的功能</tspan></text>
+
+  <rect class="card" x="463" y="54" width="338" height="304"/>
+  <text class="title" x="632" y="102"><tspan x="632">效能效率</tspan></text>
+  <text class="body" x="632" y="174"><tspan x="632">……在指定時間與吞吐量參數內</tspan><tspan x="632" dy="27">執行功能，並在指定條件下</tspan><tspan x="632" dy="27">有效率地使用資源</tspan></text>
+
+  <rect class="card" x="854" y="54" width="338" height="304"/>
+  <text class="title" x="1023" y="102"><tspan x="1023">相容性</tspan></text>
+  <text class="body" x="1023" y="174"><tspan x="1023">……在共用相同環境與資源時，</tspan><tspan x="1023" dy="27">與其他產品交換資訊，及/或</tspan><tspan x="1023" dy="27">執行所需功能</tspan></text>
+
+  <rect class="card" x="1252" y="54" width="338" height="304"/>
+  <text class="title" x="1421" y="102"><tspan x="1421">互動能力</tspan></text>
+  <text class="body" x="1421" y="174"><tspan x="1421">……讓指定使用者透過使用者</tspan><tspan x="1421" dy="27">介面與系統互動，在使用者</tspan><tspan x="1421" dy="27">與系統之間交換資訊，以完成</tspan><tspan x="1421" dy="27">預期任務</tspan></text>
+
+  <rect class="card" x="1643" y="54" width="338" height="304"/>
+  <text class="title" x="1812" y="102"><tspan x="1812">可靠性</tspan></text>
+  <text class="body" x="1812" y="174"><tspan x="1812">……在指定條件下，於指定期間</tspan><tspan x="1812" dy="27">執行指定功能，且不中斷、</tspan><tspan x="1812" dy="27">不失效</tspan></text>
+
+  <rect class="card" x="249" y="418" width="358" height="295"/>
+  <text class="title" x="428" y="468"><tspan x="428">資訊安全</tspan></text>
+  <text class="body" x="428" y="535"><tspan x="428">……保護資訊與資料，使人員或</tspan><tspan x="428" dy="27">其他產品取得符合其授權類型</tspan><tspan x="428" dy="27">與等級的資料存取權，並防禦</tspan><tspan x="428" dy="27">惡意行為者的攻擊模式</tspan></text>
+
+  <rect class="card" x="669" y="418" width="338" height="295"/>
+  <text class="title" x="838" y="468"><tspan x="838">可維護性</tspan></text>
+  <text class="body" x="838" y="535"><tspan x="838">……讓預期的維護人員能夠</tspan><tspan x="838" dy="27">有效率地進行修改</tspan></text>
+
+  <rect class="card" x="1065" y="418" width="338" height="295"/>
+  <text class="title" x="1234" y="468"><tspan x="1234">彈性</tspan></text>
+  <text class="body" x="1234" y="535"><tspan x="1234">……適應需求、使用情境或</tspan><tspan x="1234" dy="27">系統環境的變化</tspan></text>
+
+  <rect class="card" x="1460" y="418" width="338" height="295"/>
+  <text class="title" x="1629" y="468"><tspan x="1629">安全性</tspan></text>
+  <text class="body" x="1629" y="535"><tspan x="1629">……在定義條件下，避免人類</tspan><tspan x="1629" dy="27">生命、健康、財產或環境</tspan><tspan x="1629" dy="27">受到危害</tspan></text>
+
+  <text class="source" x="1580" y="748">來源：ISO/IEC 25010:2023(en)，© ISO.org</text>
+</svg>

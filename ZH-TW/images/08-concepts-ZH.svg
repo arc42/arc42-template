@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="768" viewBox="0 0 1200 768">
+  <rect width="1200" height="768" fill="#000"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker>
+  </defs>
+  <style>
+    .box { stroke: none; rx: 5; }
+    .dark { fill: #315c7b; }
+    .blue { fill: #169bc9; }
+    .cyan { fill: #58bec7; }
+    .orange { fill: #f8ae4b; }
+    .red { fill: #f06e61; }
+    .pink { fill: #f7d8d3; }
+    .lav { fill: #d9d8e8; }
+    .text { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #fff; font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .darktext { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #111; font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .line { fill: none; stroke-width: 2.2; marker-end: url(#arrow); }
+    .dblue { stroke: #2e6c98; }
+    .scyan { stroke: #16b6c5; }
+    .sorange { stroke: #f39800; }
+    .sred { stroke: #f05b45; }
+    .sblue { stroke: #0ca6df; }
+    .spink { stroke: #e7a2a0; }
+    .slav { stroke: #bba6bd; }
+  </style>
+
+  <!-- central concept -->
+  <rect class="box dark" x="482" y="311" width="190" height="86"/>
+  <text class="text" x="577" y="337"><tspan x="577">橫向關注點</tspan><tspan x="577" dy="21">或概念</tspan></text>
+
+  <!-- left: safety and security -->
+  <rect class="box red" x="205" y="315" width="143" height="58"/>
+  <text class="text" x="276" y="339"><tspan x="276">安全與</tspan><tspan x="276" dy="19">資訊安全</tspan></text>
+  <path class="line sred" d="M482 348 L348 347"/>
+  <rect class="box red" x="73" y="181" width="119" height="47"/><text class="text" x="132" y="201"><tspan x="132">授權與</tspan><tspan x="132" dy="17">身分驗證</tspan></text>
+  <rect class="box red" x="42" y="263" width="104" height="47"/><text class="text" x="94" y="283"><tspan x="94">資訊安全</tspan></text>
+  <rect class="box red" x="0" y="335" width="148" height="48"/><text class="text" x="74" y="355"><tspan x="74">安全與資安</tspan><tspan x="74" dy="17">標準合規</tspan></text>
+  <rect class="box red" x="39" y="408" width="109" height="47"/><text class="text" x="93" y="438">安全性</text>
+  <rect class="box red" x="83" y="466" width="100" height="47"/><text class="text" x="133" y="494"><tspan x="133">威脅分析</tspan></text>
+  <path class="line sred" d="M252 315 L151 229"/><path class="line sred" d="M238 325 L140 307"/><path class="line sred" d="M205 344 L148 360"/><path class="line sred" d="M236 373 L137 410"/><path class="line sred" d="M276 373 L145 470"/>
+
+  <!-- patterns -->
+  <rect class="box orange" x="254" y="202" width="99" height="45"/><text class="text" x="304" y="230">模式</text>
+  <rect class="box orange" x="165" y="105" width="100" height="47"/><text class="text" x="215" y="125"><tspan x="215">架構模式</tspan></text>
+  <rect class="box orange" x="226" y="43" width="139" height="49"/><text class="text" x="296" y="63"><tspan x="296">設計與編碼</tspan><tspan x="296" dy="18">模式</tspan></text>
+  <path class="line sorange" d="M482 327 L353 226"/><path class="line sorange" d="M304 202 L265 152"/><path class="line sorange" d="M294 202 L248 153"/>
+
+  <!-- domain concepts -->
+  <rect class="box lav" x="494" y="205" width="167" height="51"/><text class="darktext" x="577" y="237">領域概念</text>
+  <rect class="box lav" x="414" y="56" width="109" height="48"/><text class="darktext" x="468" y="77"><tspan x="468">領域</tspan><tspan x="468" dy="17">術語</tspan></text>
+  <rect class="box lav" x="370" y="144" width="113" height="48"/><text class="darktext" x="426" y="165"><tspan x="426">領域流程</tspan></text>
+  <rect class="box lav" x="523" y="132" width="138" height="48"/><text class="darktext" x="592" y="153"><tspan x="592">領域（資料）</tspan><tspan x="592" dy="17">模型</tspan></text>
+  <path class="line slav" d="M546 311 L577 256"/><path class="line slav" d="M531 205 L480 105"/><path class="line slav" d="M551 205 L467 192"/><path class="line slav" d="M590 205 L591 180"/>
+
+  <!-- development and operations -->
+  <rect class="box blue" x="191" y="531" width="147" height="58"/><text class="text" x="264" y="555"><tspan x="264">開發流程</tspan></text>
+  <rect class="box blue" x="24" y="542" width="97" height="44"/><text class="text" x="72" y="569">建置</text>
+  <rect class="box blue" x="24" y="607" width="97" height="44"/><text class="text" x="72" y="634">測試</text>
+  <rect class="box blue" x="43" y="671" width="106" height="47"/><text class="text" x="96" y="691"><tspan x="96">軟體演進</tspan></text>
+  <rect class="box blue" x="301" y="623" width="112" height="50"/><text class="text" x="357" y="644"><tspan x="357">部署、</tspan><tspan x="357" dy="18">發佈</tspan></text>
+  <rect class="box blue" x="181" y="695" width="99" height="49"/><text class="text" x="230" y="724">設定</text>
+  <path class="line dblue" d="M482 371 L338 546"/>
+  <path class="line sblue" d="M191 555 L121 560"/><path class="line sblue" d="M191 568 L121 625"/><path class="line sblue" d="M216 589 L145 682"/><path class="line sblue" d="M302 589 L332 623"/><path class="line sblue" d="M220 589 L230 695"/>
+
+  <rect class="box pink" x="405" y="535" width="154" height="66"/><text class="darktext" x="482" y="559"><tspan x="482">操作與</tspan><tspan x="482" dy="20">管理</tspan></text>
+  <rect class="box pink" x="693" y="529" width="94" height="48"/><text class="darktext" x="740" y="550"><tspan x="740">日誌記錄、</tspan><tspan x="740" dy="17">追蹤</tspan></text>
+  <rect class="box pink" x="700" y="591" width="112" height="48"/><text class="darktext" x="756" y="612"><tspan x="756">可觀測性、</tspan><tspan x="756" dy="17">監控</tspan></text>
+  <rect class="box pink" x="693" y="653" width="111" height="48"/><text class="darktext" x="748" y="674"><tspan x="748">叢集、</tspan><tspan x="748" dy="17">擴展</tspan></text>
+  <rect class="box pink" x="390" y="723" width="120" height="45"/><text class="darktext" x="450" y="750">佈建、設定</text>
+  <rect class="box pink" x="523" y="687" width="118" height="49"/><text class="darktext" x="582" y="718">高可用性</text>
+  <rect class="box pink" x="654" y="723" width="132" height="45"/><text class="darktext" x="720" y="750">災害復原</text>
+  <path class="line dblue" d="M577 397 L482 535"/><path class="line spink" d="M559 553 L693 552"/><path class="line spink" d="M559 568 L700 614"/><path class="line spink" d="M559 580 L693 676"/><path class="line spink" d="M443 601 L450 723"/><path class="line spink" d="M518 601 L582 687"/><path class="line spink" d="M545 601 L720 723"/><path class="line spink" d="M280 720 L390 746"/>
+
+  <!-- under the hood -->
+  <rect class="box cyan" x="780" y="340" width="177" height="64"/><text class="text" x="868" y="367"><tspan x="868">底層運作</tspan></text>
+  <path class="line dblue" d="M672 354 L780 370"/>
+  <rect class="box cyan" x="694" y="219" width="91" height="46"/><text class="text" x="739" y="247">持久化</text>
+  <rect class="box cyan" x="692" y="111" width="97" height="48"/><text class="text" x="740" y="140"><tspan x="740">CRUD</tspan></text>
+  <rect class="box cyan" x="750" y="0" width="76" height="45"/><text class="text" x="788" y="18"><tspan x="788">綱要</tspan><tspan x="788" dy="17">演進</tspan></text>
+  <rect class="box cyan" x="878" y="0" width="91" height="47"/><text class="text" x="923" y="19"><tspan x="923">使用者</tspan><tspan x="923" dy="17">體驗</tspan></text>
+  <rect class="box cyan" x="996" y="24" width="95" height="47"/><text class="text" x="1044" y="53">人體工學</text>
+  <rect class="box cyan" x="1060" y="82" width="130" height="51"/><text class="text" x="1125" y="102"><tspan x="1125">國際化、</tspan><tspan x="1125" dy="18">本地化</tspan></text>
+  <rect class="box cyan" x="919" y="155" width="105" height="49"/><text class="text" x="971" y="176"><tspan x="971">使用者</tspan><tspan x="971" dy="18">介面</tspan></text>
+  <rect class="box cyan" x="1066" y="182" width="112" height="49"/><text class="text" x="1122" y="212">流程控制</text>
+  <rect class="box cyan" x="1057" y="274" width="123" height="49"/><text class="text" x="1118" y="295"><tspan x="1118">合理性檢查</tspan><tspan x="1118" dy="18">/驗證</tspan></text>
+  <rect class="box cyan" x="1051" y="343" width="149" height="49"/><text class="text" x="1125" y="364"><tspan x="1125">整合、</tspan><tspan x="1125" dy="18">通訊</tspan></text>
+  <rect class="box cyan" x="1060" y="416" width="125" height="49"/><text class="text" x="1122" y="437"><tspan x="1122">例外與</tspan><tspan x="1122" dy="18">錯誤處理</tspan></text>
+  <rect class="box cyan" x="1068" y="491" width="115" height="48"/><text class="text" x="1125" y="520">平行處理</text>
+  <rect class="box cyan" x="998" y="552" width="100" height="48"/><text class="text" x="1048" y="581">業務規則</text>
+  <rect class="box cyan" x="925" y="617" width="104" height="48"/><text class="text" x="977" y="646">報表</text>
+  <rect class="box cyan" x="849" y="678" width="119" height="48"/><text class="text" x="909" y="707"><tspan x="909">批次處理</tspan></text>
+  <rect class="box cyan" x="822" y="80" width="110" height="49"/><text class="text" x="877" y="101"><tspan x="877">讀寫</tspan><tspan x="877" dy="18">最佳化</tspan></text>
+
+  <path class="line scyan" d="M813 340 L744 265"/><path class="line scyan" d="M815 340 L739 159"/><path class="line scyan" d="M832 340 L788 45"/><path class="line scyan" d="M855 340 L923 47"/><path class="line scyan" d="M886 340 L971 204"/><path class="line scyan" d="M920 340 L1120 230"/><path class="line scyan" d="M940 350 L1057 299"/><path class="line scyan" d="M957 360 L1051 367"/><path class="line scyan" d="M955 377 L1060 440"/><path class="line scyan" d="M943 394 L1068 512"/><path class="line scyan" d="M916 404 L1040 565"/><path class="line scyan" d="M890 404 L977 630"/><path class="line scyan" d="M866 404 L909 678"/><path class="line scyan" d="M786 340 L730 159"/><path class="line scyan" d="M828 340 L878 129"/>
+</svg>

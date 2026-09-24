@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== 風險與技術負債
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.內容
+依優先順序排列的已識別技術風險或技術負債清單。
+
+.動機
+[quote,Tim Lister,Atlantic Systems Guild]
+「風險管理，就是成熟大人的專案管理。」
+
+
+這應成為您在架構中系統性發掘與評估風險及技術負債的座右銘。管理階層利害關係者（例如專案經理、產品負責人）會需要這些資訊，作為整體風險分析與度量規劃的一環。
+
+.形式
+風險與/或技術負債清單，可能包含用於最小化、緩解或避免風險，以及減少技術負債的建議措施。
+
+
+.更多資訊
+
+參見 arc42 文件中的 https://docs.arc42.org/section-11/[風險與技術負債]。
+
+****
+endif::arc42help[]
