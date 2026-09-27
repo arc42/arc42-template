@@ -22,7 +22,7 @@ ifdef::arc42help[]
 .形式
 各種選擇：
 
-* 為每個重要決策撰寫一份 ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[記錄架構決策])
+* 為每個重要決策撰寫一份 ADR（架構決策紀錄，參見 https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions]）
 * 依重要性與後果排序的清單或表格；或
 * 針對每個決策，以獨立章節提供更詳細的說明
 
