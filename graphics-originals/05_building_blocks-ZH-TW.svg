@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024">
-  <rect width="768" height="1024" fill="#000000"/>
+  <rect width="768" height="1024" fill="#ffffff"/>
   <style>
     .panel { fill: #ffffff; stroke: #dddddd; stroke-width: 1.5; }
     .node { fill: #d9d9d9; stroke: #555555; stroke-width: 2; }

@@ -66,7 +66,7 @@ ifdef::arc42help[]
 品質情境使品質需求具體化，並可據此判斷是否達成（就驗收標準而言）。
 請確保您的情境具體且可衡量。
 
-image::10-quality-scenario-ZH.svg["品質情境"]
+image::10_stimulus-ZH-TW.png["品質情境"]
 
 以下兩種情境特別有用：
 

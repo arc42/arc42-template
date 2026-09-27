@@ -20,7 +20,7 @@ ifdef::arc42help[]
 .形式
 建構模組視圖是黑箱與白箱的階層集合（見下圖），以及對這些黑箱與白箱的描述。
 
-image::05_building_blocks-ZH.svg["建構模組階層"]
+image::05_building_blocks-ZH-TW.png["建構模組階層"]
 
 *層級 1* 是整體系統的白箱描述，以及所有包含之建構模組的黑箱描述。
 
