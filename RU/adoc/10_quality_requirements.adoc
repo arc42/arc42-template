@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Требования к качеству
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 
@@ -22,9 +23,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 Смотри https://docs.arc42.org/section-10/[Требования к качеству] в документации arc42.
 
 ****
+endif::arc42help[]
 
 === Дерево качества
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -42,9 +45,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 В любом случае дерево должно включать ссылки на сценарии следующего раздела.
 
 ****
+endif::arc42help[]
 
 === Сценарии качества
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -68,3 +73,4 @@ ATAM вам необходимо описать ваши цели в облас�
 .Форма
 Табличный или произвольный текст.
 ****
+endif::arc42help[]

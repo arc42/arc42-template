@@ -22,6 +22,7 @@ include::adoc/about-arc42.adoc[]
 // horizontal line
 ***
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 [NOTE]
@@ -32,6 +33,7 @@ include::adoc/about-arc42.adoc[]
 
 ====
 ****
+endif::arc42help[]
 
 
 // numbering from here on

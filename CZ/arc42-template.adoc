@@ -26,7 +26,7 @@ include::adoc/about-arc42.adoc[]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-[POZNÁMKA]
+[NOTE]
 ====
 Tato verze arc42 šablony obsahuje nápovědu a vysvětlivky a slouží proto k seznámení s arc42 a pochopení pojmů.
 Pro dokumentaci vašeho vlastního systému použijte raději _plain_ verzi.
