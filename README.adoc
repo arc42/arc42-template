@@ -60,6 +60,10 @@ The following languages are currently available:
 | Chris (Gentle) Y杨 (nodexy@gmail.com) with DannyGe
 | 2025-10-30
 
+| Traditional Chinese (ZH-TW)
+| Sophie (Contact to be completed after we merge their PR) 
+| 2026-09-25
+
 | Dutch (NL)
 | mv <verburg.maarten@gmail.com> 
 | 2022-05-01
