@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Архитектурные решения
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -31,3 +32,4 @@ ifndef::imagesdir[:imagesdir: ../images]
 Там вы найдете ссылки и примеры по ADR.
 
 ****
+endif::arc42help[]

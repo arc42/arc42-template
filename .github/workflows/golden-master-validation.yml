@@ -1,0 +1,52 @@
+# Validates the golden master with the arc42 generator (https://github.com/arc42/arc42-generator):
+# balanced ifdef/endif, help blocks wrapped in their conditional, the feature attribute
+# (:arc42help:) set, images present, version.properties complete, chapters and help blocks
+# consistent with EN. Every problem is shown as annotation on its file and line in the pull
+# request, and a report with the counts per language is written to the job summary.
+# Errors fail the check; warnings (differences from EN) do not.
+#
+# The generator runs the way it runs everywhere: make targets in its Docker image.
+name: Golden master validation
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the template
+        uses: actions/checkout@v4
+
+      - name: Check out the generator
+        uses: actions/checkout@v4
+        with:
+          repository: arc42/arc42-generator
+          path: .arc42-generator
+
+      - name: Generator config for this checkout
+        # the generator's arc42 config, with the paths relative to this repository
+        run: |
+          sed -e "s|sourcePath = 'arc42-template/'|sourcePath = './'|" \
+              -e 's|targetPath = "arc42-template/dist/"|targetPath = "dist/"|' \
+              .arc42-generator/buildconfig.groovy > buildconfig.groovy
+          grep -q "sourcePath = './'" buildconfig.groovy
+
+      - name: Build the generator image
+        run: make -C .arc42-generator image
+
+      - name: Validate and generate the templates
+        # annotations go to the log; the report goes to a file in the mounted checkout
+        run: >
+          make -C .arc42-generator templates TEMPLATE="$GITHUB_WORKSPACE"
+          DOCKER_RUN_OPTS="-e GITHUB_ACTIONS=true -e GITHUB_STEP_SUMMARY=/project/.validation-report.md"
+
+      - name: Report
+        if: always()
+        run: |
+          if [ -f .validation-report.md ]; then cat .validation-report.md >> "$GITHUB_STEP_SUMMARY"; fi
