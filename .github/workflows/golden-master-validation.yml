@@ -4,6 +4,8 @@
 # consistent with EN. Every problem is shown as annotation on its file and line in the pull
 # request, and a report with the counts per language is written to the job summary.
 # Errors fail the check; warnings (differences from EN) do not.
+#
+# The generator runs the way it runs everywhere: make targets in its Docker image.
 name: Golden master validation
 
 on:
@@ -27,17 +29,24 @@ jobs:
           repository: arc42/arc42-generator
           path: .arc42-generator
 
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '21'
-          cache: gradle
+      - name: Generator config for this checkout
+        # the generator's arc42 config, with the paths relative to this repository
+        run: |
+          sed -e "s|sourcePath = 'arc42-template/'|sourcePath = './'|" \
+              -e 's|targetPath = "arc42-template/dist/"|targetPath = "dist/"|' \
+              .arc42-generator/buildconfig.groovy > buildconfig.groovy
+          grep -q "sourcePath = './'" buildconfig.groovy
+
+      - name: Build the generator image
+        run: make -C .arc42-generator image
 
       - name: Validate and generate the templates
-        working-directory: .arc42-generator
+        # annotations go to the log; the report goes to a file in the mounted checkout
+        run: >
+          make -C .arc42-generator templates TEMPLATE="$GITHUB_WORKSPACE"
+          DOCKER_RUN_OPTS="-e GITHUB_ACTIONS=true -e GITHUB_STEP_SUMMARY=/project/.validation-report.md"
+
+      - name: Report
+        if: always()
         run: |
-          # the generator reads the golden master from arc42-template/: point it at this checkout,
-          # so the reported paths are the paths of this repository
-          rm -rf arc42-template
-          ln -s "$GITHUB_WORKSPACE" arc42-template
-          ./gradlew --no-daemon --quiet templates
+          if [ -f .validation-report.md ]; then cat .validation-report.md >> "$GITHUB_STEP_SUMMARY"; fi
