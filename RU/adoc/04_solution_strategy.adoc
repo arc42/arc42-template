@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Стратегия решения
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -30,3 +31,4 @@ ifndef::imagesdir[:imagesdir: ../images]
 Смотрите https://docs.arc42.org/section-4/[Стратегия решения] в документации arc42.
 
 ****
+endif::arc42help[]

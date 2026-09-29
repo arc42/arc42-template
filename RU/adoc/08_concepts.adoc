@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Сквозные концепции
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -53,6 +54,7 @@ image::08-concepts-EN.drawio.png["Возможные темы для сквоз�
 
 Смотри https://docs.arc42.org/section-8/[Концепции] в документации arc42.
 ****
+endif::arc42help[]
 
 
 === _<Концепция 1>_

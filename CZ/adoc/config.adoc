@@ -1,4 +1,4 @@
-// asciidoc settings for EN (English)
+// asciidoc settings for CZ (Czech)
 // ==================================
 :toc-title: table of contents
 
@@ -8,3 +8,6 @@
 // where are images located?
 :imagesdir: ./images
 :arc42help:
+
+// caption of [NOTE] admonitions
+:note-caption: Poznámka

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Контекст и рамки
 
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -26,10 +27,12 @@ ifndef::imagesdir[:imagesdir: ../images]
 Смотрите https://docs.arc42.org/section-3/[Context and Scope] в документации arc42.
 
 ****
+endif::arc42help[]
 
 
 === Бизнес контекст
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -46,6 +49,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 Заголовок таблицы — это имя вашей системы, три столбца содержат имя партнера, с которым происходит коммуникация, входы и выходы.
 
 ****
+endif::arc42help[]
 
 **<Диаграмма или таблица>**
 
@@ -53,6 +57,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 === Технический контекст
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -66,6 +71,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 вместе с таблицей сопоставления, показывающей взаимосвязь между каналами и вводом/выводом.
 
 ****
+endif::arc42help[]
 
 **<Диаграмма или таблица>**
 

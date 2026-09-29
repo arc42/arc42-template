@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-runtime-view]]
 == Представление времени выполнения
 
+ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Содержание
@@ -35,6 +36,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 Смотри https://docs.arc42.org/section-6/[Представление времени выполнения] в документации arc42.
 
 ****
+endif::arc42help[]
 
 === <Сценарий времени выполнения 1>
 
