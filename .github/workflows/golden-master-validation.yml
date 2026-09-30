@@ -21,10 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the template
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check out the generator
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: arc42/arc42-generator
           path: .arc42-generator
