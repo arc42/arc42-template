@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="321" viewBox="0 0 1450 321">
+  <rect width="1450" height="321" fill="#fff"/>
+  <style>
+    .label { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #111; font-size: 31px; }
+    .bold { font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif; fill: #111; font-size: 30px; font-weight: 700; }
+    .line { stroke: #111; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+      <path d="M0,0 L13,6.5 L0,13" fill="none" stroke="#111" stroke-width="2"/>
+    </marker>
+  </defs>
+
+  <!-- source of stimulus -->
+  <circle cx="181" cy="82" r="20" fill="none" stroke="#111" stroke-width="3"/>
+  <path d="M181 102 L181 151 M153 121 L209 121 M181 151 L158 189 M181 151 L204 189" stroke="#111" stroke-width="3" fill="none"/>
+  <text class="label" x="181" y="213" text-anchor="middle">刺激來源</text>
+
+  <!-- stimulus -->
+  <text class="label" x="336" y="136">刺激</text>
+  <path class="line" d="M246 145 L552 145"/>
+
+  <!-- system artifact -->
+  <polygon points="560,57 596,36 922,36 887,57" fill="#fff" stroke="#111" stroke-width="3"/>
+  <polygon points="887,57 922,36 922,232 887,253" fill="#eee" stroke="#111" stroke-width="3"/>
+  <rect x="560" y="57" width="327" height="196" fill="#fff" stroke="#111" stroke-width="3"/>
+  <text class="bold" x="723" y="105" text-anchor="middle">系統產出物</text>
+
+  <!-- response -->
+  <text class="label" x="975" y="136">回應</text>
+  <path class="line" d="M923 145 L1191 145"/>
+
+  <!-- response measure clock -->
+  <circle cx="1274" cy="144" r="72" fill="#efefef" stroke="#111" stroke-width="4"/>
+  <circle cx="1274" cy="144" r="59" fill="none" stroke="#111" stroke-width="3"/>
+  <circle cx="1274" cy="144" r="10" fill="#111"/>
+  <path d="M1274 144 L1289 83" stroke="#111" stroke-width="5"/>
+  <path d="M1274 144 L1244 189" stroke="#111" stroke-width="6"/>
+  <path d="M1274 76 L1274 66 M1324 94 L1331 86 M1342 144 L1353 144 M1324 194 L1331 202 M1274 212 L1274 222 M1224 194 L1217 202 M1206 144 L1195 144 M1224 94 L1217 86" stroke="#111" stroke-width="3"/>
+  <text class="label" x="1274" y="285" text-anchor="middle">回應度量</text>
+</svg>

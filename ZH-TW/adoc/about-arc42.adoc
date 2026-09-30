@@ -1,0 +1,14 @@
+:homepage: https://arc42.org
+
+:keywords: 軟體架構, 文件, 範本, arc42
+
+:numbered!:
+**關於 arc42**
+
+[role="lead"]
+arc42，用於記錄軟體與系統架構的範本。
+
+範本版本 {revnumber}。{revremark}，{revdate}
+
+由 Dr. Peter Hruschka、Dr. Gernot Starke 及其他貢獻者建立、維護並持有著作權。
+參見 https://arc42.org。
