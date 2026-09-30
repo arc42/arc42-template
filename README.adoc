@@ -13,7 +13,7 @@ This repository contains the (AsciiDoc) source of the arc42 template.
 
 It is used...
 
-*  as the basis for generating (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others). To generate, THIS repo is included as submodule from the generator project. Use the gradle build contained here just for preview! 
+*  as the basis for generating (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others). To generate, THIS repo is included as submodule from the generator project; see <<Build a Local Version>> for a preview of your changes.
 * to maintain structure, content and help for the template
 * to keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP) in `other-formats/`.
 
@@ -120,235 +120,45 @@ The following languages are currently available:
 
 |===
 
-== Build a Local Version 
+== Build a Local Version
 
-In case you want to build the HTML or PDF version of the template on your local, just checkout this repo and call
+The template is built by the https://github.com/arc42/arc42-generator[arc42-generator], which also produces the official downloads. It needs only `make` and Docker. To preview your changes (for example a translation) in HTML or PDF:
 
 ----
-$> gradle
+git clone --recurse-submodules https://github.com/arc42/arc42-generator.git
+cd arc42-generator
+make image                                  # once: the Docker image with all tools
+
+# the template to build: newest master, or your branch
+make template-update
+git -C arc42-template fetch https://github.com/<you>/arc42-template.git <branch>
+git -C arc42-template checkout FETCH_HEAD
+
+make generate FORMAT=html                   # or FORMAT=pdf; without FORMAT: all 15 formats
+make templates OPTS=--lint=warn             # only check the template (conditionals, help blocks, images, version.properties)
 ----
 
-on the command line.
-To select another language set the Gradle build property `languages` in the file `gradle.properties` to one of the provided languages (e.g. DE, EN, ES, IT, NL etc).
+The output is in `build/<LANG>/<format>/<plain|with-help>/`, e.g. `build/DE/html/with-help/arc42-template.html` or `build/ZH-TW/pdf/plain/arc42-template-ZH-TW.pdf`. See the https://github.com/arc42/arc42-generator#readme[generator README] for all targets.
 
-[source, java]
+Every pull request to this repository is checked by the same generator (workflow _Golden master validation_): problems appear as annotations on the file and line.
+
+=== Directory Structure
+
 ----
-include::gradle.properties[]
-----
-
-
-### Directory Structure
-
-The build process assumes the following directory structure:
-
-```
 <root>/
-  ├── DE/                     // German language files
-  │    ├── arc42-template.adoc  // Main document for German
-  │    ├── version.properties    // Version information for German
-  │    ├── adoc/                 // AsciiDoc chapter files
-  │    └── images/               // Language-specific images
-  │
-  ├── EN/                     // English language files 
-  │    ├── arc42-template.adoc  // Main document for English
-  │    ├── version.properties    // Version information for English
-  │    ├── adoc/                 // AsciiDoc chapter files
-  │    └── images/               // Language-specific images
-  │
-  ├── common/                 // Common files (e.g., styles)
-  │    └── styles/
-  │
-  ├── graphics-originals/     // Original diagram sources (being phased out)
-  │
-  └── build/                  // Generated output
-       ├── DE/                  // German output
-       │    ├── html/           // HTML output
-       │    └── pdf/            // PDF output
-       │
-       └── EN/                  // English output
-            ├── html/           // HTML output
-            └── pdf/            // PDF output
-  ├── <LC>/                     // Language files for language <LC>
-  │    ├── arc42-template.adoc  // Main document for <LC>
-  │    ├── version.properties    // Version information for <LC>
-  │    ├── adoc/                 // AsciiDoc chapter files
-  │    └── images/               // Language-specific images
-```
+  ├── <LC>/                      // one folder per language, e.g. EN, DE, ZH-TW
+  │    ├── arc42-template.adoc   // main document
+  │    ├── version.properties    // revnumber, revdate, revdate-iso (YYYY-MM), revremark
+  │    ├── adoc/                 // chapter files
+  │    └── images/               // images of this language
+  ├── common/                    // shared files (styles)
+  ├── other-formats/<tool>/      // hand-made templates: Confluence, Doxygen, Enterprise Architect, Rhapsody
+  └── graphics-originals/        // original diagram sources (being phased out)
+----
 
-## Requirements
+=== Adding a New Language
 
-- Java 11 or newer
-- Gradle 8.0 or newer (or use the included Gradle wrapper)
-
-## Configuration
-
-Language configuration is done in the `gradle.properties` file:
-
-```properties
-# Configure languages to be built (comma-separated list)
-languages=DE
-```
-
-The project name is set to 'arc42-template' in the settings.gradle file.
-
-You can add multiple languages by separating them with commas:
-
-```properties
-languages=DE,EN,FR
-```
-
-
-### Clean the build directory
-
-```bash
-./gradlew clean
-```
-
-### Build all formats for all configured languages
-
-```bash
-./gradlew
-```
-
-or
-
-```bash
-./gradlew asciidoctorAll
-```
-
-### Build only HTML for all configured languages
-
-```bash
-./gradlew asciidoctorHtmlAll
-```
-
-### Build only PDF for all configured languages
-
-```bash
-./gradlew asciidoctorPdfAll
-```
-
-### Build specific language in HTML format
-
-```bash
-./gradlew asciidoctorHtmlDE
-```
-
-Replace `DE` with the desired language code.
-
-### Build specific language in PDF format
-
-```bash
-./gradlew asciidoctorPdfDE
-```
-
-Replace `DE` with the desired language code.
-
-### Validate Image References
-
-The build system automatically validates that all images referenced in AsciiDoc files exist before generating documentation. You can also run validation independently:
-
-```bash
-# Validate all configured languages (shortest form)
-./gradlew validate
-
-# Alternative commands (same result)
-./gradlew validateImages
-./gradlew validateImagesAll
-
-# Validate specific language
-./gradlew validateImagesDE
-./gradlew validateImagesEN
-```
-
-If images are missing, you'll see warnings like:
-
-```
-⚠ Image Reference Validation: DE
-WARNING: Missing image references found:
-
-  File: DE/adoc/01_introduction_and_goals.adoc:60
-  Missing: diagram.png
-  Expected: /path/to/DE/images/diagram.png
-
-Summary: 1 missing image(s) in DE
-```
-
-The build continues with warnings (permissive mode), but the generated documentation will show broken image placeholders. Image validation runs automatically before every HTML and PDF build.
-
-## Output
-
-Generated documentation will be available in the build directory:
-
-- HTML: `build/<LANGUAGE>/html/arc42-template-<LANGUAGE>.html`
-- PDF: `build/<LANGUAGE>/pdf/arc42-template-<LANGUAGE>.pdf`
-
-For example, German (DE) documentation would be in:
-- `build/DE/html/arc42-template-DE.html`
-- `build/DE/pdf/arc42-template-DE.pdf`
-
-## Adding a New Language
-
-1. Add the language code to the `languages` property in `gradle.properties`
-2. Create the necessary AsciiDoc source files for the new language
-3. Run the build
-
-## Building with Docker (Optional)
-
-If you prefer not to install Java locally, you can use Docker to build the documentation. This approach is optional and fully compatible with the traditional local build.
-
-### Requirements
-
-- Docker (version 20.10 or newer)
-- Docker Compose (version 1.29 or newer)
-
-### Building with Docker Compose
-
-```bash
-# Build all languages using Docker
-docker-compose up build
-
-# Build and verify images are referenced correctly
-docker-compose up validate
-
-# Build and run a web server (http://localhost:8080) to view HTML documentation
-docker-compose up server
-```
-
-### Building with Docker directly
-
-```bash
-# Build the Docker image
-docker build -t arc42-template .
-
-# Run a container to generate documentation
-docker run -v $(pwd)/build:/workspace/build arc42-template
-
-# Run validation
-docker run arc42-template ./gradlew validate
-
-# Build specific languages only (override languages in environment)
-docker run -e LANGUAGES=DE,EN -v $(pwd)/build:/workspace/build arc42-template
-```
-
-### Docker Advantages
-
-- No Java installation required
-- Guaranteed build reproducibility (same Java version for all)
-- Pre-installed fonts for proper PDF rendering of multi-language documents (especially CJK: Chinese, Japanese, Korean)
-- Consistent builds across Windows, macOS, and Linux
-
-### Docker Output
-
-Generated documentation will be available in the `build/` directory on your host system (same location as traditional builds):
-- HTML: `build/<LANGUAGE>/html/arc42-template-<LANGUAGE>.html`
-- PDF: `build/<LANGUAGE>/pdf/arc42-template-<LANGUAGE>.pdf`
-
-### Notes
-
-- The Docker image is built multi-stage for efficiency (one stage for building, one for runtime)
-- Build artifacts are mounted as volumes, so the output is accessible directly on your host
-- The optional Nginx server displays HTML documentation only (PDFs must be downloaded)
+Create a folder `<LC>/` like the ones above (a code such as `TR`, optionally with a region such as `ZH-TW`), with all four `version.properties` entries, and add it to the table under <<Languages>>. The generator finds it on its own; nothing else needs to change.
 
 
 == Questions on using arc42?
