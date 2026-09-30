@@ -59,7 +59,7 @@ Here you describe the decomposition of the overall system using the following wh
 
 
  * (optional:) important interfaces, that are not explained in the black box templates of a building block, but are very important for understanding the white box.
-Since there are so many ways to specify interfaces why do not provide a specific template for them.
+Since there are so many ways to specify interfaces, we do not provide a specific template for them.
  In the worst case you have to specify and describe syntax, semantics, protocols, error handling,
  restrictions, versions, qualities, necessary compatibilities and many things more.
 In the best case you will get away with examples or simple signatures.
