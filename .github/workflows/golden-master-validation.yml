@@ -30,10 +30,10 @@ jobs:
           path: .arc42-generator
 
       - name: Generator config for this checkout
-        # the generator's arc42 config, with the paths relative to this repository
+        # the generator's arc42 config, with the source relative to this repository
+        # (its output goes to build/, which git ignores)
         run: |
           sed -e "s|sourcePath = 'arc42-template/'|sourcePath = './'|" \
-              -e 's|targetPath = "arc42-template/dist/"|targetPath = "dist/"|' \
               .arc42-generator/buildconfig.groovy > buildconfig.groovy
           grep -q "sourcePath = './'" buildconfig.groovy
 

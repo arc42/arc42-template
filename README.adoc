@@ -15,7 +15,7 @@ It is used...
 
 *  as the basis for generating (by the https://github.com/arc42/arc42-generator[arc42-generator] project) the official download formats (i.e. docx, markdown, docbook and others). To generate, THIS repo is included as submodule from the generator project. Use the gradle build contained here just for preview! 
 * to maintain structure, content and help for the template
-* to keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP).
+* to keep non-asciidoc, non-generable formats (like Sparx(R) Enterprise-Architect(R) EAP) in `other-formats/`.
 
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
@@ -41,6 +41,16 @@ Therefore we will gradually remove all files under `./graphics-originals`
 == Downloads
 
 Please refer to the https://arc42.org/download[official download page] for all downloads.
+
+The downloads are published as https://github.com/arc42/arc42-template/releases[GitHub Releases] of this repository, built by the https://github.com/arc42/arc42-generator[arc42-generator] (`make release`). Every release contains all languages, styles (plain, with help) and formats, plus a `manifest.json` with versions and SHA-256 checksums. File names do not change between releases, so this link always serves the newest file:
+
+----
+https://github.com/arc42/arc42-template/releases/latest/download/arc42-template-<LANG>-<plain|withhelp>-<format>.zip
+----
+
+for example `https://github.com/arc42/arc42-template/releases/latest/download/arc42-template-EN-withhelp-asciidoc.zip`. The generated files are no longer committed here; the former `dist/` folder was removed in September 2026 (links to `raw/master/dist/...` no longer work).
+
+Hand-made templates for other tools (Enterprise Architect, Confluence, IBM Rhapsody, Doxygen) are kept in `other-formats/` and published in their own release (tag `tools-...`).
 
 == Languages
 
