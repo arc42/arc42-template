@@ -55,7 +55,7 @@ Vous décrivez ici la décomposition du système global à l'aide du modèle de 
 
 
  * (facultatif :) interfaces importantes, qui ne sont pas expliquées dans les modèles boîte noire d'une brique, mais qui sont très importantes pour la compréhension de la boîte blanche.
-Puisqu'il existe de nombreuses façons de spécifier les interfaces, pourquoi ne pas fournir un modèle spécifique pour celles-ci ?
+Puisqu'il existe de nombreuses façons de spécifier les interfaces, nous ne fournissons pas de modèle spécifique pour celles-ci.
  Dans le pire des cas, vous devez spécifier et décrire la syntaxe, la sémantique, les protocoles, la gestion des erreurs, les restrictions, les versions, les qualités, les compatibilités nécessaires et bien d'autres choses encore.
 Dans le meilleur des cas, vous pourrez vous contenter d'exemples ou de simples signatures.
 

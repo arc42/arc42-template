@@ -59,7 +59,7 @@ Dependendo da sua escolha de ferramenta, esta lista pode ser subcapítulos (em a
 
 
 * (opcional:) interfaces importantes, que não são explicadas nos modelos de caixa preta de um bloco de construção, mas são muito importantes para entender a caixa branca.
-Já que há tantas maneiras de especificar interfaces, por que não fornecer um modelo específico para elas?
+Já que há tantas maneiras de especificar interfaces, não fornecemos um modelo específico para elas.
 No pior caso, você tem que especificar e descrever sintaxe, semântica, protocolos, tratamento de erros,
 restrições, versões, qualidades, compatibilidades necessárias e muito mais.
 Na melhor das hipóteses, você conseguirá usar exemplos ou descrições simples.
