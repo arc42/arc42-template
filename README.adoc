@@ -129,7 +129,7 @@ git clone --recurse-submodules https://github.com/arc42/arc42-generator.git
 cd arc42-generator
 make image                                  # once: the Docker image with all tools
 
-# the template to build: newest master, or your branch
+# the template to build: newest main, or your branch
 make template-update
 git -C arc42-template fetch https://github.com/<you>/arc42-template.git <branch>
 git -C arc42-template checkout FETCH_HEAD
