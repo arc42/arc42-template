@@ -71,7 +71,7 @@ The following languages are currently available:
 | 2025-10-30
 
 | Traditional Chinese (ZH-TW)
-| Sophie (Contact to be completed after we merge their PR) 
+| Sophie (https://github.com/sophieyin0310[@sophieyin0310])
 | 2026-09-25
 
 | Dutch (NL)
