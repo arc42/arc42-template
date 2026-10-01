@@ -11,7 +11,7 @@ name: Golden master validation
 on:
   pull_request:
   push:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: read
