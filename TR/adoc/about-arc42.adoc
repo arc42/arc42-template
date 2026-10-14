@@ -1,0 +1,15 @@
+:homepage: https://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**arc42 Hakkında**
+
+[role="lead"]
+arc42, yazılım ve sistem mimarisinin dokümantasyonu için şablon.
+
+Şablon Sürümü {revnumber}. {revremark}, {revdate}
+
+Oluşturan, sürdüren ve telif hakkı (C) sahibi: Dr. Peter Hruschka, Dr. Gernot Starke ve katkıda bulunanlar.
+Bkz. https://arc42.org.
+

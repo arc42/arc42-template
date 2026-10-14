@@ -1,0 +1,65 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Kesişen Kavramlar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Bu bölüm kesişen kavramları (cross-cutting concepts; pratikler, desenler, düzenlemeler veya çözüm fikirleri) açıklar.
+Bu tür kavramlar genellikle birden fazla yapı taşıyla ilişkilidir.
+Aşağıdaki diyagramda gösterilenler gibi pek çok farklı konuyu kapsayabilirler:
+
+image::08-concepts-EN.drawio.png["Kesişen kavramlar için olası konular"]
+
+.Motivasyon
+Kavramlar, mimarinin _kavramsal bütünlüğünün_ (conceptual integrity; tutarlılık, homojenlik) temelini oluşturur.
+Bu nedenle sisteminizin iç kalite niteliklerinin (quality attributes) sağlanmasına önemli bir katkıda bulunurlar.
+
+Şablonda bu tür kavramların bütünlüklü bir şekilde tanımlanması için ayrılan yer burasıdır.
+
+Bu kavramların çoğu, yapı taşlarınızın birkaçıyla ilişkilidir veya onları etkiler.
+
+.Biçim
+Biçim çeşitli olabilir:
+
+* her türlü yapıya sahip kavram dokümanları
+* özellikle teknik kavramlar için örnek gerçekleştirmeler
+* mimari görünümlerdeki gösterimleri kullanan, birden çok yapı taşını kapsayan (kesişen) model alıntıları veya senaryolar
+
+.Yapı
+Sisteminiz için **yalnızca** en çok ihtiyaç duyulan konuları seçiniz ve her birine bu bölümde ikinci seviye bir başlık veriniz (örneğin 8.1, 8.2 vb.).
+
+Yukarıdaki diyagramdaki konuların TÜMÜNÜ ele almaya ÇALIŞMAYINIZ.
+
+
+.Daha Fazla Bilgi
+
+Sistemlerdeki bazı konular çoğu zaman birden fazla yapı taşını, donanım öğesini veya geliştirme sürecini ilgilendirir.
+Bu tür _kesişen_ konuları, ilgili yapı taşlarının, donanım öğelerinin veya geliştirme süreçlerinin açıklamalarında tekrarlamak yerine merkezi bir yerde iletmek veya dokümante etmek daha kolay olabilir.
+
+Bazı kavramlar bir sistemin **tüm** öğelerini ilgilendirebilir, bazıları ise yalnızca birkaçı için geçerli olabilir.
+Yukarıdaki diyagramda loglama üç bileşenin tamamını ilgilendirirken güvenlik yalnızca iki bileşen için geçerlidir.
+
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-8/[Kavramlar] bölümüne bakınız.
+****
+endif::arc42help[]
+
+=== _<Kavram 1>_
+
+_<açıklama>_
+
+
+
+=== _<Kavram 2>_
+
+_<açıklama>_
+
+...
+
+=== _<Kavram n>_
+
+_<açıklama>_

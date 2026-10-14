@@ -1,0 +1,33 @@
+// asciidoc settings for TR (Turkish)
+// ==================================
+:toc-title: İçindekiler
+
+// browser tab title; the PDF cover keeps the logo
+ifdef::backend-html5[]
+:title: arc42 Şablonu
+endif::backend-html5[]
+
+// document language
+:lang: tr
+
+// enable table-of-contents
+:toc:
+
+// Turkish captions and labels
+:caution-caption: Dikkat
+:important-caption: Önemli
+:note-caption: Not
+:tip-caption: İpucu
+:warning-caption: Uyarı
+
+:appendix-caption: Ek
+:example-caption: Örnek
+:figure-caption: Şekil
+:table-caption: Tablo
+:chapter-signifier: Bölüm
+:version-label: Sürüm
+:last-update-label: Son güncelleme
+
+// where are images located?
+:imagesdir: ./images
+:arc42help:

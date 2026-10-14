@@ -1,0 +1,37 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== Mimari Kararlar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Gerekçeleriyle birlikte önemli, maliyetli, büyük ölçekli veya riskli mimari kararlar (architecture decisions).
+"Kararlar" derken, belirli kriterlere dayanarak alternatiflerden birinin seçilmesini kastediyoruz.
+
+Bir mimari kararı bu merkezi bölümde mi, yoksa yerel olarak mı
+(örneğin bir yapı taşının beyaz kutu şablonunda) dokümante etmenin daha uygun olacağına
+lütfen kendi muhakemenizle karar veriniz.
+
+Tekrardan kaçınınız.
+Mimarinin en önemli kararlarının zaten kaydedildiği Bölüm 4'e atıfta bulununuz.
+
+.Motivasyon
+Sistemin paydaşları kararları anlayabilmeli ve bunların izini sürebilmelidir.
+
+.Biçim
+Çeşitli seçenekler:
+
+* Her önemli karar için bir ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions])
+* Önem derecesine ve sonuçlarına göre sıralanmış liste veya tablo ya da:
+* her karar için ayrı bölümler şeklinde daha ayrıntılı olarak
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-9/[Mimari Kararlar] bölümüne bakınız.
+Orada ADR ile ilgili bağlantılar ve örnekler bulabilirsiniz.
+
+****
+endif::arc42help[]

@@ -1,0 +1,225 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-building-block-view]]
+
+
+== Yapı Taşı Görünümü
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Yapı taşı görünümü (building block view), sistemin yapı taşlarına (modüller, bileşenler (components), alt sistemler (subsystems), sınıflar, arayüzler, paketler, kütüphaneler, çerçeveler (frameworks), katmanlar (layers), bölümlemeler, kademeler (tiers), fonksiyonlar, makrolar, işlemler, veri yapıları, ...) statik olarak ayrıştırılmasını ve bunların bağımlılıklarını (dependencies; ilişkiler, ilişkilendirmeler, ...) gösterir.
+
+Bu görünüm her mimari dokümantasyonda zorunludur.
+Bir ev benzetmesiyle, bu görünüm evin _kat planıdır_.
+
+.Motivasyon
+Kaynak kodun yapısını soyutlama (abstraction) yoluyla anlaşılır kılarak kod üzerindeki
+genel bakışınızı koruyunuz.
+
+Bu sayede, gerçekleştirme ayrıntılarını açığa çıkarmadan paydaşlarınızla soyut bir düzeyde iletişim kurabilirsiniz.
+
+.Biçim
+Yapı taşı görünümü, kara kutuları ve beyaz kutuları (white boxes) açıklamalarıyla birlikte
+hiyerarşik olarak bir araya getirir (aşağıdaki şekle bakınız).
+
+image::05_building_blocks-EN.png["Yapı taşlarının hiyerarşisi"]
+
+*Seviye 1*, tüm sistemin beyaz kutu açıklamasından ve sistemdeki bütün yapı taşlarının kara
+kutu açıklamalarından oluşur.
+
+*Seviye 2*, seviye 1'deki bazı yapı taşlarına yakından bakar.
+Dolayısıyla seviye 1'den seçilen yapı taşlarının beyaz kutu açıklamalarını ve bunların içindeki yapı taşlarının kara kutu açıklamalarını içerir.
+
+*Seviye 3*, seviye 2'deki seçilmiş yapı taşlarına yakından bakar ve bu böyle devam eder.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-5/[Yapı Taşı Görünümü] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+=== Beyaz Kutu: Tüm Sistem
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada, şunları içeren aşağıdaki beyaz kutu şablonunu kullanarak tüm sistemin ayrıştırmasını açıklarsınız:
+
+ * bir genel bakış diyagramı
+ * ayrıştırmanın gerekçesi
+ * sistemin içerdiği yapı taşlarının kara kutu açıklamaları. Bunlar için çeşitli alternatifleriniz vardır:
+
+   ** _tek_ bir tablo hâlinde; sistemin içerdiği tüm yapı taşlarına ve arayüzlerine kısa ve pragmatik bir genel bakış sağlar
+   ** kara kutu şablonuna (aşağıya bakınız) uygun olarak, yapı taşlarının kara kutu açıklamalarından oluşan bir liste hâlinde.
+   Bu listeyi, seçtiğiniz araca bağlı olarak alt bölümler (metin dosyalarında), alt sayfalar (bir wiki sisteminde) veya iç içe öğeler (bir modelleme aracında) biçiminde gösterebilirsiniz.
+
+
+ * (isteğe bağlı:) bir yapı taşının kara kutu şablonlarında açıklanmayan ancak beyaz kutuyu anlamak için çok önemli olan arayüzler.
+Arayüzleri belirtmenin çok farklı yolları olduğundan bunlar için özel bir şablon sunmuyoruz.
+ En kötü durumda sözdizimini, semantiği, protokolleri, hata yönetimini,
+ kısıtlamaları, sürümleri, kalite özelliklerini, gerekli uyumlulukları ve daha pek çok şeyi belirtmeniz ve açıklamanız gerekir.
+En iyi durumda örneklerle veya basit imzalarla yetinebilirsiniz.
+
+****
+endif::arc42help[]
+
+_**<Genel Bakış Diyagramı>**_
+
+Gerekçe::
+
+_<metin açıklaması>_
+
+
+İçerdiği Yapı Taşları::
+_<İçerdiği yapı taşlarının (kara kutuların) açıklaması>_
+
+Önemli Arayüzler::
+_<Önemli arayüzlerin açıklaması>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada seviye 1'deki kara kutulara ilişkin açıklamalar yer alır:
+
+Tablo biçimini seçerseniz kara kutular aşağıdaki şemaya göre yalnızca ad ve
+sorumluluk ile açıklanır:
+
+[cols="1,2" options="header"]
+|===
+| **Ad** | **Sorumluluk**
+| _<kara kutu 1>_ | _<Metin>_
+| _<kara kutu 2>_ | _<Metin>_
+|===
+
+
+
+Kara kutu açıklamalarından oluşan bir liste kullanırsanız her önemli yapı taşı için ayrı bir kara kutu şablonu doldurursunuz.
+Bu şablonun başlığı, kara kutunun adıdır.
+****
+endif::arc42help[]
+
+==== <Kara Kutu 1 Adı>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada <kara kutu 1> öğesini
+aşağıdaki kara kutu şablonuna göre açıklarsınız:
+
+* Amaç/Sorumluluk
+* Arayüzler (ayrı paragraflarda ele alınmıyorlarsa). Bu arayüzler kalite ve performans özelliklerini içerebilir.
+* (İsteğe bağlı) Kara kutunun kalite/performans özellikleri, örneğin elverişlilik (availability), çalışma zamanı davranışı (runtime behavior), ...
+* (İsteğe bağlı) Dizin/dosya konumu
+* (İsteğe bağlı) Karşılanan gereksinimler (gereksinimlere izlenebilirlik (traceability) sağlamanız gerekiyorsa).
+* (İsteğe bağlı) Açık konular/sorunlar/riskler
+
+****
+endif::arc42help[]
+
+_<Amaç/Sorumluluk>_
+
+_<Arayüzler>_
+
+_<(İsteğe bağlı) Kalite/Performans Özellikleri>_
+
+_<(İsteğe bağlı) Dizin/Dosya Konumu>_
+
+_<(İsteğe bağlı) Karşılanan Gereksinimler>_
+
+_<(İsteğe bağlı) Açık Konular/Sorunlar/Riskler>_
+
+
+
+
+==== <Kara Kutu 2 Adı>
+
+_<kara kutu şablonu>_
+
+==== <Kara Kutu n Adı>
+
+_<kara kutu şablonu>_
+
+
+==== <Arayüz 1 Adı>
+
+...
+
+==== <Arayüz m Adı>
+
+
+
+=== Seviye 2
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada seviye 1'deki (bazı) yapı taşlarının iç yapısını beyaz kutular olarak belirtebilirsiniz.
+
+Sisteminizin hangi yapı taşlarının böyle ayrıntılı bir açıklamayı hak edecek kadar önemli olduğuna karar vermeniz gerekir.
+Lütfen her şeyi eksiksiz anlatmak yerine önemli olana odaklanınız. Önemli, şaşırtıcı, riskli, karmaşık veya sık değişen yapı taşlarını belirtiniz.
+Sisteminizin sıradan, basit, sıkıcı veya standartlaştırılmış kısımlarını dışarıda bırakınız.
+****
+endif::arc42help[]
+
+==== Beyaz Kutu: _<yapı taşı 1>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+..._yapı taşı 1_ öğesinin iç yapısını açıklar.
+****
+endif::arc42help[]
+
+_<beyaz kutu şablonu>_
+
+==== Beyaz Kutu: _<yapı taşı 2>_
+
+
+_<beyaz kutu şablonu>_
+
+...
+
+==== Beyaz Kutu: _<yapı taşı m>_
+
+
+_<beyaz kutu şablonu>_
+
+
+
+=== Seviye 3
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada seviye 2'deki (bazı) yapı taşlarının iç yapısını beyaz kutular olarak belirtebilirsiniz.
+
+Mimarinizin daha ayrıntılı seviyelerine ihtiyaç duyduğunuzda, ek seviyeler için arc42'nin bu
+kısmını kopyalayınız.
+****
+endif::arc42help[]
+
+==== Beyaz Kutu: <_yapı taşı x.1_>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+_yapı taşı x.1_ öğesinin iç yapısını belirtir.
+****
+endif::arc42help[]
+
+_<beyaz kutu şablonu>_
+
+
+==== Beyaz Kutu: <_yapı taşı x.2_>
+
+_<beyaz kutu şablonu>_
+
+
+
+==== Beyaz Kutu: <_yapı taşı y.1_>
+
+_<beyaz kutu şablonu>_

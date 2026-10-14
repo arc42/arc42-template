@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Riskler ve Teknik Borçlar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Önceliğe göre sıralanmış, tespit edilen teknik risklerin veya teknik borçların (technical debts) bir listesi
+
+.Motivasyon
+“Risk yönetimi, yetişkinler için proje yönetimidir” (Tim Lister, Atlantic Systems Guild).
+
+Mimarideki risklerin ve teknik borçların sistematik olarak tespit edilmesinde ve değerlendirilmesinde mottonuz bu olmalıdır. Yönetim paydaşları (örneğin proje yöneticileri, ürün sahipleri) genel risk analizi ve tedbir planlamasının bir parçası olarak bunlara ihtiyaç duyacaktır.
+
+.Biçim
+Risklerin ve/veya teknik borçların listesi; riskleri en aza indirmek, azaltmak veya önlemek ya da teknik borçları düşürmek için önerilen tedbirleri de içerebilir.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-11/[Riskler ve Teknik Borç] bölümüne bakınız.
+
+****
+endif::arc42help[]

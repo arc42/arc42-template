@@ -1,0 +1,88 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+// configure TR settings for asciidoc
+include::adoc/config.adoc[]
+
+= image:arc42-logo.png[arc42] Şablonu
+:revnumber: {revnumber}
+:revdate: {revdate}
+:revremark: {revremark}
+:toc-title: İçindekiler
+
+//additional style for arc42 help callouts
+include::../common/styles/arc42-help-style.adoc[]
+
+
+
+include::adoc/about-arc42.adoc[]
+
+// horizontal line
+***
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+[NOTE]
+====
+Şablonun bu sürümü yardım metinleri ve açıklamalar içerir.
+arc42'yi tanımak ve kavramlarını anlamak için kullanılır.
+Kendi sisteminizi dokümante etmek için _yalın_ sürümü kullanmanız daha uygundur.
+====
+****
+endif::arc42help[]
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Giriş ve Hedefler
+include::adoc/01_introduction_and_goals.adoc[]
+
+<<<<
+// 2. Mimari Kısıtlar
+include::adoc/02_architecture_constraints.adoc[]
+
+<<<<
+// 3. Bağlam ve Kapsam
+include::adoc/03_context_and_scope.adoc[]
+
+<<<<
+// 4. Çözüm Stratejisi
+include::adoc/04_solution_strategy.adoc[]
+
+<<<<
+// 5. Yapı Taşı Görünümü
+include::adoc/05_building_block_view.adoc[]
+
+<<<<
+// 6. Çalışma Zamanı Görünümü
+include::adoc/06_runtime_view.adoc[]
+
+<<<<
+// 7. Dağıtım Görünümü
+include::adoc/07_deployment_view.adoc[]
+
+<<<<
+// 8. Kesişen Kavramlar
+include::adoc/08_concepts.adoc[]
+
+<<<<
+// 9. Mimari Kararlar
+include::adoc/09_architecture_decisions.adoc[]
+
+<<<<
+// 10. Kalite Gereksinimleri
+include::adoc/10_quality_requirements.adoc[]
+
+<<<<
+// 11. Riskler ve Teknik Borçlar
+include::adoc/11_technical_risks.adoc[]
+
+<<<<
+// 12. Terimler Sözlüğü
+include::adoc/12_glossary.adoc[]
+
+
