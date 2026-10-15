@@ -1,0 +1,121 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-introduction-and-goals]]
+== Giriş və məqsədlər
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Proqram təminatı memarlarının və tərtibat komandasının nəzərə almalı olduğu müvafiq tələbləri və hərəkətverici qüvvələri (driving forces) təsvir edir.
+Bunlara aiddir:
+
+* əsas biznes məqsədləri,
+* mühüm funksional imkanlar (features),
+* mühüm funksional tələblər,
+* memarlıq üçün keyfiyyət məqsədləri və
+* müvafiq maraqlı tərəflər (stakeholders) və onların gözləntiləri
+****
+endif::arc42help[]
+
+=== Tələblərin icmalı
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Funksional tələblərin və hərəkətverici qüvvələrin qısa təsviri, tələblərdən çıxarış (və ya xülasə).
+(Mövcud olduğuna ümid etdiyimiz) tələb sənədlərinə istinad
+(versiya nömrəsi və onların harada tapılacağı barədə məlumatla birlikdə).
+
+.Motivasiya
+Son istifadəçilər baxımından sistem biznes fəaliyyətinə dəstəyi yaxşılaşdırmaq
+və/və ya keyfiyyəti artırmaq üçün yaradılır və ya dəyişdirilir.
+
+.Forma
+Qısa mətn təsviri, ola bilsin, cədvəl şəklində istifadə halları (use cases) formatında.
+Tələb sənədləri mövcuddursa, bu icmal həmin sənədlərə istinad etməlidir.
+
+Bu çıxarışları mümkün qədər qısa saxlayın. Bu sənədin oxunaqlılığı ilə tələb sənədlərindəki məlumatların mümkün təkrarı arasında tarazlığı qoruyun.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-1/[Giriş və məqsədlər] bölməsinə baxın.
+
+****
+endif::arc42help[]
+
+=== Keyfiyyət məqsədləri
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Əsas maraqlı tərəflər üçün yerinə yetirilməsi ən yüksək əhəmiyyət daşıyan, memarlığa aid ən vacib üç (maksimum beş) keyfiyyət məqsədi.
+Biz həqiqətən memarlığın keyfiyyət məqsədlərini nəzərdə tuturuq. Onları layihə məqsədləri ilə qarışdırmayın.
+Onlar heç də həmişə eyni olmur.
+
+Mümkün mövzuların (ISO 25010 standartına əsaslanan) bu icmalını nəzərdən keçirin:
+
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Keyfiyyət tələblərinin kateqoriyaları"]
+
+.Motivasiya
+Ən vacib maraqlı tərəflərinizin keyfiyyət məqsədlərini bilməlisiniz, çünki onlar fundamental memarlıq qərarlarına təsir edəcək.
+Bu keyfiyyətlər barədə çox konkret olun, dəbdə olan boş ifadələrdən qaçın.
+Əgər memar kimi işinizin keyfiyyətinin necə qiymətləndiriləcəyini bilmirsinizsə...
+
+.Forma
+Prioritetə görə sıralanmış, keyfiyyət məqsədləri və konkret ssenarilərdən ibarət cədvəl
+****
+endif::arc42help[]
+
+=== Maraqlı tərəflər
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Sistemin maraqlı tərəflərinin aydın icmalı, yəni aşağıdakı bütün şəxslər, rollar və ya təşkilatlar:
+
+* memarlığı bilməli olanlar
+* memarlığın düzgünlüyünə inandırılmalı olanlar
+* memarlıqla və ya kodla işləməli olanlar
+* öz işləri üçün memarlıq sənədlərinə ehtiyac duyanlar
+* sistem və ya onun işlənib hazırlanması barədə qərar verməli olanlar
+
+.Motivasiya
+Sistemin işlənib hazırlanmasında iştirak edən və ya sistemdən təsirlənən bütün tərəfləri bilməlisiniz.
+Əks halda, işlənib hazırlanma prosesinin sonrakı mərhələlərində xoşagəlməz sürprizlərlə qarşılaşa bilərsiniz.
+Bu maraqlı tərəflər işinizin və onun nəticələrinin həcmini və təfərrüat səviyyəsini müəyyən edir.
+
+.Forma
+Rol adları, şəxs adları və onların memarlıq sənədlərinə (!) dair gözləntiləri olan cədvəl.
+Maraqlı tərəflərin funksional və keyfiyyət tələblərini təkrarlamayın.
+Burada onların sənədlərə olan ehtiyaclarını müəyyən edin.
+
+.Nümunə
+Aşağıdakı maraqlı tərəf rolları bir çox layihədə təkrarlanır. Onlardan
+başlanğıc nöqtəsi kimi istifadə edin, sonra rolları, adları və gözləntiləri öz faktiki layihənizə uyğunlaşdırın.
+Hər layihədə bu rolların hamısı olmur, bəzilərində isə əlavə rollar olur.
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Ad|Əlaqə|Gözləntilər
+|Məhsul sahibi (Product Owner)|Məhsul idarəetməsi|Funksional imkanları biznes dəyərinə görə prioritetləşdirir; Bölmə 1-in (Tələblərin icmalı, Keyfiyyət məqsədləri) məhsul strategiyası ilə uzlaşdırılmış saxlanmasına ehtiyac duyur
+|Son istifadəçilər / Müştərilər|UX tədqiqatları və dəstək müraciətləri vasitəsilə təmsil olunur|Sistemin istifadəsi rahat, etibarlı və sürətli olmalıdır; performans və istifadə rahatlığı kimi keyfiyyət məqsədlərini müəyyənləşdirirlər
+|Proqram təminatı memar(lar)ı|Memarlıq komandası|Bu sənədlərə cavabdehdir və onları aktual saxlayır; texniki qərarları əsaslandırmaq və çatdırmaq üçün onlardan istifadə edir
+|Tərtibat komandası|Mühəndislik komandası|Düzgün reallaşdırma üçün aydın tikinti bloklarına (Bölmə 5) və icra zamanı ssenarilərinə (Bölmə 6) ehtiyac duyur
+|İstismar / SRE|İstismar komandası|Sistemi etibarlı şəkildə istismar etmək üçün yerləşdirmə görünüşünə (Bölmə 7) və kəsişən konsepsiyalara (Bölmə 8, məsələn, monitorinq, loqlaşdırma) ehtiyac duyur
+|Təhlükəsizlik məsulu / İnformasiya təhlükəsizliyi|Təhlükəsizlik komandası|Memarlığı risklər (Bölmə 11) və keyfiyyət tələbləri (Bölmə 10) baxımından yoxlayır; təhlükəsizlik məhdudiyyətlərinin nəzərə alındığına dair sübuta ehtiyac duyur
+|Uyğunluq (compliance) / Hüquq|Hüquq/Uyğunluq komandası|Normativ məhdudiyyətlərə (Bölmə 2), məsələn, məlumatların qorunması və lisenziyalaşdırma tələblərinə əməl olunduğuna dair sübuta ehtiyac duyur
+|Layihə sponsoru / Rəhbərlik|Rəhbər komitə|Memarlıq qərarlarının (Bölmə 9) büdcəni, vaxt qrafikini və strateji məqsədləri dəstəklədiyinə əmin olmaq istəyir
+|===
+****
+endif::arc42help[]
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Ad|Əlaqə|Gözləntilər
+| _<Rol-1>_ | _<Əlaqə-1>_ | _<Gözlənti-1>_
+| _<Rol-2>_ | _<Əlaqə-2>_ | _<Gözlənti-2>_
+|===

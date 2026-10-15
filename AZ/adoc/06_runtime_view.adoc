@@ -1,0 +1,53 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-runtime-view]]
+== İcra zamanı görünüşü
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+İcra zamanı görünüşü (runtime view) sistemin tikinti bloklarının konkret davranışını və qarşılıqlı əlaqələrini aşağıdakı sahələrdən ssenarilər şəklində təsvir edir:
+
+* mühüm istifadə halları və ya funksional imkanlar: tikinti blokları onları necə icra edir?
+* kritik xarici interfeyslərdə qarşılıqlı əlaqələr: tikinti blokları istifadəçilər və qonşu sistemlərlə necə əməkdaşlıq edir?
+* istismar və administrasiya: işə salma, başlatma, dayandırma
+* xəta və istisna (exception) ssenariləri
+
+Qeyd: Mümkün ssenarilərin (ardıcıllıqların, iş axınlarının) seçimi üçün əsas meyar onların *memarlıq baxımından əhəmiyyətidir*. Çox sayda ssenarini təsvir etmək vacib *deyil*. Bunun əvəzinə səciyyəvi ssenarilərdən ibarət bir seçimi sənədləşdirmək daha məqsədəuyğundur.
+
+.Motivasiya
+Sisteminizin tikinti bloklarının (daha doğrusu, onların nüsxələrinin) icra zamanı öz işini necə yerinə yetirdiyini və bir-biri ilə necə qarşılıqlı əlaqədə olduğunu başa düşməlisiniz.
+Ssenariləri sənədlərinizdə qeyd etməkdə əsas məqsəd memarlığınızı statik modelləri (tikinti blokları görünüşü, yerləşdirmə görünüşü) oxumağa və başa düşməyə daha az həvəsli və ya qadir olan maraqlı tərəflərə çatdırmaqdır.
+
+.Forma
+Ssenariləri təsvir etmək üçün bir çox notasiya var, məsələn:
+
+* addımların nömrələnmiş siyahısı (təbii dildə)
+* fəaliyyət diaqramları (activity diagrams) və ya blok-sxemlər
+* ardıcıllıq diaqramları (sequence diagrams)
+* BPMN və ya EPC-lər (hadisə-proses zəncirləri)
+* vəziyyət maşınları (state machines)
+* ...
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-6/[İcra zamanı görünüşü] bölməsinə baxın.
+
+****
+endif::arc42help[]
+
+=== <İcra zamanı ssenarisi 1>
+
+
+* _<ssenarinin icra zamanı diaqramını və ya mətn təsvirini daxil edin>_
+* _<bu diaqramda göstərilən tikinti bloku nüsxələri arasındakı qarşılıqlı əlaqələrin
+diqqətəlayiq aspektlərinin təsvirini daxil edin.>_
+
+=== <İcra zamanı ssenarisi 2>
+
+=== ...
+
+=== <İcra zamanı ssenarisi n>

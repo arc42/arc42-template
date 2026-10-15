@@ -1,0 +1,36 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== Memarlıq qərarları
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Mühüm, bahalı, genişmiqyaslı və ya riskli memarlıq qərarları, onların əsaslandırmaları ilə birlikdə.
+"Qərarlar" dedikdə, verilmiş meyarlar əsasında alternativlərdən birinin seçilməsini nəzərdə tuturuq.
+
+Memarlıq qərarını burada, bu mərkəzi bölmədə sənədləşdirməyin, yoxsa onu lokal olaraq
+(məsələn, bir tikinti blokunun ağ qutu şablonunda) sənədləşdirməyin daha yaxşı olduğuna öz mülahizənizə əsasən qərar verin.
+
+Təkrarçılıqdan qaçın.
+Memarlığınızın ən vacib qərarlarını artıq qeyd etdiyiniz 4-cü bölməyə istinad edin.
+
+.Motivasiya
+Sisteminizin maraqlı tərəfləri qərarlarınızı başa düşə və onların necə qəbul edildiyini izləyə bilməlidir.
+
+.Forma
+Müxtəlif variantlar:
+
+* hər bir mühüm qərar üçün ADR (https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Documenting Architecture Decisions])
+* vacibliyinə və nəticələrinə görə sıralanmış siyahı və ya cədvəl, yaxud:
+* hər qərar üçün ayrıca bölmələr şəklində daha ətraflı
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-9/[Memarlıq qərarları] bölməsinə baxın.
+Orada ADR haqqında keçidlər və nümunələr tapacaqsınız.
+
+****
+endif::arc42help[]

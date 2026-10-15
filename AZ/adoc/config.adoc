@@ -1,0 +1,33 @@
+// asciidoc settings for AZ (Azerbaijani)
+// ==================================
+:toc-title: Mündəricat
+
+// browser tab title; the PDF cover keeps the logo
+ifdef::backend-html5[]
+:title: arc42 Şablonu
+endif::backend-html5[]
+
+// document language
+:lang: az
+
+// enable table-of-contents
+:toc:
+
+// Azerbaijani captions and labels
+:caution-caption: Diqqət
+:important-caption: Vacib
+:note-caption: Qeyd
+:tip-caption: Məsləhət
+:warning-caption: Xəbərdarlıq
+
+:appendix-caption: Əlavə
+:example-caption: Nümunə
+:figure-caption: Şəkil
+:table-caption: Cədvəl
+:chapter-signifier: Bölmə
+:version-label: Versiya
+:last-update-label: Son yeniləmə
+
+// where are images located?
+:imagesdir: ./images
+:arc42help:

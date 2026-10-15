@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Risklər və texniki borclar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Prioritetə görə sıralanmış, müəyyən edilmiş texniki risklərin və ya texniki borcların siyahısı
+
+.Motivasiya
+“Risklərin idarə edilməsi böyüklər üçün layihə idarəetməsidir” (Tim Lister, Atlantic Systems Guild.)
+
+Bu, memarlıqdakı risklərin və texniki borcların sistemli şəkildə aşkar edilməsi və qiymətləndirilməsi üçün deviziniz olmalıdır. Bu, rəhbər maraqlı tərəflərə (məsələn, layihə rəhbərlərinə, məhsul sahiblərinə) ümumi risk təhlilinin və tədbirlərin planlaşdırılmasının bir hissəsi kimi lazım olacaq.
+
+.Forma
+Risklərin və/və ya texniki borcların siyahısı, ola bilsin, riskləri minimuma endirmək, onların təsirini azaltmaq və ya onlardan qaçmaq, yaxud texniki borcları azaltmaq üçün təklif olunan tədbirlərlə birlikdə.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-11/[Risklər və texniki borclar] bölməsinə baxın.
+
+****
+endif::arc42help[]
