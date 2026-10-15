@@ -1,0 +1,53 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-runtime-view]]
+== Çalışma Zamanı Görünümü
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Çalışma zamanı görünümü (runtime view), sistemin yapı taşlarının somut davranışını ve etkileşimlerini aşağıdaki alanlardan senaryolar şeklinde açıklar:
+
+* önemli kullanım durumları veya özellikler: Yapı taşları bunları nasıl yürütür?
+* kritik dış arayüzlerdeki etkileşimler: Yapı taşları kullanıcılarla ve komşu sistemlerle nasıl iş birliği yapar?
+* işletim ve yönetim: devreye alma, başlatma, durdurma
+* hata ve istisna senaryoları
+
+Not: Olası senaryoların (adım dizileri, iş akışları) seçiminde temel kriter, bunların *mimari açıdan önem* taşımasıdır. Çok sayıda senaryoyu açıklamak önemli *değildir*. Bunun yerine temsili bir seçki dokümante edilmelidir.
+
+.Motivasyon
+Sisteminizin yapı taşlarının ya da bunların örneklerinin (instances) işlerini nasıl yerine getirdiğini ve çalışma zamanında nasıl iletişim kurduğunu anlamalısınız.
+Çünkü siz, senaryoları dokümantasyonunuza esas olarak, statik modelleri (yapı taşı görünümü, dağıtım görünümü) okumaya ve anlamaya daha az istekli veya yetkin olan paydaşlara mimarinizi aktarmak için kaydedecek kişisiniz.
+
+.Biçim
+Senaryoları açıklamak için çeşitli gösterim metotları vardır, örneğin:
+
+* numaralandırılmış adım listesi (doğal dilde)
+* etkinlik diyagramları (activity diagrams) veya akış şemaları (flow charts)
+* sıra diyagramları (sequence diagrams)
+* BPMN veya EPC'ler (olay güdümlü süreç zincirleri)
+* durum makineleri (state machines)
+* ...
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-6/[Çalışma Zamanı Görünümü] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+=== <Çalışma Zamanı Senaryosu 1>
+
+
+* _<senaryonun çalışma zamanı diyagramını veya metinsel açıklamasını ekleyiniz>_
+* _<bu diyagramda gösterilen yapı taşı örnekleri arasındaki etkileşimlerin dikkat çekici
+yönlerinin açıklamasını ekleyiniz.>_
+
+=== <Çalışma Zamanı Senaryosu 2>
+
+=== ...
+
+=== <Çalışma Zamanı Senaryosu n>

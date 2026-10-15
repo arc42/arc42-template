@@ -1,0 +1,112 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-quality-scenarios]]
+== Kalite Gereksinimleri
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.İçerik
+Bu bölüm ilgili tüm kalite gereksinimlerini (quality requirements) içerir.
+
+Bu gereksinimlerin en önemlileri Bölüm 1.2'de (kalite hedefleri) zaten açıklanmıştır; bu nedenle burada yalnızca bunlara atıfta bulunulmalıdır.
+Bu bölümde, tam olarak karşılanmadıklarında yüksek risk oluşturmayacak (ancak _olsa iyi olur_ türünden olabilecek) daha az önemli kalite gereksinimlerini de kaydetmelisiniz.
+
+.Motivasyon
+Kalite gereksinimleri mimari kararlar üzerinde büyük etkiye sahip olacağından, paydaşlarınız için hangi niteliklerin gerçekten önemli olduğunu belirli ve ölçülebilir bir şekilde bilmelisiniz.
+
+
+.Daha Fazla Bilgi
+
+* arc42 dokümantasyonundaki https://docs.arc42.org/section-10/[Kalite Gereksinimleri] bölümüne bakınız.
+* Kapsamlı https://quality.arc42.org[Q42 kalite modeline] bakınız (https://quality.arc42.org).
+
+****
+endif::arc42help[]
+
+
+=== Kalite Gereksinimlerine Genel Bakış
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.İçerik
+Kalite gereksinimlerine ilişkin bir genel bakış veya özet.
+
+
+.Motivasyon
+Çoğu zaman düzinelerce (hatta yüzlerce) ayrıntılı kalite gereksinimiyle karşılaşılır.
+Bu genel bakış bölümünde bunları özetlemeye çalışmalısınız; örneğin https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] veya https://quality.arc42.org[Q42] tarafından önerilen kategorileri ya da konuları açıklayarak.
+
+Bu özet açıklamalar zaten yeterince kesin, belirli ve ölçülebilir ise Bölüm 10.2'yi atlayabilirsiniz.
+
+.Biçim
+Her satırında bir kategori veya konu ile kalite gereksiniminin kısa bir açıklamasının yer aldığı basit bir tablo kullanınız.
+Alternatif olarak, bu kalite gereksinimlerini yapılandırmak için bir zihin haritası (mind map) kullanabilirsiniz.
+Ayrıca literatürde, genel "kalite" terimini kök olarak alan ve bu terimi ağaç benzeri bir yapıyla ayrıntılandıran _kalite niteliği ağacı_ fikri de açıklanmaktadır.
+[Bass+21], bu amaçla "Kalite Niteliği Fayda Ağacı" (Quality Attribute Utility Tree) terimini ortaya koymuştur.
+
+
+
+****
+endif::arc42help[]
+
+
+=== Kalite Senaryoları
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+
+.İçerik
+Kalite senaryoları (quality scenarios), kalite gereksinimlerini somutlaştırır ve kabul kriterleri (acceptance criteria) anlamında bunların karşılanıp karşılanmadığına karar verilmesini sağlar.
+Senaryolarınızın belirli ve ölçülebilir olduğundan emin olunuz.
+
+
+
+İki tür senaryoyu özellikle faydalı buluyoruz:
+
+* _Kullanım senaryoları_ (usage scenarios; uygulama senaryoları veya kullanım durumu senaryoları olarak da adlandırılır), sistemin belirli bir uyarana (stimulus) çalışma zamanındaki tepkisini açıklar.
+Bu, sistemin verimliliğini (efficiency) veya performansını açıklayan senaryoları da kapsar.
+Örnek: Sistem, bir kullanıcının isteğine bir saniye içinde yanıt verir.
+* _Değişiklik senaryoları_ (change scenarios), sistemde veya sistemin yakın ortamında yapılan bir değişikliğin ya da genişletmenin istenen etkisini açıklar.
+Örnek: Ek işlevsellik gerçekleştirilir veya bir kalite niteliğine ilişkin gereksinimler değişir ve değişikliğin eforu veya süresi ölçülür.
+
+
+.Biçim
+
+Ayrıntılı senaryolarda genellikle şu bilgiler yer alır:
+
+Kısa biçimde (Q42 modelinde tercih edilen):
+
+* **Bağlam/Arka Plan**: Söz konusu olan ne tür bir sistem veya bileşendir; ortam veya durum nedir?
+* **Kaynak/Uyaran**: Bir davranışı, tepkiyi veya eylemi kim ya da ne başlatır veya tetikler?
+* **Metrik/Kabul Kriterleri**: Bir _ölçüt_ veya _metrik_ içeren bir yanıt (response)
+
+
+Senaryoların uzun biçimi (SEI ve [Bass+21] tarafından tercih edilen) daha ayrıntılıdır ve aşağıdaki bilgileri içerir:
+
+* **Senaryo Kimliği**: Senaryo için benzersiz bir tanımlayıcı (ID).
+* **Senaryo Adı**: Senaryo için kısa, açıklayıcı bir ad.
+* **Kaynak**: Senaryoyu başlatan varlık (kullanıcı, sistem veya olay).
+* **Uyaran**: Sistemin ele alması gereken tetikleyici olay veya koşul.
+* **Ortam**: Sistemin uyaranla karşılaştığı işletim bağlamı veya koşulu.
+* **Yapıt**: Uyarandan etkilenen yapı taşları veya sistemin diğer öğeleri.
+* **Yanıt**: Sistemin uyarana karşılık olarak ortaya koyduğu sonuç veya davranış.
+* **Yanıt Ölçütü** (Response Measure): Sistemin yanıtının değerlendirildiği kriter veya metrik.
+
+
+.Örnekler
+Ayrıntılı kalite gereksinimi örnekleri için https://quality.arc42.org[Q42 kalite modeli web sitesine] bakınız.
+
+.Daha Fazla Bilgi
+
+* Len Bass, Paul Clements, Rick Kazman: "Software Architecture in Practice", 4. baskı, Addison-Wesley, 2021.
+
+****
+
+
+endif::arc42help[]

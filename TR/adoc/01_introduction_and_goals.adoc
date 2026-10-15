@@ -1,0 +1,121 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-introduction-and-goals]]
+== Giriş ve Hedefler
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Yazılım mimarlarının ve geliştirme ekibinin dikkate alması gereken ilgili gereksinimleri
+ve belirleyici etkenleri (driving forces) açıklar:
+
+* altta yatan iş hedefleri,
+* temel özellikler,
+* temel işlevsel gereksinimler (functional requirements),
+* mimariye yönelik kalite hedefleri (quality goals) ve
+* ilgili paydaşlar (stakeholders) ve beklentileri
+****
+endif::arc42help[]
+
+=== Gereksinimlere Genel Bakış
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+İşlevsel gereksinimlerin ve belirleyici etkenlerin kısa açıklaması; gereksinimlerden bir alıntı (veya özet).
+(Var olması umulan) gereksinim dokümanlarına bağlantı
+(sürüm numarası ve nerede bulunabileceği bilgisiyle birlikte).
+
+.Motivasyon
+Son kullanıcıların bakış açısından bir sistem, bir iş faaliyetine verilen desteği iyileştirmek
+ve/veya kaliteyi artırmak için oluşturulur ya da değiştirilir.
+
+.Biçim
+Kısa metinsel açıklama; muhtemelen tablo hâlinde, kullanım durumları (use cases) şeklinde.
+Gereksinim dokümanları mevcutsa bu genel bakış o dokümanlara atıfta bulunmalıdır.
+
+Bu alıntıları olabildiğince kısa tutunuz. Bu dokümanın okunabilirliğini, gereksinim dokümanlarıyla oluşabilecek tekrarlara karşı dengeleyiniz.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-1/[Giriş ve Hedefler] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+=== Kalite Hedefleri
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Başlıca paydaşlar için gerçekleşmesi en çok önem taşıyan, mimariye ait ilk üç (en fazla beş) kalite hedefi.
+Burada gerçekten mimarinin kalite hedefleri kastedilmektedir. Bunları proje hedefleriyle karıştırmayınız.
+İkisi aynı olmak zorunda değildir.
+
+Olası konulara ilişkin (ISO 25010 standardına dayanan) bir genel bakış:
+
+image::01_2_iso-25010-topics-EN-2023.drawio.png["Kalite Gereksinimlerinin Kategorileri"]
+
+.Motivasyon
+En önemli paydaşlarınızın kalite hedeflerini bilmelisiniz, çünkü bu hedefler temel mimari kararları (architecture decisions) etkileyecektir.
+Bu nitelikler konusunda çok somut olunuz, moda sözcüklerden kaçınınız.
+Bir mimar olarak işinizin kalitesinin nasıl değerlendirileceğini biliyor olmanız gerekir.
+
+.Biçim
+Önceliğe göre sıralanmış, kalite hedeflerini ve somut senaryoları içeren bir tablo
+****
+endif::arc42help[]
+
+=== Paydaşlar
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Sistemin paydaşlarına, yani aşağıdaki tüm kişilere, rollere veya kuruluşlara açık bir genel bakış:
+
+* mimariyi bilmesi gerekenler
+* mimari konusunda ikna edilmesi gerekenler
+* mimariyle veya kodla çalışmak zorunda olanlar
+* işleri için mimari dokümantasyonuna ihtiyaç duyanlar
+* sistem veya sistemin geliştirilmesi hakkında karar vermesi gerekenler
+
+.Motivasyon
+Sistemin geliştirilmesinde yer alan veya sistemden etkilenen tüm tarafları bilmelisiniz.
+Aksi takdirde geliştirme sürecinin ilerleyen aşamalarında hoş olmayan sürprizlerle karşılaşabilirsiniz.
+Bu paydaşlar, çalışmanızın ve sonuçlarının kapsamını ve ayrıntı düzeyini belirler.
+
+.Biçim
+Rol adlarını, kişi adlarını ve bunların mimari dokümantasyonuna (!) ilişkin beklentilerini içeren bir tablo.
+Paydaşların işlevsel ve kalite gereksinimlerini (quality requirements) burada tekrarlamayınız.
+Burada onların dokümantasyon ihtiyaçlarını belirleyiniz.
+
+.Örnek
+Aşağıdaki paydaş rolleri pek çok projede sıkça görülür. Bunları bir
+başlangıç noktası olarak kullanınız, ardından rolleri, adları ve beklentileri kendi projenize uyarlayınız.
+Her projede bu rollerin hepsi bulunmaz; bazı projelerde ise ek roller bulunur.
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Ad|İletişim|Beklentiler
+|Ürün Sahibi (Product Owner)|Ürün Yönetimi|Özellikleri iş değerine göre önceliklendirir; Bölüm 1'in (Gereksinimlere Genel Bakış, Kalite Hedefleri) ürün stratejisiyle uyumlu tutulmasına ihtiyaç duyar
+|Son Kullanıcılar / Müşteriler|UX araştırmaları ve destek talepleri aracılığıyla temsil edilir|Sistemin kullanılabilir, güvenilir ve hızlı olmasına ihtiyaç duyar; performans ve kullanılabilirlik (usability) gibi kalite hedeflerini yönlendirir
+|Yazılım Mimarları|Mimari Ekibi|Bu dokümantasyonu sahiplenir ve güncel tutar; teknik kararları gerekçelendirmek ve iletmek için kullanır
+|Geliştirme Ekibi|Mühendislik Ekibi|Doğru bir şekilde gerçekleştirebilmek için net yapı taşlarına (building blocks; Bölüm 5) ve çalışma zamanı senaryolarına (runtime scenarios; Bölüm 6) ihtiyaç duyar
+|Operasyon / SRE|Operasyon Ekibi|Sistemi güvenilir bir şekilde işletebilmek için dağıtım görünümüne (deployment view; Bölüm 7) ve izleme (monitoring), loglama gibi kesişen kavramlara (cross-cutting concepts; Bölüm 8) ihtiyaç duyar
+|Güvenlik Sorumlusu / Bilgi Güvenliği|Güvenlik Ekibi|Mimariyi riskler (Bölüm 11) ve kalite gereksinimleri (Bölüm 10) açısından inceler; güvenlik kısıtlarının (security constraints) karşılandığına dair kanıta ihtiyaç duyar
+|Mevzuata Uyum / Hukuk|Hukuk/Uyum Ekibi|Veri koruma, lisanslama gibi yasal düzenlemelerden kaynaklanan kısıtlara (constraints; Bölüm 2) uyulduğuna dair kanıta ihtiyaç duyar
+|Proje Sponsoru / Yönetim|Yönlendirme Komitesi|Mimari kararların (Bölüm 9) bütçeyi, zaman planını ve stratejik hedefleri desteklediğinden emin olmak ister
+|===
+****
+endif::arc42help[]
+
+[options="header",cols="1,2,2"]
+|===
+|Rol/Ad|İletişim|Beklentiler
+| _<Rol-1>_ | _<İletişim-1>_ | _<Beklenti-1>_
+| _<Rol-2>_ | _<İletişim-2>_ | _<Beklenti-2>_
+|===

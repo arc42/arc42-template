@@ -1,0 +1,100 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Dağıtım Görünümü
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Dağıtım görünümü (deployment view) şunları açıklar:
+
+ 1. sisteminizi çalıştırmak için kullanılan teknik altyapı (coğrafi konumlar, ortamlar, bilgisayarlar, işlemciler, kanallar, ağ topolojileri ve diğer altyapı öğeleri) ve
+
+2. (yazılım) yapı taşlarının bu altyapı öğeleriyle eşleştirilmesi.
+
+Sistemler çoğu zaman farklı ortamlarda çalıştırılır, örneğin geliştirme ortamı, test ortamı, üretim ortamı (production environment). Bu gibi durumlarda ilgili tüm ortamları dokümante etmelisiniz.
+
+Özellikle yazılımınız birden fazla bilgisayar, işlemci, sunucu veya konteyner içeren dağıtık bir sistem (distributed system) olarak çalıştırılıyorsa ya da kendi donanım işlemcilerinizi ve çiplerinizi tasarlayıp üretiyorsanız bir dağıtım görünümü dokümante ediniz.
+
+Sadece yazılım açısından yaklaşıyorsanız, bir altyapının yalnızca yapı taşlarınızın dağıtımını göstermek için gereken öğelerini dokümante etmeniz yeterlidir. Ancak donanım mimarları bunun ötesine geçebilir ve altyapıyı ihtiyaç duydukları her ayrıntı düzeyinde açıklayabilir.
+
+.Motivasyon
+Yazılım donanım olmadan çalışmaz.
+Bu altta yatan altyapı, sisteminizi ve/veya bazı
+kesişen kavramları etkileyebilir, hatta büyük olasılıkla etkileyecektir. Bu nedenle altyapıyı bilmeniz gerekir.
+
+.Biçim
+
+Kendi altyapınızı TEK bir kara kutu olarak gösteren en üst seviyedeki dağıtım diyagramı,
+Bölüm 3.2'de teknik bağlamı açıklamak için zaten kullanılmış olabilir. Bu bölümde, ek dağıtım diyagramları kullanarak
+bu kara kutuya yakından bakabilirsiniz:
+
+* UML, bu görünümü ifade etmek için dağıtım diyagramları sunar. Altyapınız daha karmaşıksa bu diyagramları, gerekirse iç içe diyagramlarla birlikte,
+kullanınız.
+* (Donanım) paydaşlarınız dağıtım diyagramı yerine başka tür diyagramları tercih ediyorsa, altyapının düğümlerini (nodes) ve kanallarını gösterebilen her türlü diyagram burada kullanılabilir.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-7/[Dağıtım Görünümü] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+=== Altyapı Seviyesi 1
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Şunları açıklayınız (genellikle diyagram, tablo ve metin birleşimiyle):
+
+* sistemin birden fazla konuma, ortama, bilgisayara, işlemciye vb. dağıtılması ve bunlar arasındaki fiziksel bağlantılar
+* bu dağıtım yapısının önemli gerekçeleri
+* bu altyapının kalite ve/veya performans özellikleri
+* yazılım yapıtlarının (artifacts) bu altyapının öğeleriyle eşleştirilmesi
+
+Birden fazla ortam veya alternatif dağıtımlar söz konusuysa lütfen arc42'nin bu bölümünü ilgili tüm ortamlar için kopyalayıp uyarlayınız.
+****
+endif::arc42help[]
+
+_**<Genel Bakış Diyagramı>**_
+
+Gerekçe::
+
+_<metin biçiminde açıklama>_
+
+Kalite ve/veya Performans Özellikleri::
+
+_<metin biçiminde açıklama>_
+
+Yapı Taşlarının Altyapıyla Eşleştirilmesi::
+_<eşleştirmenin açıklaması>_
+
+
+=== Altyapı Seviyesi 2
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada seviye 1'deki (bazı) altyapı öğelerinin iç yapısını ekleyebilirsiniz.
+
+Lütfen seçtiğiniz her öğe için seviye 1'deki yapıyı kopyalayınız.
+****
+endif::arc42help[]
+
+==== _<Altyapı Öğesi 1>_
+
+_<diyagram + açıklama>_
+
+==== _<Altyapı Öğesi 2>_
+
+_<diyagram + açıklama>_
+
+...
+
+==== _<Altyapı Öğesi n>_
+
+_<diyagram + açıklama>_

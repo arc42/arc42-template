@@ -1,0 +1,80 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-context-and-scope]]
+== Bağlam ve Kapsam
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Bağlam ve kapsam (context and scope) - adından da anlaşılacağı gibi - sisteminizi (yani kapsamınızı) tüm iletişim ortaklarından
+(komşu sistemlerden ve kullanıcılardan, yani sisteminizin bağlamından) ayırır. Böylece dış arayüzleri (external interfaces) belirler.
+
+Gerekirse iş bağlamını (business context; domaine özgü girdiler ve çıktılar) teknik bağlamdan (technical context; kanallar, protokoller, donanım) ayırınız.
+
+.Motivasyon
+İletişim ortaklarına yönelik domain arayüzleri ve teknik arayüzler, bir sistemin en kritik yönleri arasındadır. Bunları tamamen anladığınızdan emin olunuz.
+
+.Biçim
+Çeşitli seçenekler:
+
+* Bağlam diyagramları (context diagrams)
+* İletişim ortaklarının ve arayüzlerinin listeleri.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-3/[Bağlam ve Kapsam] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+=== İş Bağlamı
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+*Tüm* iletişim ortaklarının (kullanıcılar, BT sistemleri, ...) belirtilmesi ve bunların domaine özgü girdi ve çıktılarının ya da arayüzlerinin açıklanması.
+İsteğe bağlı olarak domaine özgü formatlar veya iletişim protokolleri de eklenebilir.
+
+.Motivasyon
+Tüm paydaşlar, sistem ile bulunduğu ortam arasında hangi verilerin alışverişi yapıldığını anlamalıdır.
+
+.Biçim
+Sistemi bir kara kutu (black box) olarak gösteren ve iletişim ortaklarına yönelik domain arayüzlerini belirten her türlü diyagram.
+
+Alternatif olarak (veya ek olarak) bir tablo kullanabilirsiniz.
+Tablonun başlığı sisteminizin adıdır; üç sütun ise iletişim ortağının adını, girdileri ve çıktıları içerir.
+
+****
+endif::arc42help[]
+
+**<Diyagram veya Tablo>**
+
+**<isteğe bağlı: Dış domain arayüzlerinin açıklaması>**
+
+=== Teknik Bağlam
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Sistemi bulunduğu ortama bağlayan teknik arayüzler (kanallar ve iletim ortamları). Ek olarak, domaine özgü girdi/çıktıların kanallarla eşleştirilmesi (mapping), yani hangi girdi/çıktının hangi kanalı kullandığının açıklaması.
+
+.Motivasyon
+Pek çok paydaş, sistem ile bağlamı arasındaki teknik arayüzlere dayanarak mimari kararlar alır. Bu teknik arayüzleri özellikle altyapı (infrastructure) veya donanım tasarımcıları belirler.
+
+.Biçim
+Örneğin komşu sistemlere giden kanalları açıklayan bir UML dağıtım diyagramı (deployment diagram) ile
+kanallar ve girdi/çıktılar arasındaki ilişkileri gösteren bir eşleştirme tablosu.
+
+****
+endif::arc42help[]
+
+**<Diyagram veya Tablo>**
+
+**<isteğe bağlı: Teknik arayüzlerin açıklaması>**
+
+**<Girdi/Çıktıların Kanallarla Eşleştirilmesi>**

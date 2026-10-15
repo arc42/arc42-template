@@ -1,0 +1,44 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-glossary]]
+== Terimler Sözlüğü
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Paydaşların sistemi tartışırken kullandığı en önemli domain terimleri ve teknik terimler.
+
+Çok dilli ekiplerde çalışıyorsanız terimler sözlüğünü (glossary) çeviriler için bir kaynak olarak da görebilirsiniz.
+
+.Motivasyon
+Terimlerinizi açıkça tanımlamalısınız; böylece tüm paydaşlar
+
+* bu terimleri aynı şekilde anlar
+* eş anlamlı ve eş sesli sözcükler kullanmaz
+
+
+.Biçim
+
+<Terim> ve <Tanım> sütunlarından oluşan bir tablo.
+
+Çeviri gerekiyorsa ek sütunlar da eklenebilir.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-12/[Terimler Sözlüğü] bölümüne bakınız.
+
+****
+endif::arc42help[]
+
+[cols="e,2e" options="header"]
+|===
+|Terim |Tanım
+
+|<Terim-1>
+|<tanım-1>
+
+|<Terim-2>
+|<tanım-2>
+|===

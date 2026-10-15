@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Çözüm Stratejisi
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Sistem mimarisini şekillendiren temel kararların ve çözüm stratejilerinin (solution strategies) kısa bir özeti ve açıklaması:
+
+* teknoloji kararları
+* sistemin en üst düzeydeki ayrıştırmasına (decomposition) ilişkin kararlar, örneğin bir mimari desenin (architectural pattern) veya tasarım deseninin (design pattern) kullanılması
+* temel kalite hedeflerine nasıl ulaşılacağına ilişkin kararlar
+* ilgili organizasyonel kararlar, örneğin bir geliştirme sürecinin seçilmesi veya belirli görevlerin üçüncü taraflara devredilmesi.
+
+.Motivasyon
+Bu kararlar mimarinin köşe taşlarıdır. Diğer pek çok ayrıntılı karar ve gerçekleştirme kuralı bu kararlara dayanır.
+
+.Biçim
+Bu tür temel kararların açıklamalarını kısa tutunuz.
+
+Neyin kararlaştırıldığını ve neden bu şekilde kararlaştırıldığını,
+problem tanımına, kalite hedeflerine ve temel kısıtlara dayanarak gerekçelendiriniz.
+Ayrıntılar için sonraki bölümlere atıfta bulununuz.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-4/[Çözüm Stratejisi] bölümüne bakınız.
+
+****
+endif::arc42help[]

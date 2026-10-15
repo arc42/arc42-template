@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Mimari Kısıtlar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.İçerik
+Tasarım ve gerçekleştirme kararlarınızdaki ya da geliştirme sürecinizle ilgili kararlarınızdaki özgürlüğünüzü kısıtlayan her türlü gereksinim. Bu kısıtlar (constraints) bazen tekil sistemlerin ötesine geçer ve kuruluşların veya şirketlerin tamamında geçerli olur.
+
+.Motivasyon
+Tasarım kararlarınızda nerede serbest olduğunuzu ve nerede kısıtlara uymak zorunda olduğunuzu tam olarak bilmelisiniz.
+Kısıtlar, tartışılabilir olsalar da, her zaman ele alınmalıdır.
+
+.Biçim
+Açıklamalarıyla birlikte kısıtları içeren basit tablolar.
+Gerekirse bunları
+teknik kısıtlar, organizasyonel ve politik kısıtlar ile
+kurallar şeklinde alt gruplara ayırabilirsiniz. Kurallara örnek olarak programlama veya sürümleme yönergeleri, dokümantasyon veya adlandırma kuralları (naming conventions) verilebilir.
+
+
+.Daha Fazla Bilgi
+
+arc42 dokümantasyonundaki https://docs.arc42.org/section-2/[Mimari Kısıtlar] bölümüne bakınız.
+
+****
+endif::arc42help[]
