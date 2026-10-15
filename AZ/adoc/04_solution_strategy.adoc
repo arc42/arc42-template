@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Həll strategiyası
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Sistem memarlığını formalaşdıran fundamental qərarların və həll strategiyalarının qısa xülasəsi və izahı. Buraya daxildir:
+
+* texnologiya qərarları
+* sistemin yuxarı səviyyəli dekompozisiyası ilə bağlı qərarlar, məsələn, memarlıq patterni və ya dizayn patternindən istifadə
+* əsas keyfiyyət məqsədlərinə necə nail olmaq barədə qərarlar
+* müvafiq təşkilati qərarlar, məsələn, işlənib hazırlanma prosesinin seçilməsi və ya müəyyən tapşırıqların üçüncü tərəflərə həvalə edilməsi.
+
+.Motivasiya
+Bu qərarlar memarlığınızın təməl daşlarını təşkil edir. Onlar bir çox digər ətraflı qərarların və ya reallaşdırma qaydalarının əsasıdır.
+
+.Forma
+Belə əsas qərarların izahlarını qısa saxlayın.
+
+Problemin qoyuluşuna, keyfiyyət məqsədlərinə və əsas məhdudiyyətlərə əsaslanaraq,
+nəyin qərara alındığını və niyə məhz belə qərara alındığını əsaslandırın.
+Təfərrüatlar üçün sonrakı bölmələrə istinad edin.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-4/[Həll strategiyası] bölməsinə baxın.
+
+****
+endif::arc42help[]

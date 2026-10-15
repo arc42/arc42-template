@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Memarlıq məhdudiyyətləri
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Proqram təminatı memarlarının layihələndirmə və reallaşdırma qərarlarında və ya işlənib hazırlanma prosesi ilə bağlı qərarlarda sərbəstliyini məhdudlaşdıran istənilən tələb. Bu məhdudiyyətlər bəzən ayrı-ayrı sistemlərin hüdudlarından kənara çıxır və bütöv təşkilatlar və şirkətlər üçün qüvvədə olur.
+
+.Motivasiya
+Memarlar layihələndirmə qərarlarında harada sərbəst olduqlarını və harada məhdudiyyətlərə əməl etməli olduqlarını dəqiq bilməlidirlər.
+Məhdudiyyətlər həmişə nəzərə alınmalıdır; bununla belə, onlar danışıqlar predmeti ola bilər.
+
+.Forma
+İzahlarla birlikdə məhdudiyyətlərin sadə cədvəlləri.
+Lazım gələrsə, onları
+texniki məhdudiyyətlərə, təşkilati və siyasi məhdudiyyətlərə və
+qəbul edilmiş qaydalara (məsələn, proqramlaşdırma və ya versiyalaşdırma üzrə təlimatlar, sənədləşdirmə və ya adlandırma qaydaları) bölə bilərsiniz
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-2/[Memarlıq məhdudiyyətləri] bölməsinə baxın.
+
+****
+endif::arc42help[]

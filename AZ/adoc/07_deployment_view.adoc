@@ -1,0 +1,100 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Yerləşdirmə görünüşü
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Yerləşdirmə görünüşü (deployment view) aşağıdakıları təsvir edir:
+
+ 1. sisteminizin icrası üçün istifadə olunan texniki infrastrukturu — coğrafi yerlər, mühitlər, kompüterlər, prosessorlar, kanallar və şəbəkə topologiyaları kimi infrastruktur elementləri, həmçinin digər infrastruktur elementləri ilə birlikdə və
+
+2. (proqram təminatı) tikinti bloklarının həmin infrastruktur elementlərinə uyğunlaşdırılmasını.
+
+Çox vaxt sistemlər müxtəlif mühitlərdə icra olunur, məsələn, tərtibat mühiti, test mühiti, istehsal (production) mühiti. Belə hallarda bütün müvafiq mühitləri sənədləşdirməlisiniz.
+
+Proqram təminatınız birdən çox kompüter, prosessor, server və ya konteynerdə paylanmış sistem kimi icra olunursa, yaxud öz aparat prosessorlarınızı və çiplərinizi layihələndirib qurursunuzsa, yerləşdirmə görünüşünü xüsusilə sənədləşdirin.
+
+Proqram təminatı baxımından infrastrukturun yalnız tikinti bloklarınızın yerləşdirilməsini göstərmək üçün lazım olan elementlərini qeyd etmək kifayətdir. Aparat memarları bundan kənara çıxa və infrastrukturu onlara lazım olan istənilən təfərrüat səviyyəsində təsvir edə bilərlər.
+
+.Motivasiya
+Proqram təminatı aparat təminatı olmadan işləmir.
+Bu əsas infrastruktur sistemə və/və ya bəzi
+kəsişən konsepsiyalara təsir edə bilər və edəcək. Buna görə də infrastrukturu bilmək lazımdır.
+
+.Forma
+
+Ola bilsin ki, ən yuxarı səviyyəli yerləşdirmə diaqramı artıq bölmə 3.2-də öz infrastrukturunuzu
+BİR qara qutu kimi göstərən texniki kontekst şəklində mövcuddur. Bu bölmədə
+əlavə yerləşdirmə diaqramlarından istifadə edərək həmin qara qutunun içinə yaxından baxmaq olar:
+
+* UML bu görünüşü ifadə etmək üçün yerləşdirmə diaqramları təklif edir. İnfrastrukturunuz daha mürəkkəbdirsə,
+ondan, ola bilsin, iç-içə diaqramlarla birlikdə istifadə edin.
+* (Aparat təminatı üzrə) maraqlı tərəfləriniz yerləşdirmə diaqramı əvəzinə başqa növ diaqramlara üstünlük verirsə, infrastrukturun düyünlərini (nodes) və kanallarını göstərə bilən istənilən növdən istifadə etsinlər.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-7/[Yerləşdirmə görünüşü] bölməsinə baxın.
+
+****
+endif::arc42help[]
+
+=== İnfrastruktur səviyyəsi 1
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Təsvir edin (adətən diaqramlar, cədvəllər və mətnin birləşməsi ilə):
+
+* sistemin bir neçə yerə, mühitə, kompüterə, prosessora və s. paylanmasını, həmçinin onlar arasındakı fiziki əlaqələri
+* bu yerləşdirmə strukturunun mühüm əsaslandırmalarını və ya motivlərini
+* bu infrastrukturun keyfiyyət və/və ya performans xüsusiyyətlərini
+* proqram artefaktlarının bu infrastrukturun elementlərinə uyğunlaşdırılmasını
+
+Bir neçə mühit və ya alternativ yerləşdirmələr üçün arc42-nin bu bölməsini bütün müvafiq mühitlər üçün köçürüb uyğunlaşdırın.
+****
+endif::arc42help[]
+
+_**<İcmal diaqramı>**_
+
+Əsaslandırma::
+
+_<mətn şəklində izah>_
+
+Keyfiyyət və/və ya performans xüsusiyyətləri::
+
+_<mətn şəklində izah>_
+
+Tikinti bloklarının infrastruktura uyğunlaşdırılması::
+_<uyğunlaşdırmanın təsviri>_
+
+
+=== İnfrastruktur səviyyəsi 2
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada səviyyə 1-in (bəzi) infrastruktur elementlərinin daxili strukturunu daxil edə bilərsiniz.
+
+Lütfən, hər seçilmiş element üçün səviyyə 1-in strukturunu köçürün.
+****
+endif::arc42help[]
+
+==== _<İnfrastruktur elementi 1>_
+
+_<diaqram + izah>_
+
+==== _<İnfrastruktur elementi 2>_
+
+_<diaqram + izah>_
+
+...
+
+==== _<İnfrastruktur elementi n>_
+
+_<diaqram + izah>_

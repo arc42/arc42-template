@@ -1,0 +1,225 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-building-block-view]]
+
+
+== Tikinti blokları görünüşü
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Tikinti blokları görünüşü (building block view) sistemin tikinti bloklarına (modullar, komponentlər, alt sistemlər, siniflər, interfeyslər, paketlər, kitabxanalar, freymvorklar, laylar, bölmələr (partitions), səviyyələr (tiers), funksiyalar, makroslar, əməliyyatlar, məlumat strukturları, ...) statik dekompozisiyasını, həmçinin onların asılılıqlarını (münasibətlər, assosiasiyalar, ...) göstərir.
+
+Bu görünüş hər bir memarlıq sənədi üçün məcburidir.
+Ev ilə analogiya aparsaq, bu, _mərtəbə planıdır_.
+
+.Motivasiya
+Mənbə kodunuzun strukturunu abstraksiya vasitəsilə anlaşıqlı etməklə
+onun ümumi mənzərəsini daim göz önündə saxlayın.
+
+Bu, reallaşdırma təfərrüatlarını açıqlamadan maraqlı tərəflərinizlə abstrakt səviyyədə ünsiyyət qurmağa imkan verir.
+
+.Forma
+Tikinti blokları görünüşü qara qutuların və ağ qutuların
+(aşağıdakı şəklə baxın) və onların təsvirlərinin iyerarxik toplusudur.
+
+image::05_building_blocks-EN.png["Tikinti bloklarının iyerarxiyası"]
+
+*Səviyyə 1* bütöv sistemin ağ qutu təsvirini, onun tərkibindəki bütün tikinti bloklarının qara
+qutu təsvirləri ilə birlikdə əhatə edir.
+
+*Səviyyə 2* səviyyə 1-in bəzi tikinti bloklarını yaxından göstərir.
+Beləliklə, o, səviyyə 1-in seçilmiş tikinti bloklarının ağ qutu təsvirini, onların daxili tikinti bloklarının qara qutu təsvirləri ilə birlikdə ehtiva edir.
+
+*Səviyyə 3* səviyyə 2-nin seçilmiş tikinti bloklarını yaxından göstərir və s.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-5/[Tikinti blokları görünüşü] bölməsinə baxın.
+
+****
+endif::arc42help[]
+
+=== Bütöv sistemin ağ qutusu
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada aşağıdakı ağ qutu şablonundan istifadə edərək bütöv sistemin dekompozisiyasını təsvir edirsiniz. O, aşağıdakıları ehtiva edir:
+
+ * icmal diaqramı
+ * dekompozisiyanın əsaslandırılması
+ * tərkibdəki tikinti bloklarının qara qutu təsvirləri. Bunlar üçün sizə alternativlər təklif edirik:
+
+   ** tərkibdəki bütün tikinti bloklarının və onların interfeyslərinin qısa və praqmatik icmalı üçün _bir_ cədvəldən istifadə edin
+   ** tikinti bloklarının qara qutu şablonuna (aşağıya baxın) uyğun qara qutu təsvirlərinin siyahısından istifadə edin.
+   Seçdiyiniz alətdən asılı olaraq bu siyahı alt bölmələr (mətn fayllarında), alt səhifələr (Wiki-də) və ya iç-içə elementlər (modelləşdirmə alətində) ola bilər.
+
+
+ * (istəyə görə:) tikinti blokunun qara qutu şablonlarında izah edilməyən, lakin ağ qutunu başa düşmək üçün çox vacib olan mühüm interfeyslər.
+İnterfeysləri təsvir etməyin çoxlu yolu olduğundan, onlar üçün xüsusi şablon təqdim etmirik.
+ Ən pis halda sintaksisi, semantikanı, protokolları, xətaların emalını,
+ məhdudiyyətləri, versiyaları, keyfiyyət xüsusiyyətlərini, zəruri uyğunluqları və daha bir çox şeyi müəyyən etməli və təsvir etməli olacaqsınız.
+Ən yaxşı halda nümunələr və ya sadə siqnaturlarla kifayətlənə bilərsiniz.
+
+****
+endif::arc42help[]
+
+_**<İcmal diaqramı>**_
+
+Əsaslandırma::
+
+_<mətn izahı>_
+
+
+Tərkibdəki tikinti blokları::
+_<Tərkibdəki tikinti bloklarının (qara qutuların) təsviri>_
+
+Mühüm interfeyslər::
+_<Mühüm interfeyslərin təsviri>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Səviyyə 1-in qara qutularına dair izahlarınızı buraya daxil edin:
+
+Cədvəl formasından istifadə edirsinizsə, qara qutularınızı yalnız ad və
+məsuliyyətlə, aşağıdakı sxemə uyğun təsvir edəcəksiniz:
+
+[cols="1,2" options="header"]
+|===
+| **Ad** | **Məsuliyyət**
+| _<qara qutu 1>_ | _<Mətn>_
+| _<qara qutu 2>_ | _<Mətn>_
+|===
+
+
+
+Qara qutu təsvirlərinin siyahısından istifadə edirsinizsə, hər bir mühüm tikinti bloku üçün ayrıca qara qutu şablonunu doldurursunuz.
+Onun başlığı qara qutunun adıdır.
+****
+endif::arc42help[]
+
+==== <Qara qutu 1-in adı>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada <qara qutu 1> blokunu
+aşağıdakı qara qutu şablonuna uyğun təsvir edirsiniz:
+
+* Təyinat/Məsuliyyət
+* İnterfeys(lər), əgər onlar ayrıca paraqraflara çıxarılmayıbsa. Bu interfeyslərə keyfiyyət və performans xüsusiyyətləri daxil ola bilər.
+* (İstəyə görə) Qara qutunun keyfiyyət/performans xüsusiyyətləri, məsələn, əlçatanlıq, icra zamanı davranışı və s.
+* (İstəyə görə) qovluq/fayl yeri
+* (İstəyə görə) Yerinə yetirilən tələblər (tələblərlə əlaqənin izlənilməsi (traceability) tələb olunursa).
+* (İstəyə görə) Açıq məsələlər/problemlər/risklər
+
+****
+endif::arc42help[]
+
+_<Təyinat/Məsuliyyət>_
+
+_<İnterfeys(lər)>_
+
+_<(İstəyə görə) Keyfiyyət/performans xüsusiyyətləri>_
+
+_<(İstəyə görə) Qovluq/fayl yeri>_
+
+_<(İstəyə görə) Yerinə yetirilən tələblər>_
+
+_<(İstəyə görə) Açıq məsələlər/problemlər/risklər>_
+
+
+
+
+==== <Qara qutu 2-nin adı>
+
+_<qara qutu şablonu>_
+
+==== <Qara qutu n-in adı>
+
+_<qara qutu şablonu>_
+
+
+==== <İnterfeys 1-in adı>
+
+...
+
+==== <İnterfeys m-in adı>
+
+
+
+=== Səviyyə 2
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada səviyyə 1-in (bəzi) tikinti bloklarının daxili strukturunu ağ qutular kimi təsvir edə bilərsiniz.
+
+Sisteminizin hansı tikinti bloklarının belə ətraflı təsvirə layiq olacaq qədər vacib olduğuna siz qərar verməlisiniz.
+Lütfən, tamlıqdan çox əhəmiyyətliliyə üstünlük verin. Vacib, gözlənilməz, riskli, mürəkkəb və ya tez-tez dəyişən tikinti bloklarını təsvir edin.
+Sisteminizin adi, sadə, darıxdırıcı və ya standartlaşdırılmış hissələrini kənarda qoyun.
+****
+endif::arc42help[]
+
+==== Ağ qutu _<tikinti bloku 1>_
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+..._tikinti bloku 1_ elementinin daxili strukturunu təsvir edir.
+****
+endif::arc42help[]
+
+_<ağ qutu şablonu>_
+
+==== Ağ qutu _<tikinti bloku 2>_
+
+
+_<ağ qutu şablonu>_
+
+...
+
+==== Ağ qutu _<tikinti bloku m>_
+
+
+_<ağ qutu şablonu>_
+
+
+
+=== Səviyyə 3
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+Burada səviyyə 2-nin (bəzi) tikinti bloklarının daxili strukturunu ağ qutular kimi təsvir edə bilərsiniz.
+
+Memarlığınızın daha ətraflı səviyyələrinə ehtiyacınız varsa, əlavə səviyyələr üçün
+arc42-nin bu hissəsini köçürün.
+****
+endif::arc42help[]
+
+==== Ağ qutu <_tikinti bloku x.1_>
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+_tikinti bloku x.1_ elementinin daxili strukturunu müəyyən edir.
+****
+endif::arc42help[]
+
+_<ağ qutu şablonu>_
+
+
+==== Ağ qutu <_tikinti bloku x.2_>
+
+_<ağ qutu şablonu>_
+
+
+
+==== Ağ qutu <_tikinti bloku y.1_>
+
+_<ağ qutu şablonu>_

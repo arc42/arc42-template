@@ -1,0 +1,44 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-glossary]]
+== Terminlər lüğəti
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Maraqlı tərəflərinizin sistemi müzakirə edərkən istifadə etdiyi ən vacib domen və texniki terminlər.
+
+Çoxdilli komandalarda işləyirsinizsə, terminlər lüğətinə tərcümələr üçün mənbə kimi də baxa bilərsiniz.
+
+.Motivasiya
+Terminlərinizi aydın şəkildə müəyyən etməlisiniz ki, bütün maraqlı tərəflər
+
+* bu terminləri eyni cür başa düşsün
+* sinonim və omonimlərdən istifadə etməsin
+
+
+.Forma
+
+<Termin> və <Tərif> sütunlarından ibarət cədvəl.
+
+Tərcümələrə ehtiyac olduqda əlavə sütunlar da daxil edilə bilər.
+
+
+.Əlavə məlumat
+
+arc42 sənədlərində https://docs.arc42.org/section-12/[Terminlər lüğəti] bölməsinə baxın.
+
+****
+endif::arc42help[]
+
+[cols="e,2e" options="header"]
+|===
+|Termin |Tərif
+
+|<Termin-1>
+|<tərif-1>
+
+|<Termin-2>
+|<tərif-2>
+|===

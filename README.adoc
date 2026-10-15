@@ -20,6 +20,7 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* October 2026: first Azerbaijani version
 * October 2026: first Turkish version
 * November 2025: first Chinese version
 * 9.0: July 2025: 
@@ -62,6 +63,10 @@ The following languages are currently available:
 [cols="1,1,1", options="header"]
 |===
 | Language | Translator | Available Since
+
+| Azerbaijani (AZ)
+| Nihad Jabrayilzade (https://github.com/nihadio[@nihadio])
+| 2026-10-15
 
 | Czech (CZ)
 | jakub_rc <jakub.tomisek@gmail.com>

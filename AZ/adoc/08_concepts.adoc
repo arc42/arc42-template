@@ -1,0 +1,65 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Kəsişən konsepsiyalar
+
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Məzmun
+Bu bölmə kəsişən konsepsiyaları (cross-cutting concepts), yəni praktikaları, patternləri, qaydaları və ya həll ideyalarını təsvir edir.
+Belə konsepsiyalar çox vaxt bir neçə tikinti bloku ilə bağlı olur.
+Onlar bir çox müxtəlif mövzuları, məsələn, aşağıdakı diaqramda göstərilən mövzuları əhatə edə bilər:
+
+image::08-concepts-EN.drawio.png["Kəsişən konsepsiyalar üçün mümkün mövzular"]
+
+.Motivasiya
+Konsepsiyalar memarlığın _konseptual bütövlüyünün_ (ardıcıllığının, eynicinsliyinin) əsasını təşkil edir.
+Beləliklə, onlar sisteminizin daxili keyfiyyətlərinə nail olmağa mühüm töhfə verir.
+
+Şablonda belə konsepsiyaların vahid spesifikasiyası üçün nəzərdə tutduğumuz yer budur.
+
+Bu konsepsiyaların çoxu bir neçə tikinti blokunuzla bağlıdır və ya onlara təsir edir.
+
+.Forma
+Forma müxtəlif ola bilər:
+
+* istənilən struktura malik konsepsiya sənədləri
+* nümunə reallaşdırmalar, xüsusilə texniki konsepsiyalar üçün
+* memarlıq görünüşlərinin notasiyalarından istifadə edən kəsişən model fraqmentləri və ya ssenarilər
+
+.Struktur
+Sisteminiz üçün **yalnız** ən zəruri mövzuları seçin və onların hər birinə bu bölmədə 2-ci səviyyəli başlıq verin (məsələn, 8.1, 8.2 və s.).
+
+Yuxarıda göstərilən diaqramdakı bütün mövzuları əhatə etməyə ÇALIŞMAYIN.
+
+
+.Əlavə məlumat
+
+Sistemlərdəki bəzi mövzular çox vaxt bir neçə tikinti blokuna, aparat elementinə və ya işlənib hazırlanma prosesinə aid olur.
+Belə _kəsişən_ mövzuları aidiyyəti olan tikinti bloklarının, aparat elementlərinin və ya işlənib hazırlanma proseslərinin təsvirində təkrarlamaq əvəzinə, mərkəzi bir yerdə çatdırmaq və ya sənədləşdirmək daha asan ola bilər.
+
+Müəyyən konsepsiyalar sistemin **bütün** elementlərinə aid ola bilər, digərləri isə yalnız bir neçəsi üçün əhəmiyyət daşıya bilər.
+Yuxarıdakı diaqramda loqlaşdırma hər üç komponentə aiddir, təhlükəsizlik isə yalnız iki komponent üçün əhəmiyyətlidir.
+
+
+arc42 sənədlərində https://docs.arc42.org/section-8/[Konsepsiyalar] bölməsinə baxın.
+****
+endif::arc42help[]
+
+=== _<Konsepsiya 1>_
+
+_<izah>_
+
+
+
+=== _<Konsepsiya 2>_
+
+_<izah>_
+
+...
+
+=== _<Konsepsiya n>_
+
+_<izah>_
