@@ -81,11 +81,11 @@ Sistemin maraqlı tərəflərinin aydın icmalı, yəni aşağıdakı bütün ş
 * memarlığın düzgünlüyünə inandırılmalı olanlar
 * memarlıqla və ya kodla işləməli olanlar
 * öz işləri üçün memarlıq sənədlərinə ehtiyac duyanlar
-* sistem və ya onun işlənib hazırlanması barədə qərar verməli olanlar
+* sistem və ya onun tərtibatı barədə qərar verməli olanlar
 
 .Motivasiya
-Sistemin işlənib hazırlanmasında iştirak edən və ya sistemdən təsirlənən bütün tərəfləri bilməlisiniz.
-Əks halda, işlənib hazırlanma prosesinin sonrakı mərhələlərində xoşagəlməz sürprizlərlə qarşılaşa bilərsiniz.
+Sistemin tərtibatında iştirak edən və ya sistemdən təsirlənən bütün tərəfləri bilməlisiniz.
+Əks halda, tərtibat prosesinin sonrakı mərhələlərində xoşagəlməz sürprizlərlə qarşılaşa bilərsiniz.
 Bu maraqlı tərəflər işinizin və onun nəticələrinin həcmini və təfərrüat səviyyəsini müəyyən edir.
 
 .Forma
