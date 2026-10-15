@@ -15,7 +15,7 @@ Yerləşdirmə görünüşü (deployment view) aşağıdakıları təsvir edir:
 
 2. (proqram təminatı) tikinti bloklarının həmin infrastruktur elementlərinə uyğunlaşdırılmasını.
 
-Çox vaxt sistemlər müxtəlif mühitlərdə icra olunur, məsələn, tərtibat mühiti, test mühiti, istehsal (production) mühiti. Belə hallarda bütün müvafiq mühitləri sənədləşdirməlisiniz.
+Çox vaxt sistemlər müxtəlif mühitlərdə icra olunur, məsələn, tərtibat mühiti, test mühiti, istismar (production) mühiti. Belə hallarda bütün müvafiq mühitləri sənədləşdirməlisiniz.
 
 Proqram təminatınız birdən çox kompüter, prosessor, server və ya konteynerdə paylanmış sistem kimi icra olunursa, yaxud öz aparat prosessorlarınızı və çiplərinizi layihələndirib qurursunuzsa, yerləşdirmə görünüşünü xüsusilə sənədləşdirin.
 

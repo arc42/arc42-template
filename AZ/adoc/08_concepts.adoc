@@ -37,8 +37,8 @@ Yuxarıda göstərilən diaqramdakı bütün mövzuları əhatə etməyə ÇALI�
 
 .Əlavə məlumat
 
-Sistemlərdəki bəzi mövzular çox vaxt bir neçə tikinti blokuna, aparat elementinə və ya işlənib hazırlanma prosesinə aid olur.
-Belə _kəsişən_ mövzuları aidiyyəti olan tikinti bloklarının, aparat elementlərinin və ya işlənib hazırlanma proseslərinin təsvirində təkrarlamaq əvəzinə, mərkəzi bir yerdə çatdırmaq və ya sənədləşdirmək daha asan ola bilər.
+Sistemlərdəki bəzi mövzular çox vaxt bir neçə tikinti blokuna, aparat elementinə və ya tərtibat prosesinə aid olur.
+Belə _kəsişən_ mövzuları aidiyyəti olan tikinti bloklarının, aparat elementlərinin və ya tərtibat proseslərinin təsvirində təkrarlamaq əvəzinə, mərkəzi bir yerdə çatdırmaq və ya sənədləşdirmək daha asan ola bilər.
 
 Müəyyən konsepsiyalar sistemin **bütün** elementlərinə aid ola bilər, digərləri isə yalnız bir neçəsi üçün əhəmiyyət daşıya bilər.
 Yuxarıdakı diaqramda loqlaşdırma hər üç komponentə aiddir, təhlükəsizlik isə yalnız iki komponent üçün əhəmiyyətlidir.

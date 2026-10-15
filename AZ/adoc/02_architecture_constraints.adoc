@@ -8,7 +8,7 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Proqram təminatı memarlarının layihələndirmə və reallaşdırma qərarlarında və ya işlənib hazırlanma prosesi ilə bağlı qərarlarda sərbəstliyini məhdudlaşdıran istənilən tələb. Bu məhdudiyyətlər bəzən ayrı-ayrı sistemlərin hüdudlarından kənara çıxır və bütöv təşkilatlar və şirkətlər üçün qüvvədə olur.
+Proqram təminatı memarlarının layihələndirmə və reallaşdırma qərarlarında və ya tərtibat prosesi ilə bağlı qərarlarda sərbəstliyini məhdudlaşdıran istənilən tələb. Bu məhdudiyyətlər bəzən ayrı-ayrı sistemlərin hüdudlarından kənara çıxır və bütöv təşkilatlar və şirkətlər üçün qüvvədə olur.
 
 .Motivasiya
 Memarlar layihələndirmə qərarlarında harada sərbəst olduqlarını və harada məhdudiyyətlərə əməl etməli olduqlarını dəqiq bilməlidirlər.

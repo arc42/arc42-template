@@ -9,7 +9,7 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Tikinti blokları görünüşü (building block view) sistemin tikinti bloklarına (modullar, komponentlər, alt sistemlər, siniflər, interfeyslər, paketlər, kitabxanalar, freymvorklar, laylar, bölmələr (partitions), səviyyələr (tiers), funksiyalar, makroslar, əməliyyatlar, məlumat strukturları, ...) statik dekompozisiyasını, həmçinin onların asılılıqlarını (münasibətlər, assosiasiyalar, ...) göstərir.
+Tikinti blokları görünüşü (building block view) sistemin tikinti bloklarına (modullar, komponentlər, alt sistemlər, siniflər, interfeyslər, paketlər, kitabxanalar, freymvorklar, qatlar, bölmələr (partitions), səviyyələr (tiers), funksiyalar, makroslar, əməliyyatlar, məlumat strukturları, ...) statik dekompozisiyasını, həmçinin onların asılılıqlarını (münasibətlər, assosiasiyalar, ...) göstərir.
 
 Bu görünüş hər bir memarlıq sənədi üçün məcburidir.
 Ev ilə analogiya aparsaq, bu, _mərtəbə planıdır_.

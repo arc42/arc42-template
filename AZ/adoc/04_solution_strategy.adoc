@@ -13,7 +13,7 @@ Sistem memarlığını formalaşdıran fundamental qərarların və həll strate
 * texnologiya qərarları
 * sistemin yuxarı səviyyəli dekompozisiyası ilə bağlı qərarlar, məsələn, memarlıq patterni və ya dizayn patternindən istifadə
 * əsas keyfiyyət məqsədlərinə necə nail olmaq barədə qərarlar
-* müvafiq təşkilati qərarlar, məsələn, işlənib hazırlanma prosesinin seçilməsi və ya müəyyən tapşırıqların üçüncü tərəflərə həvalə edilməsi.
+* müvafiq təşkilati qərarlar, məsələn, tərtibat prosesinin seçilməsi və ya müəyyən tapşırıqların üçüncü tərəflərə həvalə edilməsi.
 
 .Motivasiya
 Bu qərarlar memarlığınızın təməl daşlarını təşkil edir. Onlar bir çox digər ətraflı qərarların və ya reallaşdırma qaydalarının əsasıdır.
