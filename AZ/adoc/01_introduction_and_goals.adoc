@@ -55,9 +55,11 @@ ifdef::arc42help[]
 Biz həqiqətən memarlığın keyfiyyət məqsədlərini nəzərdə tuturuq. Onları layihə məqsədləri ilə qarışdırmayın.
 Onlar heç də həmişə eyni olmur.
 
-Mümkün mövzuların (ISO 25010 standartına əsaslanan) bu icmalını nəzərdən keçirin:
+Mümkün mövzuların (https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] standartına əsaslanan) bu icmalını nəzərdən keçirin:
 
 image::01_2_iso-25010-topics-EN-2023.drawio.png["Keyfiyyət tələblərinin kateqoriyaları"]
+
+Keyfiyyət xüsusiyyətlərinin, təriflərin və nümunə tələblərin daha geniş (və açıq) toplusu üçün https://quality.arc42.org[Q42 keyfiyyət modelinə] baxın.
 
 .Motivasiya
 Ən vacib maraqlı tərəflərinizin keyfiyyət məqsədlərini bilməlisiniz, çünki onlar fundamental memarlıq qərarlarına təsir edəcək.

@@ -38,7 +38,7 @@ Une vue d'ensemble ou un résumé des exigences de qualité.
 
 .Motivation
 Nous rencontrons souvent des dizaines (voire des centaines) d'exigences de qualité détaillées. 
-Dans cette section générale, vous devez essayer de les résumer, par exemple en décrivant des attributs de qualité (comme suggéré par https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en [ISO 25010:2023] ou https://quality.arc42.org [Q42]).
+Dans cette section générale, vous devez essayer de les résumer, par exemple en décrivant des attributs de qualité (comme suggéré par https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] ou https://quality.arc42.org[Q42]).
 
 Si ces descriptions sommaires sont déjà suffisamment précises, spécifiques et mesurables, vous pouvez sauter la section 10.2.
 
@@ -95,7 +95,7 @@ La forme longue des scénarios (privilégiée par le SEI et [Bass+21]) est plus 
 * **Mesure de la réponse** : Critères ou mesures permettant d'évaluer la réponse du système.
 
 .Exemples
-Voir https://quality.arc42.org [le site web du modèle de qualité Q42] pour des exemples détaillés d'exigences de qualité.
+Voir https://quality.arc42.org[le site web du modèle de qualité Q42] pour des exemples détaillés d'exigences de qualité.
 
 .Informations complémentaires
 

@@ -22,6 +22,8 @@ Omdat kwaliteits requirements grote invloed invloed hebben op architectuur besli
 
 Zie https://docs.arc42.org/section-10/[Quality Requirements] in de arc42 documentatie.
 
+Voor categorieën van kwaliteits requirements, zie https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] of het https://quality.arc42.org[Q42 kwaliteitsmodel], dat ook veel voorbeelden van kwaliteits requirements bevat.
+
 ****
 endif::arc42help[]
 

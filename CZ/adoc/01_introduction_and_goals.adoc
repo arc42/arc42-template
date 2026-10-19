@@ -51,9 +51,11 @@ ifdef::arc42help[]
 Tři (maximálně pět) nejdůležitějších kvalitativních cílů pro architekturu, jejichž splnění je pro hlavní zainteresované strany nejdůležitější. Jedná se skutečně o kvalitativní cíle pro architekturu.
 Nepleťte si je s cíli projektu, ty nemusí být nutně totožné.
 
-Norma ISO 25010 poskytuje přehled jednotlivých oblastí:
+Norma https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] poskytuje přehled jednotlivých oblastí:
 
 image::01_2_iso-25010-topics-EN-2023.drawio.png["Kategorie kvalitativních cílů"]
+
+Rozsáhlejší (a otevřenou) sbírku kvalitativních vlastností, definic a příkladů požadavků najdete v https://quality.arc42.org[modelu kvality Q42].
 
 .Motivace
 Je vhodné znát kvalitativní cíle klíčových zainteresovaných stran systému, protože ty ovlivní zásadní architektonická rozhodnutí.

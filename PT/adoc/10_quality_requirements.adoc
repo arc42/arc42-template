@@ -24,6 +24,8 @@ concreto e mensurável.
 
 Veja https://docs.arc42.org/section-10/[Quality Requirements] na documentação do arc42.
 
+Para categorias de requisitos de qualidade, veja https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] ou o https://quality.arc42.org[modelo de qualidade Q42], que também oferece muitos exemplos de requisitos de qualidade.
+
 ****
 endif::arc42help[]
 

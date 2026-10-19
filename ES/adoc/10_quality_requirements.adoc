@@ -18,6 +18,10 @@ no sean cubiertos con totalidad.
 .Motivación
 Dado que los requerimientos de calidad tendrán mucha influencia en las decisiones arquitectónicas deben tomarse
 en cuenta los elementos importantes para las partes relacionadas que sean concretas y medibles.
+
+.Más información
+
+Para categorías de requerimientos de calidad, consulte https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] o el https://quality.arc42.org[modelo de calidad Q42], que además ofrece muchos ejemplos de requerimientos de calidad.
 ****
 endif::arc42help[]
 

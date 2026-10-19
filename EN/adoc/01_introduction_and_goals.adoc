@@ -55,9 +55,11 @@ The top three (max five) quality goals for the architecture whose fulfillment is
 We really mean quality goals for the architecture. Don't confuse them with project goals.
 They are not necessarily identical.
 
-Consider this overview of potential topics (based upon the ISO 25010 standard):
+Consider this overview of potential topics (based upon the https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] standard):
 
 image::01_2_iso-25010-topics-EN-2023.drawio.png["Categories of Quality Requirements"]
+
+For a more extensive (and open) collection of qualities, definitions and example requirements, see the https://quality.arc42.org[Q42 quality model].
 
 .Motivation
 You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 

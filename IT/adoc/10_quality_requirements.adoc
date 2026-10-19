@@ -17,6 +17,10 @@ il che non creerà rischi elevati quando non sono pienamente raggiunti.
 .Motivazione
 Poiché i requisiti di qualità avranno molta influenza sulle decisioni architetturali,
 dovresti sapere per ogni stakeholder cosa è veramente importante per loro, concreto e misurabile.
+
+.Ulteriori informazioni
+
+Per le categorie dei requisiti di qualità, vedere https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] o il https://quality.arc42.org[modello di qualità Q42], che offre anche molti esempi di requisiti di qualità.
 ****
 endif::arc42help[]
 
