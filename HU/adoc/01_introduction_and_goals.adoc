@@ -55,9 +55,11 @@ Az architektúra három (legfeljebb öt) legfontosabb minőségi célja, amelyek
 Valóban az architektúra minőségi céljairól van szó. Ne keverje össze ezeket a projekt céljaival.
 Nem feltétlenül azonosak.
 
-Tekintse át a lehetséges témák alábbi áttekintését (az ISO 25010 szabvány alapján):
+Tekintse át a lehetséges témák alábbi áttekintését (az https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] szabvány alapján):
 
 image::01_2_iso-25010-topics-HU-2023.drawio.png["Minőségi követelmények kategóriái"]
+
+A minőségi jellemzők, definíciók és példakövetelmények bővebb (és nyílt) gyűjteményét a https://quality.arc42.org[Q42 minőségi modellben] találja.
 
 .Motiváció
 Ismernie kell a legfontosabb érdekelt felek minőségi céljait, mivel ezek alapvető architekturális döntéseket befolyásolnak.
