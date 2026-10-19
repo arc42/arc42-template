@@ -22,6 +22,8 @@ ifdef::arc42help[]
 
 Смотри https://docs.arc42.org/section-10/[Требования к качеству] в документации arc42.
 
+Категории требований к качеству см. в https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] или в https://quality.arc42.org[модели качества Q42], которая также содержит множество примеров требований к качеству.
+
 ****
 endif::arc42help[]
 
