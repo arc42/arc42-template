@@ -50,9 +50,11 @@ Nos referimos a las metas de calidad para la arquitectura.
 No confundir con las metas del proyecto. 
 No necesariamente son idénticas.
 
-Considere esta visión general de las categorías de requerimientos de calidad según ISO 25010.
+Considere esta visión general de las categorías de requerimientos de calidad según https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023].
 
 image::01_2_iso-25010-topics-EN-2023.drawio.png["Categorías de Requerimientos de Calidad"]
+
+Para una colección más amplia (y abierta) de atributos de calidad, definiciones y ejemplos de requerimientos, consulte el https://quality.arc42.org[modelo de calidad Q42].
 
 .Motivación
 Debe conocer las metas de calidad de las partes interesadas más importantes, ya que ellos influenciarán
