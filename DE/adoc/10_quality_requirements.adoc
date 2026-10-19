@@ -18,7 +18,7 @@ Weil Qualitätsanforderungen die Architekturentscheidungen oft maßgeblich beein
 .Weiterführende Informationen
 
 * Siehe https://docs.arc42.org/section-10/[Qualitätsanforderungen] in der online-Dokumentation (auf Englisch!).
-* Siehe auch das ausführliche  https://quality.arc42.org[Q42 Qualitätsmodell auf https://quality.arc42.org].
+* Siehe auch das ausführliche https://quality.arc42.org[Q42 Qualitätsmodell auf https://quality.arc42.org].
 
 ****
 endif::arc42help[]
@@ -59,10 +59,10 @@ Stellen Sie sicher, dass Ihre Szenarien spezifisch und messbar sind.
 
 Zwei Arten von Szenarien finden wir besonders nützlich:
 
-* Nutzungsszenarien (auch bekannt als Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen bestimmten Auslöser reagieren soll.
+* _Nutzungsszenarien_ (auch bekannt als Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen bestimmten Auslöser reagieren soll.
 Hierunter fallen auch Szenarien zur Beschreibung von Effizienz oder Performance.
 Beispiel: Das System beantwortet eine Benutzeranfrage innerhalb einer Sekunde.
-* Änderungsszenarien_ beschreiben die gewünschte Wirkung einer Änderung oder Erweiterung des Systems oder seiner unmittelbaren Umgebung. 
+* _Änderungsszenarien_ beschreiben die gewünschte Wirkung einer Änderung oder Erweiterung des Systems oder seiner unmittelbaren Umgebung. 
 Beispiel: Zusätzliche Funktionalität wird implementiert oder Anforderungen an ein Qualitätsmerkmal ändern sich, und der Aufwand oder die Dauer der Änderung wird gemessen.
 
 
@@ -72,9 +72,9 @@ Typische Informationen für detaillierte Szenarien sind die folgenden:
 
 In Kurzform (bevorzugt im Q42-Modell):
 
-* K**ontext/Hintergrund**: Um welche Art von System oder Komponente handelt es sich, wie sieht die Umgebung oder Situation aus?
+* **Kontext/Hintergrund**: Um welche Art von System oder Komponente handelt es sich, wie sieht die Umgebung oder Situation aus?
 * **Quelle/Stimulus**: Wer oder was initiiert oder löst ein Verhalten, eine Reaktion oder eine Aktion aus.
-* **Metrik/Akzeptanzkriterien**: Eine Reaktion einschließlich einer _Maßnahme_ oder _Metrik_
+* **Metrik/Akzeptanzkriterien**: Eine Reaktion einschließlich eines _Maßes_ oder einer _Metrik_
 
 
 Die Langform von Szenarien (die von der SEI und [Bass+21] bevorzugt wird) ist detaillierter und enthält die folgenden Informationen:
