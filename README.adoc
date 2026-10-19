@@ -20,6 +20,10 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* 9.1 (DE: 9.2) and 8.3: October 2026: see #197
+  ** All languages: the quality goals (section 1.2) refer to ISO 25010:2023 (with link) and to the open https://quality.arc42.org[Q42 quality model].
+  ** 8.x languages (ES, IT, NL, PT, RU, UKR): section 10 now refers to ISO 25010:2023 and Q42; its text is otherwise unchanged. IT got the ISO 25010 overview diagram in section 1.2.
+  ** FR: fixed two broken links in section 10. DE, EN: typos in section 10.
 * October 2026: first Azerbaijani version
 * October 2026: first Turkish version
 * November 2025: first Chinese version
