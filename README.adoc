@@ -69,7 +69,7 @@ The following languages are currently available:
 | Language | Translator | Available Since
 
 | Azerbaijani (AZ)
-| Nihad Jabrayilzade (https://github.com/nihadio[@nihadio])
+| Nihad Jabrayilzade (https://github.com/nihadio[@nihadio]), Shamkhal Maharramov (https://github.com/Maharramoff[@Maharramoff])
 | 2026-10-15
 
 | Czech (CZ)

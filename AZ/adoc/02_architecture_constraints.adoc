@@ -1,29 +1,31 @@
+
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-architecture-constraints]]
-== Memarlıq məhdudiyyətləri
-
+== Arxitektura məhdudiyyətləri
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Proqram təminatı memarlarının layihələndirmə və reallaşdırma qərarlarında və ya tərtibat prosesi ilə bağlı qərarlarda sərbəstliyini məhdudlaşdıran istənilən tələb. Bu məhdudiyyətlər bəzən ayrı-ayrı sistemlərin hüdudlarından kənara çıxır və bütöv təşkilatlar və şirkətlər üçün qüvvədə olur.
+Bu bölmədə arxitektura, texniki həllər və hazırlanma prosesi ilə bağlı qərarları məhdudlaşdıran tələbləri qeyd edin. Bəzi məhdudiyyətlər yalnız konkret sistemə aid olur, digərləri isə bütün təşkilat və ya şirkət üçün keçərli ola bilər.
 
-.Motivasiya
-Memarlar layihələndirmə qərarlarında harada sərbəst olduqlarını və harada məhdudiyyətlərə əməl etməli olduqlarını dəqiq bilməlidirlər.
-Məhdudiyyətlər həmişə nəzərə alınmalıdır; bununla belə, onlar danışıqlar predmeti ola bilər.
+.Məqsəd
+Arxitektorlar hansı qərarları sərbəst verə biləcəklərini, hansı hallarda isə mövcud məhdudiyyətlərə əməl etməli olduqlarını dəqiq bilməlidirlər.
+Məhdudiyyətləri nəzərə almaq vacibdir. Amma bu, onların dəyişməz olduğu demək deyil. Bəzilərini müzakirə edib dəyişmək mümkündür.
 
-.Forma
-İzahlarla birlikdə məhdudiyyətlərin sadə cədvəlləri.
-Lazım gələrsə, onları
-texniki məhdudiyyətlərə, təşkilati və siyasi məhdudiyyətlərə və
-qəbul edilmiş qaydalara (məsələn, proqramlaşdırma və ya versiyalaşdırma üzrə təlimatlar, sənədləşdirmə və ya adlandırma qaydaları) bölə bilərsiniz
+.Təqdimat forması
+Məhdudiyyətləri qısa izahlarla birlikdə sadə cədvəllərdə göstərin.
 
+Lazım gələrsə, onları aşağıdakı qruplara ayırın:
+
+* texniki məhdudiyyətlər,
+* təşkilati və siyasi məhdudiyyətlər,
+* komandanın əməl etdiyi qaydalar və standartlar (məsələn, kod yazma, versiyalaşdırma, sənədləşdirmə və adlandırma qaydaları).
 
 .Əlavə məlumat
 
-arc42 sənədlərində https://docs.arc42.org/section-2/[Memarlıq məhdudiyyətləri] bölməsinə baxın.
+Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-2/[Arxitektura məhdudiyyətləri] bölməsinə baxın.
 
 ****
 endif::arc42help[]

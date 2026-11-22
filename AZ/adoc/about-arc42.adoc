@@ -6,10 +6,10 @@
 **arc42 haqqında**
 
 [role="lead"]
-arc42 — proqram təminatı və sistem memarlığının sənədləşdirilməsi üçün şablon.
+arc42 proqram təminatı və sistem arxitekturasını sənədləşdirmək üçün hazırlanmış şablondur.
 
-Şablon versiyası {revnumber}. {revremark}, {revdate}
+Şablonun versiyası: {revnumber}. {revremark}, {revdate}
 
-Yaradanlar, dəstəkləyənlər və müəllif hüququ (C) sahibləri: Dr. Peter Hruschka, Dr. Gernot Starke və töhfə verənlər.
-Bax: https://arc42.org.
+Dr. Peter Hruschka, Dr. Gernot Starke və digər iştirakçılar tərəfindən yaradılır və inkişaf etdirilir. Müəlliflik hüquqları (C) onlara məxsusdur.
 
+Ətraflı məlumat: https://arc42.org.

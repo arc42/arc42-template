@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/18.0.6 Chrome/100.0.4896.143 Electron/18.2.3 Safari/537.36">
+  <diagram id="LPTNytQwqBWC_GfA1Eqr" name="Seite-1">
+    <mxGraphModel dx="1861" dy="2215" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zedXbnPS2dvOR2a_KZK5-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="420" width="1400" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="uxBCPcs21ElFdmA4Ev5j-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="220" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uxBCPcs21ElFdmA4Ev5j-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Funksional yararlılıq" vertex="1">
+          <mxGeometry height="60" width="190" x="55" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uxBCPcs21ElFdmA4Ev5j-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem müəyyən edilmiş şəraitdə istifadəçilərin açıq şəkildə bildirdiyi və nəzərdə tutulan ehtiyaclarını qarşılayan funksiyalar təqdim edir." vertex="1">
+          <mxGeometry height="90" width="220" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zedXbnPS2dvOR2a_KZK5-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" value="ISO/IEC 25010:2023(en) əsasında, © ISO.org" vertex="1">
+          <mxGeometry height="30" width="1371" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Performans səmərəliliyi" vertex="1">
+          <mxGeometry height="60" width="190" x="335" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem müəyyən edilmiş şəraitdə funksiyalarını tələb olunan vaxt və emal sürəti çərçivəsində yerinə yetirir, resurslardan səmərəli istifadə edir." vertex="1">
+          <mxGeometry height="90" width="220" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Digər sistemlərlə uyğunluq" vertex="1">
+          <mxGeometry height="60" width="190" x="605" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem digər proqram məhsulları ilə məlumat mübadiləsi aparır və eyni mühit və resursları paylaşarkən tələb olunan funksiyalarını yerinə yetirir." vertex="1">
+          <mxGeometry height="90" width="220" x="590" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="850" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="İstifadəçi ilə qarşılıqlı əlaqə" vertex="1">
+          <mxGeometry height="60" width="190" x="875" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="İstifadəçilər sistemin interfeysi vasitəsilə onunla məlumat mübadiləsi apararaq nəzərdə tutulan tapşırıqları yerinə yetirə bilirlər." vertex="1">
+          <mxGeometry height="90" width="220" x="860" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="1115" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Etibarlılıq" vertex="1">
+          <mxGeometry height="60" width="190" x="1140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem müəyyən edilmiş şəraitdə tələb olunan funksiyalarını göstərilən müddət ərzində fasilə və nasazlıq olmadan yerinə yetirir." vertex="1">
+          <mxGeometry height="90" width="220" x="1125" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="166.25" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="İnformasiya təhlükəsizliyi" vertex="1">
+          <mxGeometry height="60" width="190" x="191.25" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem məlumatları qoruyur, istifadəçilərə və digər sistemlərə yalnız səlahiyyətlərinə uyğun giriş imkanı verir və zərərli hücumlardan müdafiə olunur." vertex="1">
+          <mxGeometry height="90" width="220" x="176.25" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="434.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Dəstəklənmə rahatlığı" vertex="1">
+          <mxGeometry height="60" width="190" x="459.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistemə texniki xidmət göstərən mütəxəssislər onda lazımi dəyişiklikləri düzgün və səmərəli şəkildə edə bilirlər." vertex="1">
+          <mxGeometry height="90" width="220" x="444.75" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="699.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="Çeviklik" vertex="1">
+          <mxGeometry height="60" width="190" x="724.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistemin tələbləri, istifadə şəraiti və ya işlədiyi mühit dəyişdikdə onu yeni şərtlərə uyğunlaşdırmaq mümkündür." vertex="1">
+          <mxGeometry height="90" width="220" x="709.75" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#FFCFB6;strokeColor=#b46504;" value="" vertex="1">
+          <mxGeometry height="150" width="240" x="964.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-23" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;whiteSpace=wrap;" value="İstismar təhlükəsizliyi" vertex="1">
+          <mxGeometry height="60" width="190" x="989.75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="_StOZSBAQDEiKwb37voM-24" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="Sistem müəyyən edilmiş şəraitdə insan həyatı, sağlamlığı, əmlak və ya ətraf mühit üçün təhlükəli vəziyyətlərin yaranmasının qarşısını alır." vertex="1">
+          <mxGeometry height="90" width="220" x="974.75" y="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

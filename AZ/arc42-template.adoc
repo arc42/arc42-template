@@ -1,9 +1,8 @@
-// header file for arc42-template,
-// including all help texts
+// arc42 şablonunun bütün köməkçi izahları ehtiva edən əsas faylı
 //
 // ====================================
 
-// configure AZ settings for asciidoc
+// AsciiDoc üçün konfiqurasiya
 include::adoc/config.adoc[]
 
 = image:arc42-logo.png[arc42] Şablonu
@@ -12,14 +11,14 @@ include::adoc/config.adoc[]
 :revremark: {revremark}
 :toc-title: Mündəricat
 
-//additional style for arc42 help callouts
+// arc42 köməkçi izahları üçün əlavə üslub
 include::../common/styles/arc42-help-style.adoc[]
 
 
 
 include::adoc/about-arc42.adoc[]
 
-// horizontal line
+// Üfüqi ayırıcı xətt
 ***
 
 ifdef::arc42help[]
@@ -27,14 +26,16 @@ ifdef::arc42help[]
 ****
 [NOTE]
 ====
-Şablonun bu versiyası köməkçi mətnlər və izahlar ehtiva edir.
-O, arc42 ilə tanış olmaq və onun konsepsiyalarını anlamaq üçün nəzərdə tutulub.
-Öz sisteminizi sənədləşdirmək üçün _sadə_ (plain) versiyadan istifadə etmək daha məqsədəuyğundur.
+Şablonun bu versiyasında əlavə izahlar və istifadə qaydaları var.
+
+Bu versiya arc42 ilə tanış olmaq və onun əsas anlayışlarını başa düşmək üçündür.
+
+Öz sisteminizin arxitekturasını sənədləşdirərkən əlavə izahları olmayan _sadə (plain)_ versiyadan istifadə etməyiniz daha məqsədəuyğundur.
 ====
 ****
 endif::arc42help[]
 
-// numbering from here on
+// Bölmələrin nömrələnməsi buradan başlayır
 :numbered:
 
 <<<<
@@ -42,11 +43,11 @@ endif::arc42help[]
 include::adoc/01_introduction_and_goals.adoc[]
 
 <<<<
-// 2. Memarlıq məhdudiyyətləri
+// 2. Arxitektura məhdudiyyətləri
 include::adoc/02_architecture_constraints.adoc[]
 
 <<<<
-// 3. Kontekst və əhatə dairəsi
+// 3. Sistemin konteksti və əhatə dairəsi
 include::adoc/03_context_and_scope.adoc[]
 
 <<<<
@@ -54,23 +55,23 @@ include::adoc/03_context_and_scope.adoc[]
 include::adoc/04_solution_strategy.adoc[]
 
 <<<<
-// 5. Tikinti blokları görünüşü
+// 5. Sistemin struktur bloklarına baxış
 include::adoc/05_building_block_view.adoc[]
 
 <<<<
-// 6. İcra zamanı görünüşü
+// 6. İşləmə zamanı davranış
 include::adoc/06_runtime_view.adoc[]
 
 <<<<
-// 7. Yerləşdirmə görünüşü
+// 7. Sistemin yerləşdirilməsi
 include::adoc/07_deployment_view.adoc[]
 
 <<<<
-// 8. Kəsişən konsepsiyalar
+// 8. Sistem üzrə ortaq yanaşmalar
 include::adoc/08_concepts.adoc[]
 
 <<<<
-// 9. Memarlıq qərarları
+// 9. Arxitektura qərarları
 include::adoc/09_architecture_decisions.adoc[]
 
 <<<<
@@ -84,5 +85,3 @@ include::adoc/11_technical_risks.adoc[]
 <<<<
 // 12. Terminlər lüğəti
 include::adoc/12_glossary.adoc[]
-
-

@@ -3,53 +3,59 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-quality-scenarios]]
 == Keyfiyyət tələbləri
 
-
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-
 .Məzmun
-Bu bölmə bütün müvafiq keyfiyyət tələblərini ehtiva edir.
+Bu bölmədə sistemə aid bütün vacib keyfiyyət tələblərini sənədləşdirin.
 
-Bu tələblərin ən vacibləri artıq bölmə 1.2-də (keyfiyyət məqsədləri) təsvir olunub, buna görə də burada onlara yalnız istinad edilməlidir.
-Bu 10-cu bölmədə həmçinin daha az əhəmiyyətli, tam yerinə yetirilmədikdə yüksək risk yaratmayan (lakin _olsa yaxşı olar_ (nice-to-have) sayıla bilən) keyfiyyət tələblərini də qeyd etməlisiniz.
+Ən yüksək prioritetli keyfiyyət tələbləri artıq 1.2-ci bölmədə (Keyfiyyət hədəfləri) təsvir olunub. Buna görə onları burada təkrarlamaq əvəzinə, həmin bölməyə istinad edin.
 
-.Motivasiya
-Keyfiyyət tələbləri memarlıq qərarlarına böyük təsir göstərəcəyi üçün, maraqlı tərəfləriniz üçün hansı keyfiyyətlərin həqiqətən vacib olduğunu konkret və ölçülə bilən şəkildə bilməlisiniz.
+Bu bölmədə daha aşağı prioritetli keyfiyyət tələblərini də qeyd edin. Belə tələblər tam qarşılanmasa belə, sistem üçün ciddi risk yaratmaya bilər, amma onların yerinə yetirilməsi yenə də faydalıdır.
 
+.Məqsəd
+Keyfiyyət tələbləri arxitektura qərarlarına ciddi təsir edir.
+
+Buna görə də maraqlı tərəflər üçün hansı keyfiyyət xüsusiyyətlərinin daha vacib olduğunu dəqiq bilməlisiniz.
+
+Bu gözləntiləri ümumi ifadələrlə deyil, konkret və ölçülə bilən tələblərlə göstərmək vacibdir.
 
 .Əlavə məlumat
 
-* arc42 sənədlərində https://docs.arc42.org/section-10/[Keyfiyyət tələbləri] bölməsinə baxın.
-* https://quality.arc42.org[https://quality.arc42.org saytındakı ətraflı Q42 keyfiyyət modelinə] baxın.
+* Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-10/[Keyfiyyət tələbləri] bölməsinə baxın.
+* Keyfiyyət xüsusiyyətləri və nümunələrlə daha ətraflı tanış olmaq üçün https://quality.arc42.org[Q42 keyfiyyət modelindən] istifadə edin.
 
 ****
 endif::arc42help[]
 
 
-=== Keyfiyyət tələblərinin icmalı
+=== Keyfiyyət tələblərinə ümumi baxış
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-
 .Məzmun
-Keyfiyyət tələblərinin icmalı və ya xülasəsi.
+Bu hissədə sistemin keyfiyyət tələblərini ümumi şəkildə təqdim edin.
 
+.Məqsəd
+Layihələrdə çox vaxt onlarla, bəzən isə yüzlərlə keyfiyyət tələbi olur.
 
-.Motivasiya
-Çox vaxt onlarla (hətta yüzlərlə) ətraflı keyfiyyət tələbi ilə qarşılaşırıq.
-Bu icmal bölməsində onları ümumiləşdirməyə çalışmalısınız, məsələn, kateqoriyaları və ya mövzuları təsvir etməklə (https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] və ya https://quality.arc42.org[Q42] tərəfindən təklif olunduğu kimi).
+Bu hissədə həmin tələbləri qruplaşdıraraq daha aydın və yığcam şəkildə göstərməyə çalışın.
 
-Bu xülasə təsvirləri artıq kifayət qədər dəqiq, konkret və ölçülə biləndirsə, bölmə 10.2-ni buraxa bilərsiniz.
+Qruplaşdırma üçün https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] standartındakı keyfiyyət kateqoriyalarından və ya https://quality.arc42.org[Q42 keyfiyyət modelindən] yararlana bilərsiniz.
 
-.Forma
-Hər sətirdə bir kateqoriya və ya mövzu və keyfiyyət tələbinin qısa təsviri olan sadə cədvəldən istifadə edin.
-Alternativ olaraq, bu keyfiyyət tələblərini strukturlaşdırmaq üçün zehin xəritəsindən (mindmap) istifadə edə bilərsiniz.
-Ədəbiyyatda ümumi "keyfiyyət" terminini kök kimi götürən və "keyfiyyət" anlayışını ağacvari şəkildə dəqiqləşdirən _keyfiyyət atributları ağacı_ (quality attribute tree) ideyası da təsvir olunub.
-[Bass+21] bu məqsədlə "Quality Attribute Utility Tree" terminini təqdim edib.
+Əgər bu ümumi təsvirlər artıq kifayət qədər konkret, dəqiq və ölçülə biləndirsə, 10.2-ci bölməni (Keyfiyyət ssenariləri) ayrıca hazırlamağa ehtiyac yoxdur.
 
+.Təqdimat forması
+Sadə cədvəldən istifadə edə bilərsiniz. Hər sətirdə keyfiyyət kateqoriyasını və ya mövzunu, eləcə də ona aid tələbin qısa izahını göstərin.
 
+Alternativ olaraq, tələbləri fikir xəritəsi (Mind Map) şəklində də qruplaşdıra bilərsiniz.
+
+Başqa bir yanaşma isə keyfiyyət xüsusiyyətləri ağacıdır (Quality Attribute Tree).
+
+Bu yanaşmada "keyfiyyət" ağacın kökündə yerləşir və daha konkret keyfiyyət xüsusiyyətlərinə doğru budaqlanır.
+
+[Bass+21] bu məqsədlə istifadə olunan yanaşmanı "Quality Attribute Utility Tree" adlandırır.
 
 ****
 endif::arc42help[]
@@ -60,53 +66,49 @@ endif::arc42help[]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-
 .Məzmun
-Keyfiyyət ssenariləri keyfiyyət tələblərini konkretləşdirir və onların (qəbul meyarları mənasında) yerinə yetirilib-yetirilmədiyinə qərar verməyə imkan verir.
-Ssenarilərinizin konkret və ölçülə bilən olduğuna əmin olun.
+Keyfiyyət ssenariləri keyfiyyət tələblərini konkretləşdirir və onların qarşılanıb-qarşılanmadığını yoxlamağa imkan verir.
 
+Bu baxımdan onlar qəbul meyarları kimi də istifadə oluna bilər.
 
+Ssenariləri konkret və ölçülə bilən formada yazın.
 
-İki növ ssenari xüsusilə faydalıdır:
+Xüsusilə iki növ ssenari faydalıdır:
 
-* _İstifadə ssenariləri_ (tətbiq ssenariləri və ya istifadə halı ssenariləri də adlanır) sistemin müəyyən stimula icra zamanı reaksiyasını təsvir edir.
-Buraya sistemin səmərəliliyini və ya performansını təsvir edən ssenarilər də daxildir.
-Nümunə: Sistem istifadəçinin sorğusuna bir saniyə ərzində cavab verir.
-* _Dəyişiklik ssenariləri_ sistemin və ya onun bilavasitə mühitinin dəyişdirilməsinin və ya genişləndirilməsinin arzu olunan nəticəsini təsvir edir.
-Nümunə: Əlavə funksionallıq reallaşdırılır və ya keyfiyyət atributuna dair tələblər dəyişir və dəyişikliyə sərf olunan əmək və ya onun müddəti ölçülür.
+* *İstifadə ssenariləri* (Usage Scenarios) sistemin müəyyən hadisəyə və ya sorğuya işləmə zamanı necə reaksiya verdiyini göstərir. Buraya sistemin səmərəliliyi və performansı ilə bağlı ssenarilər də daxildir.
++
+Məsələn: Sistem istifadəçinin sorğusuna 1 saniyə ərzində cavab verir.
 
+* *Dəyişiklik ssenariləri* (Change Scenarios) sistemdə və ya onun birbaşa əlaqəli olduğu mühitdə dəyişiklik edildikdə gözlənilən nəticəni göstərir.
++
+Məsələn: Sistemə yeni funksiya əlavə olunur və ya keyfiyyət tələbi dəyişir. Bu dəyişikliyi həyata keçirmək üçün tələb olunan iş həcmi və ya vaxt ölçülür.
 
-.Forma
+.Təqdimat forması
+Keyfiyyət ssenarilərini qısa və ya ətraflı formada təsvir edə bilərsiniz.
 
-Ətraflı ssenarilər üçün tipik məlumatlara aşağıdakılar daxildir:
+Q42 modelində üstünlük verilən qısa format üç hissədən ibarətdir:
 
-Qısa formada (Q42 modelində bu formaya üstünlük verilir):
+* *Kontekst:* Hansı sistemdən və ya komponentdən söhbət gedir? Sistem hansı mühitdə və ya şəraitdə işləyir?
+* *Mənbə və tətikləyici amil:* Sistemin müəyyən davranışına və ya reaksiyasına kim, yaxud nə səbəb olur?
+* *Ölçü və qəbul meyarı:* Sistem necə cavab verməlidir və bu cavab hansı konkret göstərici ilə qiymətləndiriləcək?
 
-* **Kontekst/Fon**: Hansı növ sistem və ya komponent, mühit və ya vəziyyət necədir?
-* **Mənbə/Stimul**: Davranışı, reaksiyanı və ya əməliyyatı kim və ya nə başladır, yaxud işə salır.
-* **Metrika/Qəbul meyarları**: _Ölçü_ və ya _metrika_ daxil olan reaksiya
+SEI və [Bass+21] tərəfindən tövsiyə olunan ətraflı format isə aşağıdakı məlumatları əhatə edir:
 
-
-Ssenarilərin SEI və [Bass+21] tərəfindən üstünlük verilən uzun forması daha ətraflıdır və aşağıdakı məlumatları ehtiva edir:
-
-* **Ssenari ID-si**: Ssenarinin unikal identifikatoru.
-* **Ssenari adı**: Ssenarinin qısa, təsviri adı.
-* **Mənbə**: Ssenarini başladan subyekt (istifadəçi, sistem və ya hadisə).
-* **Stimul**: Sistemin reaksiya verməsini tələb edən hadisə və ya şərt.
-* **Mühit**: Sistemin stimulla qarşılaşdığı istismar konteksti və ya şərait.
-* **Artefakt**: Stimuldan təsirlənən tikinti blokları və ya sistemin digər elementləri.
-* **Reaksiya**: Sistemin stimula cavab olaraq göstərdiyi nəticə və ya davranış.
-* **Reaksiyanın ölçüsü**: Sistemin reaksiyasının qiymətləndirildiyi meyar və ya metrika.
-
+* *Ssenarinin ID-si:* Ssenarini digər ssenarilərdən fərqləndirən unikal identifikator.
+* *Ssenarinin adı:* Ssenarinin məzmununu ifadə edən qısa və aydın ad.
+* *Mənbə:* Ssenarini başladan istifadəçi, sistem və ya hadisə.
+* *Tətikləyici hadisə və ya şərt:* Sistemin reaksiya verməli olduğu hadisə və ya vəziyyət.
+* *Mühit:* Hadisə baş verən zaman sistemin işlədiyi şərait.
+* *Təsirlənən sistem hissəsi:* Hadisənin təsir etdiyi struktur blokları və ya sistemin digər elementləri.
+* *Reaksiya:* Hadisəyə cavab olaraq sistemin göstərdiyi davranış və ya ortaya çıxan nəticə.
+* *Reaksiyanın ölçülməsi:* Sistemin reaksiyasını qiymətləndirmək üçün istifadə olunan konkret meyarlar və göstəricilər.
 
 .Nümunələr
-Keyfiyyət tələblərinin ətraflı nümunələri üçün https://quality.arc42.org[Q42 keyfiyyət modeli saytına] baxın.
+Keyfiyyət tələblərinə aid ətraflı nümunələr üçün https://quality.arc42.org[Q42 keyfiyyət modelinə] baxın.
 
 .Əlavə məlumat
 
 * Len Bass, Paul Clements, Rick Kazman: "Software Architecture in Practice", 4-cü nəşr, Addison-Wesley, 2021.
 
 ****
-
-
 endif::arc42help[]
