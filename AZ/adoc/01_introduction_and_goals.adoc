@@ -6,68 +6,66 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifdef::arc42help[]
 [role="arc42help"]
 ****
-Proqram təminatı memarlarının və tərtibat komandasının nəzərə almalı olduğu müvafiq tələbləri və hərəkətverici qüvvələri (driving forces) təsvir edir.
-Bunlara aiddir:
+Bu bölmədə sistemin qurulması zamanı arxitektorların və komandanın mütləq nəzərə almalı olduğu əsas tələblər və layihəni irəli aparan amillər izah olunur.
+Bura aşağıdakılar daxildir:
 
-* əsas biznes məqsədləri,
-* mühüm funksional imkanlar (features),
-* mühüm funksional tələblər,
-* memarlıq üçün keyfiyyət məqsədləri və
-* müvafiq maraqlı tərəflər (stakeholders) və onların gözləntiləri
+* layihənin arxasında duran əsas biznes hədəfləri,
+* sistemin əsas imkanları,
+* vacib funksional tələblər,
+* arxitekturanın cavab verməli olduğu keyfiyyət meyarları,
+* layihədə marağı olan tərəflər və onların gözləntiləri
 ****
 endif::arc42help[]
 
-=== Tələblərin icmalı
+=== Tələblərə ümumi baxış
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Funksional tələblərin və hərəkətverici qüvvələrin qısa təsviri, tələblərdən çıxarış (və ya xülasə).
-(Mövcud olduğuna ümid etdiyimiz) tələb sənədlərinə istinad
-(versiya nömrəsi və onların harada tapılacağı barədə məlumatla birlikdə).
+Funksional tələblərin, layihəni irəli aparan amillərin qısa təsviri və tələblərin əsas xülasəsi.
+Əgər tələblər ayrıca sənədlərdə yazılıbsa, həmin sənədlərə (versiya nömrəsi və harada yerləşdiyi qeyd olunmaqla) keçid əlavə edin.
 
-.Motivasiya
-Son istifadəçilər baxımından sistem biznes fəaliyyətinə dəstəyi yaxşılaşdırmaq
-və/və ya keyfiyyəti artırmaq üçün yaradılır və ya dəyişdirilir.
+.Məqsəd
+Son istifadəçi baxımından sistemin yaradılması və ya dəyişdirilməsinin əsas məqsədi müəyyən işləri asanlaşdırmaq, biznes proseslərini yaxşılaşdırmaq və ya nəticənin keyfiyyətini artırmaqdır.
 
-.Forma
-Qısa mətn təsviri, ola bilsin, cədvəl şəklində istifadə halları (use cases) formatında.
-Tələb sənədləri mövcuddursa, bu icmal həmin sənədlərə istinad etməlidir.
+.Təqdimat forması
+Tələbləri qısa mətn və ya cədvəl şəklində təqdim edin. Lazım gələrsə, istifadə ssenarilərindən (use-case) də yararlanın.
+Əgər ayrıca tələblər sənədləri varsa, burada həmin sənədlərə istinad edin.
 
-Bu çıxarışları mümkün qədər qısa saxlayın. Bu sənədin oxunaqlılığı ilə tələb sənədlərindəki məlumatların mümkün təkrarı arasında tarazlığı qoruyun.
+Bu bölməni mümkün qədər yığcam saxlayın. Oxucu əsas tələbləri başa düşməlidir, amma bunun üçün başqa sənədlərdə yazılanları burada təkrar etməyə ehtiyac yoxdur.
 
 
 .Əlavə məlumat
-
-arc42 sənədlərində https://docs.arc42.org/section-1/[Giriş və məqsədlər] bölməsinə baxın.
+Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-1/[Giriş və məqsədlər] bölməsinə baxın.
 
 ****
 endif::arc42help[]
 
-=== Keyfiyyət məqsədləri
+=== Keyfiyyət hədəfləri
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Əsas maraqlı tərəflər üçün yerinə yetirilməsi ən yüksək əhəmiyyət daşıyan, memarlığa aid ən vacib üç (maksimum beş) keyfiyyət məqsədi.
-Biz həqiqətən memarlığın keyfiyyət məqsədlərini nəzərdə tuturuq. Onları layihə məqsədləri ilə qarışdırmayın.
-Onlar heç də həmişə eyni olmur.
+Arxitektura üçün ən vacib 3 keyfiyyət hədəfini müəyyən edin. Ehtiyac varsa, bu sayı 5-ə qədər artıra bilərsiniz. Bunlar sistemin əsas maraqlı tərəfləri üçün ən yüksək prioritetə malik keyfiyyət hədəfləri olmalıdır.
+Burada söhbət məhz arxitekturanın keyfiyyət meyarlarından gedir — bunları layihənin ümumi məqsədləri ilə qarışdırmayın. Onlar bir-birinə uyğun gələ bilər, amma mütləq eyni olmalı deyil.
 
-Mümkün mövzuların (https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] standartına əsaslanan) bu icmalını nəzərdən keçirin:
+Potensial kateqoriyalara ümumi baxış üçün bu sxemə nəzər salın (https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en[ISO 25010:2023] standartına əsaslanır):
 
-image::01_2_iso-25010-topics-EN-2023.drawio.png["Keyfiyyət tələblərinin kateqoriyaları"]
+image::01_2_iso-25010-topics-AZ-2023.png["Keyfiyyət Tələblərinin Kateqoriyaları"]
 
-Keyfiyyət xüsusiyyətlərinin, təriflərin və nümunə tələblərin daha geniş (və açıq) toplusu üçün https://quality.arc42.org[Q42 keyfiyyət modelinə] baxın.
+Keyfiyyət meyarları, onların izahları və nümunə tələblərlə daha ətraflı tanış olmaq üçün https://quality.arc42.org[Q42 keyfiyyət modelinə] baxın.
 
-.Motivasiya
-Ən vacib maraqlı tərəflərinizin keyfiyyət məqsədlərini bilməlisiniz, çünki onlar fundamental memarlıq qərarlarına təsir edəcək.
-Bu keyfiyyətlər barədə çox konkret olun, dəbdə olan boş ifadələrdən qaçın.
-Əgər memar kimi işinizin keyfiyyətinin necə qiymətləndiriləcəyini bilmirsinizsə...
+.Məqsəd
+Əsas maraqlı tərəflərin sistemdən hansı keyfiyyət göstəricilərini gözlədiyini bilməlisiniz. Çünki bu gözləntilər arxitektura ilə bağlı vacib qərarlara birbaşa təsir edir.
+Keyfiyyət hədəflərini mümkün qədər konkret yazın. Ümumi və qeyri-müəyyən ifadələrdən uzaq durun. Məsələn, sadəcə "sistem sürətli olmalıdır" yazmaq əvəzinə, hansı əməliyyatın nə qədər vaxtda tamamlanmalı olduğunu göstərin.
+Əgər arxitektor olaraq işinizin keyfiyyətinin necə qiymətləndiriləcəyini bilmirsinizsə, düzgün qərar verdiyinizə necə əmin ola bilərsiniz?
 
-.Forma
-Prioritetə görə sıralanmış, keyfiyyət məqsədləri və konkret ssenarilərdən ibarət cədvəl
+.Təqdimat forması
+Keyfiyyət hədəflərini və onları izah edən konkret ssenariləri cədvəldə göstərin.
+
+Hədəfləri prioritet sırasına görə düzün.
 ****
 endif::arc42help[]
 
@@ -77,40 +75,63 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Sistemin maraqlı tərəflərinin aydın icmalı, yəni aşağıdakı bütün şəxslər, rollar və ya təşkilatlar:
+Sistemin arxitekturası ilə əlaqəsi olan bütün şəxsləri, rolları və təşkilatları müəyyən edin.
 
-* memarlığı bilməli olanlar
-* memarlığın düzgünlüyünə inandırılmalı olanlar
-* memarlıqla və ya kodla işləməli olanlar
-* öz işləri üçün memarlıq sənədlərinə ehtiyac duyanlar
-* sistem və ya onun tərtibatı barədə qərar verməli olanlar
+Buraya aşağıdakılar daxildir:
 
-.Motivasiya
-Sistemin tərtibatında iştirak edən və ya sistemdən təsirlənən bütün tərəfləri bilməlisiniz.
-Əks halda, tərtibat prosesinin sonrakı mərhələlərində xoşagəlməz sürprizlərlə qarşılaşa bilərsiniz.
-Bu maraqlı tərəflər işinizin və onun nəticələrinin həcmini və təfərrüat səviyyəsini müəyyən edir.
+* arxitektura haqqında məlumatlı olmalı olanlar,
+* seçilmiş arxitektura yanaşmasının düzgünlüyünə əmin olmalı olanlar,
+* arxitektura və ya kodla birbaşa işləyənlər,
+* işlərini görmək üçün arxitektura sənədlərinə ehtiyacı olanlar,
+* sistemin özü və ya onun hazırlanması ilə bağlı qərar verənlər.
 
-.Forma
-Rol adları, şəxs adları və onların memarlıq sənədlərinə (!) dair gözləntiləri olan cədvəl.
-Maraqlı tərəflərin funksional və keyfiyyət tələblərini təkrarlamayın.
-Burada onların sənədlərə olan ehtiyaclarını müəyyən edin.
+.Məqsəd
+Sistemin hazırlanmasında iştirak edən və ya sistemin təsir etdiyi bütün tərəfləri tanımalısınız.
+Əks halda, layihənin sonrakı mərhələlərində gözlənilməz problemlərlə qarşılaşa bilərsiniz.
+Maraqlı tərəflərin ehtiyacları arxitektura üzərində nə qədər işləməli olduğunuzu, sənədlərdə hansı mövzuları əhatə etməli və onları nə qədər ətraflı izah etməli olduğunuzu müəyyənləşdirir.
+
+.Təqdimat forması
+Maraqlı tərəfləri cədvəldə göstərin. Hər biri üçün rolunu, adını, əlaqə məlumatını və arxitektura sənədlərindən nə gözlədiyini qeyd edin.
+Burada onların sistemə aid funksional və keyfiyyət tələblərini təkrar yazmayın. Diqqəti məhz arxitektura sənədlərinə olan ehtiyaclarına yönəldin.
 
 .Nümunə
-Aşağıdakı maraqlı tərəf rolları bir çox layihədə təkrarlanır. Onlardan
-başlanğıc nöqtəsi kimi istifadə edin, sonra rolları, adları və gözləntiləri öz faktiki layihənizə uyğunlaşdırın.
-Hər layihədə bu rolların hamısı olmur, bəzilərində isə əlavə rollar olur.
+Aşağıdakı rollara bir çox layihədə rast gəlinir. Bu siyahıdan başlanğıc nümunə kimi istifadə edin, sonra onu öz layihənizə uyğunlaşdırın.
+Hər layihədə bu rolların hamısı olmaya bilər, bəzilərində isə əlavə rollara ehtiyac yarana bilər.
 
 [options="header",cols="1,2,2"]
 |===
 |Rol/Ad|Əlaqə|Gözləntilər
-|Məhsul sahibi (Product Owner)|Məhsul idarəetməsi|Funksional imkanları biznes dəyərinə görə prioritetləşdirir; Bölmə 1-in (Tələblərin icmalı, Keyfiyyət məqsədləri) məhsul strategiyası ilə uzlaşdırılmış saxlanmasına ehtiyac duyur
-|Son istifadəçilər / Müştərilər|UX tədqiqatları və dəstək müraciətləri vasitəsilə təmsil olunur|Sistemin istifadəsi rahat, etibarlı və sürətli olmalıdır; performans və istifadə rahatlığı kimi keyfiyyət məqsədlərini müəyyənləşdirirlər
-|Proqram təminatı memar(lar)ı|Memarlıq komandası|Bu sənədlərə cavabdehdir və onları aktual saxlayır; texniki qərarları əsaslandırmaq və çatdırmaq üçün onlardan istifadə edir
-|Tərtibat komandası|Mühəndislik komandası|Düzgün reallaşdırma üçün aydın tikinti bloklarına (Bölmə 5) və icra zamanı ssenarilərinə (Bölmə 6) ehtiyac duyur
-|İstismar / SRE|İstismar komandası|Sistemi etibarlı şəkildə istismar etmək üçün yerləşdirmə görünüşünə (Bölmə 7) və kəsişən konsepsiyalara (Bölmə 8, məsələn, monitorinq, loqlaşdırma) ehtiyac duyur
-|Təhlükəsizlik məsulu / İnformasiya təhlükəsizliyi|Təhlükəsizlik komandası|Memarlığı risklər (Bölmə 11) və keyfiyyət tələbləri (Bölmə 10) baxımından yoxlayır; təhlükəsizlik məhdudiyyətlərinin nəzərə alındığına dair sübuta ehtiyac duyur
-|Uyğunluq (compliance) / Hüquq|Hüquq/Uyğunluq komandası|Normativ məhdudiyyətlərə (Bölmə 2), məsələn, məlumatların qorunması və lisenziyalaşdırma tələblərinə əməl olunduğuna dair sübuta ehtiyac duyur
-|Layihə sponsoru / Rəhbərlik|Rəhbər komitə|Memarlıq qərarlarının (Bölmə 9) büdcəni, vaxt qrafikini və strateji məqsədləri dəstəklədiyinə əmin olmaq istəyir
+|Məhsul sahibi (Product Owner)
+|Məhsulun idarə edilməsi komandası
+|Funksiyaları biznes üçün yaratdığı dəyərə görə prioritetləşdirir. 1-ci bölmədəki tələblərə ümumi baxışın və keyfiyyət hədəflərinin məhsul strategiyasına uyğun qalmasını gözləyir.
+
+|Son istifadəçilər / Müştərilər
+|İstifadəçi araşdırmaları və dəstək müraciətləri vasitəsilə
+|Sistemin rahat, etibarlı və sürətli işləməsini gözləyirlər. Onların ehtiyacları performans və istifadə rahatlığı kimi keyfiyyət hədəflərinin müəyyənləşdirilməsinə təsir edir.
+
+|Proqram təminatı arxitektoru / Arxitektorlar
+|Arxitektura komandası
+|Arxitektura sənədlərini hazırlayır və aktual saxlayırlar. Texniki qərarları əsaslandırmaq və komandaya izah etmək üçün bu sənədlərdən istifadə edirlər.
+
+|Proqramlaşdırma Komandası
+|Mühəndislik Komandası
+|Sistemi düzgün hazırlamaq üçün onun əsas komponentlərinin necə qurulduğunu (5-ci bölmə) və işləmə zamanı hansı ssenarilərin baş verdiyini (6-cı bölmə) aydın görmək istəyir.
+
+|Əməliyyat komandası / SRE
+|Əməliyyat komandası
+|Sistemin stabil işləməsini təmin etmək üçün yerləşdirmə sxeminə (7-ci bölmə) və monitorinq, loqlama kimi ümumi texniki yanaşmalara (8-ci bölmə) ehtiyac duyur.
+
+|Təhlükəsizlik üzrə məsul şəxs / İnformasiya təhlükəsizliyi
+|Təhlükəsizlik komandası
+|Arxitekturanı mövcud risklər (11-ci bölmə) və keyfiyyət tələbləri (10-cu bölmə) baxımından yoxlayır. Təhlükəsizlik məhdudiyyətlərinin nəzərə alındığını göstərən konkret sübutlar gözləyir.
+
+|Qanunvericiliyə uyğunluq / Hüquq şöbəsi
+|Hüquq və uyğunluq komandası
+|Məlumatların qorunması, lisenziyalaşdırma və digər hüquqi tələblərin (2-ci bölmə) yerinə yetirildiyini göstərən sübutlara ehtiyac duyur.
+
+|Layihə sponsoru / Rəhbərlik
+|İdarəetmə komitəsi
+|Arxitektura qərarlarının (9-cu bölmə) layihənin büdcəsinə, icra müddətinə və strateji məqsədlərinə uyğun olduğuna əmin olmaq istəyir.
 |===
 ****
 endif::arc42help[]

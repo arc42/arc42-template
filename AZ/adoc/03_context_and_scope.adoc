@@ -1,31 +1,29 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-context-and-scope]]
-== Kontekst və əhatə dairəsi
-
+== Sistemin konteksti və əhatə dairəsi
 
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Kontekst və əhatə dairəsi — adından göründüyü kimi — sisteminizi (yəni əhatə dairənizi) onun bütün kommunikasiya tərəfdaşlarından
-(qonşu sistemlərdən və istifadəçilərdən, yəni sisteminizin kontekstindən) ayırır. Beləliklə, o, xarici interfeysləri müəyyən edir.
+Bu bölmədə sistemin sərhədlərini müəyyən edin: sistemə nələrin daxil olduğunu, nələrin isə ondan kənarda qaldığını göstərin.
+Sistemin istifadəçilərlə və digər sistemlərlə necə əlaqə saxladığını izah edin. Bununla da sistemin xarici interfeyslərini müəyyənləşdirin.
+Lazım gələrsə, biznes kontekstini (sistemə daxil olan və sistemdən çıxan biznes məlumatları) texniki kontekstdən (əlaqə kanalları, protokollar və avadanlıq) ayrı göstərin.
 
-Lazım gələrsə, biznes kontekstini (domenə xas giriş və çıxışlar) texniki kontekstdən (kanallar, protokollar, aparat təminatı) ayırın.
+.Məqsəd
+Sistemin istifadəçilərlə və digər sistemlərlə məlumat mübadiləsi apardığı interfeyslər arxitekturanın ən vacib hissələrindəndir.
+Həm biznes, həm də texniki interfeyslərin necə işlədiyini tam başa düşmək vacibdir.
 
-.Motivasiya
-Kommunikasiya tərəfdaşları ilə domen interfeysləri və texniki interfeyslər sisteminizin ən kritik aspektlərindəndir. Onları tam başa düşdüyünüzə əmin olun.
+.Təqdimat forması
+Məlumatı müxtəlif formalarda təqdim edə bilərsiniz:
 
-.Forma
-Müxtəlif variantlar:
-
-* Kontekst diaqramları
-* Kommunikasiya tərəfdaşlarının və onların interfeyslərinin siyahıları.
-
+* Kontekst diaqramları.
+* Sistemin əlaqə saxladığı tərəflərin və onların interfeyslərinin siyahısı.
 
 .Əlavə məlumat
 
-arc42 sənədlərində https://docs.arc42.org/section-3/[Kontekst və əhatə dairəsi] bölməsinə baxın.
+Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-3/[Sistemin konteksti və əhatə dairəsi] bölməsinə baxın.
 
 ****
 endif::arc42help[]
@@ -36,24 +34,29 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-*Bütün* kommunikasiya tərəfdaşlarının (istifadəçilər, İT sistemləri, ...) domenə xas giriş və çıxışların və ya interfeyslərin izahı ilə birlikdə spesifikasiyası.
-İstəyə görə domenə xas formatları və ya kommunikasiya protokollarını əlavə edə bilərsiniz.
+Sistemin əlaqə saxladığı bütün tərəfləri (istifadəçilər, digər İT sistemləri və s.) göstərin.
+Hər bir tərəf üçün sistemə hansı məlumatların daxil olduğunu, sistemdən hansı məlumatların ötürüldüyünü və istifadə olunan biznes interfeyslərini izah edin.
+Lazım gələrsə, məlumat formatlarını və əlaqə protokollarını da qeyd edin.
 
-.Motivasiya
-Bütün maraqlı tərəflər sistemin mühiti ilə hansı məlumatların mübadilə edildiyini başa düşməlidir.
+.Məqsəd
+Layihədə iştirak edən bütün tərəflər sistemlə onun xarici mühiti arasında hansı məlumatların mübadilə olunduğunu aydın başa düşməlidirlər.
 
-.Forma
-Sistemi qara qutu kimi göstərən və kommunikasiya tərəfdaşları ilə domen interfeyslərini müəyyən edən istənilən növ diaqramlar.
+.Təqdimat forması
+Sistemi daxili quruluşunu göstərmədən, yəni "qara qutu" kimi təsvir edən diaqramlardan istifadə edin. Diaqramlarda sistemin digər tərəflərlə hansı biznes interfeysləri vasitəsilə əlaqə saxladığını göstərin.
+Alternativ olaraq və ya diaqrama əlavə olaraq cədvəl də hazırlaya bilərsiniz.
 
-Alternativ olaraq (və ya əlavə olaraq) cədvəldən istifadə edə bilərsiniz.
-Cədvəlin başlığı sisteminizin adıdır, üç sütunda isə kommunikasiya tərəfdaşının adı, girişlər və çıxışlar yer alır.
+Cədvəlin başlığına sistemin adını yazın və üç sütun əlavə edin:
+
+* Əlaqə saxlanılan tərəf.
+* Daxil olan məlumatlar.
+* Çıxan məlumatlar.
 
 ****
 endif::arc42help[]
 
 **<Diaqram və ya cədvəl>**
 
-**<istəyə görə: xarici domen interfeyslərinin izahı>**
+**<İstəyə görə: Xarici biznes interfeyslərinin izahı>**
 
 === Texniki kontekst
 
@@ -61,20 +64,22 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Sisteminizi onun mühiti ilə əlaqələndirən texniki interfeyslər (kanallar və ötürmə mühitləri). Bundan əlavə, domenə xas giriş/çıxışın kanallara uyğunlaşdırılması (mapping), yəni hansı giriş/çıxışın hansı kanaldan istifadə etdiyinin izahı.
+Sistemin xarici mühitlə əlaqəsini təmin edən texniki interfeysləri, əlaqə kanallarını və məlumat ötürmə vasitələrini göstərin.
+Həmçinin hansı giriş və çıxış məlumatlarının hansı kanallar vasitəsilə ötürüldüyünü izah edin.
 
-.Motivasiya
-Bir çox maraqlı tərəflər memarlıq qərarlarını sistem və onun konteksti arasındakı texniki interfeyslər əsasında qəbul edir. Xüsusilə infrastruktur və ya aparat təminatı layihəçiləri bu texniki interfeyslər barədə qərar verirlər.
+.Məqsəd
+Sistemlə xarici mühit arasındakı texniki interfeyslər bir çox arxitektura qərarına təsir edir.
+Xüsusilə infrastruktur və avadanlıq üzrə mütəxəssislər bu interfeyslərə əsaslanaraq texniki qərarlar verirlər.
 
-.Forma
-Məsələn, qonşu sistemlərə gedən kanalları təsvir edən UML yerləşdirmə diaqramı,
-kanallar və giriş/çıxış arasındakı əlaqələri göstərən uyğunluq cədvəli ilə birlikdə.
+.Təqdimat forması
+Məsələn, UML yerləşdirmə diaqramı ilə sistemin digər sistemlərə hansı kanallarla qoşulduğunu göstərin.
+Əlavə olaraq, giriş və çıxış məlumatlarının hansı kanallardan keçdiyini göstərən uyğunluq cədvəli hazırlayın.
 
 ****
 endif::arc42help[]
 
 **<Diaqram və ya cədvəl>**
 
-**<istəyə görə: texniki interfeyslərin izahı>**
+**<İstəyə görə: Texniki interfeyslərin izahı>**
 
-**<Giriş/çıxışın kanallara uyğunlaşdırılması>**
+**<Giriş və çıxış məlumatlarının əlaqə kanallarına uyğunluğu>**

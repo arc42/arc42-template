@@ -7,38 +7,38 @@ ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Maraqlı tərəflərinizin sistemi müzakirə edərkən istifadə etdiyi ən vacib domen və texniki terminlər.
+Bu bölmədə sistemi müzakirə edərkən istifadə olunan ən vacib biznes və texniki terminləri izah edin.
 
-Çoxdilli komandalarda işləyirsinizsə, terminlər lüğətinə tərcümələr üçün mənbə kimi də baxa bilərsiniz.
+Komandanız bir neçə dildə işləyirsə, bu lüğətdən terminlərin digər dillərdəki qarşılıqlarını tapmaq üçün də istifadə edə bilərsiniz.
 
-.Motivasiya
-Terminlərinizi aydın şəkildə müəyyən etməlisiniz ki, bütün maraqlı tərəflər
+.Məqsəd
+Terminləri aydın və dəqiq izah edin ki, layihədə iştirak edən hər kəs:
 
-* bu terminləri eyni cür başa düşsün
-* sinonim və omonimlərdən istifadə etməsin
+* eyni termini eyni mənada başa düşsün,
+* eyni anlayış üçün fərqli terminlərdən və ya eyni termin üçün fərqli mənalardan istifadə etməsin.
 
+.Təqdimat forması
+Terminləri iki sütunlu cədvəldə göstərin:
 
-.Forma
+* Termin
+* İzah
 
-<Termin> və <Tərif> sütunlarından ibarət cədvəl.
-
-Tərcümələrə ehtiyac olduqda əlavə sütunlar da daxil edilə bilər.
-
+Terminlərin başqa dillərdəki qarşılıqlarını da göstərmək lazımdırsa, cədvələ əlavə sütunlar daxil edə bilərsiniz.
 
 .Əlavə məlumat
 
-arc42 sənədlərində https://docs.arc42.org/section-12/[Terminlər lüğəti] bölməsinə baxın.
+Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-12/[Terminlər lüğəti] bölməsinə baxın.
 
 ****
 endif::arc42help[]
 
 [cols="e,2e" options="header"]
 |===
-|Termin |Tərif
+|Termin |İzah
 
 |<Termin-1>
-|<tərif-1>
+|<İzah-1>
 
 |<Termin-2>
-|<tərif-2>
+|<İzah-2>
 |===

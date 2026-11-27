@@ -3,32 +3,30 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Həll strategiyası
 
-
 ifdef::arc42help[]
 [role="arc42help"]
 ****
 .Məzmun
-Sistem memarlığını formalaşdıran fundamental qərarların və həll strategiyalarının qısa xülasəsi və izahı. Buraya daxildir:
+Bu bölmədə sistemin arxitekturasını formalaşdıran əsas qərarları və seçilmiş həll yollarını qısa şəkildə izah edin.
 
-* texnologiya qərarları
-* sistemin yuxarı səviyyəli dekompozisiyası ilə bağlı qərarlar, məsələn, memarlıq patterni və ya dizayn patternindən istifadə
-* əsas keyfiyyət məqsədlərinə necə nail olmaq barədə qərarlar
-* müvafiq təşkilati qərarlar, məsələn, tərtibat prosesinin seçilməsi və ya müəyyən tapşırıqların üçüncü tərəflərə həvalə edilməsi.
+Buraya daxildir:
 
-.Motivasiya
-Bu qərarlar memarlığınızın təməl daşlarını təşkil edir. Onlar bir çox digər ətraflı qərarların və ya reallaşdırma qaydalarının əsasıdır.
+* texnologiya seçimi ilə bağlı qərarlar,
+* sistemin əsas hissələrə necə bölünəcəyi ilə bağlı qərarlar (məsələn, arxitektura və ya dizayn patternlərinin seçilməsi),
+* əsas keyfiyyət hədəflərinə necə nail olmaqla bağlı qərarlar,
+* işin təşkili ilə bağlı vacib qərarlar (məsələn, proqram təminatının hazırlanması prosesinin seçilməsi və ya bəzi işlərin kənar tərəflərə həvalə edilməsi).
 
-.Forma
-Belə əsas qərarların izahlarını qısa saxlayın.
+.Məqsəd
+Bu qərarlar sistemin arxitekturasının əsasını təşkil edir. Sonrakı texniki qərarlar və kodun hazırlanması ilə bağlı qaydalar çox vaxt məhz bu seçimlərə əsaslanır.
 
-Problemin qoyuluşuna, keyfiyyət məqsədlərinə və əsas məhdudiyyətlərə əsaslanaraq,
-nəyin qərara alındığını və niyə məhz belə qərara alındığını əsaslandırın.
-Təfərrüatlar üçün sonrakı bölmələrə istinad edin.
-
+.Təqdimat forması
+Əsas qərarları qısa və aydın şəkildə izah edin.
+Hər qərar üçün nəyi və niyə seçdiyinizi əsaslandırın. Bunun üçün həll etmək istədiyiniz problemi, keyfiyyət hədəflərini və əsas məhdudiyyətləri nəzərə alın.
+Ətraflı izahlar üçün sənədin sonrakı bölmələrinə istinad edin.
 
 .Əlavə məlumat
 
-arc42 sənədlərində https://docs.arc42.org/section-4/[Həll strategiyası] bölməsinə baxın.
+Ətraflı məlumat üçün arc42 sənədlərindəki https://docs.arc42.org/section-4/[Həll strategiyası] bölməsinə baxın.
 
 ****
 endif::arc42help[]
