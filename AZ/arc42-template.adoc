@@ -5,7 +5,7 @@
 // AsciiDoc üçün konfiqurasiya
 include::adoc/config.adoc[]
 
-= image:arc42-logo.png[arc42] Şablonu
+= image:arc42-logo.svg[arc42] Şablonu
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}

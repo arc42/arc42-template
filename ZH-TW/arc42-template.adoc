@@ -6,7 +6,7 @@
 // configure ZH-TW settings for asciidoc
 include::adoc/config.adoc[]
 
-= image:arc42-logo.png[arc42] 範本
+= image:arc42-logo.svg[arc42] 範本
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}

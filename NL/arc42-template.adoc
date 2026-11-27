@@ -5,7 +5,7 @@
 
 // configure EN settings for asciidoc
 include::adoc/config.adoc[]
-= image:arc42-logo.png[arc42] Template
+= image:arc42-logo.svg[arc42] Template
 :author: Dr. Peter Hruschka, Dr. Gernot Starke en bijdragers
 :revnumber: {revnumber}
 :revdate: {revdate}
