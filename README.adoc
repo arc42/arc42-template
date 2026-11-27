@@ -49,7 +49,7 @@ Therefore we will gradually remove all files under `./graphics-originals`
 
 Please refer to the https://arc42.org/download[official download page] for all downloads.
 
-The downloads are published as https://github.com/arc42/arc42-template/releases[GitHub Releases] of this repository, built by the https://github.com/arc42/arc42-generator[arc42-generator] (`make release`). Every release contains all languages, styles (plain, with help) and formats, plus a `manifest.json` with versions and SHA-256 checksums. File names do not change between releases, so this link always serves the newest file:
+The downloads are published as https://github.com/arc42/arc42-template/releases[GitHub Releases] of this repository. This repository has no build of its own: they are built and published by running `make release` in the https://github.com/arc42/arc42-generator[arc42-generator] repository, which includes this one as a submodule. Every release contains all languages, styles (plain, with help) and formats, plus a `manifest.json` with versions and SHA-256 checksums. File names do not change between releases, so this link always serves the newest file:
 
 ----
 https://github.com/arc42/arc42-template/releases/latest/download/arc42-template-<LANG>-<plain|withhelp>-<format>.zip
