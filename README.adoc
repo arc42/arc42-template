@@ -20,6 +20,7 @@ It is used...
 In case you find issues within the template or its explanations, this is the repo to fix and issue pull requests :-)
 
 == Revisions
+* 9.1.2 (DE: 9.2.2, AZ: 9.1.3) and 8.3.2: November 2026: all languages use the original arc42 logo as vector graphic (SVG), sharp in every format; DOCX and LaTeX get a high-resolution PNG instead. See #236
 * AZ 9.1.2: November 2026: reworked Azerbaijani translation in clearer, more natural language, with consistent terminology and an Azerbaijani ISO 25010 diagram; see #269 (thx to https://github.com/Maharramoff[@Maharramoff])
 * 9.1 (DE: 9.2) and 8.3: October 2026: see #197
   ** All languages: the quality goals (section 1.2) refer to ISO 25010:2023 (with link) and to the open https://quality.arc42.org[Q42 quality model].

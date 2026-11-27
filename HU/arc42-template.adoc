@@ -6,7 +6,7 @@
 // configure HU settings for asciidoc
 include::adoc/config.adoc[]
 
-= image:arc42-logo.png[arc42] Sablon
+= image:arc42-logo.svg[arc42] Sablon
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}

@@ -5,7 +5,7 @@
 
 // Opciones de configuración en español (ES) para asciidoc
 include::adoc/config.adoc[]
-= Plantilla image:arc42-logo.png[arc42]
+= Plantilla image:arc42-logo.svg[arc42]
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}

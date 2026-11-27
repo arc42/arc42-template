@@ -6,7 +6,7 @@
 // configure les paramètres FR pour asciidoc
 include::adoc/config.adoc[]
 
-= image:arc42-logo.png[arc42] Template
+= image:arc42-logo.svg[arc42] Template
 :revnumber: {revnumber}
 :revdate: {revdate}
 :revremark: {revremark}
