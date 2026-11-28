@@ -1,14 +1,63 @@
-// Arc42 help callout styling
+// Arc42 help callouts as "?" buttons next to their headings (HTML only).
+// A click on the button shows or hides the help below the heading.
+// Without JavaScript the help is shown in full; in print it is hidden.
 ifdef::backend-html5[]
 ++++
 <style>
-.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0; padding: 2px 0 3px 2px;}
-.arc42help::before {content: "?";}
-.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
-.arc42help:hover::before {content: "";}
+html.arc42help-js .arc42help:not(.arc42help-open) {display: none;}
+.arc42help-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.5em; height: 1.5em; margin-left: .5em; padding: 0;
+  vertical-align: .15em;
+  font: bold .55em/1 "Open Sans", "DejaVu Sans", sans-serif;
+  color: #005CA9; background: #fff;
+  border: 2px solid #005CA9; border-radius: 50%;
+  cursor: pointer;
+}
+h1 .arc42help-toggle, h2 .arc42help-toggle {font-size: .5em;}
+.arc42help-toggle:hover, .arc42help-toggle:focus-visible,
+.arc42help-toggle[aria-expanded="true"] {color: #fff; background: #005CA9;}
+.arc42help-toggle.arc42help-inline {font-size: 1.1em; margin: 0 0 .5em 0;}
 @media print {
-    .arc42help {display:none;}
+  .arc42help, .arc42help-toggle {display: none !important;}
 }
 </style>
+<script>
+document.documentElement.classList.add('arc42help-js');
+document.addEventListener('DOMContentLoaded', function () {
+  var n = 0;
+  document.querySelectorAll('.arc42help').forEach(function (help) {
+    // help outside the chapters (the note about this version) stays visible
+    if (!help.closest('.sect1')) {
+      help.classList.add('arc42help-open');
+      return;
+    }
+    // the heading this help belongs to: directly before it, or before its section body
+    var heading = help.previousElementSibling;
+    if (!heading && help.parentElement.classList.contains('sectionbody')) {
+      heading = help.parentElement.previousElementSibling;
+    }
+    if (!heading || !/^H[1-6]$/.test(heading.tagName)) heading = null;
+
+    help.id = help.id || 'arc42help-' + (++n);
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'arc42help-toggle';
+    button.textContent = '?';
+    button.setAttribute('aria-controls', help.id);
+    button.setAttribute('aria-expanded', 'false');
+    button.addEventListener('click', function () {
+      var open = help.classList.toggle('arc42help-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+    if (heading) {
+      heading.appendChild(button);
+    } else {
+      button.classList.add('arc42help-inline');
+      help.parentElement.insertBefore(button, help);
+    }
+  });
+});
+</script>
 ++++
 endif::backend-html5[]
