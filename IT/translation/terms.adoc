@@ -1,0 +1,51 @@
+= Translation terms: IT
+// This file is not part of the template: the arc42-generator never converts or publishes it.
+
+The terms of arc42 (reference list: `EN/translation/terms.adoc`) and the words this translation
+uses for them. The third column is optional: why this word was chosen, and which alternatives
+were rejected. An empty second column means that nobody has recorded the term yet.
+
+Add terms of your own at the end of the table.
+
+[cols="2,2,3", options="header"]
+|===
+| EN term | IT term | Why this term (optional)
+
+| Introduction and Goals | |
+| Architecture Constraints | |
+| Context and Scope | |
+| Solution Strategy | |
+| Building Block View | |
+| Runtime View | |
+| Deployment View | |
+| Cross-cutting Concepts | |
+| Architecture Decisions | |
+| Quality Requirements | |
+| Risks and Technical Debts | |
+| Glossary | |
+| Requirements Overview | |
+| Quality Goals | |
+| Stakeholders | |
+| Business Context | |
+| Technical Context | |
+| Whitebox Overall System | |
+| Level (1, 2, 3) | |
+| Runtime Scenario | |
+| Infrastructure Level (1, 2) | |
+| Quality Requirements Overview | |
+| Quality Scenarios | |
+| Building block | |
+| Black box | |
+| White box | |
+| Interface | |
+| Constraint | |
+| Stakeholder | |
+| Communication partner / neighboring system | |
+| Channel | |
+| Infrastructure element | |
+| Technical debt | |
+| Contents | |
+| Motivation | |
+| Form | |
+| Further Information | |
+|===
