@@ -166,7 +166,8 @@ Every pull request to this repository is checked by the same generator (workflow
   │    ├── arc42-template.adoc   // main document
   │    ├── version.properties    // revnumber, revdate, revdate-iso (YYYY-MM), revremark
   │    ├── adoc/                 // chapter files
-  │    └── images/               // images of this language
+  │    ├── images/               // images of this language
+  │    └── translation/          // optional: terms.adoc, the terms of this translation (never published)
   ├── common/                    // shared files (styles)
   ├── other-formats/<tool>/      // hand-made templates: Confluence, Doxygen, Enterprise Architect, Rhapsody
   └── graphics-originals/        // original diagram sources (being phased out)
@@ -175,6 +176,14 @@ Every pull request to this repository is checked by the same generator (workflow
 === Adding a New Language
 
 Create a folder `<LC>/` like the ones above (a code such as `TR`, optionally with a region such as `ZH-TW`), with all four `version.properties` entries, and add it to the table under <<Languages>>. The generator finds it on its own; nothing else needs to change.
+
+=== Translation Terms
+
+Every language can have a file `<LC>/translation/terms.adoc`: a table of the arc42 terms in English, the word this translation uses for each of them and, optionally, why that word was chosen. It keeps a translation consistent across chapters and over the years, records decisions that were discussed (so they need not be discussed again), and helps everybody who uses the same terms elsewhere.
+
+* `EN/translation/terms.adoc` is the reference list: the terms every translation has to find a word for (chapter and section titles, the terms of the help texts and their recurring labels).
+* The files of the other languages start with that list and an empty second column; translators fill it in and add terms of their own at the end.
+* The folder is optional and is not part of the template: the generator never converts or publishes it. Chapter files belong in `adoc/`, nothing else does.
 
 
 == Questions on using arc42?

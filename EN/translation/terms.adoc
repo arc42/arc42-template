@@ -1,0 +1,52 @@
+= Translation terms: the English reference list
+// This file is not part of the template: the arc42-generator never converts or publishes it.
+
+The terms of arc42 that every translation has to find a word for: chapter and section titles,
+the terms of the help texts and their recurring labels.
+
+Every other language has a file `<LANG>/translation/terms.adoc` with these terms, the word its
+translation uses for each of them and, where it helps, the reason for that choice.
+When a term is added here, add it to the files of the other languages as well.
+
+[cols="2,3", options="header"]
+|===
+| EN term | Where the template uses it
+
+| Introduction and Goals | title of chapter 1
+| Architecture Constraints | title of chapter 2
+| Context and Scope | title of chapter 3
+| Solution Strategy | title of chapter 4
+| Building Block View | title of chapter 5
+| Runtime View | title of chapter 6
+| Deployment View | title of chapter 7
+| Cross-cutting Concepts | title of chapter 8
+| Architecture Decisions | title of chapter 9
+| Quality Requirements | title of chapter 10
+| Risks and Technical Debts | title of chapter 11
+| Glossary | title of chapter 12
+| Requirements Overview | section 1.1
+| Quality Goals | section 1.2
+| Stakeholders | section 1.3
+| Business Context | section 3.1
+| Technical Context | section 3.2
+| Whitebox Overall System | section 5.1
+| Level (1, 2, 3) | sections of chapter 5: the levels of the building block hierarchy
+| Runtime Scenario | sections of chapter 6
+| Infrastructure Level (1, 2) | sections of chapter 7
+| Quality Requirements Overview | section 10.1
+| Quality Scenarios | section 10.2
+| Building block | help texts, chapter 5
+| Black box | help texts, chapter 5
+| White box | help texts, chapter 5
+| Interface | help texts, chapters 3 and 5
+| Constraint | help texts, chapter 2
+| Stakeholder | help texts, chapter 1
+| Communication partner / neighboring system | help texts, chapter 3
+| Channel | help texts, chapters 3 and 7
+| Infrastructure element | help texts, chapter 7
+| Technical debt | help texts, chapter 11
+| Contents | label in every help text
+| Motivation | label in every help text
+| Form | label in every help text
+| Further Information | label in every help text
+|===
